@@ -34,6 +34,10 @@ export const content: ToolLocaleContent = {
     verdictBurnedSub: 'Extreme danger',
     verdictVaporized: 'GROUND ZERO',
     verdictVaporizedSub: 'Direct impact',
+    presetAerial: 'Aerial',
+    presetForest: 'Forest',
+    presetComet: 'Comet',
+    presetELE: 'E.L.E.',
   },
   seo: [
     {

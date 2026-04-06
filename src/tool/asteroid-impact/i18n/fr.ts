@@ -34,6 +34,10 @@ export const content: ToolLocaleContent = {
     verdictBurnedSub: 'Danger extrême',
     verdictVaporized: 'ZONE ZÉRO',
     verdictVaporizedSub: 'Impact direct',
+    presetAerial: 'Aérien',
+    presetForest: 'Forêt',
+    presetComet: 'Comète',
+    presetELE: 'E.L.E.',
   },
   seo: [
     {
