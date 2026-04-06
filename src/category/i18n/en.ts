@@ -1,23 +1,27 @@
 import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
-  slug: 'template-category',
-  title: 'Template Category',
-  description: 'Category description.',
+  slug: 'scientific-calculators',
+  title: 'Scientific Utilities',
+  description: 'Collection of advanced scientific calculators and simulators for physics, biology, and cosmology.',
   seo: [
     {
       type: 'summary',
-      title: 'Summary',
-      items: ['Point 1', 'Point 2', 'Point 3'],
+      title: 'Precision Science Tools',
+      items: [
+        'Real-time physical simulations',
+        'Biological renewal & counting tools',
+        'Electromagnetic interference detectors',
+      ],
     },
     {
       type: 'title',
-      text: 'Section title',
+      text: 'Explore the Laws of the Universe',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Category SEO content.',
+      html: 'Our scientific suite provides accurate, easy-to-use tools for exploring complex phenomena—from asteroid impacts to the very cells that make up your identity.',
     },
   ],
 };

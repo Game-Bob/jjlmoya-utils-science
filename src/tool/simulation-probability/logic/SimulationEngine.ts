@@ -6,12 +6,12 @@ export interface SimulationResult {
 
 export class SimulationEngine {
     static calculate(
-        fp: number, // Progreso tecnológico (0-1)
-        fl: number, // Tasa de supervivencia (0-1)
-        fi: number, // Interés en simular (0-1)
-        n: number   // Escala de simulación
+        fp: number, 
+        fl: number, 
+        fi: number, 
+        n: number   
     ): SimulationResult {
-        // Fórmula de Bostrom: P = (fp * fl * fi * N) / (1 + (fp * fl * fi * N))
+        
         const numerator = fp * fl * fi * n;
         const pSim = numerator / (1 + numerator);
         const percentage = pSim * 100;

@@ -15,7 +15,9 @@
                 "declaration-block-no-redundant-longhand-properties": null,
                 "rule-empty-line-before": null,
                 "import-notation": null,
-                "block-no-empty": null
+                "block-no-empty": null,
+                "selector-id-pattern": null,
+                "keyframes-name-pattern": null
             }
         }
     ],

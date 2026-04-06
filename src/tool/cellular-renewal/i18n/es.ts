@@ -11,6 +11,15 @@ export const content: ToolLocaleContent = {
     noHistory: 'Sin historial',
     load: 'Cargar',
     delete: 'Eliminar',
+    biologicalTimeline: 'Cronología Biológica',
+    ageUnit: 'años de evolución',
+    matterNewPercent: 'Tu materia es nueva en un',
+    atomicRenewal: 'Renovación Atómica',
+    skinAndBlood: 'Epidermis y Sangre',
+    boneRemodeling: 'Remodelación Ósea',
+    organicMatrix: 'Matriz Orgánica',
+    perennialCells: 'Células Perennes',
+    disclaimerText: 'Los cálculos se basan en la vida media celular según estudios isotópicos. Mientras que la sangre y la piel se renuevan en semanas, las proteínas del cristalino y gran parte de tu corteza cerebral permanecen desde el desarrollo embrionario. Físicamente, eres una estructura dinámica en flujo constante.',
   },
   seo: [
     {

@@ -48,7 +48,6 @@
   background: var(--asteroid-bg-dark);
   box-shadow: var(--asteroid-shadow-xl);
   border: 1px solid var(--asteroid-border-dark);
-  font-family: system-ui, -apple-system, sans-serif;
   user-select: none;
   touch-action: none;
 }
@@ -158,7 +157,6 @@
 
 /* Píldora de Veredicto */
 .asteroid-verdict-pill {
-  pointer-events: auto;
   max-width: 100%;
   transform: translateY(-20px);
   opacity: 0;
@@ -212,7 +210,6 @@
   font-weight: 900;
   font-size: 1.125rem;
   text-transform: uppercase;
-  font-family: monospace;
   white-space: nowrap;
   font-style: italic;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -352,7 +349,7 @@
 .asteroid-drag-bg {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #f3f4f6 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #f3f4f6 0%, #fff 100%);
   border-radius: var(--asteroid-radius-lg);
   border: 1px solid var(--asteroid-border-light);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -551,7 +548,6 @@
   font-size: 0.5625rem;
   font-weight: 500;
   color: var(--asteroid-text-secondary);
-  font-family: monospace;
   position: relative;
   z-index: 10;
 }
@@ -730,7 +726,6 @@
   align-items: center;
   justify-content: space-between;
   pointer-events: auto;
-  ring: 1px solid rgba(15, 23, 42, 0.05);
 }
 
 .asteroid-mobile-asteroid {

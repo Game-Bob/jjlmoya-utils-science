@@ -4,9 +4,37 @@ export interface PingResult {
     timestamp: number;
 }
 
+interface InterferenceLevel {
+    threshold: number;
+    label: string;
+    color: string;
+    description: string;
+}
+
 export class MicrowaveEngine {
     private lastPings: number[] = [];
     private maxHistory = 100;
+
+    private static readonly INTERFERENCE_LEVELS: InterferenceLevel[] = [
+        {
+            threshold: 2,
+            label: "Señal Limpia",
+            color: "emerald",
+            description: "Tu conexión es estable. No hay interferencias electromagnéticas significativas detectadas.",
+        },
+        {
+            threshold: 10,
+            label: "Interferencia Leve",
+            color: "yellow",
+            description: "Se detecta algo de ruido en la señal. Podría ser actividad normal o dispositivos Bluetooth cercanos.",
+        },
+        {
+            threshold: 30,
+            label: "Interferencia Alta",
+            color: "orange",
+            description: "Ruido electromagnético considerable detectado. Si el microondas está encendido, es posible que tenga fugas leves.",
+        },
+    ];
 
     async measurePing(): Promise<PingResult> {
         const start = performance.now();
@@ -48,32 +76,14 @@ export class MicrowaveEngine {
         color: string;
         description: string;
     } {
-        if (jitter < 2)
-            return {
-                label: "Señal Limpia",
-                color: "emerald",
-                description:
-                    "Tu conexión es estable. No hay interferencias electromagnéticas significativas detectadas.",
-            };
-        if (jitter < 10)
-            return {
-                label: "Interferencia Leve",
-                color: "yellow",
-                description:
-                    "Se detecta algo de ruido en la señal. Podría ser actividad normal o dispositivos Bluetooth cercanos.",
-            };
-        if (jitter < 30)
-            return {
-                label: "Interferencia Alta",
-                color: "orange",
-                description:
-                    "Ruido electromagnético considerable detectado. Si el microondas está encendido, es posible que tenga fugas leves.",
-            };
+        const level = this.INTERFERENCE_LEVELS.find((l) => jitter < l.threshold);
+        if (level) {
+            return { label: level.label, color: level.color, description: level.description };
+        }
         return {
             label: "FUGA CRÍTICA / RUIDO EXTREMO",
             color: "red",
-            description:
-                "Inestabilidad masiva en la señal. Si estás junto al microondas, apágalo: la protección RF podría estar degradada.",
+            description: "Inestabilidad masiva en la señal. Si estás junto al microondas, apágalo: la protección RF podría estar degradada.",
         };
     }
 }

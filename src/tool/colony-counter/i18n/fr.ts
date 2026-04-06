@@ -10,7 +10,21 @@ export const content: ToolLocaleContent = {
   description,
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Références Bibliographiques',
-  ui: {},
+  ui: {
+    uploadTitle: 'Cliquez pour télécharger votre boîte de Pétri',
+    uploadSubtitle: 'Téléchargez une photo de votre boîte et commencez à compter les colonies',
+    currentModeLabel: 'Mode Actuel',
+    typeA: 'Type A',
+    typeB: 'Type B',
+    colonyType: 'Type de Colonie',
+    counting: 'Comptage',
+    totalCFU: 'Total UFC',
+    undo: 'Annuler le dernier',
+    clearAll: 'Effacer Tout',
+    infoClick: 'Cliquez sur la plaque pour marquer les colonies',
+    infoChange: 'Changez de type avant de marquer',
+    confirmClear: 'Êtes-vous sûr de vouloir effacer toutes les colonies marquées ?',
+  },
   seo: [
     {
       type: 'title',

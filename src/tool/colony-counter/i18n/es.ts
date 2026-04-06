@@ -10,7 +10,21 @@ export const content: ToolLocaleContent = {
   description,
   faqTitle: 'Preguntas Frecuentes',
   bibliographyTitle: 'Referencias Bibliográficas',
-  ui: {},
+  ui: {
+    uploadTitle: 'Haz clic para subir tu placa de Petri',
+    uploadSubtitle: 'Sube una foto de tu placa y empieza a contar colonias',
+    currentModeLabel: 'Modo Actual',
+    typeA: 'Tipo A',
+    typeB: 'Tipo B',
+    colonyType: 'Tipo de Colonia',
+    counting: 'Conteo',
+    totalCFU: 'Total UFC',
+    undo: 'Deshacer Último',
+    clearAll: 'Limpiar Todo',
+    infoClick: 'Haz clic en la placa para marcar colonias',
+    infoChange: 'Cambia el tipo antes de marcar',
+    confirmClear: '¿Seguro que quieres borrar todas las colonias marcadas?',
+  },
   seo: [
     {
       type: 'title',

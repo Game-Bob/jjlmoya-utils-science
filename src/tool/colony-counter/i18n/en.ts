@@ -10,7 +10,21 @@ export const content: ToolLocaleContent = {
   description,
   faqTitle: 'Frequently Asked Questions',
   bibliographyTitle: 'Bibliographic References',
-  ui: {},
+  ui: {
+    uploadTitle: 'Click to upload your Petri dish',
+    uploadSubtitle: 'Upload a photo of your plate and start counting colonies',
+    currentModeLabel: 'Current Mode',
+    typeA: 'Type A',
+    typeB: 'Type B',
+    colonyType: 'Colony Type',
+    counting: 'Counting',
+    totalCFU: 'Total CFU',
+    undo: 'Undo Last',
+    clearAll: 'Clear All',
+    infoClick: 'Click on the plate to mark colonies',
+    infoChange: 'Change type before marking',
+    confirmClear: 'Are you sure you want to clear all marked colonies?',
+  },
   seo: [
     {
       type: 'title',

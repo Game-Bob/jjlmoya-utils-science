@@ -1,9 +1,29 @@
 ---
 import "./ColonyCounter.css";
 import { Icon } from "astro-icon/components";
+
+interface Props {
+    ui: {
+        uploadTitle: string;
+        uploadSubtitle: string;
+        currentModeLabel: string;
+        typeA: string;
+        typeB: string;
+        colonyType: string;
+        counting: string;
+        totalCFU: string;
+        undo: string;
+        clearAll: string;
+        infoClick: string;
+        infoChange: string;
+        confirmClear: string;
+    };
+}
+
+const { ui } = Astro.props;
 ---
 
-<div class="colony-container">
+<div class="colony-container" data-confirm-clear={ui.confirmClear}>
     <div class="colony-main-card">
         <div class="colony-grid">
             <div class="colony-canvas-section">
@@ -14,10 +34,10 @@ import { Icon } from "astro-icon/components";
                         <Icon name="mdi:upload" class="colony-upload-icon" />
                         <div class="colony-upload-text">
                             <p class="colony-upload-title">
-                                Haz clic para subir tu placa de Petri
+                                {ui.uploadTitle}
                             </p>
                             <p class="colony-upload-subtitle">
-                                Sube una foto de tu placa y empieza a contar colonias
+                                {ui.uploadSubtitle}
                             </p>
                         </div>
                     </div>
@@ -29,10 +49,10 @@ import { Icon } from "astro-icon/components";
 
                     <div id="mode-indicator" class="colony-hidden colony-mode-indicator">
                         <p class="colony-mode-label">
-                            Modo Actual
+                            {ui.currentModeLabel}
                         </p>
                         <p id="current-mode" class="colony-mode-value">
-                            Tipo A
+                            {ui.typeA}
                         </p>
                     </div>
                 </div>
@@ -41,23 +61,25 @@ import { Icon } from "astro-icon/components";
             <div class="colony-control-panel">
                 <div class="colony-control-section">
                     <h3 class="colony-control-title">
-                        Tipo de Colonia
+                        {ui.colonyType}
                     </h3>
 
                     <div class="colony-button-grid">
                         <button
                             id="mode-a"
                             class="colony-mode-btn colony-mode-btn-active"
+                            data-label={ui.typeA}
                         >
                             <span class="colony-color-dot colony-color-a"></span>
-                            Tipo A
+                            {ui.typeA}
                         </button>
                         <button
                             id="mode-b"
                             class="colony-mode-btn"
+                            data-label={ui.typeB}
                         >
                             <span class="colony-color-dot colony-color-b"></span>
-                            Tipo B
+                            {ui.typeB}
                         </button>
                     </div>
                 </div>
@@ -66,13 +88,13 @@ import { Icon } from "astro-icon/components";
 
                 <div class="colony-control-section">
                     <h3 class="colony-control-title">
-                        Conteo
+                        {ui.counting}
                     </h3>
 
                     <div class="colony-count-grid">
                         <div class="colony-count-box colony-count-box-a">
                             <p class="colony-count-label colony-count-label-a">
-                                Tipo A
+                                {ui.typeA}
                             </p>
                             <p id="count-a" class="colony-count-value">
                                 0
@@ -80,7 +102,7 @@ import { Icon } from "astro-icon/components";
                         </div>
                         <div class="colony-count-box colony-count-box-b">
                             <p class="colony-count-label colony-count-label-b">
-                                Tipo B
+                                {ui.typeB}
                             </p>
                             <p id="count-b" class="colony-count-value">
                                 0
@@ -90,7 +112,7 @@ import { Icon } from "astro-icon/components";
 
                     <div class="colony-count-total">
                         <p class="colony-count-label-total">
-                            Total UFC
+                            {ui.totalCFU}
                         </p>
                         <p id="count-total" class="colony-count-value-total">
                             0
@@ -106,7 +128,7 @@ import { Icon } from "astro-icon/components";
                         class="colony-action-btn colony-undo-btn"
                     >
                         <Icon name="mdi:undo" class="colony-btn-icon" />
-                        Deshacer Último
+                        {ui.undo}
                     </button>
 
                     <button
@@ -114,17 +136,16 @@ import { Icon } from "astro-icon/components";
                         class="colony-action-btn colony-clear-btn"
                     >
                         <Icon name="mdi:delete-sweep" class="colony-btn-icon" />
-                        Limpiar Todo
+                        {ui.clearAll}
                     </button>
                 </div>
 
                 <div class="colony-info-text">
                     <p>
-                        <Icon name="mdi:information" class="colony-info-icon" /> Haz clic en la placa para
-                        marcar colonias
+                        <Icon name="mdi:information" class="colony-info-icon" /> {ui.infoClick}
                     </p>
                     <p>
-                        <Icon name="mdi:palette" class="colony-info-icon" /> Cambia el tipo antes de marcar
+                        <Icon name="mdi:palette" class="colony-info-icon" /> {ui.infoChange}
                     </p>
                 </div>
             </div>
@@ -133,6 +154,8 @@ import { Icon } from "astro-icon/components";
 </div>
 
 <script is:inline>
+    const container = document.querySelector(".colony-container");
+    const confirmClearMsg = container?.getAttribute("data-confirm-clear") || "Confirm?";
     const canvas = document.getElementById("petri-canvas");
     const ctx = canvas?.getContext("2d");
     const imageUpload = document.getElementById("image-upload");
@@ -148,6 +171,9 @@ import { Icon } from "astro-icon/components";
     const countBEl = document.getElementById("count-b");
     const countTotalEl = document.getElementById("count-total");
     const currentModeEl = document.getElementById("current-mode");
+
+    const labelA = modeABtn?.getAttribute("data-label") || "Type A";
+    const labelB = modeBBtn?.getAttribute("data-label") || "Type B";
 
     let currentMode = "A";
     let colonies = [];
@@ -292,7 +318,7 @@ import { Icon } from "astro-icon/components";
         currentMode = mode;
 
         if (currentModeEl) {
-            currentModeEl.innerText = `Tipo ${mode}`;
+            currentModeEl.innerText = mode === "A" ? labelA : labelB;
             currentModeEl.className =
                 mode === "A"
                     ? "colony-mode-value colony-mode-a"
@@ -345,7 +371,7 @@ import { Icon } from "astro-icon/components";
 
     if (clearBtn) {
         clearBtn.addEventListener("click", () => {
-            if (confirm("¿Seguro que quieres borrar todas las colonias marcadas?")) {
+            if (confirm(confirmClearMsg)) {
                 colonies = [];
                 redraw();
                 updateCounts();

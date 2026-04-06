@@ -1,349 +1,160 @@
 ---
-import { SimulationEngine } from "./logic/SimulationEngine";
+import "./SimulationProbability.css";
+
+interface Props {
+  ui: {
+    simulationParameters: string;
+    fpLabel: string;
+    fpSub: string;
+    flLabel: string;
+    flSub: string;
+    fiLabel: string;
+    fiSub: string;
+    nLabel: string;
+    nSub: string;
+    probabilityTitle: string;
+    trilemmaResult: string;
+    scenario1: string;
+    scenario2: string;
+    scenario3: string;
+  };
+}
+
+const { ui } = Astro.props;
 ---
 
-<div class="simulation-app" id="simulation-app">
-  <div class="simulation-header">
-    <h2>Analizador de Realidad Cuántica</h2>
-  </div>
+<div 
+  class="simulation-app" 
+  id="simulation-app"
+  data-ui-scenario1={ui.scenario1}
+  data-ui-scenario2={ui.scenario2}
+  data-ui-scenario3={ui.scenario3}
+>
+  <div class="simulation-card">
+    <div class="simulation-grid">
+      <div class="params-column">
+        <h2 class="section-title">{ui.simulationParameters}</h2>
+        
+        <div class="param-card">
+          <div class="param-header">
+            <span class="param-symbol">{ui.fpLabel}</span>
+            <span class="param-desc">{ui.fpSub}</span>
+            <span id="fp-val" class="param-value">50%</span>
+          </div>
+          <input type="range" id="fp-range" min="1" max="100" value="50" class="sim-slider" />
+        </div>
 
-  <div class="simulation-main">
-    <div class="parameter-card">
-      <div class="label-row">
-        <div class="label-info">
-          <label for="technological-progress">Progreso Tecnológico (fp)</label>
+        <div class="param-card">
+          <div class="param-header">
+            <span class="param-symbol">{ui.flLabel}</span>
+            <span class="param-desc">{ui.flSub}</span>
+            <span id="fl-val" class="param-value">50%</span>
+          </div>
+          <input type="range" id="fl-range" min="1" max="100" value="50" class="sim-slider" />
         </div>
-        <div class="value-display" id="fp-value">50%</div>
-      </div>
-      <small class="helper-text">Probabilidad de que la humanidad alcance la capacidad técnica para simular universos con conciencia.</small>
-      <div class="control-row">
-        <div class="slider-container">
-          <input type="range" id="technological-progress" min="1" max="100" value="50" />
-        </div>
-      </div>
-    </div>
 
-    <div class="parameter-card">
-      <div class="label-row">
-        <div class="label-info">
-          <label for="societal-survival">Tasa de Supervivencia (fl)</label>
+        <div class="param-card">
+          <div class="param-header">
+            <span class="param-symbol">{ui.fiLabel}</span>
+            <span class="param-desc">{ui.fiSub}</span>
+            <span id="fi-val" class="param-value">10%</span>
+          </div>
+          <input type="range" id="fi-range" min="1" max="100" value="10" class="sim-slider" />
         </div>
-        <div class="value-display" id="fl-value">50%</div>
-      </div>
-      <small class="helper-text">Probabilidad de evitar el colapso (extinción, guerras) antes de alcanzar el nivel post-humano.</small>
-      <div class="control-row">
-        <div class="slider-container">
-          <input type="range" id="societal-survival" min="1" max="100" value="50" />
-        </div>
-      </div>
-    </div>
 
-    <div class="parameter-card">
-      <div class="label-row">
-        <div class="label-info">
-          <label for="simulation-interest">Interés en Simular (fi)</label>
-        </div>
-        <div class="value-display" id="fi-value">20%</div>
-      </div>
-      <small class="helper-text">Porcentaje de sociedades avanzadas que deciden crear simulaciones de sus antepasados.</small>
-      <div class="control-row">
-        <div class="slider-container">
-          <input type="range" id="simulation-interest" min="1" max="100" value="20" />
+        <div class="param-card">
+          <div class="param-header">
+            <span class="param-symbol">{ui.nLabel}</span>
+            <span class="param-desc">{ui.nSub}</span>
+            <span id="n-val" class="param-value">1000</span>
+          </div>
+          <input type="range" id="n-range" min="1" max="1000000" step="1000" value="1000" class="sim-slider" />
         </div>
       </div>
-    </div>
 
-    <div class="parameter-card">
-      <div class="label-row">
-        <div class="label-info">
-          <label for="ancestral-sims">Escala de Simulación (N)</label>
+      <div class="results-column">
+        <div class="main-result-card">
+          <h3 class="result-label">{ui.probabilityTitle}</h3>
+          <div class="result-value"><span id="prob-total">0</span><small>%</small></div>
+          <div class="prob-bar-container">
+            <div id="prob-bar-fill" class="prob-bar-fill" style="width: 0%"></div>
+          </div>
         </div>
-        <div class="value-display" id="n-value">1,000</div>
-      </div>
-      <small class="helper-text">Número de mundos simulados que cada civilización avanzada suele ejecutar simultáneamente.</small>
-      <div class="control-row">
-        <div class="slider-container">
-          <input type="range" id="ancestral-sims" min="1" max="10000" value="1000" />
+
+        <div class="verdict-card">
+          <h4 class="verdict-title">{ui.trilemmaResult}</h4>
+          <div class="scenarios-stack">
+            <div id="scen-1" class="scenario-item">
+              <div class="scenario-dot"></div>
+              <span class="scenario-text">{ui.scenario1}</span>
+              <span class="scenario-percent" id="p1-val">0%</span>
+            </div>
+            <div id="scen-2" class="scenario-item">
+              <div class="scenario-dot"></div>
+              <span class="scenario-text">{ui.scenario2}</span>
+              <span class="scenario-percent" id="p2-val">0%</span>
+            </div>
+            <div id="scen-3" class="scenario-item active">
+              <div class="scenario-dot"></div>
+              <span class="scenario-text">{ui.scenario3}</span>
+              <span class="scenario-percent" id="p3-val">0%</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="results-section">
-    <div class="probability-ring">
-      <div class="probability-number" id="probability-result">98.50%</div>
-    </div>
-
-    <div class="verdict-box">
-      <div class="verdict-title" id="verdict">Probabilidad de Simulación</div>
-      <div class="verdict-detail" id="verdict-detail">
-        Los datos sugieren que es extremadamente probable que tu conciencia sea un proceso de software.
       </div>
     </div>
   </div>
 </div>
 
-<style is:inline define:vars={{}}>
-  :root {
-    --sim-primary: #0066cc;
-    --sim-secondary: #6600cc;
-    --sim-accent: #22cc00;
-    --sim-text: #0f172a;
-    --sim-text-muted: #475569;
-    --sim-bg: #ffffff;
-    --sim-bg-secondary: #f8fafc;
-    --sim-bg-tertiary: #f1f5f9;
-    --sim-border: #e2e8f0;
-    --sim-glow-primary: rgba(0, 102, 204, 0.3);
-    --sim-glow-accent: rgba(34, 204, 0, 0.3);
+<script is:inline>
+  const app = document.getElementById('simulation-app');
+  
+  const fpRange = document.getElementById('fp-range');
+  const flRange = document.getElementById('fl-range');
+  const fiRange = document.getElementById('fi-range');
+  const nRange = document.getElementById('n-range');
+
+  const fpVal = document.getElementById('fp-val');
+  const flVal = document.getElementById('fl-val');
+  const fiVal = document.getElementById('fi-val');
+  const nVal = document.getElementById('n-val');
+
+  const probTotal = document.getElementById('prob-total');
+  const probBarFill = document.getElementById('prob-bar-fill');
+  const p1Val = document.getElementById('p1-val');
+  const p2Val = document.getElementById('p2-val');
+  const p3Val = document.getElementById('p3-val');
+
+  function update() {
+    const fp = fpRange.value / 100;
+    const fl = flRange.value / 100;
+    const fi = fiRange.value / 100;
+    const n = parseInt(nRange.value);
+
+    fpVal.innerText = Math.round(fp * 100) + '%';
+    flVal.innerText = Math.round(fl * 100) + '%';
+    fiVal.innerText = Math.round(fi * 100) + '%';
+    nVal.innerText = n.toLocaleString();
+
+    const p1 = 1 - (fp * fl);
+    const p2 = (fp * fl) * (1 - fi);
+    const p3 = (fp * fl * fi * n) / (fp * fl * fi * n + 1);
+
+    const probSim = (p3 * 100).toFixed(4);
+
+    probTotal.innerText = parseFloat(probSim).toLocaleString();
+    probBarFill.style.width = probSim + '%';
+
+    p1Val.innerText = Math.round(p1 * 100) + '%';
+    p2Val.innerText = Math.round(p2 * 100) + '%';
+    p3Val.innerText = Math.round(p3 * 100) + '%';
+
+    document.querySelectorAll('.scenario-item').forEach(el => el.classList.remove('active'));
+    if (p1 > p2 && p1 > p3) document.getElementById('scen-1').classList.add('active');
+    else if (p2 > p3) document.getElementById('scen-2').classList.add('active');
+    else document.getElementById('scen-3').classList.add('active');
   }
 
-  .theme-dark {
-    --sim-primary: #00f2ff;
-    --sim-secondary: #7000ff;
-    --sim-accent: #39ff14;
-    --sim-text: #ffffff;
-    --sim-text-muted: #a0aec0;
-    --sim-bg: #12141d;
-    --sim-bg-secondary: #1c1f2e;
-    --sim-bg-tertiary: #0a0b10;
-    --sim-border: #2d3748;
-    --sim-glow-primary: rgba(0, 242, 255, 0.5);
-    --sim-glow-accent: rgba(57, 255, 20, 0.4);
-  }
-
-  .simulation-app {
-    padding: 0;
-    border-radius: 28px;
-    background: var(--sim-bg);
-    border: 1px solid var(--sim-border);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    max-width: 850px;
-  }
-
-  .simulation-header {
-    padding: 2.5rem;
-    background: linear-gradient(135deg, var(--sim-bg-secondary) 0%, var(--sim-bg) 100%);
-    border-bottom: 2px solid var(--sim-border);
-    text-align: center;
-  }
-
-  .simulation-header h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    color: var(--sim-primary);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .simulation-main {
-    padding: 2.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-
-  .parameter-card {
-    background: var(--sim-bg-secondary);
-    padding: 1.5rem;
-    border-radius: 20px;
-    border: 1px solid var(--sim-border);
-    transition: transform 0.2s ease, border-color 0.2s ease;
-  }
-
-  .parameter-card:focus-within {
-    border-color: var(--sim-primary);
-    transform: translateY(-2px);
-  }
-
-  .label-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-  }
-
-  .label-info {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .label-info label {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--sim-text);
-  }
-
-  .helper-text {
-    font-size: 0.85rem;
-    color: var(--sim-text-muted);
-    margin-bottom: 1.5rem;
-    display: block;
-    line-height: 1.6;
-  }
-
-  .control-row {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-
-  .slider-container {
-    flex: 1;
-  }
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 12px;
-    background: var(--sim-bg-tertiary);
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid var(--sim-border);
-  }
-
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
-    background: var(--sim-primary);
-    border: 4px solid var(--sim-bg-secondary);
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 15px var(--sim-glow-primary);
-  }
-
-  input[type="range"]::-moz-range-thumb {
-    width: 28px;
-    height: 28px;
-    background: var(--sim-primary);
-    border: 4px solid var(--sim-bg-secondary);
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 15px var(--sim-glow-primary);
-  }
-
-  .value-display {
-    background: var(--sim-bg-tertiary);
-    border: 1px solid var(--sim-primary);
-    color: var(--sim-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    min-width: 80px;
-    text-align: center;
-  }
-
-  .results-section {
-    padding: 3rem;
-    background: var(--sim-bg-tertiary);
-    border-top: 2px solid var(--sim-border);
-    text-align: center;
-  }
-
-  .probability-ring {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-
-  .probability-number {
-    font-size: 5rem;
-    font-weight: 950;
-    color: var(--sim-accent);
-    text-shadow: 0 0 30px var(--sim-glow-accent);
-    line-height: 1;
-  }
-
-  .verdict-box {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .verdict-title {
-    color: var(--sim-text);
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-  }
-
-  .verdict-detail {
-    color: var(--sim-text-muted);
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-
-  @media (max-width: 640px) {
-    .simulation-main,
-    .results-section {
-      padding: 1.5rem;
-    }
-
-    .probability-number {
-      font-size: 3.5rem;
-    }
-
-    .simulation-app {
-      border-radius: 16px;
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .simulation-app {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-  }
-</style>
-
-<script>
-  import { SimulationEngine } from "./logic/SimulationEngine";
-
-  const fpInput = document.getElementById("technological-progress") as HTMLInputElement | null;
-  const flInput = document.getElementById("societal-survival") as HTMLInputElement | null;
-  const fiInput = document.getElementById("simulation-interest") as HTMLInputElement | null;
-  const nInput = document.getElementById("ancestral-sims") as HTMLInputElement | null;
-
-  const fpText = document.getElementById("fp-value");
-  const flText = document.getElementById("fl-value");
-  const fiText = document.getElementById("fi-value");
-  const nText = document.getElementById("n-value");
-
-  const probDisplay = document.getElementById("probability-result");
-  const verdictLabel = document.getElementById("verdict");
-  const verdictDetail = document.getElementById("verdict-detail");
-
-  if (!fpInput || !flInput || !fiInput || !nInput || !fpText || !flText || !fiText || !nText || !probDisplay || !verdictLabel || !verdictDetail) {
-    throw new Error("Required simulation elements not found");
-  }
-
-  const calculateProbability = () => {
-    const fp = parseFloat(fpInput!.value) / 100;
-    const fl = parseFloat(flInput!.value) / 100;
-    const fi = parseFloat(fiInput!.value) / 100;
-    const n = parseFloat(nInput!.value);
-
-    fpText!.textContent = `${Math.round(fp * 100)}%`;
-    flText!.textContent = `${Math.round(fl * 100)}%`;
-    fiText!.textContent = `${Math.round(fi * 100)}%`;
-    nText!.textContent = n.toLocaleString();
-
-    const result = SimulationEngine.calculate(fp, fl, fi, n);
-    probDisplay!.textContent = `${result.probability.toFixed(2)}%`;
-    verdictLabel!.textContent = result.verdict;
-    verdictDetail!.textContent = result.detail;
-  };
-
-  [fpInput, flInput, fiInput, nInput].forEach(input => {
-    input.addEventListener("input", calculateProbability);
-  });
-
-  calculateProbability();
+  [fpRange, flRange, fiRange, nRange].forEach(r => r?.addEventListener('input', update));
+  update();
 </script>
