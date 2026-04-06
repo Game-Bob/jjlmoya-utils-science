@@ -1,7 +1,6 @@
 ---
 import "./MicrowaveDetector.css";
 import { Icon } from "astro-icon/components";
-import { MicrowaveEngine } from "./logic/MicrowaveEngine";
 ---
 
 <div class="microwave-detector-container" id="microwave-detector-root">
@@ -85,7 +84,7 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
         --microwave-primary: #e11d48;
         --microwave-text: #0f172a;
         --microwave-text-muted: #64748b;
-        --microwave-bg: #ffffff;
+        --microwave-bg: #fff;
         --microwave-bg-secondary: #fafbfc;
         --microwave-bg-tertiary: #f1f5f9;
         --microwave-border: #e2e8f0;
@@ -102,9 +101,9 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
     }
 
     .theme-dark {
-        --microwave-text: #ffffff;
+        --microwave-text: #fff;
         --microwave-text-muted: #94a3b8;
-        --microwave-bg: #000000;
+        --microwave-bg: #000;
         --microwave-bg-secondary: #0f172a;
         --microwave-bg-tertiary: #1e293b;
         --microwave-border: #1e293b;
@@ -119,9 +118,11 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
         max-width: 56rem;
         margin: 0 auto;
         padding: 1rem;
+
         @media (min-width: 640px) {
             padding: 2rem;
         }
+
         position: relative;
     }
 
@@ -214,6 +215,7 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
         overflow: hidden;
         padding: 1.5rem;
         position: relative;
+
         @media (min-width: 640px) {
             padding: 2.5rem;
         }
@@ -228,7 +230,6 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
 
     .microwave-label {
         color: var(--microwave-primary);
-        font-family: monospace;
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 0.3em;
@@ -265,7 +266,6 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
 
     .microwave-status-text {
         color: var(--microwave-text-muted);
-        font-family: monospace;
         font-size: 0.625rem;
         text-transform: uppercase;
     }
@@ -308,9 +308,11 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
 
     .microwave-big-value {
         font-size: 120px;
+
         @media (min-width: 640px) {
             font-size: 180px;
         }
+
         font-weight: 900;
         font-style: italic;
         letter-spacing: -0.02em;
@@ -331,17 +333,17 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
 
     .microwave-jitter-value {
         color: var(--microwave-primary);
-        font-family: monospace;
         font-size: 40px;
+
         @media (min-width: 640px) {
             font-size: 60px;
         }
+
         font-weight: 900;
     }
 
     .microwave-jitter-unit {
         color: var(--microwave-text-muted);
-        font-family: monospace;
         font-size: 0.75rem;
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -361,9 +363,11 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
     .microwave-content-grid {
         display: grid;
         grid-template-columns: 1fr;
+
         @media (min-width: 768px) {
             grid-template-columns: 1fr 1fr;
         }
+
         gap: 2rem;
         align-items: flex-end;
     }
@@ -403,7 +407,6 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
         align-items: center;
         gap: 0.5rem;
         font-size: 0.75rem;
-        font-family: monospace;
     }
 
     .microwave-latency-badge svg {
@@ -422,7 +425,6 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
         justify-content: space-between;
         align-items: center;
         font-size: 0.75rem;
-        font-family: monospace;
         color: var(--microwave-text-muted);
         text-transform: uppercase;
         letter-spacing: 0.05em;
@@ -557,7 +559,7 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
             ctx.fill();
         }
 
-        async function playClick(intensity) {
+        async function playClick(_intensity) {
             if (!audioEnabled) return;
             if (!audioCtx)
                 audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -578,19 +580,7 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
             osc.stop(audioCtx.currentTime + 0.05);
         }
 
-        async function scan() {
-            if (!running) return;
-
-            const result = await engine.measurePing();
-            history.push(result.jitter);
-            history.shift();
-
-            if (jitterDisplay) jitterDisplay.textContent = result.jitter.toFixed(1);
-            if (bigValueBg)
-                bigValueBg.textContent = Math.floor(result.jitter).toString().padStart(2, "0");
-            if (latencyVal) latencyVal.textContent = `${Math.floor(result.latency)}ms`;
-
-            const level = MicrowaveEngine.getInterferenceLevel(result.jitter);
+        function updateVerdictDisplay(level: { label: string; description: string; color: string }) {
             if (verdictLabel) verdictLabel.textContent = level.label;
             if (verdictDesc) verdictDesc.textContent = level.description;
 
@@ -617,6 +607,21 @@ import { MicrowaveEngine } from "./logic/MicrowaveEngine";
                 };
                 statusDot.style.backgroundColor = colorValues[level.color] || colorValues.emerald;
             }
+        }
+
+        async function scan() {
+            if (!running) return;
+
+            const result = await engine.measurePing();
+            history.push(result.jitter);
+            history.shift();
+
+            if (jitterDisplay) jitterDisplay.textContent = result.jitter.toFixed(1);
+            if (bigValueBg) bigValueBg.textContent = Math.floor(result.jitter).toString().padStart(2, "0");
+            if (latencyVal) latencyVal.textContent = `${Math.floor(result.latency)}ms`;
+
+            const level = MicrowaveEngine.getInterferenceLevel(result.jitter);
+            updateVerdictDisplay(level);
 
             if (result.jitter > 1) {
                 playClick(result.jitter);

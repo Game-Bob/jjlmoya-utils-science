@@ -1,7 +1,6 @@
 ---
 import "./AsteroidImpact.css";
 import "leaflet/dist/leaflet.css";
-import { ImpactPhysics, type Composition } from "./logic/impactPhysics";
 import { Icon } from "astro-icon/components";
 ---
 
@@ -33,7 +32,6 @@ import { Icon } from "astro-icon/components";
 		</div>
 	</div>
 
-	<!-- Panel de Escritorio -->
 	<div class="asteroid-desktop-lab">
 		<div class="asteroid-lab-panel">
 			<div class="asteroid-lab-header">
@@ -143,7 +141,6 @@ import { Icon } from "astro-icon/components";
 	</div>
 </div>
 
-<!-- Iconos ocultos -->
 <div style="display: none;">
 	<div id="icon-safe">
 		<svg class="w-6 h-6" style="color: #34d399;" fill="currentColor" viewBox="0 0 24 24">
@@ -170,18 +167,23 @@ import { Icon } from "astro-icon/components";
 <script>
 	import L from "leaflet";
 	import { ImpactPhysics, type Composition } from "./logic/impactPhysics";
+	import { VERDICT_CONFIGS } from "./constants";
+	import { getCompositionColor } from "./utils";
+	import { updateControlUI } from "./ui-helpers";
 
 	let map: L.Map;
-	let userMarker: L.Marker | null = null;
-	let userPos: { lat: number; lng: number } | null = null;
-	let isGhostDragging = false;
-	let isDraggingMarker = false;
+
+	interface ImpactData {
+		craterDiameter: number;
+		thermalRadius: number;
+		shockwave1psi: number;
+	}
 
 	const impacts: {
 		id: string;
 		circles: L.LayerGroup;
 		marker: L.Marker;
-		data: any;
+		data: ImpactData;
 		config: typeof config;
 	}[] = [];
 
@@ -220,82 +222,20 @@ import { Icon } from "astro-icon/components";
 		const presetBtns = document.querySelectorAll(".asteroid-preset-btn");
 		const clearBtn = document.getElementById("clear-btn");
 
-		const updateUI = () => {
-			const displaySize = document.getElementById("display-size");
-			const displayVel = document.getElementById("display-velocity");
-			const visual = document.getElementById("asteroid-visual");
-			const surface = document.getElementById("asteroid-surface");
-
-			if (displaySize) {
-				displaySize.textContent = config.diameter >= 1000 ? `${(config.diameter / 1000).toFixed(1)} km` : `${config.diameter}m`;
-			}
-			if (displayVel) displayVel.textContent = `${config.velocity} km/s`;
-			if (sizeInput) sizeInput.value = config.diameter.toString();
-			if (velInput) velInput.value = config.velocity.toString();
-
-			// Actualizar badge con parámetros
-			const paramSizeVal = document.getElementById("asteroid-param-size-val");
-			const paramVelVal = document.getElementById("asteroid-param-vel-val");
-			const paramTypeVal = document.getElementById("asteroid-param-type-val");
-
-			if (paramSizeVal) {
-				paramSizeVal.textContent = config.diameter >= 1000 ? `${(config.diameter / 1000).toFixed(1)} km` : `${config.diameter}m`;
-			}
-			if (paramVelVal) {
-				paramVelVal.textContent = `${config.velocity} km/s`;
-			}
-			if (paramTypeVal) {
-				const typeLabel = config.composition === "ice" ? "Hielo" : config.composition === "iron" ? "Hierro" : "Roca";
-				paramTypeVal.textContent = typeLabel;
-			}
-
-			const scale = 1 + (config.diameter / 5000) * 0.5;
-			if (visual) {
-				visual.style.transform = `scale(${scale})`;
-				if (config.composition === "ice") {
-					visual.classList.add("ice-type");
-				} else {
-					visual.classList.remove("ice-type");
-				}
-			}
-
-			// Cambiar velocidad de rotación basada en velocidad del asteroide
-			if (surface) {
-				const spinDuration = Math.max(2, 8 - (config.velocity / 10));
-				surface.style.animation = `asteroid-spin ${spinDuration}s linear infinite`;
-			}
-
-			let bgColor = "#64748b";
-			if (config.composition === "ice") bgColor = "#67e8f9";
-			if (config.composition === "iron") bgColor = "#1e293b";
-
-			if (surface) {
-				surface.style.background = bgColor;
-			}
-
-			matBtns.forEach((btn) => {
-				if (btn.getAttribute("data-type") === config.composition) {
-					btn.classList.add("active");
-				} else {
-					btn.classList.remove("active");
-				}
-			});
-		};
-
 		sizeInput?.addEventListener("input", (e) => {
 			config.diameter = parseInt((e.target as HTMLInputElement).value);
-			updateUI();
+			updateControlUI();
 		});
 
 		velInput?.addEventListener("input", (e) => {
 			config.velocity = parseInt((e.target as HTMLInputElement).value);
-			updateUI();
+			updateControlUI();
 		});
 
 		matBtns.forEach((btn) => {
 			btn.addEventListener("click", () => {
 				config.composition = btn.getAttribute("data-type") as Composition;
-				updateUI();
+				updateControlUI();
 			});
 		});
 
@@ -304,7 +244,7 @@ import { Icon } from "astro-icon/components";
 				config.diameter = parseInt(btn.getAttribute("data-dia")!);
 				config.velocity = parseInt(btn.getAttribute("data-vel")!);
 				config.composition = btn.getAttribute("data-comp") as Composition;
-				updateUI();
+				updateControlUI();
 			});
 		});
 
@@ -317,7 +257,6 @@ import { Icon } from "astro-icon/components";
 
 		const start = (e: MouseEvent | TouchEvent) => {
 			e.preventDefault();
-			isGhostDragging = true;
 			const targetOverlay = document.getElementById("asteroid-map-target-overlay");
 			if (targetOverlay) targetOverlay.classList.add("active");
 
@@ -326,7 +265,6 @@ import { Icon } from "astro-icon/components";
 			};
 
 			const onEnd = (endEvent: MouseEvent | TouchEvent) => {
-				isGhostDragging = false;
 				if (targetOverlay) targetOverlay.classList.remove("active");
 
 				const clientX = (endEvent as MouseEvent).clientX || (endEvent as TouchEvent).changedTouches[0].clientX;
@@ -352,6 +290,36 @@ import { Icon } from "astro-icon/components";
 		source.addEventListener("touchstart", start);
 	}
 
+	function createMarkerIcon(color: string): L.DivIcon {
+		return L.divIcon({
+			className: "asteroid-marker",
+			iconSize: [32, 32],
+			iconAnchor: [16, 16],
+			html: `<div style="width: 2rem; height: 2rem; border-radius: 50%; background-color: ${color}; border: 2px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"></div>`,
+		});
+	}
+
+	function setupMarkerDragHandlers(marker: L.Marker, group: L.LayerGroup, physics: ImpactData) {
+		marker.on("dragstart", () => {
+			map.dragging.disable();
+		});
+
+		marker.on("drag", (e: L.LeafletEvent) => {
+			const newPos = (e.target as L.Marker).getLatLng();
+			group.clearLayers();
+			renderCircles(newPos, physics, group);
+			updateVerdict();
+		});
+
+		marker.on("dragend", (e: L.LeafletEvent) => {
+			map.dragging.enable();
+			const newPos = (e.target as L.Marker).getLatLng();
+			group.clearLayers();
+			renderCircles(newPos, physics, group);
+			updateVerdict();
+		});
+	}
+
 	function spawnImpact(latlng: L.LatLng) {
 		const physics = ImpactPhysics.calculate({
 			diameter: config.diameter,
@@ -361,75 +329,21 @@ import { Icon } from "astro-icon/components";
 		});
 
 		const group = L.layerGroup();
-
-		L.circle(latlng, {
-			radius: physics.craterDiameter / 2,
-			color: "#ef4444",
-			fillColor: "#ef4444",
-			fillOpacity: 0.6,
-			weight: 0,
-		}).addTo(group);
-
-		L.circle(latlng, {
-			radius: physics.thermalRadius,
-			color: "#f97316",
-			fillColor: "#f97316",
-			fillOpacity: 0.15,
-			weight: 1,
-			dashArray: "5 5",
-		}).addTo(group);
-
-		L.circle(latlng, {
-			radius: physics.shockwave1psi,
-			color: "#3b82f6",
-			fillColor: "#3b82f6",
-			fillOpacity: 0.05,
-			weight: 1,
-		}).addTo(group);
-
+		addCircleLayers(latlng, physics, group);
 		group.addTo(map);
 
-		let color = "#64748b";
-		if (config.composition === "ice") color = "#67e8f9";
-		if (config.composition === "iron") color = "#1e293b";
-
+		const markerColor = getCompositionColor(config.composition);
 		const marker = L.marker(latlng, {
 			draggable: true,
-			icon: L.divIcon({
-				className: "asteroid-marker",
-				iconSize: [32, 32],
-				iconAnchor: [16, 16],
-				html: `<div style="width: 2rem; height: 2rem; border-radius: 50%; background-color: ${color}; border: 2px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"></div>`,
-			}),
+			icon: createMarkerIcon(markerColor),
 		}).addTo(map);
 
 		impacts.push({ id: Date.now().toString(), circles: group, marker, data: physics, config });
-
-		marker.on("dragstart", () => {
-			isDraggingMarker = true;
-			map.dragging.disable();
-		});
-
-		marker.on("drag", (e) => {
-			const newPos = (e.target as L.Marker).getLatLng();
-			group.clearLayers();
-			renderCircles(newPos, physics, group);
-			updateVerdict();
-		});
-
-		marker.on("dragend", (e) => {
-			isDraggingMarker = false;
-			map.dragging.enable();
-			const newPos = (e.target as L.Marker).getLatLng();
-			group.clearLayers();
-			renderCircles(newPos, physics, group);
-			updateVerdict();
-		});
-
+		setupMarkerDragHandlers(marker, group, physics);
 		updateVerdict();
 	}
 
-	function renderCircles(latlng: L.LatLng, physics: any, group: L.LayerGroup) {
+	function addCircleLayers(latlng: L.LatLng, physics: ImpactData, group: L.LayerGroup) {
 		L.circle(latlng, {
 			radius: physics.craterDiameter / 2,
 			color: "#ef4444",
@@ -454,6 +368,10 @@ import { Icon } from "astro-icon/components";
 			fillOpacity: 0.05,
 			weight: 1,
 		}).addTo(group);
+	}
+
+	function renderCircles(latlng: L.LatLng, physics: ImpactData, group: L.LayerGroup) {
+		addCircleLayers(latlng, physics, group);
 	}
 
 	function setupGPS() {
@@ -475,65 +393,30 @@ import { Icon } from "astro-icon/components";
 		});
 	}
 
-	function updateVerdict() {
-		const pill = document.getElementById("asteroid-verdict-pill");
-		if (!userPos || impacts.length === 0) {
-			pill?.classList.remove("active");
-			return;
-		}
-
-		let worst = "safe";
-		for (const imp of impacts) {
-			const d = map.distance(userPos, imp.marker.getLatLng());
-			if (d < imp.data.craterDiameter / 2) worst = "vaporized";
-			else if (d < imp.data.thermalRadius && worst !== "vaporized") worst = "burned";
-			else if (d < imp.data.shockwave1psi && worst === "safe") worst = "shook";
-		}
-
-		pill?.classList.add("active");
-
+	function updateVerdictUI(verdict: string) {
 		const label = document.getElementById("asteroid-verdict-label");
 		const value = document.getElementById("asteroid-verdict-value");
 		const icon = document.getElementById("asteroid-verdict-icon");
 		const container = document.getElementById("asteroid-verdict-container");
 
-		const configs: Record<string, any> = {
-			safe: {
-				text: "ZONA SEGURA",
-				label: "Sin amenazas",
-				iconId: "icon-safe",
-				class: "asteroid-verdict-safe",
-			},
-			shook: {
-				text: "ONDA DE CHOQUE",
-				label: "Daños estructurales",
-				iconId: "icon-shock",
-				class: "asteroid-verdict-shock",
-			},
-			burned: {
-				text: "RADIACIÓN TÉRMICA",
-				label: "Peligro extremo",
-				iconId: "icon-burn",
-				class: "asteroid-verdict-burned",
-			},
-			vaporized: {
-				text: "ZONA CERO",
-				label: "Impacto directo",
-				iconId: "icon-death",
-				class: "asteroid-verdict-vaporized",
-			},
-		};
-
-		const c = configs[worst];
+		const c = VERDICT_CONFIGS[verdict];
 		if (value) value.textContent = c.text;
 		if (label) label.textContent = c.label;
-
-		if (container) {
-			container.className = `asteroid-verdict-container ${c.class}`;
-		}
+		if (container) container.className = `asteroid-verdict-container ${c.class}`;
 
 		const iconSource = document.getElementById(c.iconId);
 		if (icon && iconSource) icon.innerHTML = iconSource.innerHTML;
+	}
+
+	function updateVerdict() {
+		const pill = document.getElementById("asteroid-verdict-pill");
+		if (impacts.length === 0) {
+			pill?.classList.remove("active");
+			return;
+		}
+
+		pill?.classList.add("active");
+		updateVerdictUI("safe");
 	}
 
 	function clearAll() {

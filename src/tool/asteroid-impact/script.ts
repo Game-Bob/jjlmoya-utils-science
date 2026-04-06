@@ -2,6 +2,7 @@ import L from "leaflet";
 import { ImpactPhysics, type Composition, type ImpactResults } from "./logic/impactPhysics";
 import { getCompositionColor } from "./helpers";
 import { getConfig, updateUI } from "./ui";
+import { VERDICT_CONFIGS, DEFAULT_LABELS, type Labels } from "./constants";
 
 let map: L.Map;
 
@@ -15,40 +16,6 @@ interface Impact {
 
 const impacts: Impact[] = [];
 const config = getConfig();
-
-interface VerdictConfig {
-	text: string;
-	label: string;
-	iconId: string;
-	class: string;
-}
-
-const VERDICT_CONFIGS: Record<string, VerdictConfig> = {
-	safe: {
-		text: "ZONA SEGURA",
-		label: "Sin amenazas",
-		iconId: "icon-safe",
-		class: "asteroid-verdict-safe",
-	},
-	shook: {
-		text: "ONDA DE CHOQUE",
-		label: "Daños estructurales",
-		iconId: "icon-shock",
-		class: "asteroid-verdict-shock",
-	},
-	burned: {
-		text: "RADIACIÓN TÉRMICA",
-		label: "Peligro extremo",
-		iconId: "icon-burn",
-		class: "asteroid-verdict-burned",
-	},
-	vaporized: {
-		text: "ZONA CERO",
-		label: "Impacto directo",
-		iconId: "icon-death",
-		class: "asteroid-verdict-vaporized",
-	},
-};
 
 function setupControls() {
 	const sizeInput = document.getElementById("input-size") as HTMLInputElement;
@@ -271,39 +238,7 @@ function init() {
 	});
 }
 
-export interface Labels {
-	searching: string;
-	gpsActive: string;
-	gpsError: string;
-	verdictSafe: string;
-	verdictSafeSub: string;
-	verdictShock: string;
-	verdictShockSub: string;
-	verdictBurned: string;
-	verdictBurnedSub: string;
-	verdictVaporized: string;
-	verdictVaporizedSub: string;
-	rock: string;
-	iron: string;
-	ice: string;
-}
-
-export let labels: Labels = {
-	searching: "Searching...",
-	gpsActive: "GPS Active",
-	gpsError: "GPS Error",
-	verdictSafe: "SAFE",
-	verdictSafeSub: "No threat",
-	verdictShock: "SHOCK",
-	verdictShockSub: "Damage",
-	verdictBurned: "BURNED",
-	verdictBurnedSub: "Extreme",
-	verdictVaporized: "ZERO",
-	verdictVaporizedSub: "Vaporized",
-	rock: "Rock",
-	iron: "Iron",
-	ice: "Ice",
-};
+export let labels: Labels = DEFAULT_LABELS;
 
 export function setLabels(newLabels: Partial<Labels>) {
 	labels = { ...labels, ...newLabels };
