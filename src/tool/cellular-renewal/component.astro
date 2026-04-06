@@ -1,29 +1,15 @@
 ---
-interface Props {
-  ui: {
-    biologicalTimeline: string;
-    ageUnit: string;
-    matterNewPercent: string;
-    atomicRenewal: string;
-    skinAndBlood: string;
-    boneRemodeling: string;
-    organicMatrix: string;
-    perennialCells: string;
-    disclaimerText: string;
-  };
-}
-
-const { ui } = Astro.props;
+import { CellularRenewalEngine } from "./logic/CellularRenewalEngine";
 ---
 
 <div class="cellular-app" id="cellular-app">
   <div class="cellular-card">
     <div class="input-section">
       <div class="input-group">
-        <div class="input-label">{ui.biologicalTimeline}</div>
+        <div class="input-label">Cronología Biológica</div>
         <div class="age-display">
           <span id="ageDisplay">25</span>
-          <span class="age-unit">{ui.ageUnit}</span>
+          <span class="age-unit">años de evolución</span>
         </div>
         <input
           type="range"
@@ -32,25 +18,25 @@ const { ui } = Astro.props;
           max="105"
           step="1"
           value="25"
-          aria-label="Age"
+          aria-label="Edad"
         />
       </div>
     </div>
 
     <div class="results-grid">
       <div class="main-stat">
-        <span class="main-stat-label">{ui.matterNewPercent}</span>
+        <span class="main-stat-label">Tu materia es nueva en un</span>
         <div class="main-stat-value">
           <span id="newStatVal">93</span>
           <span class="percent-sign">%</span>
         </div>
-        <div class="main-stat-sublabel">{ui.atomicRenewal}</div>
+        <div class="main-stat-sublabel">Renovación Atómica</div>
       </div>
 
       <div class="tissue-list">
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">{ui.skinAndBlood}</span>
+            <span class="tissue-name">Epidermis y Sangre</span>
             <span class="tissue-percentage" id="skinVal">100%</span>
           </div>
           <div class="bar-container">
@@ -60,7 +46,7 @@ const { ui } = Astro.props;
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">{ui.boneRemodeling}</span>
+            <span class="tissue-name">Remodelación Ósea</span>
             <span class="tissue-percentage" id="boneVal">85%</span>
           </div>
           <div class="bar-container">
@@ -70,7 +56,7 @@ const { ui } = Astro.props;
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">{ui.organicMatrix}</span>
+            <span class="tissue-name">Matriz Orgánica</span>
             <span class="tissue-percentage" id="organVal">60%</span>
           </div>
           <div class="bar-container">
@@ -80,7 +66,7 @@ const { ui } = Astro.props;
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">{ui.perennialCells}</span>
+            <span class="tissue-name">Células Perennes</span>
             <span class="tissue-percentage" id="brainVal">12%</span>
           </div>
           <div class="bar-container">
@@ -91,7 +77,7 @@ const { ui } = Astro.props;
     </div>
 
     <p class="disclaimer">
-      {ui.disclaimerText}
+      Los cálculos se basan en la vida media celular según estudios isotópicos. Mientras que la sangre y la piel se renuevan en semanas, las proteínas del cristalino y gran parte de tu corteza cerebral permanecen desde el desarrollo embrionario. Físicamente, eres una estructura dinámica en flujo constante.
     </p>
   </div>
 </div>
@@ -102,7 +88,7 @@ const { ui } = Astro.props;
     --cell-secondary: #8b5cf6;
     --cell-text: #0f172a;
     --cell-text-muted: #475569;
-    --cell-bg: #fff;
+    --cell-bg: #ffffff;
     --cell-bg-secondary: #f8fafc;
     --cell-bg-tertiary: #f1f5f9;
     --cell-border: #e2e8f0;
@@ -112,7 +98,7 @@ const { ui } = Astro.props;
   .theme-dark {
     --cell-primary: #ff6b7a;
     --cell-secondary: #a78bfa;
-    --cell-text: #fff;
+    --cell-text: #ffffff;
     --cell-text-muted: #a0aec0;
     --cell-bg: #0f172a;
     --cell-bg-secondary: #1c1f2e;
@@ -379,13 +365,7 @@ const { ui } = Astro.props;
   const brainVal = document.getElementById("brainVal");
   const brainBar = document.getElementById("brainBar");
 
-  function updateTissue(label: HTMLElement | null, bar: HTMLElement | null, percentage: number) {
-    if (label) label.textContent = `${percentage}%`;
-    if (bar) bar.style.width = `${percentage}%`;
-  }
-
   function update() {
-    if (!ageInput) return;
     const age = parseInt(ageInput.value);
     if (ageDisplay) ageDisplay.textContent = age.toString();
 
@@ -393,10 +373,17 @@ const { ui } = Astro.props;
 
     if (newStatVal) newStatVal.textContent = result.total.toString();
 
-    updateTissue(skinVal, skinBar, result.skin);
-    updateTissue(boneVal, boneBar, result.bone);
-    updateTissue(organVal, organBar, result.organ);
-    updateTissue(brainVal, brainBar, result.brain);
+    if (skinVal) skinVal.textContent = `${result.skin}%`;
+    if (skinBar) skinBar.style.width = `${result.skin}%`;
+
+    if (boneVal) boneVal.textContent = `${result.bone}%`;
+    if (boneBar) boneBar.style.width = `${result.bone}%`;
+
+    if (organVal) organVal.textContent = `${result.organ}%`;
+    if (organBar) organBar.style.width = `${result.organ}%`;
+
+    if (brainVal) brainVal.textContent = `${result.brain}%`;
+    if (brainBar) brainBar.style.width = `${result.brain}%`;
   }
 
   ageInput?.addEventListener("input", update);
