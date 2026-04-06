@@ -1,0 +1,644 @@
+---
+import { Icon } from "astro-icon/components";
+import { MicrowaveEngine } from "./logic/MicrowaveEngine";
+---
+
+<div class="microwave-detector-container" id="microwave-detector-root">
+    <div class="microwave-modal" id="initial-modal">
+        <div class="microwave-modal-content">
+            <div class="microwave-modal-icon">
+                <Icon name="mdi:wifi-alert" />
+            </div>
+            <h2>Requisito de Física</h2>
+            <p>
+                Este detector utiliza la interferencia en la banda de <strong>2.4GHz</strong> (la frecuencia de
+                los microondas).
+                <br /><br />
+                Para que funcione, asegúrate de estar conectado a una red <strong>WiFi 2.4GHz</strong> (no 5GHz/6GHz)
+                o usa tu teléfono cerca del aparato.
+            </p>
+            <button id="start-btn" class="microwave-btn-start">
+                Entendido, Iniciar Escaneo
+            </button>
+        </div>
+    </div>
+
+    <div class="microwave-detector-panel">
+        <div class="microwave-header">
+            <div>
+                <span class="microwave-label">RF Interference Monitor</span>
+                <h3 class="microwave-title">MW-LEAK DETECTOR v2.0</h3>
+            </div>
+            <div class="microwave-status-badge">
+                <div id="status-dot" class="microwave-status-dot"></div>
+                <span id="status-text" class="microwave-status-text">Estático</span>
+            </div>
+        </div>
+
+        <div class="microwave-canvas-container">
+            <canvas id="interference-canvas"></canvas>
+            <div class="microwave-canvas-overlay">
+                <div id="big-value-bg" class="microwave-big-value">00</div>
+                <div class="microwave-jitter-display">
+                    <span id="jitter-value" class="microwave-jitter-value">0.0</span>
+                    <span class="microwave-jitter-unit">ms / jitter</span>
+                </div>
+            </div>
+            <div class="microwave-canvas-grid"></div>
+        </div>
+
+        <div class="microwave-content-grid">
+            <div>
+                <div id="verdict-container" class="microwave-verdict">
+                    <h4 id="verdict-label" class="microwave-verdict-label">Sistema Listado</h4>
+                    <p id="verdict-description" class="microwave-verdict-desc">
+                        Conecta para iniciar el análisis térmico de interferencia.
+                    </p>
+                </div>
+                <div class="microwave-latency-info">
+                    <div class="microwave-latency-badge">
+                        <Icon name="mdi:pulse" />
+                        LAT: <span id="latency-val">0ms</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="microwave-audio-section">
+                <div class="microwave-audio-label">
+                    <span>Audio Feedback</span>
+                    <span id="audio-status">ON</span>
+                </div>
+                <button id="toggle-audio-btn" class="microwave-btn-audio">
+                    <Icon name="mdi:volume-high" />
+                    MUTE / UNMUTE
+                </button>
+            </div>
+        </div>
+
+        <div class="microwave-scanline"></div>
+    </div>
+</div>
+
+<style is:inline define:vars={{}}>
+    :root {
+        --microwave-primary: #e11d48;
+        --microwave-text: #0f172a;
+        --microwave-text-muted: #64748b;
+        --microwave-bg: #ffffff;
+        --microwave-bg-secondary: #fafbfc;
+        --microwave-bg-tertiary: #f1f5f9;
+        --microwave-border: #e2e8f0;
+        --microwave-border-light: #f1f5f9;
+        --microwave-badge-bg: rgba(255, 255, 255, 0.9);
+        --microwave-panel-shadow: rgba(0, 0, 0, 0.05);
+        --microwave-modal-backdrop: rgba(255, 255, 255, 0.98);
+        --microwave-modal-icon-bg: var(--microwave-bg-tertiary);
+        --microwave-emerald: #10b981;
+        --microwave-yellow: #eab308;
+        --microwave-orange: #f97316;
+        --microwave-red: #dc2626;
+        --microwave-indigo: #4f46e5;
+    }
+
+    .theme-dark {
+        --microwave-text: #ffffff;
+        --microwave-text-muted: #94a3b8;
+        --microwave-bg: #000000;
+        --microwave-bg-secondary: #0f172a;
+        --microwave-bg-tertiary: #1e293b;
+        --microwave-border: #1e293b;
+        --microwave-border-light: #334155;
+        --microwave-badge-bg: rgba(15, 23, 42, 0.5);
+        --microwave-panel-shadow: rgba(0, 0, 0, 0.3);
+        --microwave-modal-backdrop: rgba(15, 23, 42, 0.95);
+        --microwave-modal-icon-bg: var(--microwave-bg-tertiary);
+    }
+
+    .microwave-detector-container {
+        max-width: 56rem;
+        margin: 0 auto;
+        padding: 1rem;
+        @media (min-width: 640px) {
+            padding: 2rem;
+        }
+        position: relative;
+    }
+
+    .microwave-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        background-color: var(--microwave-modal-backdrop);
+        backdrop-filter: blur(12px);
+    }
+
+    .microwave-modal-content {
+        background-color: var(--microwave-bg);
+        border: 1px solid var(--microwave-border);
+        border-radius: 1.5rem;
+        padding: 2rem;
+        max-width: 28rem;
+        width: 100%;
+        text-align: center;
+        animation: zoomIn 0.3s ease-out;
+        box-shadow: 0 20px 25px -5px var(--microwave-panel-shadow);
+    }
+
+    .microwave-modal-icon {
+        background-color: var(--microwave-modal-icon-bg);
+        width: 5rem;
+        height: 5rem;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+    }
+
+    .microwave-modal-icon svg {
+        width: 3rem;
+        height: 3rem;
+        color: var(--microwave-primary);
+    }
+
+    .microwave-modal-content h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--microwave-text);
+        margin-bottom: 1rem;
+    }
+
+    .microwave-modal-content p {
+        color: var(--microwave-text-muted);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .microwave-btn-start {
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--microwave-indigo);
+        color: white;
+        border: none;
+        border-radius: 0.75rem;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s, box-shadow 0.2s;
+        box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+    }
+
+    .microwave-btn-start:hover {
+        background-color: #4338ca;
+        opacity: 0.9;
+    }
+
+    .microwave-btn-start:active {
+        transform: scale(0.95);
+    }
+
+    .microwave-modal.hidden {
+        display: none;
+    }
+
+    .microwave-detector-panel {
+        background-color: var(--microwave-bg);
+        border: 1px solid var(--microwave-border);
+        border-radius: 2.5rem;
+        box-shadow: 0 20px 25px -5px var(--microwave-panel-shadow);
+        overflow: hidden;
+        padding: 1.5rem;
+        position: relative;
+        @media (min-width: 640px) {
+            padding: 2.5rem;
+        }
+    }
+
+    .microwave-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .microwave-label {
+        color: var(--microwave-primary);
+        font-family: monospace;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .microwave-title {
+        color: var(--microwave-text);
+        font-size: 1.875rem;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -0.02em;
+    }
+
+    .microwave-status-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--microwave-badge-bg);
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        border: 1px solid var(--microwave-border);
+    }
+
+    .microwave-status-dot {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        background-color: var(--microwave-secondary);
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .microwave-status-text {
+        color: var(--microwave-text-muted);
+        font-family: monospace;
+        font-size: 0.625rem;
+        text-transform: uppercase;
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    .microwave-canvas-container {
+        position: relative;
+        aspect-ratio: 2.3333;
+        background-color: var(--microwave-bg-secondary);
+        border: 1px solid var(--microwave-border);
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    #interference-canvas {
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        display: block;
+    }
+
+    .microwave-canvas-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+    }
+
+    .microwave-big-value {
+        font-size: 120px;
+        @media (min-width: 640px) {
+            font-size: 180px;
+        }
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -0.02em;
+        color: white;
+        opacity: 0.05;
+        user-select: none;
+        line-height: 1;
+    }
+
+    .microwave-jitter-display {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .microwave-jitter-value {
+        color: var(--microwave-primary);
+        font-family: monospace;
+        font-size: 40px;
+        @media (min-width: 640px) {
+            font-size: 60px;
+        }
+        font-weight: 900;
+    }
+
+    .microwave-jitter-unit {
+        color: var(--microwave-text-muted);
+        font-family: monospace;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-top: -0.625rem;
+    }
+
+    .microwave-canvas-grid {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 10;
+        opacity: 0.2;
+        background-image: linear-gradient(var(--microwave-border-light) 1px, transparent 1px), linear-gradient(90deg, var(--microwave-border-light) 1px, transparent 1px);
+        background-size: 40px 40px;
+    }
+
+    .microwave-content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        gap: 2rem;
+        align-items: flex-end;
+    }
+
+    .microwave-verdict {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        border: 1px solid var(--microwave-border);
+        background-color: var(--microwave-bg-secondary);
+        transition: all 0.3s;
+    }
+
+    .microwave-verdict-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--microwave-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.5rem;
+    }
+
+    .microwave-verdict-desc {
+        color: var(--microwave-text);
+        font-weight: 500;
+    }
+
+    .microwave-latency-info {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--microwave-text-muted);
+    }
+
+    .microwave-latency-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.75rem;
+        font-family: monospace;
+    }
+
+    .microwave-latency-badge svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .microwave-audio-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .microwave-audio-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.75rem;
+        font-family: monospace;
+        color: var(--microwave-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        padding: 0 0.5rem;
+    }
+
+    .microwave-btn-audio {
+        height: 3rem;
+        border-radius: 0.75rem;
+        background-color: var(--microwave-bg-tertiary);
+        color: var(--microwave-text-muted);
+        border: 1px solid var(--microwave-border);
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+    }
+
+    .microwave-btn-audio:hover {
+        background-color: var(--microwave-border-light);
+    }
+
+    .microwave-btn-audio svg {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .microwave-scanline {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 20;
+        opacity: 0.03;
+        overflow: hidden;
+        border-radius: 2.5rem;
+    }
+
+    .microwave-scanline::before {
+        content: '';
+        position: absolute;
+        height: 4px;
+        background-color: white;
+        width: 100%;
+        animation: scanline 4s linear infinite;
+    }
+
+    @keyframes scanline {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(1000%);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            opacity: 0;
+            transform: scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+</style>
+
+<script>
+    import { MicrowaveEngine } from './logic/MicrowaveEngine';
+
+    const root = document.getElementById("microwave-detector-root");
+    if (root) {
+        const startBtn = document.getElementById("start-btn");
+        const modal = document.getElementById("initial-modal");
+        const canvas = document.getElementById("interference-canvas");
+        const ctx = canvas?.getContext("2d");
+
+        const jitterDisplay = document.getElementById("jitter-value");
+        const bigValueBg = document.getElementById("big-value-bg");
+        const latencyVal = document.getElementById("latency-val");
+        const verdictLabel = document.getElementById("verdict-label");
+        const verdictDesc = document.getElementById("verdict-description");
+        const verdictContainer = document.getElementById("verdict-container");
+        const statusDot = document.getElementById("status-dot");
+        const statusText = document.getElementById("status-text");
+        const toggleAudioBtn = document.getElementById("toggle-audio-btn");
+
+        const engine = new MicrowaveEngine();
+        let running = false;
+        let audioEnabled = true;
+        let audioCtx = null;
+
+        const history = new Array(60).fill(0);
+
+        function resizeCanvas() {
+            if (!canvas) return;
+            canvas.width = canvas.clientWidth;
+            canvas.height = canvas.clientHeight;
+        }
+
+        function drawGraph() {
+            if (!ctx || !canvas) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            ctx.beginPath();
+            ctx.strokeStyle = "#4f46e5";
+            ctx.lineWidth = 3;
+            ctx.lineJoin = "round";
+
+            const step = canvas.width / (history.length - 1);
+            const maxHistory = Math.max(...history, 50);
+
+            history.forEach((val, i) => {
+                const x = i * step;
+                const y = canvas.height - (val / maxHistory) * canvas.height * 0.8 - 20;
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+
+            const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, "rgba(79, 70, 229, 0.2)");
+            gradient.addColorStop(1, "transparent");
+            ctx.lineTo(canvas.width, canvas.height);
+            ctx.lineTo(0, canvas.height);
+            ctx.fillStyle = gradient;
+            ctx.fill();
+        }
+
+        async function playClick(intensity) {
+            if (!audioEnabled) return;
+            if (!audioCtx)
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = "square";
+            osc.frequency.setValueAtTime(40 + Math.random() * 20, audioCtx.currentTime);
+
+            gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.05);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.05);
+        }
+
+        async function scan() {
+            if (!running) return;
+
+            const result = await engine.measurePing();
+            history.push(result.jitter);
+            history.shift();
+
+            if (jitterDisplay) jitterDisplay.textContent = result.jitter.toFixed(1);
+            if (bigValueBg)
+                bigValueBg.textContent = Math.floor(result.jitter).toString().padStart(2, "0");
+            if (latencyVal) latencyVal.textContent = `${Math.floor(result.latency)}ms`;
+
+            const level = MicrowaveEngine.getInterferenceLevel(result.jitter);
+            if (verdictLabel) verdictLabel.textContent = level.label;
+            if (verdictDesc) verdictDesc.textContent = level.description;
+
+            const colorMap = {
+                emerald: { bg: "rgba(16, 185, 129, 0.1)", border: "rgba(16, 185, 129, 0.3)", text: "#10b981" },
+                yellow: { bg: "rgba(234, 179, 8, 0.1)", border: "rgba(234, 179, 8, 0.3)", text: "#eab308" },
+                orange: { bg: "rgba(249, 115, 22, 0.1)", border: "rgba(249, 115, 22, 0.3)", text: "#f97316" },
+                red: { bg: "rgba(220, 38, 38, 0.2)", border: "rgba(220, 38, 38, 0.5)", text: "#dc2626" },
+            };
+
+            if (verdictContainer) {
+                const colors = colorMap[level.color] || colorMap.emerald;
+                verdictContainer.style.backgroundColor = colors.bg;
+                verdictContainer.style.borderColor = colors.border;
+                verdictContainer.style.color = colors.text;
+            }
+
+            if (statusDot) {
+                const colorValues = {
+                    emerald: "#10b981",
+                    yellow: "#eab308",
+                    orange: "#f97316",
+                    red: "#dc2626",
+                };
+                statusDot.style.backgroundColor = colorValues[level.color] || colorValues.emerald;
+            }
+
+            if (result.jitter > 1) {
+                playClick(result.jitter);
+            }
+
+            drawGraph();
+            setTimeout(scan, 200 + Math.random() * 100);
+        }
+
+        startBtn?.addEventListener("click", () => {
+            if (modal) modal.classList.add("hidden");
+            running = true;
+            resizeCanvas();
+            if (statusText) statusText.textContent = "Scanning...";
+            scan();
+        });
+
+        toggleAudioBtn?.addEventListener("click", () => {
+            audioEnabled = !audioEnabled;
+            const statusLabel = document.getElementById("audio-status");
+            if (statusLabel) statusLabel.textContent = audioEnabled ? "ON" : "OFF";
+        });
+
+        window.addEventListener("resize", resizeCanvas);
+    }
+</script>
