@@ -25,6 +25,18 @@ export const content: ToolLocaleContent = {
     highLeak: 'Alta',
     pingLabel: 'Latencia (ms)',
     packetLossLabel: 'Pérdida de Paquetes (%)',
+    rfInterferenceMonitor: 'Monitor de Interferencias RF',
+    mwLeakDetector: 'DETECTOR DE FUGAS MW v2.0',
+    jitterUnit: 'ms / interferencia',
+    systemReady: 'Sistema Listo',
+    physicalRequirement: 'Requisito de Física',
+    physicalDesc: 'Este detector utiliza la interferencia en la banda de 2.4GHz (la frecuencia de los microondas). Para que funcione, asegúrate de estar conectado a una red WiFi 2.4GHz (no 5GHz/6GHz) o usa tu teléfono cerca del aparato.',
+    understandStart: 'Entendido, Iniciar Escaneo',
+    rfInterferenceTitle: 'Monitor de Interferencias',
+    connectToAnalyze: 'Conecta para iniciar el análisis térmico de interferencia.',
+    audioFeedback: 'Audio Feedback',
+    muteUnmute: 'MUTEADO / ACTIVADO',
+    static: 'Estático',
   },
   seo: [
     {

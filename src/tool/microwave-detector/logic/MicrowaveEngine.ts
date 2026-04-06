@@ -1,40 +1,55 @@
+import {
+    INTERFERENCE_LEVELS_ES,
+    INTERFERENCE_LEVELS_EN,
+    INTERFERENCE_LEVELS_FR,
+    CRITICAL_INTERFERENCE_ES,
+    CRITICAL_INTERFERENCE_EN,
+    CRITICAL_INTERFERENCE_FR,
+    type InterferenceLevel,
+} from '../constants';
+
 export interface PingResult {
     latency: number;
     jitter: number;
     timestamp: number;
 }
 
-interface InterferenceLevel {
-    threshold: number;
-    label: string;
-    color: string;
-    description: string;
-}
-
 export class MicrowaveEngine {
     private lastPings: number[] = [];
     private maxHistory = 100;
+    private lang: string = 'es';
 
-    private static readonly INTERFERENCE_LEVELS: InterferenceLevel[] = [
-        {
-            threshold: 2,
-            label: "Señal Limpia",
-            color: "emerald",
-            description: "Tu conexión es estable. No hay interferencias electromagnéticas significativas detectadas.",
-        },
-        {
-            threshold: 10,
-            label: "Interferencia Leve",
-            color: "yellow",
-            description: "Se detecta algo de ruido en la señal. Podría ser actividad normal o dispositivos Bluetooth cercanos.",
-        },
-        {
-            threshold: 30,
-            label: "Interferencia Alta",
-            color: "orange",
-            description: "Ruido electromagnético considerable detectado. Si el microondas está encendido, es posible que tenga fugas leves.",
-        },
-    ];
+    constructor(lang: string = 'es') {
+        this.lang = lang;
+    }
+
+    setLanguage(lang: string) {
+        this.lang = lang;
+    }
+
+    private getInterferenceLevels(): InterferenceLevel[] {
+        switch (this.lang) {
+            case 'en':
+                return INTERFERENCE_LEVELS_EN;
+            case 'fr':
+                return INTERFERENCE_LEVELS_FR;
+            case 'es':
+            default:
+                return INTERFERENCE_LEVELS_ES;
+        }
+    }
+
+    private getCriticalInterference() {
+        switch (this.lang) {
+            case 'en':
+                return CRITICAL_INTERFERENCE_EN;
+            case 'fr':
+                return CRITICAL_INTERFERENCE_FR;
+            case 'es':
+            default:
+                return CRITICAL_INTERFERENCE_ES;
+        }
+    }
 
     async measurePing(): Promise<PingResult> {
         const start = performance.now();
@@ -71,19 +86,16 @@ export class MicrowaveEngine {
         return diffSum / (this.lastPings.length - 1);
     }
 
-    static getInterferenceLevel(jitter: number): {
+    getInterferenceLevel(jitter: number): {
         label: string;
         color: string;
         description: string;
     } {
-        const level = this.INTERFERENCE_LEVELS.find((l) => jitter < l.threshold);
+        const levels = this.getInterferenceLevels();
+        const level = levels.find((l) => jitter < l.threshold);
         if (level) {
             return { label: level.label, color: level.color, description: level.description };
         }
-        return {
-            label: "FUGA CRÍTICA / RUIDO EXTREMO",
-            color: "red",
-            description: "Inestabilidad masiva en la señal. Si estás junto al microondas, apágalo: la protección RF podría estar degradada.",
-        };
+        return this.getCriticalInterference();
     }
 }

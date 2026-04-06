@@ -1,20 +1,25 @@
 ---
+interface Props {
+  ui: Record<string, string>;
+}
+
+const { ui } = Astro.props;
 ---
 
 <div class="simulation-app" id="simulation-app">
   <div class="simulation-header">
-    <h2>Analizador de Realidad Cuántica</h2>
+    <h2>{ui.probabilityTitle}</h2>
   </div>
 
   <div class="simulation-main">
     <div class="parameter-card">
       <div class="label-row">
         <div class="label-info">
-          <label for="technological-progress">Progreso Tecnológico (fp)</label>
+          <label for="technological-progress">{ui.fpSub} ({ui.fpLabel})</label>
         </div>
         <div class="value-display" id="fp-value">50%</div>
       </div>
-      <small class="helper-text">Probabilidad de que la humanidad alcance la capacidad técnica para simular universos con conciencia.</small>
+      <small class="helper-text">{ui.fpDescription}</small>
       <div class="control-row">
         <div class="slider-container">
           <input type="range" id="technological-progress" min="1" max="100" value="50" />
@@ -25,11 +30,11 @@
     <div class="parameter-card">
       <div class="label-row">
         <div class="label-info">
-          <label for="societal-survival">Tasa de Supervivencia (fl)</label>
+          <label for="societal-survival">{ui.flSub} ({ui.flLabel})</label>
         </div>
         <div class="value-display" id="fl-value">50%</div>
       </div>
-      <small class="helper-text">Probabilidad de evitar el colapso (extinción, guerras) antes de alcanzar el nivel post-humano.</small>
+      <small class="helper-text">{ui.flDescription}</small>
       <div class="control-row">
         <div class="slider-container">
           <input type="range" id="societal-survival" min="1" max="100" value="50" />
@@ -40,11 +45,11 @@
     <div class="parameter-card">
       <div class="label-row">
         <div class="label-info">
-          <label for="simulation-interest">Interés en Simular (fi)</label>
+          <label for="simulation-interest">{ui.fiSub} ({ui.fiLabel})</label>
         </div>
         <div class="value-display" id="fi-value">20%</div>
       </div>
-      <small class="helper-text">Porcentaje de sociedades avanzadas que deciden crear simulaciones de sus antepasados.</small>
+      <small class="helper-text">{ui.fiDescription}</small>
       <div class="control-row">
         <div class="slider-container">
           <input type="range" id="simulation-interest" min="1" max="100" value="20" />
@@ -55,11 +60,11 @@
     <div class="parameter-card">
       <div class="label-row">
         <div class="label-info">
-          <label for="ancestral-sims">Escala de Simulación (N)</label>
+          <label for="ancestral-sims">{ui.nSub} ({ui.nLabel})</label>
         </div>
         <div class="value-display" id="n-value">1,000</div>
       </div>
-      <small class="helper-text">Número de mundos simulados que cada civilización avanzada suele ejecutar simultáneamente.</small>
+      <small class="helper-text">{ui.nDescription}</small>
       <div class="control-row">
         <div class="slider-container">
           <input type="range" id="ancestral-sims" min="1" max="10000" value="1000" />
@@ -74,9 +79,9 @@
     </div>
 
     <div class="verdict-box">
-      <div class="verdict-title" id="verdict">Probabilidad de Simulación</div>
+      <div class="verdict-title" id="verdict">{ui.probabilityTitle}</div>
       <div class="verdict-detail" id="verdict-detail">
-        Los datos sugieren que es extremadamente probable que tu conciencia sea un proceso de software.
+        {ui.verdictDetail}
       </div>
     </div>
   </div>
@@ -323,6 +328,9 @@
     throw new Error("Required simulation elements not found");
   }
 
+  const currentLang = document.documentElement.lang || 'es';
+  const engine = new SimulationEngine(currentLang);
+
   const calculateProbability = () => {
     const fp = parseFloat(fpInput!.value) / 100;
     const fl = parseFloat(flInput!.value) / 100;
@@ -334,7 +342,7 @@
     fiText!.textContent = `${Math.round(fi * 100)}%`;
     nText!.textContent = n.toLocaleString();
 
-    const result = SimulationEngine.calculate(fp, fl, fi, n);
+    const result = engine.calculate(fp, fl, fi, n);
     probDisplay!.textContent = `${result.probability.toFixed(2)}%`;
     verdictLabel!.textContent = result.verdict;
     verdictDetail!.textContent = result.detail;

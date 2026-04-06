@@ -25,6 +25,18 @@ export const content: ToolLocaleContent = {
     highLeak: 'High',
     pingLabel: 'Latency (ms)',
     packetLossLabel: 'Packet Loss (%)',
+    rfInterferenceMonitor: 'RF Interference Monitor',
+    mwLeakDetector: 'MW LEAK DETECTOR v2.0',
+    jitterUnit: 'ms / jitter',
+    systemReady: 'System Ready',
+    physicalRequirement: 'Physical Requirement',
+    physicalDesc: 'This detector uses interference in the 2.4GHz band (the microwave frequency). To work properly, make sure you are connected to a 2.4GHz WiFi network (not 5GHz/6GHz) or use your phone near the device.',
+    understandStart: 'Understood, Start Scan',
+    rfInterferenceTitle: 'Interference Monitor',
+    connectToAnalyze: 'Connect to start thermal interference analysis.',
+    audioFeedback: 'Audio Feedback',
+    muteUnmute: 'MUTE / UNMUTE',
+    static: 'Static',
   },
   seo: [
     {

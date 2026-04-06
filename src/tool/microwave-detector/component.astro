@@ -1,24 +1,24 @@
 ---
 import "./MicrowaveDetector.css";
 import { Icon } from "astro-icon/components";
+
+interface Props {
+  ui: Record<string, string>;
+}
+
+const { ui } = Astro.props;
 ---
 
-<div class="microwave-detector-container" id="microwave-detector-root">
+<div class="microwave-detector-container" id="microwave-detector-root" data-detecting-interference={ui.detectingInterference}>
     <div class="microwave-modal" id="initial-modal">
         <div class="microwave-modal-content">
             <div class="microwave-modal-icon">
                 <Icon name="mdi:wifi-alert" />
             </div>
-            <h2>Requisito de Física</h2>
-            <p>
-                Este detector utiliza la interferencia en la banda de <strong>2.4GHz</strong> (la frecuencia de
-                los microondas).
-                <br /><br />
-                Para que funcione, asegúrate de estar conectado a una red <strong>WiFi 2.4GHz</strong> (no 5GHz/6GHz)
-                o usa tu teléfono cerca del aparato.
-            </p>
+            <h2>{ui.physicalRequirement}</h2>
+            <p set:html={ui.physicalDesc}></p>
             <button id="start-btn" class="microwave-btn-start">
-                Entendido, Iniciar Escaneo
+                {ui.understandStart}
             </button>
         </div>
     </div>
@@ -26,12 +26,12 @@ import { Icon } from "astro-icon/components";
     <div class="microwave-detector-panel">
         <div class="microwave-header">
             <div>
-                <span class="microwave-label">RF Interference Monitor</span>
-                <h3 class="microwave-title">MW-LEAK DETECTOR v2.0</h3>
+                <span class="microwave-label">{ui.rfInterferenceMonitor}</span>
+                <h3 class="microwave-title">{ui.mwLeakDetector}</h3>
             </div>
             <div class="microwave-status-badge">
                 <div id="status-dot" class="microwave-status-dot"></div>
-                <span id="status-text" class="microwave-status-text">Estático</span>
+                <span id="status-text" class="microwave-status-text">{ui.static}</span>
             </div>
         </div>
 
@@ -41,7 +41,7 @@ import { Icon } from "astro-icon/components";
                 <div id="big-value-bg" class="microwave-big-value">00</div>
                 <div class="microwave-jitter-display">
                     <span id="jitter-value" class="microwave-jitter-value">0.0</span>
-                    <span class="microwave-jitter-unit">ms / jitter</span>
+                    <span class="microwave-jitter-unit">{ui.jitterUnit}</span>
                 </div>
             </div>
             <div class="microwave-canvas-grid"></div>
@@ -50,9 +50,9 @@ import { Icon } from "astro-icon/components";
         <div class="microwave-content-grid">
             <div>
                 <div id="verdict-container" class="microwave-verdict">
-                    <h4 id="verdict-label" class="microwave-verdict-label">Sistema Listado</h4>
+                    <h4 id="verdict-label" class="microwave-verdict-label">{ui.systemReady}</h4>
                     <p id="verdict-description" class="microwave-verdict-desc">
-                        Conecta para iniciar el análisis térmico de interferencia.
+                        {ui.connectToAnalyze}
                     </p>
                 </div>
                 <div class="microwave-latency-info">
@@ -65,12 +65,12 @@ import { Icon } from "astro-icon/components";
 
             <div class="microwave-audio-section">
                 <div class="microwave-audio-label">
-                    <span>Audio Feedback</span>
+                    <span>{ui.audioFeedback}</span>
                     <span id="audio-status">ON</span>
                 </div>
                 <button id="toggle-audio-btn" class="microwave-btn-audio">
                     <Icon name="mdi:volume-high" />
-                    MUTE / UNMUTE
+                    {ui.muteUnmute}
                 </button>
             </div>
         </div>
@@ -80,6 +80,7 @@ import { Icon } from "astro-icon/components";
 </div>
 
 <style is:inline define:vars={{}}>
+
     :root {
         --microwave-primary: #e11d48;
         --microwave-text: #0f172a;
@@ -517,7 +518,8 @@ import { Icon } from "astro-icon/components";
         const statusText = document.getElementById("status-text");
         const toggleAudioBtn = document.getElementById("toggle-audio-btn");
 
-        const engine = new MicrowaveEngine();
+        const currentLang = document.documentElement.lang || 'es';
+        const engine = new MicrowaveEngine(currentLang);
         let running = false;
         let audioEnabled = true;
         let audioCtx = null;
@@ -620,7 +622,7 @@ import { Icon } from "astro-icon/components";
             if (bigValueBg) bigValueBg.textContent = Math.floor(result.jitter).toString().padStart(2, "0");
             if (latencyVal) latencyVal.textContent = `${Math.floor(result.latency)}ms`;
 
-            const level = MicrowaveEngine.getInterferenceLevel(result.jitter);
+            const level = engine.getInterferenceLevel(result.jitter);
             updateVerdictDisplay(level);
 
             if (result.jitter > 1) {
@@ -631,11 +633,13 @@ import { Icon } from "astro-icon/components";
             setTimeout(scan, 200 + Math.random() * 100);
         }
 
+        const detectingInterferenceText = root?.getAttribute('data-detecting-interference') || 'Detectando interferencias...';
+
         startBtn?.addEventListener("click", () => {
             if (modal) modal.classList.add("hidden");
             running = true;
             resizeCanvas();
-            if (statusText) statusText.textContent = "Scanning...";
+            if (statusText) statusText.textContent = detectingInterferenceText;
             scan();
         });
 

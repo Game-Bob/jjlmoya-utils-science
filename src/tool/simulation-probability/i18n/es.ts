@@ -25,6 +25,11 @@ export const content: ToolLocaleContent = {
     scenario1: 'Escenario 1: Extinción',
     scenario2: 'Escenario 2: Desinterés',
     scenario3: 'Escenario 3: Estamos Simulados',
+    fpDescription: 'Probabilidad de que la humanidad alcance la capacidad técnica para simular universos con conciencia.',
+    flDescription: 'Probabilidad de evitar el colapso (extinción, guerras) antes de alcanzar el nivel post-humano.',
+    fiDescription: 'Porcentaje de sociedades avanzadas que deciden crear simulaciones de sus antepasados.',
+    nDescription: 'Número de mundos simulados que cada civilización avanzada suele ejecutar simultáneamente.',
+    verdictDetail: 'Los datos sugieren que es extremadamente probable que tu conciencia sea un proceso de software.',
   },
   seo: [
     {

@@ -1,14 +1,19 @@
 ---
+interface Props {
+  ui: Record<string, string>;
+}
+
+const { ui } = Astro.props;
 ---
 
 <div class="cellular-app" id="cellular-app">
   <div class="cellular-card">
     <div class="input-section">
       <div class="input-group">
-        <div class="input-label">Cronología Biológica</div>
+        <div class="input-label">{ui.biologicalTimeline}</div>
         <div class="age-display">
           <span id="ageDisplay">25</span>
-          <span class="age-unit">años de evolución</span>
+          <span class="age-unit">{ui.ageUnit}</span>
         </div>
         <input
           type="range"
@@ -24,18 +29,18 @@
 
     <div class="results-grid">
       <div class="main-stat">
-        <span class="main-stat-label">Tu materia es nueva en un</span>
+        <span class="main-stat-label">{ui.matterNewPercent}</span>
         <div class="main-stat-value">
           <span id="newStatVal">93</span>
           <span class="percent-sign">%</span>
         </div>
-        <div class="main-stat-sublabel">Renovación Atómica</div>
+        <div class="main-stat-sublabel">{ui.atomicRenewal}</div>
       </div>
 
       <div class="tissue-list">
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">Epidermis y Sangre</span>
+            <span class="tissue-name">{ui.skinAndBlood}</span>
             <span class="tissue-percentage" id="skinVal">100%</span>
           </div>
           <div class="bar-container">
@@ -45,7 +50,7 @@
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">Remodelación Ósea</span>
+            <span class="tissue-name">{ui.boneRemodeling}</span>
             <span class="tissue-percentage" id="boneVal">85%</span>
           </div>
           <div class="bar-container">
@@ -55,7 +60,7 @@
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">Matriz Orgánica</span>
+            <span class="tissue-name">{ui.organicMatrix}</span>
             <span class="tissue-percentage" id="organVal">60%</span>
           </div>
           <div class="bar-container">
@@ -65,7 +70,7 @@
 
         <div class="tissue-item">
           <div class="tissue-header">
-            <span class="tissue-name">Células Perennes</span>
+            <span class="tissue-name">{ui.perennialCells}</span>
             <span class="tissue-percentage" id="brainVal">12%</span>
           </div>
           <div class="bar-container">
@@ -76,7 +81,7 @@
     </div>
 
     <p class="disclaimer">
-      Los cálculos se basan en la vida media celular según estudios isotópicos. Mientras que la sangre y la piel se renuevan en semanas, las proteínas del cristalino y gran parte de tu corteza cerebral permanecen desde el desarrollo embrionario. Físicamente, eres una estructura dinámica en flujo constante.
+      {ui.disclaimerText}
     </p>
   </div>
 </div>

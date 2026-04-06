@@ -25,6 +25,11 @@ export const content: ToolLocaleContent = {
     scenario1: 'Scenario 1: Extinction',
     scenario2: 'Scenario 2: Disinterest',
     scenario3: 'Scenario 3: We Are Simulated',
+    fpDescription: 'Probability that humanity achieves the technical capability to simulate universes with consciousness.',
+    flDescription: 'Probability of avoiding collapse (extinction, war) before reaching post-human level.',
+    fiDescription: 'Percentage of advanced civilizations that decide to create simulations of their ancestors.',
+    nDescription: 'Number of simulated worlds that each advanced civilization typically runs simultaneously.',
+    verdictDetail: 'The data suggests it is extremely probable that your consciousness is a software process.',
   },
   seo: [
     {

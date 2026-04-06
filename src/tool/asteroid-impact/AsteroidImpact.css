@@ -29,11 +29,18 @@
 }
 
 .theme-dark {
+  --asteroid-primary: #ff9f43;
+  --asteroid-secondary: #ff6b5b;
+  --asteroid-accent: #94a3b8;
+  --asteroid-success: #2ecc71;
+  --asteroid-warning: #ffa502;
+  --asteroid-danger: #ff4757;
   --asteroid-bg-light: #0f172a;
-  --asteroid-bg-card: #1e293b;
-  --asteroid-bg-modal: rgba(30, 41, 59, 0.9);
-  --asteroid-border-light: #334155;
-  --asteroid-text-primary: #f1f5f9;
+  --asteroid-bg-card: #1a2332;
+  --asteroid-bg-modal: rgba(26, 35, 50, 0.95);
+  --asteroid-border-light: #2d3748;
+  --asteroid-border-dark: #0f172a;
+  --asteroid-text-primary: #f8f9fa;
   --asteroid-text-secondary: #cbd5e1;
 }
 
@@ -133,6 +140,11 @@
   transition: var(--asteroid-transition);
 }
 
+.theme-dark .asteroid-gps-btn {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(100, 116, 139, 0.4);
+}
+
 .asteroid-gps-btn:hover {
   transform: scale(1.05);
 }
@@ -151,8 +163,15 @@
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
 }
 
 /* Píldora de Veredicto */
@@ -172,7 +191,7 @@
 
 .asteroid-verdict-container {
   background: var(--asteroid-bg-dark);
-  color: white;
+  color: var(--asteroid-text-primary);
   padding: 0.75rem 1.25rem;
   border-radius: var(--asteroid-radius-lg);
   box-shadow: var(--asteroid-shadow-xl);
@@ -251,9 +270,9 @@
 }
 
 .asteroid-lab-panel {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--asteroid-bg-modal);
   backdrop-filter: blur(32px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid var(--asteroid-border-light);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border-radius: var(--asteroid-radius-lg);
   padding: 1.25rem;
@@ -263,6 +282,7 @@
   pointer-events: auto;
   height: 100%;
   overflow: hidden;
+  color: var(--asteroid-text-primary);
 }
 
 .asteroid-lab-header {
@@ -270,7 +290,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  border-bottom: 1px solid var(--asteroid-border-light);
   flex-shrink: 0;
 }
 
@@ -288,7 +308,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--asteroid-text-primary);
   box-shadow: 0 4px 8px rgba(var(--asteroid-primary-rgb), 0.3);
 }
 
@@ -375,7 +395,7 @@
 
 .asteroid-drag-tooltip-text {
   background: rgba(0, 0, 0, 0.85);
-  color: white;
+  color: var(--asteroid-text-primary);
   font-size: 0.65rem;
   font-weight: 700;
   padding: 0.4rem 0.75rem;
@@ -432,7 +452,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--asteroid-text-primary);
   z-index: 20;
   opacity: 1;
   transition: var(--asteroid-transition);
@@ -462,8 +482,13 @@
 }
 
 @keyframes asteroid-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .asteroid-params-badge {
@@ -480,7 +505,7 @@
   z-index: 20;
   font-size: 0.7rem;
   font-weight: 700;
-  color: white;
+  color: var(--asteroid-text-primary);
   white-space: nowrap;
   opacity: 1;
   transition: opacity var(--asteroid-transition-slow);
@@ -514,7 +539,7 @@
 .asteroid-preset-btn {
   position: relative;
   overflow: hidden;
-  background: white;
+  background: var(--asteroid-bg-card);
   border: 1px solid var(--asteroid-border-light);
   border-radius: var(--asteroid-radius-md);
   padding: 0.75rem;
@@ -673,22 +698,23 @@
 
 /* Botón Limpiar */
 .asteroid-clear-btn {
-  width: 100%;
-  padding: 0.75rem;
-  border-radius: var(--asteroid-radius-md);
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.35rem;
   background: var(--asteroid-bg-light);
   color: var(--asteroid-text-secondary);
-  font-weight: 700;
-  font-size: 0.75rem;
+  font-weight: 600;
+  font-size: 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   border: none;
   cursor: pointer;
   transition: var(--asteroid-transition);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.2rem;
+  height: auto;
+  min-height: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -753,7 +779,7 @@
   position: absolute;
   top: -0.75rem;
   background: var(--asteroid-bg-dark);
-  color: white;
+  color: var(--asteroid-text-primary);
   font-size: 0.5625rem;
   font-weight: 900;
   letter-spacing: 0.125em;
