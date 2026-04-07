@@ -1,5 +1,4 @@
 ---
-import "leaflet/dist/leaflet.css";
 import { Icon } from "astro-icon/components";
 
 interface Props {
@@ -168,6 +167,7 @@ const { ui } = Astro.props;
 </div>
 
 <script>
+	import "leaflet/dist/leaflet.css";
 	import L from "leaflet";
 	import { ImpactPhysics, type Composition } from "./logic/impactPhysics";
 	import { VERDICT_CONFIGS } from "./constants";
