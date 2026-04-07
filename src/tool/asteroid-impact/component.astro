@@ -439,7 +439,6 @@ const { ui } = Astro.props;
 </script>
 
 <style>
-	/* Simulador de Impacto de Asteroides - Variables CSS */
 	:root,
 	.theme-light {
 		--asteroid-primary: #f97316;
@@ -485,7 +484,6 @@ const { ui } = Astro.props;
 		--asteroid-text-secondary: #cbd5e1;
 	}
 
-	/* Contenedor Principal */
 	.asteroid-app {
 		position: relative;
 		width: 100%;
@@ -500,7 +498,6 @@ const { ui } = Astro.props;
 		touch-action: none;
 	}
 
-	/* Mapa */
 	.asteroid-game-map {
 		position: absolute;
 		inset: 0;
@@ -509,7 +506,6 @@ const { ui } = Astro.props;
 		touch-action: none;
 	}
 
-	/* Overlay de Objetivo */
 	.asteroid-map-target-overlay {
 		position: absolute;
 		inset: 0;
@@ -547,7 +543,6 @@ const { ui } = Astro.props;
 		height: 80%;
 	}
 
-	/* Barra Superior */
 	.asteroid-top-bar {
 		position: absolute;
 		top: 1rem;
@@ -561,7 +556,6 @@ const { ui } = Astro.props;
 		padding: 0 1rem;
 	}
 
-	/* Botón GPS */
 	.asteroid-gps-btn {
 		pointer-events: auto;
 		margin-bottom: 0.5rem;
@@ -614,7 +608,6 @@ const { ui } = Astro.props;
 		}
 	}
 
-	/* Píldora de Veredicto */
 	.asteroid-verdict-pill {
 		max-width: 100%;
 		transform: translateY(-20px);
@@ -690,7 +683,6 @@ const { ui } = Astro.props;
 		color: #f87171;
 	}
 
-	/* Panel de Control Escritorio */
 	.asteroid-desktop-lab {
 		display: none;
 	}
@@ -789,7 +781,6 @@ const { ui } = Astro.props;
 		border-radius: 3px;
 	}
 
-	/* Sección de Arrastre del Asteroide */
 	.asteroid-drag-source {
 		position: relative;
 		cursor: grab;
@@ -969,7 +960,6 @@ const { ui } = Astro.props;
 		color: var(--asteroid-accent);
 	}
 
-	/* Presets */
 	.asteroid-presets {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -1017,7 +1007,6 @@ const { ui } = Astro.props;
 		z-index: 10;
 	}
 
-	/* Controles */
 	.asteroid-control-group {
 		background: var(--asteroid-bg-light);
 		border-radius: var(--asteroid-radius-md);
@@ -1088,7 +1077,6 @@ const { ui } = Astro.props;
 		box-shadow: var(--asteroid-shadow-lg);
 	}
 
-	/* Selectores de Composición */
 	.asteroid-material-buttons {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
@@ -1136,7 +1124,6 @@ const { ui } = Astro.props;
 		text-transform: uppercase;
 	}
 
-	/* Botón Limpiar */
 	.asteroid-clear-btn {
 		padding: 0.25rem 0.35rem;
 		border-radius: 0.35rem;
@@ -1163,7 +1150,6 @@ const { ui } = Astro.props;
 		color: var(--asteroid-danger);
 	}
 
-	/* Panel de Control Móvil */
 	.asteroid-mobile-control {
 		display: flex;
 		align-items: center;
