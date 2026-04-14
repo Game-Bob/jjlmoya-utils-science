@@ -2,7 +2,7 @@ import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug: 'calculateur-probabilite-simulation',
-  title: 'Calculateur de Probabilité de Simulation : Vivez-vous dans un univers virtuel ?',
+  title: 'Calculateur de Probabilité de Simulation : Vivez vous dans un univers virtuel ?',
   description: 'Analysez si notre réalité est une simulation en utilisant l\'argument du trilemme de Nick Bostrom. Calculez la probabilité existentielle avec 4 paramètres clés.',
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',

@@ -2,7 +2,7 @@ import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug: 'detecteur-fuites-micro-ondes',
-  title: 'Détecteur de Fuites Micro-ondes : Visualiseur d\'Interférences WiFi',
+  title: 'Détecteur de Fuites Micro ondes : Visualiseur d\'Interférences WiFi',
   description: 'Analysez si votre micro-ondes perd des radiations en mesurant l\'interférence en temps réel sur votre réseau WiFi. Outil de sécurité scientifique.',
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',

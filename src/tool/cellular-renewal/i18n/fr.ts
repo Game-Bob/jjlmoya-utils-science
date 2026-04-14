@@ -2,7 +2,7 @@ import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug: 'calculateur-renouvellement-cellulaire',
-  title: 'Calculateur de Renouvellement Cellulaire : Que reste-t-il du "vous" original ?',
+  title: 'Calculateur de Renouvellement Cellulaire : Que reste t il du "vous" original ?',
   description: 'Calculez le pourcentage de votre corps qui s\'est renouvelé depuis votre naissance. Estimation basée sur le taux de division cellulaire des organes, des os et des tissus. Le Paradoxe de Thésée rendu tangible.',
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',

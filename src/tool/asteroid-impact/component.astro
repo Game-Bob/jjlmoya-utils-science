@@ -9,7 +9,6 @@ const { ui } = Astro.props;
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <div class="asteroid-app" id="asteroid-app">
 	<div id="asteroid-game-map" class="asteroid-game-map" style="touch-action: none;"></div>
@@ -170,6 +169,7 @@ const { ui } = Astro.props;
 </div>
 
 <script>
+	import L from "leaflet";
 	import { ImpactPhysics, type Composition } from "./logic/impactPhysics";
 	import { VERDICT_CONFIGS } from "./constants";
 	import { getCompositionColor } from "./utils";
