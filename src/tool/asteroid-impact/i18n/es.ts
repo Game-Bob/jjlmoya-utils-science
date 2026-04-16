@@ -1,9 +1,48 @@
+const slug = 'simulador-impacto-asteroide';
+const description = 'Simula el impacto de asteroides con física real. Calcula energía, cráter, radiación térmica y onda de choque. ¿Sobrevivirías a Chicxulub?';
+const title = 'Simulador de Impacto de Asteroides: Calculadora de Apocalipsis';
+const howTo = [
+    {
+      name: 'Elegir el tamaño del proyectil',
+      text: 'Introduce el diámetro del asteroide. Desde un pequeño meteorito de 10 metros hasta un destructor de planetas de 10 kilómetros.',
+    },
+    {
+      name: 'Configurar velocidad y ángulo',
+      text: 'Ajusta la velocidad de aproximación y el ángulo de entrada (45° es el valor estadístico más probable).',
+    },
+    {
+      name: 'Definir naturaleza del asteroide',
+      text: 'Selecciona si el asteroide es de roca, hierro o hielo para calcular la profundidad del cráter correctamente.',
+    },
+    {
+      name: 'Analizar el veredicto de supervivencia',
+      text: 'Arrastra el asteroide al mapa e indica a qué distancia te encuentras para ver los efectos de la radiación, el terremoto, la onda de choque.',
+    },
+  ];
+const faq = [
+    {
+      question: '¿Cómo se calcula la energía de un impacto?',
+      answer: 'La energía principal es cinética: (1/2) * masa * velocidad². Usamos densidades realistas (ej. 3000 kg/m³ para asteroides rocosos) y velocidades típicas de entrada atmosférica (11 a 72 km/s). La energía resultante se mide en Megatones de TNT.',
+    },
+    {
+      question: '¿Qué es la onda de choque térmica?',
+      answer: 'Al entrar en la atmósfera, el asteroide comprime el aire de forma tan violenta que crea una bola de fuego mil veces más brillante que el Sol. La radiación térmica resultante puede causar quemaduras de tercer grado e incendiar bosques a kilómetros del impacto.',
+    },
+    {
+      question: '¿Por qué algunos asteroides no crean cráter?',
+      answer: 'Las rocas más pequeñas (<50m) suelen fragmentarse y explotar en la atmósfera debido a la presión del aire (Airburst), como ocurrió en Cheliábinsk. La energía se libera como una potente onda de choque de presión, pero no llega a tocar suelo como un cuerpo sólido.',
+    },
+    {
+      question: '¿Qué probabilidad hay de un impacto real?',
+      answer: 'Impactos pequeños (como el de Rusia en 2013) ocurren cada década. Impactos catastróficos (tipo Tunguska) cada pocos siglos. Un evento de extinción global como Chicxulub ocurre aproximadamente cada 100 millones de años.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'simulador-impacto-asteroide',
-  title: 'Simulador de Impacto de Asteroides: Calculadora de Apocalipsis',
-  description: 'Simula el impacto de asteroides con física real. Calcula energía, cráter, radiación térmica y onda de choque. ¿Sobrevivirías a Chicxulub?',
+  slug,
+  title,
+  description,
   faqTitle: 'Preguntas Frecuentes',
   bibliographyTitle: 'Bibliografía',
   ui: {
@@ -95,24 +134,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: '¿Cómo se calcula la energía de un impacto?',
-      answer: 'La energía principal es cinética: (1/2) * masa * velocidad². Usamos densidades realistas (ej. 3000 kg/m³ para asteroides rocosos) y velocidades típicas de entrada atmosférica (11 a 72 km/s). La energía resultante se mide en Megatones de TNT.',
-    },
-    {
-      question: '¿Qué es la onda de choque térmica?',
-      answer: 'Al entrar en la atmósfera, el asteroide comprime el aire de forma tan violenta que crea una bola de fuego mil veces más brillante que el Sol. La radiación térmica resultante puede causar quemaduras de tercer grado e incendiar bosques a kilómetros del impacto.',
-    },
-    {
-      question: '¿Por qué algunos asteroides no crean cráter?',
-      answer: 'Las rocas más pequeñas (<50m) suelen fragmentarse y explotar en la atmósfera debido a la presión del aire (Airburst), como ocurrió en Cheliábinsk. La energía se libera como una potente onda de choque de presión, pero no llega a tocar suelo como un cuerpo sólido.',
-    },
-    {
-      question: '¿Qué probabilidad hay de un impacto real?',
-      answer: 'Impactos pequeños (como el de Rusia en 2013) ocurren cada década. Impactos catastróficos (tipo Tunguska) cada pocos siglos. Un evento de extinción global como Chicxulub ocurre aproximadamente cada 100 millones de años.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth.',
@@ -135,23 +157,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nature.com/articles/nature12741',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Elegir el tamaño del proyectil',
-      text: 'Introduce el diámetro del asteroide. Desde un pequeño meteorito de 10 metros hasta un destructor de planetas de 10 kilómetros.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Configurar velocidad y ángulo',
-      text: 'Ajusta la velocidad de aproximación y el ángulo de entrada (45° es el valor estadístico más probable).',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Definir naturaleza del asteroide',
-      text: 'Selecciona si el asteroide es de roca, hierro o hielo para calcular la profundidad del cráter correctamente.',
-    },
-    {
-      name: 'Analizar el veredicto de supervivencia',
-      text: 'Arrastra el asteroide al mapa e indica a qué distancia te encuentras para ver los efectos de la radiación, el terremoto, la onda de choque.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

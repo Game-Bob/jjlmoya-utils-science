@@ -1,9 +1,48 @@
+const slug = 'asteroid-impact-simulator';
+const description = 'Simulate asteroid impacts with real physics. Calculate energy, crater, thermal radiation and shockwave. Would you survive Chicxulub?';
+const title = 'Asteroid Impact Simulator: Apocalypse Calculator';
+const howTo = [
+    {
+      name: 'Choose projectile size',
+      text: 'Enter the asteroid diameter, from a small 10-meter meteorite to a 10-kilometer planet killer.',
+    },
+    {
+      name: 'Configure velocity and angle',
+      text: 'Adjust the approach velocity and entry angle (45° is the statistically most likely value).',
+    },
+    {
+      name: 'Define asteroid nature',
+      text: 'Select whether the asteroid is made of rock, iron, or ice to calculate the crater depth correctly.',
+    },
+    {
+      name: 'Analyze survival verdict',
+      text: 'Drag the asteroid onto the map and indicate how far away you are to see the effects of radiation, earthquake, and shockwave.',
+    },
+  ];
+const faq = [
+    {
+      question: 'How is impact energy calculated?',
+      answer: 'Primary energy is kinetic: (1/2) * mass * velocity². We use realistic densities (e.g. 3000 kg/m³ for rocky asteroids) and typical atmospheric entry velocities (11 to 72 km/s). The resulting energy is measured in Megatons of TNT.',
+    },
+    {
+      question: 'What is a thermal shockwave?',
+      answer: 'Upon entering the atmosphere, the asteroid compresses the air so violently that it creates a fireball a thousand times brighter than the Sun. The resulting thermal radiation can cause third-degree burns and set forests ablaze miles from the impact.',
+    },
+    {
+      question: 'Why don\'t some asteroids create craters?',
+      answer: 'Smaller rocks (<50m) usually fragment and explode in the atmosphere due to air pressure (Airburst), as happened in Chelyabinsk. The energy is released as a powerful pressure shockwave, but it doesn\'t hit the ground as a solid body.',
+    },
+    {
+      question: 'What is the real probability of an impact?',
+      answer: 'Small impacts (like Russia in 2013) happen every decade. Catastrophic impacts (Tunguska-style) every few centuries. A global extinction event like Chicxulub happens approximately every 100 million years.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'asteroid-impact-simulator',
-  title: 'Asteroid Impact Simulator: Apocalypse Calculator',
-  description: 'Simulate asteroid impacts with real physics. Calculate energy, crater, thermal radiation and shockwave. Would you survive Chicxulub?',
+  slug,
+  title,
+  description,
   faqTitle: 'Frequently Asked Questions',
   bibliographyTitle: 'Bibliography',
   ui: {
@@ -95,24 +134,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: 'How is impact energy calculated?',
-      answer: 'Primary energy is kinetic: (1/2) * mass * velocity². We use realistic densities (e.g. 3000 kg/m³ for rocky asteroids) and typical atmospheric entry velocities (11 to 72 km/s). The resulting energy is measured in Megatons of TNT.',
-    },
-    {
-      question: 'What is a thermal shockwave?',
-      answer: 'Upon entering the atmosphere, the asteroid compresses the air so violently that it creates a fireball a thousand times brighter than the Sun. The resulting thermal radiation can cause third-degree burns and set forests ablaze miles from the impact.',
-    },
-    {
-      question: 'Why don\'t some asteroids create craters?',
-      answer: 'Smaller rocks (<50m) usually fragment and explode in the atmosphere due to air pressure (Airburst), as happened in Chelyabinsk. The energy is released as a powerful pressure shockwave, but it doesn\'t hit the ground as a solid body.',
-    },
-    {
-      question: 'What is the real probability of an impact?',
-      answer: 'Small impacts (like Russia in 2013) happen every decade. Catastrophic impacts (Tunguska-style) every few centuries. A global extinction event like Chicxulub happens approximately every 100 million years.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth.',
@@ -135,23 +157,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nature.com/articles/nature12741',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Choose projectile size',
-      text: 'Enter the asteroid diameter, from a small 10-meter meteorite to a 10-kilometer planet killer.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Configure velocity and angle',
-      text: 'Adjust the approach velocity and entry angle (45° is the statistically most likely value).',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Define asteroid nature',
-      text: 'Select whether the asteroid is made of rock, iron, or ice to calculate the crater depth correctly.',
-    },
-    {
-      name: 'Analyze survival verdict',
-      text: 'Drag the asteroid onto the map and indicate how far away you are to see the effects of radiation, earthquake, and shockwave.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

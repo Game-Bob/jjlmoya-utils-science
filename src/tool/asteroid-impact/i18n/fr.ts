@@ -1,9 +1,48 @@
+const description = 'Simulez l\'impact d\'astéroïdes avec la physique réelle. Calculez l\'énergie, le cratère, les radiations thermiques et l\'onde de choc. Survivriez-vous à Chicxulub ?';
+const title = 'Simulateur d\'Impact d\'Astéroïde : Calculateur d\'Apocalypse';
+const slug = 'simulateur-impact-asteroide';
+const howTo = [
+    {
+      name: 'Choisir la taille du projectile',
+      text: 'Entrez le diamètre de l\'astéroïde. D\'un petit météore de 10 mètres à un destructeur de planète de 10 kilomètres.',
+    },
+    {
+      name: 'Régler la vitesse et l\'angle',
+      text: 'Ajustez la vitesse d\'approche et l\'angle d\'entrée (45° est la valeur statistique la plus probable).',
+    },
+    {
+      name: 'Définir la nature de l\'astéroïde',
+      text: 'Sélectionnez si l\'astéroïde est en roche, en fer ou en glace pour calculer correctement la profondeur du cratère.',
+    },
+    {
+      name: 'Analyser le verdict de survie',
+      text: 'Faites glisser l\'astéroïde sur la carte et indiquez à quelle distance vous vous trouvez pour voir les effets des radiations, du séisme et de l\'onde de choc.',
+    },
+  ];
+const faq = [
+    {
+      question: 'Comment l\'énergie d\'un impact est-elle calculée ?',
+      answer: 'L\'énergie principale est cinétique : (1/2) * masse * vitesse². Nous utilisons des densités réalistes (ex. 3000 kg/m³ pour les astéroïdes rocheux) et des vitesses d\'entrée atmosphérique typiques (11 à 72 km/s). L\'énergie résultante est mesurée en mégatonnes de TNT.',
+    },
+    {
+      question: 'Qu\'est-ce que l\'onde de choc thermique ?',
+      answer: 'En entrant dans l\'atmosphère, l\'astéroïde comprime l\'air si violemment qu\'il crée une boule de feu mille fois plus brillante que le Soleil. Le rayonnement thermique qui en résulte peut causer des brûlures au troisième degré et enflammer des forêts à des kilomètres de l\'impact.',
+    },
+    {
+      question: 'Pourquoi certains astéroïdes ne créent-ils pas de cratère ?',
+      answer: 'Les roches plus petites (<50m) se fragmentent et explosent généralement dans l\'atmosphère à cause de la pression de l\'air (Explosion aérienne), comme à Chelyabinsk. L\'énergie est libérée sous forme d\'une puissante onde de choc, mais elle ne touche pas le sol en un seul corps solide.',
+    },
+    {
+      question: 'Quelle est la probabilité réelle d\'un impact ?',
+      answer: 'Les petits impacts (comme en Russie en 2013) se produisent chaque décennie. Les impacts catastrophiques (type Tunguska) tous les quelques siècles. Un événement d\'extinction mondiale comme Chicxulub se produit environ tous les 100 millions d\'années.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'simulateur-impact-asteroide',
-  title: 'Simulateur d\'Impact d\'Astéroïde : Calculateur d\'Apocalypse',
-  description: 'Simulez l\'impact d\'astéroïdes avec la physique réelle. Calculez l\'énergie, le cratère, les radiations thermiques et l\'onde de choc. Survivriez-vous à Chicxulub ?',
+  slug,
+  title,
+  description,
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',
   ui: {
@@ -95,24 +134,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: 'Comment l\'énergie d\'un impact est-elle calculée ?',
-      answer: 'L\'énergie principale est cinétique : (1/2) * masse * vitesse². Nous utilisons des densités réalistes (ex. 3000 kg/m³ pour les astéroïdes rocheux) et des vitesses d\'entrée atmosphérique typiques (11 à 72 km/s). L\'énergie résultante est mesurée en mégatonnes de TNT.',
-    },
-    {
-      question: 'Qu\'est-ce que l\'onde de choc thermique ?',
-      answer: 'En entrant dans l\'atmosphère, l\'astéroïde comprime l\'air si violemment qu\'il crée une boule de feu mille fois plus brillante que le Soleil. Le rayonnement thermique qui en résulte peut causer des brûlures au troisième degré et enflammer des forêts à des kilomètres de l\'impact.',
-    },
-    {
-      question: 'Pourquoi certains astéroïdes ne créent-ils pas de cratère ?',
-      answer: 'Les roches plus petites (<50m) se fragmentent et explosent généralement dans l\'atmosphère à cause de la pression de l\'air (Explosion aérienne), comme à Chelyabinsk. L\'énergie est libérée sous forme d\'une puissante onde de choc, mais elle ne touche pas le sol en un seul corps solide.',
-    },
-    {
-      question: 'Quelle est la probabilité réelle d\'un impact ?',
-      answer: 'Les petits impacts (comme en Russie en 2013) se produisent chaque décennie. Les impacts catastrophiques (type Tunguska) tous les quelques siècles. Un événement d\'extinction mondiale comme Chicxulub se produit environ tous les 100 millions d\'années.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: A Web-based computer program for calculating the regional environmental consequences of a meteoroid impact on Earth.',
@@ -135,23 +157,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nature.com/articles/nature12741',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Choisir la taille du projectile',
-      text: 'Entrez le diamètre de l\'astéroïde. D\'un petit météore de 10 mètres à un destructeur de planète de 10 kilomètres.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Régler la vitesse et l\'angle',
-      text: 'Ajustez la vitesse d\'approche et l\'angle d\'entrée (45° est la valeur statistique la plus probable).',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Définir la nature de l\'astéroïde',
-      text: 'Sélectionnez si l\'astéroïde est en roche, en fer ou en glace pour calculer correctement la profondeur du cratère.',
-    },
-    {
-      name: 'Analyser le verdict de survie',
-      text: 'Faites glisser l\'astéroïde sur la carte et indiquez à quelle distance vous vous trouvez pour voir les effets des radiations, du séisme et de l\'onde de choc.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

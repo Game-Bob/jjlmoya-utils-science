@@ -1,9 +1,56 @@
+const slug = 'calculadora-renovacion-celular';
+const description = 'Calcula el porcentaje de tu cuerpo que se ha renovado desde tu nacimiento. Estimación basada en la tasa de división celular de órganos, huesos y tejidos. La paradoja de Teseo hecha tangible.';
+const title = 'Calculadora de Renovación Celular: ¿Cuánto Queda del "Tú" Original?';
+const howTo = [
+    {
+      name: 'Ajusta tu edad',
+      text: 'Desliza el selector desde 1 hasta 105 años. Esta es la variable más importante para los cálculos de renovación.',
+    },
+    {
+      name: 'Observa el porcentaje principal',
+      text: 'El número grande en el centro muestra qué porcentaje de tu materia actual es "nueva" (renovada desde tu nacimiento).',
+    },
+    {
+      name: 'Analiza las barras de progreso',
+      text: 'Cada barra representa un tejido diferente: piel/sangre, hueso, órganos y cerebro. Nota cómo el cerebro apenas cambia mientras la piel se renueva constantemente.',
+    },
+    {
+      name: 'Reflexiona sobre tu identidad',
+      text: 'Si el 99% de ti es materia nueva, ¿quién eres realmente? Usa esta herramienta como punto de partida para reflexiones sobre la continuidad personal y la paradoja de Teseo.',
+    },
+  ];
+const faq = [
+    {
+      question: '¿Qué es exactamente la "renovación celular"?',
+      answer: 'Es el proceso natural por el cual las células envejecidas o dañadas mueren (apoptosis) y son reemplazadas por nuevas células generadas por división mitótica. Este ciclo es esencial para mantener los tejidos funcionales y reparar daños.',
+    },
+    {
+      question: '¿Por qué el cerebro se renueva tan lentamente?',
+      answer: 'Las neuronas de la corteza cerebral se generan antes del nacimiento y generalmente no se dividen más. Esto proporciona estabilidad neurológica: tus "cables" fundamentales permanecen constantes. Sin embargo, las células gliales (de soporte) sí se renuevan. La memoria se almacena en las conexiones, no en los átomos.',
+    },
+    {
+      question: '¿Es cierto que cada 7 años somos "nuevas personas"?',
+      answer: 'Es una simplificación. No es exacta. Tu sangre se renueva en 4 meses, tu piel en un mes, tu esqueleto en 10 años. Tu cerebro permanece en gran parte sin cambios. El número 7 años es histórico (Aristóteles lo mencionó) pero biológicamente es un promedio impreciso.',
+    },
+    {
+      question: '¿Si mi cuerpo es 99% nuevo, sigo siendo la misma persona?',
+      answer: 'Sí. La identidad es una continuidad de información, conciencia y memoria, no de átomos. Eres como un río: el agua cambia constantemente, pero el río persiste. La paradoja de Teseo sugiere que la identidad reside en la pauta, no en la materia.',
+    },
+    {
+      question: '¿Qué tejidos se renuevan más rápido?',
+      answer: 'La sangre y la piel lideran. Tu médula ósea produce 200,000 millones de células sanguíneas diarias. Pierdes ~30,000 células de piel por minuto. Por eso sanan tan bien y envejecen tan visiblemente: son jóvenes en términos de edad celular.',
+    },
+    {
+      question: '¿El cristalino del ojo realmente no se renueva?',
+      answer: 'Correcto. Las células del cristalino se depositan durante el desarrollo embrionario y se mantienen de por vida. A los 100 años, las células centrales de tu cristalino podrían ser las mismas que cuando estabas en el útero. Es una cápsula de tiempo biológica.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'calculadora-renovacion-celular',
-  title: 'Calculadora de Renovación Celular: ¿Cuánto Queda del "Tú" Original?',
-  description: 'Calcula el porcentaje de tu cuerpo que se ha renovado desde tu nacimiento. Estimación basada en la tasa de división celular de órganos, huesos y tejidos. La paradoja de Teseo hecha tangible.',
+  slug,
+  title,
+  description,
   faqTitle: 'Preguntas Frecuentes',
   bibliographyTitle: 'Bibliografía',
   ui: {
@@ -100,32 +147,7 @@ export const content: ToolLocaleContent = {
       html: 'Esto tiene implicaciones profundas: tu cuerpo es un proceso, no una cosa. Eres un patrón autoorganizado que persiste a través del cambio. No posees átomos; eres una estructura que los canaliza temporalmente.',
     },
   ],
-  faq: [
-    {
-      question: '¿Qué es exactamente la "renovación celular"?',
-      answer: 'Es el proceso natural por el cual las células envejecidas o dañadas mueren (apoptosis) y son reemplazadas por nuevas células generadas por división mitótica. Este ciclo es esencial para mantener los tejidos funcionales y reparar daños.',
-    },
-    {
-      question: '¿Por qué el cerebro se renueva tan lentamente?',
-      answer: 'Las neuronas de la corteza cerebral se generan antes del nacimiento y generalmente no se dividen más. Esto proporciona estabilidad neurológica: tus "cables" fundamentales permanecen constantes. Sin embargo, las células gliales (de soporte) sí se renuevan. La memoria se almacena en las conexiones, no en los átomos.',
-    },
-    {
-      question: '¿Es cierto que cada 7 años somos "nuevas personas"?',
-      answer: 'Es una simplificación. No es exacta. Tu sangre se renueva en 4 meses, tu piel en un mes, tu esqueleto en 10 años. Tu cerebro permanece en gran parte sin cambios. El número 7 años es histórico (Aristóteles lo mencionó) pero biológicamente es un promedio impreciso.',
-    },
-    {
-      question: '¿Si mi cuerpo es 99% nuevo, sigo siendo la misma persona?',
-      answer: 'Sí. La identidad es una continuidad de información, conciencia y memoria, no de átomos. Eres como un río: el agua cambia constantemente, pero el río persiste. La paradoja de Teseo sugiere que la identidad reside en la pauta, no en la materia.',
-    },
-    {
-      question: '¿Qué tejidos se renuevan más rápido?',
-      answer: 'La sangre y la piel lideran. Tu médula ósea produce 200,000 millones de células sanguíneas diarias. Pierdes ~30,000 células de piel por minuto. Por eso sanan tan bien y envejecen tan visiblemente: son jóvenes en términos de edad celular.',
-    },
-    {
-      question: '¿El cristalino del ojo realmente no se renueva?',
-      answer: 'Correcto. Las células del cristalino se depositan durante el desarrollo embrionario y se mantienen de por vida. A los 100 años, las células centrales de tu cristalino podrían ser las mismas que cuando estabas en el útero. Es una cápsula de tiempo biológica.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Sender, R., & Milo, R. (2021). The distribution of cellular turnover in the human body. Nature Medicine, 27(1), 45-48.',
@@ -148,23 +170,38 @@ export const content: ToolLocaleContent = {
       url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Ajusta tu edad',
-      text: 'Desliza el selector desde 1 hasta 105 años. Esta es la variable más importante para los cálculos de renovación.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Observa el porcentaje principal',
-      text: 'El número grande en el centro muestra qué porcentaje de tu materia actual es "nueva" (renovada desde tu nacimiento).',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Analiza las barras de progreso',
-      text: 'Cada barra representa un tejido diferente: piel/sangre, hueso, órganos y cerebro. Nota cómo el cerebro apenas cambia mientras la piel se renueva constantemente.',
-    },
-    {
-      name: 'Reflexiona sobre tu identidad',
-      text: 'Si el 99% de ti es materia nueva, ¿quién eres realmente? Usa esta herramienta como punto de partida para reflexiones sobre la continuidad personal y la paradoja de Teseo.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

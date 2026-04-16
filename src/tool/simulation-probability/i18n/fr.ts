@@ -1,9 +1,52 @@
+const description = 'Analysez si notre réalité est une simulation en utilisant l\'argument du trilemme de Nick Bostrom. Calculez la probabilité existentielle avec 4 paramètres clés.';
+const slug = 'calculateur-probabilite-simulation';
+const title = 'Calculateur de Probabilité de Simulation : Vivez vous dans un univers virtuel ?';
+const howTo = [
+    {
+      name: 'Ajuster le progrès technologique',
+      text: 'Estimez la probabilité que l\'humanité atteigne le niveau post-humain. 50% est neutre ; augmentez si vous pensez que l\'IA et l\'informatique continueront de progresser de façon exponentielle.',
+    },
+    {
+      name: 'Fixer le taux de survie',
+      text: 'Considérez la probabilité que l\'humanité ne s\'autodétruise pas. Tenez compte des guerres, du changement climatique, des pandémies. Valeurs élevées = optimisme sur notre avenir.',
+    },
+    {
+      name: 'Évaluer l\'intérêt pour la simulation',
+      text: 'Si l\'humanité atteignait le niveau post-humain, voudrait-elle créer des simulations de son passé ? Considérez les motivations : recherche scientifique, divertissement, préservation historique.',
+    },
+    {
+      name: 'Interpréter le résultat',
+      text: 'Observez comment les probabilités changent. Les résultats > 90% suggèrent que la simulation est presque inévitable si les hypothèses sont vérifiées. Jouez avec les paramètres pour explorer différents avenirs.',
+    },
+  ];
+const faq = [
+    {
+      question: 'Qu\'est-ce que l\'argument de Bostrom exactement ?',
+      answer: 'Nick Bostrom propose que si une civilisation post-humaine possède une puissance de calcul suffisante, elle pourrait créer des millions de simulations d\'univers antérieurs. Si cela se produit, le nombre d\'êtres simulés serait massivement supérieur à celui des êtres biologiques originaux. Par conséquent, statistiquement, vous avez plus de chances d\'être simulé qu\'original.',
+    },
+    {
+      question: 'Des probabilités élevées signifient-elles que nous sommes définitivement une simulation ?',
+      answer: 'Non. Des probabilités élevées suggèrent qu\'il s\'agit d\'une possibilité sérieuse à envisager, mais ce n\'est pas une preuve. L\'argument repose sur des suppositions concernant l\'avenir de la technologie qui pourraient ne pas se réaliser.',
+    },
+    {
+      question: 'Quel effet cela aurait-il de savoir que nous sommes une simulation ?',
+      answer: 'Sur le plan philosophique, beaucoup soutiennent que cela ne change rien de fondamental. Si vous et vos proches êtes simulés ensemble, vos expériences, vos émotions et vos relations restent réels pour vous. C\'est l\'expérience vécue qui compte, pas le substrat.',
+    },
+    {
+      question: 'Existe-t-il des preuves scientifiques que nous sommes dans une simulation ?',
+      answer: 'Il n\'existe aucune preuve concluante. Certains physiciens soulignent des anomalies en mécanique quantique (quantification, intrication) comme de possibles "optimisations informatiques", mais ce sont des interprétations spéculatives.',
+    },
+    {
+      question: 'Quelle valeur dois-je attribuer à "N" (échelle de simulation) ?',
+      answer: 'Cela dépend de vos convictions sur l\'avenir de l\'informatique. Des valeurs faibles (100-1000) supposent des limites de ressources. Des valeurs élevées (millions) supposent une puissance de calcul pratiquement illimitée. La plupart des discussions scientifiques utilisent des valeurs entre 1000 et 1 billion.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'calculateur-probabilite-simulation',
-  title: 'Calculateur de Probabilité de Simulation : Vivez vous dans un univers virtuel ?',
-  description: 'Analysez si notre réalité est une simulation en utilisant l\'argument du trilemme de Nick Bostrom. Calculez la probabilité existentielle avec 4 paramètres clés.',
+  slug,
+  title,
+  description,
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',
   ui: {
@@ -123,28 +166,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: 'Qu\'est-ce que l\'argument de Bostrom exactement ?',
-      answer: 'Nick Bostrom propose que si une civilisation post-humaine possède une puissance de calcul suffisante, elle pourrait créer des millions de simulations d\'univers antérieurs. Si cela se produit, le nombre d\'êtres simulés serait massivement supérieur à celui des êtres biologiques originaux. Par conséquent, statistiquement, vous avez plus de chances d\'être simulé qu\'original.',
-    },
-    {
-      question: 'Des probabilités élevées signifient-elles que nous sommes définitivement une simulation ?',
-      answer: 'Non. Des probabilités élevées suggèrent qu\'il s\'agit d\'une possibilité sérieuse à envisager, mais ce n\'est pas une preuve. L\'argument repose sur des suppositions concernant l\'avenir de la technologie qui pourraient ne pas se réaliser.',
-    },
-    {
-      question: 'Quel effet cela aurait-il de savoir que nous sommes une simulation ?',
-      answer: 'Sur le plan philosophique, beaucoup soutiennent que cela ne change rien de fondamental. Si vous et vos proches êtes simulés ensemble, vos expériences, vos émotions et vos relations restent réels pour vous. C\'est l\'expérience vécue qui compte, pas le substrat.',
-    },
-    {
-      question: 'Existe-t-il des preuves scientifiques que nous sommes dans une simulation ?',
-      answer: 'Il n\'existe aucune preuve concluante. Certains physiciens soulignent des anomalies en mécanique quantique (quantification, intrication) comme de possibles "optimisations informatiques", mais ce sont des interprétations spéculatives.',
-    },
-    {
-      question: 'Quelle valeur dois-je attribuer à "N" (échelle de simulation) ?',
-      answer: 'Cela dépend de vos convictions sur l\'avenir de l\'informatique. Des valeurs faibles (100-1000) supposent des limites de ressources. Des valeurs élevées (millions) supposent une puissance de calcul pratiquement illimitée. La plupart des discussions scientifiques utilisent des valeurs entre 1000 et 1 billion.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Bostrom, N. (2003). Are You Living in a Computer Simulation? The Philosophical Quarterly, 53(211), 243-255.',
@@ -167,23 +189,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.haydenplanetarium.org/',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Ajuster le progrès technologique',
-      text: 'Estimez la probabilité que l\'humanité atteigne le niveau post-humain. 50% est neutre ; augmentez si vous pensez que l\'IA et l\'informatique continueront de progresser de façon exponentielle.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Fixer le taux de survie',
-      text: 'Considérez la probabilité que l\'humanité ne s\'autodétruise pas. Tenez compte des guerres, du changement climatique, des pandémies. Valeurs élevées = optimisme sur notre avenir.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Évaluer l\'intérêt pour la simulation',
-      text: 'Si l\'humanité atteignait le niveau post-humain, voudrait-elle créer des simulations de son passé ? Considérez les motivations : recherche scientifique, divertissement, préservation historique.',
-    },
-    {
-      name: 'Interpréter le résultat',
-      text: 'Observez comment les probabilités changent. Les résultats > 90% suggèrent que la simulation est presque inévitable si les hypothèses sont vérifiées. Jouez avec les paramètres pour explorer différents avenirs.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

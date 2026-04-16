@@ -1,9 +1,48 @@
+const description = 'Analysez si votre micro-ondes perd des radiations en mesurant l\'interférence en temps réel sur votre réseau WiFi. Outil de sécurité scientifique.';
+const title = 'Détecteur de Fuites Micro ondes : Visualiseur d\'Interférences WiFi';
+const slug = 'detecteur-fuites-micro-ondes';
+const howTo = [
+    {
+      name: 'Se connecter au réseau WiFi 2,4 GHz',
+      text: 'Assurez-vous que votre mobile ou portable n\'est PAS connecté à la bande 5 GHz pour que l\'interférence soit mesurable.',
+    },
+    {
+      name: 'Lancer le test de latence de base',
+      text: 'Appuyez sur le bouton de démarrage avec le micro-ondes éteint pour établir une ligne de base de connexion stable.',
+    },
+    {
+      name: 'Allumer le micro-ondes',
+      text: 'Faites chauffer un verre d\'eau pendant 30 à 60 secondes et placez-vous près de l\'appareil avec votre smartphone.',
+    },
+    {
+      name: 'Analyser le graphique en temps réel',
+      text: 'Observez si la latence monte au-dessus de 100-200 ms ou si des pertes de paquets se produisent pendant que l\'appareil fonctionne.',
+    },
+  ];
+const faq = [
+    {
+      question: 'Comment un site web peut-il détecter mon micro-ondes ?',
+      answer: 'Nous n\'utilisons pas de capteurs magiques, mais la latence du réseau. Le WiFi 2,4 GHz et les fours à micro-ondes fonctionnent sur la même fréquence (env. 2450 MHz). Si le blindage du micro-ondes échoue, il génère du "bruit" qui entre en collision avec le WiFi, augmentant considérablement la latence (ping).',
+    },
+    {
+      question: 'Est-il dangereux que mon micro-ondes ait des fuites ?',
+      answer: 'Une petite interférence sur le WiFi est normale et n\'implique pas de risque immédiat pour la santé, car la puissance décroît rapidement avec la distance. Cependant, une fuite massive indique une mauvaise étanchéité de la porte ou de la grille, ce qui devrait être vérifié pour des raisons de sécurité technique.',
+    },
+    {
+      question: 'Pourquoi le test ne fonctionne-t-il pas avec le WiFi 5 GHz ?',
+      answer: 'Parce que le WiFi 5 GHz fonctionne sur une bande de fréquence beaucoup plus élevée qu\'un micro-ondes. Pour que le test soit efficace, votre appareil doit être connecté au réseau 2,4 GHz du routeur.',
+    },
+    {
+      question: 'Que signifient les pics de latence sur le graphique ?',
+      answer: 'Des pics constants pendant le fonctionnement du micro-ondes suggèrent que le signal électromagnétique "s\'échappe" et sature l\'air, empêchant les paquets de données WiFi d\'arriver à temps.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'detecteur-fuites-micro-ondes',
-  title: 'Détecteur de Fuites Micro ondes : Visualiseur d\'Interférences WiFi',
-  description: 'Analysez si votre micro-ondes perd des radiations en mesurant l\'interférence en temps réel sur votre réseau WiFi. Outil de sécurité scientifique.',
+  slug,
+  title,
+  description,
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',
   ui: {
@@ -113,24 +152,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: 'Comment un site web peut-il détecter mon micro-ondes ?',
-      answer: 'Nous n\'utilisons pas de capteurs magiques, mais la latence du réseau. Le WiFi 2,4 GHz et les fours à micro-ondes fonctionnent sur la même fréquence (env. 2450 MHz). Si le blindage du micro-ondes échoue, il génère du "bruit" qui entre en collision avec le WiFi, augmentant considérablement la latence (ping).',
-    },
-    {
-      question: 'Est-il dangereux que mon micro-ondes ait des fuites ?',
-      answer: 'Une petite interférence sur le WiFi est normale et n\'implique pas de risque immédiat pour la santé, car la puissance décroît rapidement avec la distance. Cependant, une fuite massive indique une mauvaise étanchéité de la porte ou de la grille, ce qui devrait être vérifié pour des raisons de sécurité technique.',
-    },
-    {
-      question: 'Pourquoi le test ne fonctionne-t-il pas avec le WiFi 5 GHz ?',
-      answer: 'Parce que le WiFi 5 GHz fonctionne sur une bande de fréquence beaucoup plus élevée qu\'un micro-ondes. Pour que le test soit efficace, votre appareil doit être connecté au réseau 2,4 GHz du routeur.',
-    },
-    {
-      question: 'Que signifient les pics de latence sur le graphique ?',
-      answer: 'Des pics constants pendant le fonctionnement du micro-ondes suggèrent que le signal électromagnétique "s\'échappe" et sature l\'air, empêchant les paquets de données WiFi d\'arriver à temps.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Microwave Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
@@ -145,23 +167,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nist.gov/topics/electromagnetic-fields',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Se connecter au réseau WiFi 2,4 GHz',
-      text: 'Assurez-vous que votre mobile ou portable n\'est PAS connecté à la bande 5 GHz pour que l\'interférence soit mesurable.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Lancer le test de latence de base',
-      text: 'Appuyez sur le bouton de démarrage avec le micro-ondes éteint pour établir une ligne de base de connexion stable.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Allumer le micro-ondes',
-      text: 'Faites chauffer un verre d\'eau pendant 30 à 60 secondes et placez-vous près de l\'appareil avec votre smartphone.',
-    },
-    {
-      name: 'Analyser le graphique en temps réel',
-      text: 'Observez si la latence monte au-dessus de 100-200 ms ou si des pertes de paquets se produisent pendant que l\'appareil fonctionne.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

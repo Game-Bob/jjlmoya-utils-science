@@ -1,3 +1,39 @@
+const howTo = [
+    {
+      name: 'Préparer l\'image de la boîte',
+      text: 'Placez votre boîte de Pétri sur un fond sombre ou utilisez un rétro-illuminateur pour que les colonies contrastent clairement.',
+    },
+    {
+      name: 'Identifier les types de colonies',
+      text: 'Utilisez différentes couleurs de marqueur pour grouper les colonies selon leur morphologie, couleur ou taille.',
+    },
+    {
+      name: 'Marquer chaque colonie',
+      text: 'Cliquez sur chaque colonie visible. L\'outil numérotera automatiquement chaque clic pour éviter les répétitions ou les colonies oubliées.',
+    },
+    {
+      name: 'Calculer la concentration finale',
+      text: 'Entrez le volume ensemencé et le facteur de dilution pour obtenir le résultat final en UFC/ml ou UFC/g.',
+    },
+  ];
+const faq = [
+    {
+      question: 'Qu\'est-ce que le comptage UFC?',
+      answer: 'Les Unités Formant Colonies (UFC) est une mesure qui estime le nombre de cellules bactériennes ou fongiques viables dans un échantillon. On suppose que chaque colonie visible provient d\'une seule cellule ou d\'un groupe de cellules.',
+    },
+    {
+      question: 'Pourquoi un compteur numérique est-il mieux qu\'un comptage manuel?',
+      answer: 'Le comptage numérique évite l\'erreur humaine de "perdre le compte" lors du marquage visuel des colonies. Notre outil permet également de différencier les types de colonies par couleurs, facilitant l\'analyse des boîtes mixtes.',
+    },
+    {
+      question: 'Comment les UFC par millilitre sont-elles calculées?',
+      answer: 'Le nombre de colonies comptées est multiplié par le facteur de dilution inversé. Par exemple, si vous comptez 30 colonies dans une dilution 1:100, l\'échantillon original contient 3000 UFC/ml.',
+    },
+    {
+      question: 'Quand une boîte est-elle considérée comme "non comptable"?',
+      answer: 'En microbiologie standard, s\'il y a plus de 250-300 colonies, la boîte est considérée comme trop peuplée (Trop Nombreuses à Compter, TNTC) et les données ne sont pas fiables en raison de la concurrence entre colonies.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'compteur-colonies';
@@ -101,24 +137,7 @@ export const content: ToolLocaleContent = {
       html: 'Notre outil permet de différencier jusqu\'à deux types de colonies avec des couleurs distinctes, facilitant le comptage différentiel sans besoin de marqueurs physiques.',
     },
   ],
-  faq: [
-    {
-      question: 'Qu\'est-ce que le comptage UFC?',
-      answer: 'Les Unités Formant Colonies (UFC) est une mesure qui estime le nombre de cellules bactériennes ou fongiques viables dans un échantillon. On suppose que chaque colonie visible provient d\'une seule cellule ou d\'un groupe de cellules.',
-    },
-    {
-      question: 'Pourquoi un compteur numérique est-il mieux qu\'un comptage manuel?',
-      answer: 'Le comptage numérique évite l\'erreur humaine de "perdre le compte" lors du marquage visuel des colonies. Notre outil permet également de différencier les types de colonies par couleurs, facilitant l\'analyse des boîtes mixtes.',
-    },
-    {
-      question: 'Comment les UFC par millilitre sont-elles calculées?',
-      answer: 'Le nombre de colonies comptées est multiplié par le facteur de dilution inversé. Par exemple, si vous comptez 30 colonies dans une dilution 1:100, l\'échantillon original contient 3000 UFC/ml.',
-    },
-    {
-      question: 'Quand une boîte est-elle considérée comme "non comptable"?',
-      answer: 'En microbiologie standard, s\'il y a plus de 250-300 colonies, la boîte est considérée comme trop peuplée (Trop Nombreuses à Compter, TNTC) et les données ne sont pas fiables en raison de la concurrence entre colonies.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'FDA - Bacteriological Analytical Manual',
@@ -129,23 +148,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.iso.org/standard/53728.html',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Préparer l\'image de la boîte',
-      text: 'Placez votre boîte de Pétri sur un fond sombre ou utilisez un rétro-illuminateur pour que les colonies contrastent clairement.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Identifier les types de colonies',
-      text: 'Utilisez différentes couleurs de marqueur pour grouper les colonies selon leur morphologie, couleur ou taille.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Marquer chaque colonie',
-      text: 'Cliquez sur chaque colonie visible. L\'outil numérotera automatiquement chaque clic pour éviter les répétitions ou les colonies oubliées.',
-    },
-    {
-      name: 'Calculer la concentration finale',
-      text: 'Entrez le volume ensemencé et le facteur de dilution pour obtenir le résultat final en UFC/ml ou UFC/g.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

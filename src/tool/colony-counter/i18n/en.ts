@@ -1,3 +1,39 @@
+const howTo = [
+    {
+      name: 'Prepare the plate image',
+      text: 'Place your Petri plate against a dark background or use a trans-illuminator so colonies contrast clearly.',
+    },
+    {
+      name: 'Identify colony types',
+      text: 'Use different marker colors to group colonies by morphology, color, or size.',
+    },
+    {
+      name: 'Mark each colony',
+      text: 'Click on each visible colony. The tool automatically numbers each click to prevent repetition or missed colonies.',
+    },
+    {
+      name: 'Calculate final concentration',
+      text: 'Enter the plated volume and dilution factor to get the final result in CFU/ml or CFU/g.',
+    },
+  ];
+const faq = [
+    {
+      question: 'What is CFU counting?',
+      answer: 'Colony Forming Units (CFU) is a measurement that estimates the number of viable bacteria or fungal cells in a sample. It is assumed that each visible colony originated from a single cell or group of cells.',
+    },
+    {
+      question: 'Why is a digital counter better than manual counting?',
+      answer: 'Digital counting avoids human error in "losing track" while visually marking colonies. Our tool additionally allows differentiation of colony types by colors, facilitating analysis of mixed plates.',
+    },
+    {
+      question: 'How are CFU per milliliter calculated?',
+      answer: 'The number of colonies counted is multiplied by the inverted dilution factor. For example, if you count 30 colonies in a 1:100 dilution, the original sample contains 3000 CFU/ml.',
+    },
+    {
+      question: 'When is a plate considered "uncountable"?',
+      answer: 'In standard microbiology, if there are more than 250-300 colonies, the plate is considered too crowded (Too Numerous To Count, TNTC) and the data is unreliable due to colony competition.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'colony-counter';
@@ -101,24 +137,7 @@ export const content: ToolLocaleContent = {
       html: 'Our tool allows differentiation of up to two colony types with distinct colors, facilitating differential counting without the need for physical markers.',
     },
   ],
-  faq: [
-    {
-      question: 'What is CFU counting?',
-      answer: 'Colony Forming Units (CFU) is a measurement that estimates the number of viable bacteria or fungal cells in a sample. It is assumed that each visible colony originated from a single cell or group of cells.',
-    },
-    {
-      question: 'Why is a digital counter better than manual counting?',
-      answer: 'Digital counting avoids human error in "losing track" while visually marking colonies. Our tool additionally allows differentiation of colony types by colors, facilitating analysis of mixed plates.',
-    },
-    {
-      question: 'How are CFU per milliliter calculated?',
-      answer: 'The number of colonies counted is multiplied by the inverted dilution factor. For example, if you count 30 colonies in a 1:100 dilution, the original sample contains 3000 CFU/ml.',
-    },
-    {
-      question: 'When is a plate considered "uncountable"?',
-      answer: 'In standard microbiology, if there are more than 250-300 colonies, the plate is considered too crowded (Too Numerous To Count, TNTC) and the data is unreliable due to colony competition.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'FDA - Bacteriological Analytical Manual',
@@ -129,23 +148,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.iso.org/standard/53728.html',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Prepare the plate image',
-      text: 'Place your Petri plate against a dark background or use a trans-illuminator so colonies contrast clearly.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Identify colony types',
-      text: 'Use different marker colors to group colonies by morphology, color, or size.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Mark each colony',
-      text: 'Click on each visible colony. The tool automatically numbers each click to prevent repetition or missed colonies.',
-    },
-    {
-      name: 'Calculate final concentration',
-      text: 'Enter the plated volume and dilution factor to get the final result in CFU/ml or CFU/g.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

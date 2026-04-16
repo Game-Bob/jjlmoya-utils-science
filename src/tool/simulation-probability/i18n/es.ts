@@ -1,9 +1,52 @@
+const slug = 'calculadora-probabilidad-simulacion';
+const description = 'Analiza si nuestra realidad es una simulación usando el argumento trilemático de Nick Bostrom. Calcula la probabilidad existencial con 4 parámetros clave.';
+const title = 'Calculadora de Probabilidad de Simulación: ¿Vives en un Universo Virtual?';
+const howTo = [
+    {
+      name: 'Ajustar Progreso Tecnológico',
+      text: 'Estima la probabilidad de que la humanidad alcance el nivel post-humano. 50% es neutral; aumenta si crees que la IA y la computación seguirán avanzando exponencialmente.',
+    },
+    {
+      name: 'Establecer Tasa de Supervivencia',
+      text: 'Considera la probabilidad de que la humanidad no se autodestruya. Influye en guerras, cambio climático, pandemias. Valores altos = optimismo sobre nuestro futuro.',
+    },
+    {
+      name: 'Evaluar Interés en Simular',
+      text: 'Si la humanidad alcanzara el nivel post-humano, ¿querría crear simulaciones de su pasado? Considera motivaciones: investigación científica, entretenimiento, preservación histórica.',
+    },
+    {
+      name: 'Interpretar el resultado',
+      text: 'Observa cómo cambian las probabilidades. Resultados > 90% sugieren que la simulación es casi inevitable si se cumplen los supuestos. Juega con los parámetros para explorar diferentes futuros.',
+    },
+  ];
+const faq = [
+    {
+      question: '¿Qué es exactamente el argumento de Bostrom?',
+      answer: 'Nick Bostrom propone que si una civilización post-humana tiene suficiente poder de cómputo, podría crear millones de simulaciones de universos anteriores. Si eso ocurre, el número de seres simulados sería masivamente superior al de los seres biológicos originales. Por lo tanto, estadísticamente es más probable que seas simulado que original.',
+    },
+    {
+      question: '¿Las probabilidades altas significan que definitivamente somos una simulación?',
+      answer: 'No. Las probabilidades altas sugieren que es una posibilidad seria que debe considerarse, pero no es una prueba. El argumento se basa en suposiciones sobre el futuro de la tecnología que podrían no cumplirse.',
+    },
+    {
+      question: '¿Cómo afectaría el saber que somos una simulación?',
+      answer: 'Filosóficamente, muchos argumentan que no cambia nada fundamental. Si tú y tus seres queridos somos simulados juntos, tus experiencias, emociones y relaciones siguen siendo reales para ti. La experiencia vivida es lo que importa, no el sustrato.',
+    },
+    {
+      question: '¿Hay evidencia científica de que estamos en una simulación?',
+      answer: 'No hay evidencia concluyente. Algunos físicos señalan anomalías en mecánica cuántica (cuantización, entrelazamiento) como posibles "optimizaciones computacionales", pero son interpretaciones especulativas.',
+    },
+    {
+      question: '¿Qué valor debería asignar a "N" (escala de simulación)?',
+      answer: 'Depende de tus creencias sobre el futuro de la computación. Valores bajos (100-1000) asumen limitaciones de recursos. Valores altos (millones) asumen poder computacional prácticamente ilimitado. La mayoría de discusiones científicas usan valores entre 1000 y 1 billón.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'calculadora-probabilidad-simulacion',
-  title: 'Calculadora de Probabilidad de Simulación: ¿Vives en un Universo Virtual?',
-  description: 'Analiza si nuestra realidad es una simulación usando el argumento trilemático de Nick Bostrom. Calcula la probabilidad existencial con 4 parámetros clave.',
+  slug,
+  title,
+  description,
   faqTitle: 'Preguntas Frecuentes',
   bibliographyTitle: 'Bibliografía',
   ui: {
@@ -123,28 +166,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: '¿Qué es exactamente el argumento de Bostrom?',
-      answer: 'Nick Bostrom propone que si una civilización post-humana tiene suficiente poder de cómputo, podría crear millones de simulaciones de universos anteriores. Si eso ocurre, el número de seres simulados sería masivamente superior al de los seres biológicos originales. Por lo tanto, estadísticamente es más probable que seas simulado que original.',
-    },
-    {
-      question: '¿Las probabilidades altas significan que definitivamente somos una simulación?',
-      answer: 'No. Las probabilidades altas sugieren que es una posibilidad seria que debe considerarse, pero no es una prueba. El argumento se basa en suposiciones sobre el futuro de la tecnología que podrían no cumplirse.',
-    },
-    {
-      question: '¿Cómo afectaría el saber que somos una simulación?',
-      answer: 'Filosóficamente, muchos argumentan que no cambia nada fundamental. Si tú y tus seres queridos somos simulados juntos, tus experiencias, emociones y relaciones siguen siendo reales para ti. La experiencia vivida es lo que importa, no el sustrato.',
-    },
-    {
-      question: '¿Hay evidencia científica de que estamos en una simulación?',
-      answer: 'No hay evidencia concluyente. Algunos físicos señalan anomalías en mecánica cuántica (cuantización, entrelazamiento) como posibles "optimizaciones computacionales", pero son interpretaciones especulativas.',
-    },
-    {
-      question: '¿Qué valor debería asignar a "N" (escala de simulación)?',
-      answer: 'Depende de tus creencias sobre el futuro de la computación. Valores bajos (100-1000) asumen limitaciones de recursos. Valores altos (millones) asumen poder computacional prácticamente ilimitado. La mayoría de discusiones científicas usan valores entre 1000 y 1 billón.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Bostrom, N. (2003). Are You Living in a Computer Simulation? The Philosophical Quarterly, 53(211), 243-255.',
@@ -167,23 +189,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.haydenplanetarium.org/',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Ajustar Progreso Tecnológico',
-      text: 'Estima la probabilidad de que la humanidad alcance el nivel post-humano. 50% es neutral; aumenta si crees que la IA y la computación seguirán avanzando exponencialmente.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Establecer Tasa de Supervivencia',
-      text: 'Considera la probabilidad de que la humanidad no se autodestruya. Influye en guerras, cambio climático, pandemias. Valores altos = optimismo sobre nuestro futuro.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Evaluar Interés en Simular',
-      text: 'Si la humanidad alcanzara el nivel post-humano, ¿querría crear simulaciones de su pasado? Considera motivaciones: investigación científica, entretenimiento, preservación histórica.',
-    },
-    {
-      name: 'Interpretar el resultado',
-      text: 'Observa cómo cambian las probabilidades. Resultados > 90% sugieren que la simulación es casi inevitable si se cumplen los supuestos. Juega con los parámetros para explorar diferentes futuros.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

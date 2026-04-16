@@ -1,9 +1,56 @@
+const description = 'Calculez le pourcentage de votre corps qui s\'est renouvelé depuis votre naissance. Estimation basée sur le taux de division cellulaire des organes, des os et des tissus. Le Paradoxe de Thésée rendu tangible.';
+const slug = 'calculateur-renouvellement-cellulaire';
+const title = 'Calculateur de Renouvellement Cellulaire : Que reste t il du "vous" original ?';
+const howTo = [
+    {
+      name: 'Réglez votre âge',
+      text: 'Faites glisser le curseur de 1 à 105 ans. C\'est la variable la plus importante pour les calculs de renouvellement.',
+    },
+    {
+      name: 'Observez le pourcentage principal',
+      text: 'Le grand chiffre au centre indique quel pourcentage de votre matière actuelle est "neuve" (renouvelée depuis votre naissance).',
+    },
+    {
+      name: 'Analysez les barres de progression',
+      text: 'Chaque barre représente un tissu différent : peau/sang, os, organes et cerveau. Notez que le cerveau change à peine tandis que la peau se renouvelle constamment.',
+    },
+    {
+      name: 'Réfléchissez sur votre identité',
+      text: 'Si 99 % de vous est de la matière neuve, qui êtes-vous réellement ? Utilisez cet outil comme point de départ pour des réflexions sur la continuité personnelle et le Paradoxe de Thésée.',
+    },
+  ];
+const faq = [
+    {
+      question: 'Qu\'est-ce que le "renouvellement cellulaire" exactement ?',
+      answer: 'C\'est le processus naturel par lequel les cellules âgées ou endommagées meurent (apoptose) et sont remplacées par de nouvelles cellules générées par division mitotique. Ce cycle est essentiel pour maintenir les tissus fonctionnels et réparer les dommages.',
+    },
+    {
+      question: 'Pourquoi le cerveau se renouvelle-t-il si lentement ?',
+      answer: 'Les neurones du cortex cérébral se génèrent avant la naissance et généralement ne se divisent plus. Cela assure une stabilité neurologique : vos "câbles" fondamentaux restent constants. Cependant, les cellules gliales (de soutien) se renouvellent. La mémoire est stockée dans les connexions, pas dans les atomes.',
+    },
+    {
+      question: 'Est-il vrai que nous sommes de "nouvelles personnes" tous les 7 ans ?',
+      answer: 'C\'est une simplification. Ce n\'est pas exact. Votre sang se renouvelle en 4 mois, votre peau en un mois, votre squelette en 10 ans. Votre cerveau reste en grande partie inchangé. Le chiffre de 7 ans est historique (Aristote l\'a mentionné) mais biologiquement c\'est une moyenne imprécise.',
+    },
+    {
+      question: 'Si mon corps est neuf à 99%, suis-je toujours la même personne ?',
+      answer: 'Oui. L\'identité est une continuité d\'information, de conscience et de mémoire, pas d\'atomes. Vous êtes comme un fleuve : l\'eau change constamment, mais le fleuve persiste. Le Paradoxe de Thésée suggère que l\'identité réside dans le motif, pas dans la matière.',
+    },
+    {
+      question: 'Quels sont les tissus qui se renouvellent le plus rapidement ?',
+      answer: 'Le sang et la peau sont en tête. Votre moelle osseuse produit 200 milliards de cellules sanguines par jour. Vous perdez ~30 000 cellules de peau par minute. C\'est pourquoi ils cicatrisent si bien et vieillissent si visiblement : ils sont jeunes en termes d\'âge cellulaire.',
+    },
+    {
+      question: 'Le cristallin de l\'œil ne se renouvelle vraiment pas ?',
+      answer: 'C\'est exact. Les cellules du cristallin se déposent pendant le développement embryonnaire et sont conservées à vie. À 100 ans, les cellules centrales de votre cristallin pourraient être les mêmes que lorsque vous étiez dans l\'utérus. C\'est une capsule témoin biologique.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'calculateur-renouvellement-cellulaire',
-  title: 'Calculateur de Renouvellement Cellulaire : Que reste t il du "vous" original ?',
-  description: 'Calculez le pourcentage de votre corps qui s\'est renouvelé depuis votre naissance. Estimation basée sur le taux de division cellulaire des organes, des os et des tissus. Le Paradoxe de Thésée rendu tangible.',
+  slug,
+  title,
+  description,
   faqTitle: 'Questions Fréquemment Posées',
   bibliographyTitle: 'Bibliographie',
   ui: {
@@ -100,32 +147,7 @@ export const content: ToolLocaleContent = {
       html: 'Ceci a des implications profondes : votre corps est un processus, pas une chose. Vous êtes un modèle auto-organisé qui persiste à travers le changement. Vous ne possédez pas d\'atomes ; vous êtes une structure qui les canalise temporairement.',
     },
   ],
-  faq: [
-    {
-      question: 'Qu\'est-ce que le "renouvellement cellulaire" exactement ?',
-      answer: 'C\'est le processus naturel par lequel les cellules âgées ou endommagées meurent (apoptose) et sont remplacées par de nouvelles cellules générées par division mitotique. Ce cycle est essentiel pour maintenir les tissus fonctionnels et réparer les dommages.',
-    },
-    {
-      question: 'Pourquoi le cerveau se renouvelle-t-il si lentement ?',
-      answer: 'Les neurones du cortex cérébral se génèrent avant la naissance et généralement ne se divisent plus. Cela assure une stabilité neurologique : vos "câbles" fondamentaux restent constants. Cependant, les cellules gliales (de soutien) se renouvellent. La mémoire est stockée dans les connexions, pas dans les atomes.',
-    },
-    {
-      question: 'Est-il vrai que nous sommes de "nouvelles personnes" tous les 7 ans ?',
-      answer: 'C\'est une simplification. Ce n\'est pas exact. Votre sang se renouvelle en 4 mois, votre peau en un mois, votre squelette en 10 ans. Votre cerveau reste en grande partie inchangé. Le chiffre de 7 ans est historique (Aristote l\'a mentionné) mais biologiquement c\'est une moyenne imprécise.',
-    },
-    {
-      question: 'Si mon corps est neuf à 99%, suis-je toujours la même personne ?',
-      answer: 'Oui. L\'identité est une continuité d\'information, de conscience et de mémoire, pas d\'atomes. Vous êtes comme un fleuve : l\'eau change constamment, mais le fleuve persiste. Le Paradoxe de Thésée suggère que l\'identité réside dans le motif, pas dans la matière.',
-    },
-    {
-      question: 'Quels sont les tissus qui se renouvellent le plus rapidement ?',
-      answer: 'Le sang et la peau sont en tête. Votre moelle osseuse produit 200 milliards de cellules sanguines par jour. Vous perdez ~30 000 cellules de peau par minute. C\'est pourquoi ils cicatrisent si bien et vieillissent si visiblement : ils sont jeunes en termes d\'âge cellulaire.',
-    },
-    {
-      question: 'Le cristallin de l\'œil ne se renouvelle vraiment pas ?',
-      answer: 'C\'est exact. Les cellules du cristallin se déposent pendant le développement embryonnaire et sont conservées à vie. À 100 ans, les cellules centrales de votre cristallin pourraient être les mêmes que lorsque vous étiez dans l\'utérus. C\'est une capsule témoin biologique.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Sender, R., & Milo, R. (2021). The distribution of cellular turnover in the human body. Nature Medicine, 27(1), 45-48.',
@@ -148,23 +170,38 @@ export const content: ToolLocaleContent = {
       url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Réglez votre âge',
-      text: 'Faites glisser le curseur de 1 à 105 ans. C\'est la variable la plus importante pour les calculs de renouvellement.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Observez le pourcentage principal',
-      text: 'Le grand chiffre au centre indique quel pourcentage de votre matière actuelle est "neuve" (renouvelée depuis votre naissance).',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Analysez les barres de progression',
-      text: 'Chaque barre représente un tissu différent : peau/sang, os, organes et cerveau. Notez que le cerveau change à peine tandis que la peau se renouvelle constamment.',
-    },
-    {
-      name: 'Réfléchissez sur votre identité',
-      text: 'Si 99 % de vous est de la matière neuve, qui êtes-vous réellement ? Utilisez cet outil comme point de départ pour des réflexions sur la continuité personnelle et le Paradoxe de Thésée.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

@@ -1,9 +1,48 @@
+const slug = 'detector-microondas';
+const description = 'Analiza si tu microondas pierde radiación midiendo la interferencia en tiempo real sobre tu red WiFi. Herramienta científica de seguridad.';
+const title = 'Detector de Fugas de Microondas: Visualizador de Interferencias WiFi';
+const howTo = [
+    {
+      name: 'Conectar a red WiFi de 2.4GHz',
+      text: 'Asegúrate de que tu móvil o portátil NO esté conectado a la banda de 5GHz para que la interferencia sea medible.',
+    },
+    {
+      name: 'Iniciar el test de latencia base',
+      text: 'Pulsa el botón de inicio con el microondas apagado para establecer una línea base de conexión estable.',
+    },
+    {
+      name: 'Encender el microondas',
+      text: 'Pon a calentar un vaso de agua durante 30-60 segundos y sitúate cerca del electrodoméstico con tu dispositivo.',
+    },
+    {
+      name: 'Analizar el gráfico en tiempo real',
+      text: 'Observa si la latencia sube por encima de los 100-200ms o si se producen pérdidas de paquetes mientras el aparato está en funcionamiento.',
+    },
+  ];
+const faq = [
+    {
+      question: '¿Cómo puede una web detectar mi microondas?',
+      answer: 'No usamos sensores mágicos, sino la latencia de red. Tanto el WiFi de 2.4GHz como los hornos microondas operan en la misma frecuencia (aprox. 2450 MHz). Si el blindaje del microondas falla, genera "ruido" que colisiona con el WiFi, aumentando drásticamente la latencia (ping).',
+    },
+    {
+      question: '¿Es peligroso que mi microondas sufra fugas?',
+      answer: 'Una pequeña interferencia en el WiFi es normal y no implica un riesgo inmediato para la salud, ya que la potencia decae rápido con la distancia. Sin embargo, una fuga masiva indica un mal sellado de la puerta o de la rejilla, lo cual debería revisarse por seguridad técnica.',
+    },
+    {
+      question: '¿Por qué el test no funciona con WiFi de 5GHz?',
+      answer: 'Porque el WiFi de 5GHz opera en una banda de frecuencia mucho más alta que un microondas. Para que el test sea efectivo, tu dispositivo debe estar conectado a la red de 2.4GHz del router.',
+    },
+    {
+      question: '¿Qué significan los picos de latencia en el gráfico?',
+      answer: 'Los picos constantes durante el funcionamiento del microondas sugieren que la señal electromagnética está "escapando" y saturando el aire, impidiendo que los paquetes de datos WiFi lleguen a tiempo.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'detector-microondas',
-  title: 'Detector de Fugas de Microondas: Visualizador de Interferencias WiFi',
-  description: 'Analiza si tu microondas pierde radiación midiendo la interferencia en tiempo real sobre tu red WiFi. Herramienta científica de seguridad.',
+  slug,
+  title,
+  description,
   faqTitle: 'Preguntas Frecuentes',
   bibliographyTitle: 'Bibliografía',
   ui: {
@@ -113,24 +152,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: '¿Cómo puede una web detectar mi microondas?',
-      answer: 'No usamos sensores mágicos, sino la latencia de red. Tanto el WiFi de 2.4GHz como los hornos microondas operan en la misma frecuencia (aprox. 2450 MHz). Si el blindaje del microondas falla, genera "ruido" que colisiona con el WiFi, aumentando drásticamente la latencia (ping).',
-    },
-    {
-      question: '¿Es peligroso que mi microondas sufra fugas?',
-      answer: 'Una pequeña interferencia en el WiFi es normal y no implica un riesgo inmediato para la salud, ya que la potencia decae rápido con la distancia. Sin embargo, una fuga masiva indica un mal sellado de la puerta o de la rejilla, lo cual debería revisarse por seguridad técnica.',
-    },
-    {
-      question: '¿Por qué el test no funciona con WiFi de 5GHz?',
-      answer: 'Porque el WiFi de 5GHz opera en una banda de frecuencia mucho más alta que un microondas. Para que el test sea efectivo, tu dispositivo debe estar conectado a la red de 2.4GHz del router.',
-    },
-    {
-      question: '¿Qué significan los picos de latencia en el gráfico?',
-      answer: 'Los picos constantes durante el funcionamiento del microondas sugieren que la señal electromagnética está "escapando" y saturando el aire, impidiendo que los paquetes de datos WiFi lleguen a tiempo.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Microwave Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
@@ -145,23 +167,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nist.gov/topics/electromagnetic-fields',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Conectar a red WiFi de 2.4GHz',
-      text: 'Asegúrate de que tu móvil o portátil NO esté conectado a la banda de 5GHz para que la interferencia sea medible.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Iniciar el test de latencia base',
-      text: 'Pulsa el botón de inicio con el microondas apagado para establecer una línea base de conexión estable.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Encender el microondas',
-      text: 'Pon a calentar un vaso de agua durante 30-60 segundos y sitúate cerca del electrodoméstico con tu dispositivo.',
-    },
-    {
-      name: 'Analizar el gráfico en tiempo real',
-      text: 'Observa si la latencia sube por encima de los 100-200ms o si se producen pérdidas de paquetes mientras el aparato está en funcionamiento.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

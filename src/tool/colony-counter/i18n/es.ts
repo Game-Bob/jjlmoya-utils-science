@@ -1,3 +1,39 @@
+const howTo = [
+    {
+      name: 'Preparar la imagen de la placa',
+      text: 'Coloca tu placa de Petri sobre un fondo oscuro o utiliza un transiluminador para que las colonias contrasten claramente.',
+    },
+    {
+      name: 'Identificar tipos de colonias',
+      text: 'Utiliza diferentes colores de marca para agrupar colonias según su morfología, color o tamaño.',
+    },
+    {
+      name: 'Marcar cada colonia',
+      text: 'Haz clic sobre cada colonia visible. La herramienta numerará cada impacto automáticamente para no repetir ni olvidar ninguna.',
+    },
+    {
+      name: 'Calcular concentración final',
+      text: 'Introduce el volumen sembrado y el factor de dilución para obtener el resultado final en UFC/ml o UFC/g.',
+    },
+  ];
+const faq = [
+    {
+      question: '¿Qué es el conteo de UFC?',
+      answer: 'Las Unidades Formadoras de Colonias (UFC) es una unidad de medida que estima el número de bacterias o células fúngicas viables en una muestra. Se asume que cada colonia visible se originó a partir de una única célula o un grupo de ellas.',
+    },
+    {
+      question: '¿Por qué es mejor un contador digital que uno manual?',
+      answer: 'El conteo digital evita el error humano de "perder la cuenta" al marcar visualmente cada colonia. Nuestra herramienta permite además diferenciar tipos de colonias por colores, facilitando el análisis de placas mixtas.',
+    },
+    {
+      question: '¿Cómo se calculan las UFC por mililitro?',
+      answer: 'Se multiplica el número de colonias contadas por el factor de dilución invertido. Por ejemplo, si cuentas 30 colonias en una dilución 1:100, la muestra original tiene 3000 UFC/ml.',
+    },
+    {
+      question: '¿Cuándo se considera una placa "uncountable"?',
+      answer: 'En microbiología estándar, si hay más de 250-300 colonias, la placa se considera demasiado poblada (Too Numerous To Count, TNTC) y los datos no son fiables debido a la competencia entre colonias.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'contador-colonias';
@@ -101,24 +137,7 @@ export const content: ToolLocaleContent = {
       html: 'Nuestra herramienta permite diferenciar hasta dos tipos de colonias con colores distintos, facilitando el conteo diferencial sin necesidad de marcadores físicos.',
     },
   ],
-  faq: [
-    {
-      question: '¿Qué es el conteo de UFC?',
-      answer: 'Las Unidades Formadoras de Colonias (UFC) es una unidad de medida que estima el número de bacterias o células fúngicas viables en una muestra. Se asume que cada colonia visible se originó a partir de una única célula o un grupo de ellas.',
-    },
-    {
-      question: '¿Por qué es mejor un contador digital que uno manual?',
-      answer: 'El conteo digital evita el error humano de "perder la cuenta" al marcar visualmente cada colonia. Nuestra herramienta permite además diferenciar tipos de colonias por colores, facilitando el análisis de placas mixtas.',
-    },
-    {
-      question: '¿Cómo se calculan las UFC por mililitro?',
-      answer: 'Se multiplica el número de colonias contadas por el factor de dilución invertido. Por ejemplo, si cuentas 30 colonias en una dilución 1:100, la muestra original tiene 3000 UFC/ml.',
-    },
-    {
-      question: '¿Cuándo se considera una placa "uncountable"?',
-      answer: 'En microbiología estándar, si hay más de 250-300 colonias, la placa se considera demasiado poblada (Too Numerous To Count, TNTC) y los datos no son fiables debido a la competencia entre colonias.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'FDA - Bacteriological Analytical Manual',
@@ -129,23 +148,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.iso.org/standard/53728.html',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Preparar la imagen de la placa',
-      text: 'Coloca tu placa de Petri sobre un fondo oscuro o utiliza un transiluminador para que las colonias contrasten claramente.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Identificar tipos de colonias',
-      text: 'Utiliza diferentes colores de marca para agrupar colonias según su morfología, color o tamaño.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Marcar cada colonia',
-      text: 'Haz clic sobre cada colonia visible. La herramienta numerará cada impacto automáticamente para no repetir ni olvidar ninguna.',
-    },
-    {
-      name: 'Calcular concentración final',
-      text: 'Introduce el volumen sembrado y el factor de dilución para obtener el resultado final en UFC/ml o UFC/g.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };

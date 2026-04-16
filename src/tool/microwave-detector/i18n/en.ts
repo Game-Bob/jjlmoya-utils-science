@@ -1,9 +1,48 @@
+const slug = 'microwave-leak-detector';
+const description = 'Analyze if your microwave is leaking radiation by measuring real-time interference on your WiFi network. A scientific safety tool.';
+const title = 'Microwave Leak Detector: WiFi Interference Visualizer';
+const howTo = [
+    {
+      name: 'Connect to 2.4GHz WiFi network',
+      text: 'Ensure your mobile or laptop is NOT connected to the 5GHz band so that interference is measurable.',
+    },
+    {
+      name: 'Start base latency test',
+      text: 'Press the start button with the microwave off to establish a stable connection baseline.',
+    },
+    {
+      name: 'Turn on the microwave',
+      text: 'Heat a glass of water for 30-60 seconds and stand near the appliance with your device.',
+    },
+    {
+      name: 'Analyze real-time graph',
+      text: 'Observe if latency rises above 100-200ms or if packet loss occurs while the device is running.',
+    },
+  ];
+const faq = [
+    {
+      question: 'How can a website detect my microwave?',
+      answer: 'We don\'t use magic sensors, but network latency. Both 2.4GHz WiFi and microwave ovens operate at the same frequency (approx. 2450 MHz). If the microwave shielding fails, it generates "noise" that collides with the WiFi, drastically increasing latency (ping).',
+    },
+    {
+      question: 'Is it dangerous if my microwave leaks?',
+      answer: 'Small WiFi interference is normal and does not imply an immediate health risk, as power decays quickly with distance. However, a massive leak indicates poor sealing of the door or mesh, which should be checked for technical safety.',
+    },
+    {
+      question: 'Why doesn\'t the test work with 5GHz WiFi?',
+      answer: 'Because 5GHz WiFi operates on a much higher frequency band than a microwave. For the test to be effective, your device must be connected to the router\'s 2.4GHz network.',
+    },
+    {
+      question: 'What do the latency spikes on the graph mean?',
+      answer: 'Constant spikes during microwave operation suggest that the electromagnetic signal is "escaping" and saturating the air, preventing WiFi data packets from arriving on time.',
+    },
+  ];
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
-  slug: 'microwave-leak-detector',
-  title: 'Microwave Leak Detector: WiFi Interference Visualizer',
-  description: 'Analyze if your microwave is leaking radiation by measuring real-time interference on your WiFi network. A scientific safety tool.',
+  slug,
+  title,
+  description,
   faqTitle: 'Frequently Asked Questions',
   bibliographyTitle: 'Bibliography',
   ui: {
@@ -113,24 +152,7 @@ export const content: ToolLocaleContent = {
       ],
     },
   ],
-  faq: [
-    {
-      question: 'How can a website detect my microwave?',
-      answer: 'We don\'t use magic sensors, but network latency. Both 2.4GHz WiFi and microwave ovens operate at the same frequency (approx. 2450 MHz). If the microwave shielding fails, it generates "noise" that collides with the WiFi, drastically increasing latency (ping).',
-    },
-    {
-      question: 'Is it dangerous if my microwave leaks?',
-      answer: 'Small WiFi interference is normal and does not imply an immediate health risk, as power decays quickly with distance. However, a massive leak indicates poor sealing of the door or mesh, which should be checked for technical safety.',
-    },
-    {
-      question: 'Why doesn\'t the test work with 5GHz WiFi?',
-      answer: 'Because 5GHz WiFi operates on a much higher frequency band than a microwave. For the test to be effective, your device must be connected to the router\'s 2.4GHz network.',
-    },
-    {
-      question: 'What do the latency spikes on the graph mean?',
-      answer: 'Constant spikes during microwave operation suggest that the electromagnetic signal is "escaping" and saturating the air, preventing WiFi data packets from arriving on time.',
-    },
-  ],
+  faq,
   bibliography: [
     {
       name: 'Microwave Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
@@ -145,23 +167,38 @@ export const content: ToolLocaleContent = {
       url: 'https://www.nist.gov/topics/electromagnetic-fields',
     },
   ],
-  howTo: [
+  howTo,
+  
+  schemas: [
     {
-      name: 'Connect to 2.4GHz WiFi network',
-      text: 'Ensure your mobile or laptop is NOT connected to the 5GHz band so that interference is measurable.',
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description: description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
     },
     {
-      name: 'Start base latency test',
-      text: 'Press the start button with the microwave off to establish a stable connection baseline.',
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
     },
     {
-      name: 'Turn on the microwave',
-      text: 'Heat a glass of water for 30-60 seconds and stand near the appliance with your device.',
-    },
-    {
-      name: 'Analyze real-time graph',
-      text: 'Observe if latency rises above 100-200ms or if packet loss occurs while the device is running.',
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
     },
   ],
-  schemas: [],
 };
