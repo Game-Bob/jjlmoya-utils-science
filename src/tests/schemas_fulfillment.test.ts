@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { ALL_TOOLS } from '../tools';
 import type { ToolLocaleContent } from '../types';
 
-describe.skip('Schemas Fulfillment Validation', () => {
+describe('Schemas Fulfillment Validation', () => {
   ALL_TOOLS.forEach((tool) => {
     describe(`Tool: ${tool.entry.id}`, () => {
       Object.keys(tool.entry.i18n).forEach((locale) => {
