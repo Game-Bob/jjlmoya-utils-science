@@ -1,7 +1,4 @@
 import type { ScienceToolEntry, ToolDefinition } from '../../types';
-import AsteroidImpactComponent from './component.astro';
-import AsteroidImpactSEO from './seo.astro';
-import AsteroidImpactBibliography from './bibliography.astro';
 
 export const asteroidImpact: ScienceToolEntry = {
   id: 'asteroid-impact',
@@ -30,7 +27,7 @@ export const asteroidImpact: ScienceToolEntry = {
 
 export const ASTEROID_IMPACT_TOOL: ToolDefinition = {
   entry: asteroidImpact,
-  Component: AsteroidImpactComponent,
-  SEOComponent: AsteroidImpactSEO,
-  BibliographyComponent: AsteroidImpactBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

@@ -1,7 +1,4 @@
 import type { ScienceToolEntry, ToolDefinition, ToolLocaleContent } from '../../types';
-import ColonyCounterComponent from './component.astro';
-import ColonyCounterSEO from './seo.astro';
-import ColonyCounterBibliography from './bibliography.astro';
 
 export interface ColonyCounterUI {
   [key: string]: string;
@@ -33,7 +30,7 @@ export const colonyCounter: ScienceToolEntry<ColonyCounterUI> = {
 
 export const COLONY_COUNTER_TOOL: ToolDefinition = {
   entry: colonyCounter,
-  Component: ColonyCounterComponent,
-  SEOComponent: ColonyCounterSEO,
-  BibliographyComponent: ColonyCounterBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

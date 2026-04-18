@@ -1,5 +1,5 @@
 export { scienceCategory, scienceCategory as templateCategory } from './category';
-export { default as ScienceCategorySEO } from './category/seo.astro';
+export const ScienceCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 export { COLONY_COUNTER_TOOL } from './tool/colony-counter/index';
 export { ASTEROID_IMPACT_TOOL } from './tool/asteroid-impact/index';
 export { MICROWAVE_DETECTOR_TOOL } from './tool/microwave-detector/index';

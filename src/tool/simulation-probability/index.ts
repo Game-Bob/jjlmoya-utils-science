@@ -1,7 +1,4 @@
 import type { ScienceToolEntry, ToolDefinition } from '../../types';
-import SimulationProbabilityComponent from './component.astro';
-import SimulationProbabilitySEO from './seo.astro';
-import SimulationProbabilityBibliography from './bibliography.astro';
 
 export const simulationProbability: ScienceToolEntry = {
   id: 'simulation-probability',
@@ -30,7 +27,7 @@ export const simulationProbability: ScienceToolEntry = {
 
 export const SIMULATION_PROBABILITY_TOOL: ToolDefinition = {
   entry: simulationProbability,
-  Component: SimulationProbabilityComponent,
-  SEOComponent: SimulationProbabilitySEO,
-  BibliographyComponent: SimulationProbabilityBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

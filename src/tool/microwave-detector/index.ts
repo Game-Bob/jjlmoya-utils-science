@@ -1,7 +1,4 @@
 import type { ScienceToolEntry, ToolDefinition } from '../../types';
-import MicrowaveDetectorComponent from './component.astro';
-import MicrowaveDetectorSEO from './seo.astro';
-import MicrowaveDetectorBibliography from './bibliography.astro';
 
 export const microwaveDetector: ScienceToolEntry = {
   id: 'microwave-detector',
@@ -30,7 +27,7 @@ export const microwaveDetector: ScienceToolEntry = {
 
 export const MICROWAVE_DETECTOR_TOOL: ToolDefinition = {
   entry: microwaveDetector,
-  Component: MicrowaveDetectorComponent,
-  SEOComponent: MicrowaveDetectorSEO,
-  BibliographyComponent: MicrowaveDetectorBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

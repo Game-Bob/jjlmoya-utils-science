@@ -1,7 +1,4 @@
 import type { ScienceToolEntry, ToolDefinition } from '../../types';
-import CellularRenewalComponent from './component.astro';
-import CellularRenewalSEO from './seo.astro';
-import CellularRenewalBibliography from './bibliography.astro';
 
 export const cellularRenewal: ScienceToolEntry = {
   id: 'cellular-renewal',
@@ -30,7 +27,7 @@ export const cellularRenewal: ScienceToolEntry = {
 
 export const CELLULAR_RENEWAL_TOOL: ToolDefinition = {
   entry: cellularRenewal,
-  Component: CellularRenewalComponent,
-  SEOComponent: CellularRenewalSEO,
-  BibliographyComponent: CellularRenewalBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };
