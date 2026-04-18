@@ -1,3 +1,4 @@
+import { simulationProbability } from './entry';
 export * from './entry';
 export const SIMULATION_PROBABILITY_TOOL: ToolDefinition = {
   entry: simulationProbability,

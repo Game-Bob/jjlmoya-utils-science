@@ -1,3 +1,4 @@
+import { microwaveDetector } from './entry';
 export * from './entry';
 export const MICROWAVE_DETECTOR_TOOL: ToolDefinition = {
   entry: microwaveDetector,

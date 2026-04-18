@@ -1,3 +1,4 @@
+import { cellularRenewal } from './entry';
 export * from './entry';
 export const CELLULAR_RENEWAL_TOOL: ToolDefinition = {
   entry: cellularRenewal,

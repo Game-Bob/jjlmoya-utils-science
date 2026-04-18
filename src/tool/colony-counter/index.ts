@@ -1,3 +1,4 @@
+import { colonyCounter } from './entry';
 export * from './entry';
 export const COLONY_COUNTER_TOOL: ToolDefinition = {
   entry: colonyCounter,
