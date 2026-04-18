@@ -1,0 +1,13 @@
+export { asteroidImpact } from './tool/asteroid-impact/entry';
+export { cellularRenewal } from './tool/cellular-renewal/entry';
+export { colonyCounter } from './tool/colony-counter/entry';
+export type { ColonyCounterUI, ColonyCounterLocaleContent } from './tool/colony-counter/entry';
+export { microwaveDetector } from './tool/microwave-detector/entry';
+export { simulationProbability } from './tool/simulation-probability/entry';
+export { scienceCategory } from './category';
+import { asteroidImpact } from './tool/asteroid-impact/entry';
+import { cellularRenewal } from './tool/cellular-renewal/entry';
+import { colonyCounter } from './tool/colony-counter/entry';
+import { microwaveDetector } from './tool/microwave-detector/entry';
+import { simulationProbability } from './tool/simulation-probability/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability];

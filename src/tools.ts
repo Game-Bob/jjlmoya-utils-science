@@ -1,3 +1,4 @@
+export { ALL_ENTRIES } from './entries';
 import type { ToolDefinition } from './types';
 import { COLONY_COUNTER_TOOL } from './tool/colony-counter/index';
 import { ASTEROID_IMPACT_TOOL } from './tool/asteroid-impact/index';
@@ -14,4 +15,3 @@ export const ALL_TOOLS: ToolDefinition[] = [
 ];
 
 
-export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);
