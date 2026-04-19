@@ -16,7 +16,7 @@
   --colony-text-light: #f1f5f9;
 }
 
-:global(.theme-dark) {
+.theme-dark {
   --colony-bg-light: #0f172a;
   --colony-bg-card: #1e293b;
   --colony-bg-modal: rgba(30, 41, 59, 0.9);
@@ -240,7 +240,7 @@
   color: var(--colony-primary);
 }
 
-:global(.theme-dark) .colony-mode-btn-active {
+.theme-dark .colony-mode-btn-active {
   background: color-mix(in srgb, var(--colony-primary) 15%, var(--colony-bg-light));
 }
 
@@ -371,7 +371,7 @@
   border-color: color-mix(in srgb, var(--colony-danger) 40%, var(--colony-border-light));
 }
 
-:global(.theme-dark) .colony-clear-btn {
+.theme-dark .colony-clear-btn {
   color: var(--colony-danger-light);
 }
 

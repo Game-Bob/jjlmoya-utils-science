@@ -27,7 +27,7 @@
 		--asteroid-transition-slow: all 0.3s ease;
 	}
 
-	:global(.theme-dark) {
+	.theme-dark {
 		--asteroid-primary: #ff9f43;
 		--asteroid-secondary: #ff6b5b;
 		--asteroid-accent: #94a3b8;
@@ -134,7 +134,7 @@
 		transition: var(--asteroid-transition);
 	}
 
-	:global(.theme-dark) .asteroid-gps-btn {
+	.theme-dark .asteroid-gps-btn {
 		background: rgba(30, 41, 59, 0.95);
 		border: 1px solid rgba(100, 116, 139, 0.4);
 	}
