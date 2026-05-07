@@ -41,14 +41,13 @@ const faq = [
       answer: 'Depende de tus creencias sobre el futuro de la computación. Valores bajos (100-1000) asumen limitaciones de recursos. Valores altos (millones) asumen poder computacional prácticamente ilimitado. La mayoría de discusiones científicas usan valores entre 1000 y 1 billón.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Preguntas Frecuentes',
-  bibliographyTitle: 'Bibliografía',
   ui: {
     copied: 'Copiado',
     noHistory: 'No historial',
@@ -167,28 +166,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Bostrom, N. (2003). Are You Living in a Computer Simulation? The Philosophical Quarterly, 53(211), 243-255.',
-      url: 'https://www.nickbostrom.com/sim.html',
-    },
-    {
-      name: 'Chalmers, D. J. (2005). The Matrix as Metaphysics. Science Fiction and Philosophy, 132-142.',
-      url: 'https://consc.net/papers/matrix.html',
-    },
-    {
-      name: 'Gefter, A. (2014). The Man Who Tried to Redeem the World with Logic: The Life and Work of Kurt Gödel. Nautilus Magazine.',
-      url: 'https://nautil.us/articles/the-man-who-tried-to-redeem-the-world-with-logic',
-    },
-    {
-      name: 'Tegmark, M. (2014). Our Mathematical Universe: My Quest for the Ultimate Nature of Reality. Knopf.',
-      url: 'https://space.mit.edu/home/tegmark/mathematical-universe.html',
-    },
-    {
-      name: 'Tyson, N. deG. (2014). Welcome to the Universe: An Astrophysical Tour. Princeton University Press.',
-      url: 'https://www.haydenplanetarium.org/',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -224,3 +202,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

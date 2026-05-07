@@ -34,6 +34,7 @@ const faq = [
       answer: '在标准微生物学中，如果菌落超过 250-300 个，则认为培养皿过于拥挤（多不可计，TNTC），且由于菌落竞争，数据不可靠。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'colony-counter';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '常见问题',
-  bibliographyTitle: '参考文献',
   ui: {
     uploadTitle: '点击上传培养皿图像',
     uploadSubtitle: '上传培养皿照片并开始计数菌落',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - 微生物分析手册',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - 菌落计数技术',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

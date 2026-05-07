@@ -37,14 +37,13 @@ const faq = [
       answer: '小型撞击（如 2013 年在俄罗斯发生的）每十年发生一次。灾难性撞击（通古斯式）每隔几个世纪发生一次。全球性灭绝事件（如希克苏鲁伯）大约每 1 亿年发生一次。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '常见问题',
-  bibliographyTitle: '参考文献',
   ui: {
     copied: '已复制',
     noHistory: '无历史记录',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., 等 (2005). 地球撞击效应项目：一个基于 Web 的计算机程序，用于计算流星体撞击地球对区域环境产生的影响。',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., 等 (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., 等 (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., 等 (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

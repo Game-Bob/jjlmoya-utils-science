@@ -37,14 +37,13 @@ const faq = [
       answer: '전자레인지 작동 중에 지속적인 급증이 발생한다면 전자기 신호가 외부로 "누설"되어 공기를 포화시키고 WiFi 데이터 패킷이 제시간에 도착하는 것을 방해하고 있음을 시사합니다.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     copied: '복사됨',
     noHistory: '내역 없음',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: '전자레인지 누설: 표준 및 안전 - 미국 식품의약국 (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: '전자레인지와 WLAN의 전자기적 호환성 - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: '파라데이 케이지 및 RF 차폐 효율성 - NIST (미국 국립표준기술연구소)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

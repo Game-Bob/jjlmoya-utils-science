@@ -37,14 +37,13 @@ const faq = [
       answer: 'Piccoli impatti (come quello in Russia nel 2013) accadono ogni decennio. Impatti catastrofici (stile Tunguska) ogni pochi secoli. Un evento di estinzione globale come Chicxulub accade approssimativamente ogni 100 milioni di anni.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Domande Frequenti',
-  bibliographyTitle: 'Bibliografia',
   ui: {
     copied: 'Copiato',
     noHistory: 'Nessuna cronologia',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: Un programma computerizzato via web per il calcolo delle conseguenze ambientali regionali dell\'impatto di un meteoroide sulla Terra.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., et al. (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., et al. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., et al. (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

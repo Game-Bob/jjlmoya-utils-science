@@ -34,6 +34,7 @@ const faq = [
       answer: 'В стандартной микробиологии, если на чашке более 250–300 колоний, она считается слишком плотно заселенной (TNTC — Too Numerous To Count), и данные считаются ненадежными из-за конкуренции между колониями.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'schetchick-koloniy';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Часто задаваемые вопросы',
-  bibliographyTitle: 'Библиографические ссылки',
   ui: {
     uploadTitle: 'Нажмите, чтобы загрузить изображение чашки Петри',
     uploadSubtitle: 'Загрузите фото вашей чашки и начните подсчет колоний',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA — Руководство по бактериологическому анализу',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 — Метод подсчета колоний',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

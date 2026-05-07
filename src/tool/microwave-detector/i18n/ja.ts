@@ -37,14 +37,13 @@ const faq = [
       answer: '電子レンジの使用中に継続的なスパイクが発生する場合、電磁信号が「漏れ」て空気を飽和させ、WiFiのデータパケットが予定通りに届くのを妨げていることを示唆しています。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'よくある質問',
-  bibliographyTitle: '参考文献',
   ui: {
     copied: 'コピー済み',
     noHistory: '履歴なし',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: '電子レンジの漏洩：規格と安全性 - 米国食品医薬品局 (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: '電子レンジとWLANの電磁両立性 - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'ファラデーケージとRFシールドの有効性 - NIST (米国国立標準技術研究所)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

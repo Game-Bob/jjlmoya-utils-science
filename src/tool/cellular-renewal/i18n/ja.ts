@@ -45,14 +45,13 @@ const faq = [
       answer: 'その通りです。水晶体細胞は胚発生時に蓄積され、生涯維持されます。100歳になっても、水晶体の中央の細胞は胎内にいたときと同じである可能性があります。それは生物学的なタイムカプセルです。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'よくある質問',
-  bibliographyTitle: '参考文献',
   ui: {
     copied: 'コピー済み',
     noHistory: '履歴なし',
@@ -148,28 +147,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Sender, R., & Milo, R. (2021). The distribution of cellular turnover in the human body. Nature Medicine, 27(1), 45-48.',
-      url: 'https://www.nature.com/articles/s41591-020-01182-9',
-    },
-    {
-      name: 'Spalding, K. L., et al. (2005). Retrospective birth dating of cells in humans. Cell, 122(1), 133-143.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/16023133/',
-    },
-    {
-      name: 'Bianconi, E., et al. (2013). An estimation of the number of cells in the human body. Annals of Human Biology, 40(6), 463-471.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23829164/',
-    },
-    {
-      name: 'スタンフォード哲学百科事典：テセウスの船と個人的同一性。',
-      url: 'https://plato.stanford.edu/entries/identity-relative/',
-    },
-    {
-      name: 'Leblond, C. P. (1964). Classification of cell and tissue by the rate of their division. In Renewal of Life.',
-      url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -205,3 +183,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

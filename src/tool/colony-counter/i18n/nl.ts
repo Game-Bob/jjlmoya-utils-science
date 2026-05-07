@@ -34,6 +34,7 @@ const faq = [
       answer: 'In de standaard microbiologie wordt een plaat als te vol beschouwd (Too Numerous To Count, TNTC) als er meer dan 250-300 kolonies zijn, en zijn de gegevens onbetrouwbaar vanwege concurrentie tussen de kolonies.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'kolonieteller';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Veelgestelde Vragen',
-  bibliographyTitle: 'Bibliografische Referenties',
   ui: {
     uploadTitle: 'Klik om je petrischaal te uploaden',
     uploadSubtitle: 'Upload een foto van je plaat en begin met het tellen van kolonies',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

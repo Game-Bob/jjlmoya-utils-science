@@ -34,6 +34,7 @@ const faq = [
       answer: 'Inom standardmikrobiologi anses plattan vara för tät (Too Numerous To Count, TNTC) om det finns fler än 250-300 kolonier, och data blir otillförlitliga på grund av konkurrens mellan kolonierna.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'koloniraknare';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Vanliga frågor',
-  bibliographyTitle: 'Bibliografiska referenser',
   ui: {
     uploadTitle: 'Klicka för att ladda upp din petriskål',
     uploadSubtitle: 'Ladda upp ett foto av din platta och börja räkna kolonier',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

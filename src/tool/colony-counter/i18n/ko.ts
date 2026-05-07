@@ -34,6 +34,7 @@ const faq = [
       answer: '표준 미생물학에서 콜로니 수가 250~300개를 초과하면 접시가 너무 혼잡한 것(Too Numerous To Count, TNTC)으로 간주하며, 콜로니 간의 경쟁으로 인해 데이터의 신뢰성이 떨어집니다.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'colony-counter';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     uploadTitle: '클릭하여 페트리 접시 이미지 업로드',
     uploadSubtitle: '접시 사진을 업로드하고 콜로니 측정을 시작하세요',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - 세균학 분석 매뉴얼',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - 콜로니 측정 기술',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

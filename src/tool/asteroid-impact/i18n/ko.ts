@@ -37,14 +37,13 @@ const faq = [
       answer: '소규모 충돌(2013년 러시아 등)은 10년마다 발생합니다. 대규모 충돌(퉁구스카급)은 수 세기마다 발생합니다. 칙술루브와 같은 전 지구적 멸종 사건은 약 1억 년마다 발생합니다.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     copied: '복사됨',
     noHistory: '내역 없음',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: 소행성 충돌로 인한 지역적 환경 영향을 계산하기 위한 웹 기반 컴퓨터 프로그램.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., et al. (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., et al. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., et al. (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

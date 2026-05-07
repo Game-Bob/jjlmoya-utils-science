@@ -34,6 +34,7 @@ const faq = [
       answer: 'Dalam standar mikrobiologi, jika terdapat lebih dari 250-300 koloni, cawan tersebut dianggap terlalu padat (Too Numerous To Count, TNTC) dan datanya tidak dapat diandalkan karena adanya kompetisi koloni.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'penghitung-koloni';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
-  bibliographyTitle: 'Referensi Bibliografi',
   ui: {
     uploadTitle: 'Klik untuk mengunggah cawan Petri Anda',
     uploadSubtitle: 'Unggah foto cawan Anda dan mulai menghitung koloni',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Manual Analisis Bakteriologis',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Teknik Penghitungan Koloni',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

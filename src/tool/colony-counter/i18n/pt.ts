@@ -34,6 +34,7 @@ const faq = [
       answer: 'Na microbiologia padrão, se houver mais de 250-300 colónias, a placa é considerada demasiado cheia (Too Numerous To Count, TNTC) e os dados não são fiáveis devido à competição entre as colónias.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'contador-de-colonias';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Perguntas Frequentes',
-  bibliographyTitle: 'Referências Bibliográficas',
   ui: {
     uploadTitle: 'Clique para carregar a sua placa de Petri',
     uploadSubtitle: 'Carregue uma foto da sua placa e comece a contar as colónias',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

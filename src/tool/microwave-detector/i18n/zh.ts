@@ -37,14 +37,13 @@ const faq = [
       answer: '微波炉运行期间持续出现的尖峰表明电磁信号正在“逃逸”并使空气饱和，导致 WiFi 数据包无法按时送达。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '常见问题',
-  bibliographyTitle: '参考文献',
   ui: {
     copied: '已复制',
     noHistory: '暂无历史记录',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: '微波炉泄漏：标准与安全 - 美国食品药品监督管理局 (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: '微波炉与 WLAN 的电磁兼容性 - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: '法拉第笼与射频屏蔽效能 - 美国国家标准与技术研究院 (NIST)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

@@ -37,14 +37,13 @@ const faq = [
       answer: 'Dampak kecil (seperti Rusia pada 2013) terjadi setiap dekade. Dampak bencana (gaya Tunguska) terjadi setiap beberapa abad. Peristiwa kepunahan global seperti Chicxulub terjadi sekitar setiap 100 juta tahun.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
-  bibliographyTitle: 'Bibliografi',
   ui: {
     copied: 'Disalin',
     noHistory: 'Tidak ada riwayat',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., dkk. (2005). Program Efek Dampak Bumi: Sebuah program komputer berbasis web untuk menghitung konsekuensi lingkungan regional dari dampak meteoroid di Bumi.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., dkk. (1997). Gangguan lingkungan yang disebabkan oleh dampak asteroid dan komet. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Dampak pada Bumi oleh asteroid dan komet: menilai bahayanya. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., dkk. (2010). Dampak Asteroid Chicxulub dan Kepunahan Massal di Batas Kapas-Paleogen. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., dkk. (2013). Ledakan udara 500 kiloton di atas Chelyabinsk dan peningkatan bahaya dari penabrak kecil. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

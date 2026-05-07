@@ -41,14 +41,13 @@ const faq = [
       answer: '컴퓨팅의 미래에 대한 당신의 신념에 달려 있습니다. 낮은 값(100~1000)은 자원 제한을 가정한 것이고, 높은 값(수백만 이상)은 사실상 무제한의 컴퓨팅 파워를 가정한 것입니다. 대부분의 과학적 논의에서는 1,000에서 1조 사이의 값을 사용합니다.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     copied: '복사됨',
     noHistory: '내역 없음',
@@ -167,28 +166,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Bostrom, N. (2003). Are You Living in a Computer Simulation? The Philosophical Quarterly, 53(211), 243-255.',
-      url: 'https://www.nickbostrom.com/sim.html',
-    },
-    {
-      name: 'Chalmers, D. J. (2005). The Matrix as Metaphysics. Science Fiction and Philosophy, 132-142.',
-      url: 'https://consc.net/papers/matrix.html',
-    },
-    {
-      name: 'Gefter, A. (2014). The Man Who Tried to Redeem the World with Logic: The Life and Work of Kurt Gödel. Nautilus Magazine.',
-      url: 'https://nautil.us/articles/the-man-who-tried-to-redeem-the-world-with-logic',
-    },
-    {
-      name: 'Tegmark, M. (2014). Our Mathematical Universe: My Quest for the Ultimate Nature of Reality. Knopf.',
-      url: 'https://space.mit.edu/home/tegmark/mathematical-universe.html',
-    },
-    {
-      name: 'Tyson, N. deG. (2014). Welcome to the Universe: An Astrophysical Tour. Princeton University Press.',
-      url: 'https://www.haydenplanetarium.org/',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -224,3 +202,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

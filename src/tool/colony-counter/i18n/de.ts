@@ -34,6 +34,7 @@ const faq = [
       answer: 'In der Standardmikrobiologie gilt eine Platte als zu dicht besiedelt (Too Numerous To Count, TNTC), wenn sie mehr als 250-300 Kolonien aufweist. Die Daten sind dann aufgrund der Konkurrenz zwischen den Kolonien unzuverlässig.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'kolonienzaehler';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Häufig gestellte Fragen',
-  bibliographyTitle: 'Literaturhinweise',
   ui: {
     uploadTitle: 'Klicken Sie hier, um Ihre Petri-Schale hochzuladen',
     uploadSubtitle: 'Laden Sie ein Foto Ihrer Schale hoch und beginnen Sie mit der Zählung der Kolonien',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

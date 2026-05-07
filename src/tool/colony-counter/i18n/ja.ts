@@ -34,6 +34,7 @@ const faq = [
       answer: '標準的な微生物学では、コロニーが250〜300個を超える場合、プレートは混みすぎている（Too Numerous To Count, TNTC）とみなされ、コロニー同士の競合によりデータは信頼できなくなります。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'colony-counter';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'よくある質問',
-  bibliographyTitle: '参考文献',
   ui: {
     uploadTitle: 'クリックしてシャーレの画像をアップロード',
     uploadSubtitle: 'プレートの写真をアップロードしてコロニーのカウントを開始',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - 細菌学的分析マニュアル',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - コロニーカウント技術',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

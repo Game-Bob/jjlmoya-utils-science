@@ -37,14 +37,13 @@ const faq = [
       answer: 'Picos constantes durante o funcionamento do micro-ondas sugerem que o sinal eletromagnético está a "escapar" e a saturar o ar, impedindo que os pacotes de dados WiFi cheguem a tempo.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Perguntas Frequentes',
-  bibliographyTitle: 'Bibliografia',
   ui: {
     copied: 'Copiado',
     noHistory: 'Sem histórico',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Microwave Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: 'Electromagnetic Compatibility of Microwave Ovens and WLAN - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'Faraday Cages and RF Shielding Effectiveness - NIST (National Institute of Standards and Technology)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

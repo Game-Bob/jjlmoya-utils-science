@@ -34,6 +34,7 @@ const faq = [
       answer: 'Nella microbiologia standard, se ci sono più di 250-300 colonie, la piastra è considerata troppo affollata (Too Numerous To Count, TNTC) e i dati sono inattendibili a causa della competizione tra le colonie.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'conta-colonie';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Domande Frequenti',
-  bibliographyTitle: 'Riferimenti Bibliografici',
   ui: {
     uploadTitle: 'Clicca per caricare la tua piastra Petri',
     uploadSubtitle: 'Carica una foto della tua piastra e inizia a contare le colonie',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

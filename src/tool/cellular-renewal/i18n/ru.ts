@@ -45,14 +45,13 @@ const faq = [
       answer: 'Верно. Клетки хрусталика закладываются во время эмбрионального развития и сохраняются на всю жизнь. В 100 лет центральные клетки вашего хрусталика могут быть теми же, что и во время вашего пребывания в утробе. Это биологическая капсула времени.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Часто задаваемые вопросы',
-  bibliographyTitle: 'Библиография',
   ui: {
     copied: 'Скопировано',
     noHistory: 'История пуста',
@@ -148,28 +147,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Sender, R., & Milo, R. (2021). Распределение клеточного оборота в организме человека. Nature Medicine, 27(1), 45-48.',
-      url: 'https://www.nature.com/articles/s41591-020-01182-9',
-    },
-    {
-      name: 'Spalding, K. L., et al. (2005). Ретроспективное определение даты рождения клеток у людей. Cell, 122(1), 133-143.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/16023133/',
-    },
-    {
-      name: 'Bianconi, E., et al. (2013). Оценка количества клеток в организме человека. Annals of Human Biology, 40(6), 463-471.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23829164/',
-    },
-    {
-      name: 'Стэнфордская философская энциклопедия: Корабль Тесея и личная идентичность.',
-      url: 'https://plato.stanford.edu/entries/identity-relative/',
-    },
-    {
-      name: 'Leblond, C. P. (1964). Классификация клеток и тканей по скорости их деления. В Обновлении жизни.',
-      url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -205,3 +183,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

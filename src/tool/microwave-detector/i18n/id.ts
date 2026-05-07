@@ -37,14 +37,13 @@ const faq = [
       answer: 'Lonjakan konstan selama pengoperasian microwave menunjukkan bahwa sinyal elektromagnetik "keluar" dan menjenuhkan udara, mencegah paket data WiFi tiba tepat waktu.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
-  bibliographyTitle: 'Bibliografi',
   ui: {
     copied: 'Disalin',
     noHistory: 'Tidak ada riwayat',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Kebocoran Oven Microwave: Standar dan Keamanan - Food and Drug Administration (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: 'Kompatibilitas Elektromagnetik Oven Microwave dan WLAN - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'Sangkar Faraday dan Efektivitas Pelindung RF - NIST (National Institute of Standards and Technology)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

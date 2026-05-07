@@ -45,14 +45,13 @@ const faq = [
       answer: '正确。晶状体细胞是在胚胎发育期间沉积的并伴随终身。在 100 岁时，你晶状体中心的细胞可能和你还在子宫里时一样。它是一个生物时间胶囊。',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '常见问题',
-  bibliographyTitle: '参考文献',
   ui: {
     copied: '已复制',
     noHistory: '无历史记录',
@@ -148,28 +147,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Sender, R., & Milo, R. (2021). 人体细胞周转的分布。Nature Medicine, 27(1), 45-48.',
-      url: 'https://www.nature.com/articles/s41591-020-01182-9',
-    },
-    {
-      name: 'Spalding, K. L., 等 (2005). 人类细胞的回溯性年龄测定。Cell, 122(1), 133-143.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/16023133/',
-    },
-    {
-      name: 'Bianconi, E., 等 (2013). 人体细胞数量的估算。Annals of Human Biology, 40(6), 463-471.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23829164/',
-    },
-    {
-      name: '斯坦福哲学百科全书：忒修斯之船与个人身份。',
-      url: 'https://plato.stanford.edu/entries/identity-relative/',
-    },
-    {
-      name: 'Leblond, C. P. (1964). 根据分裂速度对细胞和组织进行分类。见《生命的更新》。',
-      url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -205,3 +183,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

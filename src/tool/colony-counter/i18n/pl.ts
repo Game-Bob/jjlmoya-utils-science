@@ -34,6 +34,7 @@ const faq = [
       answer: 'W standardowej mikrobiologii, jeśli na szalce znajduje się więcej niż 250-300 kolonii, uważa się ją za zbyt zagęszczoną (Too Numerous To Count, TNTC), a dane są niewiarygodne z powodu konkurencji między koloniami.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'licznik-kolonii';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Często Zadawane Pytania',
-  bibliographyTitle: 'Referencje Bibliograficzne',
   ui: {
     uploadTitle: 'Kliknij, aby przesłać zdjęcie swojej szalki Petriego',
     uploadSubtitle: 'Prześlij zdjęcie szalki i zacznij liczyć kolonie',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Przewodnik po Analizie Bakteriologicznej',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Technika Liczenia Kolonii',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

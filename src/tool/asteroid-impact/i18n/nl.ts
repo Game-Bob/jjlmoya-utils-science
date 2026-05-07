@@ -37,14 +37,13 @@ const faq = [
       answer: 'Kleine inslagen (zoals in Rusland in 2013) gebeuren elk decennium. Catastrofale inslagen (à la Toengoeska) elke paar eeuwen. Een wereldwijde uitsterving zoals bij Chicxulub gebeurt ongeveer elke 100 miljoen jaar.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Veelgestelde Vragen',
-  bibliographyTitle: 'Bibliografie',
   ui: {
     copied: 'Gekopieerd',
     noHistory: 'Geen geschiedenis',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., et al. (2005). Earth Impact Effects Program: Een web-gebaseerd computerprogramma voor het berekenen van de regionale gevolgen voor het milieu van een meteorietinslag op de aarde.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., et al. (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., et al. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., et al. (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

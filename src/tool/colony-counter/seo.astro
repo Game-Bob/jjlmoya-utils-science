@@ -12,4 +12,4 @@ const content = await colonyCounter.i18n[locale]?.();
 if (!content) return null;
 ---
 
-<SEORenderer content={{ sections: content.seo, locale }} />
+{content.seo?.length > 0 && <SEORenderer content={{ locale, sections: content.seo }} />}

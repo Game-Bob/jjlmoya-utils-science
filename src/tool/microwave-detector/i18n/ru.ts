@@ -37,14 +37,13 @@ const faq = [
       answer: 'Постоянные скачки во время работы микроволновки говорят о том, что электромагнитный сигнал «утекает» наружу и насыщает эфир, не давая пакетам данных WiFi приходить вовремя.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Часто задаваемые вопросы',
-  bibliographyTitle: 'Библиография',
   ui: {
     copied: 'Скопировано',
     noHistory: 'История пуста',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Утечка микроволновых печей: стандарты и безопасность - FDA',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: 'Электромагнитная совместимость микроволновых печей и WLAN - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'Клетки Фарадея и эффективность РЧ-экранирования - NIST',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

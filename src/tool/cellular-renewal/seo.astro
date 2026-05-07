@@ -9,6 +9,7 @@ interface Props {
 
 const { locale = 'es' } = Astro.props;
 const content = await cellularRenewal.i18n[locale]?.();
+if (!content) return null;
 ---
 
-{content && <SEORenderer content={{ sections: content.seo, locale }} />}
+{content.seo?.length > 0 && <SEORenderer content={{ locale, sections: content.seo }} />}

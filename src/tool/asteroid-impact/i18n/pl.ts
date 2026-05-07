@@ -37,14 +37,13 @@ const faq = [
       answer: 'Małe uderzenia (jak w Rosji w 2013 roku) zdarzają się co dekadę. Katastrofalne uderzenia (w stylu Tunguski) co kilka stuleci. Globalne wymieranie, takie jak po Chicxulub, zdarza się mniej więcej co 100 milionów lat.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Często Zadawane Pytania',
-  bibliographyTitle: 'Bibliografia',
   ui: {
     copied: 'Skopiowano',
     noHistory: 'Brak historii',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., i in. (2005). Earth Impact Effects Program: Internetowy program komputerowy do obliczania regionalnych skutków środowiskowych uderzenia meteoroidu w Ziemię.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., i in. (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., i Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., i in. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., i in. (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

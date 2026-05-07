@@ -34,6 +34,7 @@ const faq = [
       answer: 'En microbiologie standard, s\'il y a plus de 250-300 colonies, la boîte est considérée comme trop peuplée (Trop Nombreuses à Compter, TNTC) et les données ne sont pas fiables en raison de la concurrence entre colonies.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'compteur-colonies';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Questions Fréquemment Posées',
-  bibliographyTitle: 'Références Bibliographiques',
   ui: {
     uploadTitle: 'Cliquez pour télécharger votre boîte de Pétri',
     uploadSubtitle: 'Téléchargez une photo de votre boîte et commencez à compter les colonies',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Technique de Comptage des Colonies',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

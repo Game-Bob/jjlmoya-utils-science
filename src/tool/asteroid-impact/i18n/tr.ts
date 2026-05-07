@@ -37,14 +37,13 @@ const faq = [
       answer: 'Küçük çarpmalar (2013 Rusya gibi) her on yılda bir olur. Felaket düzeyindeki çarpmalar (Tunguska tarzı) her birkaç yüzyılda bir. Chicxulub gibi küresel bir yok oluş olayı yaklaşık her 100 milyon yılda bir gerçekleşir.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Sıkça Sorulan Sorular',
-  bibliographyTitle: 'Kaynakça',
   ui: {
     copied: 'Kopyalandı',
     noHistory: 'Geçmiş yok',
@@ -135,28 +134,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Collins, G. S., ve ark. (2005). Earth Impact Effects Program: Bir meteorun Dünya\'ya çarpmasının bölgesel çevresel sonuçlarını hesaplamak için web tabanlı bir bilgisayar programı.',
-      url: 'https://impact.ese.ic.ac.uk/ImpactEarth/',
-    },
-    {
-      name: 'Toon, O. B., ve ark. (1997). Environmental perturbations caused by the impacts of asteroids and comets. Reviews of Geophysics.',
-      url: 'https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/96RG03038',
-    },
-    {
-      name: 'Chapman, C. R., & Morrison, D. (1994). Impacts on the Earth by asteroids and comets: assessing the hazard. Nature.',
-      url: 'https://www.nature.com/articles/367033a0',
-    },
-    {
-      name: 'Schulte, P., ve ark. (2010). The Chicxulub Asteroid Impact and Mass Extinction at the Cretaceous-Paleogene Boundary. Science.',
-      url: 'https://www.science.org/doi/10.1126/science.1177265',
-    },
-    {
-      name: 'Brown, P., ve ark. (2013). A 500-kiloton airburst over Chelyabinsk and an enhanced hazard from small impactors. Nature.',
-      url: 'https://www.nature.com/articles/nature12741',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -192,3 +170,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

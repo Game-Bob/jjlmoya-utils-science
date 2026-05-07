@@ -37,14 +37,13 @@ const faq = [
       answer: 'Ciągłe skoki podczas pracy mikrofalówki sugerują, że sygnał elektromagnetyczny "ucieka" i nasyca pasmo, uniemożliwiając pakietom danych WiFi dotarcie na czas.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Często Zadawane Pytania',
-  bibliographyTitle: 'Bibliografia',
   ui: {
     copied: 'Skopiowano',
     noHistory: 'Brak historii',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Microwave Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: 'Electromagnetic Compatibility of Microwave Ovens and WLAN - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'Faraday Cages and RF Shielding Effectiveness - NIST (National Institute of Standards and Technology)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

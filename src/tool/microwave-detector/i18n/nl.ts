@@ -37,14 +37,13 @@ const faq = [
       answer: 'Constante pieken tijdens het gebruik van de magnetron suggereren dat het elektromagnetische signaal "ontsnapt" en de lucht verzadigt, waardoor WiFi-datapakketten niet op tijd kunnen aankomen.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Veelgestelde Vragen',
-  bibliographyTitle: 'Bibliografie',
   ui: {
     copied: 'Gekopieerd',
     noHistory: 'Geen geschiedenis',
@@ -153,20 +152,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Magnetron Oven Leakage: Standards and Safety - Food and Drug Administration (FDA)',
-      url: 'https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation',
-    },
-    {
-      name: 'Electromagnetic Compatibility of Microwave Ovens and WLAN - IEEE Xplore',
-      url: 'https://ieeexplore.ieee.org/document/8444555',
-    },
-    {
-      name: 'Faraday Cages and RF Shielding Effectiveness - NIST (National Institute of Standards and Technology)',
-      url: 'https://www.nist.gov/topics/electromagnetic-fields',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -202,3 +188,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

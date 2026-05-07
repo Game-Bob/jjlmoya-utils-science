@@ -45,14 +45,13 @@ const faq = [
       answer: '맞습니다. 수정체 세포는 배아 발달 단계에서 형성되어 평생 유지됩니다. 100세가 되었을 때 수정체 중심 세포는 태중에 있을 때와 같을 수 있습니다. 일종의 생물학적 타임캡슐입니다.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: '자주 묻는 질문',
-  bibliographyTitle: '참고 문헌',
   ui: {
     copied: '복사됨',
     noHistory: '내역 없음',
@@ -148,28 +147,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Sender, R., & Milo, R. (2021). 인체의 세포 회전율 분포. Nature Medicine, 27(1), 45-48.',
-      url: 'https://www.nature.com/articles/s41591-020-01182-9',
-    },
-    {
-      name: 'Spalding, K. L., et al. (2005). 인간 세포의 회고적 탄생 연도 측정. Cell, 122(1), 133-143.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/16023133/',
-    },
-    {
-      name: 'Bianconi, E., et al. (2013). 인체 세포 수 추정. Annals of Human Biology, 40(6), 463-471.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23829164/',
-    },
-    {
-      name: '스탠퍼드 철학 백과사전: 테세우스의 배와 개인적 정체성.',
-      url: 'https://plato.stanford.edu/entries/identity-relative/',
-    },
-    {
-      name: 'Leblond, C. P. (1964). 분열 속도에 따른 세포 및 조직 분류. In Renewal of Life.',
-      url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -205,3 +183,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

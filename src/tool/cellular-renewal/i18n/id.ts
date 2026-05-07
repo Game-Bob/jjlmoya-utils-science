@@ -45,14 +45,13 @@ const faq = [
       answer: 'Benar. Sel-sel lensa disimpan selama perkembangan embrio dan disimpan seumur hidup. Pada usia 100 tahun, sel-sel pusat lensa Anda bisa sama seperti saat Anda berada di dalam rahim. Ini adalah kapsul waktu biologis.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
-  bibliographyTitle: 'Bibliografi',
   ui: {
     copied: 'Disalin',
     noHistory: 'Tidak ada riwayat',
@@ -148,28 +147,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'Sender, R., & Milo, R. (2021). Distribusi pergantian seluler dalam tubuh manusia. Nature Medicine, 27(1), 45-48.',
-      url: 'https://www.nature.com/articles/s41591-020-01182-9',
-    },
-    {
-      name: 'Spalding, K. L., dkk. (2005). Penentuan tanggal lahir retrospektif sel pada manusia. Cell, 122(1), 133-143.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/16023133/',
-    },
-    {
-      name: 'Bianconi, E., dkk. (2013). Estimasi jumlah sel dalam tubuh manusia. Annals of Human Biology, 40(6), 463-471.',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23829164/',
-    },
-    {
-      name: 'Stanford Encyclopedia of Philosophy: Kapal Theseus dan Identitas Pribadi.',
-      url: 'https://plato.stanford.edu/entries/identity-relative/',
-    },
-    {
-      name: 'Leblond, C. P. (1964). Klasifikasi sel dan jaringan berdasarkan tingkat pembelahannya. Dalam Pembaruan Kehidupan.',
-      url: 'https://en.wikipedia.org/wiki/Cellular_renewal',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -205,3 +183,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

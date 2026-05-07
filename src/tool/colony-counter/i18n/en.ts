@@ -34,6 +34,7 @@ const faq = [
       answer: 'In standard microbiology, if there are more than 250-300 colonies, the plate is considered too crowded (Too Numerous To Count, TNTC) and the data is unreliable due to colony competition.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'colony-counter';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Frequently Asked Questions',
-  bibliographyTitle: 'Bibliographic References',
   ui: {
     uploadTitle: 'Click to upload your Petri dish',
     uploadSubtitle: 'Upload a photo of your plate and start counting colonies',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bacteriological Analytical Manual',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Colony Count Technique',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

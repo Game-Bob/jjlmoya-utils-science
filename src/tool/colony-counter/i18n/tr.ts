@@ -34,6 +34,7 @@ const faq = [
       answer: 'Standart mikrobiyolojide, 250-300\'den fazla koloni varsa, kap çok kalabalık (Too Numerous To Count, TNTC) kabul edilir ve koloni rekabeti nedeniyle veriler güvenilir değildir.',
     },
   ];
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'koloni-sayaci';
@@ -44,8 +45,6 @@ export const content: ToolLocaleContent = {
   slug,
   title,
   description,
-  faqTitle: 'Sıkça Sorulan Sorular',
-  bibliographyTitle: 'Bibliyografik Kaynaklar',
   ui: {
     uploadTitle: 'Petri kabınızı yüklemek için tıklayın',
     uploadSubtitle: 'Kabınızın fotoğrafını yükleyin ve kolonileri saymaya başlayın',
@@ -138,16 +137,7 @@ export const content: ToolLocaleContent = {
     },
   ],
   faq,
-  bibliography: [
-    {
-      name: 'FDA - Bakteriyolojik Analiz El Kitabı',
-      url: 'https://www.fda.gov/food/laboratory-methods-food/bacteriological-analytical-manual-bam',
-    },
-    {
-      name: 'ISO 4833 - Koloni Sayım Tekniği',
-      url: 'https://www.iso.org/standard/53728.html',
-    },
-  ],
+  bibliography,
   howTo,
   
   schemas: [
@@ -183,3 +173,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
