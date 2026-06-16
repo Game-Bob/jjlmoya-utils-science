@@ -9,7 +9,7 @@
   --lorenz-border: #e2e8f0;
   --lorenz-text: #0f172a;
   --lorenz-text-muted: #64748b;
-  --lorenz-slider-track: #e2e8f0;
+  --lorenz-slider-track: #cbd5e1;
   --lorenz-shadow-color: rgba(0, 0, 0, 0.04);
   --lorenz-font-mono: consolas, monaco, 'Courier New', monospace;
 }
@@ -25,7 +25,7 @@
   --lorenz-border: rgba(255, 255, 255, 0.06);
   --lorenz-text: #f3f4f6;
   --lorenz-text-muted: #9ca3af;
-  --lorenz-slider-track: #374151;
+  --lorenz-slider-track: #4b5563;
   --lorenz-shadow-color: rgba(255, 255, 255, 0.03);
 }
 
@@ -33,6 +33,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  font: 14px Outfit, Inter, sans-serif;
   color: var(--lorenz-text);
   box-sizing: border-box;
 }
@@ -59,6 +60,50 @@
 @media (min-width: 992px) {
   .lorenz-grid {
     grid-template-columns: 1.5fr 1fr;
+    align-items: stretch;
+  }
+
+  .lorenz-canvas-container {
+    aspect-ratio: auto;
+    min-height: 520px;
+    height: 100%;
+  }
+
+  .lorenz-controls-section {
+    gap: 12px;
+  }
+
+  .lorenz-sliders-block {
+    gap: 10px;
+  }
+
+  .lorenz-slider-group {
+    gap: 2px;
+  }
+
+  .lorenz-slider {
+    height: 28px;
+  }
+
+  .lorenz-coords-row {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: flex-start;
+  }
+
+  .lorenz-divergence-display {
+    gap: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .lorenz-chart-canvas-wrapper {
+    height: 60px;
+  }
+
+  .lorenz-stats-block {
+    gap: 8px;
   }
 }
 
@@ -78,6 +123,7 @@
   height: 100%;
   display: block;
   cursor: grab;
+  touch-action: none;
 }
 
 .lorenz-canvas:active {
@@ -113,14 +159,19 @@
   color: var(--lorenz-text-muted);
 }
 
+.lorenz-slider-label {
+  font: 700 12px Outfit, Inter, sans-serif;
+}
+
 .lorenz-slider-val {
   color: var(--lorenz-primary);
+  font: 13px consolas, monaco, monospace;
   font-variant-numeric: tabular-nums;
 }
 
 .lorenz-slider {
   width: 100%;
-  height: 20px;
+  height: 44px;
   background: transparent;
   outline: none;
   -webkit-appearance: none;
@@ -130,9 +181,8 @@
 
 .lorenz-slider::-webkit-slider-runnable-track {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--lorenz-slider-track);
-  border-radius: 1px;
 }
 
 .lorenz-slider::-webkit-slider-thumb {
@@ -140,16 +190,15 @@
   width: 2px;
   height: 12px;
   background: var(--lorenz-primary);
-  margin-top: -5px;
+  margin-top: -5.5px;
   border-radius: 0;
   transition: transform 0.1s ease;
 }
 
 .lorenz-slider::-moz-range-track {
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: var(--lorenz-slider-track);
-  border-radius: 1px;
 }
 
 .lorenz-slider::-moz-range-thumb {
@@ -212,25 +261,25 @@
 }
 
 .lorenz-coord-item {
-  font-size: 0.72rem;
+  font: 12px Outfit, Inter, sans-serif;
   color: var(--lorenz-text-muted);
 }
 
 .lorenz-coord-val {
-  font-weight: 600;
+  font: 600 14px consolas, monaco, monospace;
   font-variant-numeric: tabular-nums;
 }
 
 .lorenz-divergence-display {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .lorenz-divergence-title {
-  font-size: 0.7rem;
-  font-weight: 700;
+  font: 700 12px Outfit, Inter, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--lorenz-text-muted);
@@ -243,8 +292,7 @@
 }
 
 .lorenz-divergence-num {
-  font-size: 2.8rem;
-  font-weight: 750;
+  font: 750 2.8rem consolas, monaco, monospace;
   line-height: 1;
   color: var(--lorenz-accent);
   font-variant-numeric: tabular-nums;
@@ -252,8 +300,7 @@
 }
 
 .lorenz-divergence-delta {
-  font-size: 0.85rem;
-  font-weight: 700;
+  font: 700 14px consolas, monaco, monospace;
   color: var(--lorenz-text-muted);
   font-variant-numeric: tabular-nums;
 }
@@ -269,8 +316,7 @@
 .lorenz-chart-header {
   display: flex;
   align-items: center;
-  font-size: 0.7rem;
-  font-weight: 700;
+  font: 700 12px Outfit, Inter, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--lorenz-text-muted);
@@ -291,9 +337,8 @@
   height: 14px;
   border-radius: 50%;
   border: 1px solid var(--lorenz-text-muted);
-  font-size: 9px;
+  font: bold 9px consolas, monaco, monospace;
   color: var(--lorenz-text-muted);
-  font-weight: bold;
 }
 
 .lorenz-tooltip-text {
@@ -307,7 +352,7 @@
   text-align: center;
   padding: 8px 12px;
   border-radius: 8px;
-  font-size: 0.7rem;
+  font: 12px Outfit, Inter, sans-serif;
   line-height: 1.3;
   width: 200px;
   z-index: 10;
@@ -332,4 +377,77 @@
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@media (max-width: 991px) {
+  .lorenz-app {
+    height: calc(100svh - 80px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lorenz-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .lorenz-grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px;
+  }
+
+  .lorenz-canvas-container {
+    height: 43%;
+    flex-shrink: 0;
+    aspect-ratio: auto;
+  }
+
+  .lorenz-controls-section {
+    height: 57%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 4px;
+  }
+
+  .lorenz-slider-group {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .lorenz-button-row {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 12px;
+    order: 4;
+  }
+
+  .lorenz-stats-block {
+    order: 1;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .lorenz-chart-block {
+    order: 2;
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .lorenz-chart-canvas-wrapper {
+    height: 56px;
+  }
+
+  .lorenz-sliders-block {
+    order: 3;
+    border-top: 1px solid var(--lorenz-border);
+    padding-top: 16px;
+  }
 }

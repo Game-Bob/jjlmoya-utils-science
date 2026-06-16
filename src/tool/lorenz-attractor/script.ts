@@ -107,7 +107,8 @@ function resizeAll() {
   if (canvas && canvas.parentElement) {
     resize(canvas, canvas.parentElement.getBoundingClientRect().height);
   }
-  resize(chartCanvas, 80);
+  const isMobile = window.innerWidth <= 991;
+  resize(chartCanvas, isMobile ? 56 : 60);
 }
 
 function drawAttractor() {

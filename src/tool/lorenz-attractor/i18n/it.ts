@@ -64,16 +64,43 @@ export const content: ToolLocaleContent = {
   "divergenceExplanation": "Il grafico di divergenza mostra la distanza euclidea tra le due traiettorie nel tempo."
 },
   seo: [
-  {
-    "type": "title",
-    "text": "Caos Deterministico: Comprendere le Equazioni di Lorenz",
-    "level": 2
-  },
-  {
-    "type": "paragraph",
-    "html": "Il sistema di Lorenz e una formulazione fondamentale nello studio della dinamica non lineare."
-  }
-],
+    { type: 'title', text: "Caos Deterministico: Comprendere le Equazioni di Lorenz", level: 2 },
+    { type: 'paragraph', html: "Il sistema di Lorenz e una formulazione storica nella dinamica non lineare e nella teoria del caos. Originariamente derivato nel 1963 dal meteorologo e matematico <strong>Edward Lorenz</strong>, il modello nacque da una rappresentazione semplificata della convezione atmosferica. Lorenz semplifico le complesse equazioni della dinamica dei fluidi in tre equazioni differenziali ordinarie accoppiate. La sua scoperta che queste equazioni semplici e deterministiche potevano produrre un comportamento complesso, non periodico e caotico cambio la nostra comprensione dei sistemi fisici." },
+    { type: 'paragraph', html: "Il sistema e definito da tre equazioni differenziali accoppiate che tracciano una coordinata nello spazio delle fasi tridimensionale nel tempo:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>dx/dt = &sigma; * (y - x):</strong> Descrive il tasso di moto convettivo. Il parametro &sigma; (numero di Prandtl) rappresenta il rapporto tra viscosita del fluido e conduttivita termica.",
+      "<strong>dy/dt = x * (&rho; - z) - y:</strong> Rappresenta la differenza di temperatura tra le correnti convettive ascendenti e discendenti. &rho; (numero di Rayleigh) rappresenta l'intensita del riscaldamento convettivo.",
+      "<strong>dz/dt = x * y - &beta; * z:</strong> Traccia la distorsione del profilo di temperatura verticale. &beta; e il rapporto d'aspetto geometrico della cella convettiva.",
+      ],
+    },
+    { type: 'title', text: "L'Effetto Farfalla: Dipendenza Sensibile dalle Condizioni Iniziali", level: 3 },
+    { type: 'paragraph', html: "La caratteristica distintiva dei sistemi caotici e la loro <strong>dipendenza sensibile dalle condizioni iniziali</strong>, nota come <strong>Effetto Farfalla</strong>. In questo simulatore, due traiettorie (T1 in ciano e T2 in rosa) partono con una separazione minuscola. Inizialmente sembrano identiche, formando una linea viola. Dopo breve tempo, i termini non lineari amplificano la differenza e i percorsi divergono completamente." },
+    { type: 'paragraph', html: "In un sistema caotico, la distanza tra due traiettorie che iniziano arbitrariamente vicine cresce esponenzialmente nel tempo, rendendo qualsiasi previsione a lungo termine praticamente impossibile senza una precisione infinita delle condizioni iniziali." },
+    {
+      type: 'table',
+      headers: ["Parametro","Valore Standard","Significato Fisico","Comportamento al Variare"],
+      rows: [
+        ["&sigma; (Sigma)","10.0","Numero di Prandtl","Determina l'attrito interno del fluido. Valori piu alti accelerano la risposta delle variazioni di velocita ai gradienti di temperatura."],
+        ["&rho; (Rho)","28.0","Numero di Rayleigh","Principale motore del caos. Sotto &rho; = 1, l'origine e l'unico punto stabile. A &rho; = 28, il sistema e completamente caotico."],
+        ["&beta; (Beta)","8/3 (2.667)","Rapporto d'Aspetto Geometrico","Controlla il rapporto larghezza-altezza delle celle di convezione. Modifica la scala e la velocita di rotazione delle orbite."],
+      ],
+    },
+    { type: 'title', text: "Spazio delle Fasi, Attrattori Strani e Frattali", level: 3 },
+    { type: 'paragraph', html: "In fisica classica, le traiettorie si stabilizzano in punti fissi o si ripetono come cicli limite. Il sistema di Lorenz non fa ne l'uno ne l'altro: il percorso si avvolge infinitamente in tre dimensioni senza mai incrociarsi, formando un <strong>attrattore strano</strong> con una geometria frattale (dimensione di Hausdorff circa 2,06)." },
+    { type: 'title', text: "Applicazioni della Teoria del Caos nella Scienza", level: 3 },
+    { type: 'paragraph', html: "Le lezioni dell'attrattore di Lorenz si estendono ben oltre la meteorologia e hanno influenzato molti campi moderni:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>Meteorologia:</strong> Ha stabilito i limiti fondamentali della prevedibilita meteorologica, portando ai metodi di previsione d'insieme.",
+      "<strong>Crittografia:</strong> La natura deterministica ma imprevedibile delle orbite caotiche viene usata per generare chiavi pseudo-casuali sicure.",
+      "<strong>Cardiologia:</strong> Usata per modellare i ritmi cardiaci, dove i cuori sani mostrano caratteristiche caotiche.",
+      "<strong>Ingegneria:</strong> Aiuta a progettare strutture stabili analizzando ed evitando la risonanza caotica.",
+      ],
+    },
+  ],
   faq,
   bibliography,
   howTo,

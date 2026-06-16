@@ -64,16 +64,42 @@ export const content: ToolLocaleContent = {
   "divergenceExplanation": "Grafik divergensi menunjukkan jarak Euclidean antara kedua lintasan dari waktu ke waktu."
 },
   seo: [
-  {
-    "type": "title",
-    "text": "Kekacauan Deterministik: Memahami Persamaan Lorenz",
-    "level": 2
-  },
-  {
-    "type": "paragraph",
-    "html": "Sistem Lorenz adalah formulasi penting dalam dinamika non-linear dan teori kekacauan."
-  }
-],
+    { type: 'title', text: "Kekacauan Deterministik: Memahami Persamaan Lorenz", level: 2 },
+    { type: 'paragraph', html: "Sistem Lorenz adalah formulasi bersejarah dalam dinamika nonlinear dan teori kekacauan. Awalnya diturunkan pada tahun 1963 oleh meteorolog dan matematikawan <strong>Edward Lorenz</strong>, model ini lahir dari representasi sederhana konveksi atmosfer. Lorenz menyederhanakan persamaan dinamika fluida yang kompleks menjadi tiga persamaan diferensial biasa yang digabungkan. Penemuannya bahwa persamaan deterministik sederhana ini dapat menghasilkan perilaku kompleks, non-periodik, dan kacau mengubah pemahaman kita tentang sistem fisik." },
+    { type: 'paragraph', html: "Sistem ini didefinisikan oleh tiga persamaan diferensial tergabung yang melacak koordinat dalam ruang fase tiga dimensi seiring waktu:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>dx/dt = &sigma; * (y - x):</strong> Menjelaskan laju gerak konvektif. Parameter &sigma; (bilangan Prandtl) mewakili rasio viskositas fluida terhadap konduktivitas termal.",
+      "<strong>dy/dt = x * (&rho; - z) - y:</strong> Mewakili perbedaan suhu antara arus konvektif naik dan turun. &rho; (bilangan Rayleigh) mewakili intensitas pemanasan konvektif.",
+      "<strong>dz/dt = x * y - &beta; * z:</strong> Melacak distorsi profil suhu vertikal. &beta; adalah rasio aspek geometrik sel konvektif.",
+      ],
+    },
+    { type: 'title', text: "Efek Kupu-kupu: Ketergantungan Sensitif pada Kondisi Awal", level: 3 },
+    { type: 'paragraph', html: "Ciri khas sistem kacau adalah <strong>ketergantungan sensitif pada kondisi awal</strong>, yang populer dikenal sebagai <strong>Efek Kupu-kupu</strong>. Simulator ini menunjukkan hal ini dengan menjalankan dua lintasan (T1 dalam Cyan dan T2 dalam Merah Muda) yang dimulai dengan pemisahan kecil. Pada awalnya, keduanya menempuh jalur yang hampir sama. Setelah waktu singkat, perbedaan awal diperkuat oleh suku-suku nonlinear sistem, dan jalur-jalur tersebut menyimpang sepenuhnya." },
+    {
+      type: 'table',
+      headers: ["Parameter","Nilai Standar","Konteks Fisik","Perilaku saat Diubah"],
+      rows: [
+        ["&sigma; (Sigma)","10.0","Bilangan Prandtl","Menentukan gesekan internal fluida. Nilai yang lebih tinggi mempercepat reaksi perubahan kecepatan terhadap gradien suhu."],
+        ["&rho; (Rho)","28.0","Bilangan Rayleigh","Penggerak utama kekacauan. Di bawah &rho; = 1, titik asal adalah satu-satunya titik stabil. Pada &rho; = 28, sistem sepenuhnya kacau."],
+        ["&beta; (Beta)","8/3 (2.667)","Rasio Aspek Geometrik","Mengontrol rasio lebar-tinggi sel konveksi. Memodifikasi skala dan kecepatan rotasi orbit."],
+      ],
+    },
+    { type: 'title', text: "Ruang Fase, Penarik Aneh, dan Fraktal", level: 3 },
+    { type: 'paragraph', html: "Dalam fisika klasik, lintasan akhirnya stabil di titik tetap atau berulang sebagai siklus batas. Sistem Lorenz tidak melakukan keduanya: jalurnya melingkar tanpa batas dalam tiga dimensi tanpa pernah bersilangan, membentuk <strong>penarik aneh</strong> dengan geometri fraktal (dimensi Hausdorff sekitar 2,06)." },
+    { type: 'title', text: "Penerapan Teori Kekacauan dalam Ilmu Pengetahuan", level: 3 },
+    { type: 'paragraph', html: "Pelajaran dari penarik Lorenz jauh melampaui prakiraan cuaca dan telah mempengaruhi banyak bidang ilmu modern:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>Meteorologi:</strong> Menetapkan batas fundamental prediktabilitas cuaca, yang mengarah ke metode prakiraan ansambel.",
+      "<strong>Kriptografi:</strong> Sifat deterministik namun tidak dapat diprediksi dari orbit kacau digunakan untuk menghasilkan kunci semu-acak yang aman.",
+      "<strong>Kardiologi:</strong> Digunakan untuk memodelkan ritme jantung, di mana jantung sehat menunjukkan karakteristik kacau.",
+      "<strong>Teknik:</strong> Membantu merancang struktur stabil dengan menganalisis dan menghindari resonansi kacau dalam jembatan gantung.",
+      ],
+    },
+  ],
   faq,
   bibliography,
   howTo,

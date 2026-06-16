@@ -68,7 +68,7 @@ const { ui } = Astro.props;
 
           <div class="lorenz-slider-group">
             <div class="lorenz-slider-header">
-              <span>{ui.simulationSpeed}</span>
+              <span class="lorenz-slider-label">{ui.simulationSpeed}</span>
               <span class="lorenz-slider-val" id="valDt">0.005</span>
             </div>
             <input
@@ -85,7 +85,7 @@ const { ui } = Astro.props;
 
           <div class="lorenz-slider-group">
             <div class="lorenz-slider-header">
-              <span>{ui.initialPerturbation}</span>
+              <span class="lorenz-slider-label">{ui.initialPerturbation}</span>
               <span class="lorenz-slider-val" id="valPerturb">0.00010</span>
             </div>
             <input

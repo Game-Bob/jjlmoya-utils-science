@@ -64,16 +64,44 @@ export const content: ToolLocaleContent = {
   "divergenceExplanation": "El grafico de divergencia muestra la distancia euclidiana entre las dos trayectorias a lo largo del tiempo. Observa como aumenta exponencialmente."
 },
   seo: [
-  {
-    "type": "title",
-    "text": "Caos Determinista: Entendiendo las Ecuaciones de Lorenz",
-    "level": 2
-  },
-  {
-    "type": "paragraph",
-    "html": "El sistema de Lorenz es una formulacion fundamental en la dinamica no lineal y la teoria del caos, que describe el movimiento de una particula en un espacio tridimensional."
-  }
-],
+    { type: 'title', text: "Caos Determinista: Entendiendo las Ecuaciones de Lorenz", level: 2 },
+    { type: 'paragraph', html: "El sistema de Lorenz es una formulacion historica en la dinamica no lineal y la teoria del caos. Originalmente derivado en 1963 por el meteorologo y matematico <strong>Edward Lorenz</strong>, el modelo nacio de una representacion simplificada de la convecion atmosferica. Lorenz simplifico las complejas ecuaciones de la dinamica de fluidos en tres ecuaciones diferenciales ordinarias acopladas. Su descubrimiento de que estas ecuaciones simples y deterministicas podian producir un comportamiento complejo, no periodico y caotico cambio nuestra comprension de los sistemas fisicos." },
+    { type: 'paragraph', html: "El sistema esta definido por tres ecuaciones diferenciales acopladas que siguen una coordenada en el espacio de fases tridimensional a lo largo del tiempo:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>dx/dt = &sigma; * (y - x):</strong> Describe la tasa de movimiento convectivo. El parametro &sigma; (numero de Prandtl) representa la relacion entre la viscosidad del fluido y la conductividad termica.",
+      "<strong>dy/dt = x * (&rho; - z) - y:</strong> Representa la diferencia de temperatura entre las corrientes convectivas ascendentes y descendentes. El parametro &rho; (numero de Rayleigh) representa la intensidad del calentamiento convectivo.",
+      "<strong>dz/dt = x * y - &beta; * z:</strong> Sigue la distorsion del perfil de temperatura vertical respecto a un gradiente lineal. El parametro &beta; es la relacion de aspecto geometrico de la celda convectiva.",
+      ],
+    },
+    { type: 'title', text: "El Efecto Mariposa: Dependencia Sensible de las Condiciones Iniciales", level: 3 },
+    { type: 'paragraph', html: "La caracteristica definitoria de los sistemas caoticos es su <strong>dependencia sensible de las condiciones iniciales</strong>, conocida popularmente como el <strong>Efecto Mariposa</strong>. En un sistema no caotico, una pequena diferencia en el estado inicial conduce a una diferencia proporcionalmente pequena en el estado final. En un sistema caotico, sin embargo, la distancia entre dos trayectorias que comienzan arbitrariamente cerca crece exponencialmente con el tiempo." },
+    { type: 'paragraph', html: "Esta sensibilidad se demuestra en este simulador ejecutando dos trayectorias (T1 en cian y T2 en rosa) que comienzan con una separacion minima (definida por el deslizador de Perturbacion). Al principio, viajan por practicamente el mismo camino, mostrando una linea morada mezclada. Despues de un breve periodo, la diferencia inicial es amplificada por los terminos no lineales del sistema, y los caminos divergen por completo." },
+    {
+      type: 'table',
+      headers: ["Parametro","Valor Estandar","Contexto Fisico","Comportamiento al Cambiar"],
+      rows: [
+        ["&sigma; (Sigma)","10.0","Numero de Prandtl","Determina la friccion interna del fluido. Valores mas altos aceleran la reaccion de los cambios de velocidad respecto a los gradientes de temperatura."],
+        ["&rho; (Rho)","28.0","Numero de Rayleigh","Principal motor del caos. Por debajo de &rho; = 1, el origen es el unico punto estable. En &rho; = 28, el sistema es completamente caotico."],
+        ["&beta; (Beta)","8/3 (2.667)","Relacion de Aspecto Geometrico","Controla la relacion ancho-alto de las celdas de conveccion. Modifica la escala y la velocidad de rotacion de las orbitas."],
+      ],
+    },
+    { type: 'title', text: "Espacio de Fases, Atractores Extranos y Fractales", level: 3 },
+    { type: 'paragraph', html: "En la fisica clasica, las trayectorias eventualmente se estabilizan en puntos fijos (sumideros) o repiten el mismo camino indefinidamente (ciclos limite). El sistema de Lorenz no hace ninguno de los dos. El camino gira en tres dimensiones infinitamente sin cruzarse nunca a si mismo. Esta estructura infinita y no repetitiva esta acotada dentro de un volumen finito del espacio de fases, formando un <strong>atractor extrano</strong>." },
+    { type: 'paragraph', html: "La geometria de este atractor es fractal, con una dimension de Hausdorff de aproximadamente 2.06. Esto significa que el atractor es mas que una superficie bidimensional pero menos que un volumen tridimensional solido, mostrando una estructura topologica compleja donde los caminos se doblan sin intersectarse." },
+    { type: 'title', text: "Aplicaciones de la Teoria del Caos en la Ciencia", level: 3 },
+    { type: 'paragraph', html: "Las lecciones aprendidas del atractor de Lorenz se extienden mucho mas alla de la prediccion meteorologica. La teoria del caos ha influido en muchos campos modernos del estudio:" },
+    {
+      type: 'list',
+      items: [
+      "<strong>Meteorologia:</strong> Establecio los limites fundamentales de la predictibilidad meteorologica, dando lugar a los metodos de prediccion por conjuntos.",
+      "<strong>Criptografia:</strong> La naturaleza determinista pero impredecible de las orbitas caoticas se utiliza para generar claves pseudoaleatorias seguras y cifrar flujos de datos sensibles.",
+      "<strong>Cardiologia:</strong> Se utiliza para modelar los ritmos cardiacos, donde los corazones sanos exhiben caracteristicas caoticas, mientras que los ritmos periodicos pueden indicar patologia.",
+      "<strong>Ingenieria:</strong> Ayuda a disenar estructuras estables analizando y evitando la resonancia caotica en puentes colgantes y sistemas mecanicos.",
+      ],
+    },
+  ],
   faq,
   bibliography,
   howTo,
