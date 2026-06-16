@@ -1,6 +1,6 @@
 const description = 'Analysez si notre réalité est une simulation en utilisant l\'argument du trilemme de Nick Bostrom. Calculez la probabilité existentielle avec 4 paramètres clés.';
 const slug = 'calculateur-probabilite-simulation';
-const title = 'Calculateur de Probabilité de Simulation : Vivez vous dans un univers virtuel ?';
+const title = 'Calculateur de Probabilité de Simulation: Vivez vous dans un univers virtuel ?';
 const howTo = [
     {
       name: 'Ajuster le progrès technologique',
@@ -12,7 +12,7 @@ const howTo = [
     },
     {
       name: 'Évaluer l\'intérêt pour la simulation',
-      text: 'Si l\'humanité atteignait le niveau post-humain, voudrait-elle créer des simulations de son passé ? Considérez les motivations : recherche scientifique, divertissement, préservation historique.',
+      text: 'Si l\'humanité atteignait le niveau post-humain, voudrait-elle créer des simulations de son passé ? Considérez les motivations: recherche scientifique, divertissement, préservation historique.',
     },
     {
       name: 'Interpréter le résultat',
@@ -64,9 +64,9 @@ export const content: ToolLocaleContent = {
     nSub: 'Échelle de Simulation',
     probabilityTitle: 'Probabilité de Simulation',
     trilemmaResult: 'Verdict du Trilemme',
-    scenario1: 'Scénario 1 : Extinction',
-    scenario2: 'Scénario 2 : Désintérêt',
-    scenario3: 'Scénario 3 : Nous sommes simulés',
+    scenario1: 'Scénario 1: Extinction',
+    scenario2: 'Scénario 2: Désintérêt',
+    scenario3: 'Scénario 3: Nous sommes simulés',
     fpDescription: 'Probabilité que l\'humanité atteigne la capacité technique de simuler des univers avec conscience.',
     flDescription: 'Probabilité d\'éviter l\'effondrement (extinction, guerre) avant d\'atteindre le niveau post-humain.',
     fiDescription: 'Pourcentage de civilisations avancées qui décident de créer des simulations de leurs ancêtres.',

@@ -1,5 +1,5 @@
 const description = 'Simulez l\'impact d\'astéroïdes avec la physique réelle. Calculez l\'énergie, le cratère, les radiations thermiques et l\'onde de choc. Survivriez-vous à Chicxulub ?';
-const title = 'Simulateur d\'Impact d\'Astéroïde : Calculateur d\'Apocalypse';
+const title = 'Simulateur d\'Impact d\'Astéroïde: Calculateur d\'Apocalypse';
 const slug = 'simulateur-impact-asteroide';
 const howTo = [
     {
@@ -22,7 +22,7 @@ const howTo = [
 const faq = [
     {
       question: 'Comment l\'énergie d\'un impact est-elle calculée ?',
-      answer: 'L\'énergie principale est cinétique : (1/2) * masse * vitesse². Nous utilisons des densités réalistes (ex. 3000 kg/m³ pour les astéroïdes rocheux) et des vitesses d\'entrée atmosphérique typiques (11 à 72 km/s). L\'énergie résultante est mesurée en mégatonnes de TNT.',
+      answer: 'L\'énergie principale est cinétique: (1/2) * masse * vitesse². Nous utilisons des densités réalistes (ex. 3000 kg/m³ pour les astéroïdes rocheux) et des vitesses d\'entrée atmosphérique typiques (11 à 72 km/s). L\'énergie résultante est mesurée en mégatonnes de TNT.',
     },
     {
       question: 'Qu\'est-ce que l\'onde de choc thermique ?',
@@ -80,7 +80,7 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Quand le Ciel Tombe : La Physique de l\'Apocalypse Cosmique',
+      text: 'Quand le Ciel Tombe: La Physique de l\'Apocalypse Cosmique',
       level: 2,
     },
     {
@@ -94,7 +94,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Tout commence par l\'énergie cinétique : <strong>E = ½mv²</strong>. Un astéroïde de 100 mètres voyageant à 20 km/s libère environ 0,5 mégatonne de TNT. Pour comparaison, la bombe d\'Hiroshima était de 0,015 mégatonne.',
+      html: 'Tout commence par l\'énergie cinétique: <strong>E = ½mv²</strong>. Un astéroïde de 100 mètres voyageant à 20 km/s libère environ 0,5 mégatonne de TNT. Pour comparaison, la bombe d\'Hiroshima était de 0,015 mégatonne.',
     },
     {
       type: 'paragraph',
@@ -106,7 +106,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Anatomie de la Destruction : Les Couches Concentriques de l\'Apocalypse',
+      text: 'Anatomie de la Destruction: Les Couches Concentriques de l\'Apocalypse',
       level: 3,
     },
     {
@@ -120,7 +120,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Impacts Historiques : Les Leçons du Passé',
+      text: 'Impacts Historiques: Les Leçons du Passé',
       level: 3,
     },
     {

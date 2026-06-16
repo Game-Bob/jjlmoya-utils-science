@@ -255,6 +255,13 @@ const { ui } = Astro.props;
 		clearBtn?.addEventListener("click", clearAll);
 	}
 
+	function getEventCoordinates(e: MouseEvent | TouchEvent) {
+		const touch = (e as TouchEvent).changedTouches?.[0];
+		const clientX = (e as MouseEvent).clientX || touch?.clientX || 0;
+		const clientY = (e as MouseEvent).clientY || touch?.clientY || 0;
+		return { clientX, clientY };
+	}
+
 	function setupGhostDrag() {
 		const source = document.getElementById("drag-source-desktop");
 		if (!source) return;
@@ -271,10 +278,8 @@ const { ui } = Astro.props;
 			const onEnd = (endEvent: MouseEvent | TouchEvent) => {
 				if (targetOverlay) targetOverlay.classList.remove("active");
 
-				const clientX = (endEvent as MouseEvent).clientX || (endEvent as TouchEvent).changedTouches[0].clientX;
-				const clientY = (endEvent as MouseEvent).clientY || (endEvent as TouchEvent).changedTouches[0].clientY;
-
-				const point = map.mouseEventToContainerPoint({ clientX, clientY } as MouseEvent);
+				const coords = getEventCoordinates(endEvent);
+				const point = map.mouseEventToContainerPoint(coords as MouseEvent);
 				const latlng = map.containerPointToLatLng(point);
 				spawnImpact(latlng);
 
@@ -404,12 +409,14 @@ const { ui } = Astro.props;
 		const container = document.getElementById("asteroid-verdict-container");
 
 		const c = VERDICT_CONFIGS[verdict];
-		if (value) value.textContent = c.text;
-		if (label) label.textContent = c.label;
-		if (container) container.className = `asteroid-verdict-container ${c.class}`;
+		if (c) {
+			if (value) value.textContent = c.text;
+			if (label) label.textContent = c.label;
+			if (container) container.className = `asteroid-verdict-container ${c.class}`;
 
-		const iconSource = document.getElementById(c.iconId);
-		if (icon && iconSource) icon.innerHTML = iconSource.innerHTML;
+			const iconSource = document.getElementById(c.iconId);
+			if (icon && iconSource) icon.innerHTML = iconSource.innerHTML;
+		}
 	}
 
 	function updateVerdict() {

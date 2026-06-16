@@ -7,7 +7,7 @@ export const content: CategoryLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Exploration Scientifique et Simulation : La Science Entre vos Mains',
+      text: 'Exploration Scientifique et Simulation: La Science Entre vos Mains',
       level: 2,
     },
     {
@@ -16,7 +16,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Astrophysique et Risque Cosmique : L\'Impact des Astéroïdes',
+      text: 'Astrophysique et Risque Cosmique: L\'Impact des Astéroïdes',
       level: 2,
     },
     {
@@ -68,10 +68,10 @@ export const content: CategoryLocaleContent = {
       type: 'summary',
       title: 'Ce qui nous définit :',
       items: [
-        'Modélisation Mathématique : Simulations basées sur des lois physiques réelles (gravitation, thermodynamique, balistique).',
-        'Éducation Interactif : Outils conçus pour que les étudiants et les passionnés expérimentent avec des variables scientifiques.',
-        'Rigueur Technique : Données et formules extraites de publications scientifiques et de bases de données académiques.',
-        'Confidentialité des Données Scientifiques : Tous les processus de calcul et de simulation s\'exécutent localement pour garantir la sécurité de votre recherche.',
+        'Modélisation Mathématique: Simulations basées sur des lois physiques réelles (gravitation, thermodynamique, balistique).',
+        'Éducation Interactif: Outils conçus pour que les étudiants et les passionnés expérimentent avec des variables scientifiques.',
+        'Rigueur Technique: Données et formules extraites de publications scientifiques et de bases de données académiques.',
+        'Confidentialité des Données Scientifiques: Tous les processus de calcul et de simulation s\'exécutent localement pour garantir la sécurité de votre recherche.',
       ],
     },
     {

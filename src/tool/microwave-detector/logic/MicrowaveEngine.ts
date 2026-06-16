@@ -81,7 +81,11 @@ export class MicrowaveEngine {
         if (this.lastPings.length < 2) return 0;
         let diffSum = 0;
         for (let i = 1; i < this.lastPings.length; i++) {
-            diffSum += Math.abs(this.lastPings[i] - this.lastPings[i - 1]);
+            const current = this.lastPings[i];
+            const prev = this.lastPings[i - 1];
+            if (current !== undefined && prev !== undefined) {
+                diffSum += Math.abs(current - prev);
+            }
         }
         return diffSum / (this.lastPings.length - 1);
     }

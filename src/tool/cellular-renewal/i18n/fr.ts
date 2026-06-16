@@ -1,6 +1,6 @@
 const description = 'Calculez le pourcentage de votre corps qui s\'est renouvelé depuis votre naissance. Estimation basée sur le taux de division cellulaire des organes, des os et des tissus. Le Paradoxe de Thésée rendu tangible.';
 const slug = 'calculateur-renouvellement-cellulaire';
-const title = 'Calculateur de Renouvellement Cellulaire : Que reste t il du "vous" original ?';
+const title = 'Calculateur de Renouvellement Cellulaire: Que reste t il du "vous" original ?';
 const howTo = [
     {
       name: 'Réglez votre âge',
@@ -12,7 +12,7 @@ const howTo = [
     },
     {
       name: 'Analysez les barres de progression',
-      text: 'Chaque barre représente un tissu différent : peau/sang, os, organes et cerveau. Notez que le cerveau change à peine tandis que la peau se renouvelle constamment.',
+      text: 'Chaque barre représente un tissu différent: peau/sang, os, organes et cerveau. Notez que le cerveau change à peine tandis que la peau se renouvelle constamment.',
     },
     {
       name: 'Réfléchissez sur votre identité',
@@ -26,7 +26,7 @@ const faq = [
     },
     {
       question: 'Pourquoi le cerveau se renouvelle-t-il si lentement ?',
-      answer: 'Les neurones du cortex cérébral se génèrent avant la naissance et généralement ne se divisent plus. Cela assure une stabilité neurologique : vos "câbles" fondamentaux restent constants. Cependant, les cellules gliales (de soutien) se renouvellent. La mémoire est stockée dans les connexions, pas dans les atomes.',
+      answer: 'Les neurones du cortex cérébral se génèrent avant la naissance et généralement ne se divisent plus. Cela assure une stabilité neurologique: vos "câbles" fondamentaux restent constants. Cependant, les cellules gliales (de soutien) se renouvellent. La mémoire est stockée dans les connexions, pas dans les atomes.',
     },
     {
       question: 'Est-il vrai que nous sommes de "nouvelles personnes" tous les 7 ans ?',
@@ -34,11 +34,11 @@ const faq = [
     },
     {
       question: 'Si mon corps est neuf à 99%, suis-je toujours la même personne ?',
-      answer: 'Oui. L\'identité est une continuité d\'information, de conscience et de mémoire, pas d\'atomes. Vous êtes comme un fleuve : l\'eau change constamment, mais le fleuve persiste. Le Paradoxe de Thésée suggère que l\'identité réside dans le motif, pas dans la matière.',
+      answer: 'Oui. L\'identité est une continuité d\'information, de conscience et de mémoire, pas d\'atomes. Vous êtes comme un fleuve: l\'eau change constamment, mais le fleuve persiste. Le Paradoxe de Thésée suggère que l\'identité réside dans le motif, pas dans la matière.',
     },
     {
       question: 'Quels sont les tissus qui se renouvellent le plus rapidement ?',
-      answer: 'Le sang et la peau sont en tête. Votre moelle osseuse produit 200 milliards de cellules sanguines par jour. Vous perdez ~30 000 cellules de peau par minute. C\'est pourquoi ils cicatrisent si bien et vieillissent si visiblement : ils sont jeunes en termes d\'âge cellulaire.',
+      answer: 'Le sang et la peau sont en tête. Votre moelle osseuse produit 200 milliards de cellules sanguines par jour. Vous perdez ~30 000 cellules de peau par minute. C\'est pourquoi ils cicatrisent si bien et vieillissent si visiblement: ils sont jeunes en termes d\'âge cellulaire.',
     },
     {
       question: 'Le cristallin de l\'œil ne se renouvelle vraiment pas ?',
@@ -79,11 +79,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Ce paradoxe, connu sous le nom de <strong>Paradoxe du Navire de Thésée</strong>, pose une question ancienne : si vous remplacez toutes les parties de quelque chose, est-ce toujours la même chose ? Dans votre cas, c\'est une question littérale. Les atomes qui constituent votre corps aujourd\'hui ne sont pas les mêmes que ceux d\'il y a 10 ans, mais <em>vous</em> restez vous.',
+      html: 'Ce paradoxe, connu sous le nom de <strong>Paradoxe du Navire de Thésée</strong>, pose une question ancienne: si vous remplacez toutes les parties de quelque chose, est-ce toujours la même chose ? Dans votre cas, c\'est une question littérale. Les atomes qui constituent votre corps aujourd\'hui ne sont pas les mêmes que ceux d\'il y a 10 ans, mais <em>vous</em> restez vous.',
     },
     {
       type: 'title',
-      text: 'Le renouvellement cellulaire : un mapa de votre corps dynamique',
+      text: 'Le renouvellement cellulaire: un mapa de votre corps dynamique',
       level: 3,
     },
     {
@@ -103,16 +103,16 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Le cristallin de l\'œil : la partie la plus ancienne de vous',
+      text: 'Le cristallin de l\'œil: la partie la plus ancienne de vous',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Il existe une structure dans votre corps qui est spéciale : le <strong>cristallin de l\'œil</strong>. Les cellules qui composent le cristallin se déposent pendant le développement fœtal et ne sont jamais remplacées. Si vous parvenez à vivre jusqu\'à 100 ans, les cellules centrales de votre cristallin seront toujours les mêmes que celles que vous aviez dans l\'utérus de votre mère. Elles sont, littéralement, la partie la plus ancienne de vous.',
+      html: 'Il existe une structure dans votre corps qui est spéciale: le <strong>cristallin de l\'œil</strong>. Les cellules qui composent le cristallin se déposent pendant le développement fœtal et ne sont jamais remplacées. Si vous parvenez à vivre jusqu\'à 100 ans, les cellules centrales de votre cristallin seront toujours les mêmes que celles que vous aviez dans l\'utérus de votre mère. Elles sont, littéralement, la partie la plus ancienne de vous.',
     },
     {
       type: 'title',
-      text: 'Calcul du renouvellement total : le paradoxe des poids',
+      text: 'Calcul du renouvellement total: le paradoxe des poids',
       level: 3,
     },
     {
@@ -134,16 +134,16 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Implications philosophiques : l\'identité est information, pas matière',
+      text: 'Implications philosophiques: l\'identité est information, pas matière',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Si votre corps est complètement nouveau chaque décennie, pourquoi êtes-vous "vous" ? La réponse réside dans le fait que l\'identité ne réside pas dans les atomes spécifiques, mais dans le <strong>modèle d\'information</strong> que ces atomes soutiennent. Vous êtes comme une chanson : ce n\'est pas le même air qui vibre, mais le modèle persiste.',
+      html: 'Si votre corps est complètement nouveau chaque décennie, pourquoi êtes-vous "vous" ? La réponse réside dans le fait que l\'identité ne réside pas dans les atomes spécifiques, mais dans le <strong>modèle d\'information</strong> que ces atomes soutiennent. Vous êtes comme une chanson: ce n\'est pas le même air qui vibre, mais le modèle persiste.',
     },
     {
       type: 'paragraph',
-      html: 'Ceci a des implications profondes : votre corps est un processus, pas une chose. Vous êtes un modèle auto-organisé qui persiste à travers le changement. Vous ne possédez pas d\'atomes ; vous êtes une structure qui les canalise temporairement.',
+      html: 'Ceci a des implications profondes: votre corps est un processus, pas une chose. Vous êtes un modèle auto-organisé qui persiste à travers le changement. Vous ne possédez pas d\'atomes ; vous êtes une structure qui les canalise temporairement.',
     },
   ],
   faq,

@@ -12,7 +12,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: '<p>Wissenschaft ist nicht nur ein statisches Wissensgebiet, sondern ein dynamischer Prozess der Erkundung und des Experimentierens. In diesem Bereich bieten wir kostenlose Online-Tools an, die komplexe wissenschaftliche Konzepte durch Simulation und Datenanalyse jedem Nutzer näherbringen. Von der Mikrobiologie bis zur Astrophysik wenden unsere Hilfsprogramme mathematische Modelle und physikalische Theorien an, um Ihnen eine interaktive Perspektive auf das Universum zu bieten.</p><p>Ob Sie nun koloniebildende Einheiten in einem Labor zählen müssen oder die Wahrscheinlichkeit schätzen möchten, dass wir in einer virtuellen Umgebung leben – unsere Rechner bieten technische Präzision mit einer auf Neugier ausgerichteten Benutzeroberfläche.</p>',
+      html: '<p>Wissenschaft ist nicht nur ein statisches Wissensgebiet, sondern ein dynamischer Prozess der Erkundung und des Experimentierens. In diesem Bereich bieten wir kostenlose Online-Tools an, die komplexe wissenschaftliche Konzepte durch Simulation und Datenanalyse jedem Nutzer näherbringen. Von der Mikrobiologie bis zur Astrophysik wenden unsere Hilfsprogramme mathematische Modelle und physikalische Theorien an, um Ihnen eine interaktive Perspektive auf das Universum zu bieten.</p><p>Ob Sie nun koloniebildende Einheiten in einem Labor zählen müssen oder die Wahrscheinlichkeit schätzen möchten, dass wir in einer virtuellen Umgebung leben - unsere Rechner bieten technische Präzision mit einer auf Neugier ausgerichteten Benutzeroberfläche.</p>',
     },
     {
       type: 'title',

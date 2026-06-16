@@ -87,7 +87,7 @@ const { ui } = Astro.props;
     if (root) {
         const startBtn = document.getElementById("start-btn");
         const modal = document.getElementById("initial-modal");
-        const canvas = document.getElementById("interference-canvas");
+        const canvas = document.getElementById("interference-canvas") as HTMLCanvasElement | null;
         const ctx = canvas?.getContext("2d");
 
         const jitterDisplay = document.getElementById("jitter-value");
@@ -104,7 +104,7 @@ const { ui } = Astro.props;
         const engine = new MicrowaveEngine(currentLang);
         let running = false;
         let audioEnabled = true;
-        let audioCtx = null;
+        let audioCtx: AudioContext | null = null;
 
         const history = new Array(60).fill(0);
 
@@ -143,10 +143,12 @@ const { ui } = Astro.props;
             ctx.fill();
         }
 
-        async function playClick(_intensity) {
+        async function playClick(_intensity: number) {
             if (!audioEnabled) return;
-            if (!audioCtx)
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            if (!audioCtx) {
+                 const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+                 audioCtx = new AudioContextClass();
+            }
 
             const osc = audioCtx.createOscillator();
             const gain = audioCtx.createGain();
@@ -176,7 +178,7 @@ const { ui } = Astro.props;
             };
 
             if (verdictContainer) {
-                const colors = colorMap[level.color] || colorMap.emerald;
+                const colors = colorMap[level.color as keyof typeof colorMap] || colorMap.emerald;
                 verdictContainer.style.backgroundColor = colors.bg;
                 verdictContainer.style.borderColor = colors.border;
                 verdictContainer.style.color = colors.text;
@@ -189,7 +191,7 @@ const { ui } = Astro.props;
                     orange: "#f97316",
                     red: "#dc2626",
                 };
-                statusDot.style.backgroundColor = colorValues[level.color] || colorValues.emerald;
+                statusDot.style.backgroundColor = colorValues[level.color as keyof typeof colorValues] || colorValues.emerald;
             }
         }
 

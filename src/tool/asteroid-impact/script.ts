@@ -2,7 +2,7 @@ import L from "leaflet";
 import { ImpactPhysics, type Composition, type ImpactResults } from "./logic/impactPhysics";
 import { getCompositionColor } from "./helpers";
 import { getConfig, updateUI } from "./ui";
-import { VERDICT_CONFIGS, DEFAULT_LABELS, type Labels } from "./constants";
+import { VERDICT_CONFIGS, DEFAULT_LABELS, type Labels, type VerdictConfig } from "./constants";
 
 let map: L.Map;
 
@@ -53,6 +53,13 @@ function setupControls() {
 	clearBtn?.addEventListener("click", clearAll);
 }
 
+function getEventCoordinates(e: MouseEvent | TouchEvent) {
+	const touch = (e as TouchEvent).changedTouches?.[0];
+	const clientX = (e as MouseEvent).clientX || touch?.clientX || 0;
+	const clientY = (e as MouseEvent).clientY || touch?.clientY || 0;
+	return { clientX, clientY };
+}
+
 function setupGhostDrag() {
 	const source = document.getElementById("drag-source-desktop");
 	if (!source) return;
@@ -65,10 +72,8 @@ function setupGhostDrag() {
 		const onEnd = (endEvent: MouseEvent | TouchEvent) => {
 			if (targetOverlay) targetOverlay.classList.remove("active");
 
-			const clientX = (endEvent as MouseEvent).clientX || (endEvent as TouchEvent).changedTouches[0].clientX;
-			const clientY = (endEvent as MouseEvent).clientY || (endEvent as TouchEvent).changedTouches[0].clientY;
-
-			const point = map.mouseEventToContainerPoint({ clientX, clientY } as MouseEvent);
+			const coords = getEventCoordinates(endEvent);
+			const point = map.mouseEventToContainerPoint(coords as MouseEvent);
 			const latlng = map.containerPointToLatLng(point);
 			spawnImpact(latlng);
 
@@ -202,8 +207,9 @@ function updateVerdict() {
 	if (impacts.length === 0) {
 		pill?.classList.remove("active");
 	} else {
-		pill?.classList.add("active");
-		updateVerdictUI(VERDICT_CONFIGS.safe);
+		if (VERDICT_CONFIGS.safe) {
+			updateVerdictUI(VERDICT_CONFIGS.safe);
+		}
 	}
 }
 

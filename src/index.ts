@@ -5,6 +5,8 @@ export { ASTEROID_IMPACT_TOOL } from './tool/asteroid-impact/index';
 export { MICROWAVE_DETECTOR_TOOL } from './tool/microwave-detector/index';
 export { SIMULATION_PROBABILITY_TOOL } from './tool/simulation-probability/index';
 export { CELLULAR_RENEWAL_TOOL } from './tool/cellular-renewal/index';
+export { COSMIC_INFLATION_TOOL } from './tool/cosmic-inflation/index';
+export { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
 
 export type {
   KnownLocale,

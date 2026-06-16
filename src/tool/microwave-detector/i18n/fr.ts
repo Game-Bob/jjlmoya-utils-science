@@ -1,5 +1,5 @@
 const description = 'Analysez si votre micro-ondes perd des radiations en mesurant l\'interférence en temps réel sur votre réseau WiFi. Outil de sécurité scientifique.';
-const title = 'Détecteur de Fuites Micro ondes : Visualiseur d\'Interférences WiFi';
+const title = 'Détecteur de Fuites Micro ondes: Visualiseur d\'Interférences WiFi';
 const slug = 'detecteur-fuites-micro-ondes';
 const howTo = [
     {
@@ -79,7 +79,7 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'PHYSIQUE DES ONDES : Votre micro-ondes fuit-il réellement des radiations ?',
+      text: 'PHYSIQUE DES ONDES: Votre micro-ondes fuit-il réellement des radiations ?',
       level: 2,
     },
     {
@@ -88,7 +88,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'D\'un point de vue purement physique, un four à micro-ondes est un <strong>résonateur à cavité</strong> conçu pour bombarder les molécules d\'eau de radiations électromagnétiques à une fréquence très spécifique : <strong>2,45 GHz</strong>. Cette fréquence n\'est pas arbitraire ; elle est nécessaire pour provoquer l\'oscillation dipolaire des particules d\'eau, générant de la chaleur par friction. Le problème est que c\'est exactement la même fréquence que celle utilisée par la norme WiFi 802.11b/g/n.',
+      html: 'D\'un point de vue purement physique, un four à micro-ondes est un <strong>résonateur à cavité</strong> conçu pour bombarder les molécules d\'eau de radiations électromagnétiques à une fréquence très spécifique: <strong>2,45 GHz</strong>. Cette fréquence n\'est pas arbitraire ; elle est nécessaire pour provoquer l\'oscillation dipolaire des particules d\'eau, générant de la chaleur par friction. Le problème est que c\'est exactement la même fréquence que celle utilisée par la norme WiFi 802.11b/g/n.',
     },
     {
       type: 'title',
@@ -128,7 +128,7 @@ export const content: ToolLocaleContent = {
       type: 'list',
       items: [
         '<strong>"Le micro-ondes altère la structure moléculaire de l\'eau"</strong> - FAUX. Le rayonnement micro-ondes est <em>non ionisant</em>. Il n\'a pas assez d\'énergie pour rompre les liaisons chimiques ou altérer l\'ADN. Il fait simplement vibrer les molécules d\'eau, augmentant leur énergie cinétique (température).',
-        '<strong>"Le rayonnement s\'accumule dans les aliments"</strong> - FAUX. Les micro-ondes sont comme la lumière : une fois que vous éteignez l\'interrupteur, elles disparaissent. Un aliment chaud n\'émet pas de rayonnement micro-ondes, seulement un rayonnement infrarouge (chaleur) tout comme un feu ou une poêle.',
+        '<strong>"Le rayonnement s\'accumule dans les aliments"</strong> - FAUX. Les micro-ondes sont comme la lumière: une fois que vous éteignez l\'interrupteur, elles disparaissent. Un aliment chaud n\'émet pas de rayonnement micro-ondes, seulement un rayonnement infrarouge (chaleur) tout comme un feu ou une poêle.',
         '<strong>"Regarder le plateau tourner endommage les yeux"</strong> - PARTIELLEMENT VRAI. La vitre de la porte est conçue avec une grille qui bloque les longueurs d\'onde de 2,45 GHz. Cependant, si la grille est endommagée, la vitre n\'arrêtera pas les micro-ondes. Le cristallin de l\'œil est très sensible à la chaleur et a une mauvaise circulation sanguine, donc une exposition directe prolongée (près d\'une fuite) pourrait causer des cataractes thermiques.',
       ],
     },

@@ -4,10 +4,12 @@ import { asteroidImpact } from '../tool/asteroid-impact/index';
 import { microwaveDetector } from '../tool/microwave-detector/index';
 import { simulationProbability } from '../tool/simulation-probability/index';
 import { cellularRenewal } from '../tool/cellular-renewal/index';
+import { cosmicInflation } from '../tool/cosmic-inflation/index';
+import { temperatureTimeline } from '../tool/temperature-timeline/index';
 
 export const scienceCategory: ScienceCategoryEntry = {
   icon: 'mdi:flask',
-  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal],
+  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
