@@ -8,6 +8,7 @@ export { CELLULAR_RENEWAL_TOOL } from './tool/cellular-renewal/index';
 export { COSMIC_INFLATION_TOOL } from './tool/cosmic-inflation/index';
 export { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
 export { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
+export { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone/index';
 
 export type {
   KnownLocale,

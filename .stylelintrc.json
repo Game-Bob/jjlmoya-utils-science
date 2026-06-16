@@ -46,7 +46,7 @@
         "color-function-notation": "legacy",
         "color-function-alias-notation": null,
         "custom-property-pattern": null,
-        "property-disallowed-list": ["font-family"]
+        "property-disallowed-list": ["font-family", "font"]
     }
 }
 

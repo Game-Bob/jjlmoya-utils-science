@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Que representan Sigma, Rho y Beta?",
     "answer": "Sigma es el numero de Prandtl, Rho es el numero de Rayleigh y Beta es la relacion de aspecto geometrico del sistema."
+  },
+  {
+    "question": "Por que la forma del atractor parece una mariposa?",
+    "answer": "La iconica forma de alas dobles de mariposa surge porque el sistema tiene dos puntos de equilibrio inestables. La trayectoria orbita alrededor de un ala y luego transita de forma impredecible para orbitar la otra, creando la estructura distintiva en el espacio de fases tridimensional."
+  },
+  {
+    "question": "Es el Atractor de Lorenz verdaderamente aleatorio?",
+    "answer": "No. El sistema de Lorenz es completamente deterministico, lo que significa que su estado futuro esta totalmente definido por su estado actual y sus ecuaciones. Sin embargo, como es caotico, es completamente impredecible a largo plazo sin una precision infinita de las condiciones iniciales."
   }
 ];
 
@@ -56,10 +64,10 @@ export const content: ToolLocaleContent = {
   "trajectories": "Trayectorias",
   "distance": "Distancia de Divergencia",
   "exponentialGrowth": "Divergencia Exponencial",
-  "resetDefault": "Reset",
-  "clearPath": "Clear",
-  "play": "Resume",
-  "pause": "Pause",
+    "resetDefault": "Reiniciar",
+    "clearPath": "Limpiar",
+    "play": "Reanudar",
+    "pause": "Pausar",
   "coords": "Coordenadas",
   "divergenceExplanation": "El grafico de divergencia muestra la distancia euclidiana entre las dos trayectorias a lo largo del tiempo. Observa como aumenta exponencialmente."
 },
