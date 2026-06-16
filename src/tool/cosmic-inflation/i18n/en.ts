@@ -22,17 +22,25 @@ const howTo = [
 
 const faq = [
   {
-    question: 'What is cosmic inflation?',
-    answer: 'Cosmic inflation is a theory of exponential expansion of space in the very early universe, occurring around 10^-36 seconds after the Big Bang.',
+    "question": "What is cosmic inflation and why did it occur?",
+    "answer": "Cosmic inflation is a theory postulating an ultra-rapid, exponential expansion of space in the very early fractions of a second of the universe, specifically around 10^-36 seconds after the Big Bang. It occurred because a theoretical scalar field, called the inflaton, was in a state of high energy density of a false vacuum, which generated negative pressure and a repulsive gravitational force that stretched the fabric of space-time."
   },
   {
-    question: 'What are e-folds in cosmology?',
-    answer: 'E-folds measure the duration of exponential inflation. If the universe expands by a factor of e^N, the number of e-folds is N.',
+    "question": "What does the number of e-folds mean?",
+    "answer": "The number of e-folds measures the duration of the exponential expansion phase. One e-fold represents the time in which the size of the universe is multiplied by Euler's number (approximately 2.718). If the universe undergoes N e-folds, its scale factor increases by a factor of e^N. Standard cosmological models require at least 50 to 60 e-folds to properly solve the flatness and horizon problems."
   },
   {
-    question: 'Why did inflation stop?',
-    answer: 'Inflation ended when the inflaton field rolled down to the minimum of its potential, decaying into standard model particles in a process called reheating.',
+    "question": "How does inflation solve the horizon problem?",
+    "answer": "The horizon problem asks why extremely distant regions of the universe have nearly identical cosmic microwave background radiation temperatures, even though the speed of light would not have allowed them to interact to reach equilibrium. Inflation resolves this by showing that, prior to exponential expansion, the entire observable universe was a tiny, thermally homogeneous region causally connected, which was instantly stretched beyond the visual horizon."
   },
+  {
+    "question": "What is the flatness problem and how is it resolved?",
+    "answer": "The energy density of the universe today is extremely close to the critical density, meaning that space is flat with a minimal margin of error. Without inflation, any initial deviation from flatness would have grown exponentially over time, requiring impossible fine-tuning at the Big Bang. Inflation stretches the spatial curvature so violently that any initial curvature is diluted, similar to how the surface of a giant sphere appears flat locally."
+  },
+  {
+    "question": "What is the reheating process?",
+    "answer": "Reheating is the thermal transition that marks the end of inflation. During inflation, the universe cools to temperatures near absolute zero due to the exponential expansion of volume. When the inflaton field decays to the minimum of its potential, its remaining energy is dumped into space as Standard Model particles through quantum interactions, filling the cosmos with a hot, dense plasma that initiates the traditional Big Bang phase."
+  }
 ];
 
 export const content: ToolLocaleContent = {
@@ -58,43 +66,90 @@ export const content: ToolLocaleContent = {
     analogyObservable: 'The universe expanded from a <span class="highlight">subatomic scale</span> to larger than the <span class="highlight">observable universe</span> in 10^-32 seconds.',
   },
   seo: [
-    {
-      type: 'title',
-      text: 'COSMOLOGY: Understanding the Cosmic Inflation Theory',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'Cosmic inflation is a cornerstone of modern cosmology. It describes a brief, extremely rapid period of exponential expansion that occurred approximately 10^-36 seconds after the Big Bang. During this epoch, the fabric of space-time expanded by a factor of at least 10^26. This sudden surge stretched the geometry of the early universe, effectively diluting any initial curvature and smoothing out spatial irregularities. This process resolves major issues that classical Big Bang cosmology could not explain on its own.',
-    },
-    {
-      type: 'title',
-      text: 'The Horizon Problem Explained',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'The horizon problem arises from the uniform temperature of the Cosmic Microwave Background (CMB) radiation across the sky. Without inflation, distant regions of the early universe would have been separated by distances larger than the light-travel distance (their particle horizons). This means they could not have exchanged heat or information to reach thermal equilibrium. Inflation solves this by expanding a tiny, causally connected patch of space into our entire observable universe, ensuring that all regions had a common thermal origin.',
-    },
-    {
-      type: 'title',
-      text: 'The Flatness Problem and Spatial Geometry',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'The flatness problem concerns the spatial curvature of the universe. Observations show that the universe\'s energy density is remarkably close to the critical density required for a flat space. In classical Big Bang theory, any tiny deviation from flatness in the early universe would grow rapidly over time. Inflation solves this problem by stretching the curvature of space so dramatically that the local geometry of the observable universe becomes indistinguishable from flat, similar to how the surface of a giant balloon appears flat to a tiny insect.',
-    },
-    {
-      type: 'title',
-      text: 'Quantum Fluctuations and Cosmic Structure',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Beyond solving cosmological puzzles, inflation provides the seeds for all structures in the universe. During this rapid expansion, microscopic quantum fluctuations in the inflaton field were stretched to astronomical scales. These stretched fluctuations became density perturbations-slight variations in the density of matter. Over billions of years, gravity pulled matter into the denser regions, eventually forming the vast network of galaxies, stars, and planets we observe today.',
-    },
-  ],
+  {
+    "type": "title",
+    "text": "COSMOLOGY: Cosmic Inflation Theory and Space-Time Expansion",
+    "level": 2
+  },
+  {
+    "type": "paragraph",
+    "html": "Cosmic inflation represents the fundamental pillar linking particle physics with observational astrophysics. Proposed in the early 1980s by physicists Alan Guth and Andrei Linde, this theory postulates that the early universe underwent a phase of exponential expansion driven by the energy density of a scalar field known as the inflaton. This expansion increased the volume of the universe by a factor of at least 10^26 in a tiny fraction of a second, resolving deep paradoxes of the classical Big Bang model and providing the theoretical framework for cosmic structure formation."
+  },
+  {
+    "type": "title",
+    "text": "Comparison of Inflation Models and Parameters",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "Different potentials for the inflaton field produce distinct expansion rates and reheating temperatures. Below are the characteristics of the main models simulated in this calculator:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Inflation Model",
+      "e-folds Range (N)",
+      "Energy Scale (GeV)",
+      "Physical and Dynamic Outcome"
+    ],
+    "rows": [
+      [
+        "<strong>Standard Guth</strong>",
+        "50 - 60",
+        "10^16",
+        "Solves flatness and horizon; inflation ends via bubble nucleation in a slow phase transition."
+      ],
+      [
+        "<strong>Chaotic Inflation (Linde)</strong>",
+        "60 or more",
+        "10^16",
+        "The inflaton rolls gently down a simple parabolic potential; avoids abrupt phase transition issues."
+      ],
+      [
+        "<strong>Extreme Limits</strong>",
+        "90 or more",
+        "10^19 (Planck)",
+        "Energies near the quantum gravity limit; massive stretching of the primordial space-time."
+      ]
+    ]
+  },
+  {
+    "type": "title",
+    "text": "Resolving Classical Big Bang Problems",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "Before inflation was developed, classical Big Bang cosmology suffered from severe theoretical inconsistencies. The horizon problem, stemming from the homogeneity of the cosmic microwave background, and the flatness problem, associated with the critical density of space, suggested the need for extremely improbable initial conditions. Inflation naturally solves both difficulties by stretching a thermally homogeneous micro-region and dynamically flattening local spatial geometry. Additionally, it dilutes the concentration of magnetic monopoles that should have formed copiously in the early universe."
+  },
+  {
+    "type": "title",
+    "text": "Observational Astronomical Evidence of the Inflationary Model",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "The theory of cosmic inflation is not just an elegant mathematical construct; it has solid indirect evidence confirmed by space satellites like COBE, WMAP, and Planck:"
+  },
+  {
+    "type": "list",
+    "items": [
+      "<strong>CMB Homogeneity:</strong> The cosmic microwave background radiation shows a uniform temperature with variations of only 1 part in 100,000 on opposite sides of the visible sky.",
+      "<strong>Flat Geometry:</strong> Measurements of the universe's curvature confirm it is spatially flat within less than 1% error, consistent with massive inflationary stretching.",
+      "<strong>Absence of Monopoles:</strong> Logically explains the complete absence of stable, high-mass magnetic monopoles in our observable universe.",
+      "<strong>Fluctuation Spectrum:</strong> Observed anisotropies in the cosmic background show a spectral index slightly below 1, exactly as predicted by slow-roll inflaton models."
+    ]
+  },
+  {
+    "type": "title",
+    "text": "Quantum Fluctuations and the Seeds of Galaxies",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "The most extraordinary aspect of cosmic inflation is its ability to act as a cosmic microscope. Microscopic quantum fluctuations of the inflaton field were stretched to astronomical scales during the period of exponential expansion. At the end of inflation, these fluctuations froze as density variations (primordial perturbations). These density differences served as gravitational seeds that, over billions of years, pulled matter together to give rise to the first stars, galaxies, galaxy clusters, and the cosmic web we observe today."
+  }
+],
   faq,
   bibliography,
   howTo,

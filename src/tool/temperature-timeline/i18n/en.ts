@@ -22,17 +22,25 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Was Earth hotter in the past than it is today?',
-    answer: 'Yes, during eras like the Mesozoic and early Eocene, global average temperatures were up to 10 to 15 degrees Celsius warmer than today.',
+    "question": "Has Earth been warmer in the past than it is today?",
+    "answer": "Yes, Earth has experienced climates considerably warmer than today. During the Mesozoic (the era of the dinosaurs) and the early Eocene, the planet was in a greenhouse state with no polar ice caps, and global average temperatures exceeded 22 degrees, about 7 to 8 degrees warmer than today's average. However, transitions to those periods occurred over timescales of millions of years, allowing for evolutionary adaptation."
   },
   {
-    question: 'What is Snowball Earth?',
-    answer: 'Snowball Earth refers to periods during the Proterozoic eon when the planet was almost entirely covered in glacial ice.',
+    "question": "What caused the Snowball Earth phenomenon?",
+    "answer": "Snowball Earth (global glaciation) occurred primarily during the Neoproterozoic (about 700 million years ago). It was triggered by an extreme reduction in greenhouse gases due to accelerated chemical weathering of silicate rocks following the breakup of the supercontinent Rodinia. Ice extended from the poles to the equator, reflecting solar radiation (albedo effect) and trapping the planet in a global freeze loop that was only broken after millions of years of volcanic CO2 accumulation."
   },
   {
-    question: 'What drives long-term geological climate changes?',
-    answer: 'Long-term changes are driven by plate tectonics, changes in greenhouse gas concentrations, volcanic activity, and variations in Earth\'s orbit.',
+    "question": "How does Earth regulate its temperature over the long term?",
+    "answer": "Earth possesses a natural thermostat controlled by the geological carbon cycle, regulated mainly by plate tectonics and silicate weathering. When the planet warms, acid rain reacts more quickly with silicate rocks, drawing CO2 out of the atmosphere and depositing it on the ocean floor as carbonates, reducing the greenhouse effect. If the planet cools, weathering decreases but volcanic activity continues to release CO2, gradually warming the planet again."
   },
+  {
+    "question": "How does Anthropocene climate change differ from the geological past?",
+    "answer": "The fundamental difference lies in the speed of change. While natural climate transitions in the geological past typically occurred over tens of thousands or millions of years (allowing margin for biological migration and evolution), Anthropocene warming is happening in a matter of decades. This rate of thermal variation is exponentially faster than almost any documented prior event, outpacing the adaptive capacity of the current biosphere and causing accelerated mass extinction."
+  },
+  {
+    "question": "What was the Paleocene-Eocene Thermal Maximum (PETM)?",
+    "answer": "The PETM was an extreme global warming event that occurred approximately 56 million years ago. It was caused by a rapid and massive injection of carbon into the atmosphere (possibly from the release of oceanic methane hydrates or North Atlantic volcanism), raising global temperatures by 5 to 8 degrees in a few thousand years. It is considered the best geological analogue for modern climate change, resulting in severe ocean acidification and mass extinctions of benthic organisms."
+  }
 ];
 
 export const content: ToolLocaleContent = {
@@ -65,43 +73,108 @@ export const content: ToolLocaleContent = {
     epoch_anthropocene_desc: 'Rapid warming driven by greenhouse gas emissions, deviating from the long term natural cooling trend of the late Cenozoic.',
   },
   seo: [
-    {
-      type: 'title',
-      text: 'CLIMATOLOGY: Geologic Temperature History of Earth',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'The Earth\'s climate has constantly shifted over its 4.5 billion year history, oscillating between icehouse and greenhouse states. These shifts are determined by carbon cycles, changes in atmospheric chemistry, plate tectonics, and variations in solar radiation. Understanding these paleoclimates is vital for contextualizing modern climate trends and forecasting future ecological changes.',
-    },
-    {
-      type: 'title',
-      text: 'The Greenhouse Eras: Mesozoic and Paleozoic Climates',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'During the Mesozoic Era, the age of dinosaurs, Earth experienced extreme greenhouse conditions. Atmospheric carbon dioxide levels surged due to volcanic outgassing during the breakup of Pangaea. Average global temperatures reached 22 °C, with no permanent polar ice sheets. Tropical and temperate forests extended to the high latitudes, and sea levels rose to flood large continental areas, showing the power of greenhouse forcing.',
-    },
-    {
-      type: 'title',
-      text: 'The Icehouse States: Proterozoic and Cenozoic Cooling',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Conversely, Earth has entered cold icehouse states several times. During the Proterozoic Eon, chemical weathering of new continental crust absorbed carbon dioxide, leading to severe glaciations known as Snowball Earth. Ice sheets reached sea level at the equator, turning the planet into a reflective white sphere. The Cenozoic Era has experienced a gradual cooling trend over the last 50 million years, driven by the uplift of the Himalayas, culminating in the Quaternary ice ages.',
-    },
-    {
-      type: 'title',
-      text: 'The Anthropocene: A New Epoch of Rapid Change',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Today, Earth has entered the Anthropocene, where human activity is the primary driver of climate change. Industrial emissions of greenhouse gases have disrupted the natural orbital cycles that govern ice age cycles. Average temperatures have risen rapidly, pushing the planet out of the stable Holocene baseline. Exploring Earth\'s geological past highlights the scale and speed of this modern warming, illustrating how past warming events triggered mass extinctions.',
-    },
-  ],
+  {
+    "type": "title",
+    "text": "HISTORICAL CLIMATOLOGY: The Thermal Evolution of Earth Through Geological Eras",
+    "level": 2
+  },
+  {
+    "type": "paragraph",
+    "html": "Earth's climate has never been static. Over its 4.5 billion years of existence, our planet has oscillated between two fundamental states: the greenhouse state and the icehouse state. Understanding these large-scale fluctuations is not just a geological curiosity, but an indispensable tool for contextualizing the speed and severity of anthropogenic global warming. By studying oxygen isotopes in marine fossils and air bubbles trapped in ice cores, paleoclimatologists have reconstructed a precise record of past Earth temperatures."
+  },
+  {
+    "type": "title",
+    "text": "Temperature Record by Geological Eon and Era",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "Earth's history is divided into major time intervals defined by biological and geological changes. Below is the list of estimated average temperatures for each epoch available in this timeline:"
+  },
+  {
+    "type": "table",
+    "headers": [
+      "Geological Epoch",
+      "Approx. Age",
+      "Average Temp.",
+      "Climatological Hestones and Features"
+    ],
+    "rows": [
+      [
+        "<strong>Archean Eon</strong>",
+        "4.0 to 2.5 Ga",
+        "30 °C",
+        "Early hot Earth. A faint young Sun was compensated by an extreme greenhouse effect rich in methane."
+      ],
+      [
+        "<strong>Proterozoic Eon</strong>",
+        "2.5 Ga to 541 Ma",
+        "12 °C",
+        "Rise of free oxygen; caused methane collapse and triggered global glaciations (\"Snowball Earth\")."
+      ],
+      [
+        "<strong>Paleozoic Era</strong>",
+        "541 to 252 Ma",
+        "20 °C",
+        "Great marine biodiversity and land colonization. Ended with volcanic eruptions and extreme warming."
+      ],
+      [
+        "<strong>Mesozoic Era</strong>",
+        "252 to 66 Ma",
+        "22 °C",
+        "The warm period par excellence (super-greenhouse with no polar ice). Dinosaur heyday."
+      ],
+      [
+        "<strong>Cenozoic Era</strong>",
+        "66 Ma to today",
+        "14 °C",
+        "Progressive cooling driven by continental ocean currents leading to Quaternary ice age cycles."
+      ],
+      [
+        "<strong>Anthropocene</strong>",
+        "Present & future",
+        "15.2 °C",
+        "Drastic and anomalous warming induced by anthropogenic emissions of greenhouse gases."
+      ]
+    ]
+  },
+  {
+    "type": "title",
+    "text": "Past Thermal Extremes: From Global Glaciation to Mesozoic Heat",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "Planetary history includes extreme climatic events. In the Proterozoic Eon, primitive photosynthesis released oxygen on a massive scale, oxidizing atmospheric methane and plunging the planet into the Huronian glaciation, one of the \"Snowball Earth\" periods where glaciers reached equatorial latitudes. At the opposite extreme, during the Mesozoic Era and the Paleocene, intense tectonic volcanic activity saturated the atmosphere with CO2, raising the average global temperature up to 10 degrees above current levels. These periods completely lacked polar ice, hosting temperate forests in Arctic latitudes and allowing the dominance of cold-blooded reptiles like dinosaurs."
+  },
+  {
+    "type": "title",
+    "text": "Factors Driving Planetary Climate on a Geological Scale",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "Earth's long-term climate is the result of a delicate thermodynamic balance governed by several interconnected natural mechanisms:"
+  },
+  {
+    "type": "list",
+    "items": [
+      "<strong>Milankovitch Cycles:</strong> Small periodic variations in the planet's orbital eccentricity, tilt, and precession change the solar radiation received.",
+      "<strong>Silicate-Carbonate Carbon Cycle:</strong> The long-term geochemical thermostat. Rain removes CO2, converting it into silicates deposited in the oceans.",
+      "<strong>Plate Tectonics:</strong> Continental drift alters global marine currents and creates mountain ranges that accelerate chemical weathering of CO2.",
+      "<strong>Albedo Feedback Effect:</strong> The presence of snow and ice reflects sunlight, cooling the planet further in feedback loops."
+    ]
+  },
+  {
+    "type": "title",
+    "text": "The Anthropocene: An Unprecedented Thermal Acceleration in the Biosphere",
+    "level": 3
+  },
+  {
+    "type": "paragraph",
+    "html": "The transition from the stable Holocene period to the Anthropocene marks the era of humanity's direct impact on planetary systems. Unlike past thermal events, whose orbital or volcanic causes operated over timescales of tens of thousands of years, current warming is driven by the massive burning of fossil carbon reserves accumulated over millions of years. The current rate of greenhouse gas accumulation and global average temperature increase is occurring significantly faster than during the Permian-Triassic extinction or the PETM, posing an unprecedented adaptive challenge for planetary biodiversity."
+  }
+],
   faq,
   bibliography,
   howTo,
