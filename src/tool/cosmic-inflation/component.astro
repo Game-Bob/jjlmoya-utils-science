@@ -140,6 +140,7 @@ const { ui } = Astro.props;
       isExtreme: boolean;
       efolds: number;
       gridColor: string;
+      isDark: boolean;
     }
 
     function drawVerticalGridLines(c: DrawingContext) {
@@ -205,7 +206,7 @@ const { ui } = Astro.props;
       for (let p = 1; p <= pulseCount; p++) {
         const radius = ((p * 40 + (c.efolds * 2)) % 150) + 10;
         c.ctx.beginPath();
-        c.ctx.strokeStyle = c.gridColor + (1 - radius / 160) * 0.3 + ')';
+        c.ctx.strokeStyle = c.gridColor + (1 - radius / 160) * (c.isDark ? 0.3 : 0.7) + ')';
         c.ctx.lineWidth = 1.5;
         c.ctx.arc(c.centerX, c.centerY, radius, 0, Math.PI * 2);
         c.ctx.stroke();
@@ -224,15 +225,16 @@ const { ui } = Astro.props;
       const h = canvas.height / dpr;
       ctx.clearRect(0, 0, w, h);
       const isDark = document.body.classList.contains('theme-dark') || document.documentElement.classList.contains('theme-dark');
-      ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.05)';
-      ctx.lineWidth = 0.5;
+      ctx.strokeStyle = isDark ? 'rgba(255, 255, 255, 0.15)' : 'rgba(15, 23, 42, 0.45)';
+      ctx.lineWidth = 1.0;
       const drawingCtx: DrawingContext = {
         ctx, w, h,
         centerX: w / 2, centerY: h / 2,
         scale: 1 + (efolds - 10) / 10,
         isExtreme: efolds > 80,
         efolds,
-        gridColor: isDark ? 'rgba(244, 114, 182, ' : 'rgba(236, 72, 153, '
+        gridColor: isDark ? 'rgba(244, 114, 182, ' : 'rgba(236, 72, 153, ',
+        isDark
       };
       drawVerticalGridLines(drawingCtx);
       drawHorizontalGridLines(drawingCtx);
