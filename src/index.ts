@@ -7,6 +7,7 @@ export { SIMULATION_PROBABILITY_TOOL } from './tool/simulation-probability/index
 export { CELLULAR_RENEWAL_TOOL } from './tool/cellular-renewal/index';
 export { COSMIC_INFLATION_TOOL } from './tool/cosmic-inflation/index';
 export { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
+export { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
 
 export type {
   KnownLocale,

@@ -7,6 +7,7 @@ import { SIMULATION_PROBABILITY_TOOL } from './tool/simulation-probability/index
 import { CELLULAR_RENEWAL_TOOL } from './tool/cellular-renewal/index';
 import { COSMIC_INFLATION_TOOL } from './tool/cosmic-inflation/index';
 import { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
+import { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -16,6 +17,7 @@ export const ALL_TOOLS: ToolDefinition[] = [
   CELLULAR_RENEWAL_TOOL,
   COSMIC_INFLATION_TOOL,
   TEMPERATURE_TIMELINE_TOOL,
+  LORENZ_ATTRACTOR_TOOL,
 ];
 
 
