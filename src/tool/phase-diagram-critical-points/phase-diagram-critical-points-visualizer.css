@@ -89,9 +89,12 @@
 .phase-field select {
   width: 100%;
   min-height: 42px;
-  padding: 0 1.75rem 0 0.35rem;
+  padding: 0 2.2rem 0 0.45rem;
   color: var(--phase-ink);
-  background: transparent;
+  appearance: none;
+  background:
+    linear-gradient(45deg, transparent 50%, currentcolor 50%) right 0.92rem center / 6px 6px no-repeat,
+    linear-gradient(135deg, currentcolor 50%, transparent 50%) right 0.58rem center / 6px 6px no-repeat;
   border: 0;
   border-bottom: 1px solid var(--phase-line);
   border-radius: 0;
@@ -100,7 +103,10 @@
 
 .theme-dark .phase-field select {
   color: var(--phase-ink);
-  background: #081014;
+  background:
+    linear-gradient(45deg, transparent 50%, currentcolor 50%) right 0.92rem center / 6px 6px no-repeat,
+    linear-gradient(135deg, currentcolor 50%, transparent 50%) right 0.58rem center / 6px 6px no-repeat,
+    #081014;
 }
 
 .phase-field select option {
