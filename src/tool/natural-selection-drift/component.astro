@@ -8,7 +8,7 @@ interface Props {
 const { ui } = Astro.props;
 ---
 
-<div class="ns-app">
+<div class="ns-app" data-alive-label={ui.aliveLabel} data-allele-default={ui.alleleDefault}>
   <section class="ns-card">
     <canvas id="simulation-canvas" class="ns-canvas"></canvas>
     <div class="ns-canvas-badge" id="alive-badge">0 {ui.aliveLabel}</div>
@@ -25,9 +25,19 @@ const { ui } = Astro.props;
 
     <section class="ns-alleles" id="allele-ranking" aria-label={ui.alleleCountsLabel}></section>
 
-    <aside class="ns-console" aria-label="Simulation controls">
+    <button class="ns-console-trigger" id="ns-console-trigger" aria-label={ui.controls} aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12M2 8h8M2 12h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      {ui.controls}
+    </button>
+
+    <aside class="ns-console" id="ns-console" aria-label="Simulation controls">
       <div class="ns-console-header">
-        <span class="ns-console-kicker">{ui.evolutionConsole}</span>
+        <div class="ns-console-header-row">
+          <span class="ns-console-kicker">{ui.evolutionConsole}</span>
+          <button class="ns-console-close" id="ns-console-close" aria-label="Close controls">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
         <h3>{ui.title}</h3>
       </div>
 
@@ -74,9 +84,10 @@ const { ui } = Astro.props;
   </section>
 </div>
 
-<script type="module" define:vars={{ ui }}>
-  import { createNaturalSelectionRuntime } from '/src/tool/natural-selection-drift/runtime';
+<script>
+  import { createNaturalSelectionRuntime } from './runtime';
 
+  const root = document.querySelector('.ns-app');
   createNaturalSelectionRuntime({
     populationInput: document.getElementById('population'),
     generationsInput: document.getElementById('generations'),
@@ -99,6 +110,26 @@ const { ui } = Astro.props;
     diversityScore: document.getElementById('diversity-score'),
     populationScore: document.getElementById('population-score'),
     alleleRanking: document.getElementById('allele-ranking'),
-    ui: { ...ui },
+    ui: {
+      aliveLabel: root?.dataset.aliveLabel ?? '',
+      alleleDefault: root?.dataset.alleleDefault ?? '',
+    },
   });
+
+  const trigger = document.getElementById('ns-console-trigger');
+  const closeBtn = document.getElementById('ns-console-close');
+  const console = document.getElementById('ns-console');
+
+  function openConsole() {
+    console?.classList.add('is-open');
+    trigger?.setAttribute('aria-expanded', 'true');
+  }
+
+  function closeConsole() {
+    console?.classList.remove('is-open');
+    trigger?.setAttribute('aria-expanded', 'false');
+  }
+
+  trigger?.addEventListener('click', openConsole);
+  closeBtn?.addEventListener('click', closeConsole);
 </script>

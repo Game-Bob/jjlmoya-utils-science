@@ -15,6 +15,7 @@ export { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points
 export { twinParadoxVisualizer } from './tool/twin-paradox-visualizer/entry';
 export { mandelbrotFractal } from './tool/mandelbrot-fractal/entry';
 export { planetAtmosphereSurvival } from './tool/planet-atmosphere-survival/entry';
+export { threeBodyProblem } from './tool/three-body-problem/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -32,4 +33,5 @@ import { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points
 import { twinParadoxVisualizer } from './tool/twin-paradox-visualizer/entry';
 import { mandelbrotFractal } from './tool/mandelbrot-fractal/entry';
 import { planetAtmosphereSurvival } from './tool/planet-atmosphere-survival/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival];
+import { threeBodyProblem } from './tool/three-body-problem/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem];

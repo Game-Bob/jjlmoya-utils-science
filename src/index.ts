@@ -16,6 +16,7 @@ export { PHASE_DIAGRAM_CRITICAL_POINTS_TOOL } from './tool/phase-diagram-critica
 export { TWIN_PARADOX_VISUALIZER_TOOL } from './tool/twin-paradox-visualizer/index';
 export { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';
 export { PLANET_ATMOSPHERE_SURVIVAL_TOOL } from './tool/planet-atmosphere-survival/index';
+export { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
 
 export type {
   KnownLocale,
