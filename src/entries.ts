@@ -11,6 +11,7 @@ export { stellarHabitabilityZone } from './tool/stellar-habitability-zone/entry'
 export { radioactiveDecay } from './tool/radioactive-decay/entry';
 export { naturalSelectionDrift } from './tool/natural-selection-drift/entry';
 export { entropySecondLaw } from './tool/entropy-second-law/entry';
+export { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -24,4 +25,5 @@ import { stellarHabitabilityZone } from './tool/stellar-habitability-zone/entry'
 import { radioactiveDecay } from './tool/radioactive-decay/entry';
 import { naturalSelectionDrift } from './tool/natural-selection-drift/entry';
 import { entropySecondLaw } from './tool/entropy-second-law/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw];
+import { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints];
