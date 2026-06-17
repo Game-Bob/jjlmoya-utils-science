@@ -10,6 +10,7 @@ export { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
 export { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
 export { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone/index';
 export { RADIOACTIVE_DECAY_TOOL } from './tool/radioactive-decay/index';
+export { NATURAL_SELECTION_DRIFT_TOOL } from './tool/natural-selection-drift/index';
 
 export type {
   KnownLocale,
