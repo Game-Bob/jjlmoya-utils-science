@@ -11,6 +11,7 @@ import { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
 import { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone/index';
 import { RADIOACTIVE_DECAY_TOOL } from './tool/radioactive-decay/index';
 import { NATURAL_SELECTION_DRIFT_TOOL } from './tool/natural-selection-drift/index';
+import { ENTROPY_SECOND_LAW_TOOL } from './tool/entropy-second-law/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -24,4 +25,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   STELLAR_HABITABILITY_ZONE_TOOL,
   RADIOACTIVE_DECAY_TOOL,
   NATURAL_SELECTION_DRIFT_TOOL,
+  ENTROPY_SECOND_LAW_TOOL,
 ];
