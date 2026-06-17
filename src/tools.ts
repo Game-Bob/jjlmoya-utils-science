@@ -15,6 +15,7 @@ import { ENTROPY_SECOND_LAW_TOOL } from './tool/entropy-second-law/index';
 import { PHASE_DIAGRAM_CRITICAL_POINTS_TOOL } from './tool/phase-diagram-critical-points/index';
 import { TWIN_PARADOX_VISUALIZER_TOOL } from './tool/twin-paradox-visualizer/index';
 import { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';
+import { PLANET_ATMOSPHERE_SURVIVAL_TOOL } from './tool/planet-atmosphere-survival/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -32,4 +33,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   PHASE_DIAGRAM_CRITICAL_POINTS_TOOL,
   TWIN_PARADOX_VISUALIZER_TOOL,
   MANDELBROT_FRACTAL_TOOL,
+  PLANET_ATMOSPHERE_SURVIVAL_TOOL,
 ];

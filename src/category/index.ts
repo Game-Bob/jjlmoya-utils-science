@@ -14,10 +14,11 @@ import { entropySecondLaw } from '../tool/entropy-second-law/index';
 import { phaseDiagramCriticalPoints } from '../tool/phase-diagram-critical-points/index';
 import { twinParadoxVisualizer } from '../tool/twin-paradox-visualizer/index';
 import { mandelbrotFractal } from '../tool/mandelbrot-fractal/index';
+import { planetAtmosphereSurvival } from '../tool/planet-atmosphere-survival/index';
 
 export const scienceCategory: ScienceCategoryEntry = {
   icon: 'mdi:flask',
-  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal],
+  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),
