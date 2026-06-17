@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Близкий проход',
     moonTrack: 'След луны',
     debrisTrack: 'След обломков',
+    primaryEarth: 'Земля',
+    primaryMars: 'Марс',
+    primaryJupiter: 'Юпитер',
+    primarySaturn: 'Сатурн',
+    primaryNeptune: 'Нептун',
+    satelliteIcyMoon: 'Ледяная луна',
+    satelliteRockyMoon: 'Каменистая луна',
+    satelliteRubblePile: 'Скопление обломков',
+    satelliteIronCore: 'Луна, богатая железом',
+    cohesionFluid: 'Жидкий',
+    cohesionFractured: 'Трещиноватый',
+    cohesionRigid: 'Жесткий',
   },
   seo: [
     {

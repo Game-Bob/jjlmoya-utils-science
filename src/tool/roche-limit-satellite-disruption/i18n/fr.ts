@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Passage rapproché',
     moonTrack: 'Trace lunaire',
     debrisTrack: 'Trace de débris',
+    primaryEarth: 'Terre',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturne',
+    primaryNeptune: 'Neptune',
+    satelliteIcyMoon: 'Lune glacée',
+    satelliteRockyMoon: 'Lune rocheuse',
+    satelliteRubblePile: 'Agrégat de débris',
+    satelliteIronCore: 'Lune riche en fer',
+    cohesionFluid: 'Fluide',
+    cohesionFractured: 'Fracturé',
+    cohesionRigid: 'Rigide',
   },
   seo: [
     {

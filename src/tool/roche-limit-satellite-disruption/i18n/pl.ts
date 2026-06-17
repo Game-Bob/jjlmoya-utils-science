@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Bliski przelot',
     moonTrack: 'Tor ksiezyca',
     debrisTrack: 'Tor szczatkow',
+    primaryEarth: 'Ziemia',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jowisz',
+    primarySaturn: 'Saturn',
+    primaryNeptune: 'Neptun',
+    satelliteIcyMoon: 'Lodowy ksiezyc',
+    satelliteRockyMoon: 'Skalisty ksiezyc',
+    satelliteRubblePile: 'Stos gruzu',
+    satelliteIronCore: 'Ksiezyc bogaty w zelazo',
+    cohesionFluid: 'Plynny',
+    cohesionFractured: 'Spekany',
+    cohesionRigid: 'Sztywny',
   },
   seo: [
     {

@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: '近距离飞越',
     moonTrack: '卫星轨迹',
     debrisTrack: '碎片轨迹',
+    primaryEarth: '地球',
+    primaryMars: '火星',
+    primaryJupiter: '木星',
+    primarySaturn: '土星',
+    primaryNeptune: '海王星',
+    satelliteIcyMoon: '冰质卫星',
+    satelliteRockyMoon: '岩质卫星',
+    satelliteRubblePile: '碎石堆',
+    satelliteIronCore: '富铁卫星',
+    cohesionFluid: '流体',
+    cohesionFractured: '破裂',
+    cohesionRigid: '刚性',
   },
   seo: [
     {

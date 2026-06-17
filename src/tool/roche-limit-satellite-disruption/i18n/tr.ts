@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Yakin gecis',
     moonTrack: 'Ay izi',
     debrisTrack: 'Enkaz izi',
+    primaryEarth: 'Dünya',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jüpiter',
+    primarySaturn: 'Satürn',
+    primaryNeptune: 'Neptün',
+    satelliteIcyMoon: 'Buzlu ay',
+    satelliteRockyMoon: 'Kayalık ay',
+    satelliteRubblePile: 'Enkaz yığını',
+    satelliteIronCore: 'Demirce zengin ay',
+    cohesionFluid: 'Akışkan',
+    cohesionFractured: 'Çatlak',
+    cohesionRigid: 'Rijit',
   },
   seo: [
     {

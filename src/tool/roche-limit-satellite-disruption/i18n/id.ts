@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Lintasan dekat',
     moonTrack: 'Jejak bulan',
     debrisTrack: 'Jejak puing',
+    primaryEarth: 'Bumi',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturnus',
+    primaryNeptune: 'Neptunus',
+    satelliteIcyMoon: 'Bulan es',
+    satelliteRockyMoon: 'Bulan berbatu',
+    satelliteRubblePile: 'Tumpukan puing',
+    satelliteIronCore: 'Bulan kaya besi',
+    cohesionFluid: 'Fluida',
+    cohesionFractured: 'Retak',
+    cohesionRigid: 'Kaku',
   },
   seo: [
     {

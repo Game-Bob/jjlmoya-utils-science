@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Nära passage',
     moonTrack: 'Månspår',
     debrisTrack: 'Skräpspår',
+    primaryEarth: 'Jorden',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturnus',
+    primaryNeptune: 'Neptunus',
+    satelliteIcyMoon: 'Ismåne',
+    satelliteRockyMoon: 'Sten måne',
+    satelliteRubblePile: 'Grushög',
+    satelliteIronCore: 'Järnrik måne',
+    cohesionFluid: 'Fluid',
+    cohesionFractured: 'Sprucken',
+    cohesionRigid: 'Styv',
   },
   seo: [
     {

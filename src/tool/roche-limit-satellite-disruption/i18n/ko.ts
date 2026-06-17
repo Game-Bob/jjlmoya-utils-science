@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: '근접 통과',
     moonTrack: '위성 궤적',
     debrisTrack: '잔해물 궤적',
+    primaryEarth: '지구',
+    primaryMars: '화성',
+    primaryJupiter: '목성',
+    primarySaturn: '토성',
+    primaryNeptune: '해왕성',
+    satelliteIcyMoon: '얼음 달',
+    satelliteRockyMoon: '암석 달',
+    satelliteRubblePile: '잔해 더미',
+    satelliteIronCore: '철이 풍부한 달',
+    cohesionFluid: '유체',
+    cohesionFractured: '균열',
+    cohesionRigid: '강체',
   },
   seo: [
     {

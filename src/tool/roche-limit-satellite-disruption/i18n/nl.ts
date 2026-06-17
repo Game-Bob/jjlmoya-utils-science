@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Nadering',
     moonTrack: 'Maanbaan',
     debrisTrack: 'Puinbaan',
+    primaryEarth: 'Aarde',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturnus',
+    primaryNeptune: 'Neptunus',
+    satelliteIcyMoon: 'IJzige maan',
+    satelliteRockyMoon: 'Rotsachtige maan',
+    satelliteRubblePile: 'Puinmassa',
+    satelliteIronCore: 'IJzerrijke maan',
+    cohesionFluid: 'Vloeibaar',
+    cohesionFractured: 'Gebarsten',
+    cohesionRigid: 'Rigide',
   },
   seo: [
     {

@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: '接近通過',
     moonTrack: '月軌道',
     debrisTrack: 'デブリ軌道',
+    primaryEarth: '地球',
+    primaryMars: '火星',
+    primaryJupiter: '木星',
+    primarySaturn: '土星',
+    primaryNeptune: '海王星',
+    satelliteIcyMoon: '氷の月',
+    satelliteRockyMoon: '岩石の月',
+    satelliteRubblePile: '瓦礫の集合体',
+    satelliteIronCore: '鉄に富む月',
+    cohesionFluid: '流体',
+    cohesionFractured: '破砕',
+    cohesionRigid: '剛体',
   },
   seo: [
     {

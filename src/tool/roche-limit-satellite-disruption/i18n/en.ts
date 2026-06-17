@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Close pass',
     moonTrack: 'Moon track',
     debrisTrack: 'Debris track',
+    primaryEarth: 'Earth',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturn',
+    primaryNeptune: 'Neptune',
+    satelliteIcyMoon: 'Icy moon',
+    satelliteRockyMoon: 'Rocky moon',
+    satelliteRubblePile: 'Rubble pile',
+    satelliteIronCore: 'Iron-rich moon',
+    cohesionFluid: 'Fluid',
+    cohesionFractured: 'Fractured',
+    cohesionRigid: 'Rigid',
   },
   seo: [
     {

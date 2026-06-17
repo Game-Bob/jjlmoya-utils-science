@@ -72,6 +72,18 @@ export const content: ToolLocaleContent = {
     closePass: 'Naher Vorbeiflug',
     moonTrack: 'Mondspur',
     debrisTrack: 'Trümmerspur',
+    primaryEarth: 'Erde',
+    primaryMars: 'Mars',
+    primaryJupiter: 'Jupiter',
+    primarySaturn: 'Saturn',
+    primaryNeptune: 'Neptun',
+    satelliteIcyMoon: 'Eismond',
+    satelliteRockyMoon: 'Gesteinsmond',
+    satelliteRubblePile: 'Trümmerhaufen',
+    satelliteIronCore: 'Eisenreicher Mond',
+    cohesionFluid: 'Fluid',
+    cohesionFractured: 'Gebrochen',
+    cohesionRigid: 'Starr',
   },
   seo: [
     {

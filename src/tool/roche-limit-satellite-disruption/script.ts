@@ -1,4 +1,5 @@
 import { PRIMARY_BODIES, SATELLITE_BODIES, calculateRocheLimit } from './logic';
+import { capitalize, capitalizeId, labelFor } from './labels';
 import type { PrimaryId, RocheResult, SatelliteId } from './logic';
 import { animateParticles, resizeParticleCanvas } from './particle-system';
 import type { VisualState } from './particle-system';
@@ -151,7 +152,7 @@ function updateReadouts(result: RocheResult): void {
   refs.fluidLimit.textContent = formatKm(result.fluidLimitKm);
   refs.rigidLimit.textContent = formatKm(result.rigidLimitKm);
   refs.density.textContent = `${ui.density}: ${result.satellite.densityGcm3} g/cm3`;
-  refs.cohesion.textContent = `${ui.cohesion}: ${result.satellite.cohesion}`;
+  refs.cohesion.textContent = `${ui.cohesion}: ${labelFor(ui, `cohesion${capitalize(result.satellite.cohesion)}`, result.satellite.cohesion)}`;
   refs.radius.textContent = `${ui.planetRadius}: ${formatKm(result.primary.radiusKm)}`;
 }
 
@@ -180,9 +181,9 @@ function update(persist = true): void {
 function syncPickers(): void {
   const primary = PRIMARY_BODIES.find((body) => body.id === selectedPrimary) ?? PRIMARY_BODIES[0];
   const satellite = SATELLITE_BODIES.find((body) => body.id === selectedSatellite) ?? SATELLITE_BODIES[0];
-  refs.primaryName.textContent = primary.name;
+  refs.primaryName.textContent = labelFor(ui, `primary${capitalizeId(primary.id)}`, primary.name);
   refs.primaryDensity.textContent = `${primary.densityGcm3} g/cm3`;
-  refs.satelliteName.textContent = satellite.name;
+  refs.satelliteName.textContent = labelFor(ui, `satellite${capitalizeId(satellite.id)}`, satellite.name);
   refs.satelliteDensity.textContent = `${satellite.densityGcm3} g/cm3`;
   refs.primaryMenu.querySelectorAll<HTMLButtonElement>('button').forEach((button) => button.classList.toggle('is-selected', button.dataset.value === selectedPrimary));
   refs.satelliteMenu.querySelectorAll<HTMLButtonElement>('button').forEach((button) => button.classList.toggle('is-selected', button.dataset.value === selectedSatellite));
@@ -199,10 +200,10 @@ function closePickers(): void {
 }
 
 function fillMenus(): void {
-  PRIMARY_BODIES.forEach((body) => appendOption({ menu: refs.primaryMenu, value: body.id, name: body.name, meta: `${body.densityGcm3} g/cm3`, select: () => {
+  PRIMARY_BODIES.forEach((body) => appendOption({ menu: refs.primaryMenu, value: body.id, name: labelFor(ui, `primary${capitalizeId(body.id)}`, body.name), meta: `${body.densityGcm3} g/cm3`, select: () => {
     selectedPrimary = body.id;
   } }));
-  SATELLITE_BODIES.forEach((body) => appendOption({ menu: refs.satelliteMenu, value: body.id, name: body.name, meta: `${body.densityGcm3} g/cm3`, select: () => {
+  SATELLITE_BODIES.forEach((body) => appendOption({ menu: refs.satelliteMenu, value: body.id, name: labelFor(ui, `satellite${capitalizeId(body.id)}`, body.name), meta: `${body.densityGcm3} g/cm3`, select: () => {
     selectedSatellite = body.id;
   } }));
 }
@@ -266,8 +267,7 @@ if (restoredState.primaryId) selectedPrimary = restoredState.primaryId;
 if (restoredState.satelliteId) selectedSatellite = restoredState.satelliteId;
 if (restoredState.orbitDistanceKm) refs.distanceInput.value = `${restoredState.orbitDistanceKm}`;
 setDistanceRange();
-bindEvents();
-syncPickers();
+bindEvents(); syncPickers();
 resizeParticleCanvas(refs.particleCanvas);
 update();
 window.requestAnimationFrame(() => animateParticles(refs.particleCanvas, () => ({ moon: latestMoon, visualState })));
