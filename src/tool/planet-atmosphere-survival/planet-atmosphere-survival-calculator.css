@@ -1,7 +1,7 @@
 .survival-console {
   --survival-ink: #162023;
   --survival-muted: #667578;
-  --survival-soft: #00ffaa;
+  --survival-soft: #0fa;
   --survival-panel: rgba(255, 255, 255, 0.72);
   --survival-panel-strong: rgba(255, 255, 255, 0.86);
   --survival-line: rgba(20, 43, 46, 0.09);
@@ -92,7 +92,6 @@
   display: block;
   margin-top: 0.22rem;
   color: var(--survival-ink);
-  font-family: georgia, "Times New Roman", serif;
   font-size: clamp(1rem, 2.2vw, 1.34rem);
   line-height: 1;
   overflow-wrap: anywhere;
@@ -195,7 +194,6 @@
 .survival-spoke-label,
 .survival-timeline text {
   fill: var(--survival-ink);
-  font-family: Inter, "Segoe UI", arial, sans-serif;
   text-anchor: middle;
 }
 
@@ -354,7 +352,6 @@
   max-width: 100%;
   overflow-wrap: anywhere;
   color: var(--survival-ink);
-  font-family: georgia, "Times New Roman", serif;
   font-size: 1.26rem;
   font-weight: 750;
   line-height: 1;
@@ -369,8 +366,8 @@
   color: var(--survival-ink);
   background-color: transparent;
   background-image:
-    linear-gradient(45deg, transparent 50%, currentColor 50%),
-    linear-gradient(135deg, currentColor 50%, transparent 50%);
+    linear-gradient(45deg, transparent 50%, currentcolor 50%),
+    linear-gradient(135deg, currentcolor 50%, transparent 50%);
   background-position:
     calc(100% - 14px) 54%,
     calc(100% - 8px) 54%;
@@ -483,7 +480,7 @@
 }
 
 @keyframes survival-particle-drift {
-  from {
+  0% {
     transform: rotate(0deg) translateX(0);
   }
 
@@ -491,7 +488,7 @@
     transform: rotate(180deg) translateX(var(--particle-chaos, 0));
   }
 
-  to {
+  100% {
     transform: rotate(360deg) translateX(0);
   }
 }

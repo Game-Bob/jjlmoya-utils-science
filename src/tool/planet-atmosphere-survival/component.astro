@@ -169,45 +169,11 @@ const uiData = JSON.stringify(ui);
   };
   const uiData = JSON.parse(document.getElementById('survival-console')!.dataset.ui!);
 
-  function hazardLabel(hazard: AtmosphereHazard): string {
-    const labels: Record<AtmosphereHazard, string> = {
-      pressure: uiData.hazardPressure,
-      temperature: uiData.hazardTemperature,
-      oxygen: uiData.hazardOxygen,
-      toxicity: uiData.hazardToxicity,
-      wind: uiData.hazardWind,
-    };
-    return labels[hazard];
-  }
-
-  function presetName(id: string): string {
-    const names: Record<string, string> = {
-      mars: uiData.presetMars,
-      venus: uiData.presetVenus,
-      titan: uiData.presetTitan,
-      jupiter: uiData.presetJupiter,
-      'earth-everest': uiData.presetEverest,
-    };
-    return names[id] ?? id;
-  }
-
-  function presetNote(id: string): string {
-    const notes: Record<string, string> = {
-      mars: uiData.noteMars,
-      venus: uiData.noteVenus,
-      titan: uiData.noteTitan,
-      jupiter: uiData.noteJupiter,
-      'earth-everest': uiData.noteEverest,
-    };
-    return notes[id] ?? '';
-  }
-
-  const verdictMap: Record<string, string> = {
-    seconds: uiData.verdictSeconds,
-    minutes: uiData.verdictMinutes,
-    hours: uiData.verdictHours,
-    extended: uiData.verdictExtended,
-  };
+  const hazardLabels: Record<AtmosphereHazard, string> = { pressure: uiData.hazardPressure, temperature: uiData.hazardTemperature, oxygen: uiData.hazardOxygen, toxicity: uiData.hazardToxicity, wind: uiData.hazardWind };
+  const presetData: Record<string, { name: string; note: string }> = { mars: { name: uiData.presetMars, note: uiData.noteMars }, venus: { name: uiData.presetVenus, note: uiData.noteVenus }, titan: { name: uiData.presetTitan, note: uiData.noteTitan }, jupiter: { name: uiData.presetJupiter, note: uiData.noteJupiter }, 'earth-everest': { name: uiData.presetEverest, note: uiData.noteEverest } };
+  const verdictLabels: Record<string, string> = { seconds: uiData.verdictSeconds, minutes: uiData.verdictMinutes, hours: uiData.verdictHours, extended: uiData.verdictExtended };
+  function presetName(id: string): string { return presetData[id]?.name ?? id; }
+  function presetNote(id: string): string { return presetData[id]?.note ?? ''; }
 
   function formatDuration(seconds: number): string {
     if (seconds < 60) return `${Math.round(seconds)} s`;
@@ -269,7 +235,7 @@ const uiData = JSON.stringify(ui);
       const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
       text.setAttribute('x', `${label.x}`);
       text.setAttribute('y', `${label.y}`);
-      text.textContent = hazardLabel(hazard.hazard);
+      text.textContent = hazardLabels[hazard.hazard];
       text.classList.add('survival-spoke-label');
       bars.append(text);
     });
@@ -371,35 +337,34 @@ const uiData = JSON.stringify(ui);
     oxygenInput.value = `${preset.oxygenFraction * 100}`;
     co2Input.value = `${preset.co2Fraction * 100}`;
     note!.textContent = presetNote(preset.id);
+  }  function findPreset(): PlanetAtmospherePreset {
+    return ATMOSPHERE_PRESETS.find((p) => p.id === bodySelect?.value) ?? ATMOSPHERE_PRESETS[0];
   }
 
   function update() {
-    if (!pressureInput || !temperatureInput || !oxygenInput || !co2Input) return;
-
-    const selectedPreset = ATMOSPHERE_PRESETS.find((preset) => preset.id === bodySelect?.value) ?? ATMOSPHERE_PRESETS[0];
+    if (!(pressureInput && temperatureInput && oxygenInput && co2Input)) return;
+    const selectedPreset = findPreset();
     const result = estimateSurvival({
-      pressureKpa: Number(pressureInput.value),
-      temperatureC: Number(temperatureInput.value),
-      oxygenFraction: Number(oxygenInput.value) / 100,
-      co2Fraction: Number(co2Input.value) / 100,
+      pressureKpa: Number(pressureInput!.value),
+      temperatureC: Number(temperatureInput!.value),
+      oxygenFraction: Number(oxygenInput!.value) / 100,
+      co2Fraction: Number(co2Input!.value) / 100,
       toxicIndex: selectedPreset.toxicIndex,
       windMps: selectedPreset.windMps,
     });
-    particleState.pressure = Number(pressureInput.value);
+    particleState.pressure = Number(pressureInput!.value);
     particleState.wind = selectedPreset.windMps;
-    particleState.stress = Math.max(...result.hazards.map((hazard) => hazard.score));
-
-    pressureOutput!.textContent = formatPressure(Number(pressureInput.value));
-    temperatureOutput!.textContent = formatTemperature(Number(temperatureInput.value));
-    oxygenOutput!.textContent = `${Number(oxygenInput.value).toFixed(1)}%`;
-    co2Output!.textContent = `${Number(co2Input.value).toFixed(1)}%`;
+    particleState.stress = Math.max(...result.hazards.map((h) => h.score));
+    pressureOutput!.textContent = formatPressure(Number(pressureInput!.value)); temperatureOutput!.textContent = formatTemperature(Number(temperatureInput!.value));
+    oxygenOutput!.textContent = `${Number(oxygenInput!.value).toFixed(1)}%`;
+    co2Output!.textContent = `${Number(co2Input!.value).toFixed(1)}%`;
     coreTime!.textContent = formatDuration(result.survivalSeconds);
     coreLabel!.textContent = uiData.estimatedSurvival;
-    limiter!.textContent = hazardLabel(result.limitingHazard);
-    verdict!.textContent = verdictMap[result.verdict] ?? result.verdict;
+    limiter!.textContent = hazardLabels[result.limitingHazard];
+    verdict!.textContent = verdictLabels[result.verdict];
     summaryTitle!.textContent = `${presetName(selectedPreset.id)} ${uiData.survivalEnvelope}`;
     summaryTime!.textContent = formatDuration(result.survivalSeconds);
-    summaryLimiter!.textContent = hazardLabel(result.limitingHazard);
+    summaryLimiter!.textContent = hazardLabels[result.limitingHazard];
     summaryMode!.textContent = unitSystem === 'imperial' ? uiData.imperial : uiData.metric;
     riskRing?.setAttribute('d', arcPath(Math.min(1, result.survivalSeconds / 3600)));
     drawBars(result);

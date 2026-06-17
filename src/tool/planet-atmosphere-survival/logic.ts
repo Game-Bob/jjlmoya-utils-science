@@ -112,29 +112,51 @@ function interpolateRisk(time: number, severeTime: number): number {
   return clamp01(Math.pow(time / severeTime, 1.25));
 }
 
+function calcPressureScore(kpa: number): number {
+  if (kpa < 6.3) return 1;
+  if (kpa > 250) return clamp01((kpa - 250) / 700);
+  if (kpa < 55) return clamp01((55 - kpa) / 48.7);
+  return 0;
+}
+
+function calcPressureTime(kpa: number, score: number): number {
+  if (kpa < 6.3) return 12;
+  if (kpa > 250) return 45 / Math.max(0.15, score);
+  return 1200 / Math.max(0.15, score);
+}
+
+function calcOxygenScore(pp: number): number {
+  if (pp < 16) return clamp01((16 - pp) / 16);
+  if (pp > 50) return clamp01((pp - 50) / 110);
+  return 0;
+}
+
+function calcOxygenTime(pp: number, score: number): number {
+  if (pp < 6) return 18;
+  if (pp < 16) return 240 / Math.max(0.15, score);
+  return 1200 / Math.max(0.15, score);
+}
+
+function calcVerdict(seconds: number): string {
+  if (seconds < 60) return 'seconds';
+  if (seconds < 1800) return 'minutes';
+  if (seconds < 21600) return 'hours';
+  return 'extended';
+}
+
 export function scoreAtmosphere(input: SurvivalInput): HazardScore[] {
   const oxygenPartialKpa = input.pressureKpa * input.oxygenFraction;
-  const pressureScore = input.pressureKpa < 6.3
-    ? 1
-    : input.pressureKpa > 250
-      ? clamp01((input.pressureKpa - 250) / 700)
-      : input.pressureKpa < 55
-        ? clamp01((55 - input.pressureKpa) / 48.7)
-        : 0;
-  const pressureTime = input.pressureKpa < 6.3 ? 12 : input.pressureKpa > 250 ? 45 / Math.max(0.15, pressureScore) : 1200 / Math.max(0.15, pressureScore);
-
+  const pressureScore = calcPressureScore(input.pressureKpa);
+  const pressureTime = calcPressureTime(input.pressureKpa, pressureScore);
   const coldScore = input.temperatureC < 0 ? clamp01(Math.abs(input.temperatureC) / 95) : 0;
   const heatScore = input.temperatureC > 40 ? clamp01((input.temperatureC - 40) / 140) : 0;
   const temperatureScore = Math.max(coldScore, heatScore);
   const temperatureTime = heatScore > coldScore ? 35 / Math.max(0.12, heatScore) : 900 / Math.max(0.12, coldScore);
-
-  const oxygenScore = oxygenPartialKpa < 16 ? clamp01((16 - oxygenPartialKpa) / 16) : oxygenPartialKpa > 50 ? clamp01((oxygenPartialKpa - 50) / 110) : 0;
-  const oxygenTime = oxygenPartialKpa < 6 ? 18 : oxygenPartialKpa < 16 ? 240 / Math.max(0.15, oxygenScore) : 1200 / Math.max(0.15, oxygenScore);
-
+  const oxygenScore = calcOxygenScore(oxygenPartialKpa);
+  const oxygenTime = calcOxygenTime(oxygenPartialKpa, oxygenScore);
   const co2Score = input.co2Fraction > 0.08 ? clamp01((input.co2Fraction - 0.08) / 0.18) : 0;
   const toxicityScore = clamp01(Math.max(co2Score, input.toxicIndex));
   const toxicityTime = 180 / Math.max(0.12, toxicityScore);
-
   const windScore = clamp01((input.windMps - 20) / 80);
   const windTime = 300 / Math.max(0.12, windScore);
 
@@ -174,6 +196,6 @@ export function estimateSurvival(input: SurvivalInput): SurvivalResult {
     limitingHazard: limiting.hazard,
     hazards,
     timeline,
-    verdict: survivalSeconds < 60 ? 'seconds' : survivalSeconds < 1800 ? 'minutes' : survivalSeconds < 21600 ? 'hours' : 'extended',
+    verdict: calcVerdict(survivalSeconds),
   };
 }
