@@ -9,6 +9,7 @@ import { COSMIC_INFLATION_TOOL } from './tool/cosmic-inflation/index';
 import { TEMPERATURE_TIMELINE_TOOL } from './tool/temperature-timeline/index';
 import { LORENZ_ATTRACTOR_TOOL } from './tool/lorenz-attractor/index';
 import { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone/index';
+import { RADIOACTIVE_DECAY_TOOL } from './tool/radioactive-decay/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -20,6 +21,6 @@ export const ALL_TOOLS: ToolDefinition[] = [
   TEMPERATURE_TIMELINE_TOOL,
   LORENZ_ATTRACTOR_TOOL,
   STELLAR_HABITABILITY_ZONE_TOOL,
+  RADIOACTIVE_DECAY_TOOL,
 ];
-
 

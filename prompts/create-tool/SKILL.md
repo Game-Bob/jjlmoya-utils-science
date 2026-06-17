@@ -23,7 +23,9 @@ Follow `prompts/create_tool.md` in the repository root for detailed instructions
 6. **Register the tool** by reading and updating:
    `src/index.ts`, `src/entries.ts`, `src/tools.ts`, `src/category/index.ts`
 
-7. **Verify** — run in order:
+7. **QA gate** — do not run `npm run type-check`, `npm run lint`, `npm run test`, or any equivalent verification command after creating or editing a tool unless the user explicitly says `OKQA`. Stop after implementation and report that QA is pending behind the `OKQA` gate.
+
+8. **Verify only after OKQA** — when the user explicitly says `OKQA`, run in order:
    - `npm run type-check`
    - `npm run lint`
    - `npm run test -- --testPathIgnorePatterns=i18n_coverage`
