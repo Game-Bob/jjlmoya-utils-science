@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: '로런츠 인자',
     shipTimeLabel: '여행자 고유 시간',
     distanceLabel: '방향 전환 거리',
+    yearsUnit: '년',
+    yearsShortUnit: '년',
   },
   seo: [
     {

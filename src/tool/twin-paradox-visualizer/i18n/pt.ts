@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Fator de Lorentz',
     shipTimeLabel: 'Tempo proprio do viajante',
     distanceLabel: 'Distancia de meia-volta',
+    yearsUnit: 'anos',
+    yearsShortUnit: 'anos',
   },
   seo: [
     {

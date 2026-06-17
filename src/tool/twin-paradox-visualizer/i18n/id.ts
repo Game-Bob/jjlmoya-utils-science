@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Faktor Lorentz',
     shipTimeLabel: 'Waktu proper pelancong',
     distanceLabel: 'Jarak pembalikan arah',
+    yearsUnit: 'tahun',
+    yearsShortUnit: 'tahun',
   },
   seo: [
     {

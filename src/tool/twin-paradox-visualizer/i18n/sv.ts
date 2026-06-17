@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Lorentzfaktor',
     shipTimeLabel: 'Resenarens egentid',
     distanceLabel: 'Vandningsavstand',
+    yearsUnit: 'år',
+    yearsShortUnit: 'år',
   },
   seo: [
     {

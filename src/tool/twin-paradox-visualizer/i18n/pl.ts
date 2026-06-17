@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Czynnik Lorentza',
     shipTimeLabel: 'Czas własny podróżnika',
     distanceLabel: 'Odległość zawrócenia',
+    yearsUnit: 'lat',
+    yearsShortUnit: 'lat',
   },
   seo: [
     {

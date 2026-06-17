@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: '洛伦兹因子',
     shipTimeLabel: '旅行者固有时',
     distanceLabel: '折返距离',
+    yearsUnit: '年',
+    yearsShortUnit: '年',
   },
   seo: [
     {

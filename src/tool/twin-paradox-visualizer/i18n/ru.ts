@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Фактор Лоренца',
     shipTimeLabel: 'Собственное время путешественника',
     distanceLabel: 'Расстояние до разворота',
+    yearsUnit: 'лет',
+    yearsShortUnit: 'лет',
   },
   seo: [
     {

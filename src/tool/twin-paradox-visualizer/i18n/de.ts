@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Lorentzfaktor',
     shipTimeLabel: 'Eigenzeit des Reisenden',
     distanceLabel: 'Entfernung bis zum Wendepunkt',
+    yearsUnit: 'Jahre',
+    yearsShortUnit: 'Jahre',
   },
   seo: [
     {

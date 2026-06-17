@@ -8,7 +8,7 @@ interface Props {
 const { ui } = Astro.props;
 ---
 
-<div class="twin-lab" id="twin-lab">
+<div class="twin-lab" id="twin-lab" data-years-unit={ui.yearsUnit} data-years-short-unit={ui.yearsShortUnit}>
   <section class="twin-viewport" aria-label={ui.visualTitle}>
     <div class="twin-orbit">
       <div class="twin-earth">
@@ -48,14 +48,14 @@ const { ui } = Astro.props;
 
     <label class="twin-field" for="twin-years">
       <span>{ui.earthYearsLabel}</span>
-      <output id="twin-years-output">20 years</output>
+      <output id="twin-years-output">20 {ui.yearsUnit}</output>
       <input id="twin-years" type="range" min="2" max="80" value="20" step="1" />
     </label>
 
     <div class="twin-readout">
       <div class="twin-reunion">
         <span>{ui.ageGapLabel}</span>
-        <strong><span id="twin-age-gap-value">-</span><small>yr</small></strong>
+        <strong><span id="twin-age-gap-value">-</span><small>{ui.yearsShortUnit}</small></strong>
       </div>
       <div class="twin-results">
         <div class="twin-metric">
@@ -78,6 +78,7 @@ const { ui } = Astro.props;
 <script>
   import { calculateTwinParadox } from './logic';
 
+  const root = document.getElementById('twin-lab');
   const velocityInput = document.getElementById('twin-velocity') as HTMLInputElement | null;
   const yearsInput = document.getElementById('twin-years') as HTMLInputElement | null;
   const velocityOutput = document.getElementById('twin-velocity-output');
@@ -97,6 +98,8 @@ const { ui } = Astro.props;
   const presetButtons = document.querySelectorAll<HTMLButtonElement>('.twin-presets button');
   const departureAge = 30;
   const svgNamespace = 'http://www.w3.org/2000/svg';
+  const yearsUnit = root?.dataset.yearsUnit ?? '';
+  const yearsShortUnit = root?.dataset.yearsShortUnit ?? '';
 
   function formatYears(value: number): string {
     return value.toFixed(value >= 10 ? 1 : 2);
@@ -159,12 +162,12 @@ const { ui } = Astro.props;
     const returnX = Math.min(598, 270 + earthYears * 4);
 
     velocityOutput!.textContent = `${velocity.toFixed(2)}c`;
-    yearsOutput!.textContent = `${earthYears} years`;
+    yearsOutput!.textContent = `${earthYears} ${yearsUnit}`;
     earthAge!.textContent = (departureAge + earthYears).toFixed(1);
     shipAge!.textContent = (departureAge + result.shipYears).toFixed(1);
     ageGap!.textContent = formatYears(result.ageGapYears);
     gammaText!.textContent = `${result.gamma.toFixed(3)}x`;
-    shipTime!.textContent = `${formatYears(result.shipYears)} yr`;
+    shipTime!.textContent = `${formatYears(result.shipYears)} ${yearsShortUnit}`;
     distanceText!.textContent = `${result.earthDistanceLightYears.toFixed(1)} ly`;
 
     ship?.style.setProperty('--ship-progress', `${shipProgress}%`);

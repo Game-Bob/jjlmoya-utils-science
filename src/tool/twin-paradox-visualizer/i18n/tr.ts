@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Lorentz faktoru',
     shipTimeLabel: 'Gezginin oz zamani',
     distanceLabel: 'Donus mesafesi',
+    yearsUnit: 'yıl',
+    yearsShortUnit: 'yıl',
   },
   seo: [
     {

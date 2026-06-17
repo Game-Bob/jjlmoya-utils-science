@@ -62,6 +62,8 @@ export const content: ToolLocaleContent = {
     gammaLabel: 'Facteur de Lorentz',
     shipTimeLabel: 'Temps propre du voyageur',
     distanceLabel: 'Distance jusqu au demi-tour',
+    yearsUnit: 'ans',
+    yearsShortUnit: 'ans',
   },
   seo: [
     {
