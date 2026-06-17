@@ -381,13 +381,19 @@
 }
 
 .phase-readout {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   align-content: start;
   padding-top: 1rem;
   border-top: 1px solid var(--phase-hairline);
 }
 
 .phase-readout strong {
-  font-size: clamp(2.2rem, 10vw, 4.2rem);
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(2.2rem, 7vw, 4.2rem);
 }
 
 .phase-readout p {
@@ -399,6 +405,7 @@
 .phase-meter {
   display: grid;
   gap: 0.55rem;
+  min-width: 0;
   padding-top: 0.75rem;
   border-top: 1px solid var(--phase-hairline);
 }
@@ -435,13 +442,15 @@
 .phase-coexistence {
   display: grid;
   gap: 0.65rem;
+  min-width: 0;
+  overflow: hidden;
   padding-top: 0.8rem;
   border-top: 1px solid var(--phase-hairline);
 }
 
 .phase-coexistence-head {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   gap: 0.65rem;
   align-items: center;
 }
@@ -452,6 +461,7 @@
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.08em;
+  min-width: 0;
   text-transform: uppercase;
 }
 
@@ -465,6 +475,7 @@
 
 .phase-coexistence-axis {
   position: relative;
+  width: 100%;
   height: 24px;
 }
 
@@ -538,5 +549,9 @@
     padding-left: clamp(0rem, 2vw, 1rem);
     border-top: 0;
     border-left: 1px solid var(--phase-hairline);
+  }
+
+  .phase-readout strong {
+    font-size: clamp(2.25rem, 4.1vw, 3.35rem);
   }
 }
