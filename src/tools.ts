@@ -17,6 +17,7 @@ import { TWIN_PARADOX_VISUALIZER_TOOL } from './tool/twin-paradox-visualizer/ind
 import { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';
 import { PLANET_ATMOSPHERE_SURVIVAL_TOOL } from './tool/planet-atmosphere-survival/index';
 import { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
+import { ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL } from './tool/roche-limit-satellite-disruption/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -36,4 +37,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   MANDELBROT_FRACTAL_TOOL,
   PLANET_ATMOSPHERE_SURVIVAL_TOOL,
   THREE_BODY_PROBLEM_TOOL,
+  ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL,
 ];
