@@ -23,6 +23,7 @@ import { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-cap
 import { GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL } from './tool/global-albedo-snowball-simulator/index';
 import { CONWAY_LIFE_RULE_LAB_TOOL } from './tool/conway-life-rule-lab/index';
 import { CRYSTAL_LATTICE_STRUCTURE_FINDER_TOOL } from './tool/crystal-lattice-structure-finder/index';
+import { FERMI_PARADOX_FILTER_LAB_TOOL } from './tool/fermi-paradox-filter-lab/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -48,4 +49,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL,
   CONWAY_LIFE_RULE_LAB_TOOL,
   CRYSTAL_LATTICE_STRUCTURE_FINDER_TOOL,
+  FERMI_PARADOX_FILTER_LAB_TOOL,
 ];

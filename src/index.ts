@@ -23,6 +23,7 @@ export { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-cap
 export { GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL } from './tool/global-albedo-snowball-simulator/index';
 export { CONWAY_LIFE_RULE_LAB_TOOL } from './tool/conway-life-rule-lab/index';
 export { CRYSTAL_LATTICE_STRUCTURE_FINDER_TOOL } from './tool/crystal-lattice-structure-finder/index';
+export { FERMI_PARADOX_FILTER_LAB_TOOL } from './tool/fermi-paradox-filter-lab/index';
 
 export type {
   KnownLocale,

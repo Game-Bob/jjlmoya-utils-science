@@ -22,6 +22,7 @@ export { dysonSphereEnergyCapture } from './tool/dyson-sphere-energy-capture/ent
 export { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-simulator/entry';
 export { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
 export { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
+export { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -46,4 +47,5 @@ import { dysonSphereEnergyCapture } from './tool/dyson-sphere-energy-capture/ent
 import { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-simulator/entry';
 import { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
 import { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder];
+import { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab];
