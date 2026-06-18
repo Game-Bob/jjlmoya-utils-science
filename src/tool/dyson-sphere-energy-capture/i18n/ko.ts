@@ -1,54 +1,22 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sphere-energy-capture';
-const title = 'ë‹¤ì´ìŠ¨ êµ¬ ì—ë„ˆì§€ í¬ì§‘ ì‹œë®¬ë ˆì´í„°';
-const description = 'ë‹¤ì–‘í•œ ë³„ì— ëŒ€í•´ ë‹¤ì´ìŠ¨ ë–¼, ê³ ë¦¬, ê»ì§ˆ, ìŠ¤íƒ€íƒ€ì´íŠ¸ ìˆ˜ì§‘ê¸° ì„¤ê³„ë¥¼ ì¶”ì •í•©ë‹ˆë‹¤. í¬ì§‘ ì „ë ¥, ê¶¤ë„ ë°˜ê²½, ìž¬ë£Œ ì§ˆëŸ‰ ë° ëª©í‘œ ì¹´ë¥´ë‹¤ì‡¼í”„ ì²™ë„ì— ë„ë‹¬í•˜ëŠ” ë° í•„ìš”í•œ ë²”ìœ„ë¥¼ ê³„ì‚°í•©ë‹ˆë‹¤.';
+const title = 'Dyson Sphere Energy Capture Simulator';
+const description = 'Compare stellar megastructure designs by captured power, safe radius, material demand, and Kardashev scale coverage.';
 
 const howTo = [
-  {
-    name: 'í•­ì„± ìœ í˜• ì„ íƒ',
-    text: 'M ì™œì„±, íƒœì–‘í˜• ë³„, Aí˜• ë³„, ì ìƒ‰ ê±°ì„± ë˜ëŠ” ì²­ìƒ‰ ê±°ì„±ìœ¼ë¡œ ì‹œìž‘í•˜ì‹­ì‹œì˜¤. ì‹œë®¬ë ˆì´í„°ëŠ” ëŒ€í‘œì ì¸ ê´‘ë„ì™€ ì§ˆëŸ‰ ê°’ì„ ì‚¬ìš©í•˜ì—¬ ìˆ˜ì§‘ê¸° ë°˜ê²½ê³¼ ê¶¤ë„ ì£¼ê¸°ë¥¼ ì¶”ì •í•©ë‹ˆë‹¤.',
-  },
-  {
-    name: 'ë©”ê°€êµ¬ì¡° ì•„í‚¤í…ì²˜ ì„ íƒ',
-    text: 'ë‹¤ì´ìŠ¨ ë–¼, ì ë„ ê³ ë¦¬, ê°•ì²´ ê»ì§ˆ ë˜ëŠ” ìŠ¤íƒ€íƒ€ì´íŠ¸ ê±°ìš¸ êµ¬ë¦„ì„ ë¹„êµí•˜ì‹­ì‹œì˜¤. ê° ì„¤ê³„ëŠ” í¬ì§‘ íš¨ìœ¨, ìž¬ë£Œ ë°€ë„ ë° ì•ˆì •ì„± ê°€ì •ì´ ë‹¤ë¦…ë‹ˆë‹¤.',
-  },
-  {
-    name: 'ë²”ìœ„ì™€ ìž‘ë™ ì˜¨ë„ ì„¤ì •',
-    text: 'ë²”ìœ„ë¥¼ ëŠ˜ë ¤ ë” ë§Žì€ í•­ì„± ì „ë ¥ì„ í¬ì§‘í•˜ê³  ìž‘ë™ ì˜¨ë„ë¥¼ ì¡°ì •í•˜ì—¬ ìˆ˜ì§‘ê¸°ë¥¼ ë³„ì— ë” ê°€ê¹ê±°ë‚˜ ë©€ë¦¬ ì´ë™ì‹œí‚µë‹ˆë‹¤.',
-  },
-  {
-    name: 'ì¹´ë¥´ë‹¤ì‡¼í”„ ëª©í‘œì— ë§žì¶”ê¸°',
-    text: 'ëª©í‘œ ìŠ¬ë¼ì´ë”ë¥¼ ì‚¬ìš©í•˜ì—¬ ë¬¸ëª… ê·œëª¨ì˜ ì „ë ¥ ëª©í‘œì— ë„ë‹¬í•˜ê¸° ìœ„í•´ ë³„ì˜ ì–¼ë§ˆë‚˜ ë§Žì€ ë¶€ë¶„ì„ ë®ì–´ì•¼ í•˜ëŠ”ì§€ í™•ì¸í•©ë‹ˆë‹¤.',
-  },
+  { name: 'Select a star', text: 'Choose the stellar class that sets luminosity, mass, and thermal distance.' },
+  { name: 'Select a structure', text: 'Compare swarm, ring, shell, and statite cloud collector assumptions.' },
+  { name: 'Tune coverage', text: 'Change coverage and operating temperature to inspect power and mass tradeoffs.' },
+  { name: 'Match the scale', text: 'Use the Kardashev target to see required collector coverage.' },
 ];
 
 const faq = [
-  {
-    question: 'ë‹¤ì´ìŠ¨ êµ¬ì™€ ë‹¤ì´ìŠ¨ ë–¼ì˜ ì°¨ì´ì ì€ ë¬´ì—‡ì¸ê°€ìš”?',
-    answer: 'ê°•ì²´ ë‹¤ì´ìŠ¨ êµ¬ëŠ” ë³„ ì£¼ìœ„ì˜ ì—°ì†ì ì¸ ê»ì§ˆì¸ ë°˜ë©´, ë‹¤ì´ìŠ¨ ë–¼ëŠ” ë…ë¦½ì ì¸ ê¶¤ë„ ìˆ˜ì§‘ê¸°ì˜ ëŒ€ê·œëª¨ ì§‘í•©ìž…ë‹ˆë‹¤. ëŒ€ë¶€ë¶„ì˜ ê³µí•™ì  ë…¼ì˜ëŠ” ë–¼ë¥¼ ì„ í˜¸í•˜ëŠ”ë°, ë‹¨ë‹¨í•œ ê»ì§ˆì€ êµ¬ì¡°ì ìœ¼ë¡œ ë¶ˆì•ˆì •í•˜ê³  ìž¬ë£Œê°€ ê·¹ë„ë¡œ ë§Žì´ í•„ìš”í•˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.',
-  },
-  {
-    question: 'ì‹œë®¬ë ˆì´í„°ëŠ” ì–´ë–»ê²Œ ìµœì  ë°˜ê²½ì„ ì„ íƒí•˜ë‚˜ìš”?',
-    answer: 'ì„ íƒëœ í•­ì„± ê´‘ë„ í•˜ì—ì„œ ì–‘ë©´ì—ì„œ ë°©ì‚¬í•˜ëŠ” ìˆ˜ì§‘ê¸°ê°€ ì„ íƒëœ ìž‘ë™ ì˜¨ë„ì— ë„ë‹¬í•˜ëŠ” ê±°ë¦¬ë¥¼ ì¶”ì •í•©ë‹ˆë‹¤. ë” ëœ¨ê±°ìš´ ìˆ˜ì§‘ê¸°ëŠ” ë” ê°€ê¹Œì´ ê¶¤ë„í•  ìˆ˜ ìžˆëŠ” ë°˜ë©´, ë” ì°¨ê°€ìš´ ìˆ˜ì§‘ê¸°ëŠ” ë” í° ë°˜ê²½ì´ í•„ìš”í•©ë‹ˆë‹¤.',
-  },
-  {
-    question: 'ì—¬ê¸°ì„œ ì¹´ë¥´ë‹¤ì‡¼í”„ ë“±ê¸‰ì€ ë¬´ì—‡ì„ ì˜ë¯¸í•˜ë‚˜ìš”?',
-    answer: 'ì¹´ë¥´ë‹¤ì‡¼í”„ ê°’ì€ ì¼ë°˜ì ì¸ ë¡œê·¸ í˜•ì‹ K = (log10(P) - 6) / 10ì„ ì‚¬ìš©í•˜ì—¬ í¬ì§‘ ì „ë ¥ì—ì„œ ê³„ì‚°ë©ë‹ˆë‹¤. ì—¬ê¸°ì„œ PëŠ” ì™€íŠ¸ ë‹¨ìœ„ì˜ ì „ë ¥ìž…ë‹ˆë‹¤. K1ì— ê°€ê¹Œìš´ ê°’ì€ í–‰ì„± ê·œëª¨ì˜ ì—ë„ˆì§€ ì‚¬ìš©ì„ ë‚˜íƒ€ë‚´ê³ , K2ëŠ” ì™„ì „í•œ í•­ì„± ì¶œë ¥ì— ê·¼ì ‘í•©ë‹ˆë‹¤.',
-  },
-  {
-    question: 'ìž¬ë£Œ ì§ˆëŸ‰ì´ í˜„ì‹¤ì ì¸ê°€ìš”?',
-    answer: 'ìˆ˜ì§‘ê¸° ë©´ì , ë©´ì  ë°€ë„ ë° ì•ˆì •ì„± ê³„ìˆ˜ë¥¼ ê¸°ë°˜ìœ¼ë¡œ í•œ êµìœ¡ìš© 1ì°¨ ì¶”ì •ì¹˜ìž…ë‹ˆë‹¤. ì‹¤ì œ ì„¤ê³„ì—ëŠ” ìŠ¤í…Œì´ì…˜ í‚¤í•‘, ì „ë ¥ ì „ì†¡, ì±„êµ´ ì†ì‹¤, ì´ì¤‘í™”, ì—´ ë°©ì¶œ ë° ì œì¡° ì¸í”„ë¼ê°€ í•„ìš”í•©ë‹ˆë‹¤.',
-  },
-  {
-    question: 'ë°ì€ ë³„ì´ ì™œ ê·¸ë ‡ê²Œ í° ìˆ˜ì§‘ê¸° ì‹œìŠ¤í…œì„ í•„ìš”ë¡œ í•˜ë‚˜ìš”?',
-    answer: 'ê³ ê´‘ë„ ë³„ì€ ì•ˆì „í•œ ì—´ ë°˜ê²½ì„ ë°”ê¹¥ìª½ìœ¼ë¡œ ë°€ì–´ëƒ…ë‹ˆë‹¤. ì´ëŠ” ì£¼ì–´ì§„ ë²”ìœ„ ë¹„ìœ¨ì— í•„ìš”í•œ í‘œë©´ì ì„ ì¦ê°€ì‹œí‚¤ë¯€ë¡œ, ìž¬ë£Œ ìˆ˜ìš”ëŠ” í¬ì§‘ ì „ë ¥ì´ ì§ê´€ì ìœ¼ë¡œ ëŠê»´ì§€ëŠ” ê²ƒë³´ë‹¤ ë¹ ë¥´ê²Œ ì¦ê°€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.',
-  },
-  {
-    question: 'ë¬¸ëª…ì´ ë¶€ë¶„ì  ë²”ìœ„ë¡œ ì¹´ë¥´ë‹¤ì‡¼í”„ IIí˜•ì— ë„ë‹¬í•  ìˆ˜ ìžˆë‚˜ìš”?',
-    answer: 'ë„¤, ëª¨í•­ì„±ì´ ì¶©ë¶„ížˆ ë°ê³  ìˆ˜ì§‘ê¸°ê°€ íš¨ìœ¨ì ì´ë¼ë©´ ê°€ëŠ¥í•©ë‹ˆë‹¤. íƒœì–‘ê³¼ ê°™ì€ ë³„ ì£¼ë³€ì—ì„œ IIí˜•ì— ê·¼ì ‘í•˜ë ¤ë©´ íƒœì–‘ ê´‘ë„ì˜ ìƒë‹¹ ë¶€ë¶„ì„ í¬ì§‘í•´ì•¼ í•˜ì§€ë§Œ, ë” ë°ì€ ë³„ ì£¼ë³€ì—ì„œëŠ” ë™ì¼í•œ ì „ë ¥ ëª©í‘œì— ë” ë‚®ì€ ë²”ìœ„ ë¹„ìœ¨ì´ í•„ìš”í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.',
-  },
+  { question: 'Why is a swarm useful?', answer: 'A swarm can be built from many independent collectors and avoids the instability of a rigid shell.' },
+  { question: 'How is radius estimated?', answer: 'The model balances stellar luminosity with collector operating temperature.' },
+  { question: 'What is the Kardashev value?', answer: 'It is a logarithmic rating derived from total captured power in watts.' },
+  { question: 'Can this be used for engineering?', answer: 'No. It is a teaching model for order-of-magnitude comparison.' },
 ];
 
 export const content: ToolLocaleContent = {
@@ -56,140 +24,48 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    visualization: 'ë‹¤ì´ìŠ¨ ìˆ˜ì§‘ê¸° ì‹œê°í™”',
-    starType: 'í•­ì„± ìœ í˜•',
-    structureType: 'êµ¬ì¡°',
-    coverage: 'ìˆ˜ì§‘ê¸° ë²”ìœ„',
-    operatingTemp: 'ìž‘ë™ ì˜¨ë„',
-    kardashevTarget: 'ì¹´ë¥´ë‹¤ì‡¼í”„ ëª©í‘œ',
-    kardashevRating: 'í˜„ìž¬ ë“±ê¸‰',
-    capturedPower: 'í¬ì§‘ ì „ë ¥',
-    optimalRadius: 'ìµœì  ë°˜ê²½',
-    targetCoverage: 'ëª©í‘œ ë²”ìœ„',
-    materialMass: 'ìž¬ë£Œ ì§ˆëŸ‰',
-    captureMeter: 'ëª©í‘œ ë‹¬ì„± ì§„í–‰',
-    statusReady: 'ì‹œìŠ¤í…œì„ ì¡°ì •í•˜ì—¬ ìˆ˜ì§‘ê¸° ìˆ˜ìš”ë¥¼ ì¶”ì •í•˜ì‹­ì‹œì˜¤.',
-    statusUnderbuilt: '선택한 카르다쇼프 목표보다 커버리지가 낮습니다. 수집기를 추가하거나 더 밝은 별을 선택하세요.',
-    statusBalanced: '커버리지와 항성 출력이 선택한 문명 규모 목표에 가깝습니다.',
-    statusExtreme: '이 구성은 목표를 초과합니다. 막대한 전력을 포획하지만 재료 수요도 빠르게 증가합니다.',
-    orbitalPeriod: 'ê¶¤ë„ ì£¼ê¸°',
-    collectorArea: 'ìˆ˜ì§‘ê¸° ë©´ì ',
-    mercuryMasses: '{value} 수성 질량',
+    visualization: 'Dyson collector visualization',
+    starType: 'Star type',
+    structureType: 'Structure',
+    coverage: 'Collector coverage',
+    operatingTemp: 'Operating temperature',
+    kardashevTarget: 'Kardashev target',
+    kardashevRating: 'Current rating',
+    capturedPower: 'Captured power',
+    optimalRadius: 'Optimal radius',
+    targetCoverage: 'Target coverage',
+    materialMass: 'Material mass',
+    captureMeter: 'Target capture progress',
+    statusReady: 'Adjust the system to estimate collector demand.',
+    statusUnderbuilt: 'Coverage is below the selected target.',
+    statusBalanced: 'Coverage is close to the selected target.',
+    statusExtreme: 'This configuration overshoots the target.',
+    orbitalPeriod: 'Orbital period',
+    collectorArea: 'Collector area',
+    mercuryMasses: '{value} Mercury masses',
     kilograms: '{value} kg',
-    daysUnit: '{value} 일',
-    starMDwarf: 'M ì™œì„±',
-    starSun: 'Gí˜• ë³„ (íƒœì–‘í˜•)',
-    starA: 'Aí˜• ë³„',
-    starRedGiant: 'ì ìƒ‰ ê±°ì„±',
-    starBlueGiant: 'ì²­ìƒ‰ ê±°ì„±',
-    structureSwarm: 'ë‹¤ì´ìŠ¨ ë–¼',
-    structureRing: 'ì ë„ ê³ ë¦¬',
-    structureShell: 'ê°•ì²´ ê»ì§ˆ',
-    structureStatite: 'ìŠ¤íƒ€íƒ€ì´íŠ¸ ê±°ìš¸ êµ¬ë¦„',
+    daysUnit: '{value} days',
+    starMDwarf: 'M dwarf',
+    starSun: 'Sun-like G star',
+    starA: 'A-type star',
+    starRedGiant: 'Red giant',
+    starBlueGiant: 'Blue giant',
+    structureSwarm: 'Dyson swarm',
+    structureRing: 'Equatorial ring',
+    structureShell: 'Rigid shell',
+    structureStatite: 'Statite mirror cloud',
   },
   seo: [
-    {
-      type: 'title',
-      text: 'ë‹¤ì´ìŠ¨ êµ¬ ì—ë„ˆì§€ í¬ì§‘ ì‹œë®¬ë ˆì´í„°',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'ë‹¤ì´ìŠ¨ êµ¬ëŠ” ê»ì§ˆ ì•ˆì— ë³„ì´ ìžˆëŠ” SF ì´ë¯¸ì§€ë§Œì´ ì•„ë‹™ë‹ˆë‹¤. ê·¸ê²ƒì€ í•­ì„± ê´‘ë„ë¥¼ ì°¨ë‹¨í•˜ê¸° ìœ„í•œ ê°€ëŠ¥í•œ ë©”ê°€êµ¬ì¡° ê°œë…ì˜ ì§‘í•©ìž…ë‹ˆë‹¤: ìœ„ì„± ë–¼, ì ë„ ê³ ë¦¬, ì–‡ì€ ê±°ìš¸ êµ¬ë¦„, ê·¸ë¦¬ê³  ìœ ëª…í•˜ì§€ë§Œ ë¬¸ì œê°€ ìžˆëŠ” ê°•ì²´ ê»ì§ˆ. ì´ ì‹œë®¬ë ˆì´í„°ëŠ” ê·¸ëŸ¬í•œ ì•„ì´ë””ì–´ë¥¼ ìˆ«ìžë¡œ ë³€í™˜í•˜ì—¬ í•­ì„± ìœ í˜•, ìˆ˜ì§‘ê¸° ì˜¨ë„, ë²”ìœ„ ë° êµ¬ì¡° ì„¤ê³„ê°€ ì—ë„ˆì§€ ì˜ˆì‚°ì„ ì–´ë–»ê²Œ ë³€í™”ì‹œí‚¤ëŠ”ì§€ ë¹„êµí•  ìˆ˜ ìžˆê²Œ í•©ë‹ˆë‹¤.',
-    },
-    {
-      type: 'paragraph',
-      html: 'ê³„ì‚°ê¸°ëŠ” í¬ì§‘ ì „ë ¥, ì—´ ê¶¤ë„ ë°˜ê²½, ìˆ˜ì§‘ê¸° ë©´ì , ê¶¤ë„ ì£¼ê¸°, ìž¬ë£Œ ì§ˆëŸ‰ ë° ì„ íƒëœ ì¹´ë¥´ë‹¤ì‡¼í”„ ì²™ë„ ëª©í‘œì— í•„ìš”í•œ ë²”ìœ„ë¥¼ ì¶”ì •í•©ë‹ˆë‹¤. í•™ìƒ, ì„¸ê³„ ê±´ì„¤ìž, ê³¼í•™ ì»¤ë®¤ë‹ˆì¼€ì´í„° ë° IIí˜• ë¬¸ëª…ì´ ì™œ ì–´ë ¤ìš´ì§€ ì´í•´í•˜ë ¤ëŠ” ëª¨ë“  ì‚¬ëžŒì„ ìœ„í•´ ë§Œë“¤ì–´ì¡ŒìŠµë‹ˆë‹¤. ë„ì „ ê³¼ì œëŠ” ì „ë ¥ë¿ë§Œ ì•„ë‹ˆë¼ ë©´ì , ì—´, ì±„êµ´, ì•ˆì •ì„± ë° ê¶¤ë„ ë¬¼ë¥˜ì— ìžˆìŠµë‹ˆë‹¤.',
-    },
-    {
-      type: 'title',
-      text: 'ë‹¤ì´ìŠ¨ ë°˜ê²½ ì¶”ì • ë°©ë²•',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'ìµœì  ë°˜ê²½ì€ í•­ì„± ê´‘ë„ì™€ ìˆ˜ì§‘ê¸° ìž‘ë™ ì˜¨ë„ì—ì„œ ê³„ì‚°ë©ë‹ˆë‹¤. ë°ì€ ë³„ ê·¼ì²˜ì˜ ìˆ˜ì§‘ê¸°ëŠ” ê°•í•œ í”ŒëŸ­ìŠ¤ë¥¼ ë°›ì•„ ê³ ì˜¨ì—ì„œ ìž‘ë™í•˜ê±°ë‚˜ ì—„ì²­ë‚œ ì–‘ì˜ ì—´ì„ ë°©ì¶œí•´ì•¼ í•©ë‹ˆë‹¤. ë°”ê¹¥ìª½ìœ¼ë¡œ ì´ë™í•˜ë©´ ì—´ ì‘ë ¥ì´ ì¤„ì–´ë“¤ì§€ë§Œ í•„ìš”í•œ ìˆ˜ì§‘ê¸° ë©´ì ì€ ê±°ë¦¬ì˜ ì œê³±ì— ë”°ë¼ ì¦ê°€í•©ë‹ˆë‹¤. ì´ íŠ¸ë ˆì´ë“œì˜¤í”„ëŠ” ë™ì¼í•œ ë²”ìœ„ ë¹„ìœ¨ì´ ì–´ë‘ìš´ M ì™œì„± ì£¼ë³€ì—ì„œëŠ” ìž‘ê³  ì²­ìƒ‰ ê±°ì„± ì£¼ë³€ì—ì„œëŠ” ê±°ëŒ€í•  ìˆ˜ ìžˆëŠ” ì´ìœ ë¥¼ ì„¤ëª…í•©ë‹ˆë‹¤.',
-    },
-    {
-      type: 'title',
-      text: 'ë‹¤ì´ìŠ¨ ë–¼, ê³ ë¦¬, ê»ì§ˆ, ìŠ¤íƒ€íƒ€ì´íŠ¸ êµ¬ë¦„ ë¹„êµ',
-      level: 3,
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>ë‹¤ì´ìŠ¨ ë–¼:</strong> ë§Žì€ ë…ë¦½ì ì¸ ê¶¤ë„ ìˆ˜ì§‘ê¸°. ë‹¨ê³„ì ìœ¼ë¡œ ê±´ì„¤í•  ìˆ˜ ìžˆê³  ê°•ì²´ í•­ì„± ê»ì§ˆì´ í•„ìš”í•˜ì§€ ì•Šê¸° ë•Œë¬¸ì— ê°€ìž¥ ê·¸ëŸ´ë“¯í•œ ëŒ€ê·œëª¨ ì•„í‚¤í…ì²˜ìž…ë‹ˆë‹¤.',
-        '<strong>ì ë„ ê³ ë¦¬:</strong> ë²”ìœ„ íš¨ìœ¨ì´ ë‚®ì€ ì¢ì€ ìˆ˜ì§‘ê¸° ë . ì²« ë²ˆì§¸ ë©”ê°€êµ¬ì¡°ë¡œ ìƒìƒí•˜ê¸° ì‰½ì§€ë§Œ, ë” ë„“ì€ ë–¼ê°€ ë˜ì§€ ì•Šê³ ëŠ” ì™„ì „í•œ í•­ì„± ì¶œë ¥ì„ í¬ì§‘í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.',
-        '<strong>ê°•ì²´ ê»ì§ˆ:</strong> ì‹œê°ì ìœ¼ë¡œ ìƒì§•ì ì´ì§€ë§Œ ê¸°ê³„ì ìœ¼ë¡œ ë¶ˆë¦¬í•©ë‹ˆë‹¤. ë³„ ì£¼ìœ„ì˜ ê»ì§ˆì€ ì‹¬ê°í•œ ì•ˆì •ì„±ê³¼ ìž¬ë£Œ ë¬¸ì œê°€ ìžˆì–´, ì‹œë®¬ë ˆì´í„°ëŠ” ë†’ì€ ì§ˆëŸ‰ê³¼ ë‚®ì€ ì•ˆì •ì„±ì„ í• ë‹¹í•©ë‹ˆë‹¤.',
-        '<strong>ìŠ¤íƒ€íƒ€ì´íŠ¸ ê±°ìš¸ êµ¬ë¦„:</strong> ë³µì‚¬ì••ì— ì˜í•´ ë¶€ë¶„ì ìœ¼ë¡œ ìœ ì§€ë˜ëŠ” ì´ˆê²½ëŸ‰ ë°˜ì‚¬ì²´. ìž¬ë£Œ ìˆ˜ìš”ë¥¼ ì¤„ì´ì§€ë§Œ ì—´ ë‚´ì„±ì´ ë‚®ê³  ì œì–´ ìš”êµ¬ ì‚¬í•­ì´ ê¹Œë‹¤ë¡­ìŠµë‹ˆë‹¤.',
-      ],
-    },
-    {
-      type: 'title',
-      text: 'ì¹´ë¥´ë‹¤ì‡¼í”„ ì²™ë„ì— í•„ìš”í•œ ë²”ìœ„',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'ì¹´ë¥´ë‹¤ì‡¼í”„ ì²™ë„ëŠ” ë¬¸ëª…ì˜ ì „ë ¥ ì‚¬ìš©ëŸ‰ì„ ë¡œê·¸ì ìœ¼ë¡œ í‘œí˜„í•©ë‹ˆë‹¤. ì´ ë„êµ¬ì—ì„œ í¬ì§‘ëœ ì™€íŠ¸ëŠ” K = (log10(P) - 6) / 10ì„ ì‚¬ìš©í•˜ì—¬ K ë“±ê¸‰ìœ¼ë¡œ ë³€í™˜ë©ë‹ˆë‹¤. íƒœì–‘ ì£¼ë³€ì˜ ë¶€ë¶„ì  ë‹¤ì´ìŠ¨ ë–¼ëŠ” ì™„ì „í•œ IIí˜• ìƒíƒœì— ë„ë‹¬í•˜ê¸° í›¨ì”¬ ì „ì— í˜„ìž¬ ì¸ê°„ ì—ë„ˆì§€ ì‚¬ìš©ëŸ‰ì„ ì—¬ëŸ¬ ìžë¦¿ìˆ˜ ì´ˆê³¼í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ëª©í‘œ ë²”ìœ„ ê²°ê³¼ëŠ” ì„ íƒëœ ëª©í‘œë¥¼ ìœ„í•´ ì°¨ë‹¨í•´ì•¼ í•˜ëŠ” í•­ì„± ê´‘ë„ì˜ ë¹„ìœ¨ì„ ë³´ì—¬ì¤ë‹ˆë‹¤.',
-    },
-    {
-      type: 'table',
-      headers: ['ì„¤ê³„ ì„ íƒ', 'ì£¼ìš” ìž¥ì ', 'ì£¼ìš” ë³‘ëª©'],
-      rows: [
-        ['ë‹¤ì´ìŠ¨ ë–¼', 'ë…ë¦½ ê¶¤ë„ë¡œ ë‹¨ê³„ì  ê±´ì„¤ ê°€ëŠ¥', 'êµí†µ ì œì–´ ë° ì „ë ¥ ì „ì†¡'],
-        ['ì ë„ ê³ ë¦¬', 'ë‚®ì€ ì´ˆê¸° ë©´ì ê³¼ ë‹¨ìˆœí•œ ê¸°í•˜í•™', 'ì œí•œëœ ë²”ìœ„'],
-        ['ê°•ì²´ ê»ì§ˆ', 'ë‹¨ìˆœí•œ ë„í‘œì—ì„œ ìµœëŒ€ ì°¨ë‹¨', 'êµ¬ì¡°ì  ë¶ˆì•ˆì •ì„±ê³¼ ê±°ëŒ€í•œ ì§ˆëŸ‰'],
-        ['ìŠ¤íƒ€íƒ€ì´íŠ¸ êµ¬ë¦„', 'ë§¤ìš° ë‚®ì€ ë©´ì  ë°€ë„', 'ì •ë°€ ìŠ¤í…Œì´ì…˜ í‚¤í•‘ ë° ì—´ í•œê³„'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'ìž¬ë£Œ ì§ˆëŸ‰ ë° ì±„êµ´ í˜„ì‹¤ í™•ì¸',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'ìž¬ë£Œ ì¶”ì •ì¹˜ëŠ” ìˆ˜ì§‘ê¸° ë©´ì ì— ê°€ì •ëœ ë©´ì  ë°€ë„ì™€ ì„¤ê³„ ì•ˆì •ì„± ê³„ìˆ˜ë¥¼ ê³±í•©ë‹ˆë‹¤. ìˆ«ìžê°€ ì²œë¬¸í•™ì ìœ¼ë¡œ ì»¤ì§€ë©´ ì˜ë„ì ìœ¼ë¡œ ìˆ˜ì„± ì§ˆëŸ‰ ë‹¨ìœ„ë¡œ ì§ˆëŸ‰ì„ ë³´ê³ í•©ë‹ˆë‹¤. ë§Žì€ ë‹¤ì´ìŠ¨ ë–¼ ë…¼ì˜ê°€ ì›ìžìž¬ë¡œ ìž‘ì€ í–‰ì„±ì´ë‚˜ ì†Œí–‰ì„±ì˜ ë¶„í•´ë¥¼ ìƒìƒí•˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. ì–‡ì€ ìˆ˜ì§‘ê¸°ì¡°ì°¨ë„ ì²œë¬¸ ë‹¨ìœ„ ê·œëª¨ë¡œ í¼ì§€ë©´ ê±°ëŒ€í•´ì§‘ë‹ˆë‹¤.',
-    },
-    {
-      type: 'paragraph',
-      html: 'ê²°ê³¼ë¥¼ ì²­ì‚¬ì§„ì´ ì•„ë‹Œ ìžë¦¿ìˆ˜ ì•ˆë‚´ë¡œ ì‚¬ìš©í•˜ì‹­ì‹œì˜¤. ì‹¤ì œ ë©”ê°€êµ¬ì¡° ê³µí•™ì—ëŠ” ë°©ì‚¬ì„  ì†ìƒ ëª¨ë¸, ì—´ ìˆœí™˜, ì¶©ëŒ íšŒí”¼, ìžì„¸ ì œì–´, ì „ë ¥ ì „ì†¡, ì œì¡° ìˆ˜ìœ¨ ë° ìž¥ê¸° ê¶¤ë„ ì§„í™”ê°€ í•„ìš”í•©ë‹ˆë‹¤. ì‹œë®¬ë ˆì´í„°ì˜ ê°€ì¹˜ëŠ” ì²« ë²ˆì§¸ ì œì•½ ì¡°ê±´ì„ ì¦‰ì‹œ ì‹œê°í™”í•  ìˆ˜ ìžˆë‹¤ëŠ” ì ìž…ë‹ˆë‹¤.',
-    },
+    { type: 'title', text: 'Dyson Sphere Energy Capture Simulator', level: 2 },
+    { type: 'paragraph', html: 'Use this simulator to compare collector architectures around different stars.' },
+    { type: 'paragraph', html: 'The model reports captured power, orbital radius, material mass, and Kardashev target coverage.' },
   ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: title,
-      description,
-      applicationCategory: 'ScientificApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: title,
-      step: howTo.map((step) => ({
-        '@type': 'HowToStep',
-        name: step.name,
-        text: step.text,
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
   ],
 };

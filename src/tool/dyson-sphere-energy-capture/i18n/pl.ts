@@ -31,7 +31,7 @@ const faq = [
   },
   {
     question: 'Jak symulator wybiera optymalny promien?',
-    answer: 'Szacuje odleglosc, w ktorej kolektory promieniujace z obu stron osiagaja wybrana temperature robocza przy wybranej jasnosci gwiazdowej. GorÄ…tsze kolektory moga orbitowac blizej, podczas gdy chlodniejsze kolektory wymagajÄ… wiekszych promieni.',
+    answer: 'Szacuje odleglosc, w ktorej kolektory promieniujace z obu stron osiagaja wybrana temperature robocza przy wybranej jasnosci gwiazdowej. GorÄ...tsze kolektory moga orbitowac blizej, podczas gdy chlodniejsze kolektory wymagajÄ... wiekszych promieni.',
   },
   {
     question: 'Co tutaj oznacza ocena Kardaszewa?',
@@ -42,12 +42,12 @@ const faq = [
     answer: 'Jest to edukacyjne oszacowanie pierwszego rzedu oparte na powierzchni kolektora, gestosci powierzchniowej i wspÃ³Å‚czynniku stabilnosci. Prawdziwe projekty wymagaÅ‚yby utrzymania pozycji, transmisji mocy, strat wydobywczych, nadmiarowosci, odprowadzania ciepÅ‚a i infrastruktury produkcyjnej.',
   },
   {
-    question: 'Dlaczego jasne gwiazdy wymagajÄ… tak duzych systemÃ³w kolektorÃ³w?',
+    question: 'Dlaczego jasne gwiazdy wymagajÄ... tak duzych systemÃ³w kolektorÃ³w?',
     answer: 'Gwiazdy o wysokiej jasnosci wypychaja bezpieczny promien termiczny na zewnatrz. To zwieksza powierzchnie potrzebna dla danej frakcji pokrycia, przez co zapotrzebowanie na material moze rosnac szybciej, niz intuicyjnie sugeruje przechwycona moc.',
   },
   {
     question: 'Czy cywilizacja moze osiagnac Typ II Kardaszewa z czesciowym pokryciem?',
-    answer: 'Tak, jesli gwiazda macierzysta jest wystarczajÄ…co jasna, a kolektory wydajne. Wokol gwiazdy podobnej do SÅ‚onca, osiagniecie blisko Typu II wymaga przechwycenia duzej frakcji jasnosci sÅ‚onecznej, ale wokol jajniejszych gwiazd ten sam cel mocy moze wymagac nizszej frakcji pokrycia.',
+    answer: 'Tak, jesli gwiazda macierzysta jest wystarczajÄ...co jasna, a kolektory wydajne. Wokol gwiazdy podobnej do SÅ‚onca, osiagniecie blisko Typu II wymaga przechwycenia duzej frakcji jasnosci sÅ‚onecznej, ale wokol jajniejszych gwiazd ten sam cel mocy moze wymagac nizszej frakcji pokrycia.',
   },
 ];
 
@@ -193,3 +193,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

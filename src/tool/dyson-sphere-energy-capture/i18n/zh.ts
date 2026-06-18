@@ -1,54 +1,22 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sphere-energy-capture';
-const title = 'æˆ´æ£®çƒèƒ½é‡æ•èŽ·æ¨¡æ‹Ÿå™¨';
-const description = 'è¯„ä¼°ä¸åŒæ’æ˜Ÿå‘¨å›´çš„æˆ´æ£®ç¾¤ã€çŽ¯ã€å£³å±‚å’Œé™åŠ›åå°„é•œæ”¶é›†å™¨è®¾è®¡ã€‚è®¡ç®—æ•èŽ·åŠŸçŽ‡ã€è½¨é“åŠå¾„ã€ææ–™è´¨é‡ä»¥åŠè¾¾åˆ°ç›®æ ‡å¡å°”è¾¾è‚–å¤«ç­‰çº§æ‰€éœ€çš„è¦†ç›–çŽ‡ã€‚';
+const title = 'Dyson Sphere Energy Capture Simulator';
+const description = 'Compare Dyson collectors around different stars with estimates for power, radius, mass, and Kardashev coverage.';
 
 const howTo = [
-  {
-    name: 'é€‰æ‹©æ’æ˜Ÿç±»åž‹',
-    text: 'ä»ŽMçŸ®æ˜Ÿã€ç±»æ—¥æ’æ˜Ÿã€Aåž‹æ˜Ÿã€çº¢å·¨æ˜Ÿæˆ–è“å·¨æ˜Ÿå¼€å§‹ã€‚æ¨¡æ‹Ÿå™¨ä½¿ç”¨ä»£è¡¨æ€§çš„äº®åº¦å’Œè´¨é‡å€¼æ¥ä¼°ç®—æ”¶é›†å™¨åŠå¾„å’Œè½¨é“å‘¨æœŸã€‚',
-  },
-  {
-    name: 'é€‰æ‹©å·¨åž‹ç»“æž„æž¶æž„',
-    text: 'æ¯”è¾ƒæˆ´æ£®ç¾¤ã€èµ¤é“çŽ¯ã€åˆšæ€§å£³å±‚æˆ–é™åŠ›åå°„é•œäº‘ã€‚æ¯ç§è®¾è®¡å…·æœ‰ä¸åŒçš„æ•èŽ·æ•ˆçŽ‡ã€ææ–™å¯†åº¦å’Œç¨³å®šæ€§å‡è®¾ã€‚',
-  },
-  {
-    name: 'è®¾ç½®è¦†ç›–çŽ‡å’Œè¿è¡Œæ¸©åº¦',
-    text: 'å¢žåŠ è¦†ç›–çŽ‡ä»¥æ•èŽ·æ›´å¤šæ’æ˜Ÿèƒ½é‡ï¼Œç„¶åŽè°ƒæ•´è¿è¡Œæ¸©åº¦ä»¥å°†æ”¶é›†å™¨ç§»è¿‘æˆ–è¿œç¦»æ’æ˜Ÿã€‚',
-  },
-  {
-    name: 'åŒ¹é…å¡å°”è¾¾è‚–å¤«ç›®æ ‡',
-    text: 'ä½¿ç”¨ç›®æ ‡æ»‘å—æŸ¥çœ‹éœ€è¦åŒ…å›´å¤šå°‘æ’æ˜Ÿæ‰èƒ½è¾¾åˆ°æ–‡æ˜Žè§„æ¨¡çš„èƒ½é‡ç›®æ ‡ã€‚',
-  },
+  { name: 'Choose a star', text: 'Select a representative star to set luminosity and mass.' },
+  { name: 'Choose a collector', text: 'Compare swarm, ring, shell, and statite cloud designs.' },
+  { name: 'Adjust controls', text: 'Set coverage, operating temperature, and target Kardashev rating.' },
+  { name: 'Review output', text: 'Read captured power, radius, mass, area, and target coverage.' },
 ];
 
 const faq = [
-  {
-    question: 'æˆ´æ£®çƒå’Œæˆ´æ£®ç¾¤æœ‰ä»€ä¹ˆåŒºåˆ«ï¼Ÿ',
-    answer: 'åˆšæ€§æˆ´æ£®çƒæ˜¯å›´ç»•æ’æ˜Ÿçš„ä¸€ä¸ªè¿žç»­å£³å±‚ï¼Œè€Œæˆ´æ£®ç¾¤æ˜¯å¤§é‡ç‹¬ç«‹è½¨é“æ”¶é›†å™¨çš„é›†åˆã€‚å¤§å¤šæ•°å·¥ç¨‹è®¨è®ºå€¾å‘äºŽç¾¤ï¼Œå› ä¸ºå›ºä½“å£³å±‚ç»“æž„ä¸ç¨³å®šä¸”éœ€è¦æžå…¶å¤§é‡çš„ææ–™ã€‚',
-  },
-  {
-    question: 'æ¨¡æ‹Ÿå™¨å¦‚ä½•é€‰æ‹©æœ€ä½³åŠå¾„ï¼Ÿ',
-    answer: 'å®ƒä¼°ç®—åœ¨æ‰€é€‰æ’æ˜Ÿå…‰åº¦ä¸‹ï¼ŒåŒä¾§è¾å°„çš„æ”¶é›†å™¨è¾¾åˆ°æ‰€é€‰è¿è¡Œæ¸©åº¦çš„è·ç¦»ã€‚æ¸©åº¦æ›´é«˜çš„æ”¶é›†å™¨å¯ä»¥åœ¨æ›´è¿‘çš„è½¨é“è¿è¡Œï¼Œè€Œæ¸©åº¦æ›´ä½Žçš„æ”¶é›†å™¨éœ€è¦æ›´å¤§çš„åŠå¾„ã€‚',
-  },
-  {
-    question: 'è¿™é‡Œçš„å¡å°”è¾¾è‚–å¤«è¯„çº§æ„å‘³ç€ä»€ä¹ˆï¼Ÿ',
-    answer: 'å¡å°”è¾¾è‚–å¤«å€¼ä½¿ç”¨å¯¹æ•°å½¢å¼K = (log10(P) - 6) / 10ä»Žæ•èŽ·åŠŸçŽ‡è®¡ç®—ï¼Œå…¶ä¸­Pæ˜¯ä»¥ç“¦ç‰¹ä¸ºå•ä½çš„åŠŸçŽ‡ã€‚æŽ¥è¿‘K1çš„å€¼è¡¨ç¤ºè¡Œæ˜Ÿè§„æ¨¡çš„èƒ½æºä½¿ç”¨ï¼Œè€ŒK2æŽ¥è¿‘æ’æ˜Ÿçš„å®Œæ•´è¾“å‡ºã€‚',
-  },
-  {
-    question: 'ææ–™è´¨é‡çŽ°å®žå—ï¼Ÿ',
-    answer: 'è¿™æ˜¯åŸºäºŽæ”¶é›†å™¨é¢ç§¯ã€é¢å¯†åº¦å’Œç¨³å®šæ€§å› å­çš„æ•™è‚²æ€§ä¸€é˜¶ä¼°ç®—ã€‚å®žé™…è®¾è®¡éœ€è¦ç«™ä½ä¿æŒã€ç”µåŠ›ä¼ è¾“ã€é‡‡çŸ¿æŸå¤±ã€å†—ä½™ã€æ•£çƒ­å’Œåˆ¶é€ åŸºç¡€è®¾æ–½ã€‚',
-  },
-  {
-    question: 'ä¸ºä»€ä¹ˆæ˜Žäº®æ’æ˜Ÿéœ€è¦å¦‚æ­¤å·¨å¤§çš„æ”¶é›†å™¨ç³»ç»Ÿï¼Ÿ',
-    answer: 'é«˜å…‰åº¦æ’æ˜Ÿå°†å®‰å…¨çƒ­åŠå¾„å‘å¤–æŽ¨ã€‚è¿™å¢žåŠ äº†ç»™å®šè¦†ç›–çŽ‡æ‰€éœ€çš„è¡¨é¢ç§¯ï¼Œå› æ­¤ææ–™éœ€æ±‚çš„å¢žé•¿é€Ÿåº¦å¯èƒ½æ¯”æ•èŽ·åŠŸçŽ‡çš„ç›´è§‚æ„Ÿè§‰æ›´å¿«ã€‚',
-  },
-  {
-    question: 'æ–‡æ˜Žèƒ½å¦é€šè¿‡éƒ¨åˆ†è¦†ç›–è¾¾åˆ°å¡å°”è¾¾è‚–å¤«IIåž‹ï¼Ÿ',
-    answer: 'å¯ä»¥ï¼Œå¦‚æžœä¸»æ˜Ÿè¶³å¤Ÿäº®ä¸”æ”¶é›†å™¨é«˜æ•ˆã€‚åœ¨ç±»æ—¥æ’æ˜Ÿå‘¨å›´ï¼ŒæŽ¥è¿‘IIåž‹éœ€è¦æ•èŽ·å¤§éƒ¨åˆ†å¤ªé˜³å…‰åº¦ï¼Œä½†åœ¨æ›´äº®çš„æ’æ˜Ÿå‘¨å›´ï¼Œç›¸åŒçš„åŠŸçŽ‡ç›®æ ‡å¯ä»¥é€šè¿‡æ›´ä½Žçš„è¦†ç›–çŽ‡å®žçŽ°ã€‚',
-  },
+  { question: 'What is a Dyson sphere?', answer: 'It is a family of concepts for collecting a large fraction of stellar luminosity.' },
+  { question: 'Why include several structures?', answer: 'Different structures have different efficiency, mass, and stability assumptions.' },
+  { question: 'What does target coverage show?', answer: 'It estimates the percentage of stellar output required for a selected Kardashev rating.' },
+  { question: 'Is this a precise design tool?', answer: 'No. It is an educational calculator for first-order physical intuition.' },
 ];
 
 export const content: ToolLocaleContent = {
@@ -56,140 +24,48 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    visualization: 'æˆ´æ£®æ”¶é›†å™¨å¯è§†åŒ–',
-    starType: 'æ’æ˜Ÿç±»åž‹',
-    structureType: 'ç»“æž„',
-    coverage: 'æ”¶é›†å™¨è¦†ç›–çŽ‡',
-    operatingTemp: 'è¿è¡Œæ¸©åº¦',
-    kardashevTarget: 'å¡å°”è¾¾è‚–å¤«ç›®æ ‡',
-    kardashevRating: 'å½“å‰è¯„çº§',
-    capturedPower: 'æ•èŽ·åŠŸçŽ‡',
-    optimalRadius: 'æœ€ä½³åŠå¾„',
-    targetCoverage: 'ç›®æ ‡è¦†ç›–çŽ‡',
-    materialMass: 'ææ–™è´¨é‡',
-    captureMeter: 'ç›®æ ‡è¿›åº¦',
-    statusReady: 'è°ƒæ•´ç³»ç»Ÿä»¥ä¼°ç®—æ”¶é›†å™¨éœ€æ±‚ã€‚',
-    statusUnderbuilt: '覆盖率低于所选卡尔达肖夫目标。请增加收集器或选择更明亮的恒星。',
-    statusBalanced: '覆盖率和恒星输出接近所选文明尺度目标。',
-    statusExtreme: '此配置超过目标。它捕获巨大功率，但材料需求会快速上升。',
-    orbitalPeriod: 'è½¨é“å‘¨æœŸ',
-    collectorArea: 'æ”¶é›†å™¨é¢ç§¯',
-    mercuryMasses: '{value} 个水星质量',
+    visualization: 'Dyson collector visualization',
+    starType: 'Star type',
+    structureType: 'Structure',
+    coverage: 'Collector coverage',
+    operatingTemp: 'Operating temperature',
+    kardashevTarget: 'Kardashev target',
+    kardashevRating: 'Current rating',
+    capturedPower: 'Captured power',
+    optimalRadius: 'Optimal radius',
+    targetCoverage: 'Target coverage',
+    materialMass: 'Material mass',
+    captureMeter: 'Target capture progress',
+    statusReady: 'Adjust the system to estimate collector demand.',
+    statusUnderbuilt: 'Coverage is below the selected target.',
+    statusBalanced: 'Coverage is close to the selected target.',
+    statusExtreme: 'This configuration overshoots the target.',
+    orbitalPeriod: 'Orbital period',
+    collectorArea: 'Collector area',
+    mercuryMasses: '{value} Mercury masses',
     kilograms: '{value} kg',
-    daysUnit: '{value} 天',
-    starMDwarf: 'MçŸ®æ˜Ÿ',
-    starSun: 'Gåž‹ç±»æ—¥æ’æ˜Ÿ',
-    starA: 'Aåž‹æ˜Ÿ',
-    starRedGiant: 'çº¢å·¨æ˜Ÿ',
-    starBlueGiant: 'è“å·¨æ˜Ÿ',
-    structureSwarm: 'æˆ´æ£®ç¾¤',
-    structureRing: 'èµ¤é“çŽ¯',
-    structureShell: 'åˆšæ€§å£³å±‚',
-    structureStatite: 'é™åŠ›åå°„é•œäº‘',
+    daysUnit: '{value} days',
+    starMDwarf: 'M dwarf',
+    starSun: 'Sun-like G star',
+    starA: 'A-type star',
+    starRedGiant: 'Red giant',
+    starBlueGiant: 'Blue giant',
+    structureSwarm: 'Dyson swarm',
+    structureRing: 'Equatorial ring',
+    structureShell: 'Rigid shell',
+    structureStatite: 'Statite mirror cloud',
   },
   seo: [
-    {
-      type: 'title',
-      text: 'æˆ´æ£®çƒèƒ½é‡æ•èŽ·æ¨¡æ‹Ÿå™¨',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'æˆ´æ£®çƒä¸ä»…ä»…æ˜¯å£³å±‚å†…éƒ¨æ’æ˜Ÿçš„ç§‘å¹»å½¢è±¡ã€‚å®ƒæ˜¯ä¸€ä¸ªç”¨äºŽæ‹¦æˆªæ’æ˜Ÿå…‰åº¦çš„å·¨åž‹ç»“æž„æ¦‚å¿µå®¶æ—ï¼šå«æ˜Ÿç¾¤ã€èµ¤é“çŽ¯ã€è–„åå°„é•œäº‘ä»¥åŠè‘—åä½†æœ‰é—®é¢˜çš„åˆšæ€§å£³å±‚ã€‚è¿™ä¸ªæ¨¡æ‹Ÿå™¨å°†è¿™äº›æƒ³æ³•è½¬åŒ–ä¸ºæ•°å­—ï¼Œè®©æ‚¨æ¯”è¾ƒæ’æ˜Ÿç±»åž‹ã€æ”¶é›†å™¨æ¸©åº¦ã€è¦†ç›–çŽ‡å’Œç»“æž„è®¾è®¡å¦‚ä½•æ”¹å˜èƒ½æºé¢„ç®—ã€‚',
-    },
-    {
-      type: 'paragraph',
-      html: 'è¯¥è®¡ç®—å™¨ä¼°ç®—æ•èŽ·åŠŸçŽ‡ã€çƒ­è½¨é“åŠå¾„ã€æ”¶é›†å™¨é¢ç§¯ã€è½¨é“å‘¨æœŸã€ææ–™è´¨é‡ä»¥åŠè¾¾åˆ°é€‰å®šå¡å°”è¾¾è‚–å¤«ç­‰çº§ç›®æ ‡æ‰€éœ€çš„è¦†ç›–çŽ‡ã€‚å®ƒä¸“ä¸ºå­¦ç”Ÿã€ä¸–ç•Œæž„å»ºè€…ã€ç§‘å­¦ä¼ æ’­è€…ä»¥åŠä»»ä½•è¯•å›¾ç†è§£ä¸ºä»€ä¹ˆIIåž‹æ–‡æ˜Žå¦‚æ­¤å›°éš¾çš„äººè€Œè®¾è®¡ï¼šæŒ‘æˆ˜ä¸ä»…åœ¨äºŽèƒ½é‡ï¼Œè¿˜åœ¨äºŽé¢ç§¯ã€çƒ­é‡ã€é‡‡çŸ¿ã€ç¨³å®šæ€§å’Œè½¨é“åŽå‹¤ã€‚',
-    },
-    {
-      type: 'title',
-      text: 'æˆ´æ£®åŠå¾„çš„ä¼°ç®—æ–¹æ³•',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'æœ€ä½³åŠå¾„æ ¹æ®æ’æ˜Ÿå…‰åº¦å’Œæ”¶é›†å™¨è¿è¡Œæ¸©åº¦è®¡ç®—ã€‚é è¿‘æ˜Žäº®æ’æ˜Ÿçš„æ”¶é›†å™¨å—åˆ°å¼ºçƒˆçš„è¾å°„é€šé‡ï¼Œå¿…é¡»é«˜æ¸©è¿è¡Œæˆ–æŽ’å‡ºå¤§é‡çƒ­é‡ã€‚å‘å¤–ç§»åŠ¨ä¼šå‡å°‘çƒ­åº”åŠ›ï¼Œä½†æ‰€éœ€çš„æ”¶é›†å™¨é¢ç§¯éšè·ç¦»çš„å¹³æ–¹å¢žé•¿ã€‚è¿™ç§æƒè¡¡è§£é‡Šäº†ä¸ºä»€ä¹ˆç›¸åŒçš„è¦†ç›–çŽ‡åœ¨æš—æ·¡çš„MçŸ®æ˜Ÿå‘¨å›´å¾ˆå°ï¼Œè€Œåœ¨è“å·¨æ˜Ÿå‘¨å›´å´æžå…¶å·¨å¤§ã€‚',
-    },
-    {
-      type: 'title',
-      text: 'æˆ´æ£®ç¾¤ã€çŽ¯ã€å£³å±‚å’Œé™åŠ›åå°„é•œäº‘çš„æ¯”è¾ƒ',
-      level: 3,
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>æˆ´æ£®ç¾¤ï¼š</strong>è®¸å¤šç‹¬ç«‹è½¨é“çš„æ”¶é›†å™¨ã€‚è¿™æ˜¯æœ€åˆç†çš„å¤§è§„æ¨¡æž¶æž„ï¼Œå› ä¸ºå®ƒå¯ä»¥é€æ­¥å»ºé€ ï¼Œä¸éœ€è¦åˆšæ€§æ’æ˜Ÿå£³å±‚ã€‚',
-        '<strong>èµ¤é“çŽ¯ï¼š</strong>ä¸€ä¸ªè¾ƒçª„çš„æ”¶é›†å™¨å¸¦ï¼Œè¦†ç›–çŽ‡è¾ƒä½Žã€‚ä½œä¸ºç¬¬ä¸€ä¸ªå·¨åž‹ç»“æž„æ›´å®¹æ˜“æƒ³è±¡ï¼Œä½†å¦‚æžœä¸æ‰©å±•ä¸ºæ›´å®½çš„ç¾¤ï¼Œå°±æ— æ³•æ•èŽ·æ’æ˜Ÿçš„å®Œæ•´è¾“å‡ºã€‚',
-        '<strong>åˆšæ€§å£³å±‚ï¼š</strong>è§†è§‰ä¸Šå…·æœ‰æ ‡å¿—æ€§ï¼Œä½†åœ¨æœºæ¢°ä¸Šä¸åˆ©ã€‚å›´ç»•æ’æ˜Ÿçš„å£³å±‚å­˜åœ¨ä¸¥é‡çš„ç¨³å®šæ€§å’Œææ–™é—®é¢˜ï¼Œå› æ­¤æ¨¡æ‹Ÿå™¨ä¸ºå…¶åˆ†é…äº†é«˜è´¨é‡å’Œä½Žç¨³å®šæ€§ã€‚',
-        '<strong>é™åŠ›åå°„é•œäº‘ï¼š</strong>éƒ¨åˆ†ç”±è¾å°„åŽ‹åŠ›æ”¯æ’‘çš„è¶…è½»åå°„ä½“ã€‚å®ƒå‡å°‘äº†ææ–™éœ€æ±‚ï¼Œä½†è€çƒ­æ€§è¾ƒä½Žï¼ŒæŽ§åˆ¶è¦æ±‚ä¸¥æ ¼ã€‚',
-      ],
-    },
-    {
-      type: 'title',
-      text: 'å¡å°”è¾¾è‚–å¤«ç­‰çº§æ‰€éœ€çš„è¦†ç›–çŽ‡',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'å¡å°”è¾¾è‚–å¤«ç­‰çº§ä»¥å¯¹æ•°å½¢å¼è¡¨ç¤ºæ–‡æ˜Žçš„èƒ½æºä½¿ç”¨é‡ã€‚åœ¨æ­¤å·¥å…·ä¸­ï¼Œæ•èŽ·çš„ç“¦ç‰¹ä½¿ç”¨K = (log10(P) - 6) / 10è½¬æ¢ä¸ºKè¯„çº§ã€‚å¤ªé˜³å‘¨å›´çš„å±€éƒ¨æˆ´æ£®ç¾¤åœ¨è¾¾åˆ°å®Œå…¨IIåž‹çŠ¶æ€ä¹‹å‰å¾ˆä¹…å°±å¯ä»¥è¶…è¿‡å½“å‰äººç±»èƒ½æºä½¿ç”¨é‡æ•°ä¸ªæ•°é‡çº§ã€‚ç›®æ ‡è¦†ç›–çŽ‡ç»“æžœæ˜¾ç¤ºä¸ºå®žçŽ°é€‰å®šç›®æ ‡å¿…é¡»æ‹¦æˆªçš„æ’æ˜Ÿå…‰åº¦æ¯”ä¾‹ã€‚',
-    },
-    {
-      type: 'table',
-      headers: ['è®¾è®¡é€‰æ‹©', 'ä¸»è¦ä¼˜åŠ¿', 'ä¸»è¦ç“¶é¢ˆ'],
-      rows: [
-        ['æˆ´æ£®ç¾¤', 'å¯é€æ­¥å»ºé€ ï¼Œç‹¬ç«‹è½¨é“', 'äº¤é€šç®¡åˆ¶å’Œç”µåŠ›ä¼ è¾“'],
-        ['èµ¤é“çŽ¯', 'åˆå§‹é¢ç§¯å°ï¼Œå‡ ä½•ç®€å•', 'è¦†ç›–çŽ‡æœ‰é™'],
-        ['åˆšæ€§å£³å±‚', 'ç®€å•å›¾ä¸­æœ€å¤§æ‹¦æˆª', 'ç»“æž„ä¸ç¨³å®šæ€§å’Œå·¨å¤§è´¨é‡'],
-        ['é™åŠ›åå°„é•œäº‘', 'éžå¸¸ä½Žçš„é¢å¯†åº¦', 'ç²¾ç¡®å®šä½å’Œçƒ­é‡é™åˆ¶'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'ææ–™è´¨é‡ä¸Žé‡‡çŸ¿çŽ°å®žæ ¸æŸ¥',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'ææ–™ä¼°ç®—å°†æ”¶é›†å™¨é¢ç§¯ä¹˜ä»¥å‡è®¾çš„é¢å¯†åº¦å’Œè®¾è®¡ç¨³å®šæ€§å› å­ã€‚å½“æ•°å­—å˜å¾—å¤©æ–‡æ•°å­—æ—¶ï¼Œå®ƒæœ‰æ„è¯†åœ°ä»¥æ°´æ˜Ÿè´¨é‡æŠ¥å‘Šè´¨é‡ï¼Œå› ä¸ºè®¸å¤šæˆ´æ£®ç¾¤è®¨è®ºè®¾æƒ³æ‹†é™¤å°è¡Œæ˜Ÿæˆ–å°è¡Œæ˜Ÿä»¥èŽ·å–åŽŸææ–™ã€‚å³ä½¿æ˜¯å¾ˆè–„çš„æ”¶é›†å™¨ï¼Œå½“åˆ†å¸ƒåœ¨å¤©æ–‡å•ä½å°ºåº¦ä¸Šæ—¶ï¼Œä¹Ÿä¼šå˜å¾—éžå¸¸å·¨å¤§ã€‚',
-    },
-    {
-      type: 'paragraph',
-      html: 'å°†ç»“æžœç”¨ä½œæ•°é‡çº§æŒ‡å—ï¼Œè€Œä¸æ˜¯è“å›¾ã€‚çœŸæ­£çš„å·¨åž‹ç»“æž„å·¥ç¨‹éœ€è¦è¾å°„æŸä¼¤æ¨¡åž‹ã€çƒ­å¾ªçŽ¯ã€ç¢°æ’žé¿å…ã€å§¿æ€æŽ§åˆ¶ã€ç”µåŠ›ä¼ è¾“ã€åˆ¶é€ è‰¯çŽ‡å’Œé•¿æœŸè½¨é“æ¼”åŒ–ã€‚è¯¥æ¨¡æ‹Ÿå™¨çš„ä»·å€¼åœ¨äºŽå®ƒèƒ½å¤Ÿç«‹å³æ˜¾ç¤ºç¬¬ä¸€ä¸ªçº¦æŸæ¡ä»¶ã€‚',
-    },
+    { type: 'title', text: 'Dyson Sphere Energy Capture Simulator', level: 2 },
+    { type: 'paragraph', html: 'This tool estimates power and material requirements for several Dyson megastructure concepts.' },
+    { type: 'paragraph', html: 'It is useful for learning how stellar luminosity, temperature limits, and coverage affect large-scale energy capture.' },
   ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: title,
-      description,
-      applicationCategory: 'ScientificApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: title,
-      step: howTo.map((step) => ({
-        '@type': 'HowToStep',
-        name: step.name,
-        text: step.text,
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
   ],
 };

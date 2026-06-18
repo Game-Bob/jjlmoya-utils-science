@@ -47,7 +47,7 @@ const faq = [
   },
   {
     question: 'Kan een beschaving Kardasjev Type II bereiken met gedeeltelijke dekking?',
-    answer: 'Ja, als de gastster helder genoeg is en de collectoren efficiÃ«nt zijn. Rond een zonachtige ster vereist het benaderen van Type II het opvangen van een groot deel van de zonnehelderheid, maar rond helderdere sterren kan hetzelfde vermogensdoel een lagere dekkingsfractie nodig hebben.',
+    answer: 'Ja, als de gastster helder genoeg is en de collectoren efficiÃ"nt zijn. Rond een zonachtige ster vereist het benaderen van Type II het opvangen van een groot deel van de zonnehelderheid, maar rond helderdere sterren kan hetzelfde vermogensdoel een lagere dekkingsfractie nodig hebben.',
   },
 ];
 
@@ -95,7 +95,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Een Dyson sfeer is niet alleen een sciencefiction beeld van een ster in een schaal. Het is een familie van mogelijke megastructuur concepten voor het onderscheppen van sterhelderheid: zwermen satellieten, equatoriale ringen, dunne spiegelenwolken en de beroemde maar problematische stijve schaal. Deze simulator zet die ideeÃ«n om in getallen zodat u kunt vergelijken hoe ster type, collectortemperatuur, dekking en structuurontwerp het energiebudget veranderen.',
+      html: 'Een Dyson sfeer is niet alleen een sciencefiction beeld van een ster in een schaal. Het is een familie van mogelijke megastructuur concepten voor het onderscheppen van sterhelderheid: zwermen satellieten, equatoriale ringen, dunne spiegelenwolken en de beroemde maar problematische stijve schaal. Deze simulator zet die ideeÃ"n om in getallen zodat u kunt vergelijken hoe ster type, collectortemperatuur, dekking en structuurontwerp het energiebudget veranderen.',
     },
     {
       type: 'paragraph',
@@ -193,3 +193,5 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+
+

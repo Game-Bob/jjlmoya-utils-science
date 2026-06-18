@@ -20,6 +20,7 @@ import { PLANET_ATMOSPHERE_SURVIVAL_TOOL } from './tool/planet-atmosphere-surviv
 import { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
 import { ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL } from './tool/roche-limit-satellite-disruption/index';
 import { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-capture/index';
+import { GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL } from './tool/global-albedo-snowball-simulator/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -42,4 +43,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   THREE_BODY_PROBLEM_TOOL,
   ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL,
   DYSON_SPHERE_ENERGY_CAPTURE_TOOL,
+  GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL,
 ];
