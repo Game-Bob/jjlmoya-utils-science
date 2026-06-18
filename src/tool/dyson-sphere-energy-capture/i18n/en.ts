@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sphere-energy-capture';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Material mass',
     captureMeter: 'Target capture progress',
     statusReady: 'Adjust the system to estimate collector demand.',
+    statusUnderbuilt: 'Coverage is below the selected Kardashev target. Add collectors or choose a brighter star.',
+    statusBalanced: 'Coverage and stellar output are close to the selected civilization-scale target.',
+    statusExtreme: 'This configuration overshoots the target. It captures huge power, but material demand rises fast.',
     orbitalPeriod: 'Orbital period',
     collectorArea: 'Collector area',
+    mercuryMasses: '{value} Mercury masses',
+    kilograms: '{value} kg',
+    daysUnit: '{value} days',
     starMDwarf: 'M dwarf',
     starSun: 'Sun-like G star',
     starA: 'A-type star',

@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'simulador-captura-energia-esfera-dyson';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Masa de material',
     captureMeter: 'Progreso hacia el objetivo',
     statusReady: 'Ajuste el sistema para estimar la demanda del colector.',
+    statusUnderbuilt: 'La cobertura esta por debajo del objetivo Kardashev seleccionado. Anada colectores o elija una estrella mas brillante.',
+    statusBalanced: 'La cobertura y la salida estelar estan cerca del objetivo de escala civilizatoria seleccionado.',
+    statusExtreme: 'Esta configuracion supera el objetivo. Captura una potencia enorme, pero la demanda de material crece rapido.',
     orbitalPeriod: 'Periodo orbital',
     collectorArea: 'Area del colector',
+    mercuryMasses: '{value} masas de Mercurio',
+    kilograms: '{value} kg',
+    daysUnit: '{value} dias',
     starMDwarf: 'Enana M',
     starSun: 'Estrella tipo G como el Sol',
     starA: 'Estrella tipo A',

@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sfera-energeticheskii-simulator';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Massa materiala',
     captureMeter: 'Progress k tseli',
     statusReady: 'Nastroyte sistemu dlya otsenki potrebnosti v kollektorakh.',
+    statusUnderbuilt: 'Pokrytie nizhe vybrannoy tseli Kardasheva. Dobavte kollektory ili vyberite bolee yarkuyu zvezdu.',
+    statusBalanced: 'Pokrytie i moschnost zvezdy blizki k vybrannoy tseli masshtaba tsivilizatsii.',
+    statusExtreme: 'Eta konfiguratsiya prevyshaet tsel. Ona sobiraet ogromnuyu moschnost, no spros na materialy bystro rastet.',
     orbitalPeriod: 'Orbitalnyy period',
     collectorArea: 'Ploshchad kollektora',
+    mercuryMasses: '{value} mass Merkuriya',
+    kilograms: '{value} kg',
+    daysUnit: '{value} dney',
     starMDwarf: 'Karlik M',
     starSun: 'Zvezda G solnechnogo tipa',
     starA: 'Zvezda tipa A',

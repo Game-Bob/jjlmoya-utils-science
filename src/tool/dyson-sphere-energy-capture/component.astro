@@ -8,7 +8,16 @@ interface Props {
 const { ui } = Astro.props;
 ---
 
-<div class="dyson-root" id="dyson-root">
+<div
+  class="dyson-root"
+  id="dyson-root"
+  data-status-underbuilt={ui.statusUnderbuilt}
+  data-status-balanced={ui.statusBalanced}
+  data-status-extreme={ui.statusExtreme}
+  data-mercury-masses={ui.mercuryMasses}
+  data-kilograms={ui.kilograms}
+  data-days-unit={ui.daysUnit}
+>
   <section class="dyson-stage" aria-label={ui.visualization}>
     <div class="dyson-starfield">
       <div class="dyson-orbit dyson-orbit-outer"></div>
@@ -117,9 +126,9 @@ const { ui } = Astro.props;
     const targetInput = document.getElementById('dyson-target') as HTMLInputElement;
     const collectors = document.getElementById('dyson-collectors');
     const statusText: Record<string, string> = {
-      underbuilt: root.dataset.underbuilt || 'Coverage is below the target.',
-      balanced: root.dataset.balanced || 'Collector coverage is close to the selected Kardashev goal.',
-      extreme: root.dataset.extreme || 'This build exceeds the target and pushes material demand sharply upward.',
+      underbuilt: root.dataset.statusUnderbuilt || '',
+      balanced: root.dataset.statusBalanced || '',
+      extreme: root.dataset.statusExtreme || '',
     };
 
     const setText = (id: string, text: string) => {
@@ -130,8 +139,8 @@ const { ui } = Astro.props;
     const formatPower = (value: number) => `${value.toExponential(2).replace('e+', 'e')} W`;
 
     function formatMass(kg: number, mercury: number) {
-      if (mercury > 0.01) return `${mercury.toFixed(2)} Mercury masses`;
-      return `${kg.toExponential(2)} kg`;
+      if (mercury > 0.01) return (root.dataset.mercuryMasses || '{value}').replace('{value}', mercury.toFixed(2));
+      return (root.dataset.kilograms || '{value} kg').replace('{value}', kg.toExponential(2));
     }
 
     function getCoverageBand(coveragePercent: number) {
@@ -171,7 +180,7 @@ const { ui } = Astro.props;
       setText('dyson-radius', `${result.optimalRadiusAu.toFixed(2)} AU`);
       setText('dyson-target-coverage', `${result.targetCoveragePercent.toFixed(1)}%`);
       setText('dyson-mass', formatMass(result.materialMassKg, result.mercuryMasses));
-      setText('dyson-period', `${result.orbitalPeriodDays.toLocaleString(undefined, { maximumFractionDigits: 0 })} days`);
+      setText('dyson-period', (root.dataset.daysUnit || '{value} days').replace('{value}', result.orbitalPeriodDays.toLocaleString(undefined, { maximumFractionDigits: 0 })));
       setText('dyson-area', `${result.collectorAreaM2.toExponential(2)} m2`);
       setText('dyson-status', statusText[result.status]);
     }
@@ -238,9 +247,6 @@ const { ui } = Astro.props;
       control.addEventListener('change', update);
     });
 
-    root.dataset.underbuilt = 'Coverage is below the selected Kardashev target. Add collectors or choose a brighter star.';
-    root.dataset.balanced = 'Coverage and stellar output are close to the selected civilization-scale target.';
-    root.dataset.extreme = 'This configuration overshoots the target. It captures huge power, but material demand rises fast.';
     restoreState();
     update();
   }

@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-spharen-energie-gewinnung-simulator';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Materialmasse',
     captureMeter: 'Fortschritt zum Ziel',
     statusReady: 'Passen Sie das System an, um den Kollektorbedarf zu schatzen.',
+    statusUnderbuilt: 'Die Abdeckung liegt unter dem gewahlten Kardaschow-Ziel. Fugen Sie Kollektoren hinzu oder wahlen Sie einen helleren Stern.',
+    statusBalanced: 'Abdeckung und Sternleistung liegen nahe am gewahlten Ziel auf Zivilisationsskala.',
+    statusExtreme: 'Diese Konfiguration uberschreitet das Ziel. Sie erfasst enorme Leistung, aber der Materialbedarf steigt schnell.',
     orbitalPeriod: 'Umlaufzeit',
     collectorArea: 'Kollektorflache',
+    mercuryMasses: '{value} Merkur-Massen',
+    kilograms: '{value} kg',
+    daysUnit: '{value} Tage',
     starMDwarf: 'M-Zwerg',
     starSun: 'Sonnentyp G',
     starA: 'A-Stern',

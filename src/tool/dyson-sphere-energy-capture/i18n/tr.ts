@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-kure-enerji-yakalama-simulatoru';
@@ -35,7 +35,7 @@ const faq = [
   },
   {
     question: 'Burada Kardashev derecesi ne anlama geliyor?',
-    answer: 'Kardashev degeri, yakalanan gucten logaritmik formül K = (log10(P) - 6) / 10 kullanilarak hesaplanir, burada P watt cinsinden guctur. K1\'e yakin bir deger gezegen olceginde enerji kullanimini temsil ederken, K2 tam yildiz cikisina yaklasir.',
+    answer: 'Kardashev degeri, yakalanan gucten logaritmik formÃ¼l K = (log10(P) - 6) / 10 kullanilarak hesaplanir, burada P watt cinsinden guctur. K1\'e yakin bir deger gezegen olceginde enerji kullanimini temsil ederken, K2 tam yildiz cikisina yaklasir.',
   },
   {
     question: 'Malzeme kutlesi gercekci mi?',
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Malzeme kutlesi',
     captureMeter: 'Hedefe dogru ilerleme',
     statusReady: 'Toplayici talebini tahmin etmek icin sistemi ayarlayin.',
+    statusUnderbuilt: 'Kapsama secilen Kardashev hedefinin altinda. Toplayici ekleyin veya daha parlak bir yildiz secin.',
+    statusBalanced: 'Kapsama ve yildiz cikisi secilen uygarlik olcegi hedefine yakin.',
+    statusExtreme: 'Bu yapilandirma hedefi asiyor. Cok buyuk guc yakalar, ancak malzeme talebi hizla artar.',
     orbitalPeriod: 'Yorunge periyodu',
     collectorArea: 'Toplayici alani',
+    mercuryMasses: '{value} Merkur kutlesi',
+    kilograms: '{value} kg',
+    daysUnit: '{value} gun',
     starMDwarf: 'M cucesi',
     starSun: 'G tipi Gunes benzeri',
     starA: 'A tipi yildiz',

@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'simulator-energi-bola-dyson';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Massa material',
     captureMeter: 'Kemajuan menuju target',
     statusReady: 'Sesuaikan sistem untuk memperkirakan kebutuhan kolektor.',
+    statusUnderbuilt: 'Cakupan masih di bawah target Kardashev yang dipilih. Tambahkan kolektor atau pilih bintang yang lebih terang.',
+    statusBalanced: 'Cakupan dan keluaran bintang mendekati target skala peradaban yang dipilih.',
+    statusExtreme: 'Konfigurasi ini melampaui target. Dayanya sangat besar, tetapi kebutuhan material naik cepat.',
     orbitalPeriod: 'Periode orbit',
     collectorArea: 'Area kolektor',
+    mercuryMasses: '{value} massa Merkurius',
+    kilograms: '{value} kg',
+    daysUnit: '{value} hari',
     starMDwarf: 'Katai M',
     starSun: 'Bintang tipe G seperti Matahari',
     starA: 'Bintang tipe A',

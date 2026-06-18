@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sfar-energiinfangning-simulator';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Materialmassa',
     captureMeter: 'Framsteg mot mal',
     statusReady: 'Justera systemet for att uppskatta kollektorbehovet.',
+    statusUnderbuilt: 'Tackningen ligger under det valda Kardashev-malet. Lagga till kollektorer eller valj en ljusare stjarna.',
+    statusBalanced: 'Tackning och stjarnans effekt ligger nara det valda civilisationsmalet.',
+    statusExtreme: 'Den har konfigurationen overskrider malet. Den fangar enorm effekt, men materialbehovet okar snabbt.',
     orbitalPeriod: 'Omloppstid',
     collectorArea: 'Kollektorarea',
+    mercuryMasses: '{value} Merkuriusmassor',
+    kilograms: '{value} kg',
+    daysUnit: '{value} dagar',
     starMDwarf: 'M-dvarg',
     starSun: 'G-stjarna solliknande',
     starA: 'A-stjarna',

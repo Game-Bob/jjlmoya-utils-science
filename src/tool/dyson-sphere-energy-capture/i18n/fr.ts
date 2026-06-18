@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'simulateur-energie-sphere-dyson';
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Masse de materiau',
     captureMeter: 'Progres vers la cible',
     statusReady: 'Ajustez le systeme pour estimer la demande du collecteur.',
+    statusUnderbuilt: 'La couverture est inferieure a la cible de Kardashev choisie. Ajoutez des collecteurs ou choisissez une etoile plus brillante.',
+    statusBalanced: 'La couverture et la puissance stellaire sont proches de l objectif civilisationnel choisi.',
+    statusExtreme: 'Cette configuration depasse la cible. Elle capture une puissance enorme, mais la demande en materiaux augmente vite.',
     orbitalPeriod: 'Periode orbitale',
     collectorArea: 'Surface du collecteur',
+    mercuryMasses: '{value} masses de Mercure',
+    kilograms: '{value} kg',
+    daysUnit: '{value} jours',
     starMDwarf: 'Naine M',
     starSun: 'Etoile de type G comme le Soleil',
     starA: 'Etoile de type A',

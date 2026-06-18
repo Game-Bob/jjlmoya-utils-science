@@ -1,4 +1,4 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sfeer-energie-simulator';
@@ -43,11 +43,11 @@ const faq = [
   },
   {
     question: 'Waarom hebben heldere sterren zulke grote collectorsystemen nodig?',
-    answer: 'Sterren met hoge helderheid duwen de veilige thermische straal naar buiten. Dat vergroot het benodigde oppervlak voor een gegeven dekkingsfractie, waardoor de materiaalvraag sneller kan stijgen dan het opgevangen vermogen intuïtief aanvoelt.',
+    answer: 'Sterren met hoge helderheid duwen de veilige thermische straal naar buiten. Dat vergroot het benodigde oppervlak voor een gegeven dekkingsfractie, waardoor de materiaalvraag sneller kan stijgen dan het opgevangen vermogen intuÃ¯tief aanvoelt.',
   },
   {
     question: 'Kan een beschaving Kardasjev Type II bereiken met gedeeltelijke dekking?',
-    answer: 'Ja, als de gastster helder genoeg is en de collectoren efficiënt zijn. Rond een zonachtige ster vereist het benaderen van Type II het opvangen van een groot deel van de zonnehelderheid, maar rond helderdere sterren kan hetzelfde vermogensdoel een lagere dekkingsfractie nodig hebben.',
+    answer: 'Ja, als de gastster helder genoeg is en de collectoren efficiÃ«nt zijn. Rond een zonachtige ster vereist het benaderen van Type II het opvangen van een groot deel van de zonnehelderheid, maar rond helderdere sterren kan hetzelfde vermogensdoel een lagere dekkingsfractie nodig hebben.',
   },
 ];
 
@@ -69,8 +69,14 @@ export const content: ToolLocaleContent = {
     materialMass: 'Materiaalmassa',
     captureMeter: 'Voortgang naar doel',
     statusReady: 'Pas het systeem aan om de collectorvraag te schatten.',
+    statusUnderbuilt: 'De dekking ligt onder het gekozen Kardashev-doel. Voeg collectoren toe of kies een helderdere ster.',
+    statusBalanced: 'Dekking en stervermogen liggen dicht bij het gekozen doel op beschavingsschaal.',
+    statusExtreme: 'Deze configuratie overschrijdt het doel. Ze vangt enorm vermogen op, maar de materiaalvraag stijgt snel.',
     orbitalPeriod: 'Baanperiode',
     collectorArea: 'Collector oppervlak',
+    mercuryMasses: '{value} Mercuriusmassa s',
+    kilograms: '{value} kg',
+    daysUnit: '{value} dagen',
     starMDwarf: 'M dwerg',
     starSun: 'G-type ster zoals de Zon',
     starA: 'A-type ster',
@@ -89,7 +95,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Een Dyson sfeer is niet alleen een sciencefiction beeld van een ster in een schaal. Het is een familie van mogelijke megastructuur concepten voor het onderscheppen van sterhelderheid: zwermen satellieten, equatoriale ringen, dunne spiegelenwolken en de beroemde maar problematische stijve schaal. Deze simulator zet die ideeën om in getallen zodat u kunt vergelijken hoe ster type, collectortemperatuur, dekking en structuurontwerp het energiebudget veranderen.',
+      html: 'Een Dyson sfeer is niet alleen een sciencefiction beeld van een ster in een schaal. Het is een familie van mogelijke megastructuur concepten voor het onderscheppen van sterhelderheid: zwermen satellieten, equatoriale ringen, dunne spiegelenwolken en de beroemde maar problematische stijve schaal. Deze simulator zet die ideeÃ«n om in getallen zodat u kunt vergelijken hoe ster type, collectortemperatuur, dekking en structuurontwerp het energiebudget veranderen.',
     },
     {
       type: 'paragraph',
@@ -144,7 +150,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'De materiaalschatting vermenigvuldigt het collectoroppervlak met een aangenomen oppervlaktedichtheid en ontwerpstabiliteitsfactor. Het rapporteert de massa opzettelijk in Mercurius massa wanneer het aantal astronomisch wordt, omdat veel Dyson zwerm discussies zich voorstellen dat kleine planeten of asteroïden worden ontmanteld voor grondstoffen. Zelfs dunne collectoren worden massief wanneer ze worden verspreid over astronomische eenheid schalen.',
+      html: 'De materiaalschatting vermenigvuldigt het collectoroppervlak met een aangenomen oppervlaktedichtheid en ontwerpstabiliteitsfactor. Het rapporteert de massa opzettelijk in Mercurius massa wanneer het aantal astronomisch wordt, omdat veel Dyson zwerm discussies zich voorstellen dat kleine planeten of asteroÃ¯den worden ontmanteld voor grondstoffen. Zelfs dunne collectoren worden massief wanneer ze worden verspreid over astronomische eenheid schalen.',
     },
     {
       type: 'paragraph',
