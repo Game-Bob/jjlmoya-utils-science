@@ -12,6 +12,7 @@ export { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone
 export { RADIOACTIVE_DECAY_TOOL } from './tool/radioactive-decay/index';
 export { NATURAL_SELECTION_DRIFT_TOOL } from './tool/natural-selection-drift/index';
 export { ENTROPY_SECOND_LAW_TOOL } from './tool/entropy-second-law/index';
+export { DOUBLE_SLIT_DECOHERENCE_TOOL } from './tool/double-slit-decoherence/index';
 export { PHASE_DIAGRAM_CRITICAL_POINTS_TOOL } from './tool/phase-diagram-critical-points/index';
 export { TWIN_PARADOX_VISUALIZER_TOOL } from './tool/twin-paradox-visualizer/index';
 export { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';

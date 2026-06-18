@@ -12,6 +12,7 @@ import { STELLAR_HABITABILITY_ZONE_TOOL } from './tool/stellar-habitability-zone
 import { RADIOACTIVE_DECAY_TOOL } from './tool/radioactive-decay/index';
 import { NATURAL_SELECTION_DRIFT_TOOL } from './tool/natural-selection-drift/index';
 import { ENTROPY_SECOND_LAW_TOOL } from './tool/entropy-second-law/index';
+import { DOUBLE_SLIT_DECOHERENCE_TOOL } from './tool/double-slit-decoherence/index';
 import { PHASE_DIAGRAM_CRITICAL_POINTS_TOOL } from './tool/phase-diagram-critical-points/index';
 import { TWIN_PARADOX_VISUALIZER_TOOL } from './tool/twin-paradox-visualizer/index';
 import { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';
@@ -32,6 +33,7 @@ export const ALL_TOOLS: ToolDefinition[] = [
   RADIOACTIVE_DECAY_TOOL,
   NATURAL_SELECTION_DRIFT_TOOL,
   ENTROPY_SECOND_LAW_TOOL,
+  DOUBLE_SLIT_DECOHERENCE_TOOL,
   PHASE_DIAGRAM_CRITICAL_POINTS_TOOL,
   TWIN_PARADOX_VISUALIZER_TOOL,
   MANDELBROT_FRACTAL_TOOL,

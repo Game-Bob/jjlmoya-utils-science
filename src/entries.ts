@@ -11,6 +11,7 @@ export { stellarHabitabilityZone } from './tool/stellar-habitability-zone/entry'
 export { radioactiveDecay } from './tool/radioactive-decay/entry';
 export { naturalSelectionDrift } from './tool/natural-selection-drift/entry';
 export { entropySecondLaw } from './tool/entropy-second-law/entry';
+export { doubleSlitDecoherence } from './tool/double-slit-decoherence/entry';
 export { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points/entry';
 export { twinParadoxVisualizer } from './tool/twin-paradox-visualizer/entry';
 export { mandelbrotFractal } from './tool/mandelbrot-fractal/entry';
@@ -30,10 +31,11 @@ import { stellarHabitabilityZone } from './tool/stellar-habitability-zone/entry'
 import { radioactiveDecay } from './tool/radioactive-decay/entry';
 import { naturalSelectionDrift } from './tool/natural-selection-drift/entry';
 import { entropySecondLaw } from './tool/entropy-second-law/entry';
+import { doubleSlitDecoherence } from './tool/double-slit-decoherence/entry';
 import { phaseDiagramCriticalPoints } from './tool/phase-diagram-critical-points/entry';
 import { twinParadoxVisualizer } from './tool/twin-paradox-visualizer/entry';
 import { mandelbrotFractal } from './tool/mandelbrot-fractal/entry';
 import { planetAtmosphereSurvival } from './tool/planet-atmosphere-survival/entry';
 import { threeBodyProblem } from './tool/three-body-problem/entry';
 import { rocheLimitSatelliteDisruption } from './tool/roche-limit-satellite-disruption/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption];
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption];
