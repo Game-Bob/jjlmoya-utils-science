@@ -21,6 +21,7 @@ export { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
 export { ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL } from './tool/roche-limit-satellite-disruption/index';
 export { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-capture/index';
 export { GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL } from './tool/global-albedo-snowball-simulator/index';
+export { CONWAY_LIFE_RULE_LAB_TOOL } from './tool/conway-life-rule-lab/index';
 
 export type {
   KnownLocale,

@@ -20,10 +20,11 @@ import { threeBodyProblem } from '../tool/three-body-problem/index';
 import { rocheLimitSatelliteDisruption } from '../tool/roche-limit-satellite-disruption/index';
 import { dysonSphereEnergyCapture } from '../tool/dyson-sphere-energy-capture/index';
 import { globalAlbedoSnowballSimulator } from '../tool/global-albedo-snowball-simulator/index';
+import { conwayLifeRuleLab } from '../tool/conway-life-rule-lab/index';
 
 export const scienceCategory: ScienceCategoryEntry = {
   icon: 'mdi:flask',
-  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator],
+  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),

@@ -21,6 +21,7 @@ import { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
 import { ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL } from './tool/roche-limit-satellite-disruption/index';
 import { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-capture/index';
 import { GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL } from './tool/global-albedo-snowball-simulator/index';
+import { CONWAY_LIFE_RULE_LAB_TOOL } from './tool/conway-life-rule-lab/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [
   COLONY_COUNTER_TOOL,
@@ -44,4 +45,5 @@ export const ALL_TOOLS: ToolDefinition[] = [
   ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL,
   DYSON_SPHERE_ENERGY_CAPTURE_TOOL,
   GLOBAL_ALBEDO_SNOWBALL_SIMULATOR_TOOL,
+  CONWAY_LIFE_RULE_LAB_TOOL,
 ];
