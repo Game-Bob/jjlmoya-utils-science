@@ -100,55 +100,86 @@ const { ui } = Astro.props;
     raf: 0,
   };
 
-  function drawBeam(samples: ReturnType<typeof calculateDoubleSlitPattern>) {
-    if (!ctx || !canvas) return;
+  function isDarkTheme() {
+    return document.documentElement.classList.contains('theme-dark') || document.body.classList.contains('theme-dark');
+  }
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const sourceX = 86;
-    const slitX = 330;
-    const screenX = 742;
-    const centerY = canvas.height / 2;
-    const slitGap = state.slitSeparation * 58;
-    const slitWidth = state.slitWidth * 42;
+  function createBeamGradient(sourceX: number, screenX: number, isDark: boolean) {
+    const gradient = ctx!.createLinearGradient(sourceX, 0, screenX, 0);
+    gradient.addColorStop(0, isDark ? 'rgba(64, 224, 208, 0.1)' : 'rgba(0, 139, 130, 0.16)');
+    gradient.addColorStop(0.48, isDark ? 'rgba(64, 224, 208, 0.3)' : 'rgba(0, 139, 130, 0.42)');
+    gradient.addColorStop(1, isDark ? 'rgba(255, 207, 102, 0.2)' : 'rgba(181, 111, 0, 0.32)');
 
-    const gradient = ctx.createLinearGradient(sourceX, 0, screenX, 0);
-    gradient.addColorStop(0, 'rgba(64, 224, 208, 0.08)');
-    gradient.addColorStop(0.48, 'rgba(64, 224, 208, 0.28)');
-    gradient.addColorStop(1, 'rgba(255, 207, 102, 0.18)');
+    return gradient;
+  }
 
-    ctx.strokeStyle = gradient;
-    ctx.lineWidth = 1.2;
-    ctx.globalCompositeOperation = 'lighter';
+  function drawInterferencePaths(
+    samples: ReturnType<typeof calculateDoubleSlitPattern>,
+    scene: { sourceX: number; slitX: number; screenX: number; centerY: number; slitGap: number },
+    isDark: boolean,
+  ) {
+    ctx!.strokeStyle = createBeamGradient(scene.sourceX, scene.screenX, isDark);
+    ctx!.lineWidth = isDark ? 1.2 : 1.45;
+    ctx!.globalCompositeOperation = isDark ? 'lighter' : 'multiply';
 
     samples.forEach((sample, index) => {
       if (index % 2 !== 0) return;
-      const screenY = centerY + sample.y * 68;
+      const screenY = scene.centerY + sample.y * 68;
       const glow = Math.max(0.04, sample.observedIntensity);
-      ctx.globalAlpha = Math.min(0.62, glow * 0.85);
-      ctx.beginPath();
-      ctx.moveTo(sourceX, centerY + Math.sin(state.phase + index * 0.05) * 8);
-      ctx.quadraticCurveTo(slitX, centerY - slitGap / 2, screenX, screenY);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(sourceX, centerY + Math.cos(state.phase + index * 0.04) * 8);
-      ctx.quadraticCurveTo(slitX, centerY + slitGap / 2, screenX, screenY);
-      ctx.stroke();
+      ctx!.globalAlpha = Math.min(isDark ? 0.62 : 0.74, glow * (isDark ? 0.85 : 1.05));
+      ctx!.beginPath();
+      ctx!.moveTo(scene.sourceX, scene.centerY + Math.sin(state.phase + index * 0.05) * 8);
+      ctx!.quadraticCurveTo(scene.slitX, scene.centerY - scene.slitGap / 2, scene.screenX, screenY);
+      ctx!.stroke();
+      ctx!.beginPath();
+      ctx!.moveTo(scene.sourceX, scene.centerY + Math.cos(state.phase + index * 0.04) * 8);
+      ctx!.quadraticCurveTo(scene.slitX, scene.centerY + scene.slitGap / 2, scene.screenX, screenY);
+      ctx!.stroke();
     });
 
-    ctx.globalAlpha = 1;
-    ctx.globalCompositeOperation = 'source-over';
+    ctx!.globalAlpha = 1;
+    ctx!.globalCompositeOperation = 'source-over';
+  }
 
-    ctx.fillStyle = 'rgba(9, 18, 32, 0.82)';
-    ctx.fillRect(slitX - 12, 58, 24, centerY - slitGap / 2 - slitWidth / 2 - 58);
-    ctx.fillRect(slitX - 12, centerY - slitGap / 2 + slitWidth / 2, 24, slitGap - slitWidth);
-    ctx.fillRect(slitX - 12, centerY + slitGap / 2 + slitWidth / 2, 24, canvas.height - (centerY + slitGap / 2 + slitWidth / 2) - 58);
+  function drawBarrier(scene: { slitX: number; centerY: number; slitGap: number; slitWidth: number }, isDark: boolean) {
+    ctx!.fillStyle = isDark ? 'rgba(249, 245, 234, 0.82)' : 'rgba(9, 18, 32, 0.86)';
+    ctx!.fillRect(scene.slitX - 12, 58, 24, scene.centerY - scene.slitGap / 2 - scene.slitWidth / 2 - 58);
+    ctx!.fillRect(scene.slitX - 12, scene.centerY - scene.slitGap / 2 + scene.slitWidth / 2, 24, scene.slitGap - scene.slitWidth);
+    ctx!.fillRect(scene.slitX - 12, scene.centerY + scene.slitGap / 2 + scene.slitWidth / 2, 24, canvas!.height - (scene.centerY + scene.slitGap / 2 + scene.slitWidth / 2) - 58);
+  }
 
+  function drawScreenPattern(
+    samples: ReturnType<typeof calculateDoubleSlitPattern>,
+    scene: { screenX: number; centerY: number },
+    isDark: boolean,
+  ) {
     samples.forEach((sample) => {
-      const y = centerY + sample.y * 68;
+      const y = scene.centerY + sample.y * 68;
       const intensity = Math.min(1, sample.observedIntensity);
-      ctx.fillStyle = `rgba(255, ${Math.round(178 + intensity * 60)}, 92, ${0.12 + intensity * 0.8})`;
-      ctx.fillRect(screenX, y - 1.2 - intensity * 3, 34 + intensity * 30, 2.4 + intensity * 6);
+      ctx!.fillStyle = isDark
+        ? `rgba(255, ${Math.round(178 + intensity * 60)}, 92, ${0.12 + intensity * 0.8})`
+        : `rgba(${Math.round(170 + intensity * 30)}, ${Math.round(95 + intensity * 60)}, 0, ${0.22 + intensity * 0.72})`;
+      ctx!.fillRect(scene.screenX, y - 1.2 - intensity * 3, 34 + intensity * 30, 2.4 + intensity * 6);
     });
+  }
+
+  function drawBeam(samples: ReturnType<typeof calculateDoubleSlitPattern>) {
+    if (!ctx || !canvas) return;
+
+    const isDark = isDarkTheme();
+    const scene = {
+      sourceX: 86,
+      slitX: 330,
+      screenX: 742,
+      centerY: canvas.height / 2,
+      slitGap: state.slitSeparation * 58,
+      slitWidth: state.slitWidth * 42,
+    };
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawInterferencePaths(samples, scene, isDark);
+    drawBarrier(scene, isDark);
+    drawScreenPattern(samples, scene, isDark);
   }
 
   function update() {

@@ -7,6 +7,6 @@ export const bibliography: BibliographyEntry[] = [
   },
   {
     name: 'Decoherence, the measurement problem, and interpretations of quantum mechanics',
-    url: 'https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.76.1267',
+    url: 'https://arxiv.org/abs/quant-ph/0312059',
   },
 ];
