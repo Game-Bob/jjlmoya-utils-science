@@ -21,6 +21,7 @@ export { rocheLimitSatelliteDisruption } from './tool/roche-limit-satellite-disr
 export { dysonSphereEnergyCapture } from './tool/dyson-sphere-energy-capture/entry';
 export { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-simulator/entry';
 export { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
+export { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -44,4 +45,5 @@ import { rocheLimitSatelliteDisruption } from './tool/roche-limit-satellite-disr
 import { dysonSphereEnergyCapture } from './tool/dyson-sphere-energy-capture/entry';
 import { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-simulator/entry';
 import { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab];
+import { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder];
