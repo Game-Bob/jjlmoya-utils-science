@@ -1,5 +1,5 @@
 ---
-import type { LatticeId } from './logic';
+import { LATTICE_STRUCTURES, MATERIAL_PRESETS } from './logic';
 import './crystal-lattice-structure-finder.css';
 
 interface Props {
@@ -8,20 +8,32 @@ interface Props {
 
 const { ui } = Astro.props;
 
-const latticeOptions: Array<{ id: LatticeId; uiKey: string; shortKey: string }> = [
-  { id: 'simple-cubic', uiKey: 'latticeSimpleCubic', shortKey: 'shortSc' },
-  { id: 'face-centered-cubic', uiKey: 'latticeFcc', shortKey: 'shortFcc' },
-  { id: 'hexagonal-close-packed', uiKey: 'latticeHcp', shortKey: 'shortHcp' },
-];
+const latticeOptions = LATTICE_STRUCTURES;
+const materialOptions = MATERIAL_PRESETS;
 
-const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
-  { id: 'copper', uiKey: 'materialCopper', noteKey: 'materialCopperNote' },
-  { id: 'aluminum', uiKey: 'materialAluminum', noteKey: 'materialAluminumNote' },
-  { id: 'polonium', uiKey: 'materialPolonium', noteKey: 'materialPoloniumNote' },
-  { id: 'magnesium', uiKey: 'materialMagnesium', noteKey: 'materialMagnesiumNote' },
-  { id: 'titanium', uiKey: 'materialTitanium', noteKey: 'materialTitaniumNote' },
-  { id: 'halite', uiKey: 'materialHalite', noteKey: 'materialHaliteNote' },
-];
+function pascalId(id: string): string {
+  return id.split('-').map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join('');
+}
+
+function uiText(key: string, fallback: string): string {
+  return ui[key] ?? fallback;
+}
+
+function materialName(material: { id: string; name: string }): string {
+  return uiText(`material${pascalId(material.id)}`, material.name);
+}
+
+function materialNote(material: { id: string; note: string }): string {
+  return uiText(`material${pascalId(material.id)}Note`, material.note);
+}
+
+function latticeName(lattice: { id: string; name: string }): string {
+  return uiText(`lattice${pascalId(lattice.id)}`, lattice.name);
+}
+
+function latticeShortName(lattice: { id: string; shortName: string }): string {
+  return uiText(`short${pascalId(lattice.id)}`, lattice.shortName);
+}
 ---
 
 <div class="lattice-lab" id="lattice-lab">
@@ -66,28 +78,50 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
       <p>{ui.density}</p>
     </div>
 
-    <label class="lattice-field lattice-field-select" for="lattice-material">
+    <div class="lattice-field lattice-field-select">
       <span>{ui.material}</span>
-      <select id="lattice-material">
-        {materialOptions.map((opt) => (
-          <option value={opt.id} data-note={ui[opt.noteKey]}>{ui[opt.uiKey]}</option>
+      <select class="lattice-native-select" id="lattice-material" tabindex="-1" aria-hidden="true">
+        {materialOptions.map((material) => (
+          <option value={material.id} data-note={materialNote(material)}>{materialName(material)}</option>
         ))}
       </select>
-    </label>
+      <button class="lattice-select-button" id="lattice-material-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span>Copper</span>
+        <i aria-hidden="true"></i>
+      </button>
+      <div class="lattice-select-menu" id="lattice-material-menu" role="listbox" aria-label={ui.material}>
+        {materialOptions.map((material) => (
+          <button type="button" role="option" data-select-target="lattice-material" data-value={material.id}>
+            {materialName(material)}
+          </button>
+        ))}
+      </div>
+    </div>
 
     <div class="lattice-note">
       <span id="lattice-formula">Cu</span>
       <p id="lattice-material-note">{ui.materialNote}</p>
     </div>
 
-    <label class="lattice-field lattice-field-select" for="lattice-structure">
+    <div class="lattice-field lattice-field-select">
       <span>{ui.lattice}</span>
-      <select id="lattice-structure">
-        {latticeOptions.map((opt) => (
-          <option value={opt.id} data-short={ui[opt.shortKey]}>{ui[opt.uiKey]}</option>
+      <select class="lattice-native-select" id="lattice-structure" tabindex="-1" aria-hidden="true">
+        {latticeOptions.map((lattice) => (
+          <option value={lattice.id} data-short={latticeShortName(lattice)}>{latticeName(lattice)}</option>
         ))}
       </select>
-    </label>
+      <button class="lattice-select-button" id="lattice-structure-button" type="button" aria-haspopup="listbox" aria-expanded="false">
+        <span>Face-centered cubic</span>
+        <i aria-hidden="true"></i>
+      </button>
+      <div class="lattice-select-menu" id="lattice-structure-menu" role="listbox" aria-label={ui.lattice}>
+        {latticeOptions.map((lattice) => (
+          <button type="button" role="option" data-select-target="lattice-structure" data-value={lattice.id}>
+            {latticeName(lattice)}
+          </button>
+        ))}
+      </div>
+    </div>
 
     <div class="lattice-slider-grid">
       <label class="lattice-field" for="lattice-rotation">
@@ -105,20 +139,20 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
 
     <div class="lattice-input-grid">
       <label class="lattice-number" for="lattice-a">
-        <span>{ui.latticeA} (Å)</span>
+        <span>{ui.latticeA}</span>
         <input id="lattice-a" type="text" inputmode="decimal" pattern="[0-9.]*" value="3.615" />
+        <em>Å</em>
       </label>
       <label class="lattice-number" for="lattice-c-ratio">
         <span>{ui.cRatio}</span>
         <input id="lattice-c-ratio" type="text" inputmode="decimal" pattern="[0-9.]*" value="1" />
       </label>
       <label class="lattice-number" for="lattice-mass">
-        <span>{ui.molarMass} (g/mol)</span>
+        <span>{ui.molarMass}</span>
         <input id="lattice-mass" type="text" inputmode="decimal" pattern="[0-9.]*" value="63.546" />
+        <em>g/mol</em>
       </label>
     </div>
-
-    <button class="lattice-reset" id="lattice-reset" type="button">{ui.resetView}</button>
   </section>
 
   <section class="lattice-results" aria-label="Crystal lattice results">
@@ -176,7 +210,8 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
   const massInput = document.getElementById('lattice-mass') as HTMLInputElement | null;
   const gridLayer = document.getElementById('lattice-grid');
   const atomLayer = document.getElementById('lattice-atoms');
-  const resetButton = document.getElementById('lattice-reset');
+  const customSelectButtons = document.querySelectorAll<HTMLButtonElement>('.lattice-select-button');
+  const customSelectOptions = document.querySelectorAll<HTMLButtonElement>('[data-select-target]');
 
   const labels = {
     formula: document.getElementById('lattice-formula'),
@@ -202,6 +237,26 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
 
   function activeMaterial(): MaterialPreset {
     return getMaterial(materialSelect?.value ?? MATERIAL_PRESETS[0].id);
+  }
+
+  function closeSelectMenus() {
+    customSelectButtons.forEach((button) => {
+      button.setAttribute('aria-expanded', 'false');
+      button.closest('.lattice-field-select')?.classList.remove('lattice-select-open');
+    });
+  }
+
+  function syncCustomSelect(select: HTMLSelectElement | null) {
+    if (!select) return;
+
+    const button = document.getElementById(`${select.id}-button`);
+    const label = button?.querySelector('span');
+    const selected = select.options[select.selectedIndex];
+    if (label && selected) label.textContent = selected.textContent ?? '';
+
+    document.querySelectorAll<HTMLButtonElement>(`[data-select-target="${select.id}"]`).forEach((option) => {
+      option.setAttribute('aria-selected', `${option.dataset.value === select.value}`);
+    });
   }
 
   function decimalValue(input: HTMLInputElement | null, fallback: number): number {
@@ -268,7 +323,7 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
     const lattice = getLattice(structureSelect.value as LatticeId);
     const rotation = Number(rotationInput.value);
     const zoom = Number(zoomInput.value);
-    const isHex = lattice.id === 'hexagonal-close-packed';
+    const isHex = lattice.cellGeometry === 'hexagonal';
     const projected = lattice.vertices.map((vertex) => projectPoint(vertex, rotation, zoom / 100, isHex));
 
     clearLayer(gridLayer);
@@ -328,13 +383,13 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
     labels.volume!.textContent = `${formatNumber(result.cellVolumeCm3 * 1e24, 3)} Å³`;
     labels.cellMass!.textContent = `${result.cellMassG.toExponential(3)} g`;
     labels.radius!.textContent = `${formatNumber(radius, 3)} Å`;
-    resetButton?.classList.toggle('lattice-reset-active', rotationInput!.value !== '38' || zoomInput!.value !== '100');
   }
 
   function loadMaterial(materialId: string) {
     const material = getMaterial(materialId);
     const lattice = getLattice(material.latticeId);
 
+    syncCustomSelect(materialSelect);
     populateInputs(material, lattice);
     labels.formula!.textContent = material.formula;
     const selectedMaterial = materialSelect?.options[materialSelect.selectedIndex ?? -1];
@@ -347,20 +402,46 @@ const materialOptions: Array<{ id: string; uiKey: string; noteKey: string }> = [
     if (aInput) aInput.value = `${material.latticeA}`;
     if (cRatioInput) cRatioInput.value = `${material.cToA ?? lattice.cToA ?? 1}`;
     if (massInput) massInput.value = `${material.atomicMass}`;
+    syncCustomSelect(structureSelect);
   }
 
+  customSelectButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const isOpen = button.getAttribute('aria-expanded') === 'true';
+      closeSelectMenus();
+      button.setAttribute('aria-expanded', `${!isOpen}`);
+      button.closest('.lattice-field-select')?.classList.toggle('lattice-select-open', !isOpen);
+    });
+  });
+
+  customSelectOptions.forEach((option) => {
+    option.addEventListener('click', () => {
+      const select = document.getElementById(option.dataset.selectTarget ?? '') as HTMLSelectElement | null;
+      if (!select || !option.dataset.value) return;
+
+      select.value = option.dataset.value;
+      syncCustomSelect(select);
+      select.dispatchEvent(new Event('change', { bubbles: true }));
+      closeSelectMenus();
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (event.target instanceof Element && event.target.closest('.lattice-field-select')) return;
+    closeSelectMenus();
+  });
+
   materialSelect?.addEventListener('change', () => loadMaterial(materialSelect.value));
-  structureSelect?.addEventListener('change', updateResults);
+  structureSelect?.addEventListener('change', () => {
+    syncCustomSelect(structureSelect);
+    updateResults();
+  });
   rotationInput?.addEventListener('input', updateResults);
   zoomInput?.addEventListener('input', updateResults);
   aInput?.addEventListener('input', updateResults);
   cRatioInput?.addEventListener('input', updateResults);
   massInput?.addEventListener('input', updateResults);
-  resetButton?.addEventListener('click', () => {
-    if (rotationInput) rotationInput.value = '38';
-    if (zoomInput) zoomInput.value = '100';
-    updateResults();
-  });
-
+  syncCustomSelect(materialSelect);
+  syncCustomSelect(structureSelect);
   loadMaterial(materialSelect?.value ?? MATERIAL_PRESETS[0].id);
 </script>

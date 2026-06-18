@@ -1,14 +1,14 @@
-import { bibliography } from '../bibliography';
+﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'crystal-lattice-structure-finder';
 const title = 'Crystal Lattice Structure Finder';
-const description = 'Explore simple cubic, face-centered cubic, and hexagonal close-packed unit cells with an interactive 3D viewer, packing factor, coordination number, and theoretical density calculator.';
+const description = 'Explore common metallic, ionic, covalent, and ceramic crystal structures with an interactive 3D viewer, packing factor, coordination number, and theoretical density calculator.';
 
 const howTo = [
   {
     name: 'Choose a lattice or material',
-    text: 'Start from a structure family such as simple cubic, FCC, or HCP, or select a real material preset to load its lattice constant and atomic or formula mass.',
+    text: 'Start from a structure family such as SC, BCC, FCC, HCP, diamond cubic, rock salt, zinc blende, wurtzite, perovskite, or rutile, or select a material preset to load lattice constants and mass.',
   },
   {
     name: 'Rotate the unit cell',
@@ -72,7 +72,6 @@ export const content: ToolLocaleContent = {
     interiorAtoms: 'Interior atoms',
     materialNote: 'Material note',
     formula: 'Formula',
-    resetView: 'Reset view',
     crystalProperties: 'Crystal properties',
     physicalMetrics: 'Physical metrics',
     latticeSimpleCubic: 'Simple cubic',
@@ -93,6 +92,45 @@ export const content: ToolLocaleContent = {
     materialTitaniumNote: 'Room-temperature HCP phase of titanium.',
     materialHalite: 'Halite approximation',
     materialHaliteNote: 'Rock salt is modeled through its FCC conventional cell with four NaCl formula units.',
+    shortSimpleCubic: 'SC',
+    shortFaceCenteredCubic: 'FCC',
+    shortHexagonalClosePacked: 'HCP',
+    shortBodyCenteredCubic: 'BCC',
+    shortDiamondCubic: 'DC',
+    shortRockSalt: 'NaCl',
+    shortCesiumChloride: 'CsCl',
+    shortZincBlende: 'ZnS',
+    shortWurtzite: 'WZ',
+    shortPerovskite: 'ABO3',
+    shortRutile: 'TiO2',
+    latticeBodyCenteredCubic: 'Body-centered cubic',
+    latticeCesiumChloride: 'Cesium chloride',
+    latticeDiamondCubic: 'Diamond cubic',
+    latticeFaceCenteredCubic: 'Face-centered cubic',
+    latticeHexagonalClosePacked: 'Hexagonal close-packed',
+    latticePerovskite: 'Cubic perovskite',
+    latticeRockSalt: 'Rock salt',
+    latticeRutile: 'Rutile',
+    latticeWurtzite: 'Wurtzite',
+    latticeZincBlende: 'Zinc blende',
+    materialAlphaIron: 'Alpha iron',
+    materialAlphaIronNote: 'Room-temperature body-centered cubic iron phase.',
+    materialTungsten: 'Tungsten',
+    materialTungstenNote: 'Dense BCC refractory metal with a very high melting point.',
+    materialSilicon: 'Silicon',
+    materialSiliconNote: 'Diamond cubic semiconductor used in integrated circuits.',
+    materialDiamond: 'Diamond',
+    materialDiamondNote: 'Covalent carbon network in the diamond cubic structure.',
+    materialCesiumChloride: 'Cesium chloride',
+    materialCesiumChlorideNote: 'Interpenetrating simple cubic ionic structure with eightfold coordination.',
+    materialZincSulfide: 'Zinc sulfide',
+    materialZincSulfideNote: 'Sphalerite, also called zinc blende, with tetrahedral coordination.',
+    materialGalliumNitride: 'Gallium nitride',
+    materialGalliumNitrideNote: 'Wurtzite semiconductor used in LEDs and power electronics.',
+    materialStrontiumTitanate: 'Strontium titanate',
+    materialStrontiumTitanateNote: 'Cubic perovskite oxide often used as a substrate and dielectric model.',
+    materialRutileTitania: 'Rutile titania',
+    materialRutileTitaniaNote: 'Rutile TiO2 structure with octahedral titanium coordination.',
   },
   seo: [
     {
@@ -102,7 +140,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'This crystal lattice structure finder helps connect the picture of a unit cell with the calculations that students and materials scientists usually need next. You can inspect simple cubic, face-centered cubic, and hexagonal close-packed structures, then calculate atomic packing factor, coordination number, atoms per cell, atomic radius from lattice parameter, cell volume, cell mass, and theoretical density from real material presets or custom inputs.',
+      html: 'This crystal lattice structure finder helps connect the picture of a unit cell with the calculations that students and materials scientists usually need next. You can inspect metallic, ionic, covalent, and ceramic structures, then calculate atomic packing factor, coordination number, atoms per cell, atomic radius from lattice parameter, cell volume, cell mass, and theoretical density from real material presets or custom inputs.',
     },
     {
       type: 'paragraph',
@@ -173,7 +211,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'This tool uses idealized geometric models. Real crystals have electron density rather than hard boundaries, and lattice constants change with temperature, pressure, composition, and defects. Ionic and covalent crystals can also require basis atoms, partial occupancies, and symmetry operations that go beyond the three teaching structures shown here.',
+      html: 'This tool uses idealized geometric models. Real crystals have electron density rather than hard boundaries, and lattice constants change with temperature, pressure, composition, and defects. Ionic, covalent, and ceramic crystals can also require basis atoms, partial occupancies, and symmetry operations beyond a compact unit-cell teaching model.',
     },
     {
       type: 'paragraph',
@@ -216,3 +254,4 @@ export const content: ToolLocaleContent = {
     },
   ],
 };
+

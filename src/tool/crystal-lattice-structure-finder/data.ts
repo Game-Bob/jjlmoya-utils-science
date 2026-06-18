@@ -1,4 +1,6 @@
-export type LatticeId = 'simple-cubic' | 'face-centered-cubic' | 'hexagonal-close-packed';
+import { LATTICE_STRUCTURES as STRUCTURES } from './structures';
+
+export type LatticeId = string;
 
 export interface AtomSite {
   id: string;
@@ -10,7 +12,9 @@ export interface AtomSite {
 
 export interface LatticeStructure {
   id: LatticeId;
+  name: string;
   shortName: string;
+  cellGeometry: 'cubic' | 'hexagonal' | 'tetragonal';
   coordinationNumber: number;
   atomsPerCell: number;
   packingFactor: number;
@@ -23,6 +27,8 @@ export interface LatticeStructure {
 
 export interface MaterialPreset {
   id: string;
+  name: string;
+  note: string;
   formula: string;
   latticeId: LatticeId;
   atomicMass: number;
@@ -39,141 +45,13 @@ export interface DensityResult {
   packingFactor: number;
 }
 
-const cubeVertices: [number, number, number][] = [
-  [0, 0, 0],
-  [1, 0, 0],
-  [1, 1, 0],
-  [0, 1, 0],
-  [0, 0, 1],
-  [1, 0, 1],
-  [1, 1, 1],
-  [0, 1, 1],
-];
-
-const cubeEdges: [number, number][] = [
-  [0, 1],
-  [1, 2],
-  [2, 3],
-  [3, 0],
-  [4, 5],
-  [5, 6],
-  [6, 7],
-  [7, 4],
-  [0, 4],
-  [1, 5],
-  [2, 6],
-  [3, 7],
-];
-
-const hexVertices: [number, number, number][] = [
-  [1, 0, 0],
-  [0.5, 0.866, 0],
-  [-0.5, 0.866, 0],
-  [-1, 0, 0],
-  [-0.5, -0.866, 0],
-  [0.5, -0.866, 0],
-  [1, 0, 1],
-  [0.5, 0.866, 1],
-  [-0.5, 0.866, 1],
-  [-1, 0, 1],
-  [-0.5, -0.866, 1],
-  [0.5, -0.866, 1],
-];
-
-const hexEdges: [number, number][] = [
-  [0, 1],
-  [1, 2],
-  [2, 3],
-  [3, 4],
-  [4, 5],
-  [5, 0],
-  [6, 7],
-  [7, 8],
-  [8, 9],
-  [9, 10],
-  [10, 11],
-  [11, 6],
-  [0, 6],
-  [1, 7],
-  [2, 8],
-  [3, 9],
-  [4, 10],
-  [5, 11],
-];
-
-export const LATTICE_STRUCTURES: LatticeStructure[] = [
-  {
-    id: 'simple-cubic',
-    shortName: 'SC',
-    coordinationNumber: 6,
-    atomsPerCell: 1,
-    packingFactor: Math.PI / 6,
-    radiusToA: 0.5,
-    vertices: cubeVertices,
-    edges: cubeEdges,
-    sites: cubeVertices.map(([x, y, z], index) => ({
-      id: `sc-corner-${index}`,
-      x,
-      y,
-      z,
-      role: 'corner' as const,
-    })),
-  },
-  {
-    id: 'face-centered-cubic',
-    shortName: 'FCC',
-    coordinationNumber: 12,
-    atomsPerCell: 4,
-    packingFactor: Math.PI / (3 * Math.sqrt(2)),
-    radiusToA: Math.sqrt(2) / 4,
-    vertices: cubeVertices,
-    edges: cubeEdges,
-    sites: [
-      ...cubeVertices.map(([x, y, z], index) => ({
-        id: `fcc-corner-${index}`,
-        x,
-        y,
-        z,
-        role: 'corner' as const,
-      })),
-      { id: 'fcc-face-bottom', x: 0.5, y: 0.5, z: 0, role: 'face' as const },
-      { id: 'fcc-face-top', x: 0.5, y: 0.5, z: 1, role: 'face' as const },
-      { id: 'fcc-face-front', x: 0.5, y: 0, z: 0.5, role: 'face' as const },
-      { id: 'fcc-face-back', x: 0.5, y: 1, z: 0.5, role: 'face' as const },
-      { id: 'fcc-face-left', x: 0, y: 0.5, z: 0.5, role: 'face' as const },
-      { id: 'fcc-face-right', x: 1, y: 0.5, z: 0.5, role: 'face' as const },
-    ],
-  },
-  {
-    id: 'hexagonal-close-packed',
-    shortName: 'HCP',
-    coordinationNumber: 12,
-    atomsPerCell: 6,
-    packingFactor: 0.74048,
-    radiusToA: 0.5,
-    cToA: 1.633,
-    vertices: hexVertices,
-    edges: hexEdges,
-    sites: [
-      ...hexVertices.map(([x, y, z], index) => ({
-        id: `hcp-boundary-${index}`,
-        x: (x + 1) / 2,
-        y: (y + 0.866) / 1.732,
-        z,
-        role: 'corner' as const,
-      })),
-      { id: 'hcp-center-bottom', x: 0.5, y: 0.5, z: 0, role: 'face' as const },
-      { id: 'hcp-center-top', x: 0.5, y: 0.5, z: 1, role: 'face' as const },
-      { id: 'hcp-interior-a', x: 0.33, y: 0.42, z: 0.5, role: 'interior' as const },
-      { id: 'hcp-interior-b', x: 0.67, y: 0.58, z: 0.5, role: 'interior' as const },
-      { id: 'hcp-interior-c', x: 0.5, y: 0.28, z: 0.5, role: 'interior' as const },
-    ],
-  },
-];
+export const LATTICE_STRUCTURES: LatticeStructure[] = STRUCTURES;
 
 export const MATERIAL_PRESETS: MaterialPreset[] = [
   {
     id: 'copper',
+    name: 'Copper',
+    note: 'Common FCC metal with high electrical conductivity.',
     formula: 'Cu',
     latticeId: 'face-centered-cubic',
     atomicMass: 63.546,
@@ -181,13 +59,35 @@ export const MATERIAL_PRESETS: MaterialPreset[] = [
   },
   {
     id: 'aluminum',
+    name: 'Aluminum',
+    note: 'Lightweight FCC metal used as a classroom density benchmark.',
     formula: 'Al',
     latticeId: 'face-centered-cubic',
     atomicMass: 26.9815,
     latticeA: 4.0495,
   },
   {
+    id: 'alpha-iron',
+    name: 'Alpha iron',
+    note: 'Room-temperature body-centered cubic iron phase.',
+    formula: 'Fe',
+    latticeId: 'body-centered-cubic',
+    atomicMass: 55.845,
+    latticeA: 2.866,
+  },
+  {
+    id: 'tungsten',
+    name: 'Tungsten',
+    note: 'Dense BCC refractory metal with a very high melting point.',
+    formula: 'W',
+    latticeId: 'body-centered-cubic',
+    atomicMass: 183.84,
+    latticeA: 3.165,
+  },
+  {
     id: 'polonium',
+    name: 'Alpha polonium',
+    note: 'Rare example of a simple cubic elemental crystal.',
     formula: 'Po',
     latticeId: 'simple-cubic',
     atomicMass: 208.9824,
@@ -195,6 +95,8 @@ export const MATERIAL_PRESETS: MaterialPreset[] = [
   },
   {
     id: 'magnesium',
+    name: 'Magnesium',
+    note: 'HCP metal with a c/a ratio close to ideal packing.',
     formula: 'Mg',
     latticeId: 'hexagonal-close-packed',
     atomicMass: 24.305,
@@ -203,6 +105,8 @@ export const MATERIAL_PRESETS: MaterialPreset[] = [
   },
   {
     id: 'titanium',
+    name: 'Alpha titanium',
+    note: 'Room-temperature HCP phase of titanium.',
     formula: 'Ti',
     latticeId: 'hexagonal-close-packed',
     atomicMass: 47.867,
@@ -210,11 +114,81 @@ export const MATERIAL_PRESETS: MaterialPreset[] = [
     cToA: 1.587,
   },
   {
+    id: 'silicon',
+    name: 'Silicon',
+    note: 'Diamond cubic semiconductor used in integrated circuits.',
+    formula: 'Si',
+    latticeId: 'diamond-cubic',
+    atomicMass: 28.0855,
+    latticeA: 5.431,
+  },
+  {
+    id: 'diamond',
+    name: 'Diamond',
+    note: 'Covalent carbon network in the diamond cubic structure.',
+    formula: 'C',
+    latticeId: 'diamond-cubic',
+    atomicMass: 12.011,
+    latticeA: 3.567,
+  },
+  {
     id: 'halite',
+    name: 'Halite',
+    note: 'Rock salt crystal with four NaCl formula units per conventional cell.',
     formula: 'NaCl',
-    latticeId: 'face-centered-cubic',
+    latticeId: 'rock-salt',
     atomicMass: 58.4428,
     latticeA: 5.640,
     atomsPerFormulaUnit: 4,
+  },
+  {
+    id: 'cesium-chloride',
+    name: 'Cesium chloride',
+    note: 'Interpenetrating simple cubic ionic structure with eightfold coordination.',
+    formula: 'CsCl',
+    latticeId: 'cesium-chloride',
+    atomicMass: 168.358,
+    latticeA: 4.123,
+  },
+  {
+    id: 'zinc-sulfide',
+    name: 'Zinc sulfide',
+    note: 'Sphalerite, also called zinc blende, with tetrahedral coordination.',
+    formula: 'ZnS',
+    latticeId: 'zinc-blende',
+    atomicMass: 97.474,
+    latticeA: 5.409,
+    atomsPerFormulaUnit: 4,
+  },
+  {
+    id: 'gallium-nitride',
+    name: 'Gallium nitride',
+    note: 'Wurtzite semiconductor used in LEDs and power electronics.',
+    formula: 'GaN',
+    latticeId: 'wurtzite',
+    atomicMass: 83.730,
+    latticeA: 3.189,
+    cToA: 1.626,
+    atomsPerFormulaUnit: 2,
+  },
+  {
+    id: 'strontium-titanate',
+    name: 'Strontium titanate',
+    note: 'Cubic perovskite oxide often used as a substrate and dielectric model.',
+    formula: 'SrTiO3',
+    latticeId: 'perovskite',
+    atomicMass: 183.49,
+    latticeA: 3.905,
+  },
+  {
+    id: 'rutile-titania',
+    name: 'Rutile titania',
+    note: 'Rutile TiO2 structure with octahedral titanium coordination.',
+    formula: 'TiO2',
+    latticeId: 'rutile',
+    atomicMass: 79.866,
+    latticeA: 4.594,
+    cToA: 0.644,
+    atomsPerFormulaUnit: 2,
   },
 ];

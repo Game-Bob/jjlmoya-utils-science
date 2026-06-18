@@ -19,9 +19,13 @@ export function calculateTheoreticalDensity(material: MaterialPreset): DensityRe
   const lattice = getLattice(material.latticeId);
   const cToA = material.cToA ?? lattice.cToA ?? 1;
   const atomsPerCell = material.atomsPerFormulaUnit ?? lattice.atomsPerCell;
-  const volumeA3 = material.latticeId === 'hexagonal-close-packed'
-    ? (3 * Math.sqrt(3) / 2) * material.latticeA ** 2 * material.latticeA * cToA
-    : material.latticeA ** 3;
+  let volumeA3 = material.latticeA ** 3;
+  if (lattice.cellGeometry === 'hexagonal') {
+    volumeA3 = (3 * Math.sqrt(3) / 2) * material.latticeA ** 2 * material.latticeA * cToA;
+  }
+  if (lattice.cellGeometry === 'tetragonal') {
+    volumeA3 = material.latticeA ** 2 * material.latticeA * cToA;
+  }
   const cellVolumeCm3 = volumeA3 * ANGSTROM_TO_CM ** 3;
   const cellMassG = (atomsPerCell * material.atomicMass) / AVOGADRO;
 
