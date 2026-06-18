@@ -19,6 +19,7 @@ export { MANDELBROT_FRACTAL_TOOL } from './tool/mandelbrot-fractal/index';
 export { PLANET_ATMOSPHERE_SURVIVAL_TOOL } from './tool/planet-atmosphere-survival/index';
 export { THREE_BODY_PROBLEM_TOOL } from './tool/three-body-problem/index';
 export { ROCHE_LIMIT_SATELLITE_DISRUPTION_TOOL } from './tool/roche-limit-satellite-disruption/index';
+export { DYSON_SPHERE_ENERGY_CAPTURE_TOOL } from './tool/dyson-sphere-energy-capture/index';
 
 export type {
   KnownLocale,
