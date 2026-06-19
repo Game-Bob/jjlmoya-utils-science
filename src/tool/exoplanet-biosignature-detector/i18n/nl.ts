@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Datasynthese actief',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Lijn de spectrale markers uit om het atmosferische bewijs te evalueren.',
     verdictWeak: 'Het spectrum is zwak: er is onvoldoende bewijs voor een levensvriendelijke interpretatie.',
     verdictPromising: 'Het spectrum is veelbelovend: meerdere biosignatuurmarkers vertonen gedeeltelijke overeenkomsten.',

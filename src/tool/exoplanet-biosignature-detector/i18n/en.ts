@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Data synthesis live',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Align the spectral markers to evaluate the atmospheric evidence.',
     verdictWeak: 'The spectrum is weak: the lines do not yet support a life-friendly interpretation.',
     verdictPromising: 'The spectrum is promising: multiple biosignature markers are partly aligned.',

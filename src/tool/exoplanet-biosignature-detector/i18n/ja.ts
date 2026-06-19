@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'リアルタイム合成',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'スペクトルマーカーを調整して大気特性を評価してください。',
     verdictWeak: 'スペクトルは微弱：生命存在の解釈を支持する証拠が不足しています。',
     verdictPromising: 'スペクトルは有望：複数のバイオシグネチャの兆候が一部一致しています。',

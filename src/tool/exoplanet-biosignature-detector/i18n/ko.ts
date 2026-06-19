@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: '데이터 실시간 합성',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: '스펙트럼 표시를 조정하여 대기 정보를 평가하세요.',
     verdictWeak: '스펙트럼이 미미합니다: 생명 활동을 지지할 만한 증거가 충분하지 않습니다.',
     verdictPromising: '스펙트럼이 유망합니다: 여러 생명체 지표 신호가 부분적으로 일치합니다.',

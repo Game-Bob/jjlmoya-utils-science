@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'otegezegen-biyo-imza-algilayici';
-const title = 'Ötegezegen Biyo-İmza Algılayıcı';
+const title = 'Ötegezegen Biyo İmza Algılayıcı';
 const description = 'Simüle edilmiş bir ötegezegen geçiş tayfındaki oksijen, metan ve ozon soğurma çizgilerini hizalayın. Tayfsal kanıtlardan biyolojik yaşanabilirliği, olası teknolojik imza kirliliğini ve yanlış pozitif riskini değerlendirin.';
 
 const howTo = [
@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Canlı veri sentezi',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '---',
+    pendingValue: '...',
     statusReady: 'Kanıtları değerlendirmek için tayf işaretlerini hizalayın.',
     verdictWeak: 'Tayf zayıf: çizgiler henüz yaşam lehine bir yorumu desteklemiyor.',
     verdictPromising: 'Tayf umut verici: birden çok biyo-imza işareti kısmen hizalanmış durumda.',
@@ -89,7 +89,7 @@ export const content: ToolLocaleContent = {
     verdictAmbiguous: 'Sinyal ilginç ancak belirsiz: yıldız veya atmosfer kaynaklı yanlış pozitif etkenler hâlâ yüksek.',
   },
   seo: [
-    { type: 'title', text: 'Ötegezegen Biyo-İmza Algılayıcı', level: 2 },
+    { type: 'title', text: 'Ötegezegen Biyo İmza Algılayıcı', level: 2 },
     {
       type: 'paragraph',
       html: 'Ötegezegen biyo-imza algılayıcı, yaşamla ilişkili gazların uzak bir atmosferden süzülen ışıkta nasıl görünebileceğini keşfetmek için tasarlanmış etkileşimli bir tayfölçüm simülatörüdür. Araç, oksijen, metan ve ozon soğurma özelliklerini hizalamanızı ister ve sonucu gürültü, su buharı, karbondioksit ve ana yıldız davranışı bağlamında değerlendirir.',

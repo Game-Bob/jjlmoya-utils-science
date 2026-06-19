@@ -31,11 +31,11 @@ const faq = [
   },
   {
     question: 'Dlaczego obecność tlenu i metanu jest tak istotna?',
-    answer: 'Tlen i metan reagują ze sobą chemicznie. Ich jednoczesna obecność w znaczących stężeniach sugeruje, że atmosfera znajduje się w stanie nierównowagi chemicznej – jest to znacznie silniejszy sygnał potencjalnego życia niż obecność któregokolwiek z tych gazów w izolacji.',
+    answer: 'Tlen i metan reagują ze sobą chemicznie. Ich jednoczesna obecność w znaczących stężeniach sugeruje, że atmosfera znajduje się w stanie nierównowagi chemicznej, jest to znacznie silniejszy sygnał potencjalnego życia niż obecność któregokolwiek z tych gazów w izolacji.',
   },
   {
     question: 'Czy tlen może dawać wynik fałszywie pozytywny?',
-    answer: 'Tak. Tlen może gromadzić się w atmosferze bez udziału życia – np. w wyniku utraty wody (fotoliza), wulkanizmu czy nietypowego promieniowania UV gwiazdy. Dlatego narzędzie to raportuje ryzyko błędnej interpretacji, zamiast traktować tlen jako dowód ostateczny.',
+    answer: 'Tak. Tlen może gromadzić się w atmosferze bez udziału życia, np. w wyniku utraty wody (fotoliza), wulkanizmu czy nietypowego promieniowania UV gwiazdy. Dlatego narzędzie to raportuje ryzyko błędnej interpretacji, zamiast traktować tlen jako dowód ostateczny.',
   },
   {
     question: 'Dlaczego ozon jest traktowany oddzielnie od tlenu?',
@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Synteza danych w czasie rzeczywistym',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Dopasuj znaczniki widmowe, aby ocenić skład atmosfery.',
     verdictWeak: 'Widmo jest słabe: dane nie wspierają interpretacji wskazującej na życie.',
     verdictPromising: 'Widmo jest obiecujące: wiele znaczników biosygnatur częściowo się pokrywa.',
@@ -103,7 +103,7 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Podczas tranzytu planety, część światła gwiazdy przechodzi przez jej atmosferę, gdzie cząsteczki pochłaniają konkretne długości fal. Pozostawia to "ślady" (absorpcje) w widmie. Astronomowie porównują te dane z wzorcami laboratoryjnymi, aby zidentyfikować skład gazowy, przy czym analizę utrudniają chmury, aerozole, temperatura i szum instrumentów.',
     },
-    { type: 'title', text: 'Tlen, metan i ozon – synergia sygnałów', level: 3 },
+    { type: 'title', text: 'Tlen, metan i ozon, synergia sygnałów', level: 3 },
     {
       type: 'list',
       items: [

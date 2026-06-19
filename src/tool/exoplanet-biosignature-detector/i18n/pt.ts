@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Síntese de dados em tempo real',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Alinhe os marcadores espetrais para avaliar a evidência atmosférica.',
     verdictWeak: 'O espectro é fraco: os dados não suportam uma interpretação favorável à vida.',
     verdictPromising: 'O espectro é promissor: vários marcadores de biossinaturas apresentam alinhamentos parciais.',
@@ -103,7 +103,7 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Durante um trânsito planetário, uma fração da luz estelar passa pela atmosfera do planeta, sendo absorvida por moléculas a comprimentos de onda específicos. Isto cria "marcas" no espectro medido. Ao comparar estas marcas com dados laboratoriais, os astrónomos inferem a composição atmosférica, embora fatores como nuvens, névoa e ruído instrumental tornem a análise um processo complexo.',
     },
-    { type: 'title', text: 'Oxigénio, metano e ozono – a sinergia dos sinais', level: 3 },
+    { type: 'title', text: 'Oxigénio, metano e ozono, a sinergia dos sinais', level: 3 },
     {
       type: 'list',
       items: [

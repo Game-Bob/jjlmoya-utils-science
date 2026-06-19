@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'exoplanet-biosignatur-detektor';
-const title = 'Exoplanet-biosignaturdetektor';
+const title = 'Exoplanet biosignaturdetektor';
 const description = 'Justera absorptionslinjer för syre, metan och ozon i ett simulerat transmissionsspektrum från en exoplanet. Utvärdera biologisk beboelighet, möjlig kontaminering från teknosignaturer och risken för falska positiva resultat baserat på spektrala bevis.';
 
 const howTo = [
@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Datasyntes i realtid',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Justera de spektrala markörerna för att utvärdera atmosfärens sammansättning.',
     verdictWeak: 'Spektrumet är svagt: uppgifterna stöder ännu inte en livsvänlig tolkning.',
     verdictPromising: 'Spektrumet är lovande: flera biosignaturmarkörer stämmer delvis överens.',
@@ -89,7 +89,7 @@ export const content: ToolLocaleContent = {
     verdictAmbiguous: 'Signalen är intressant men tvetydig: hög risk för stellara eller atmosfäriska felkällor.',
   },
   seo: [
-    { type: 'title', text: 'Exoplanet-biosignaturdetektor', level: 2 },
+    { type: 'title', text: 'Exoplanet biosignaturdetektor', level: 2 },
     {
       type: 'paragraph',
       html: 'Exoplanet-biosignaturdetektorn är en interaktiv spektroskopisimulator för att utforska hur livsrelaterade gaser kan manifesteras i ljus som filtreras genom en avlägsen atmosfär. Verktyget kräver att du justerar absorptionslinjer för syre, metan och ozon, och väger resultatet mot brus, vattenånga, koldioxid och värdstjärnans egenskaper.',
@@ -103,7 +103,7 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Under en planetpassage filtreras en liten del av stjärnans ljus genom planetens atmosfär, där molekyler absorberar specifika våglängder. Detta lämnar "avtryck" i det uppmätta spektrumet. Astronomer jämför dessa avtryck med laboratoriedata för att identifiera gaser, trots störningar från moln, temperatur och instrumentbrus.',
     },
-    { type: 'title', text: 'Syre, metan och ozon – en synergi av signaler', level: 3 },
+    { type: 'title', text: 'Syre, metan och ozon, en synergi av signaler', level: 3 },
     {
       type: 'list',
       items: [

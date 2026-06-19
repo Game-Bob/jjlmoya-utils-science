@@ -35,7 +35,7 @@ const faq = [
   },
   {
     question: 'L\'oxygène peut-il constituer un faux positif ?',
-    answer: 'Absolument. L\'oxygène peut être généré par des processus abiotiques comme la perte d\'eau, la photolyse, des échanges volcaniques ou des environnements stellaires à fort rayonnement UV. C’est pourquoi l’outil évalue le risque de faux positifs plutôt que de considérer l’oxygène comme une preuve définitive.',
+    answer: 'Absolument. L\'oxygène peut être généré par des processus abiotiques comme la perte d\'eau, la photolyse, des échanges volcaniques ou des environnements stellaires à fort rayonnement UV. C\'est pourquoi l\'outil évalue le risque de faux positifs plutôt que de considérer l\'oxygène comme une preuve définitive.',
   },
   {
     question: 'Pourquoi distinguer l\'ozone de l\'oxygène ?',
@@ -43,11 +43,11 @@ const faq = [
   },
   {
     question: 'Que représente l\'indice technologique ?',
-    answer: 'Il s’agit d’un score d’alerte spéculatif signalant des cas où le spectre est si énergétique, bruité ou chimiquement atypique qu’une origine artificielle ne peut être catégoriquement exclue. Ce n’est pas une preuve de détection.',
+    answer: 'Il s\'agit d\'un score d\'alerte spéculatif signalant des cas où le spectre est si énergétique, bruité ou chimiquement atypique qu\'une origine artificielle ne peut être catégoriquement exclue. Ce n\'est pas une preuve de détection.',
   },
   {
     question: 'S\'agit-il d\'un modèle réel de récupération de données ?',
-    answer: 'Non. Il s’agit d’un simulateur pédagogique traduisant les concepts clés de la spectroscopie en un modèle de notation interactif. Les modèles scientifiques réels reposent sur le transfert radiatif complexe, la correction des contaminations stellaires, la modélisation des nuages et l\'inférence bayésienne.',
+    answer: 'Non. Il s\'agit d\'un simulateur pédagogique traduisant les concepts clés de la spectroscopie en un modèle de notation interactif. Les modèles scientifiques réels reposent sur le transfert radiatif complexe, la correction des contaminations stellaires, la modélisation des nuages et l\'inférence bayésienne.',
   },
 ];
 
@@ -81,12 +81,12 @@ export const content: ToolLocaleContent = {
     dataLive: 'Synthèse de données en temps réel',
     percentUnit: '{value} %',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Alignez les marqueurs spectraux pour évaluer les indices atmosphériques.',
-    verdictWeak: 'Le spectre est faible : les raies ne justifient pas encore une interprétation biologique.',
-    verdictPromising: 'Le spectre est prometteur : plusieurs marqueurs de biosignature sont partiellement alignés.',
-    verdictStrong: 'Le spectre est robuste : l\'oxygène, le méthane et l\'ozone forment un signal cohérent de déséquilibre.',
-    verdictAmbiguous: 'Le signal est intéressant mais ambigu : les risques de faux positifs stellaires ou atmosphériques restent élevés.',
+    verdictWeak: 'Le spectre est faible: les raies ne justifient pas encore une interprétation biologique.',
+    verdictPromising: 'Le spectre est prometteur: plusieurs marqueurs de biosignature sont partiellement alignés.',
+    verdictStrong: 'Le spectre est robuste: l\'oxygène, le méthane et l\'ozone forment un signal cohérent de déséquilibre.',
+    verdictAmbiguous: 'Le signal est intéressant mais ambigu: les risques de faux positifs stellaires ou atmosphériques restent élevés.',
   },
   seo: [
     {
@@ -100,7 +100,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'C’est là le défi majeur de l’exobiologie : l\'oxygène, le méthane ou l\'ozone sont autant d\'indices fascinants, mais aucun ne suffit à lui seul comme preuve. Les découvertes les plus convaincantes combinent plusieurs gaz, un contexte physique rigoureux et une élimination soigneuse des causes non biologiques. Le simulateur rend ces analyses accessibles au travers d\'une interface de type laboratoire.',
+      html: 'C\'est là le défi majeur de l\'exobiologie: l\'oxygène, le méthane ou l\'ozone sont autant d\'indices fascinants, mais aucun ne suffit à lui seul comme preuve. Les découvertes les plus convaincantes combinent plusieurs gaz, un contexte physique rigoureux et une élimination soigneuse des causes non biologiques. Le simulateur rend ces analyses accessibles au travers d\'une interface de type laboratoire.',
     },
     {
       type: 'title',
@@ -113,7 +113,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Oxygène, méthane et ozone : un signal combiné',
+      text: 'Oxygène, méthane et ozone: un signal combiné',
       level: 3,
     },
     {
@@ -151,11 +151,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'L\'indice biologique privilégie le déséquilibre chimique (O2 + CH4), tout en intégrant l\'ozone et l\'eau. L\'indice technologique reste volontairement spéculatif : il signale des atmosphères si anormales, énergétiques ou bruyantes que des pollutions artificielles ou des modifications délibérées doivent être envisagées avant de confirmer une origine biologique.',
+      html: 'L\'indice biologique privilégie le déséquilibre chimique (O2 + CH4), tout en intégrant l\'ozone et l\'eau. L\'indice technologique reste volontairement spéculatif: il signale des atmosphères si anormales, énergétiques ou bruyantes que des pollutions artificielles ou des modifications délibérées doivent être envisagées avant de confirmer une origine biologique.',
     },
     {
       type: 'paragraph',
-      html: 'Utilisez cet outil comme une aide au raisonnement critique. Une évaluation scientifique réelle compare de nombreux modèles, intègre les spectres stellaires, corrige les biais instrumentaux et calcule rigoureusement les incertitudes. La valeur pédagogique réside dans cette rigueur : aligner les preuves, vérifier le contexte et rester vigilant face aux faux positifs.',
+      html: 'Utilisez cet outil comme une aide au raisonnement critique. Une évaluation scientifique réelle compare de nombreux modèles, intègre les spectres stellaires, corrige les biais instrumentaux et calcule rigoureusement les incertitudes. La valeur pédagogique réside dans cette rigueur: aligner les preuves, vérifier le contexte et rester vigilant face aux faux positifs.',
     },
   ],
   faq,

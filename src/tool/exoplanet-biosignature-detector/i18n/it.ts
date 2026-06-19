@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Sintesi dati in tempo reale',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Allinea i marcatori spettrali per valutare gli indici atmosferici.',
     verdictWeak: 'Lo spettro è debole: le righe non giustificano ancora un\'interpretazione biologica.',
     verdictPromising: 'Lo spettro è promettente: molteplici marcatori di biosegnali sono parzialmente allineati.',

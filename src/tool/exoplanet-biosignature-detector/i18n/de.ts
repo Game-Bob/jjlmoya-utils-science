@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'exoplaneten-biosignatur-detektor';
-const title = 'Exoplaneten-Biosignatur-Detektor';
+const title = 'Exoplaneten Biosignatur Detektor';
 const description = 'Richten Sie Absorptionslinien von Sauerstoff, Methan und Ozon in einem simulierten Transmissionsspektrum eines Exoplaneten aus. Bewerten Sie die biologische Habitabilität, mögliche Technosignatur-Kontamination sowie das Risiko falsch-positiver Befunde anhand spektraler Indikatoren.';
 
 const howTo = [
@@ -27,15 +27,15 @@ const howTo = [
 const faq = [
   {
     question: 'Was ist eine Biosignatur in der Exoplaneten-Spektroskopie?',
-    answer: 'Eine Biosignatur ist ein aus der Ferne nachweisbares Merkmal, das auf biologische Prozesse hindeuten könnte. In atmosphärischen Spektren zählen Sauerstoff, Ozon, Methan, Wasserdampf sowie Kombinationen von Gasen, die eigentlich chemisch miteinander reagieren sollten, zu den wichtigsten Kandidaten – sofern ein Prozess ihr Niveau in der Atmosphäre konstant hält.',
+    answer: 'Eine Biosignatur ist ein aus der Ferne nachweisbares Merkmal, das auf biologische Prozesse hindeuten könnte. In atmosphärischen Spektren zählen Sauerstoff, Ozon, Methan, Wasserdampf sowie Kombinationen von Gasen, die eigentlich chemisch miteinander reagieren sollten, zu den wichtigsten Kandidaten, sofern ein Prozess ihr Niveau in der Atmosphäre konstant hält.',
   },
   {
     question: 'Warum ist die Kombination aus Sauerstoff und Methan so bedeutsam?',
-    answer: 'Sauerstoff und Methan reagieren chemisch miteinander. Sind beide in nennenswerten Mengen vorhanden, deutet dies auf ein chemisches Ungleichgewicht hin – ein weitaus stärkerer Hinweis auf Leben als das Vorhandensein eines einzelnen Gases. Der Simulator gewichtet dieses Paar daher besonders stark.',
+    answer: 'Sauerstoff und Methan reagieren chemisch miteinander. Sind beide in nennenswerten Mengen vorhanden, deutet dies auf ein chemisches Ungleichgewicht hin, ein weitaus stärkerer Hinweis auf Leben als das Vorhandensein eines einzelnen Gases. Der Simulator gewichtet dieses Paar daher besonders stark.',
   },
   {
     question: 'Kann Sauerstoff ein falsch-positives Signal sein?',
-    answer: 'Ja. Sauerstoff kann auch abiotisch entstehen – etwa durch Wasserverlust, Photolyse, schwache vulkanische Senken oder ungewöhnliche stellare UV-Umgebungen. Deshalb bewertet das Tool das Risiko falsch-positiver Ergebnisse, anstatt Sauerstoff isoliert als Beweis für Leben zu werten.',
+    answer: 'Ja. Sauerstoff kann auch abiotisch entstehen, etwa durch Wasserverlust, Photolyse, schwache vulkanische Senken oder ungewöhnliche stellare UV-Umgebungen. Deshalb bewertet das Tool das Risiko falsch-positiver Ergebnisse, anstatt Sauerstoff isoliert als Beweis für Leben zu werten.',
   },
   {
     question: 'Warum wird Ozon getrennt von Sauerstoff aufgeführt?',
@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Datensynthese aktiv',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Richten Sie die Spektralmarker aus, um die atmosphärischen Hinweise zu bewerten.',
     verdictWeak: 'Das Spektrum ist schwach: Die Linien stützen noch keine lebensfreundliche Interpretation.',
     verdictPromising: 'Das Spektrum ist vielversprechend: Mehrere Biosignatur-Marker sind teilweise ausgerichtet.',
@@ -91,7 +91,7 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Exoplaneten-Biosignatur-Detektor',
+      text: 'Exoplaneten Biosignatur Detektor',
       level: 2,
     },
     {
@@ -100,7 +100,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Darin liegt die zentrale Schwierigkeit der Biosignatur-Forschung: Sauerstoff kann spannend sein, Methan kann spannend sein, Ozon kann spannend sein – doch keines ist für sich genommen ein Beweis. Die überzeugendsten Fälle kombinieren mehrere Gase, den physikalischen Kontext und eine sorgfältige Prüfung auf nicht-biologische Erklärungen. Der Simulator macht diese Abwägungen in einer kompakten, laborähnlichen Oberfläche sichtbar.',
+      html: 'Darin liegt die zentrale Schwierigkeit der Biosignatur-Forschung: Sauerstoff kann spannend sein, Methan kann spannend sein, Ozon kann spannend sein, doch keines ist für sich genommen ein Beweis. Die überzeugendsten Fälle kombinieren mehrere Gase, den physikalischen Kontext und eine sorgfältige Prüfung auf nicht-biologische Erklärungen. Der Simulator macht diese Abwägungen in einer kompakten, laborähnlichen Oberfläche sichtbar.',
     },
     {
       type: 'title',
@@ -109,7 +109,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Wenn ein Planet vor seinem Stern vorbeizieht, gelangt ein winziger Teil des Sternenlichts durch die Atmosphäre des Planeten, bevor es das Teleskop erreicht. Moleküle absorbieren bestimmte Wellenlängen und hinterlassen schmale oder breite Einbrüche im gemessenen Spektrum. Durch den Vergleich dieser Einbrüche mit Labormessungen können Astronomen ableiten, welche Gase vorhanden sein könnten – wenngleich Wolken, Dunst, Temperatur, Sternenflecken und instrumentelles Rauschen die Analyse erschweren.',
+      html: 'Wenn ein Planet vor seinem Stern vorbeizieht, gelangt ein winziger Teil des Sternenlichts durch die Atmosphäre des Planeten, bevor es das Teleskop erreicht. Moleküle absorbieren bestimmte Wellenlängen und hinterlassen schmale oder breite Einbrüche im gemessenen Spektrum. Durch den Vergleich dieser Einbrüche mit Labormessungen können Astronomen ableiten, welche Gase vorhanden sein könnten, wenngleich Wolken, Dunst, Temperatur, Sternenflecken und instrumentelles Rauschen die Analyse erschweren.',
     },
     {
       type: 'title',
@@ -140,7 +140,7 @@ export const content: ToolLocaleContent = {
       rows: [
         ['Nur O2', 'Mögliche sauerstoffreiche Atmosphäre', 'Kann abiotisch sein nach Wasserverlust oder ungewöhnlicher Photochemie'],
         ['Nur CH4', 'Mögliche reduzierende Atmosphäre oder aktive Geologie', 'Methan allein ist kein starker Lebenshinweis'],
-        ['O2 plus CH4', 'Chemisches Ungleichgewicht – nähere Untersuchung nötig', 'Erfordert robustes Retrieval und Kontaminationsprüfung'],
+        ['O2 plus CH4', 'Chemisches Ungleichgewicht, nähere Untersuchung nötig', 'Erfordert robustes Retrieval und Kontaminationsprüfung'],
         ['O2 plus O3 plus Wasser', 'Kohärentere erdähnliche Umgebung', 'Wolken und stellare Aktivität bleiben relevant'],
       ],
     },

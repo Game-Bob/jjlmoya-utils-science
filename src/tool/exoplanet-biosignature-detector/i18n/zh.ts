@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: '数据实时合成',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '---',
+    pendingValue: '...',
     statusReady: '调整光谱标记以评估大气证据。',
     verdictWeak: '光谱较弱：当前谱线尚不足以支持宜居解读。',
     verdictPromising: '光谱有希望：多个生物信号标记已部分对齐。',
@@ -151,7 +151,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: '生物指数侧重化学非平衡性，尤其是氧气与甲烷的共存，然后叠加臭氧屏蔽和水环境因素。技术指数则有意保持探索性：它标记那些大气看起来过于活跃、嘈杂或化学特征异常的场景——在讲述简单的生命故事之前，应先考虑人为污染、有意为之的大气改造或观测假象。',
+      html: '生物指数侧重化学非平衡性，尤其是氧气与甲烷的共存，然后叠加臭氧屏蔽和水环境因素。技术指数则有意保持探索性：它标记那些大气看起来过于活跃、嘈杂或化学特征异常的场景；在讲述简单的生命故事之前，应先考虑人为污染、有意为之的大气改造或观测假象。',
     },
     {
       type: 'paragraph',

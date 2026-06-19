@@ -31,7 +31,7 @@ const faq = [
   },
   {
     question: 'Mengapa kombinasi oksigen dan metana sangat krusial?',
-    answer: 'Oksigen dan metana bersifat reaktif. Keberadaan keduanya secara bersamaan dalam jumlah signifikan menunjukkan adanya ketidaksetimbangan kimia—sebuah indikator kehidupan yang jauh lebih kuat daripada keberadaan salah satu gas saja. Simulator ini memberikan bobot lebih pada pasangan ini.',
+    answer: 'Oksigen dan metana bersifat reaktif. Keberadaan keduanya secara bersamaan dalam jumlah signifikan menunjukkan adanya ketidaksetimbangan kimia, sebuah indikator kehidupan yang jauh lebih kuat daripada keberadaan salah satu gas saja. Simulator ini memberikan bobot lebih pada pasangan ini.',
   },
   {
     question: 'Bisakah oksigen dianggap sebagai positif palsu?',
@@ -81,7 +81,7 @@ export const content: ToolLocaleContent = {
     dataLive: 'Sintesis data langsung',
     percentUnit: '{value}%',
     nanometerUnit: '{value} nm',
-    pendingValue: '—',
+    pendingValue: '...',
     statusReady: 'Sejajarkan penanda spektral untuk mengevaluasi bukti atmosfer.',
     verdictWeak: 'Spektrum lemah: garis-garis belum mendukung interpretasi ramah kehidupan.',
     verdictPromising: 'Spektrum menjanjikan: beberapa penanda biosignature telah sejajar sebagian.',
