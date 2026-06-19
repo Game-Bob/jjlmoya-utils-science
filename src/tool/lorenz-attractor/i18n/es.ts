@@ -23,23 +23,23 @@ const howTo = [
 
 const faq = [
   {
-    "question": "Que es el Atractor de Lorenz?",
+    "question": "¿Qué es el Atractor de Lorenz?",
     "answer": "El atractor de Lorenz es un conjunto de soluciones caoticas para el sistema de Lorenz, un sistema de tres ecuaciones diferenciales acopladas de primer orden."
   },
   {
-    "question": "Que es el Efecto Mariposa?",
+    "question": "¿Qué es el Efecto Mariposa?",
     "answer": "Es la dependencia sensible a las condiciones iniciales en un sistema no lineal, donde una pequena variacion inicial provoca grandes divergencias a largo plazo."
   },
   {
-    "question": "Que representan Sigma, Rho y Beta?",
+    "question": "¿Qué representan Sigma, Rho y Beta?",
     "answer": "Sigma es el numero de Prandtl, Rho es el numero de Rayleigh y Beta es la relacion de aspecto geometrico del sistema."
   },
   {
-    "question": "Por que la forma del atractor parece una mariposa?",
+    "question": "¿Por qué la forma del atractor parece una mariposa?",
     "answer": "La iconica forma de alas dobles de mariposa surge porque el sistema tiene dos puntos de equilibrio inestables. La trayectoria orbita alrededor de un ala y luego transita de forma impredecible para orbitar la otra, creando la estructura distintiva en el espacio de fases tridimensional."
   },
   {
-    "question": "Es el Atractor de Lorenz verdaderamente aleatorio?",
+    "question": "¿Es el Atractor de Lorenz verdaderamente aleatorio?",
     "answer": "No. El sistema de Lorenz es completamente deterministico, lo que significa que su estado futuro esta totalmente definido por su estado actual y sus ecuaciones. Sin embargo, como es caotico, es completamente impredecible a largo plazo sin una precision infinita de las condiciones iniciales."
   }
 ];

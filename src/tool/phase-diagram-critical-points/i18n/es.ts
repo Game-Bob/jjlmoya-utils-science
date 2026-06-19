@@ -26,19 +26,19 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Que es un diagrama de fases?',
+    question: '¿Qué es un diagrama de fases?',
     answer: 'Un diagrama de fases muestra que estado de la materia es estable en diferentes combinaciones de temperatura y presion. Las lineas fronteriza marcan condiciones donde dos fases pueden coexistir en equilibrio.',
   },
   {
-    question: 'Que sucede en el punto critico?',
+    question: '¿Qué sucede en el punto critico?',
     answer: 'En el punto critico, el limite vapor-liquido termina. Por encima de la temperatura y presion criticas, el material se convierte en un fluido supercritico y no existe una distincion nitida entre liquido y gas.',
   },
   {
-    question: 'Por que el agua tiene una linea de fusion diferente?',
+    question: '¿Por qué el agua tiene una linea de fusion diferente?',
     answer: 'El agua es inusual porque el hielo es menos denso que el agua liquida cerca del punto de fusion. El aumento de presion puede favorecer la fase liquida mas densa, por lo que el limite solido-liquido tiene una pendiente diferente a la de muchas sustancias.',
   },
   {
-    question: 'Son las curvas trazadas exactas de laboratorio?',
+    question: '¿Son las curvas trazadas exactas de laboratorio?',
     answer: 'No. La herramienta utiliza curvas simplificadas ancladas a valores publicados de punto triple y punto critico. Esta disenada para el aprendizaje conceptual, no para ingenieria de procesos o calculos de seguridad.',
   },
 ];

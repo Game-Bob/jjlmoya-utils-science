@@ -23,6 +23,7 @@ export { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-sim
 export { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
 export { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
 export { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
+export { epidemicSirSimulator } from './tool/epidemic-sir-simulator/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -48,4 +49,5 @@ import { globalAlbedoSnowballSimulator } from './tool/global-albedo-snowball-sim
 import { conwayLifeRuleLab } from './tool/conway-life-rule-lab/entry';
 import { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-finder/entry';
 import { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab];
+import { epidemicSirSimulator } from './tool/epidemic-sir-simulator/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab, epidemicSirSimulator];

@@ -2,21 +2,45 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sphere-energy-capture';
-const title = 'Dyson Sphere Energy Capture Simulator';
-const description = 'Compare Dyson collectors around different stars with estimates for power, radius, mass, and Kardashev coverage.';
+const title = '戴森球能量捕获模拟器';
+const description = '通过捕获功率、轨道半径、材料质量和卡尔达肖夫尺度覆盖率，比较戴森群、环形、刚性壳和静态镜云等巨型结构设计。';
 
 const howTo = [
-  { name: 'Choose a star', text: 'Select a representative star to set luminosity and mass.' },
-  { name: 'Choose a collector', text: 'Compare swarm, ring, shell, and statite cloud designs.' },
-  { name: 'Adjust controls', text: 'Set coverage, operating temperature, and target Kardashev rating.' },
-  { name: 'Review output', text: 'Read captured power, radius, mass, area, and target coverage.' },
+  {
+    name: '选择恒星类型',
+    text: '选择M型矮星、类太阳G型星、A型星、红巨星或蓝巨星，以设定光度和质量。',
+  },
+  {
+    name: '选择收集器结构',
+    text: '比较戴森群、赤道环、刚性壳和静态镜云的不同捕获假设。',
+  },
+  {
+    name: '调整覆盖率和温度',
+    text: '改变覆盖率和工作温度，观察捕获功率和安全轨道半径如何变化。',
+  },
+  {
+    name: '查看卡尔达肖夫目标',
+    text: '使用卡尔达肖夫目标滑块估算达到所选文明能量等级所需的恒星输出比例。',
+  },
 ];
 
 const faq = [
-  { question: 'What is a Dyson sphere?', answer: 'It is a family of concepts for collecting a large fraction of stellar luminosity.' },
-  { question: 'Why include several structures?', answer: 'Different structures have different efficiency, mass, and stability assumptions.' },
-  { question: 'What does target coverage show?', answer: 'It estimates the percentage of stellar output required for a selected Kardashev rating.' },
-  { question: 'Is this a precise design tool?', answer: 'No. It is an educational calculator for first-order physical intuition.' },
+  {
+    question: '戴森群是什么？',
+    answer: '戴森群是围绕恒星运行的大量独立收集器的集合，通常比刚性壳更具可行性。',
+  },
+  {
+    question: '为什么轨道半径会变化？',
+    answer: '轨道半径由收集器的工作温度和恒星光度共同决定。温度越高的收集器可以在更近的轨道上运行。',
+  },
+  {
+    question: '卡尔达肖夫评级是什么意思？',
+    answer: '它将捕获的瓦特数转换为对数制的文明能量等级。',
+  },
+  {
+    question: '材料质量精确吗？',
+    answer: '不精确。这是基于面积、面密度和稳定性假设的教育性估算。',
+  },
 ];
 
 export const content: ToolLocaleContent = {
@@ -24,41 +48,41 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    visualization: 'Dyson collector visualization',
-    starType: 'Star type',
-    structureType: 'Structure',
-    coverage: 'Collector coverage',
-    operatingTemp: 'Operating temperature',
-    kardashevTarget: 'Kardashev target',
-    kardashevRating: 'Current rating',
-    capturedPower: 'Captured power',
-    optimalRadius: 'Optimal radius',
-    targetCoverage: 'Target coverage',
-    materialMass: 'Material mass',
-    captureMeter: 'Target capture progress',
-    statusReady: 'Adjust the system to estimate collector demand.',
-    statusUnderbuilt: 'Coverage is below the selected target.',
-    statusBalanced: 'Coverage is close to the selected target.',
-    statusExtreme: 'This configuration overshoots the target.',
-    orbitalPeriod: 'Orbital period',
-    collectorArea: 'Collector area',
-    mercuryMasses: '{value} Mercury masses',
-    kilograms: '{value} kg',
-    daysUnit: '{value} days',
-    starMDwarf: 'M dwarf',
-    starSun: 'Sun-like G star',
-    starA: 'A-type star',
-    starRedGiant: 'Red giant',
-    starBlueGiant: 'Blue giant',
-    structureSwarm: 'Dyson swarm',
-    structureRing: 'Equatorial ring',
-    structureShell: 'Rigid shell',
-    structureStatite: 'Statite mirror cloud',
+    visualization: '戴森收集器可视化',
+    starType: '恒星类型',
+    structureType: '结构',
+    coverage: '收集器覆盖率',
+    operatingTemp: '工作温度',
+    kardashevTarget: '卡尔达肖夫目标',
+    kardashevRating: '当前评级',
+    capturedPower: '捕获功率',
+    optimalRadius: '最优半径',
+    targetCoverage: '目标覆盖率',
+    materialMass: '材料质量',
+    captureMeter: '目标捕获进度',
+    statusReady: '调整系统以估算收集器需求。',
+    statusUnderbuilt: '覆盖率低于所选目标。',
+    statusBalanced: '覆盖率接近所选目标。',
+    statusExtreme: '此配置大幅超过目标。',
+    orbitalPeriod: '轨道周期',
+    collectorArea: '收集器面积',
+    mercuryMasses: '{value} 水星质量',
+    kilograms: '{value} 千克',
+    daysUnit: '{value} 天',
+    starMDwarf: 'M型矮星',
+    starSun: '类太阳G型星',
+    starA: 'A型星',
+    starRedGiant: '红巨星',
+    starBlueGiant: '蓝巨星',
+    structureSwarm: '戴森群',
+    structureRing: '赤道环',
+    structureShell: '刚性壳',
+    structureStatite: '静态镜云',
   },
   seo: [
-    { type: 'title', text: 'Dyson Sphere Energy Capture Simulator', level: 2 },
-    { type: 'paragraph', html: 'This tool estimates power and material requirements for several Dyson megastructure concepts.' },
-    { type: 'paragraph', html: 'It is useful for learning how stellar luminosity, temperature limits, and coverage affect large-scale energy capture.' },
+    { type: 'title', text: '戴森球能量捕获模拟器', level: 2 },
+    { type: 'paragraph', html: '本模拟器使用一阶恒星能量计算，比较戴森群、环形、壳体和静态云等概念。' },
+    { type: 'paragraph', html: '估算捕获功率、热轨道半径、收集器面积、轨道周期、材料质量以及达到卡尔达肖夫目标所需的覆盖率。' },
   ],
   faq,
   bibliography,

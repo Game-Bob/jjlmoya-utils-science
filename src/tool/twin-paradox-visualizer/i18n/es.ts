@@ -22,23 +22,23 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Que es la paradoja de los gemelos en la relatividad especial?',
+    question: '¿Qué es la paradoja de los gemelos en la relatividad especial?',
     answer: 'La paradoja de los gemelos es un experimento mental en el que un gemelo viaja por el espacio a velocidad relativista y luego regresa a la Tierra mas joven que el gemelo que se quedo en casa. Parece paradójico porque inicialmente cada gemelo puede describir al otro como en movimiento, pero el gemelo viajero cambia de sistema inercial al dar la vuelta, por lo que los dos caminos a traves del espacio-tiempo no son simetricos.',
   },
   {
-    question: 'Por que el gemelo viajero envejece menos?',
+    question: '¿Por qué el gemelo viajero envejece menos?',
     answer: 'En la relatividad especial, el tiempo propio transcurrido depende del camino a traves del espacio-tiempo. Un reloj que se mueve a velocidad v con respecto a un observador inercial late mas lentamente segun el factor de Lorentz gamma. El viajero acumula menos tiempo propio a lo largo de las etapas de ida y vuelta que el gemelo que se queda en la Tierra.',
   },
   {
-    question: 'La aceleracion causa la diferencia de edad?',
+    question: '¿La aceleracion causa la diferencia de edad?',
     answer: 'La aceleracion es importante porque permite al viajero invertir la direccion y reunirse con la Tierra, pero la diferencia de edad se calcula a partir de la trayectoria completa en el espacio-tiempo, no solo de la aceleracion. Incluso si el giro fuera muy breve, el camino del viajero seguiria conteniendo menos tiempo propio que el camino terrestre.',
   },
   {
-    question: 'Que significa el factor de Lorentz gamma?',
+    question: '¿Qué significa el factor de Lorentz gamma?',
     answer: 'El factor de Lorentz gamma es igual a 1 dividido por la raiz cuadrada de 1 menos v al cuadrado sobre c al cuadrado. Indica que tan fuertemente difieren los intervalos de tiempo, las longitudes y las energias entre sistemas inerciales. A velocidades cotidianas gamma es casi 1, pero cerca de la velocidad de la luz aumenta drasticamente.',
   },
   {
-    question: 'Se puede medir este efecto en la vida real?',
+    question: '¿Se puede medir este efecto en la vida real?',
     answer: 'Si. La dilatacion del tiempo se ha medido con particulas rapidas, relojes atomicos transportados en aviones, sistemas de sincronizacion satelital y aceleradores de particulas. La paradoja de los gemelos usa una historia de viaje extrema, pero el efecto de reloj subyacente es una parte rutinariamente verificada de la fisica moderna.',
   },
 ];

@@ -4,7 +4,7 @@ export const fermiParadoxFilterLab: ScienceToolEntry = {
   id: 'fermi-paradox-filter-lab',
   icons: {
     bg: 'mdi:telescope',
-    fg: 'mdi:galaxy',
+    fg: 'mdi:alien',
   },
   i18n: {
     de: () => import('./i18n/de').then((m) => m.content),

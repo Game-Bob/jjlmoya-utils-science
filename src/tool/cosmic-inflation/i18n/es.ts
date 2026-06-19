@@ -22,23 +22,23 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Que es la inflacion cosmica y por que ocurrio?',
+    question: '¿Qué es la inflacion cosmica y por que ocurrio?',
     answer: 'La inflacion cosmica es una teoria que postula una expansion ultrarrapida y exponencial del espacio en las fracciones de segundo iniciales del universo, concretamente alrededor de 10^-36 segundos despues del Big Bang. Ocurrio debido a que un campo escalar teorico, denominado inflaton, se encontraba en un estado de alta densidad de energia de falso vacio, lo que genero una presion negativa y una fuerza de gravedad repulsiva que estiro el tejido del espacio-tiempo.',
   },
   {
-    question: 'Que significa el numero de e-folds (e-doblamientos)?',
+    question: '¿Qué significa el numero de e-folds (e-doblamientos)?',
     answer: 'El numero de e-folds mide la duracion de la fase de expansion exponencial. Un e-fold representa el tiempo en el cual el tamano del universo se multiplica por el numero de Euler (aproximadamente 2.718). Si el universo experimenta N e-folds, su factor de escala se incrementa por un factor de e^N. Los modelos cosmologicos estandar exigen al menos 50 a 60 e-folds para solucionar adecuadamente los problemas de planitud y del horizonte.',
   },
   {
-    question: 'Como soluciona la inflacion el problema del horizonte?',
+    question: '¿Cómo soluciona la inflacion el problema del horizonte?',
     answer: 'El problema del horizonte plantea por que regiones del universo extremadamente distantes tienen temperaturas de radiacion de fondo de microondas casi identicas, a pesar de que la velocidad de la luz no habria permitido que interactuaran para equilibrarse. La inflacion resuelve esto demostrando que, antes de la expansion exponencial, todo el universo observable era una minuscula region en equilibrio termico causalmente conectada, la cual fue estirada instantaneamente mas alla del horizonte visual.',
   },
   {
-    question: 'Que es el problema de la planitud y como se resuelve?',
+    question: '¿Qué es el problema de la planitud y como se resuelve?',
     answer: 'La densidad de energia del universo actual esta extremadamente cerca de la densidad critica, lo que significa que el espacio es plano con un margen de error minimo. Sin inflacion, cualquier desviacion inicial de la planitud habria crecido exponencialmente con el tiempo, requiriendo un ajuste fino imposible en el Big Bang. La inflacion estira la curvatura espacial de forma tan violenta que cualquier curvatura inicial queda diluida, de la misma forma en que la superficie de una esfera gigante parece perfectamente plana a nivel local.',
   },
   {
-    question: 'Que es el proceso de recalentamiento o reheating?',
+    question: '¿Qué es el proceso de recalentamiento o reheating?',
     answer: 'El recalentamiento es la transicion termica que marca el final de la inflacion. Durante la inflacion, el universo se enfria a temperaturas cercanas al cero absoluto debido a la expansion exponencial del volumen. Cuando el campo del inflaton decae al minimo de su potencial, su energia remanente se vierte en el espacio en forma de particulas del Modelo Estandar a traves de interacciones cuánticas, llenando el cosmos con un plasma caliente y denso que inicia la fase tradicional del Big Bang.',
   },
 ];

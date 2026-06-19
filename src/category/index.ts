@@ -23,10 +23,11 @@ import { globalAlbedoSnowballSimulator } from '../tool/global-albedo-snowball-si
 import { conwayLifeRuleLab } from '../tool/conway-life-rule-lab/index';
 import { crystalLatticeStructureFinder } from '../tool/crystal-lattice-structure-finder/index';
 import { fermiParadoxFilterLab } from '../tool/fermi-paradox-filter-lab/index';
+import { epidemicSirSimulator } from '../tool/epidemic-sir-simulator/index';
 
 export const scienceCategory: ScienceCategoryEntry = {
   icon: 'mdi:flask',
-  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab],
+  tools: [colonyCounter, asteroidImpact, microwaveDetector, simulationProbability, cellularRenewal, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab, epidemicSirSimulator],
   i18n: {
     es: () => import('./i18n/es').then((m) => m.content),
     en: () => import('./i18n/en').then((m) => m.content),

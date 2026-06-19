@@ -2,44 +2,44 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'kalkulyator-fraktala-mandelbrota';
-const title = 'Kalkulyator Fraktala Mandelbrota & Explorer Samopodobiya';
-const description = 'Issleduyte mnozhestvo Mandelbrota, priblizhayte samopodobnye fraktalnye granicy i sravnivayte glubinu iteracii, cvvetovoj kontrast i koordinaty kompleksnoj ploskosti.';
+const title = 'Калькулятор фрактала Мандельброта и исследователь самоподобия';
+const description = 'Исследуйте множество Мандельброта, приближайте самоподобные фрактальные границы и сравнивайте глубину итерации, цветовой контраст и координаты комплексной плоскости.';
 
 const howTo = [
   {
-    name: 'Vyberite oblast mnozhestva Mandelbrota',
-    text: 'Nachnite s polnogo mnozhestva ili perejdite pryamo k oblasti s vysokoj detalizaciej, takoj kak Dolina Morskogo Konka ili spiralnyj minibrot.',
+    name: 'Выберите область множества Мандельброта',
+    text: 'Начните с полного множества или перейдите прямо к области с высокой детализацией, такой как Долина Морского Конька или спиральный минибrot.',
   },
   {
-    name: 'Priblizhayte, nazhimaya na izobrazhenie',
-    text: 'Nazhmite na lyubuyu tochku na kanvase, aby perecentrirovat kompleksnuyu ploskost i uvelichit fraktal vokrug etoj koordinaty.',
+    name: 'Приближайте, нажимая на изображение',
+    text: 'Нажмите на любую точку на канвасе, чтобы перецентрировать комплексную плоскость и увеличить фрактал вокруг этой координаты.',
   },
   {
-    name: 'Nastroyte glubinu iteracii i cvvetovoj kontrast',
-    text: 'Uvelichte byudzhet iteracij, chtoby raskryt bolee melkuyu strukturu granicy, zatem otreguliruyte kontrast i palitru, chtoby polosy vremeni pobega bylo legche chitat.',
+    name: 'Настройте глубину итерации и цветовой контраст',
+    text: 'Увеличьте бюджет итераций, чтобы раскрыть более мелкую структуру границы, затем отрегулируйте контраст и палитру, чтобы полосы времени побега было легче читать.',
   },
 ];
 
 const faq = [
   {
-    question: 'Cto pokazyvaet kalkulyator mnozhestva Mandelbrota?',
-    answer: 'On pokazyvaet, kakie kompleksnye cisla c sohranyayut rekurentnost z(n+1) = z(n)^2 + c ogranichennoj pri nacale s z = 0. Tochki, kotorye nikogda ne ubegayut v ramkah vybrannogo byudzheta iteracij, okrasivayutsya kak cleny mnozhestva, v to vremya kak vnesnie tochki okrasivayutsya v zavisimosti ot togo, kak bystro ih orbita ubegaet.',
+    question: 'Что показывает калькулятор множества Мандельброта?',
+    answer: 'Он показывает, какие комплексные числа c сохраняют рекуррентность z(n+1) = z(n)^2 + c ограниченной при начале с z = 0. Точки, которые никогда не убегают в рамках выбранного бюджета итераций, окрашиваются как члены множества, в то время как внешние точки окрашиваются в зависимости от того, как быстро их орбита убегает.',
   },
   {
-    question: 'Pochemu granica mnozhestva Mandelbrota soderzit stolko detalej?',
-    answer: 'Granica otdelyaet stabilnye i ubegayusie orbity, i nebolsie izmeneniya koordinat vblizi etoj granicy mogut polnostyu izmenit dolgosrocnoe povedenie. Eta chuvstvitelnost sozdaet vlozennye bulb, spirali, filamety i miniatyurnye kopii, kotorye poyavlyayutsya na mnogih urovnyah uveliceniya.',
+    question: 'Почему граница множества Мандельброта содержит столько деталей?',
+    answer: 'Граница отделяет стабильные и убегающие орбиты, и небольшие изменения координат вблизи этой границы могут полностью изменить долгосрочное поведение. Эта чувствительность создаёт вложенные выпуклости, спирали, нити и миниатюрные копии, которые появляются на многих уровнях увеличения.',
   },
   {
-    question: 'Yavlyaetsya li mnozhestvo Mandelbrota poistine samopodobnym?',
-    answer: 'Ono ne yavlyaetsya idealno samopodobnym v tom ze strogom smysle, cto treugolnik Serpinskogo, no ono bogato kvazi-samopodobno. Malenkie kopii vsego mnozhestva poyavlyayutsya po vsej ploskosti, casto iskazhennye i soedinennye sloznymi razvetvlyayusimisya strukturami.',
+    question: 'Является ли множество Мандельброта поистине самоподобным?',
+    answer: 'Оно не является идеально самоподобным в том же строгом смысле, что треугольник Серпинского, но оно богато квази-самоподобно. Маленькие копии всего множества появляются по всей плоскости, часто искажённые и соединённые сложными разветвляющимися структурами.',
   },
   {
-    question: 'Cto kontroliruet kolicestvo iteracij?',
-    answer: 'Kolicestvo iteracij kontroliruet, kak dolgo kalkulyator testiruet kazduyu tochku, precem resit, cto ona, veroyatno, prinadlezt mnozhestvu. Bolee vysokie znaceniya obnaruzivayut bolee glubokie filamety i bolee cistye minibroty, no trebuyut bolse vycislenij na piksel.',
+    question: 'Что контролирует количество итераций?',
+    answer: 'Количество итераций контролирует, как долго калькулятор тестирует каждую точку, прежде чем решить, что она, вероятно, принадлежит множеству. Более высокие значения обнаруживают более глубокие нити и более чистые минибroты, но требуют больше вычислений на пиксель.',
   },
   {
-    question: 'Pochemu cveta izmenyayutsya za predelami cernoj oblasti?',
-    answer: 'Vnesnie cveta osnovany na vremeni pobega: tocki, kotorye ubegayut bystro, polucayut drugie cveta, cem tocki, kotorye ostayutsya vblizi mnozhestva v tecenie mnogih iteracij. Plavnaya raskraska umensaet rezkie polosy i oblegcaet issledovanie geometrii blizlezasih orbit.',
+    question: 'Почему цвета изменяются за пределами чёрной области?',
+    answer: 'Внешние цвета основаны на времени побега: точки, которые убегают быстро, получают другие цвета, чем точки, которые остаются вблизи множества в течение многих итераций. Плавная раскраска уменьшает резкие полосы и облегчает исследование геометрии близлежащих орбит.',
   },
 ];
 
@@ -48,77 +48,59 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    title: 'Kalkulyator Fraktala Mandelbrota',
-    canvasLabel: 'Interaktivnyj kanvas mnozhestva Mandelbrota',
-    presetsLabel: 'Prednastrojki oblastej Mandelbrota',
-    presetFull: 'Polnoe Mnozhestvo',
-    presetSeahorse: 'Dolina Morskogo Konka',
-    presetSpiral: 'Spiralnyj Minibrot',
-    centerPoint: 'Centr',
-    magnification: 'Uvelicenie',
-    visibleWindow: 'Vidimoe okno',
-    renderBudget: 'Iteracii',
-    iterationsLabel: 'Glubina iteracii',
-    contrastLabel: 'Kontrast pobega',
-    colorLabel: 'Cvetovoe pole',
-    paletteEmber: 'Polosy zary',
-    paletteLagoon: 'Lagunnaya plazma',
-    paletteInk: 'Spektr cernil',
+    title: 'Калькулятор фрактала Мандельброта',
+    canvasLabel: 'Интерактивный канвас множества Мандельброта',
+    presetsLabel: 'Предустройки областей Мандельброта',
+    presetFull: 'Полное множество',
+    presetSeahorse: 'Долина морского конька',
+    presetSpiral: 'Спиральный миниброт',
+    centerPoint: 'Центр',
+    magnification: 'Увеличение',
+    visibleWindow: 'Видимое окно',
+    renderBudget: 'Итерации',
+    iterationsLabel: 'Глубина итерации',
+    contrastLabel: 'Контраст побега',
+    colorLabel: 'Цветовое поле',
+    paletteEmber: 'Полосы зари',
+    paletteLagoon: 'Лагунная плазма',
+    paletteInk: 'Спектр чернил',
   },
   seo: [
     {
       type: 'title',
-      text: 'Mandelbrot Set Calculator for Fractals, Escape Time, and Self-Similarity',
+      text: 'Калькулятор множества Мандельброта: фракталы, время побега и самоподобие',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Etot kalkulyator fraktala Mandelbrota otobrazact klassiceskoe mnozhestvo na kompleksnoj ploskosti, opredelennoe iteraciej <strong>z(n+1) = z(n)^2 + c</strong>. On prednaznacen dlya issledovaniya, a ne passivnogo prosmotra: kazdyj klik perecentriruet ploskost, kazdoe priblizenie otkryvaet mensie matematiceskie okrestnosti, a polzunok iteracij pozvolyaet vam resit, naskolko gluboko kalkulyator dolzen testirovat granicu, precem raskrasit tocku kak stabilnuyu ili ubegayusuyu.',
+      html: 'Этот калькулятор фрактала Мандельброта отображает классическое множество на комплексной плоскости, определённое итерацией <strong>z(n+1) = z(n)^2 + c</strong>. Он предназначен для исследования, а не пассивного просмотра: каждый клик перецентрирует плоскость, каждое приближение открывает меньшие математические окрестности, а ползунок итераций позволяет вам решить, насколько глубоко калькулятор должен тестировать границу, прежде чем раскрасить точку как стабильную или убегающую.',
     },
     {
       type: 'title',
-      text: 'How to Read the Mandelbrot Image',
+      text: 'Как читать изображение Мандельброта',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Termaya centralnaya forma otmeccaet tocki, ci orbity ostayutsya ogranicennymi v ramkah tekusego byudzeta iteracij. Cvetnaya vnesnyaya cast predstavlyaet soboj kartu vremeni pobega. Tocka, raskrasennaya blizko k mnozestvu, mozet vyderzat sotni iteracij, precem ee velicina prevysit radius pobega, v to vremya kak dalekaya tocka ubegaet pocti momentalno. Naibolee naucno interesnaya geometriya obycno nahoditsya ne vnutri zapolnennoj formy, a vdol granicy, gde ogranicennoe i neogranicennoe povedenie perepletayutsya.',
-    },
-    {
-      type: 'table',
-      headers: ['Upravlenie', 'Cto ono menyaet', 'Kogda uvelicit'],
-      rows: [
-        ['<strong>Glubina iteracii</strong>', 'Skolko sagi rekursii testiruetsya dlya kazdogo piksela.', 'Ispolzujte bolee vysokie znaceniya posle priblizeniya k tonkim filametam ili miniatyurnym kopiyam.'],
-        ['<strong>Kontrast pobega</strong>', 'Naskolko silno plavnye znaceniya pobega razdelyayutsya na vidimye polosy.', 'Povysajte ego, kogda izobrazenie vyglyadit ploskim; ponizajte, kogda cveta sliskom rezkie.'],
-        ['<strong>Palitra</strong>', 'Cvetovoe sopostavlenie, primenyaemoe k vnesnim tockam.', 'Perelikite palitry, chtoby obnaruzit struktury, kotorye mogut byt skryty odnim cvetovym polem.'],
-      ],
+      html: 'Тёмная центральная форма отмечает точки, чьи орбиты остаются ограниченными в рамках текущего бюджета итераций. Цветная внешняя часть представляет собой карту времени побега. Точка, раскрашенная близко к множеству, может выдержать сотни итераций, прежде чем её величина превысит радиус побега, в то время как далёкая точка убегает почти мгновенно. Наиболее научно интересная геометрия обычно находится не внутри заполненной формы, а вдоль границы, где ограниченное и неограниченное поведение переплетаются.',
     },
     {
       type: 'title',
-      text: 'Self-Similarity and Minibrots',
+      text: 'Самоподобие и минибroты',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Odna iz pricin, po kotoroj mnozestvo Mandelbrota tak izvestno, ego kvazi-samopodobie. Kogda vy priblizaetes k antennam, spiralyam i dolinam, vy neodnokratno stalkivaetes s malenkimi ostrovkami, napominayusimi Mandelbrota, casto nazyvaemymi minibrotami. Eti kopii ne prosto dekorativny. Ih raspolozenie otrazaet dinamiku kvadraticeskih otobrazenij, vklucaya periodiceskie bulby, bikifurkacionnye patterny i oblasti, gde orbity ostayutsya v lovuske v tecenie dlitelnyh periodov pered pobegom.',
+      html: 'Одна из причин, по которой множество Мандельброта так известно — его квази-самоподобие. Когда вы приближаетесь к антеннам, спиралям и долинам, вы неоднократно сталкиваетесь с маленькими островками, напоминающими Мандельброта, часто называемыми минибrotами. Эти копии не просто декоративны. Их расположение отражает динамику квадратичных отображений, включая периодические выпуклости, бифуркационные паттерны и области, где орбиты остаются в ловушке в течение длительных периодов перед побегом.',
     },
     {
       type: 'title',
-      text: 'Why Higher Iterations Matter at Deep Zoom',
+      text: 'Почему более высокие итерации важны при глубоком увеличении',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Na vide polnogo mnozestva umerennyj limit iteracij daet uznavaemoe izobrazenie. Odnako pri bolee glubokom priblizenii mnogie granicnye tocki zatracivayut gorazdo bolse vremeni, cto by obnaruzit, ubegayut li oni. Esli limit iteracij sliskom nizok, tonkie struktury mogut vyglyadet lozno tverdymi ili mutnymi. Povysenie kolicestva iteracij ulucsaet klassifikaciyu granicy i pozvolyaet kalkulyatoru bolee uverenno razresat uzkie usiki, spiralnye rukava i sputnikovye bulby.',
-    },
-    {
-      type: 'title',
-      text: 'Mathematical Meaning of the Complex Coordinates',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Pokazanie koordinat otobrazact tekusij centr vidovogo okna kak kompleksnoe cislo c = a + bi. Gorizontalnaya os eta deystvitelnaya cast, a vertikalnaya os mnimaya cast. Nazatie na kanvas vybiraet novuyu kompleksnuyu koordinatu, zatem uvelicivaet vidimoe okno vokrug nee. Eto delaet instrument poleznym dlya izuceniya togo, kak vizualnye oblasti fraktala sootvetsvuyut tocnym mestopolozieniyam na kompleksnoj ploskosti.',
+      html: 'На виде полного множества умеренный лимит итераций даёт узнаваемое изображение. Однако при более глубоком приближении многие граничные точки затрачивают гораздо больше времени, чтобы обнаружить, убегают ли они. Если лимит итераций слишком низок, тонкие структуры могут выглядеть ложно твёрдыми или мутными. Повышение количества итераций улучшает классификацию границы и позволяет калькулятору более уверенно разрешать узкие усики, спиральные рукава и спутниковые выпуклости.',
     },
   ],
   faq,

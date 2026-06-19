@@ -90,80 +90,120 @@ const { ui } = Astro.props;
 
   const formatCount = (value: number) => value.toLocaleString(currentLocale, { maximumFractionDigits: value < 10 ? 2 : 0 });
 
-  const drawChart = (series: ReturnType<typeof simulateFermiFilters>['series']) => {
-    if (!canvas || !context) return;
+  const chartFrame = () => ({
+    width: canvas?.width ?? 0,
+    height: canvas?.height ?? 0,
+    padX: 44,
+    padTop: 34,
+    padBottom: 44,
+  });
 
-    const width = canvas.width;
-    const height = canvas.height;
-    const padX = 44;
-    const padTop = 34;
-    const padBottom = 44;
-    const maxValue = Math.max(1, ...series.map((point) => point.detectable));
+  const chartY = (value: number, maxValue: number, frame: ReturnType<typeof chartFrame>) =>
+    frame.height - frame.padBottom - (value / maxValue) * (frame.height - frame.padTop - frame.padBottom);
+
+  const chartX = (index: number, count: number, frame: ReturnType<typeof chartFrame>) =>
+    frame.padX + (index / (count - 1)) * (frame.width - frame.padX * 2);
+
+  const chartStyles = () => {
     const styles = getComputedStyle(canvas);
-    const bg = styles.getPropertyValue('--fermi-bg').trim() || '#fbfaf4';
-    const grid = styles.getPropertyValue('--fermi-hairline').trim() || 'rgba(16, 20, 18, 0.18)';
-    const text = styles.getPropertyValue('--fermi-muted').trim() || '#5e6863';
-    const line = styles.getPropertyValue('--fermi-curve').trim() || '#101412';
-    const fill = styles.getPropertyValue('--fermi-fill').trim() || 'rgba(16, 20, 18, 0.055)';
-    const accent = styles.getPropertyValue('--fermi-accent').trim() || '#006f6f';
+    return {
+      bg: styles.getPropertyValue('--fermi-bg').trim() || '#fbfaf4',
+      grid: styles.getPropertyValue('--fermi-hairline').trim() || 'rgba(16, 20, 18, 0.18)',
+      text: styles.getPropertyValue('--fermi-muted').trim() || '#5e6863',
+      line: styles.getPropertyValue('--fermi-curve').trim() || '#101412',
+      fill: styles.getPropertyValue('--fermi-fill').trim() || 'rgba(16, 20, 18, 0.055)',
+      accent: styles.getPropertyValue('--fermi-accent').trim() || '#006f6f',
+    };
+  };
 
-    context.clearRect(0, 0, width, height);
-    context.fillStyle = bg;
-    context.fillRect(0, 0, width, height);
+  const drawChartBase = (frame: ReturnType<typeof chartFrame>, styles: ReturnType<typeof chartStyles>) => {
+    context.clearRect(0, 0, frame.width, frame.height);
+    context.fillStyle = styles.bg;
+    context.fillRect(0, 0, frame.width, frame.height);
 
-    context.strokeStyle = grid;
+    context.strokeStyle = styles.grid;
     context.lineWidth = 1;
     for (let i = 0; i < 5; i += 1) {
-      const y = padTop + ((height - padTop - padBottom) / 4) * i;
+      const y = frame.padTop + ((frame.height - frame.padTop - frame.padBottom) / 4) * i;
       context.beginPath();
-      context.moveTo(padX, y);
-      context.lineTo(width - padX, y);
+      context.moveTo(frame.padX, y);
+      context.lineTo(frame.width - frame.padX, y);
       context.stroke();
     }
+  };
 
+  const drawChartGates = (frame: ReturnType<typeof chartFrame>, styles: ReturnType<typeof chartStyles>) => {
     const gates = ['stars', 'planets', 'life', 'intelligence', 'technology', 'lifetime', 'filter', 'horizon'];
     gates.forEach((gate, index) => {
-      const x = padX + ((index + 0.5) / gates.length) * (width - padX * 2);
+      const x = frame.padX + ((index + 0.5) / gates.length) * (frame.width - frame.padX * 2);
       context.globalAlpha = gate === activeStep ? 0.7 : 0.24;
-      context.strokeStyle = gate === activeStep ? accent : grid;
+      context.strokeStyle = gate === activeStep ? styles.accent : styles.grid;
       context.beginPath();
-      context.moveTo(x, padTop);
-      context.lineTo(x, height - padBottom);
+      context.moveTo(x, frame.padTop);
+      context.lineTo(x, frame.height - frame.padBottom);
       context.stroke();
     });
     context.globalAlpha = 1;
+  };
 
-    const gradient = context.createLinearGradient(0, padTop, 0, height - padBottom);
-    gradient.addColorStop(0, fill);
+  const drawChartArea = (
+    series: ReturnType<typeof simulateFermiFilters>['series'],
+    maxValue: number,
+    frame: ReturnType<typeof chartFrame>,
+    styles: ReturnType<typeof chartStyles>
+  ) => {
+    const gradient = context.createLinearGradient(0, frame.padTop, 0, frame.height - frame.padBottom);
+    gradient.addColorStop(0, styles.fill);
     gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
 
     context.beginPath();
     series.forEach((point, index) => {
-      const x = padX + (index / (series.length - 1)) * (width - padX * 2);
-      const y = height - padBottom - (point.detectable / maxValue) * (height - padTop - padBottom);
+      const x = chartX(index, series.length, frame);
+      const y = chartY(point.detectable, maxValue, frame);
       if (index === 0) context.moveTo(x, y);
       else context.lineTo(x, y);
     });
-    context.lineTo(width - padX, height - padBottom);
-    context.lineTo(padX, height - padBottom);
+    context.lineTo(frame.width - frame.padX, frame.height - frame.padBottom);
+    context.lineTo(frame.padX, frame.height - frame.padBottom);
     context.closePath();
     context.fillStyle = gradient;
     context.fill();
+  };
 
+  const drawChartLine = (
+    series: ReturnType<typeof simulateFermiFilters>['series'],
+    maxValue: number,
+    frame: ReturnType<typeof chartFrame>,
+    styles: ReturnType<typeof chartStyles>
+  ) => {
     context.beginPath();
     series.forEach((point, index) => {
-      const x = padX + (index / (series.length - 1)) * (width - padX * 2);
-      const y = height - padBottom - (point.detectable / maxValue) * (height - padTop - padBottom);
+      const x = chartX(index, series.length, frame);
+      const y = chartY(point.detectable, maxValue, frame);
       if (index === 0) context.moveTo(x, y);
       else context.lineTo(x, y);
     });
-    context.strokeStyle = line;
+    context.strokeStyle = styles.line;
     context.lineWidth = 2;
     context.stroke();
+  };
 
-    context.fillStyle = text;
+  const drawChartLabel = (maxValue: number, frame: ReturnType<typeof chartFrame>, styles: ReturnType<typeof chartStyles>) => {
+    context.fillStyle = styles.text;
     context.font = '600 13px system-ui, sans-serif';
-    context.fillText(`${formatCount(maxValue)} ${maxLabel}`, padX, 22);
+    context.fillText(`${formatCount(maxValue)} ${maxLabel}`, frame.padX, 22);
+  };
+
+  const drawChart = (series: ReturnType<typeof simulateFermiFilters>['series']) => {
+    if (!canvas || !context) return;
+    const frame = chartFrame();
+    const styles = chartStyles();
+    const maxValue = Math.max(1, ...series.map((point) => point.detectable));
+    drawChartBase(frame, styles);
+    drawChartGates(frame, styles);
+    drawChartArea(series, maxValue, frame, styles);
+    drawChartLine(series, maxValue, frame, styles);
+    drawChartLabel(maxValue, frame, styles);
   };
 
   const calculate = () => simulateFermiFilters({

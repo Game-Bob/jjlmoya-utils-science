@@ -26,27 +26,27 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Cual es la diferencia entre una esfera de Dyson y un enjambre de Dyson?',
+    question: '¿Cuál es la diferencia entre una esfera de Dyson y un enjambre de Dyson?',
     answer: 'Una esfera de Dyson rigida es un cascaron continuo alrededor de una estrella, mientras que un enjambre de Dyson es una gran coleccion de colectores orbitales independientes. La mayoria de las discusiones de ingenieria favorecen los enjambres porque un cascaron solido seria estructuralmente inestable y extremadamente intensivo en materiales.',
   },
   {
-    question: 'Como elige el simulador el radio optimo?',
+    question: '¿Cómo elige el simulador el radio optimo?',
     answer: 'Estima la distancia donde los colectores que irradian por ambos lados alcanzan la temperatura de operacion seleccionada bajo la luminosidad estelar elegida. Los colectores mas calientes pueden orbitar mas cerca, mientras que los colectores mas frios requieren radios mayores.',
   },
   {
-    question: 'Que significa la calificacion Kardashev aqui?',
+    question: '¿Qué significa la calificacion Kardashev aqui?',
     answer: 'El valor Kardashev se calcula a partir de la potencia capturada usando la forma logaritmica comun K = (log10(P) - 6) / 10, donde P es la potencia en vatios. Un valor cercano a K1 representa uso de energia a escala planetaria, mientras que K2 se aproxima a la produccion estelar completa.',
   },
   {
-    question: 'Es realista la masa de material?',
+    question: '¿Es realista la masa de material?',
     answer: 'Es una estimacion educativa de primer orden basada en el area del colector, la densidad superficial y un factor de estabilidad. Los disenos reales necesitarian mantenimiento de posicion, transmision de energia, perdidas mineras, redundancia, disipacion de calor e infraestructura de fabricacion.',
   },
   {
-    question: 'Por que las estrellas brillantes requieren sistemas de colectores tan grandes?',
+    question: '¿Por qué las estrellas brillantes requieren sistemas de colectores tan grandes?',
     answer: 'Las estrellas de alta luminosidad empujan el radio termico seguro hacia afuera. Eso aumenta el area superficial necesaria para una fraccion de cobertura dada, por lo que la demanda de material puede aumentar mas rapido de lo que la potencia capturada parece intuitivamente.',
   },
   {
-    question: 'Puede una civilizacion alcanzar el Tipo II de Kardashev con cobertura parcial?',
+    question: '¿Puede una civilizacion alcanzar el Tipo II de Kardashev con cobertura parcial?',
     answer: 'Si, si la estrella anfitriona es lo suficientemente brillante y los colectores son eficientes. Alrededor de una estrella similar al Sol, alcanzar cerca del Tipo II requiere capturar una gran fraccion de la luminosidad solar, pero alrededor de estrellas mas luminosas, el mismo objetivo de potencia puede necesitar una fraccion de cobertura menor.',
   },
 ];

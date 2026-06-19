@@ -1,45 +1,45 @@
 import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'globalny-albedo-snezhnyy-shar-simulyator';
-const title = 'Globalny simulator albedo i Zemli Snezhka';
-const description = 'Issleduyte balans teplovogo izlucheniya Zemli, izmeneniya solnechnoj postoyannoj, kontsentratsiyu parnikovyh gazov i obratnuyu svyaz lyod-albedo, chtoby uvidet, otstupayut li ledyanye shchity, stabiliziruyutsya ili vyzyvayut klimat snezhka.';
+const slug = 'globalny-albedo-snezhnyy-shar-simulator';
+const title = 'Глобальный симулятор альбедо и Земля Снежок';
+const description = 'Исследуйте баланс теплового излучения Земли, изменения солнечной постоянной, концентрацию парниковых газов и обратную связь лёд-альбедо, чтобы увидеть, отступают ли ледяные щиты, стабилизируются или вызывают климат снежка.';
 
 const howTo = [
   {
-    name: 'Ustanovite padayushchij solnechnyj svet',
-    text: 'Peredvigajte polzunok solnechnoj postoyannoj, chtoby proverit stsenarii tusklogo molodogo Solntsa, tekushchego solnechnogo sveta Zemli ili bolee yarkogo budushchego forcinga.',
+    name: 'Установите падающий солнечный свет',
+    text: 'Передвигайте ползунок солнечной постоянной, чтобы проверить сценарии тусклого молодого Солнца, текущего солнечного света Земли или более яркого будущего форсинга.',
   },
   {
-    name: 'Otregulirujte kontsentratsiyu parnikovyh gazov',
-    text: 'Izmennite kontsentratsiyu parnikovyh gazov, chtoby uvidet, kak radiatsionnyj forcing konkuriruet s bolee vysokim planetarnym albedo.',
+    name: 'Отрегулируйте концентрацию парниковых газов',
+    text: 'Измените концентрацию парниковых газов, чтобы увидеть, как радиационный форсинг конкурирует с более высоким планетарным альбедо.',
   },
   {
-    name: 'Zasejte planetu ldom',
-    text: 'Nahnite s malenkoj polyarnoj shapki ili bolshogo pokrytogo ldom mira. Model povtoryaet petlyu obratnoj svyazi i pokazyvaet, nastupaet lyod ili otstupaet.',
+    name: 'Засейте планету льдом',
+    text: 'Начните с маленькой полярной шапки или большого покрытого льдом мира. Модель повторяет петлю обратной связи и показывает, наступает лёд или отступает.',
   },
   {
-    name: 'Prochitajte sostoyanie klimata',
-    text: 'Ispolzujte temperaturu, pogloshchonnuyu radiatsiyu, konechnyj ledyanoj pokrov i krivuyu vremennoj shkaly, chtoby sravnit umerennye, snezhkovye i parnikovye rezultaty.',
+    name: 'Прочитайте состояние климата',
+    text: 'Используйте температуру, поглощённую радиацию, конечный ледяной покров и кривую временной шкалы, чтобы сравнить умеренные, снежковые и парниковые результаты.',
   },
 ];
 
 const faq = [
   {
-    question: 'Chto takoe obratnaya svyaz lyod-albedo?',
-    answer: 'Lyod i sneg otrazhayut bolshe solnechnogo sveta, chem okean ili susha. Kogda lyod rasshiryaetsya, planetarnoe albedo rastyot, pogloshchonnaya solnechnaya energiya padayet, i ohlazhdenie mozhet pozvolit obrazovatsya eshchyo bolshemu kolichestvu lda. Kogda lyod otstupaet, bolee tyomnaya poverhnost pogloshchaet bolshe energii, i poteplenie uskoryaetsya.',
+    question: 'Что такое обратная связь лёд-альбедо?',
+    answer: 'Лёд и снег отражают больше солнечного света, чем океан или суша. Когда лёд расширяется, планетарное альбедо растёт, поглощённая солнечная энергия падает, и охлаждение может позволить образоваться ещё большему количеству льда. Когда лёд отступает, более тёмная поверхность поглощает больше энергии, и потепление ускоряется.',
   },
   {
-    question: 'Chto oznachaet Zemlya snezhok?',
-    answer: 'Zemlya snezhok eto gipoteticheskoe klimaticheskoe sostoyanie, pri kotorom lyod dostigaet nizkih shirot ili pochti globalnogo pokrytiya. Geologicheskie dannye svidetelstvuyut o tom, chto Zemlya mogla priblizhatsya k takim sostoyaniyam v neoproterozojskuyu eru.',
+    question: 'Что означает Земля-Снежок?',
+    answer: 'Земля-Снежок — это гипотетическое климатическое состояние, при котором лёд достигает низких широт или почти глобального покрытия. Геологические данные свидетельствуют о том, что Земля могла приближаться к таким состояниям в неопротерозойскую эру.',
   },
   {
-    question: 'Yavlyaetsya li eto polnoj klimaticheskoj modelyu?',
-    answer: 'Net. Eto kompaktnaya model energeticheskogo balansa dlya obucheniya. Ona ignoriruet atmosfernuyu tsirkulyatsiyu, oblaka, perenos tepla okeanom, vremena goda, geografiyu i obratnye svyazi uglerodnogo tsikla, no ulavlivayet osnovnuyu radiatsionnuyu logiku obratnoj svyazi albedo.',
+    question: 'Является ли это полной климатической моделью?',
+    answer: 'Нет. Это компактная модель энергетического баланса для обучения. Она игнорирует атмосферную циркуляцию, облака, перенос тепла океаном, времена года, географию и обратные связи углеродного цикла, но улавливает основную радиационную логику обратной связи альбедо.',
   },
   {
-    question: 'Pochemu parnikovye gazy mogut razrushit sostoyanie snezhka?',
-    answer: 'Parnikovye gazy umenshayut iskhodyashchee dlinovolnovoe ohlazhdenie, dobavlyaya radiatsionnyj forcing. V stsenariyah Zemli snezhka vulkanicheskij uglekislyj gaz mozhet nakaplivatsya, kogda vyvetrivanie silikatov zamedlyaetsya, v konechnom itoge nagrevaya planetu dostatochno, chtoby rastopit lyod na nizkih shirotah.',
+    question: 'Почему парниковые газы могут разрушить состояние снежка?',
+    answer: 'Парниковые газы уменьшают исходящее длинноволновое охлаждение, добавляя радиационный форсинг. В сценариях Земли-Снежка вулканический углекислый газ может накапливаться, когда выветривание силикатов замедляется, в конечном итоге нагревая планету достаточно, чтобы растопить лёд на низких широтах.',
   },
 ];
 
@@ -48,86 +48,73 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    controls: 'Upravlenie klimatom',
-    solarConstant: 'Solnechnaya postoyannaya',
-    greenhouse: 'Parnikovye gazy',
-    initialIce: 'Nachalnyj ledyanoj pokrov',
-    temperature: 'Ravnovesnaya temperatura',
-    absorbed: 'Pogloshchyonnyj solnechnyj svet',
-    finalIce: 'Konechnyj ledyanoj pokrov',
-    albedo: 'Planetarnoe albedo',
-    forcing: 'Parnikovyj forcing',
-    state: 'Sostoyanie klimata',
-    timeline: 'Izmenenie ledyanogo pokrova',
-    years: 'let modeli',
-    snowball: 'Blokirovka snezhka',
-    temperate: 'Umerennoe ravnovesie',
-    hothouse: 'Parnikovoe otstuplenie',
-    retreating: 'Lyod otstupaet',
-    advancing: 'Lyod nastupaet',
-    stable: 'Blizko k ravnovesiyu',
+    controls: 'Управление климатом',
+    solarConstant: 'Солнечная постоянная',
+    greenhouse: 'Парниковые газы',
+    initialIce: 'Начальный ледяной покров',
+    temperature: 'Равновесная температура',
+    absorbed: 'Поглощённый солнечный свет',
+    finalIce: 'Конечный ледяной покров',
+    albedo: 'Планетарное альбедо',
+    forcing: 'Парниковый форсинг',
+    state: 'Состояние климата',
+    timeline: 'Изменение ледяного покрова',
+    years: 'лет модели',
+    snowball: 'Блокировка снежка',
+    temperate: 'Умеренное равновесие',
+    hothouse: 'Парниковое отступление',
+    retreating: 'Лёд отступает',
+    advancing: 'Лёд наступает',
+    stable: 'Близко к равновесию',
     watts: '{value} W/m2',
     ppm: '{value} ppm',
     percent: '{value}%',
-    celsius: '{value} C',
-    diagnostics: 'Radiatsionnaya diagnostika',
+    celsius: '{value} °C',
+    diagnostics: 'Радиационная диагностика',
   },
   seo: [
     {
       type: 'title',
-      text: 'Globalny simulator albedo dlya obratnoj svyazi lyod-albedo i Zemli Snezhka',
+      text: 'Глобальный симулятор альбедо для обратной связи лёд-альбедо и Земли-Снежка',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Etot simulator issleduet odnu iz vazhnejshih petel obratnoj svyazi v planetarnom klimate: svyaz mezhdu ledyanym pokrovom, otrazhatelnoj sposobnostyu i pogloshchyonnym solnechnym svetom. Planeta s yarkim ldom otrazhaet bolshe padayushchej solnechnoj radiatsii obratno v kosmos. Eto ohlazhdenie mozhet sohranit ili rasshirit lyod, eshchyo bolshe povyshaya albedo i tolkaya sistemu k sostoyaniyu Zemli Snezhka. Planeta s menshim kolichestvom lda pogloshchaet bolshe solnechnogo sveta, chto mozhet uskorit deglyatsiatsiyu.',
+      html: 'Этот симулятор исследует одну из важнейших петель обратной связи в планетарном климате: связь между ледяным покровом, отражательной способностью и поглощённым солнечным светом. Планета с ярким льдом отражает больше падающей солнечной радиации обратно в космос. Это охлаждение может сохранить или расширить лёд, ещё больше повышая альбедо и толкая систему к состоянию Земли-Снежка. Планета с меньшим количеством льда поглощает больше солнечного света, что может ускорить дегляциацию.',
     },
     {
       type: 'paragraph',
-      html: 'Ispolzujte polzunki dlya izmeneniya solnechnoj postoyannoj, kontsentratsii parnikovyh gazov i nachalnogo ledyanogo pokrova. Zatem model povtoryaet prostoj globalnyj energeticheskij balans i pokazyvaet, dvizhetsya li klimat k obshirnomu oledeneniyu, umerennomu ravnovesiyu ili goryachemu sostoyaniyu s malym kolichestvom lda. On prednaznachen dlya bystroj intuitsii: kazhdyj element upravleniya napryamuyu sootvetstvuet fizicheskomu terminu v radiatsionnom byudzhete.',
+      html: 'Используйте ползунки для изменения солнечной постоянной, концентрации парниковых газов и начального ледяного покрова. Затем модель повторяет простой глобальный энергетический баланс и показывает, движется ли климат к обширному оледенению, умеренному равновесию или горячему состоянию с малым количеством льда.',
     },
     {
       type: 'title',
-      text: 'Kak otsenivaetsya energeticheskij balans',
+      text: 'Как оценивается энергетический баланс',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Pogloshchonnaya korotkovolnovaya radiatsiya otsenivaetsya kak S(1 - a) / 4, gde S solnechnaya postoyannaya, a a planetarnoe albedo. Delenie na chetyre preobrazuet solnechnyj svet, perehvachennyj diskom Zemli, v srednee po vsej sfericheskoj poverhnosti. Bolee vysokoe albedo snizhaet pogloshchonnuyu energiyu; bolee vysokaya kontsentratsiya parnikovyh gazov dobavlyaet polozhitelnyj radiatsionnyj forcing, povyshayushchij otsenku temperatury poverhnosti.',
-    },
-    {
-      type: 'table',
-      headers: ['Parametr', 'Fizicheskij smysl', 'Klimaticheskij effekt'],
-      rows: [
-        ['Solnechnaya postoyannaya', 'Padayushchaya zvyozdnaya energiya na orbite Zemli', 'Bolee vysokie znacheniya nagrevayut planetu i sokrashchayut lyod.'],
-        ['Parnikovye gazy', 'Dlinovolnovoj radiatsionnyj forcing otnositelno etalonnoj atmosfery', 'Bolee vysokie znacheniya zatrudnyayut blokirovku snezhka.'],
-        ['Nachalnyj ledyanoj pokrov', 'Nachalnaya otrazhatelnaya sposobnost planety', 'Vysokie znacheniya mogut vyzvat nekontroliruemoe ohlazhdenie cherez obratnuyu svyaz albedo.'],
-      ],
+      html: 'Поглощённая коротковолновая радиация оценивается как S(1 - a) / 4, где S — солнечная постоянная, а a — планетарное альбедо. Деление на четыре преобразует солнечный свет, перехваченный диском Земли, в среднее по всей сферической поверхности. Более высокое альбедо снижает поглощённую энергию; более высокая концентрация парниковых газов добавляет положительный радиационный форсинг, повышающий оценку температуры поверхности.',
     },
     {
       type: 'title',
-      text: 'Pochemu obratnaya svyaz albedo mozhet stat nelinejnoj',
+      text: 'Почему обратная связь альбедо может стать нелинейной',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Petlya lyod-albedo eto ne myagkaya odnonapravlennaya regulirovka. Kak tolko lyod dostigaet dostatochnoj chasti planety, bolee yarkaya poverhnost mozhet udalit tak mnogo pogloshchonnogo solnechnogo sveta, chto letneye tayanie stanovitsya slabym. V protivopolozhnom napravlenii otstupayushchij lyod obnazhaet bolee tyomnyj okean i sushu, uvelichivaya pogloshchenie i udalyaya planetu ot oledeneniya. Vot pochemu odinakovyj forcing mozhet davat raznye rezultaty v zavisimosti ot nachalnogo ledyanogo pokrova.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Realnaya Zemlya dobavlyaet mnogo slozhnostej: oblaka, pyl na ldu, perenos tepla okeanom, polozhenie kontinentov, sezonnyj solnechnyj svet, dinamiku morskogo lda i uglerodnyj tsikl. Prostaya model vsyochyo imeet tsennost, potomu chto ona izoliruet radiatsionnyj byudzhet pervogo poryadka. Ona pozvolyaet uvidet, pochemu gipotezy Zemli Snezhka zavisyat kak ot slabogo solnechnogo sveta ili triggerov vysokogo albedo, tak i ot posleduyushchego nakopleniya parnikovyh gazov dlya pobega.',
+      html: 'Петля лёд-альбедо — это не мягкая однонаправленная регулировка. Как только лёд достигает достаточной части планеты, более яркая поверхность может удалить так много поглощённого солнечного света, что летнее таяние становится слабым. В противоположном направлении отступающий лёд обнажает более тёмный океан и сушу, увеличивая поглощение и удаляя планету от оледенения.',
     },
     {
       type: 'title',
-      text: 'Interpretatsiya simulatora',
+      text: 'Интерпретация симулятора',
       level: 3,
     },
     {
       type: 'list',
       items: [
-        '<strong>Blokirovka snezhka:</strong> konechnyj ledyanoj pokrov ochen vysoki, a ravnovesnaya temperatura ostayotsya znachitelno nizhe tochki zamerzaniya.',
-        '<strong>Umerennoe ravnovesie:</strong> model stabiliziruetsya s chastichnym ledyanym pokrovom i umerennym pogloshchyonnym izlucheniem.',
-        '<strong>Parnikovoe otstuplenie:</strong> lyod razrushaetsya do ochen maloj doli, v to vremya kak parnikovyj forcing i pogloshchyonnyj solnechnyj svet ostayutsya vysokimi.',
+        '<strong>Блокировка снежка:</strong> конечный ледяной покров очень высок, а равновесная температура остаётся значительно ниже точки замерзания.',
+        '<strong>Умеренное равновесие:</strong> модель стабилизируется с частичным ледяным покровом и умеренным поглощённым излучением.',
+        '<strong>Парниковое отступление:</strong> лёд разрушается до очень малой доли, в то время как парниковый форсинг и поглощённый солнечный свет остаются высокими.',
       ],
     },
   ],

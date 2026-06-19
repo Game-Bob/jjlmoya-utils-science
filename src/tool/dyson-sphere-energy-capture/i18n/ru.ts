@@ -1,53 +1,53 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'dyson-sfera-energeticheskii-simulator';
-const title = 'Simulator zakhvata energii sfery Daisona';
-const description = 'Otsenite konstruktsii roya Daisona, koltsa, obolochki i statit-kollektorov dlya raznykh zvyozd. Rasschitayte zakhvachennuyu moshchnost, orbitalnyy radius, massu materiala i pokrytiye, neobkhodimoye dlya dostizheniya tselevoy shkaly Kardasheva.';
+const slug = 'dyson-sfera-zakhvat-energii';
+const title = 'Симулятор захвата энергии сферы Дайсона';
+const description = 'Оцените конструкции роя Дайсона, кольца, оболочки и статит-коллекторов для разных звёзд. Рассчитайте захваченную мощность, орбитальный радиус, массу материала и покрытие, необходимое для достижения целевой шкалы Кардашёва.';
 
 const howTo = [
   {
-    name: 'Vyberite tip zvezdy',
-    text: 'Nachnite s karlika M, zvezdy solnechnogo tipa, zvezdy tipa A, krasnogo giganta ili golubogo giganta. Simulator ispolzuyet reprezentativnyye znacheniya svetimosti i massy dlya otsenki radiusa kollektora i orbitalnogo perioda.',
+    name: 'Выберите тип звезды',
+    text: 'Начните с карлика M, звезды солнечного типа, звезды типа A, красного гиганта или голубого гиганта. Симулятор использует репрезентативные значения светимости и массы для оценки радиуса коллектора и орбитального периода.',
   },
   {
-    name: 'Vyberite arkhitekturu megastruktury',
-    text: 'Sravnite roy Daisona, ekvatorialnoye kol-tso, zhyostkuyu obolochku ili oblako statit-zerkal. Kazhdaya konstruktsiya imeyet raznyye predpolozheniya ob effektivnosti zakhvata, plotnosti materiala i stabilnosti.',
+    name: 'Выберите архитектуру мегаструктуры',
+    text: 'Сравните рой Дайсона, экваториальное кольцо, жёсткую оболочку или облако статит-зеркал. Каждая конструкция имеет разные предположения об эффективности захвата, плотности материала и стабильности.',
   },
   {
-    name: 'Ustanovite pokrytiye i rabochuyu temperaturu',
-    text: 'Uvelichite pokrytiye, chtoby zakhvatyvat bolshe zvyozdnoy moshchnosti, zatem otreguliruyte rabochuyu temperaturu, chtoby priblizit ili otdalit kollektory ot zvezdy.',
+    name: 'Установите покрытие и рабочую температуру',
+    text: 'Увеличьте покрытие, чтобы захватывать больше звёздной мощности, затем отрегулируйте рабочую температуру, чтобы приблизить или отдалить коллекторы от звезды.',
   },
   {
-    name: 'Viberite tsel po shkale Kardasheva',
-    text: 'Ispolzuyte polzunok tseli, chtoby uvidet, kakuyu chast zvezdy nuzhno okhvatit dlya dostizheniya energeticheskoy tseli tsivilizatsionnogo masshtaba.',
+    name: 'Выберите цель по шкале Кардашёва',
+    text: 'Используйте ползунок цели, чтобы увидеть, какую часть звезды нужно охватить для достижения энергетической цели цивилизационного масштаба.',
   },
 ];
 
 const faq = [
   {
-    question: 'V chyom raznitsa mezhdu sferoy Daisona i royem Daisona?',
-    answer: 'Zhyostkaya sfera Daisona predstavlyayet soboy nepreryvnuyu obolochku vokrug zvezdy, togda kak roy Daisona eto bolshoye sobraniye nezavisimykh orbitalnykh kollektorov. Bolshinstvo tekhnicheskikh diskussiy otdayut predpochteniye royam, potomu chto sploshnaya obolochka byla by strukturno nestabilna i chrezvychayno materialoyomka.',
+    question: 'В чём разница между сферой Дайсона и роем Дайсона?',
+    answer: 'Жёсткая сфера Дайсона представляет собой непрерывную оболочку вокруг звезды, тогда как рой Дайсона — это большое собрание независимых орбитальных коллекторов. Большинство технических дискуссий отдают предпочтение роям, потому что сплошная оболочка была бы структурно нестабильна и чрезвычайно материалоёмка.',
   },
   {
-    question: 'Kak simulator vybirayet optimalnyy radius?',
-    answer: 'On otsenivayet rasstoyaniye, na kotorom kollektory, izluchayushchiye s obeikh storon, dostigayut vybrannoy rabochey temperatury pri zadannoy zvyozdnoy svetimosti. Boleye goryachiye kollektory mogut obrashehatsya blizhe, togda kak boleye kholodnym trebuyutsya bolshiye radiusy.',
+    question: 'Как симулятор выбирает оптимальный радиус?',
+    answer: 'Он оценивает расстояние, на котором коллекторы, излучающие с обеих сторон, достигают выбранной рабочей температуры при заданной звёздной светимости. Более горячие коллекторы могут обращаться ближе, тогда как более холодным требуются большие радиусы.',
   },
   {
-    question: 'Chto zdes oznachayet otsenka po Kardashevu?',
-    answer: 'Znacheniye Kardasheva rasschityvayetsya iz zakhvachennoy moshchnosti po logarifmicheskoy formule K = (log10(P) - 6) / 10, gde P eto moshchnost v vattakh. Znacheniye blizkoye k K1 sootvetstvuyet energeticheskim potrebnostyam planetarnogo masshtaba, v to vremya kak K2 priblizhayetsya k polnomu vykhodu zvezdy.',
+    question: 'Что здесь означает оценка по Кардашёву?',
+    answer: 'Значение Кардашёва рассчитывается из захваченной мощности по логарифмической формуле K = (log10(P) - 6) / 10, где P — мощность в ваттах. Значение, близкое к K1, соответствует энергетическим потребностям планетарного масштаба, в то время как K2 приближается к полному выходу звезды.',
   },
   {
-    question: 'Realistichna li massa materiala?',
-    answer: 'Eto uchebnaya priblizhennaya otsenka pervogo poryadka, osnovannaya na ploshchadi kollektora, poverkhnostnoy plotnosti i koeffitsiyente stabilnosti. Realnyye proyekty potrebovali by stationarnogo uderzhaniya, peredachi energii, poter pri dobyche, rezervirovaniya, otvoda tepla i proizvodstvennoy infrastruktury.',
+    question: 'Реалистична ли масса материала?',
+    answer: 'Это учебная приближённая оценка первого порядка, основанная на площади коллектора, поверхностной плотности и коэффициенте стабильности. Реальные проекты потребовали бы стационарного удержания, передачи энергии, потерь при добыче, резервирования, отвода тепла и производственной инфраструктуры.',
   },
   {
-    question: 'Pochemu yarkim zvezdam trebuyutsya takiye bolshiye sistemy kollektorov?',
-    answer: 'Zvyozdy s vysokoy svetimostyu otodvigayut bezopasnyy teplovoy radius naruzhu. Eto uvelichivayet ploshchad poverkhnosti, neobkhodimuyu dlya zadannoy doli pokrytiya, poetomu potrebnost v materiale mozhet rasti bystreye, chem inuitsivno vosprinimayetsya zakhvachennaya moshchnost.',
+    question: 'Почему ярким звёздам требуются такие большие системы коллекторов?',
+    answer: 'Звёзды с высокой светимостью отодвигают безопасный тепловой радиус наружу. Это увеличивает площадь поверхности, необходимую для заданной доли покрытия, поэтому потребность в материале может расти быстрее, чем интуитивно воспринимается захваченная мощность.',
   },
   {
-    question: 'Mozhet li tsivilizatsiya dostich II tipa po Kardashevu s chastichnym pokrytiyem?',
-    answer: 'Da, yesli roditelskaya zvezda dostatochno yarka i kollektory effektivny. Vokrug zvezdy solnechnogo tipa dostizheniye II tipa trebuyet zakhvata bolshoy chasti solnechnoy svetimosti, no vokrug boleye yarkikh zvyozd ta zhe tselevaya moshchnost mozhet byt dostignuta pri menshey doli pokrytiya.',
+    question: 'Может ли цивилизация достичь II типа по Кардашёву с частичным покрытием?',
+    answer: 'Да, если родительская звезда достаточно яркая и коллекторы эффективны. Вокруг звезды солнечного типа достижение II типа требует захвата большой части солнечной светимости, но вокруг более ярких звёзд та же целевая мощность может быть достигнута при меньшей доле покрытия.',
   },
 ];
 
@@ -56,105 +56,68 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    visualization: 'Vizualizatsiya kollektora Daisona',
-    starType: 'Tip zvezdy',
-    structureType: 'Struktura',
-    coverage: 'Pokrytiye kollektora',
-    operatingTemp: 'Rabochaya temperatura',
-    kardashevTarget: 'Tsel po Kardashevu',
-    kardashevRating: 'Tekushchiy pokazatel',
-    capturedPower: 'Zakhvachennaya moshchnost',
-    optimalRadius: 'Optimalnyy radius',
-    targetCoverage: 'Tselevoye pokrytiye',
-    materialMass: 'Massa materiala',
-    captureMeter: 'Progress k tseli',
-    statusReady: 'Nastroyte sistemu dlya otsenki potrebnosti v kollektorakh.',
-    statusUnderbuilt: 'Pokrytie nizhe vybrannoy tseli Kardasheva. Dobavte kollektory ili vyberite bolee yarkuyu zvezdu.',
-    statusBalanced: 'Pokrytie i moschnost zvezdy blizki k vybrannoy tseli masshtaba tsivilizatsii.',
-    statusExtreme: 'Eta konfiguratsiya prevyshaet tsel. Ona sobiraet ogromnuyu moschnost, no spros na materialy bystro rastet.',
-    orbitalPeriod: 'Orbitalnyy period',
-    collectorArea: 'Ploshchad kollektora',
-    mercuryMasses: '{value} mass Merkuriya',
-    kilograms: '{value} kg',
-    daysUnit: '{value} dney',
-    starMDwarf: 'Karlik M',
-    starSun: 'Zvezda G solnechnogo tipa',
-    starA: 'Zvezda tipa A',
-    starRedGiant: 'Krasnyy gigant',
-    starBlueGiant: 'Goluboy gigant',
-    structureSwarm: 'Roy Daisona',
-    structureRing: 'Ekvatorialnoye kol-tso',
-    structureShell: 'Zhyostkaya obolochka',
-    structureStatite: 'Oblako statit-zerkal',
+    visualization: 'Визуализация коллектора Дайсона',
+    starType: 'Тип звезды',
+    structureType: 'Структура',
+    coverage: 'Покрытие коллектора',
+    operatingTemp: 'Рабочая температура',
+    kardashevTarget: 'Цель по Кардашёву',
+    kardashevRating: 'Текущий показатель',
+    capturedPower: 'Захваченная мощность',
+    optimalRadius: 'Оптимальный радиус',
+    targetCoverage: 'Целевое покрытие',
+    materialMass: 'Масса материала',
+    captureMeter: 'Прогресс к цели',
+    statusReady: 'Настройте систему для оценки потребности в коллекторах.',
+    statusUnderbuilt: 'Покрытие ниже выбранной цели Кардашёва. Добавьте коллекторы или выберите более яркую звезду.',
+    statusBalanced: 'Покрытие и мощность звезды близки к выбранной цели масштаба цивилизации.',
+    statusExtreme: 'Эта конфигурация превышает цель. Она собирает огромную мощность, но спрос на материалы быстро растёт.',
+    orbitalPeriod: 'Орбитальный период',
+    collectorArea: 'Площадь коллектора',
+    mercuryMasses: '{value} масс Меркурия',
+    kilograms: '{value} кг',
+    daysUnit: '{value} дней',
+    starMDwarf: 'Карлик M',
+    starSun: 'Звезда G солнечного типа',
+    starA: 'Звезда типа A',
+    starRedGiant: 'Красный гигант',
+    starBlueGiant: 'Голубой гигант',
+    structureSwarm: 'Рой Дайсона',
+    structureRing: 'Экваториальное кольцо',
+    structureShell: 'Жёсткая оболочка',
+    structureStatite: 'Облако статит-зеркал',
   },
   seo: [
     {
       type: 'title',
-      text: 'Simulator zakhvata energii sfery Daisona',
+      text: 'Симулятор захвата энергии сферы Дайсона',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Sfera Daisona eto ne tolko nauchno-fantasticheskiy obraz zvezdy vnutri obolochki. Eto semeystvo kontseptsiy megastruktur dlya perekhvata zvyozdnoy svetimosti: roi sputnikov, ekvatorialnyye kol-tsa, tonkiye zerkalnyye oblaka i znamenitaya, no problemnaya zhyostkaya obolochka. Etot simulator prevrashchayet eti idei v tsifry, chtoby vy mogli sravnit, kak tip zvezdy, temperatura kollektora, pokrytiye i konstruktsiya struktury menyayut energeticheskiy byudzhet.',
+      html: 'Сфера Дайсона — это не только научно-фантастический образ звезды внутри оболочки. Это семейство концепций мегаструктур для перехвата звёздной светимости: рои спутников, экваториальные кольца, тонкие зеркальные облака и знаменитая, но проблемная жёсткая оболочка. Этот симулятор превращает эти идеи в цифры, чтобы вы могли сравнить, как тип звезды, температура коллектора, покрытие и конструкция структуры меняют энергетический бюджет.',
     },
     {
       type: 'paragraph',
-      html: 'Kalkulyator otsenivayet zakhvachennuyu moshchnost, teplovoy orbitalnyy radius, ploshchad kollektora, orbitalnyy period, massu materiala i pokrytiye, neobkhodimoye dlya vybrannoy tseli po shkale Kardasheva. On sozdan dlya studentov, mirostroiteley, nauchnykh kommunikatorov i vsekh, kto pyetayetsya ponyat, pochemu tsivilizatsii II tipa tak slozhny: problema ne tolko v energii, no i v ploshchadi, teplote, dobyche, stabilnosti i orbitalnoy logistike.',
+      html: 'Калькулятор оценивает захваченную мощность, тепловой орбитальный радиус, площадь коллектора, орбитальный период, массу материала и покрытие, необходимое для выбранной цели по шкале Кардашёва. Он создан для студентов, миростроителей, научных коммуникаторов и всех, кто пытается понять, почему цивилизации II типа так сложны: проблема не только в энергии, но и в площади, теплоте, добыче, стабильности и орбитальной логистике.',
     },
     {
       type: 'title',
-      text: 'Kak otsenivayetsya radius Daisona',
+      text: 'Как оценивается радиус Дайсона',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Optimalnyy radius rasschityvayetsya iz zvyozdnoy svetimosti i rabochey temperatury kollektora. Kollektor blizko k yarkoy zvezde poluchayet intensivnyy potok i dolzhen rabotat goryachim ili otvodit ogromnoye kolichestvo tepla. Peremeshcheniye naruzhu snizhayet teplovuyu nagruzku, no neobkhodimaya ploshchad kollektora rastvot s kvadratom rasstoyaniya. Etot kompromiss obyasnyayet, pochemu odna i ta zhe dolya pokrytiya mozhet byt skromnoy vokrug tusklogo karlika M i ogromnoy vokrug golubogo giganta.',
+      html: 'Оптимальный радиус рассчитывается из звёздной светимости и рабочей температуры коллектора. Коллектор близко к яркой звезде получает интенсивный поток и должен работать горячим или отводить огромное количество тепла. Перемещение наружу снижает тепловую нагрузку, но необходимая площадь коллектора растёт с квадратом расстояния.',
     },
     {
       type: 'title',
-      text: 'Sravneniye roya, kol-tsa, obolochki i oblaka statitov',
-      level: 3,
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>Roy Daisona:</strong> mnozhestvo nezavisimykh orbitalnykh kollektorov. Eto naiboleye pravdopodobnaya krupnomasshtabnaya arkhitektura, poskolku yego mozhno stroit postepenno i on ne trebuyet zhyostkoy zvyozdnoy obolochki.',
-        '<strong>Ekvatorialnoye kol-tso:</strong> boleye uzkaya polosa kollektorov s boleye nizkoy effektivnostyu pokrytiya. Yego legche predstavit kak pervuyu megastrukturu, no on ne mozhet zakhvatit polnyy vykhod zvezdy bez rasshireniya v boleye shirokiy roy.',
-        '<strong>Zhyostkaya obolochka:</strong> vizualno znakomaya, no mekhanicheski nevygodnaya. Obolochka vokrug zvezdy imeyet ser-yoznyye problemy so stabilnostyu i materialami, poetomu simulator prisvaivayet yey bolshuyu massu i nizkuyu stabilnost.',
-        '<strong>Oblako statit-zerkal:</strong> sverkhlyogkiye otrazhateli, chastichno uderzhivayemyye davleniyem izlucheniya. Ono snizhayet potrebnost v materiale, no imeyet ponizhennuyu teplovuyu stoykost i trebuyet slozhnogo upravleniya.',
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Pokrytiye, neobkhodimoye dlya shkaly Kardasheva',
+      text: 'Покрытие, необходимое для шкалы Кардашёва',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Shkala Kardasheva vyrazhayet energeticheskoye potrebleniye tsivilizatsii v logarifmicheskoy forme. V etom instrumente zakhvachennyye vatty preobrazuyutsya v pokazatel K po formule K = (log10(P) - 6) / 10. Chastichnyy roy Daisona vokrug Solntsa mozhet prevzyt tekushcheye energeticheskoye potrebleniye chelovechestva na mnogo poryadkov velichiny zadolgo do dostizheniya polnogo statusa II tipa. Rezultat tselevogo pokrytiya pokazyvayet dolyu zvyozdnoy svetimosti, kotoruyu neobkhodimo perekhvatit dlya vybrannoy tseli.',
-    },
-    {
-      type: 'table',
-      headers: ['Vybor konstruktsii', 'Glavnoye preimushchestvo', 'Glavnoye ogranicheniye'],
-      rows: [
-        ['Roy Daisona', 'Postroyka etapami s nezavisimymi orbitami', 'Kontrol dvizheniya i peredacha energii'],
-        ['Ekvatorialnoye kol-tso', 'Menshaya nachalnaya ploshchad i prostaya geometriya', 'Ogranichennoye pokrytiye'],
-        ['Zhyostkaya obolochka', 'Maksimalnyy perekhvat v prostoy skheme', 'Strukturnaya nestabilnost i ogromnaya massa'],
-        ['Oblako statitov', 'Ochen nizkaya poverkhnostnaya plotnost', 'Tochnoye uderzhaniye i teplovyye ogranicheniya'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Massa materiala i realnosti dobychi',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Otsenka materiala umnozhayet ploshchad kollektora na predpolagayemuyu poverkhnostnuyu plotnost i koeffitsiyent stabilnosti konstruktsii. Kogda chisla stanovyatsya astronomicheskimi, massa namerenno soobshchayetsya v massakh Merkuriya, potomu chto mnogiye diskussii o roye Daisona predstavlyayut demontazh malykh planet ili asteroidov dlya polucheniya syrya. Dazhe tonkiye kollektory stanovatsya massivnymi, kogda rastyanuty na masshtaby astronomicheskikh yedinits.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Ispolzuyte rezultat kak priblizitelnyy orientir, a ne kak proyektnuyu spetsifikatsiyu. Nastoyashchaya inzheneriya megastruktur potrebuyet modeli radiatsionnogo povrezhdeniya, teplovyye tsikly, izbezhanie stolknoveniy, kontrol polozheniya, peredachu energii, proizvodstvennyye pokazateli i dolgosrochnuyu orbitalnuyu evolyutsiyu. Tsennost simulyatora v tom, chto on delayet pervyye ogranicheniya vidimymi nemedlenno.',
+      html: 'Шкала Кардашёва выражает энергетическое потребление цивилизации в логарифмической форме. В этом инструменте захваченные ватты преобразуются в показатель K по формуле K = (log10(P) - 6) / 10. Частичный рой Дайсона вокруг Солнца может превзойти текущее энергетическое потребление человечества на много порядков величины задолго до достижения полного статуса II типа.',
     },
   ],
   faq,

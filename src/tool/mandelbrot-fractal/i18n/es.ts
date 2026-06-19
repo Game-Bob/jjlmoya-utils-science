@@ -22,23 +22,23 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Que muestra la calculadora del conjunto de Mandelbrot?',
+    question: '¿Qué muestra la calculadora del conjunto de Mandelbrot?',
     answer: 'Muestra que numeros complejos c mantienen acotada la recurrencia z(n+1) = z(n)^2 + c al comenzar desde z = 0. Los puntos que nunca escapan dentro del presupuesto de iteracion seleccionado se colorean como miembros del conjunto, mientras que los puntos exteriores se colorean segun la rapidez con que su orbita escapa.',
   },
   {
-    question: 'Por que el borde de Mandelbrot contiene tanto detalle?',
+    question: '¿Por qué el borde de Mandelbrot contiene tanto detalle?',
     answer: 'El borde separa las orbitas estables de las que escapan, y pequenos cambios de coordenadas cerca de ese borde pueden cambiar completamente el comportamiento a largo plazo. Esta sensibilidad crea bulbos anidados, espirales, filamentos y copias en miniatura que aparecen en muchos niveles de ampliacion.',
   },
   {
-    question: 'Es el conjunto de Mandelbrot verdaderamente autosemejante?',
+    question: '¿Es el conjunto de Mandelbrot verdaderamente autosemejante?',
     answer: 'No es perfectamente autosemejante en el mismo sentido estricto que un triangulo de Sierpinski, pero es ricamente cuasi-autosemejante. Pequenas copias de todo el conjunto aparecen por todo el plano, a menudo distorsionadas y conectadas por elaboradas estructuras ramificadas.',
   },
   {
-    question: 'Que controla el numero de iteraciones?',
+    question: '¿Qué controla el numero de iteraciones?',
     answer: 'El numero de iteraciones controla cuanto tiempo prueba la calculadora cada punto antes de decidir que probablemente pertenece al conjunto. Los valores mas altos revelan filamentos mas profundos y minibrots mas limpios, pero requieren mas computo por pixel.',
   },
   {
-    question: 'Por que cambian los colores fuera de la region negra?',
+    question: '¿Por qué cambian los colores fuera de la region negra?',
     answer: 'Los colores exteriores se basan en el tiempo de escape: los puntos que escapan rapidamente reciben colores diferentes a los puntos que permanecen cerca del conjunto durante muchas iteraciones. El coloreado suave reduce las bandas pronunciadas y facilita la inspeccion de la geometria de las orbitas cercanas.',
   },
 ];

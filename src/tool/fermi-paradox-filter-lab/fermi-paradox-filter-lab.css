@@ -87,7 +87,6 @@ html.theme-dark .fermi-lab {
   align-items: baseline;
   gap: 0.12em;
   color: var(--fermi-ink);
-  font-family: "IBM Plex Mono", "SFMono-Regular", consolas, monospace;
   font-size: clamp(1rem, 2vw, 1.35rem);
   font-weight: 650;
   font-variant-numeric: tabular-nums;
@@ -122,7 +121,6 @@ html.theme-dark .fermi-lab {
   border: 0;
   color: color-mix(in srgb, var(--fermi-muted) 32%, transparent);
   background: transparent;
-  font-family: "IBM Plex Mono", "SFMono-Regular", consolas, monospace;
   font-size: 0.66rem;
   letter-spacing: 0;
   text-align: left;

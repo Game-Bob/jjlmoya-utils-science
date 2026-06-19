@@ -26,23 +26,23 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Que significa semivida?',
+    question: '¿Qué significa semivida?',
     answer: 'La semivida es el tiempo necesario para que, de media, se desintegre la mitad de los nucleos inestables de una muestra. Tras una semivida queda el 50%, tras dos queda el 25% y tras tres queda el 12,5%.',
   },
   {
-    question: 'Por que el campo atomico no coincide siempre con el porcentaje exacto?',
+    question: '¿Por qué el campo atomico no coincide siempre con el porcentaje exacto?',
     answer: 'La desintegracion radiactiva es probabilistica. La formula da la fraccion esperada para una muestra muy grande, mientras que el campo simula atomos individuales con umbrales aleatorios. En muestras pequenas aparece ruido estadistico de forma natural.',
   },
   {
-    question: 'El medidor de actividad equivale a los atomos restantes?',
+    question: '¿El medidor de actividad equivale a los atomos restantes?',
     answer: 'Para un unico isotopo, la actividad es proporcional al numero de nucleos sin desintegrar. Si queda el 30% de los atomos, la actividad instantanea es tambien aproximadamente el 30% de la actividad inicial.',
   },
   {
-    question: 'Sirve esta calculadora para datacion por radiocarbono?',
+    question: '¿Sirve esta calculadora para datacion por radiocarbono?',
     answer: 'Si, como calculo conceptual. La datacion con Carbono-14 compara la actividad restante con la de material vivo, pero una datacion real de laboratorio tambien corrige curvas de calibracion, contaminacion y preparacion de la muestra.',
   },
   {
-    question: 'Cada isotopo decae hacia un unico producto estable?',
+    question: '¿Cada isotopo decae hacia un unico producto estable?',
     answer: 'No siempre. Algunos isotopos decaen mediante cadenas con varios productos hijos. Esta herramienta modela la semivida del isotopo padre, que es la magnitud principal para estimar nucleos padre restantes y actividad.',
   },
 ];

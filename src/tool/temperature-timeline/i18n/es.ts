@@ -22,23 +22,23 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Ha estado la Tierra mas caliente en el pasado que en la actualidad?',
+    question: '¿Ha estado la Tierra mas caliente en el pasado que en la actualidad?',
     answer: 'Si, la Tierra ha experimentado climas considerablemente mas calidos que el actual. Durante el Mesozoico (la era de los dinosaurios) y el Eoceno temprano, el planeta se encontraba en un estado de invernadero (greenhouse) sin casquetes polares, y las temperaturas medias globales superaban los 22 grados, unos 7 a 8 grados mas calientes que el promedio actual. No obstante, las transiciones hacia esos periodos ocurrieron en escalas de millones de anos, permitiendo la adaptacion evolutiva.',
   },
   {
-    question: 'Que causo el fenomeno de la Tierra Bola de Nieve?',
+    question: '¿Qué causo el fenomeno de la Tierra Bola de Nieve?',
     answer: 'La Tierra Bola de Nieve (glaciacion global) ocurrio principalmente durante el Neoproterozoico (hace unos 700 millones de anos). Fue desencadenada por una reduccion extrema de los gases de efecto invernadero debido al intemperismo quimico acelerado de rocas de silicato tras la fractura del supercontinente Rodinia. El hielo se extendio desde los polos hasta el ecuador, reflejando la radiacion solar (efecto albedo) y atrapando al planeta en un bucle de congelacion global que solo se rompio tras millones de anos de acumulacion de CO2 volcanico.',
   },
   {
-    question: 'Como regula la Tierra su temperatura a largo plazo?',
+    question: '¿Cómo regula la Tierra su temperatura a largo plazo?',
     answer: 'La Tierra posee un termostato natural controlado por el ciclo del carbono a escala geologica, regulado principalmente por la tectonica de placas y la meteorizacion de los silicatos. Cuando el planeta se calienta, la lluvia acida reacciona mas rapidamente con las rocas de silicato, absorbiendo CO2 de la atmosfera y depositandolo en el fondo oceanico en forma de carbonatos, lo que reduce el efecto invernadero. Si el planeta se enfria, la meteorizacion disminuye pero la actividad volcanica continua liberando CO2, calentando gradualmente el planeta de nuevo.',
   },
   {
-    question: 'En que se diferencia el cambio climatico del Antropoceno del pasado geologico?',
+    question: '¿En que se diferencia el cambio climatico del Antropoceno del pasado geologico?',
     answer: 'La diferencia fundamental radica en la velocidad del cambio. Mientras que las transiciones climaticas naturales del pasado geologico solian ocurrir a lo largo de decenas de miles o millones de anos (dando margen a la migracion y evolucion biologica), el calentamiento del Antropoceno esta sucediendo en cuestion de decadas. Esta tasa de variacion termica es exponencialmente mas rapida que casi cualquier evento previo documentado, superando la capacidad de adaptacion de la biosfera actual y provocando una extincion masiva acelerada.',
   },
   {
-    question: 'Que fue el Maximo Termico del Paleoceno-Eoceno (PETM)?',
+    question: '¿Qué fue el Maximo Termico del Paleoceno-Eoceno (PETM)?',
     answer: 'El PETM fue un evento de calentamiento global extremo ocurrido hace aproximadamente 56 millones de anos. Se debio a una inyeccion masiva y rapida de carbono en la atmosfera (posiblemente por la liberacion de hidratos de metano oceanicos o volcanismo en el Atlantico Norte), elevando la temperatura global de 5 a 8 grados en unos pocos miles de anos. Se considera el mejor analogo geologico del cambio climatico moderno, y resulto en acidificacion oceanica severa y extinciones masivas de foraminiferos bentonicos.',
   },
 ];
