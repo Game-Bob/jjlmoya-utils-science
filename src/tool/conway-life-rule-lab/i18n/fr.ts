@@ -23,7 +23,7 @@ const howTo = [
 const faq = [
   {
     question: 'Qu\'est-ce que la notation B/S dans le Jeu de la Vie ?',
-    answer: 'La notation B/S liste les nombres de voisins qui creent une nouvelle cellule vivante et les nombres qui permettent a une cellule vivante existante de survivre. Le Jeu de la Vie de Conway est B3/S23 : les cellules mortes naissent avec exactement trois voisins, et les cellules vivantes survivent avec deux ou trois voisins.',
+    answer: 'La notation B/S liste les nombres de voisins qui creent une nouvelle cellule vivante et les nombres qui permettent a une cellule vivante existante de survivre. Le Jeu de la Vie de Conway est B3/S23: les cellules mortes naissent avec exactement trois voisins, et les cellules vivantes survivent avec deux ou trois voisins.',
   },
   {
     question: 'Pourquoi cet outil s\'appelle laboratoire de règles plutôt que simulateur ?',
