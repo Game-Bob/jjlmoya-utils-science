@@ -1,7 +1,5 @@
-import { describe, expect, it, afterAll } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { ALL_TOOLS } from '../tools';
-
-const failures: Map<string, string[]> = new Map();
 
 type ScriptLocale = keyof typeof SCRIPT_RULES;
 
