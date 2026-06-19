@@ -21,7 +21,7 @@ const howTo = [
   },
   {
     name: 'Interpreta i risultati',
-    text: 'Usa le metriche per capire quando vince l’adattamento e quando domina il caso.',
+    text: 'Usa le metriche per capire quando vince l\'adattamento e quando domina il caso.',
   },
 ];
 
@@ -44,7 +44,7 @@ const faq = [
   {
     question: 'Cosa significa "fitness" in questo simulatore?',
     answer:
-      'La fitness è un punteggio semplificato che indica quanto bene la popolazione è adattata all’ambiente scelto nel simulatore.',
+      'La fitness è un punteggio semplificato che indica quanto bene la popolazione è adattata all\'ambiente scelto nel simulatore.',
   },
 ];
 
@@ -74,7 +74,7 @@ export const content: NaturalSelectionLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Selezione naturale vs deriva genetica: capire l’evoluzione con una popolazione viva',
+      text: 'Selezione naturale vs deriva genetica: capire l\'evoluzione con una popolazione viva',
       level: 2,
     },
     {

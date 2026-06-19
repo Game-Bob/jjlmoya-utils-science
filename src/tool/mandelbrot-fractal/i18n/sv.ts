@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'mandelbrot-fraktalkalkylator';
-const title = 'Mandelbrot-fraktalkalkylator & Självlikhetsutforskare';
+const title = 'Mandelbrot fraktalkalkylator & Självlikhetsutforskare';
 const description = 'Utforska Mandelbrotmängden, zooma in på självliknande fraktalgränser och jämför itereringsdjup, färgkontrast och komplexa koordinater.';
 
 const howTo = [
@@ -48,7 +48,7 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    title: 'Mandelbrot-fraktalkalkylator',
+    title: 'Mandelbrot fraktalkalkylator',
     canvasLabel: 'Interaktiv Mandelbrotmängd-canvas',
     presetsLabel: 'Förinställda Mandelbrotområden',
     presetFull: 'Hela mängden',

@@ -26,16 +26,16 @@ const howTo = [
 
 const faq = [
   {
-    question: 'Cos\'e un diagramma di fase?',
-    answer: 'Un diagramma di fase mappa quale stato della materia e stabile a diverse combinazioni di temperatura e pressione. Le linee di confine segnano le condizioni in cui due fasi possono coesistere in equilibrio.',
+    question: 'Cos\'è un diagramma di fase?',
+    answer: 'Un diagramma di fase mappa quale stato della materia è stabile a diverse combinazioni di temperatura e pressione. Le linee di confine segnano le condizioni in cui due fasi possono coesistere in equilibrio.',
   },
   {
     question: 'Cosa succede al punto critico?',
-    answer: 'Al punto critico, il confine vapore-liquido termina. Al di sopra della temperatura e pressione critiche, il materiale diventa un fluido supercritico e non c\'e una netta distinzione tra liquido e gas.',
+    answer: 'Al punto critico, il confine vapore-liquido termina. Al di sopra della temperatura e pressione critiche, il materiale diventa un fluido supercritico e non c\'è una netta distinzione tra liquido e gas.',
   },
   {
-    question: 'Perche l\'acqua ha una linea di fusione diversa?',
-    answer: 'L\'acqua e insolita perche il ghiaccio e meno denso dell\'acqua liquida vicino al punto di fusione. L\'aumento della pressione puo favorire la fase liquida piu densa, quindi il confine solido-liquido ha una pendenza diversa rispetto a molte sostanze.',
+    question: 'Perché l\'acqua ha una linea di fusione diversa?',
+    answer: 'L\'acqua è insolita perché il ghiaccio è meno denso dell\'acqua liquida vicino al punto di fusione. L\'aumento della pressione può favorire la fase liquida più densa, quindi il confine solido-liquido ha una pendenza diversa rispetto a molte sostanze.',
   },
   {
     question: 'Le curve tracciate sono accurate in laboratorio?',
@@ -84,7 +84,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Questo visualizzatore di diagrammi di fase trasforma un grafico astratto pressione-temperatura in una mappa interattiva. Scegli una sostanza, muovi la temperatura e la pressione, e osserva se il campione e previsto comportarsi come solido, liquido, gas o fluido supercritico. L\'obiettivo e rendere spaziali i confini di fase: attraversare una linea cambia lo stato stabile, mentre avvicinarsi al punto critico cambia il significato stesso di un confine di fase.',
+      html: 'Questo visualizzatore di diagrammi di fase trasforma un grafico astratto pressione-temperatura in una mappa interattiva. Scegli una sostanza, muovi la temperatura e la pressione, e osserva se il campione è previsto comportarsi come solido, liquido, gas o fluido supercritico. L\'obiettivo è rendere spaziali i confini di fase: attraversare una linea cambia lo stato stabile, mentre avvicinarsi al punto critico cambia il significato stesso di un confine di fase.',
     },
     {
       type: 'paragraph',
@@ -117,11 +117,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Al di sotto del punto critico, l\'ebollizione e una transizione di fase: liquido e vapore possono coesistere e l\'energia puo essere assorbita come calore latente mentre la temperatura rimane legata alla condizione al contorno. Al punto critico, quel confine termina. Al di sopra, la densita cambia continuamente e la sostanza viene descritta come un fluido supercritico piuttosto che un liquido o gas normale.',
+      html: 'Al di sotto del punto critico, l\'ebollizione è una transizione di fase: liquido e vapore possono coesistere e l\'energia può essere assorbita come calore latente mentre la temperatura rimane legata alla condizione al contorno. Al punto critico, quel confine termina. Al di sopra, la densità cambia continuamente e la sostanza viene descritta come un fluido supercritico piuttosto che un liquido o gas normale.',
     },
     {
       type: 'paragraph',
-      html: 'Questo e importante in chimica, scienze planetarie, estrazione industriale, refrigerazione e fisica delle alte pressioni. L\'anidride carbonica, ad esempio, diventa supercritica in condizioni relativamente accessibili rispetto all\'acqua, motivo per cui la CO2 supercritica viene utilizzata nell\'estrazione e nella lavorazione dei materiali. L\'acqua richiede temperature e pressioni molto piu elevate, rendendo il suo punto critico importante per i sistemi energetici e la geofisica.',
+      html: 'Questo è importante in chimica, scienze planetarie, estrazione industriale, refrigerazione e fisica delle alte pressioni. L\'anidride carbonica, ad esempio, diventa supercritica in condizioni relativamente accessibili rispetto all\'acqua, motivo per cui la CO2 supercritica viene utilizzata nell\'estrazione e nella lavorazione dei materiali. L\'acqua richiede temperature e pressioni molto più elevate, rendendo il suo punto critico importante per i sistemi energetici e la geofisica.',
     },
     {
       type: 'title',

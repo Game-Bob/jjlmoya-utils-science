@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'phasendiagramm-kritischer-punkt-visualisierer';
-const title = 'Phasendiagramm und Kritischer-Punkt-Visualisierer';
+const title = 'Phasendiagramm und Kritischer Punkt Visualisierer';
 const description = 'Erkunden Sie feste, flüssige, gasförmige und überkritische Bereiche in einem interaktiven Druck-Temperatur-Phasendiagramm mit Tripelpunkt- und Kritischer-Punkt-Markierungen.';
 
 const howTo = [

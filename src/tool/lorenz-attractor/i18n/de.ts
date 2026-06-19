@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'lorenz-attraktor-chaos-simulator';
-const title = 'Lorenz-Attraktor-Chaos-Simulator: Der Schmetterlingseffekt in 3D';
+const title = 'Lorenz Attraktor Chaos Simulator: Der Schmetterlingseffekt in 3D';
 const description = 'Erkunden Sie die Chaostheorie mit dieser interaktiven 3D-Lorenz-Attraktor-Simulation. Visualisieren Sie den Schmetterlingseffekt.';
 
 const howTo = [
@@ -48,7 +48,7 @@ export const content: ToolLocaleContent = {
     noHistory: 'Kein Verlauf',
     load: 'Laden',
     delete: 'Löschen',
-    title: 'Lorenz-Attraktor',
+    title: 'Lorenz Attraktor',
     subTitle: 'Deterministisches Chaos',
     parameterControls: 'Systemparameter',
     simulationSpeed: 'Geschwindigkeit (dt)',

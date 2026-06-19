@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'mandelbrot-fraktal-rechner';
-const title = 'Mandelbrot-Fraktal-Rechner & Selbstähnlichkeits-Explorer';
+const title = 'Mandelbrot Fraktal Rechner & Selbstähnlichkeits Explorer';
 const description = 'Erkunden Sie die Mandelbrot-Menge, zoomen Sie in selbstähnliche Fraktalgrenzen hinein und vergleichen Sie Iterationstiefe, Farbkontrast und Koordinaten der komplexen Ebene.';
 
 const howTo = [
@@ -48,7 +48,7 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    title: 'Mandelbrot-Fraktal-Rechner',
+    title: 'Mandelbrot Fraktal Rechner',
     canvasLabel: 'Interaktive Mandelbrot-Mengen-Leinwand',
     presetsLabel: 'Mandelbrot-Region-Voreinstellungen',
     presetFull: 'Gesamte Menge',

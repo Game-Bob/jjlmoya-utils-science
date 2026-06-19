@@ -8,38 +8,38 @@ const description = 'Explorez les régions solide, liquide, gazeuse et supercrit
 const howTo = [
   {
     name: 'Choisir une substance',
-    text: 'Passez de l’eau au dioxyde de carbone puis à l’azote pour voir comment les points triples et critiques réels reconfigurent la carte des phases.',
+    text: 'Passez de l\'eau au dioxyde de carbone puis à l\'azote pour voir comment les points triples et critiques réels reconfigurent la carte des phases.',
   },
   {
     name: 'Modifier la température et la pression',
-    text: 'Utilisez les curseurs pour placer l’échantillon sur le plan pression-température. Le diagramme met à jour la région de phase active et le marqueur d’échantillon en direct.',
+    text: 'Utilisez les curseurs pour placer l\'échantillon sur le plan pression-température. Le diagramme met à jour la région de phase active et le marqueur d\'échantillon en direct.',
   },
   {
     name: 'Observer le halo critique',
-    text: 'Déplacez-vous vers l’extrémité de la limite vapeur-liquide pour voir la chaleur latente s’estomper et la distinction liquide-gaz se fondre en un fluide supercritique.',
+    text: 'Déplacez-vous vers l\'extrémité de la limite vapeur-liquide pour voir la chaleur latente s\'estomper et la distinction liquide-gaz se fondre en un fluide supercritique.',
   },
   {
     name: 'Lire le panneau pédagogique',
-    text: 'Utilisez l’étiquette de phase, l’indicateur de chaleur latente et les affichages de points pour relier le diagramme visuel au vocabulaire thermodynamique.',
+    text: 'Utilisez l\'étiquette de phase, l\'indicateur de chaleur latente et les affichages de points pour relier le diagramme visuel au vocabulaire thermodynamique.',
   },
 ];
 
 const faq = [
   {
-    question: 'Qu’est-ce qu’un diagramme de phases ?',
+    question: 'Qu\'est-ce qu\'un diagramme de phases ?',
     answer: 'Un diagramme de phases indique quel état de la matière est stable pour différentes combinaisons de température et de pression. Les lignes de démarcation marquent les conditions où deux phases peuvent coexister en équilibre.',
   },
   {
     question: 'Que se passe-t-il au point critique ?',
-    answer: 'Au point critique, la limite vapeur-liquide prend fin. Au-dessus de la température et de la pression critiques, le matériau devient un fluide supercritique et il n’y a plus de distinction nette entre liquide et gaz.',
+    answer: 'Au point critique, la limite vapeur-liquide prend fin. Au-dessus de la température et de la pression critiques, le matériau devient un fluide supercritique et il n\'y a plus de distinction nette entre liquide et gaz.',
   },
   {
-    question: 'Pourquoi l’eau a-t-elle une ligne de fusion différente ?',
-    answer: 'L’eau est inhabituelle car la glace est moins dense que l’eau liquide près du point de fusion. L’augmentation de la pression favorise la phase liquide plus dense, donc la limite solide-liquide a une pente négative, contrairement à celle de nombreuses autres substances.',
+    question: 'Pourquoi l\'eau a-t-elle une ligne de fusion différente ?',
+    answer: 'L\'eau est inhabituelle car la glace est moins dense que l\'eau liquide près du point de fusion. L\'augmentation de la pression favorise la phase liquide plus dense, donc la limite solide-liquide a une pente négative, contrairement à celle de nombreuses autres substances.',
   },
   {
     question: 'Les courbes tracées sont-elles exactes en laboratoire ?',
-    answer: 'Non. L’outil utilise des courbes simplifiées ancrées sur des valeurs publiées de point triple et de point critique. Il est conçu pour l’apprentissage conceptuel, pas pour le génie des procédés ou les calculs de sécurité.',
+    answer: 'Non. L\'outil utilise des courbes simplifiées ancrées sur des valeurs publiées de point triple et de point critique. Il est conçu pour l\'apprentissage conceptuel, pas pour le génie des procédés ou les calculs de sécurité.',
   },
 ];
 
@@ -57,7 +57,7 @@ export const content: ToolLocaleContent = {
     temperature: 'Température',
     pressure: 'Pression',
     diagram: 'Diagramme de phases pression-température',
-    sample: 'État de l’échantillon',
+    sample: 'État de l\'échantillon',
     phase: 'Phase stable',
     triplePoint: 'Point triple',
     criticalPoint: 'Point critique',
@@ -79,12 +79,12 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Visualiseur interactif de diagramme de phases pour points triples, courbes d’ébullition et points critiques',
+      text: 'Visualiseur interactif de diagramme de phases pour points triples, courbes d\'ébullition et points critiques',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Ce visualiseur de diagramme de phases transforme un graphique abstrait pression-température en une carte interactive. Choisissez une substance, déplacez la température et la pression, et voyez si l’échantillon est prédit pour se comporter comme un solide, un liquide, un gaz ou un fluide supercritique.',
+      html: 'Ce visualiseur de diagramme de phases transforme un graphique abstrait pression-température en une carte interactive. Choisissez une substance, déplacez la température et la pression, et voyez si l\'échantillon est prédit pour se comporter comme un solide, un liquide, un gaz ou un fluide supercritique.',
     },
     {
       type: 'title',
@@ -96,9 +96,9 @@ export const content: ToolLocaleContent = {
       headers: ['Caractéristique', 'Signification', 'Observation'],
       rows: [
         ['Point triple', 'Solide, liquide et gaz coexistent', 'La jonction à basse température.'],
-        ['Courbe vapeur-liquide', 'Équilibre d’ébullition', 'La ligne reliant le point triple au point critique.'],
+        ['Courbe vapeur-liquide', 'Équilibre d\'ébullition', 'La ligne reliant le point triple au point critique.'],
         ['Limite solide-liquide', 'Équilibre de fusion', 'La limite séparant solide et liquide.'],
-        ['Point critique', 'Fin de la limite vapeur-liquide', 'Extrémité où la chaleur latente s’estompe.'],
+        ['Point critique', 'Fin de la limite vapeur-liquide', 'Extrémité où la chaleur latente s\'estompe.'],
         ['Région supercritique', 'Fluide dense unique', 'Zone haute température/pression.'],
       ],
     },

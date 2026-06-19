@@ -2,7 +2,7 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dubbelspalt-dekoherens-simulator';
-const title = 'Dubbelspaltexperiment och Dekoherens-simulator';
+const title = 'Dubbelspaltexperiment och Dekoherens Simulator';
 const description = 'Slå på och av vilken-väg-detektorer för att se kvantinterferens blekna till två partikelband i en visuell dubbelspaltsimulator.';
 
 const howTo = [
