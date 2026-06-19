@@ -1,45 +1,45 @@
 import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'mandelbrot-fraktal-kalkylator';
-const title = 'Mandelbrot Fraktalkalkylator & Self Similarity Explorer';
-const description = 'Utforska Mandelbrotmangden, zooma in pa sjalvliknande fraktalgranser och jamfor itereringsdjup, fargkontrast och komplexa plankarordinater.';
+const slug = 'mandelbrot-fraktalkalkylator';
+const title = 'Mandelbrot-fraktalkalkylator & Självlikhetsutforskare';
+const description = 'Utforska Mandelbrotmängden, zooma in på självliknande fraktalgränser och jämför itereringsdjup, färgkontrast och komplexa koordinater.';
 
 const howTo = [
   {
-    name: 'Valj ett omrade av Mandelbrotmangden',
-    text: 'Borja med hela mangden eller hoppa direkt till ett hogdetaljrikt omrade som haestskedalen eller en spiralminibrot.',
+    name: 'Välj ett område av Mandelbrotmängden',
+    text: 'Börja med hela mängden eller hoppa direkt till ett högupplöst område som hästskodalen eller en spiralminibrot.',
   },
   {
-    name: 'Zooma genom att klicka pa bilden',
-    text: 'Klicka pa valfri punkt pa canvasset for att atercentrera den komplexa planet och forstora fraktalen runt den koordinaten.',
+    name: 'Zooma genom att klicka på bilden',
+    text: 'Klicka på valfri punkt på canvas-ytan för att återcentrera det komplexa planet och förstora fraktalen runt den koordinaten.',
   },
   {
-    name: 'Justera itereringsdjup och fargkontrast',
-    text: 'Oka itereringsbudgeten for att avsloja finare gransstruktur, justera sedan kontrast och palett for att gora flyktidsband lattare att lasa.',
+    name: 'Justera itereringsdjup och färgkontrast',
+    text: 'Öka itereringsbudgeten för att avslöja finare gränsstrukturer, justera sedan kontrast och palett för att göra flykttidsbanden lättare att tyda.',
   },
 ];
 
 const faq = [
   {
-    question: 'Vad visar Mandelbrotmangsdkalkylatorn?',
-    answer: 'Den visar vilka komplexa tal c som haller rekursionen z(n+1) = z(n)^2 + c begransad nar man borjar fran z = 0. Punkter som aldrig flyr inom den valda itereringsbudgeten fargsattes som medlemmar av mangden, medan yttre punkter fargsatts efter hur snabbt deras bana flyr.',
+    question: 'Vad visar Mandelbrotmängdskalkylatorn?',
+    answer: 'Den visar vilka komplexa tal c som håller rekursionen z(n+1) = z(n)^2 + c begränsad när man börjar från z = 0. Punkter som aldrig "flyr" inom den valda itereringsbudgeten färgsätts som medlemmar av mängden, medan yttre punkter färgsätts baserat på hur snabbt deras bana flyr mot oändligheten.',
   },
   {
-    question: 'Varfor innehaller Mandelbrotmangdens grans sa mycket detalj?',
-    answer: 'Gransen separerar stabila och flyende banor, och sma koordinatforandringar nara den gransen kan fullstandigt andra langtidsbeteendet. Denna kanslighet skapar kapslade bulbler, spiraler, filament och miniatyrkopior som upptrader pa manga forstoringsnivaer.',
+    question: 'Varför innehåller Mandelbrotmängdens gräns så mycket detaljer?',
+    answer: 'Gränsen separerar stabila från flyende banor, och små koordinatförändringar nära den gränsen kan fullständigt ändra långtidsbeteendet. Denna känslighet skapar kapslade bubblor, spiraler, filament och miniatyrkopior som uppträder på många förstoringsnivåer.',
   },
   {
-    question: 'Ar Mandelbrotmangden verkligen sjalvliknande?',
-    answer: 'Den ar inte perfekt sjalvliknande pa samma strikta satt som en Sierpinskietriangel, men den ar rikligt kvasi-sjalvliknande. Sma kopior av hela mangden upptrader overallt i planet, ofta forvridna och sammanbundna av utforliga greningsstrukturer.',
+    question: 'Är Mandelbrotmängden verkligen självliknande?',
+    answer: 'Den är inte perfekt självliknande på samma strikta sätt som en Sierpinski-triangel, men den är rikligt kvasi-självliknande. Små kopior av hela mängden uppträder överallt i det komplexa planet, ofta förvridna och sammanbundna av utstuderade grenstrukturer.',
   },
   {
     question: 'Vad styr itereringsantalet?',
-    answer: 'Itereringsantalet styr hur lange kalkylatorn testar varje punkt innan den beslutar att den sannolikt tillhor mangden. Hogre varden avslojar djupare filament och renare minibrots, men kraver mer berakning per pixel.',
+    answer: 'Itereringsantalet styr hur länge kalkylatorn testar varje punkt innan den beslutar att den sannolikt tillhör mängden. Högre värden avslöjar djupare filament och renare minibrots, men kräver mer beräkningskapacitet per pixel.',
   },
   {
-    question: 'Varfor andras fargerna utanfor det svarta omradet?',
-    answer: 'Yttre farger baseras pa flyktid: punkter som flyr snabbt far andra farger an punkter som haller sig nara mangden under manga iterationer. Jamn farglagning minskar harda band och gor geometrin hos narliggande banor lattare att inspektera.',
+    question: 'Varför ändras färgerna utanför det svarta området?',
+    answer: 'De yttre färgerna baseras på flykttid: punkter som flyr snabbt får andra färger än punkter som håller sig nära mängden under många iterationer. Jämn färgläggning minskar hårda band och gör geometrin hos närliggande banor lättare att inspektera.',
   },
 ];
 
@@ -48,77 +48,50 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    title: 'Mandelbrot Fraktalkalkylator',
-    canvasLabel: 'Interaktiv Mandelbrotmangd-canvas',
-    presetsLabel: 'Forinstallda Mandelbrotomraden',
-    presetFull: 'Hela Mangden',
-    presetSeahorse: 'Hastskedalen',
+    title: 'Mandelbrot-fraktalkalkylator',
+    canvasLabel: 'Interaktiv Mandelbrotmängd-canvas',
+    presetsLabel: 'Förinställda Mandelbrotområden',
+    presetFull: 'Hela mängden',
+    presetSeahorse: 'Hästskodalen',
     presetSpiral: 'Spiralminibrot',
     centerPoint: 'Centrum',
-    magnification: 'Forstoring',
-    visibleWindow: 'Synligt fonster',
-    renderBudget: 'Itereringar',
+    magnification: 'Förstoring',
+    visibleWindow: 'Synligt fönster',
+    renderBudget: 'Iterationer',
     iterationsLabel: 'Itereringsdjup',
     contrastLabel: 'Flyktkontrast',
-    colorLabel: 'Fargfalt',
-    paletteEmber: 'Glodbands',
+    colorLabel: 'Färgfält',
+    paletteEmber: 'Glödbands',
     paletteLagoon: 'Lagunplasma',
-    paletteInk: 'Blackspektrum',
+    paletteInk: 'Spektrum',
   },
   seo: [
     {
       type: 'title',
-      text: 'Mandelbrot Set Calculator for Fractals, Escape Time, and Self-Similarity',
+      text: 'Mandelbrotmängdskalkylator för fraktaler, flykttid och självlikhet',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Denna Mandelbrotfraktalkalkylator renderar den klassiska komplexa-plan-mangden definierad av iterationen <strong>z(n+1) = z(n)^2 + c</strong>. Den ar designad for utforskning snarare an passivt tittande: varje klick atercentrerar planet, varje zoom exponerar en mindre matematisk omgivning, och itereringsreglaget later dig bestamma hur djupt kalkylatorn ska testa gransen innan den fargsatter en punkt som stabil eller flyende.',
+      html: 'Denna Mandelbrot-fraktalkalkylator renderar den klassiska mängden i det komplexa planet, definierad av iterationen <strong>z(n+1) = z(n)^2 + c</strong>. Den är designad för utforskning: varje klick återcentrerar planet, varje zoom exponerar en ny matematisk omgivning, och itereringsreglaget låter dig bestämma hur djupt kalkylatorn ska testa gränsen.',
     },
     {
       type: 'title',
-      text: 'How to Read the Mandelbrot Image',
+      text: 'Hur man läser Mandelbrot-bilden',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Den morka centrala formen markerar punkter vars banor forbli r begransade inom den aktuella itereringsbudgeten. Det farglagda yttre ar en flyktidskarta. En punkt farglagd nara mangden kan overleva hundratals iterationer innan dess magnitud overstiger flyktradien, medan en punkt langt borta flyr nastan omedelbart. Den mest vetenskapligt intressanta geometrin ar vanligtvis inte innanfor den fyllda formen, utan langs gransen dar begransat och obegransat beteende sammanflatas.',
+      html: 'Den mörka centrala formen markerar punkter vars banor förblir begränsade inom den aktuella itereringsbudgeten. Det färglagda yttre är en flykttidskarta. En punkt färglagd nära mängden kan överleva hundratals iterationer innan dess magnitud överstiger flyktradien, medan en punkt långt borta flyr nästan omedelbart. Den mest intressanta geometrin finns oftast längs gränsen där begränsat och obegränsat beteende sammanflätas.',
     },
     {
       type: 'table',
-      headers: ['Kontroll', 'Vad den andra r', 'Nar den ska okas'],
+      headers: ['Kontroll', 'Vad den ändrar', 'När den ska ökas'],
       rows: [
-        ['<strong>Itereringsdjup</strong>', 'Hur manga rekursionssteg som testas for varje pixel.', 'Anvand hogre varden efter inzoomning pa tunna filament eller miniatyrkopior.'],
-        ['<strong>Flyktkontrast</strong>', 'Hur starkt jamma flyktvarden separeras i synliga band.', 'Ho j den nar bilden ser plan ut; sank den nar fargerna ar for harda.'],
-        ['<strong>Palett</strong>', 'Fargmappningen som tillampas pa yttre punkter.', 'Vaxla paletter for att avsloja strukturer som kan vara dolda av ett enda fargfalt.'],
+        ['<strong>Itereringsdjup</strong>', 'Hur många rekursionssteg som testas för varje pixel.', 'Använd högre värden efter inzoomning på tunna filament eller miniatyrkopior.'],
+        ['<strong>Flyktkontrast</strong>', 'Hur starkt jämna flyktvärden separeras i synliga band.', 'Höj den när bilden ser plan ut; sänk den när färgerna är för hårda.'],
+        ['<strong>Palett</strong>', 'Färgmappningen som tillämpas på yttre punkter.', 'Växla paletter för att avslöja strukturer som kan vara dolda av ett enda färgfält.'],
       ],
-    },
-    {
-      type: 'title',
-      text: 'Self-Similarity and Minibrots',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'En anledning till att Mandelbrotmangden ar sa kanda ar dess kvasi-sjalvlikhet. Nar du zoomar in pa antenner, spiraler och dalar stoter du upprepade ganger pa sma Mandelbrotliknande oar, ofta kallade minibrots. Dessa kopior ar inte bara dekorativa. Deras arrangemang speglar dynamiken i kvadratiska avbildningar, inklusive periodiska bulbler, bifurkationsmonster och omraden dar banor forbli r fastna under langa perioder innan de flyr.',
-    },
-    {
-      type: 'title',
-      text: 'Why Higher Iterations Matter at Deep Zoom',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'I hela mangdens vy ger en blygsam itereringsgrans en igenkannlig bild. Vid djupare forstoring tar det dock mycket langre tid for manga granspunkter att avsloja om de flyr. Om itereringsgransen ar for lag kan fina strukturer se falskt solida eller otydliga ut. Att oka itereringsantalet forbattrar gransklassificeringen och later kalkylatorn losa upp smala slingor, spiralarmar och satellitbulbler med storre sakerhet.',
-    },
-    {
-      type: 'title',
-      text: 'Mathematical Meaning of the Complex Coordinates',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Koordinatlasningen visar det aktuella centrumet av visningsporten som ett komplext tal c = a + bi. Den horisontella axeln ar den reella delen och den vertikala axeln ar den imaginara delen. Genom att klicka pa canvasset valjer du en ny komplex koordinat och forstorar sedan det synliga fonstret runt den. Detta gor verktyget anvandbart for att lara sig hur visuella omraden av fraktalen motsvarar exakta platser i det komplexa planet.',
     },
   ],
   faq,

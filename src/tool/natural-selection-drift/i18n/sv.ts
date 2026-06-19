@@ -4,10 +4,13 @@ import type { NaturalSelectionLocaleContent } from '../entry';
 const slug = 'simulering-av-naturligt-urval-genetisk-drift';
 const title = 'Simulering av naturligt urval och genetisk drift';
 const description =
-  'Se i realtid hur selektionstryck, mutation, drift och reproduktion andrar allelfrekvenser.';
+  'Se i realtid hur selektionstryck, mutation, genetisk drift och reproduktion ändrar allelfrekvenser.';
 
 const faq = [
-  { question: 'Vad ar skillnaden mellan naturligt urval och genetisk drift?', answer: 'Naturligt urval ar inte slumpmassigt. Genetisk drift ar en slumpmassig andring av allelfrekvenser.' },
+  {
+    question: 'Vad är skillnaden mellan naturligt urval och genetisk drift?',
+    answer: 'Naturligt urval är en icke-slumpmässig process där fördelaktiga egenskaper blir vanligare på grund av sin fitness. Genetisk drift är däremot en slumpmässig förändring av allelfrekvenser i en population, som inte beror på egenskaperas anpassningsvärde.'
+  },
 ];
 
 export const content: NaturalSelectionLocaleContent = {
@@ -29,13 +32,13 @@ export const content: NaturalSelectionLocaleContent = {
     evolutionConsole: 'Evolutionskonsol',
     populationLabel: 'Population',
     aliveLabel: 'levande',
-    alleleCountsLabel: 'Allelrakning',
+    alleleCountsLabel: 'Allelräkning',
     alleleDefault: 'Allel 1',
     populationValueLabel: 'Population',
   },
   seo: [
-    { type: 'title', text: 'Naturligt urval vs genetisk drift: forsta evolution med en levande population', level: 2 },
-    { type: 'paragraph', html: 'Denna simulator hjalper dig att se skillnaden mellan selektion och drift pa ett tydligt satt.' },
+    { type: 'title', text: 'Naturligt urval vs genetisk drift: förstå evolution med en levande population', level: 2 },
+    { type: 'paragraph', html: 'Denna simulator hjälper dig att se skillnaden mellan selektion och drift på ett tydligt sätt genom levande visualisering.' },
   ],
   faq,
   bibliography,

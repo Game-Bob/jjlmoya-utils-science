@@ -1,53 +1,53 @@
 ﻿import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'dyson-kure-enerji-yakalama-simulatoru';
-const title = 'Dyson Kuresi Enerji Yakalama Simulatoru';
-const description = 'Farkli yildizlar icin Dyson surusu, halkasi, kabugu ve statit toplayici tasarimlarini tahmin edin. Yakalama gucunu, yorunge yaricapini, malzeme kutlesini ve hedef Kardashev olcegine ulasmak icin gereken kapsamayi hesaplayin.';
+const slug = 'dyson-kuresi-enerji-yakalama-simulatoru';
+const title = 'Dyson Küresi Enerji Yakalama Simülatörü';
+const description = 'Farklı yıldızlar için Dyson sürüsü, halkası, kabuğu ve statit toplayıcı tasarımlarını tahmin edin. Yakalama gücünü, yörünge yarıçapını, malzeme kütlesini ve hedef Kardashev ölçeğine ulaşmak için gereken kapsamayı hesaplayın.';
 
 const howTo = [
   {
-    name: 'Bir yildiz turu secin',
-    text: 'Bir M cucesi, Gunes benzeri yildiz, A-tipi yildiz, kirmizi dev veya mavi dev ile baslayin. Simulator, toplayici yaricapi ve yorunge periyodunu tahmin etmek icin temsili parlaklik ve kutle degerlerini kullanir.',
+    name: 'Bir yıldız türü seçin',
+    text: 'Bir M cücesi, Güneş benzeri yıldız, A-tipi yıldız, kırmızı dev veya mavi dev ile başlayın. Simülatör, toplayıcı yarıçapı ve yörünge periyodunu tahmin etmek için temsili parlaklık ve kütle değerlerini kullanır.',
   },
   {
-    name: 'Mega yapi mimarisini secin',
-    text: 'Bir Dyson surusu, ekvatoral halka, rijit kabuk veya statit ayna bulutunu karsilastirin. Her tasarimin farkli yakalama verimliligi, malzeme yogunlugu ve kararlilik varsayimlari vardir.',
+    name: 'Mega yapı mimarisini seçin',
+    text: 'Bir Dyson sürüsü, ekvatoral halka, rijit kabuk veya statit ayna bulutunu karşılaştırın. Her tasarımın farklı yakalama verimliliği, malzeme yoğunluğu ve kararlılık varsayımları vardır.',
   },
   {
-    name: 'Kapsama ve calisma sicakligini ayarlayin',
-    text: 'Daha fazla yildiz gucu yakalamak icin kapsamayi artirin, ardindan toplayicilari yildiza yaklastirmak veya uzaklastirmak icin calisma sicakligini ayarlayin.',
+    name: 'Kapsama ve çalışma sıcaklığını ayarlayın',
+    text: 'Daha fazla yıldız gücü yakalamak için kapsamayı artırın, ardından toplayıcıları yıldıza yaklaştırmak veya uzaklaştırmak için çalışma sıcaklığını ayarlayın.',
   },
   {
     name: 'Bir Kardashev hedefi belirleyin',
-    text: 'Hedef kaydiricisini kullanarak bir uygarlik olcegindeki guc hedefine ulasmak icin yildizin ne kadarinin kapsanmasi gerektigini gorun.',
+    text: 'Hedef kaydırıcısını kullanarak bir uygarlık ölçeğindeki güç hedefine ulaşmak için yıldızın ne kadarının kapsanması gerektiğini görün.',
   },
 ];
 
 const faq = [
   {
-    question: 'Dyson kuresi ile Dyson surusu arasindaki fark nedir?',
-    answer: 'Rijit bir Dyson kuresi, bir yildizin etrafinda surekli bir kabukken, Dyson surusu bagimsiz yorungedeki toplayicilardan olusan buyuk bir koleksiyondur. Muhendislik tartismalarinin cogu surulari tercih eder, cunku kati bir kabuk yapisal olarak kararsiz ve son derece malzeme yogun olurdu.',
+    question: 'Dyson küresi ile Dyson sürüsü arasındaki fark nedir?',
+    answer: 'Rijit bir Dyson küresi, bir yıldızın etrafında sürekli bir kabukken, Dyson sürüsü bağımsız yörüngedeki toplayıcılardan oluşan büyük bir koleksiyondur. Mühendislik tartışmalarının çoğu sürüleri tercih eder, çünkü katı bir kabuk yapısal olarak kararsız ve son derece malzeme yoğun olurdu.',
   },
   {
-    question: 'Simulator en uygun yaricapi nasil secer?',
-    answer: 'Secilen yildiz parlakligi altinda her iki tarafindan isin yayan toplayicilarin secilen calisma sicakligina ulastigi mesafeyi tahmin eder. Daha sicak toplayicilar daha yakin yorungeye girebilirken, daha soguk toplayicilar daha buyuk yaricap gerektirir.',
+    question: 'Simülatör en uygun yarıçapı nasıl seçer?',
+    answer: 'Seçilen yıldız parlaklığı altında her iki tarafından ışın yayan toplayıcıların seçilen çalışma sıcaklığına ulaştığı mesafeyi tahmin eder. Daha sıcak toplayıcılar daha yakın yörüngeye girebilirken, daha soğuk toplayıcılar daha büyük yarıçap gerektirir.',
   },
   {
     question: 'Burada Kardashev derecesi ne anlama geliyor?',
-    answer: 'Kardashev degeri, yakalanan gucten logaritmik formÃ¼l K = (log10(P) - 6) / 10 kullanilarak hesaplanir, burada P watt cinsinden guctur. K1\'e yakin bir deger gezegen olceginde enerji kullanimini temsil ederken, K2 tam yildiz cikisina yaklasir.',
+    answer: 'Kardashev değeri, yakalanan güçten logaritmik formül K = (log10(P) - 6) / 10 kullanılarak hesaplanır, burada P watt cinsinden güçtür. K1\'e yakın bir değer gezegen ölçeğinde enerji kullanımını temsil ederken, K2 tam yıldız çıktısına yaklaşır.',
   },
   {
-    question: 'Malzeme kutlesi gercekci mi?',
-    answer: 'Toplayici alani, yuzey yogunlugu ve bir kararlilik faktorune dayali egitsel birinci dereceden bir tahmindir. Gercek tasarimlar durak bakimi, guc iletimi, madencilik kayiplari, yedeklilik, isi atimi ve uretim altyapisi gerektirirdi.',
+    question: 'Malzeme kütlesi gerçekçi mi?',
+    answer: 'Toplayıcı alanı, yüzey yoğunluğu ve bir kararlılık faktörüne dayalı eğitsel birinci dereceden bir tahmindir. Gerçek tasarımlar durak bakımı, güç iletimi, madencilik kayıpları, yedeklilik, ısı atımı ve üretim altyapısı gerektirirdi.',
   },
   {
-    question: 'Parlak yildizlar neden bu kadar buyuk toplayici sistemleri gerektiriyor?',
-    answer: 'Yuksek parlakliktaki yildizlar guvenli termal yaricapi disari iter. Bu, belirli bir kapsama orani icin gereken yuzey alanini artirir, bu nedenle malzeme talebi, yakalanan gucun sezgisel hissettirdiginden daha hizli yukselebilir.',
+    question: 'Parlak yıldızlar neden bu kadar büyük toplayıcı sistemleri gerektiriyor?',
+    answer: 'Yüksek parlaklıktaki yıldızlar güvenli termal yarıçapı dışarı iter. Bu, belirli bir kapsama oranı için gereken yüzey alanını artırır, bu nedenle malzeme talebi, yakalanan gücün sezgisel hissettirdiğinden daha hızlı yükselebilir.',
   },
   {
-    question: 'Bir uygarlik kismi kapsama ile Kardashev Tip II\'ye ulasabilir mi?',
-    answer: 'Evet, ana yildiz yeterince parlaksa ve toplayicilar verimliyse. Gunes benzeri bir yildizin etrafinda Tip II\'ye yaklasmak, gunes parlakliginin buyuk bir kismini yakalamayi gerektirir, ancak daha parlak yildizlarin etrafinda ayni guc hedefine daha dusuk kapsama oraniyla ulasilabilir.',
+    question: 'Bir uygarlık kısmi kapsama ile Kardashev Tip II\'ye ulaşabilir mi?',
+    answer: 'Evet, ana yıldız yeterince parlaksa ve toplayıcılar verimliyse. Güneş benzeri bir yıldızın etrafında Tip II\'ye yaklaşmak, güneş parlaklığının büyük bir kısmını yakalamayı gerektirir, ancak daha parlak yıldızların etrafında aynı güç hedefine daha düşük kapsama oranıyla ulaşılabilir.',
   },
 ];
 
@@ -56,140 +56,59 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    visualization: 'Dyson toplayici goruntulemesi',
-    starType: 'Yildiz turu',
-    structureType: 'Yapi',
-    coverage: 'Toplayici kapsamasi',
-    operatingTemp: 'Calisma sicakligi',
+    visualization: 'Dyson toplayıcı görüntülemesi',
+    starType: 'Yıldız türü',
+    structureType: 'Yapı',
+    coverage: 'Toplayıcı kapsaması',
+    operatingTemp: 'Çalışma sıcaklığı',
     kardashevTarget: 'Kardashev hedefi',
     kardashevRating: 'Mevcut derece',
-    capturedPower: 'Yakalanan guc',
-    optimalRadius: 'En uygun yaricap',
+    capturedPower: 'Yakalanan güç',
+    optimalRadius: 'En uygun yarıçap',
     targetCoverage: 'Hedef kapsama',
-    materialMass: 'Malzeme kutlesi',
-    captureMeter: 'Hedefe dogru ilerleme',
-    statusReady: 'Toplayici talebini tahmin etmek icin sistemi ayarlayin.',
-    statusUnderbuilt: 'Kapsama secilen Kardashev hedefinin altinda. Toplayici ekleyin veya daha parlak bir yildiz secin.',
-    statusBalanced: 'Kapsama ve yildiz cikisi secilen uygarlik olcegi hedefine yakin.',
-    statusExtreme: 'Bu yapilandirma hedefi asiyor. Cok buyuk guc yakalar, ancak malzeme talebi hizla artar.',
-    orbitalPeriod: 'Yorunge periyodu',
-    collectorArea: 'Toplayici alani',
-    mercuryMasses: '{value} Merkur kutlesi',
+    materialMass: 'Malzeme kütlesi',
+    captureMeter: 'Hedefe doğru ilerleme',
+    statusReady: 'Toplayıcı talebini tahmin etmek için sistemi ayarlayın.',
+    statusUnderbuilt: 'Kapsama seçilen Kardashev hedefinin altında. Toplayıcı ekleyin veya daha parlak bir yıldız seçin.',
+    statusBalanced: 'Kapsama ve yıldız çıkışı seçilen uygarlık ölçeği hedefine yakın.',
+    statusExtreme: 'Bu yapılandırma hedefi aşıyor. Çok büyük güç yakalar, ancak malzeme talebi hızla artar.',
+    orbitalPeriod: 'Yörünge periyodu',
+    collectorArea: 'Toplayıcı alanı',
+    mercuryMasses: '{value} Merkür kütlesi',
     kilograms: '{value} kg',
-    daysUnit: '{value} gun',
-    starMDwarf: 'M cucesi',
-    starSun: 'G tipi Gunes benzeri',
-    starA: 'A tipi yildiz',
-    starRedGiant: 'Kirmizi dev',
+    daysUnit: '{value} gün',
+    starMDwarf: 'M cücesi',
+    starSun: 'G tipi Güneş benzeri',
+    starA: 'A tipi yıldız',
+    starRedGiant: 'Kırmızı dev',
     starBlueGiant: 'Mavi dev',
-    structureSwarm: 'Dyson surusu',
+    structureSwarm: 'Dyson sürüsü',
     structureRing: 'Ekvatoral halka',
     structureShell: 'Rijit kabuk',
     structureStatite: 'Statit ayna bulutu',
   },
   seo: [
+    { type: 'title', text: 'Dyson Küresi Enerji Yakalama Simülatörü', level: 2 },
+    { type: 'paragraph', html: 'Bir Dyson küresi, bir kabuğun içindeki bir yıldızın bilim kurgu görüntüsünden ibaret değildir. Yıldız parlaklığını yakalamak için olası mega yapı kavramlarından oluşan bir ailedir: uydu sürüleri, ekvatoral halkalar, ince ayna bulutları ve ünlü ancak sorunlu rijit kabuk. Bu simülatör bu fikirleri sayılara dönüştürerek yıldız türü, toplayıcı sıcaklığı, kapsama ve yapı tasarımının enerji bütçesini nasıl değiştirdiğini karşılaştırmanızı sağlar.' },
+    { type: 'paragraph', html: 'Hesaplayıcı; yakalanan gücü, termal yörünge yarıçapını, toplayıcı alanını, yörünge periyodunu, malzeme kütlesini ve seçilen bir Kardashev ölçeği hedefi için gereken kapsamayı tahmin eder. Öğrenciler, dünya kurucuları, bilim iletişimcileri ve Tip II uygarlıklarının neden zor olduğunu anlamaya çalışan herkes için tasarlanmıştır.' },
+    { type: 'title', text: 'Dyson Yarıçapı Nasıl Tahmin Edilir', level: 3 },
+    { type: 'paragraph', html: 'En uygun yarıçap, yıldız parlaklığı ve toplayıcı çalışma sıcaklığından hesaplanır. Parlak bir yıldızın yakınındaki bir toplayıcı yoğun bir akış alır ve sıcak çalışmalı veya büyük miktarda ısıyı atmalıdır. Dışarı doğru hareket etmek termal stresi azaltır, ancak gereken toplayıcı alanı mesafenin karesiyle artar.' },
+    { type: 'title', text: 'Dyson Sürüsü, Halka, Kabuk ve Statit Bulutu Karşılaştırması', level: 3 },
     {
-      type: 'title',
-      text: 'Dyson Kuresi Enerji Yakalama Simulatoru',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'Bir Dyson kuresi, bir kabugun icindeki bir yildizin bilim kurgu goruntusunden ibaret degildir. Yildiz parlakligini yakalamak icin olasi mega yapi kavramlarindan olusan bir ailedir: uydu surulari, ekvatoral halkalar, ince ayna bulutlari ve unlu ancak sorunlu rijit kabuk. Bu simulator bu fikirleri sayilara donusturerek yildiz turu, toplayici sicakligi, kapsama ve yapi tasariminin enerji butcesini nasil degistirdigini karsilastirmanizi saglar.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Hesaplayici, yakalanan gucu, termal yorunge yaricapini, toplayici alanini, yorunge periyodunu, malzeme kutlesini ve secilen bir Kardashev olcegi hedefi icin gereken kapsamayi tahmin eder. Ogrenciler, dunya kuruculari, bilim iletisimcileri ve Tip II uygarliklarinin neden zor oldugunu anlamaya calisan herkes icin tasarlanmistir: zorluk sadece guc degil, ayni zamanda alan, isi, madencilik, kararlilik ve yorunge lojistigidir.',
-    },
-    {
-      type: 'title',
-      text: 'Dyson Yaricapi Nasil Tahmin Edilir',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'En uygun yaricap, yildiz parlakligi ve toplayici calisma sicakligindan hesaplanir. Parlak bir yildizin yakinindaki bir toplayici yogun bir akis alir ve sicak calismali veya buyuk miktarda isiyi atmalidir. Disari dogru hareket etmek termal stresi azaltir, ancak gereken toplayici alani mesafenin karesiyle artar. Bu denge, ayni kapsama oraninin zayif bir M cucesi etrafinda mutevazi ve mavi bir dev etrafinda devasa olmasini aciklar.',
-    },
-    {
-      type: 'title',
-      text: 'Dyson Surusu, Halka, Kabuk ve Statit Bulutu Karsilastirmasi',
-      level: 3,
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>Dyson surusu:</strong> bircok bagimsiz yorungedeki toplayici. Kademeli olarak insa edilebildigi ve rijit bir yildiz kabugu gerektirmedigi icin en olasi buyuk olcekli mimaridir.',
-        '<strong>Ekvatoral halka:</strong> dusuk kapsama verimliligine sahip daha dar bir toplayici bandi. Ilk mega yapi olarak hayal etmesi daha kolaydir, ancak daha genis bir suru haline gelmeden tam yildiz cikisini yakalayamaz.',
-        '<strong>Rijit kabuk:</strong> gorsel olarak ikonik ancak mekanik olarak elverissiz. Bir yildizin etrafindaki kabuk ciddi kararlilik ve malzeme sorunlarina sahiptir, bu nedenle simulator ona yuksek kutle ve dusuk kararlilik atar.',
-        '<strong>Statit ayna bulutu:</strong> kismen isinim basinciyla tutulan ultra hafif yansiticilar. Malzeme talebini azaltir ancak dusuk isi toleransina ve zorlu kontrol gereksinimlerine sahiptir.',
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Kardashev Olcegi icin Gereken Kapsama',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Kardashev olcegi, uygarlik guc kullanimini logaritmik olarak ifade eder. Bu aracta, yakalanan watt, K = (log10(P) - 6) / 10 kullanilarak K derecesine donusturulur. Gunes etrafindaki kismi bir Dyson surusu, tam Tip II durumuna ulasmadan cok once mevcut insan enerji kullanimini bircok buyukluk sirasiyla asabilir. Hedef kapsama sonucu, secilen hedef icin yildiz parlakliginin ne kadarinin yakalanmasi gerektigini gosterir.',
-    },
-    {
-      type: 'table',
-      headers: ['Tasarim secimi', 'Ana avantaj', 'Ana dar bogaz'],
-      rows: [
-        ['Dyson surusu', 'Bagimsiz yorungelerle asamali insa', 'Trafik kontrolu ve guc iletimi'],
-        ['Ekvatoral halka', 'Daha dusuk baslangic alani ve basit geometri', 'Sinirli kapsama'],
-        ['Rijit kabuk', 'Basit bir diyagramda maksimum yakalama', 'Yapisal kararsizlik ve devasa kutle'],
-        ['Statit bulutu', 'Cok dusuk yuzey yogunlugu', 'Hassas durak bakimi ve isi sinirlari'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Malzeme Kutlesi ve Madencilik Gerceklik Kontrolu',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Malzeme tahmini, toplayici alanini varsayilan bir yuzey yogunlugu ve tasarim kararlilik faktoruyle carpar. Rakamlar astronomik hale geldiginde kutleyi bilerek Merkur kutlesi cinsinden bildirir, cunku bircok Dyson surusu tartismasi hammadde icin kucuk gezegenlerin veya asteroitlerin sokulmesini hayal eder. Ince toplayicilar bile astronomik birim olceklerine yayildiklarinda kutlesel hale gelir.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Sonucu bir plan yerine bir buyukluk sirasi rehberi olarak kullanin. Gercek mega yapi muhendisligi, radyasyon hasari modelleri, termal donguler, carpisma onleme, tutum kontrolu, guc iletimi, uretim verimi ve uzun vadeli yorunge evrimi gerektirirdi. Simulatorun degeri, ilk kisitlamalari hemen gorunur hale getirmesidir.',
-    },
+      type: 'list', items: [
+        '<strong>Dyson sürüsü:</strong> Birçok bağımsız yörüngedeki toplayıcı. Kademeli olarak inşa edilebildiği ve rijit bir yıldız kabuğu gerektirmediği için en olası büyük ölçekli mimaridir.',
+        '<strong>Ekvatoral halka:</strong> Düşük kapsama verimliliğine sahip daha dar bir toplayıcı bandı. İlk mega yapı olarak hayal etmesi daha kolaydır.',
+        '<strong>Rijit kabuk:</strong> Görsel olarak ikonik ancak mekanik olarak elverişsiz. Bir yıldızın etrafındaki kabuk ciddi kararlılık ve malzeme sorunlarına sahiptir.',
+        '<strong>Statit ayna bulutu:</strong> Kısmen ışınım basıncıyla tutulan ultra hafif yansıtıcılar. Malzeme talebini azaltır ancak düşük ısı toleransına ve zorlu kontrol gereksinimlerine sahiptir.'
+      ]
+    }
   ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: title,
-      description,
-      applicationCategory: 'ScientificApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: title,
-      step: howTo.map((step) => ({
-        '@type': 'HowToStep',
-        name: step.name,
-        text: step.text,
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
   ],
 };

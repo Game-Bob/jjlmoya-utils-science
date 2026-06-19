@@ -2,48 +2,48 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'cift-yarik-dekoherans-simulatoru';
-const title = 'Cift Yarik Deneyi ve Dekoherans Simulatoru';
-const description = 'Hangi-yol dedektorlerini acip kapatarak kuantum girisiminin iki parcacik bandina nasil donustugunu gorsel bir cift yarik simulatorunde izleyin.';
+const title = 'Çift Yarık Deneyi ve Dekoherans Simülatörü';
+const description = 'Hangi-yol dedektörlerini açıp kapatarak kuantum girişiminin iki parçacık bandına nasıl dönüştüğünü görsel bir çift yarık simülatöründe izleyin.';
 
 const howTo = [
   {
-    name: 'Dedektoru kapali halde baslayin',
-    text: 'Hangi-yol dedektorunu devre disi birakin ve ekranin, koherent olasilik genliklerinden aydinlik ve karanlik girisim sacaklari olusturmasini izleyin.',
+    name: 'Dedektörü kapalı halde başlatın',
+    text: 'Hangi-yol dedektörünü devre dışı bırakın ve ekranın, koherent olasılık genliklerinden aydınlık ve karanlık girişim saçakları oluşturmasını izleyin.',
   },
   {
-    name: 'Dedektor guclendirmesini artirin',
-    text: 'Hangi-yol bilgisi eklemek icin dedektor kontrolunu yukseltin. Dedektor guclendikce koherens duser ve sacaklar kaybolur.',
+    name: 'Dedektör güçlendirmesini artırın',
+    text: 'Hangi-yol bilgisi eklemek için dedektör kontrolünü yükseltin. Dedektör güçlendikçe koherens düşer ve saçaklar kaybolur.',
   },
   {
-    name: 'Yarik geometrisini degistirin',
-    text: 'Yarik araligini ve yarik genisligini ayarlayarak geometrinin sacak araligini, zarf genisligini ve ekrandaki son dagilimi nasil degistirdigini gorun.',
+    name: 'Yarık geometrisini değiştirin',
+    text: 'Yarık aralığını ve yarık genişliğini ayarlayarak geometrinin saçak aralığını, zarf genişliğini ve ekrandaki son dağılımı nasıl değiştirdiğini görün.',
   },
   {
-    name: 'Canli metrikleri okuyun',
-    text: 'Sacak gorunurlugu, hangi-yol bilgisi ve koherens kullanarak gorsel deseni kuantum olcum hikayesine baglayin.',
+    name: 'Canlı metrikleri okuyun',
+    text: 'Saçak görünürlüğü, hangi-yol bilgisi ve koherens değerlerini kullanarak görsel deseni kuantum ölçüm hikayesiyle ilişkilendirin.',
   },
 ];
 
 const faq = [
   {
-    question: 'Dedektorler acildiginda desen neden degisiyor?',
-    answer: 'Parcacigin hangi yarigi kullandigini ortaya cikarabilen bir dedektor, iki alternatif arasindaki faz iliskisini yok eder. Bu koherens olmadan, iki olasi yol cubugu daha fazla girisim yapmaz ve ekran iki genis parcacik bandina yaklasir.',
+    question: 'Dedektörler açıldığında desen neden değişiyor?',
+    answer: 'Parçacığın hangi yarığı kullandığını ortaya çıkarabilen bir dedektör, iki alternatif yol arasındaki faz ilişkisini yok eder. Bu koherens olmadan, iki olası yol çubuğu daha fazla girişim yapmaz ve ekran iki geniş parçacık bandına yaklaşır.',
   },
   {
-    question: 'Bu simulator bilincin dalga fonksiyonunu cokerttigi anlamina mi geliyor?',
-    answer: 'Hayir. Simulator fiziksel hangi-yol bilgisi ve dekoheransa odaklanir. Bir dedektor, cevre veya yolu ayirt edilebilir kilan herhangi bir etkilesim, bilincli bir gozlemci gerektirmeden girisimi bastirabilir.',
+    question: 'Bu simülatör, bilincin dalga fonksiyonunu çökerttiği anlamına mı geliyor?',
+    answer: 'Hayır. Simülatör fiziksel "hangi-yol" bilgisine ve dekoheransa odaklanır. Bir dedektör, çevre veya yolu ayırt edilebilir kılan herhangi bir etkileşim, bilinçli bir gözlemci gerektirmeden girişimi bastırabilir.',
   },
   {
-    question: 'Sacak gorunurlugu nedir?',
-    answer: 'Sacak gorunurlugu, ekrandaki aydinlik ve karanlik bolgeleri karsilastirir. Yuksek gorunurluk guclu girisim kontrasti anlamina gelir. Dusuk gorunurluk, karanlik bosluklarin doldugu ve desenin daha cok iki bagimsiz parcacik akisi gibi davrandigi anlamina gelir.',
+    question: 'Saçak görünürlüğü nedir?',
+    answer: 'Saçak görünürlüğü, ekrandaki aydınlık ve karanlık bölgelerin kontrastını ölçer. Yüksek görünürlük güçlü girişim deseni anlamına gelir. Düşük görünürlük ise karanlık boşlukların dolduğu ve desenin daha çok iki bağımsız parçacık akışı gibi davrandığı anlamına gelir.',
   },
   {
-    question: 'Bu tam bir kuantum mekanigi cozucu mu?',
-    answer: 'Hayir. Bir cift yarik girisim zarfi ile dekoherans kontrolunu birlestiren egitimsel bir modeldir. Olcum etkisini gorsel olarak aciklamak icin yapilmistir, gercek bir duzenek icin Schrodinger denklemi simulatorsinin yerini almak icin degil.',
+    question: 'Bu tam bir kuantum mekaniği çözücü mü?',
+    answer: 'Hayır. Bu, çift yarık girişim zarfı ile dekoherans kontrolünü birleştiren eğitimsel bir modeldir. Ölçüm etkisini görsel olarak açıklamak için yapılmıştır; Schrödinger denklemi simülasyonunun yerini almak için değildir.',
   },
   {
-    question: 'Yarik araligi neden sacak araligini etkiliyor?',
-    answer: 'Daha genis aralik, ekran boyunca daha hizli bir faz farki olusturur, bu nedenle aydinlik ve karanlik bantlar birbirine yaklasir. Daha kucuk aralik, sacaklari daha genis yayar.',
+    question: 'Yarık aralığı neden saçak aralığını etkiliyor?',
+    answer: 'Daha geniş aralık, ekran boyunca daha hızlı bir faz farkı oluşturur, bu nedenle aydınlık ve karanlık bantlar birbirine yaklaşır. Daha küçük aralık ise saçakları genişletir.',
   },
 ];
 
@@ -52,64 +52,64 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    stage: 'Cift yarik duzenegi',
-    controls: 'Cift yarik kontrolleri',
-    results: 'Cift yarik sonuclari',
-    kicker: 'Olcum kontrolu',
-    detectorToggle: 'Hangi-yol dedektorunu etkinlestir',
-    detectorStrength: 'Dedektor guclendirmesi',
-    slitSeparation: 'Yarik araligi',
-    slitWidth: 'Yarik genisligi',
-    unobserved: 'Gozlemlenmemis',
-    observed: 'Gozlemlenmis',
-    waveMode: 'Girisim',
-    particleMode: 'Parcacik bantlari',
-    fringeVisibility: 'Sacak gorunurlugu',
+    stage: 'Çift yarık düzeneği',
+    controls: 'Çift yarık kontrolleri',
+    results: 'Çift yarık sonuçları',
+    kicker: 'Ölçüm kontrolü',
+    detectorToggle: 'Hangi-yol dedektörünü etkinleştir',
+    detectorStrength: 'Dedektör güçlendirmesi',
+    slitSeparation: 'Yarık aralığı',
+    slitWidth: 'Yarık genişliği',
+    unobserved: 'Gözlemlenmemiş',
+    observed: 'Gözlemlenmiş',
+    waveMode: 'Girişim',
+    particleMode: 'Parçacık bantları',
+    fringeVisibility: 'Saçak görünürlüğü',
     whichPath: 'Hangi-yol bilgisi',
     coherence: 'Koherens',
-    readoutNote: 'Her iki yol da ayirt edilemez kaldiginda girisim hayatta kalir. Olcum, yol bilgisini kullanilabilir hale getirir ve ekran karanlik sacaklarini kaybeder.',
+    readoutNote: 'Her iki yol da ayırt edilemez kaldığında girişim hayatta kalır. Ölçüm, yol bilgisini kullanılabilir hale getirir ve ekran karanlık saçaklarını kaybeder.',
   },
   seo: [
     {
       type: 'title',
-      text: 'Dekoherans ve hangi-yol detektoru ile cift yarik deneyi simulatoru',
+      text: 'Dekoherans ve hangi-yol dedektörü ile çift yarık deneyi simülatörü',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Bu cift yarik simulatoru, klasik kuantum deneyini interaktif bir gorsel modele donusturur. Dedektor kapaliyken ekran bir girisim deseni gosterir: iki olasi yol koherent kaldigi icin aydinlik ve karanlik bantlar olusur. Hangi-yol dedektoru eklendiginde, yol alternatifleri ayirt edilebilir hale geldigi icin desen yavas yavas iki genis parcacik bandina donusur.',
+      html: 'Bu çift yarık simülatörü, klasik kuantum deneyini interaktif bir görsel modele dönüştürür. Dedektör kapalıyken ekran bir girişim deseni gösterir: iki olası yol koherent kaldığı için aydınlık ve karanlık bantlar oluşur. Hangi-yol dedektörü eklendiğinde, yol alternatifleri ayırt edilebilir hale geldiği için desen yavaş yavaş iki geniş parçacık bandına dönüşür.',
     },
     {
       type: 'paragraph',
-      html: 'Arac, gozlemin cift yarik sonucunu neden degistirdigine dair net bir aciklama arayan ogrenciler icin tasarlanmistir. "Gozlemci gerceklgi degistirir" gibi belirsiz ifadelerden kacinir ve bunun yerine fiziksel olarak yararli olan fikre odaklanir: girisim, ayirt edilemez alternatifler gerektirirken, olcum ve cevre dolanikligi sacaklar icin gerekli faz iliskisini ortadan kaldirir.',
+      html: 'Araç, gözlemin çift yarık sonucunu neden değiştirdiğine dair net bir açıklama arayan öğrenciler için tasarlanmıştır. "Gözlemci gerçekliği değiştirir" gibi belirsiz ifadelerden kaçınır ve bunun yerine fiziksel olarak yararlı olan fikre odaklanır: Girişim, ayirt edilemez alternatifler gerektirirken, ölçüm ve çevre dolanıklığı, saçaklar için gerekli faz ilişkisini ortadan kaldırır.',
     },
     {
       type: 'title',
-      text: 'Cift yarik deneyinin gosterdigi',
+      text: 'Çift yarık deneyinin gösterdiği',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Gozlemlenmemis duzeneksel kurulumda, tek bir kuantum nesnesi her iki yarikla iliskili olasilik genlikleriyle tanimlanir. Bu genlikler faz ile toplanir. Ekranin bazi konumlarinda birbirlerini guclendirerek aydinlik bantlar olustururlar; diger konumlarda birbirlerini iptal ederek karanlik bantlar olustururlar. Bu degisimli yapi, girisimin imzasidir.',
+      html: 'Gözlemlenmemiş düzeneksel kurulumda, tek bir kuantum nesnesi her iki yarıkla ilişkili olasılık genlikleriyle tanımlanır. Bu genlikler faz ile toplanır. Ekranın bazı konumlarında birbirlerini güçlendirerek aydınlık bantlar oluştururlar; diğer konumlarda birbirlerini iptal ederek karanlık bantlar oluştururlar. Bu değişimli yapı, girişimin imzasıdır.',
     },
     {
       type: 'paragraph',
-      html: 'Bir dedektor hangi yarigin kullanildigini kaydederse, alternatifler ayirt edilemez olmaktan cikar. Ekran artik koherent bir genlik toplami almaz. Yol kosullu iki sonucun bir karisimini alir, bu nedenle karanlik girisim bosluklari dolar ve sonuc parcanin bir veya diger yariktan geciyormus gibi gorunur.',
+      html: 'Bir dedektör hangi yarığın kullanıldığını kaydederse, alternatifler ayırt edilemez olmaktan çıkar. Ekran artık koherent bir genlik toplamı almaz. Yol koşullu iki sonucun bir karışımını alır, bu nedenle karanlık girişim boşlukları dolar ve sonuç, parçacığın bir veya diğer yarıktan geçiyormuş gibi görünür.',
     },
     {
       type: 'title',
-      text: 'Simulator nasil okunur',
+      text: 'Simülatör nasıl okunur',
       level: 3,
     },
     {
       type: 'table',
-      headers: ['Kontrol veya metrik', 'Neyi degistirir', 'Nelere dikkat edilmeli'],
+      headers: ['Kontrol veya metrik', 'Neyi değiştirir', 'Nelere dikkat edilmeli'],
       rows: [
-        ['Dedektor guclendirmesi', 'Ne kadar hangi-yol bilgisi mevcut', 'Daha yuksek degerler sacak gorunurlugunu azaltir ve iki bantli parcacik desenini artirir.'],
-        ['Yarik araligi', 'Iki aciklik arasindaki mesafe', 'Genis aralik, girisim bantlarini ekranda daha sik hale getirir.'],
-        ['Yarik genisligi', 'Her acikligin boyutu', 'Daha genis yariklar kirinim zarfini daraltir ve genel parlakligi yeniden sekillendirir.'],
-        ['Sacak gorunurlugu', 'Ekranin aydinlik ve karanlik bolgeleri arasindaki kontrast', 'Yuksek bir sayi, koherent girisimin hala gorunur oldugu anlamina gelir.'],
-        ['Koherens', 'Yollar arasinda ne kadar faz iliskisi kalir', 'Dedektor yollari ayirt edilebilir kildikca koherens duser.'],
+        ['Dedektör güçlendirmesi', 'Ne kadar hangi-yol bilgisi mevcut', 'Daha yüksek değerler saçak görünürlüğünü azaltır ve parçacık desenini artırır.'],
+        ['Yarık aralığı', 'İki açıklık arasındaki mesafe', 'Geniş aralık, girişim bantlarını ekranda daha sık hale getirir.'],
+        ['Yarık genişliği', 'Her açıklığın boyutu', 'Daha geniş yarıklar kırınım zarfını daraltır ve genel parlaklığı yeniden şekillendirir.'],
+        ['Saçak görünürlüğü', 'Ekran kontrastı', 'Yüksek bir sayı, koherent girişimin hala görünür olduğu anlamına gelir.'],
+        ['Koherens', 'Yollar arasındaki faz ilişkisi', 'Dedektör yolları ayırt edilebilir kıldıkça koherens düşer.'],
       ],
     },
     {
@@ -119,27 +119,27 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Dekoherans, bir kuantum sisteminin bir dedektor veya cevre ile iliskilendirildiginde kullanilabilir faz koherensinin kaybidir. Bir cift yarik deneyinde bu iliski, hangi-yol bilgisi tasiyabilir. Yol prensipte kaydedildiginde, kimse kaydi okumasa bile, girisim deseni bastirilir.',
+      html: 'Dekoherans, bir kuantum sisteminin bir dedektör veya çevre ile ilişkilendirildiğinde kullanılabilir faz koherensinin kaybıdır. Bir çift yarık deneyinde bu ilişki, hangi-yol bilgisi taşıyabilir. Yol prensipte kaydedildiğinde, kimse kaydı okumasa bile, girişim deseni bastırılır.',
     },
     {
       type: 'paragraph',
-      html: 'Bu ayrim onemlidir cunku bircok aciklama insan gozleminin rolunu abartir. Onemli fizik, gorme veya bilinc degildir; onemli olan, deney duzeneginin aksi takdirde girisim yapacak alternatiflerin ayirt edilemezligini koruyup korumadigidir.',
+      html: 'Bu ayrım önemlidir çünkü birçok açıklama insan gözleminin rolünü abartır. Önemli fizik, görme veya bilinç değildir; önemli olan, deney düzeneğinin aksi takdirde girişim yapacak alternatiflerin ayırt edilemezliğini koruyup korumadığıdır.',
     },
     {
       type: 'title',
-      text: 'Bu egitim modelinin sinirlari',
+      text: 'Bu eğitim modelinin sınırları',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Simulator, kompakt bir optik tarzi cift yarik deseni kullanir ve bunu dekoherans icin bir dedektor guclendirmesi modeliyle birlestirir. Sezgi, sinif gosterimleri ve kavramsal tekrar icin mukemmeldir, ancak dedektor Hilbert uzaylari, gurultu kaynaklari veya laboratuvar kalibrasyonuna sahip tam bir kuantum duzeneginin sayisal cozumu degildir.',
+      html: 'Simülatör, kompakt bir optik tarzı çift yarık deseni kullanır ve bunu dekoherans için bir dedektör güçlendirmesi modeliyle birleştirir. Sezgi, sınıf gösterimleri ve kavramsal tekrar için mükemmeldir, ancak dedektör Hilbert uzayları, gürültü kaynakları veya laboratuvar kalibrasyonuna sahip tam bir kuantum düzeneğinin sayısal çözümü değildir.',
     },
     {
       type: 'list',
       items: [
-        '<strong>Kavramlari anlamak icin kullanin:</strong> girisim, hangi-yol bilgisi, koherens ve olcum.',
-        '<strong>Deney tasarimi icin kullanmayin:</strong> gercek cift yarik deneyleri hassas dalga boyu, aciklik, dedektor ve yayilim hesaplamalari gerektirir.',
-        '<strong>Egilime odaklanin:</strong> ayirt edilebilirlik arttikca, girisim kontrasti azalir.',
+        '<strong>Kavramları anlamak için kullanın:</strong> girişim, hangi-yol bilgisi, koherens ve ölçüm.',
+        '<strong>Deney tasarımı için kullanmayın:</strong> gerçek çift yarık deneyleri hassas dalga boyu, açıklık, dedektör ve yayılım hesaplamaları gerektirir.',
+        '<strong>Eğilime odaklanın:</strong> ayırt edilebilirlik arttıkça, girişim kontrastı azalır.',
       ],
     },
   ],

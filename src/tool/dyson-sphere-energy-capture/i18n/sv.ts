@@ -2,52 +2,52 @@
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-sfar-energiinfangning-simulator';
-const title = 'Dyson sfar Energiinfangning Simulator';
-const description = 'Uppskatta Dyson-svarm, ring, skal och statit-konstruktioner for olika stjarnor. Berakna infangad effekt, omloppsradie, materialmassa och tackning som behovs for att na en mal-Kardashevskala.';
+const title = 'Dysonsfär Energiinfångning Simulator';
+const description = 'Uppskatta Dyson-svärm, ring, skal och statit-konstruktioner för olika stjärnor. Beräkna infångad effekt, omloppsradie, materialmassa och täckning som behövs för att nå en mål-Kardashevskala.';
 
 const howTo = [
   {
-    name: 'Valj en stjarntyp',
-    text: 'Borja med en M-dvarg, solliknande stjarna, A-stjarna, rod jatte eller bla jatte. Simulatorn anvander representativa ljusstyrke- och massvarden for att uppskatta kollektorradie och omloppstid.',
+    name: 'Välj en stjärntyp',
+    text: 'Börja med en M-dvärg, solliknande stjärna, A-stjärna, röd jätte eller blå jätte. Simulatorn använder representativa ljusstyrke- och massvärden för att uppskatta kollektorradie och omloppstid.',
   },
   {
-    name: 'Valj megastrukturens arkitektur',
-    text: 'Jamfor en Dyson-svarm, ekvatorialring, stelt skal eller statit-spegelmoln. Varje konstruktion har olika antaganden om infangningseffektivitet, materialtather och stabilitet.',
+    name: 'Välj megastrukturens arkitektur',
+    text: 'Jämför en Dyson-svärm, ekvatorialring, stelt skal eller statit-spegelmoln. Varje konstruktion har olika antaganden om infångningseffektivitet, materialtäthet och stabilitet.',
   },
   {
-    name: 'Stall in tackning och drifttemperatur',
-    text: 'Oka tackningen for att fanga mer stjarnkraft, justera sedan drifttemperaturen for att flytta kollektorerna narmare eller langre bort fran stjarnan.',
+    name: 'Ställ in täckning och drifttemperatur',
+    text: 'Öka täckningen för att fånga mer stjärnkraft, justera sedan drifttemperaturen för att flytta kollektorerna närmare eller längre bort från stjärnan.',
   },
   {
-    name: 'Valj ett Kardashev-mal',
-    text: 'Anvand mal-reglaget for att se hur mycket av stjarnan som maste omfattas for att na en energiniva pa civilisationsskala.',
+    name: 'Välj ett Kardashev-mål',
+    text: 'Använd mål-reglaget för att se hur mycket av stjärnan som måste omfattas för att nå en energinivå på civilisationsskala.',
   },
 ];
 
 const faq = [
   {
-    question: 'Vad ar skillnaden mellan en Dyson-sfar och en Dyson-svarm?',
-    answer: 'Ett stelt Dyson-skal ar ett kontinuerligt skal runt en stjarna, medan en Dyson-svarm ar en stor samling oberoende kretsande kollektorer. De flesta tekniska diskussioner favoriserar svarmar eftersom ett fast skal skulle vara strukturellt instabilt och extremt materialkravande.',
+    question: 'Vad är skillnaden mellan en Dyson-sfar och en Dyson-svärm?',
+    answer: 'Ett stelt Dyson-skal är ett kontinuerligt skal runt en stjärna, medan en Dyson-svärm är en stor samling oberoende kretsande kollektorer. De flesta tekniska diskussioner favoriserar svärmar eftersom ett fast skal skulle vara strukturellt instabilt och extremt materialkrävande.',
   },
   {
-    question: 'Hur valjer simulatorn optimal radie?',
-    answer: 'Den uppskattar avstandet dar kollektorer som stralar fran bada sidor nar den valda drifttemperaturen under den givna stjarnans ljusstyrka. Hetare kollektorer kan ga i bana narmare, medan svalare kollektorer kraver storre radier.',
+    question: 'Hur väljer simulatorn optimal radie?',
+    answer: 'Den uppskattar avståndet där kollektorer som strålar från båda sidor når den valda drifttemperaturen under den givna stjärnans ljusstyrka. Hetare kollektorer kan gå i bana närmare, medan svalare kollektorer kräver större radier.',
   },
   {
-    question: 'Vad betyder Kardashev-klassificeringen har?',
-    answer: 'Kardashev-vardet beraknas fran infangad effekt med den logaritmiska formeln K = (log10(P) - 6) / 10, dar P ar effekt i watt. Ett varde nara K1 representerar energianvandning pa planetarisk skala, medan K2 narmar sig full stjarnkraft.',
+    question: 'Vad betyder Kardashev-klassificeringen här?',
+    answer: 'Kardashev-värdet beräknas från infångad effekt med den logaritmiska formeln K = (log10(P) - 6) / 10, där P är effekt i watt. Ett värde nära K1 representerar energianvändning på planetarisk skala, medan K2 närmar sig full stjärnkraft.',
   },
   {
-    question: 'Ar materialmassan realistisk?',
-    answer: 'Det ar en pedagogisk uppskattning av forsta ordningen baserad pa kollektorarea, ytdensitet och en stabilitetsfaktor. Verkliga konstruktioner skulle krava positionshallning, kraftoverforing, brytningsforluster, redundans, varmeavledning och tillverkningsinfrastruktur.',
+    question: 'Är materialmassan realistisk?',
+    answer: 'Det är en pedagogisk uppskattning av första ordningen baserad på kollektorarea, ytdensitet och en stabilitetsfaktor. Verkliga konstruktioner skulle kräva positionshållning, kraftöverföring, brytningsförluster, redundans, värmeavledning och tillverkningsinfrastruktur.',
   },
   {
-    question: 'Varfor kraver ljusa stjornor sa stora kollektorsystem?',
-    answer: 'Stjarnor med hog ljusstyrka skjuter den sakra termiska radien utat. Det okar den yta som behovs for en given tackningsgrad, sa materialbehovet kan stiga snabbare an den infangade effekten kanslas intuitiv.',
+    question: 'Varför kräver ljusa stjärnor så stora kollektorsystem?',
+    answer: 'Stjärnor med hög ljusstyrka skjuter den säkra termiska radien utåt. Det ökar den yta som behövs för en given täckningsgrad, så materialbehovet kan stiga snabbare än den infångade effekten känns intuitiv.',
   },
   {
-    question: 'Kan en civilisation na Kardashev typ II med delvis tackning?',
-    answer: 'Ja, om vardstjarnan ar tillrackligt ljusstark och kollektorerna effektiva. Runt en solliknande stjarna kraver nara typ II att en stor del av solens ljusstyrka infangas, men runt ljusare stjornor kan samma effektmal uppnas med lagre tackningsgrad.',
+    question: 'Kan en civilisation nå Kardashev typ II med delvis täckning?',
+    answer: 'Ja, om värdstjärnan är tillräckligt ljusstark och kollektorerna effektiva. Runt en solliknande stjärna kräver nära typ II att en stor del av solens ljusstyrka infångas, men runt ljusare stjärnor kan samma effektmål uppnås med lägre täckningsgrad.',
   },
 ];
 
@@ -57,139 +57,58 @@ export const content: ToolLocaleContent = {
   description,
   ui: {
     visualization: 'Dyson-kollektor visualisering',
-    starType: 'Stjarntyp',
+    starType: 'Stjärntyp',
     structureType: 'Struktur',
-    coverage: 'Kolloktortackning',
+    coverage: 'Kollektortäckning',
     operatingTemp: 'Drifttemperatur',
-    kardashevTarget: 'Kardashev-mal',
+    kardashevTarget: 'Kardashev-mål',
     kardashevRating: 'Nuvarande klassificering',
-    capturedPower: 'Infangad effekt',
+    capturedPower: 'Infångad effekt',
     optimalRadius: 'Optimal radie',
-    targetCoverage: 'Maltackning',
+    targetCoverage: 'Måltäckning',
     materialMass: 'Materialmassa',
-    captureMeter: 'Framsteg mot mal',
-    statusReady: 'Justera systemet for att uppskatta kollektorbehovet.',
-    statusUnderbuilt: 'Tackningen ligger under det valda Kardashev-malet. Lagga till kollektorer eller valj en ljusare stjarna.',
-    statusBalanced: 'Tackning och stjarnans effekt ligger nara det valda civilisationsmalet.',
-    statusExtreme: 'Den har konfigurationen overskrider malet. Den fangar enorm effekt, men materialbehovet okar snabbt.',
+    captureMeter: 'Framsteg mot mål',
+    statusReady: 'Justera systemet för att uppskatta kollektorbehovet.',
+    statusUnderbuilt: 'Täckningen ligger under det valda Kardashev-målet. Lägg till kollektorer eller välj en ljusare stjärna.',
+    statusBalanced: 'Täckning och stjärnans effekt ligger nära det valda civilisationsmålet.',
+    statusExtreme: 'Den här konfigurationen överskrider målet. Den fångar enorm effekt, men materialbehovet ökar snabbt.',
     orbitalPeriod: 'Omloppstid',
     collectorArea: 'Kollektorarea',
     mercuryMasses: '{value} Merkuriusmassor',
     kilograms: '{value} kg',
     daysUnit: '{value} dagar',
-    starMDwarf: 'M-dvarg',
-    starSun: 'G-stjarna solliknande',
-    starA: 'A-stjarna',
-    starRedGiant: 'Rod jatte',
-    starBlueGiant: 'Bla jatte',
-    structureSwarm: 'Dyson-svarm',
+    starMDwarf: 'M-dvärg',
+    starSun: 'G-stjärna (solliknande)',
+    starA: 'A-stjärna',
+    starRedGiant: 'Röd jätte',
+    starBlueGiant: 'Blå jätte',
+    structureSwarm: 'Dyson-svärm',
     structureRing: 'Ekvatorialring',
     structureShell: 'Stelt skal',
     structureStatite: 'Statit-spegelmoln',
   },
   seo: [
+    { type: 'title', text: 'Dysonsfär Energiinfångning Simulator', level: 2 },
+    { type: 'paragraph', html: 'En Dyson-sfär är inte bara en science fiction-bild av en stjärna inuti ett skal. Det är en familj av möjliga megastrukturkoncept för att fånga upp stjärnors ljusstyrka: svärmar av satelliter, ekvatorialringar, tunna spegelmoln och det berömda men problematiska stela skalet. Den här simulatorn omvandlar dessa idéer till siffror så att du kan jämföra hur stjärntyp, kollektortemperatur, täckning och konstruktionsdesign förändrar energibudgeten.' },
+    { type: 'paragraph', html: 'Kalkylatorn uppskattar infångad effekt, termisk omloppsradie, kollektorarea, omloppstid, materialmassa och täckningen som behövs för ett valt Kardashev-mål. Den är byggd för studenter, världsbyggare, vetenskapskommunikatorer och alla som försöker förstå varför Typ II-civilisationer är svåra: utmaningen är inte bara energi, utan också area, värme, utvinning, stabilitet och orbital logistik.' },
+    { type: 'title', text: 'Hur Dysonradien uppskattas', level: 3 },
+    { type: 'paragraph', html: 'Den optimala radien beräknas från stjärnans ljusstyrka och kollektorns drifttemperatur. En kollektor nära en ljus stjärna får intensivt flöde och måste gå varm eller avleda enorma mängder värme. Att flytta utåt minskar termisk stress, men den krävda kollektorarean växer med kvadraten på avståndet. Denna avvägning förklarar varför samma täckningsgrad kan vara modest runt en svag M-dvärg och enorm runt en blå jätte.' },
+    { type: 'title', text: 'Jämförelse av Dyson-svärm, ring, skal och statitmoln', level: 3 },
     {
-      type: 'title',
-      text: 'Dyson sfar Energiinfangning Simulator',
-      level: 2,
-    },
-    {
-      type: 'paragraph',
-      html: 'En Dyson-sfar ar inte bara en science fiction-bild av en stjarna inuti ett skal. Det ar en familj av mojliga megastrukturkoncept for att fanga upp stjarnors ljusstyrka: svarmar av satelliter, ekvatorialringar, tunna spegelmoln och det beromda men problematiska stela skalet. Den har simulatorn omvandlar dessa ideer till siffror sa att du kan jamfora hur stjarntyp, kollektortemperatur, tackning och konstruktionsdesign forandrar energibudgeten.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Kalkylatorn uppskattar infangad effekt, termisk omloppsradie, kollektorarea, omloppstid, materialmassa och tackningen som behovs for ett valt Kardashev-mal. Den ar byggd for studenter, varldsbyggare, vetenskapskommunikatorer och alla som forsoker forsta varfor Typ II-civilisationer ar svar: utmaningen ar inte bara energi, utan ocksa area, varme, utvinning, stabilitet och orbital logistik.',
-    },
-    {
-      type: 'title',
-      text: 'Hur Dysonradien uppskattas',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Den optimala radien beraknas fran stjarnans ljusstyrka och kollektorns drifttemperatur. En kollektor nara en ljus stjarna far intensivt flode och maste ga varm eller avleda enorma mangder varme. Att flytta utat minskar termisk stress, men den kravda kollektorarean vaxer med kvadraten pa avstandet. Denna avvagning forklarar varfor samma tackningsgrad kan vara modest runt en svag M-dvarg och enorm runt en bla jatte.',
-    },
-    {
-      type: 'title',
-      text: 'Jamforelse av Dyson svarm, ring, skal och statitmoln',
-      level: 3,
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>Dyson-svarm:</strong> manga oberoende kretsande kollektorer. Det ar den mest trovardiga storskaliga arkitekturen eftersom den kan byggas gradvis och kraver inget stelt stjarnskal.',
-        '<strong>Ekvatorialring:</strong> ett smalare kollektorband med lagre tackningseffektivitet. Den ar lattare att forestalla sig som en forsta megastruktur, men kan inte fanga full stjarnkraft utan att bli en bredare svarm.',
-        '<strong>Stelt skal:</strong> visuellt ikoniskt men mekanisk ofordelaktigt. Ett skal runt en stjarna har allvarliga stabilitets- och materialproblem, sa simulatorn tilldelar det hog massa och lag stabilitet.',
-        '<strong>Statit-spegelmoln:</strong> ultra-latta reflektorer som delvis halls av strahlningstryck. Det minskar materialbehovet men har lagre varmetalans och kraver kraven positionskontroll.',
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Tackning som behovs for Kardashev skalan',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Kardashev-skalan uttrycker en civilisations kraftanvandning logaritmiskt. I detta verktyg omvandlas infangade watt till ett K-varde med K = (log10(P) - 6) / 10. En delvis Dyson-svarm runt solen kan overstiga nuvarande mannisklig energianvandning med manga storleksordningar langt innan den nar full Typ II-status. Resultatet for maltackning visar den andel av stjarnans ljusstyrka som maste fangas upp for det valda malet.',
-    },
-    {
-      type: 'table',
-      headers: ['Konstruktionsval', 'Storsta fordel', 'Storsta flaskhals'],
-      rows: [
-        ['Dyson-svarm', 'Byggbar i etapper med oberoende banor', 'Trafikkontroll och kraftoverforing'],
-        ['Ekvatorialring', 'Mindre initial area och enklare geometri', 'Begransad tackning'],
-        ['Stelt skal', 'Maximal infangning i ett enkelt diagram', 'Strukturell instabilitet och enorm massa'],
-        ['Statitmoln', 'Mycket lag ytdensitet', 'Precis positionshallning och varmebegransningar'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Materialmassa och realitetskontroll av utvinning',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Materialuppskattningen multiplicerar kollektorarean med en antagen ytdensitet och en konstruktionsstabilitetsfaktor. Den rapporterar medvetet massa i Merkurius-massor nar siffrorna blir astronomiska, eftersom manga Dyson-svarmdiskussioner forestaller sig demontering av sma planeter eller asteroider for ravaror. Aven tunna kollektorer blir massiva nar de sprids over astronomiska enhetsskalor.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Anvand resultatet som en storleksordningsguide snarare an en ritning. Verklig megastrukturingenjorskap skulle behova strahlingsskademodeller, termiska cykler, kollisionsundvikande, attitydkontroll, kraftoverforing, tillverkningsutbyte och langsiktig banevolution. Vardet med simulatorn ar att den gor de forsta begransningarna synliga omedelbart.',
-    },
+      type: 'list', items: [
+        '<strong>Dyson-svärm:</strong> Många oberoende kretsande kollektorer. Det är den mest trovärdiga storskaliga arkitekturen eftersom den kan byggas gradvis och kräver inget stelt stjärnskal.',
+        '<strong>Ekvatorialring:</strong> Ett smalare kollektorband med lägre täckningseffektivitet. Den är lättare att föreställa sig som en första megastruktur.',
+        '<strong>Stelt skal:</strong> Visuellt ikoniskt men mekaniskt ofördelaktigt. Ett skal runt en stjärna har allvarliga stabilitets- och materialproblem.',
+        '<strong>Statit-spegelmoln:</strong> Ultralätta reflektorer som delvis hålls av strålningstryck. Det minskar materialbehovet men har lägre värmetålighet och kräver avancerad positionskontroll.'
+      ]
+    }
   ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: title,
-      description,
-      applicationCategory: 'ScientificApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: title,
-      step: howTo.map((step) => ({
-        '@type': 'HowToStep',
-        name: step.name,
-        text: step.text,
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
   ],
 };

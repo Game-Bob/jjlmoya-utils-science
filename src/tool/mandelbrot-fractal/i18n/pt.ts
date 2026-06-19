@@ -3,43 +3,43 @@ import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'explorador-fractal-mandelbrot';
 const title = 'Calculadora de Fractais de Mandelbrot e Explorador de Autossimilaridade';
-const description = 'Explore o conjunto de Mandelbrot, amplie os limites fractais autossimilares e compare a profundidade de iteracao, o contraste de cor e as coordenadas do plano complexo.';
+const description = 'Explore o conjunto de Mandelbrot, amplie os limites fractais autossimilares e compare a profundidade de iteração, o contraste de cor e as coordenadas do plano complexo.';
 
 const howTo = [
   {
-    name: 'Escolha uma regiao do conjunto de Mandelbrot',
-    text: 'Comece pelo conjunto completo ou va diretamente para uma regiao de alto detalhe, como o vale do cavalo marinho ou um minibrot espiral.',
+    name: 'Escolha uma região do conjunto de Mandelbrot',
+    text: 'Comece pelo conjunto completo ou vá diretamente para uma região de alto detalhe, como o vale do cavalo-marinho ou um minibrot espiral.',
   },
   {
     name: 'Amplie clicando na imagem',
     text: 'Clique em qualquer ponto da tela para centralizar novamente o plano complexo e ampliar o fractal em torno dessa coordenada.',
   },
   {
-    name: 'Ajuste a profundidade de iteracao e o contraste de cor',
-    text: 'Aumente o orcamento de iteracoes para revelar uma estrutura de borda mais fina, depois ajuste o contraste e a paleta para tornar as bandas de tempo de escape mais faceis de ler.',
+    name: 'Ajuste a profundidade de iteração e o contraste de cor',
+    text: 'Aumente o orçamento de iterações para revelar uma estrutura de borda mais fina, depois ajuste o contraste e a paleta para tornar as bandas de tempo de escape mais fáceis de ler.',
   },
 ];
 
 const faq = [
   {
     question: 'O que a calculadora do conjunto de Mandelbrot mostra?',
-    answer: 'Ela mostra quais numeros complexos c mantem a recorrencia z(n+1) = z(n)^2 + c limitada ao comecar de z = 0. Os pontos que nunca escapam dentro do orcamento de iteracao selecionado sao coloridos como membros do conjunto, enquanto os pontos externos sao coloridos de acordo com a rapidez com que sua orbita escapa.',
+    answer: 'Ela mostra quais números complexos c mantêm a recorrência z(n+1) = z(n)^2 + c limitada ao começar de z = 0. Os pontos que nunca escapam dentro do orçamento de iteração selecionado são coloridos como membros do conjunto, enquanto os pontos externos são coloridos de acordo com a rapidez com que sua órbita escapa.',
   },
   {
-    question: 'Por que a borda de Mandelbrot contem tantos detalhes?',
-    answer: 'A borda separa orbitas estaveis e fugitivas, e pequenas mudancas de coordenadas perto dessa borda podem alterar completamente o comportamento de longo prazo. Essa sensibilidade cria bulbos aninhados, espirais, filamentos e copias em miniatura que aparecem em muitos niveis de ampliacao.',
+    question: 'Por que a borda de Mandelbrot contém tantos detalhes?',
+    answer: 'A borda separa órbitas estáveis e fugitivas, e pequenas mudanças de coordenadas perto dessa borda podem alterar completamente o comportamento de longo prazo. Essa sensibilidade cria bulbos aninhados, espirais, filamentos e cópias em miniatura que aparecem em muitos níveis de ampliação.',
   },
   {
-    question: 'O conjunto de Mandelbrot e verdadeiramente autossimilar?',
-    answer: 'Nao e perfeitamente autossimilar no mesmo sentido estrito de um triangulo de Sierpinski, mas e ricamente quase-autossimilar. Pequenas copias de todo o conjunto aparecem por todo o plano, muitas vezes distorcidas e conectadas por estruturas ramificadas elaboradas.',
+    question: 'O conjunto de Mandelbrot é verdadeiramente autossimilar?',
+    answer: 'Não é perfeitamente autossimilar no mesmo sentido estrito de um triângulo de Sierpinski, mas é ricamente quase-autossimilar. Pequenas cópias de todo o conjunto aparecem por todo o plano, muitas vezes distorcidas e conectadas por estruturas ramificadas elaboradas.',
   },
   {
-    question: 'O que o numero de iteracoes controla?',
-    answer: 'O numero de iteracoes controla quanto tempo a calculadora testa cada ponto antes de decidir que ele provavelmente pertence ao conjunto. Valores mais altos revelam filamentos mais profundos e minibrots mais limpos, mas exigem mais computacao por pixel.',
+    question: 'O que o número de iterações controla?',
+    answer: 'O número de iterações controla quanto tempo a calculadora testa cada ponto antes de decidir que ele provavelmente pertence ao conjunto. Valores mais altos revelam filamentos mais profundos e minibrots mais limpos, mas exigem mais computação por pixel.',
   },
   {
-    question: 'Por que as cores mudam fora da regiao preta?',
-    answer: 'As cores externas sao baseadas no tempo de escape: pontos que escapam rapidamente recebem cores diferentes de pontos que permanecem perto do conjunto por muitas iteracoes. A coloracao suave reduz bandas bruscas e facilita a inspecao da geometria das orbitas proximas.',
+    question: 'Por que as cores mudam fora da região preta?',
+    answer: 'As cores externas são baseadas no tempo de escape: pontos que escapam rapidamente recebem cores diferentes de pontos que permanecem perto do conjunto por muitas iterações. A coloração suave reduz bandas bruscas e facilita a inspeção da geometria das órbitas próximas.',
   },
 ];
 
@@ -50,15 +50,15 @@ export const content: ToolLocaleContent = {
   ui: {
     title: 'Calculadora de Fractais de Mandelbrot',
     canvasLabel: 'Tela interativa do conjunto de Mandelbrot',
-    presetsLabel: 'Predefinicoes de regiao de Mandelbrot',
+    presetsLabel: 'Predefinições de região de Mandelbrot',
     presetFull: 'Conjunto Completo',
-    presetSeahorse: 'Vale do Cavalo Marinho',
+    presetSeahorse: 'Vale do Cavalo-Marinho',
     presetSpiral: 'Minibrot Espiral',
     centerPoint: 'Centro',
-    magnification: 'Ampliacao',
-    visibleWindow: 'Janela visivel',
-    renderBudget: 'Iteracoes',
-    iterationsLabel: 'Profundidade de iteracao',
+    magnification: 'Ampliação',
+    visibleWindow: 'Janela visível',
+    renderBudget: 'Iterações',
+    iterationsLabel: 'Profundidade de iteração',
     contrastLabel: 'Contraste de escape',
     colorLabel: 'Campo de cor',
     paletteEmber: 'Faixas de brasa',
@@ -73,7 +73,7 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Esta calculadora de fractais de Mandelbrot renderiza o classico conjunto do plano complexo definido pela iteracao <strong>z(n+1) = z(n)^2 + c</strong>. Ela foi projetada para exploracao em vez de visualizacao passiva: cada clique centraliza novamente o plano, cada zoom expoe uma vizinhanca matematica menor, e o controle deslizante de iteracoes permite decidir o quao profundamente a calculadora deve testar a borda antes de colorir um ponto como estavel ou em fuga.',
+      html: 'Esta calculadora de fractais de Mandelbrot renderiza o clássico conjunto do plano complexo definido pela iteração <strong>z(n+1) = z(n)^2 + c</strong>. Ela foi projetada para exploração em vez de visualização passiva: cada clique centraliza novamente o plano, cada zoom expõe uma vizinhança matemática menor, e o controle deslizante de iterações permite decidir o quão profundamente a calculadora deve testar a borda antes de colorir um ponto como estável ou em fuga.',
     },
     {
       type: 'title',
@@ -82,14 +82,14 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'A forma central escura marca os pontos cujas orbitas permanecem limitadas dentro do orcamento de iteracao atual. O exterior colorido e um mapa de tempo de escape. Um ponto colorido proximo ao conjunto pode sobreviver centenas de iteracoes antes que sua magnitude exceda o raio de escape, enquanto um ponto distante escapa quase imediatamente. A geometria cientificamente mais interessante geralmente nao esta dentro da forma preenchida, mas ao longo da borda onde os comportamentos limitados e ilimitados se entrelacam.',
+      html: 'A forma central escura marca os pontos cujas órbitas permanecem limitadas dentro do orçamento de iteração atual. O exterior colorido é um mapa de tempo de escape. Um ponto colorido próximo ao conjunto pode sobreviver centenas de iterações antes que sua magnitude exceda o raio de escape, enquanto um ponto distante escapa quase imediatamente. A geometria cientificamente mais interessante geralmente não está dentro da forma preenchida, mas ao longo da borda onde os comportamentos limitados e ilimitados se entrelaçam.',
     },
     {
       type: 'table',
       headers: ['Controle', 'O que altera', 'Quando aumentar'],
       rows: [
-        ['<strong>Profundidade de iteracao</strong>', 'Quantos passos de recorrencia sao testados para cada pixel.', 'Use valores mais altos apos ampliar filamentos finos ou copias em miniatura.'],
-        ['<strong>Contraste de escape</strong>', 'O quanto valores de escape suaves sao separados em bandas visiveis.', 'Aumente quando a imagem parecer chapada; diminua quando as cores forem muito agressivas.'],
+        ['<strong>Profundidade de iteração</strong>', 'Quantos passos de recorrência são testados para cada pixel.', 'Use valores mais altos após ampliar filamentos finos ou cópias em miniatura.'],
+        ['<strong>Contraste de escape</strong>', 'O quanto valores de escape suaves são separados em bandas visíveis.', 'Aumente quando a imagem parecer chapada; diminua quando as cores forem muito agressivas.'],
         ['<strong>Paleta</strong>', 'O mapeamento de cor aplicado aos pontos externos.', 'Troque de paleta para revelar estruturas que podem estar ocultas por um campo de cor.'],
       ],
     },
@@ -100,25 +100,25 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Uma das razoes pelas quais o conjunto de Mandelbrot e tao famoso e sua quase-autossimilaridade. Ao ampliar antenas, espirais e vales, voce encontra repetidamente pequenas ilhas semelhantes a Mandelbrot, frequentemente chamadas de minibrots. Essas copias nao sao meramente decorativas. Sua disposicao reflete a dinamica dos mapas quadraticos, incluindo bulbos periodicos, padroes de bifurcacao e regioes onde as orbitas permanecem presas por longos periodos antes de escapar.',
+      html: 'Uma das razões pelas quais o conjunto de Mandelbrot é tão famoso é sua quase-autossimilaridade. Ao ampliar antenas, espirais e vales, você encontra repetidamente pequenas ilhas semelhantes ao conjunto, frequentemente chamadas de minibrots. Essas cópias não são meramente decorativas. Sua disposição reflete a dinâmica dos mapas quadráticos, incluindo bulbos periódicos, padrões de bifurcação e regiões onde as órbitas permanecem presas por longos períodos antes de escapar.',
     },
     {
       type: 'title',
-      text: 'Por que iteracoes mais altas importam no zoom profundo',
+      text: 'Por que iterações mais altas importam no zoom profundo',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Na visao do conjunto completo, um limite de iteracao modesto fornece uma imagem reconhecivel. Em ampliacoes mais profundas, no entanto, muitos pontos de borda levam muito mais tempo para revelar se escapam. Se o limite de iteracao for muito baixo, estruturas finas podem parecer falsamente solidas ou turvas. Aumentar o numero de iteracoes melhora a classificacao da borda e permite que a calculadora resolva gavinhas estreitas, bracos espirais e bulbos satelite com mais confianca.',
+      html: 'Na visão do conjunto completo, um limite de iteração modesto fornece uma imagem reconhecível. Em ampliações mais profundas, no entanto, muitos pontos de borda levam muito mais tempo para revelar se escapam. Se o limite de iteração for muito baixo, estruturas finas podem parecer falsamente sólidas ou turvas. Aumentar o número de iterações melhora a classificação da borda e permite que a calculadora resolva gavinhas estreitas, braços espirais e bulbos satélite com mais confiança.',
     },
     {
       type: 'title',
-      text: 'Significado matematico das coordenadas complexas',
+      text: 'Significado matemático das coordenadas complexas',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'A leitura de coordenadas mostra o centro atual da janela de visualizacao como um numero complexo c = a + bi. O eixo horizontal e a parte real e o eixo vertical e a parte imaginaria. Clicar na tela escolhe uma nova coordenada complexa e entao amplia a janela visivel ao redor dela. Isso torna a ferramenta util para aprender como as regioes visuais do fractal correspondem a localizacoes precisas no plano complexo.',
+      html: 'A leitura de coordenadas mostra o centro atual da janela de visualização como um número complexo c = a + bi. O eixo horizontal é a parte real e o eixo vertical é a parte imaginária. Clicar na tela escolhe uma nova coordenada complexa e então amplia a janela visível ao redor dela. Isso torna a ferramenta útil para aprender como as regiões visuais do fractal correspondem a localizações precisas no plano complexo.',
     },
   ],
   faq,

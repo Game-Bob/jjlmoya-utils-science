@@ -1,49 +1,49 @@
 import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'simulyator-dvoinoi-shcheli-dekogerentcii';
-const title = 'Simulyator dvukhshcelevogo eksperimenta i dekogerentcii';
-const description = 'Vklyuchait i vyklyuchait detektory puti, chtoby uvidet, kak kvantovaya interferentciya ugasayet v dve chastichnye polosy v vizualnom simulyatore dvoinoi shcheli.';
+const slug = 'simulyator-dvoynoy-shcheli-dekogerentsii';
+const title = 'Симулятор двухщелевого эксперимента и декогеренции';
+const description = 'Включайте и выключайте детекторы пути, чтобы увидеть, как квантовая интерференция угасает до двух частичных полос в визуальном симуляторе двойной щели.';
 
 const howTo = [
   {
-    name: 'Nachnite s vyklyuchennym detektorom',
-    text: 'Ostavte detektor puti otklyuchennym i nablyudaite, kak ekran formiruyet svetlye i temnye interferentcionnye polosy iz kogerentnykh amplitud veroyatnosti.',
+    name: 'Начните с выключенным детектором',
+    text: 'Оставьте детектор пути отключенным и наблюдайте, как экран формирует светлые и темные интерференционные полосы из когерентных амплитуд вероятности.',
   },
   {
-    name: 'Uvelichte silu detektora',
-    text: 'Povyshte regulirovku detektora, chtoby vvesti informaciyu o puti. Po mere usileniya detektora kogerentnost padayet i polosy ischezayut.',
+    name: 'Увеличьте силу детектора',
+    text: 'Повысьте регулировку детектора, чтобы ввести информацию о пути. По мере усиления детектора когерентность падает и полосы исчезают.',
   },
   {
-    name: 'Izmenite geometriyu shchelei',
-    text: 'Nastroite rasstoyaniye mezhdu shchelyami i shirinu shchelei, chtoby uvidet, kak geometriya menyayet razstoyaniye mezhdu polosami, shirinu ogibayushchey i konechnoye raspredeleniye na ekrane.',
+    name: 'Измените геометрию щелей',
+    text: 'Настройте расстояние между щелями и ширину щелей, чтобы увидеть, как геометрия меняет расстояние между полосами, ширину огибающей и конечное распределение на экране.',
   },
   {
-    name: 'Chitayte pokazaniya v realnom vremeni',
-    text: 'Ispolzuite vidimost polos, informaciyu o puti i kogerentnost, chtoby svyazat vizualnyi uzor s istoriyey kvantovogo izmereniya.',
+    name: 'Читайте показания в реальном времени',
+    text: 'Используйте видимость полос, информацию о пути и когерентность, чтобы связать визуальный узор с историей квантового измерения.',
   },
 ];
 
 const faq = [
   {
-    question: 'Pochemu uzor menyayetsya, kogda detektory vklyuchayut?',
-    answer: 'Detektor, kotoryi mozhet raskryt, kakuyu shchel ispolzovala chastica, razrushayet fazovoye sootnosheniye mezhdu dvumya alternativami. Bez etoi kogerentnosti dva veroyatnostnykh puti bolshe ne interferiruyut, i ekrun priblizhayetsya k dvum shirokim chastichnym polosam.',
+    question: 'Почему узор меняется, когда детекторы включают?',
+    answer: 'Детектор, который может раскрыть, какую щель использовала частица, разрушает фазовое соотношение между двумя альтернативами. Без этой когерентности два вероятностных пути больше не интерферируют, и экран приближается к двум широким частичным полосам.',
   },
   {
-    question: 'Oznachayet li etot simulyator, chto soznaniye kollapsiruyet volnovuyu funkciyu?',
-    answer: 'Net. Simulyator sosredotochen na fizicheskoy informacii o puti i dekogerentcii. Detektor, okruzhayushchaya sreda ili lyuboye vzaimodeistviye, delayushcheye put razlichimym, mozhet podavit interferenciyu bez neobkhodimosti soznatelnogo nablyudatelya.',
+    question: 'Означает ли этот симулятор, что сознание коллапсирует волновую функцию?',
+    answer: 'Нет. Симулятор сосредоточен на физической информации о пути и декогеренции. Детектор, окружающая среда или любое взаимодействие, делающее путь различимым, может подавить интерференцию без необходимости сознательного наблюдателя.',
   },
   {
-    question: 'Chto takoye vidimost polos?',
-    answer: 'Vidimost polos sravnivayet svetlye i temnye oblasti na ekrane. Vysokaya vidimost oznachayet silnyi interferentcionnyi kontrast. Nizkaya vidimost oznachayet, chto temnye promezhutki zapolnilis i uzor vedet sebya bolshe kak dva nezavisimykh chastichnykh potoka.',
+    question: 'Что такое видимость полос?',
+    answer: 'Видимость полос сравнивает светлые и темные области на экране. Высокая видимость означает сильный интерференционный контраст. Низкая видимость означает, что темные промежутки заполнились и узор ведет себя больше как два независимых частичных потока.',
   },
   {
-    question: 'Eto polnyi reshatel kvantovoi mekhaniki?',
-    answer: 'Net. Eto obrazovatelnaya model, kotoraya sochetayet interferentcionnuyu ogibayushchuyu dvoinoi shcheli s regulyatorom dekogerentcii. Ona sozdana dlya vizualnogo obyasneniya effekta izmereniya, a ne dlya zameny simulicii uravneniya Shredingera dlya realnoi ustanovki.',
+    question: 'Это полный решатель квантовой механики?',
+    answer: 'Нет. Это образовательная модель, которая сочетает интерференционную огибающую двойной щели с регулятором декогеренции. Она создана для визуального объяснения эффекта измерения, а не для замены симуляции уравнения Шрёдингера для реальной установки.',
   },
   {
-    question: 'Pochemu rasstoyaniye mezhdu shchelyami vliyayet na rasstoyaniye mezhdu polosami?',
-    answer: 'Bolsheye rasstoyaniye sozdayet boleye bystruyu fazovuyu raznost po ekranu, poetomu svetlye i temnye polosy stanovatsya blizhe drug k drugu. Mensheye rasstoyaniye razdvigayet polosy dalishe drug ot druga.',
+    question: 'Почему расстояние между щелями влияет на расстояние между полосами?',
+    answer: 'Большее расстояние создает более быструю фазовую разность по экрану, поэтому светлые и темные полосы становятся ближе друг к другу. Меньшее расстояние раздвигает полосы дальше друг от друга.',
   },
 ];
 
@@ -52,94 +52,94 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    stage: 'Ustanovka s dvoinoi shchelyu',
-    controls: 'Regulyatory dvoinoi shcheli',
-    results: 'Rezultaty dvoinoi shcheli',
-    kicker: 'Regulyator izmereniya',
-    detectorToggle: 'Vklyuchit detektor puti',
-    detectorStrength: 'Sila detektora',
-    slitSeparation: 'Rasstoyaniye mezhdu shchelyami',
-    slitWidth: 'Shirina shcheli',
-    unobserved: 'Nenablyudayemoye',
-    observed: 'Nablyudayemoye',
-    waveMode: 'Interferentciya',
-    particleMode: 'Chastichnye polosy',
-    fringeVisibility: 'Vidimost polos',
-    whichPath: 'Informatciya o puti',
-    coherence: 'Kogerentnost',
-    readoutNote: 'Interferentciya sokhranyayetsya, kogda oba puti ostayutsya nerazlichimymi. Izmereniye delayet informaciyu o puti dostupnoi, i ekun teryayet temnye polosy.',
+    stage: 'Установка с двойной щелью',
+    controls: 'Регуляторы двойной щели',
+    results: 'Результаты двойной щели',
+    kicker: 'Регулятор измерения',
+    detectorToggle: 'Включить детектор пути',
+    detectorStrength: 'Сила детектора',
+    slitSeparation: 'Расстояние между щелями',
+    slitWidth: 'Ширина щели',
+    unobserved: 'Ненаблюдаемое',
+    observed: 'Наблюдаемое',
+    waveMode: 'Интерференция',
+    particleMode: 'Частичные полосы',
+    fringeVisibility: 'Видимость полос',
+    whichPath: 'Информация о пути',
+    coherence: 'Когерентность',
+    readoutNote: 'Интерференция сохраняется, когда оба пути остаются неразличимыми. Измерение делает информацию о пути доступной, и экран теряет темные полосы.',
   },
   seo: [
     {
       type: 'title',
-      text: 'Simulyator dvukhshchelevogo eksperimenta s dekogerentciyei i detektirovaniyem puti',
+      text: 'Симулятор двухщелевого эксперимента с декогеренцией и детектированием пути',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Etot simulyator dvoinoi shcheli prevrashchayet klassicheskii kvantovyi eksperiment v interaktivnuyu vizualnuyu model. Pri vyklyuchennom detektore ekun pokazyvayet interferentcionnyi uzor: svetlye i temnye polosy voznikayut potomu, chto dva vozmozhnykh puti ostayutsya kogerentnymi. Kogda dobavlyayetsya detektor puti, uzor postepenno prevrashchayetsya v dve shirokiye chastichnye polosy, tak kak alternativy puti stanovatsya razlichimymi.',
+      html: 'Этот симулятор двойной щели превращает классический квантовый эксперимент в интерактивную визуальную модель. При выключенном детекторе экран показывает интерференционный узор: светлые и темные полосы возникают потому, что два возможных пути остаются когерентными. Когда добавляется детектор пути, узор постепенно превращается в две широкие частичные полосы, так как альтернативы пути становятся различимыми.',
     },
     {
       type: 'paragraph',
-      html: 'Instrument prednaznachen dlya obuchayushchikhsya, ishchushchikh yasnoye obyasneniye, pochemu nablyudeniye izmenyayet rezultat dvukhshchelevogo eksperimenta. On izbegayet rasplyvchatoi frazy "nablyudatel izmenyayet realnost" i vmesto etogo sosredotachivayetsya na fizicheski poleznoi ideye: interferentciya trebuyet nerazlichimykh alternativ, v to vremya kak izmereniye i okruzhayushchee zaputyvaniye udalyayut fazovoye sootnosheniye, neobkhodimoye dlya polos.',
+      html: 'Инструмент предназначен для обучающихся, ищущих ясное объяснение, почему наблюдение изменяет результат двухщелевого эксперимента. Он избегает расплывчатой фразы "наблюдатель изменяет реальность" и вместо этого сосредотачивается на физически полезной идее: интерференция требует неразличимых альтернатив, в то время как измерение и окружающее запутывание удаляют фазовое соотношение, необходимое для полос.',
     },
     {
       type: 'title',
-      text: 'Chto demonstriruyet dvukhshchelevoi eksperiment',
+      text: 'Что демонстрирует двухщелевой эксперимент',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'V nenablyudayemoi konfiguratcii odin kvantovyi obyekt opisyvayetsya amplitudami veroyatnosti, svyazannymi s obeimi shchelyami. Eti amplitudy skladyvayutsya s fazoi. V nekotorykh polozheniyakh na ekrane oni usilivayut drug druga, proizvodya svetlye polosy; v drugikh polozheniyakh oni gasyat drug druga, proizvodya temnye polosy. Eta chereduyushchayasya struktura yavlyayetsya priznakom interferentcii.',
+      html: 'В ненаблюдаемой конфигурации один квантовый объект описывается амплитудами вероятности, связанными с обеими щелями. Эти амплитуды складываются с фазой. В некоторых положениях на экране они усиливают друг друга, производя светлые полосы; в других положениях они гасят друг друга, производя темные полосы. Эта чередующаяся структура является признаком интерференции.',
     },
     {
       type: 'paragraph',
-      html: 'Yesli detektor registriruyet, kakaya shchel byla ispolzovana, alternativy perestayut byt nerazlichimymi. Ekun bolshe ne poluchayet kogerentnoi summy amplitud. On poluchayet smes dvukh obuslovlennykh putem rezultatov, poetomu temnye interferentcionnye promezhutki zapolnyayutsya, i rezultat vyglyadit kak chasticy, prokhodyashchiye cherez odnu ili druguyu shchel.',
+      html: 'Если детектор регистрирует, какая щель была использована, альтернативы перестают быть неразличимыми. Экран больше не получает когерентной суммы амплитуд. Он получает смесь двух обусловленных путем результатов, поэтому темные интерференционные промежутки заполняются, и результат выглядит как частицы, проходящие через одну или другую щель.',
     },
     {
       type: 'title',
-      text: 'Kak chitat simulyator',
+      text: 'Как читать симулятор',
       level: 3,
     },
     {
       type: 'table',
-      headers: ['Regulyator ili metrika', 'Chto on izmenyayet', 'Na chto obrashchat vnimaniye'],
+      headers: ['Регулятор или метрика', 'Что он изменяет', 'На что обращать внимание'],
       rows: [
-        ['Sila detektora', 'Skolko informacii o puti dostupno', 'Boleye vysokie znacheniya umenshayut vidimost polos i usilivayut dvukhpolosnyi chastichnyi uzor.'],
-        ['Rasstoyaniye mezhdu shchelyami', 'Rasstoyaniye mezhdu dvumya otverstiyami', 'Boleye shirokoye rasstoyaniye delaet interferentcionnye polosy bolee plotnymi na ekrane.'],
-        ['Shirina shcheli', 'Razmer kazhdogo otverstiya', 'Boleye shirokiye shcheli suzhayut difrakcionnuyu ogibayushchuyu i izmenyayut obshchuyu yarkost.'],
-        ['Vidimost polos', 'Kontrast mezhdu svetlymi i temnymi oblastyami ekrana', 'Vysokoye chislo oznachayet, chto kogerentnaya interferentciya vse yeshche vidima.'],
-        ['Kogerentnost', 'Skolko fazovogo sootnosheniya ostaetsya mezhdu putyami', 'Kogerentnost padayet, kogda detektor delaet puti razlichimymi.'],
+        ['Сила детектора', 'Сколько информации о пути доступно', 'Более высокие значения уменьшают видимость полос и усиливают двухполосный частичный узор.'],
+        ['Расстояние между щелями', 'Расстояние между двумя отверстиями', 'Более широкое расстояние делает интерференционные полосы более плотными на экране.'],
+        ['Ширина щели', 'Размер каждого отверстия', 'Более широкие щели сужают дифракционную огибающую и изменяют общую яркость.'],
+        ['Видимость полос', 'Контраст между светлыми и темными областями экрана', 'Высокое число означает, что когерентная интерференция все еще видна.'],
+        ['Когерентность', 'Сколько фазового соотношения остается между путями', 'Когерентность падает, когда детектор делает пути различимыми.'],
       ],
     },
     {
       type: 'title',
-      text: 'Dekogerentciya bez mistiki',
+      text: 'Декогеренция без мистики',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Dekogerentciya eto poterya poleznoi fazovoi kogerentnosti, kogda kvantovaya sistema korreliruyet s detektorom ili okruzhayushchei sredoi. V dvukhshchelevom eksperimente eta korrelyatciya mozhet nesti informaciyu o puti. Kak tolko put v printcipe zaregistrirovan, dazhe yesli nikto ne chitayet zapis, interferentcionnyi uzor podavlyayetsya.',
+      html: 'Декогеренция - это потеря полезной фазовой когерентности, когда квантовая система коррелирует с детектором или окружающей средой. В двухщелевом эксперименте эта корреляция может нести информацию о пути. Как только путь в принципе зарегистрирован, даже если никто не читает запись, интерференционный узор подавляется.',
     },
     {
       type: 'paragraph',
-      html: 'Eto razlichiye vazhno, potomu chto mnogiye obyasneniya preuvelichivayut rol chelovecheskogo nablyudeniya. Vazhnaya fizika ne v zrenii ili soznanii; ona v tom, sokhranyayet li eksperimentalnaya ustanovka ili razrushayet nerazlichimost alternativ, kotoryye v protivnom sluchaye interferirovali by.',
+      html: 'Это различие важно, потому что многие объяснения преувеличивают роль человеческого наблюдения. Важная физика не в зрении или сознании; она в том, сохраняет ли экспериментальная установка или разрушает неразличимость альтернатив, которые в противном случае интерферировали бы.',
     },
     {
       type: 'title',
-      text: 'Granitcy etoi obrazovatelnoi modeli',
+      text: 'Границы этой образовательной модели',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Simulyator ispolzuyet kompaktnyi opticheskii uzor dvoinoi shcheli i sochetayet yego s modelyu sily detektora dlya dekogerentcii. On otlichno podkhodit dlya razvitiya intuicii, demonstratcii v klasse i konceptualnogo povtoreniya, no ne yavlyayetsya chislennym resheniyem polnogo kvantovogo apparata s detektornymi Gilbertovymi prostranstvami, istochnikami shuma ili laboratornoi kalibrovkoi.',
+      html: 'Симулятор использует компактный оптический узор двойной щели и сочетает его с моделью силы детектора для декогеренции. Он отлично подходит для развития интуиции, демонстрации в классе и концептуального повторения, но не является численным решением полного квантового аппарата с детекторными Гильбертовыми пространствами, источниками шума или лабораторной калибровкой.',
     },
     {
       type: 'list',
       items: [
-        '<strong>Ispolzuite dlya ponimaniya konceptov:</strong> interferentciya, informaciya o puti, kogerentnost i izmereniye.',
-        '<strong>Ne ispolzuite dlya eksperimentalnogo proektirovaniya:</strong> realnye dvukhshchelevye eksperimenty trebuyut tochnykh raschetov dliny volny, apertury, detektora i rasprostraneniya.',
-        '<strong>Sredotochtes na tendencii:</strong> po mere vozrastaniya razlichimosti kontrast interferentcii umenshayetsya.',
+        '<strong>Используйте для понимания концептов:</strong> интерференция, информация о пути, когерентность и измерение.',
+        '<strong>Не используйте для экспериментального проектирования:</strong> реальные двухщелевые эксперименты требуют точных расчетов длины волны, апертуры, детектора и распространения.',
+        '<strong>Сосредоточьтесь на тенденции:</strong> по мере возрастания различимости контраст интерференции уменьшается.',
       ],
     },
   ],

@@ -1,5 +1,7 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, afterAll } from 'vitest';
 import { ALL_TOOLS } from '../tools';
+
+const failures: Map<string, string[]> = new Map();
 
 type LocaleWithDiacritics = keyof typeof DIACRITIC_RULES;
 
@@ -111,8 +113,28 @@ describe('Diacritics density validation', () => {
               'If the count is 0 or near 0, accents, tildes, or special letters were probably stripped by encoding or normalization.',
             ].join(' '),
           ).toBeGreaterThanOrEqual(rule.minPerThousandLetters);
+
+          if (density < rule.minPerThousandLetters) {
+            const existing = failures.get(tool.entry.id) ?? [];
+            existing.push(typedLocale);
+            failures.set(tool.entry.id, existing);
+          }
         });
       });
     });
   });
+});
+
+afterAll(() => {
+  if (failures.size > 0) {
+    const sorted = [...failures.entries()].sort(([a], [b]) => a.localeCompare(b));
+    console.log('\n=== DIACRITICS DENSITY FAILURES (grouped by tool) ===');
+    let total = 0;
+    for (const [tool, locales] of sorted) {
+      locales.sort();
+      console.log(`  ${tool}: ${locales.join(', ')}`);
+      total += locales.length;
+    }
+    console.log(`  Total: ${total} failures across ${failures.size} tools\n`);
+  }
 });

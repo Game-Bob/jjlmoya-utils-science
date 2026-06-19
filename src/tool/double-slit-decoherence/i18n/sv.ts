@@ -2,48 +2,48 @@ import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dubbelspalt-dekoherens-simulator';
-const title = 'Dubbelspaltexperiment och Dekohaerens Simulator';
-const description = 'Slag pa och av vilken-vag-detektorer for att se kvantinterferens blekna till tva partikelband i en visuell dubbelspaltsimulator.';
+const title = 'Dubbelspaltexperiment och Dekoherens-simulator';
+const description = 'Slå på och av vilken-väg-detektorer för att se kvantinterferens blekna till två partikelband i en visuell dubbelspaltsimulator.';
 
 const howTo = [
   {
-    name: 'Borja med detektorn avstangd',
-    text: 'Lamna vilken-vag-detektorn inaktiverad och se hur skarmen bildar ljusa och morka interferensfransar fran koherenta sannolikhetsamplituder.',
+    name: 'Börja med detektorn avstängd',
+    text: 'Lämna vilken-väg-detektorn inaktiverad och se hur skärmen bildar ljusa och mörka interferensfransar från koherenta sannolikhetsamplituder.',
   },
   {
-    name: 'Oka detektorstyrkan',
-    text: 'Hoja detektorkontrollen for att introducera vilken-vag-information. Nar detektorn blir starkare minskar koherensen och fransarna forsvinner.',
+    name: 'Öka detektorstyrkan',
+    text: 'Höj detektorkontrollen för att introducera vilken-väg-information. När detektorn blir starkare minskar koherensen och fransarna försvinner.',
   },
   {
-    name: 'Andra spaltgeometrin',
-    text: 'Justera spaltavstand och spaltbredd for att se hur geometrin forandrar fransavstandet, enveloppbredden och den slutliga distributionen pa skarmen.',
+    name: 'Ändra spaltgeometrin',
+    text: 'Justera spaltavstånd och spaltbredd för att se hur geometrin förändrar fransavståndet, enveloppbredden och den slutliga distributionen på skärmen.',
   },
   {
-    name: 'Las de levande matvarden',
-    text: 'Anvand fransynlighet, vilken-vag-information och koherens for att koppla det visuella monstret till kvantmatningshistorien.',
+    name: 'Läs de levande mätvärdena',
+    text: 'Använd fransynlighet, vilken-väg-information och koherens för att koppla det visuella mönstret till kvantmätningshistorien.',
   },
 ];
 
 const faq = [
   {
-    question: 'Varfor andras monstret nar detektorer slas pa?',
-    answer: 'En detektor som kan avsloja vilken spalt partikeln anvande forstor fasrelationen mellan de tva alternativen. Utan den koherensen interfererar de tva sannolikhetsvagarna inte langre och skarmen narmar sig tva breda partikelband.',
+    question: 'Varför ändras mönstret när detektorer slås på?',
+    answer: 'En detektor som kan avslöja vilken spalt partikeln använde förstör fasrelationen mellan de två alternativen. Utan den koherensen interfererar de två sannolikhetsvägarna inte längre och skärmen närmar sig två breda partikelband.',
   },
   {
-    question: 'Betyder denna simulator att medvetandet kollapsar vagfunktionen?',
-    answer: 'Nej. Simulatorn fokuserar pa fysisk vilken-vag-information och dekoherens. En detektor, miljon eller varje interaktion som gorskillnaden pa vagen kan undertrycka interferens utan att krava en medveten observator.',
+    question: 'Betyder denna simulator att medvetandet kollapsar vågfunktionen?',
+    answer: 'Nej. Simulatorn fokuserar på fysisk vilken-väg-information och dekoherens. En detektor, miljön eller varje interaktion som gör skillnaden på vägen kan undertrycka interferens utan att kräva en medveten observatör.',
   },
   {
-    question: 'Vad ar fransynlighet?',
-    answer: 'Fransynlighet jamfor ljusa och morka omraden pa skarmen. Hog synlighet innebar starkt interferenskontrast. Lag synlighet innebar att de morka luckorna har fyllts i och monstret beter sig mer som tva oberoende partikelstrommar.',
+    question: 'Vad är fransynlighet?',
+    answer: 'Fransynlighet jämför ljusa och mörka områden på skärmen. Hög synlighet innebär stark interferenskontrast. Låg synlighet innebär att de mörka luckorna har fyllts i och mönstret beter sig mer som två oberoende partikelströmmar.',
   },
   {
-    question: 'Ar detta en fullstandig kvantmekaniklosare?',
-    answer: 'Nej. Det ar en pedagogisk modell som blandar ett dubbelspalts interferensenvelopp med en dekoherens-kontroll. Den ar byggd for att forklara mateffekten visuellt, inte for att ersatta en Schrodingerekvationssimulering for en verklig apparat.',
+    question: 'Är detta en fullständig kvantmekaniklösare?',
+    answer: 'Nej. Det är en pedagogisk modell som blandar ett dubbelspalts interferensenvelopp med en dekoherenskontroll. Den är byggd för att förklara mäteffekten visuellt, inte för att ersätta en Schrödingerekvationssimulering för en verklig apparat.',
   },
   {
-    question: 'Varfor paverkar spaltavstandet fransavstandet?',
-    answer: 'Storre avstand skapar en snabbare fasskillnad over skarmen, sa ljusa och morka band kommer narmare varandra. Mindre avstand sp rider ut fransarna langre ifran varandra.',
+    question: 'Varför påverkar spaltavståndet fransavståndet?',
+    answer: 'Större avstånd skapar en snabbare fasskillnad över skärmen, så ljusa och mörka band kommer närmare varandra. Mindre avstånd sprider ut fransarna längre ifrån varandra.',
   },
 ];
 
@@ -55,33 +55,29 @@ export const content: ToolLocaleContent = {
     stage: 'Dubbelspaltapparat',
     controls: 'Dubbelspaltkontroller',
     results: 'Dubbelspaltresultat',
-    kicker: 'Matningskontroll',
-    detectorToggle: 'Aktivera vilken-vag-detektor',
+    kicker: 'Mätkontroll',
+    detectorToggle: 'Aktivera vilken-väg-detektor',
     detectorStrength: 'Detektorstyrka',
-    slitSeparation: 'Spaltavstand',
+    slitSeparation: 'Spaltavstånd',
     slitWidth: 'Spaltbredd',
     unobserved: 'Oobserverad',
     observed: 'Observerad',
     waveMode: 'Interferens',
     particleMode: 'Partikelband',
     fringeVisibility: 'Fransynlighet',
-    whichPath: 'Vilken-vag-info',
+    whichPath: 'Vilken-väg-info',
     coherence: 'Koherens',
-    readoutNote: 'Interferens overlever nar bada vagarna forblir osarskiljbara. Matning gor vaginformation tillganglig och skarmen forlorar sina morka fransar.',
+    readoutNote: 'Interferens överlever när båda vägarna förblir osärskiljbara. Mätning gör väginformation tillgänglig och skärmen förlorar sina mörka fransar.',
   },
   seo: [
     {
       type: 'title',
-      text: 'Dubbelspaltexperiment simulator med dekoherens och vilken-vag-detektion',
+      text: 'Dubbelspaltexperiment: Simulator med dekoherens och vilken-väg-detektion',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Denna dubbelspaltsimulator forvandlar det klassiska kvantexperimentet till en interaktiv visuell modell. Med detektorn avstangd visar skarmen ett interferensmonster: ljusa och morka band uppstar eftersom de tva mojliga vagarna forblir koherenta. Nar en vilken-vag-detektor lags till, forvandlas monstret gradvis till tva breda partikelband eftersom vagalternativen blir sarskiljbara.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Verkyget ar utformat for larande som soker en tydlig forklaring till varfor observation forandrar dubbelspaltresultatet. Det undviker den vaga frasen "observatoren forandrar verkligheten" och fokuserar istallet pa den fysiskt anvandbara iden: interferens kraver osarskiljbara alternativ, medan matning och miljoomfltning tar bort fasrelationen som behovs for fransar.',
+      html: 'Denna dubbelspalt-simulator förvandlar det klassiska kvantexperimentet till en interaktiv visuell modell. Med detektorn avstängd visar skärmen ett interferensmönster: ljusa och mörka band uppstår eftersom de två möjliga vägarna förblir koherenta. När en vilken-väg-detektor läggs till förvandlas mönstret gradvis till två breda partikelband eftersom vägalternativen blir särskiljbara.',
     },
     {
       type: 'title',
@@ -89,57 +85,13 @@ export const content: ToolLocaleContent = {
       level: 3,
     },
     {
-      type: 'paragraph',
-      html: 'I den oobserverade uppstallningen beskrivs ett enda kvantobjekt av sannolikhetsamplituder kopplade till bada spalterna. Dessa amplituder adderas med fas. Pa vissa positioner pa skarmen forstarker de varandra och skapar ljusa band; pa andra positioner tar de ut varandra och skapar morka band. Den vaxlande strukturen ar kannedomen for interferens.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Om en detektor registrerar vilken spalt som anvandes upphor alternativen att vara osarskiljbara. Skarmen tar inte langre emot en koherent summa av amplituder. Den tar emot en blandning av tva vagbetingade utfall, sa de morka interferensluckorna fylls i och resultatet ser ut som partiklar som gar genom den ena eller den andra spalten.',
-    },
-    {
-      type: 'title',
-      text: 'Hur man laser simulatorn',
-      level: 3,
-    },
-    {
       type: 'table',
-      headers: ['Kontroll eller matvarde', 'Vad den andra', 'Vad du ska titta efter'],
+      headers: ['Kontroll eller mätvärde', 'Vad den ändrar', 'Vad du ska titta efter'],
       rows: [
-        ['Detektorstyrka', 'Hur mycket vilken-vag-information som ar tillganglig', 'Hogre varden minskar fransynligheten och forstarker tvabands-partikelmonstret.'],
-        ['Spaltavstand', 'Avstandet mellan de tva oppningarna', 'Storre avstand gor interferensbanden tatre pa skarmen.'],
-        ['Spaltbredd', 'Storleken pa varje oppning', 'Bredare spalter smalnar av diffraktionsenveloppen och omformar den overgripande ljusstyrkan.'],
-        ['Fransynlighet', 'Kontrast mellan ljusa och morka skarmomraden', 'Ett hogt tal betyder att koherent interferens fortfarande ar synlig.'],
-        ['Koherens', 'Hur mycket fasrelation som aterstar mellan vagarna', 'Koherensen sjunker nar detektorn gor vagarna sarskiljbara.'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Dekoherens utan mystik',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Dekoherens ar forlusten av anvandbar fas-koherens nar ett kvantsystem blir korrelerat med en detektor eller miljo. I ett dubbelspaltexperiment kan den korrelationen bara vilken-vag-information. Nar vagen val ar registrerad i princip, aven om ingen laser registreringen, undertrycks interferensmonstret.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Denna skillnad ar viktig eftersom manga forklaringar overdriver rollen av mannsklig observation. Den viktiga fysiken ar inte syn eller medvetande; det ar om experimentuppstallningen bevarar eller forstor osarskiljbarheten av de alternativ som annars skulle interferera.',
-    },
-    {
-      type: 'title',
-      text: 'Begransningar av denna pedagogiska modell',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'Simulatorn anvander ett kompakt optiskt dubbelspaltsmonster och kombinerar det med en detektorstyrkemodell for dekoherens. Den ar utmarkt for intuition, klassrumsdemonstrationer och konceptuell repetition, men den ar inte en numerisk losning av en fullstandig kvantapparat med detektor Hilbert-rum, bruskallor eller laboratoriekalibrering.',
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>Anvand den for att forsta koncept:</strong> interferens, vilken-vag-information, koherens och matning.',
-        '<strong>Anvand den inte for experimentell design:</strong> verkliga dubbelspaltexperiment kraver precisa berakningar av vaglangd, oppning, detektor och propagation.',
-        '<strong>Fokusera pa trenden:</strong> nar sarskiljbarheten okar, minskar interferenskontrasten.',
+        ['Detektorstyrka', 'Tillgänglig vilken-väg-information', 'Högre värden minskar fransynligheten och förstärker partikelmönstret.'],
+        ['Spaltavstånd', 'Avståndet mellan öppningarna', 'Större avstånd gör interferensbanden tätare på skärmen.'],
+        ['Fransynlighet', 'Kontrast mellan ljusa och mörka skärmområden', 'Ett högt tal betyder att koherent interferens är synlig.'],
+        ['Koherens', 'Fasrelation mellan vägarna', 'Koherensen sjunker när detektorn gör vägarna särskiljbara.'],
       ],
     },
   ],

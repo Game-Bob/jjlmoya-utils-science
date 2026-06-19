@@ -1,49 +1,49 @@
 import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'simulador-dupla-fenda-decoherencia';
-const title = 'Simulador do Experimento da Dupla Fenda e Decoerencia';
-const description = 'Ligue e desligue detectores de caminho para ver a interferencia quantica desaparecer em duas bandas de particulas num simulador visual de dupla fenda.';
+const slug = 'simulador-dupla-fenda-decoerencia';
+const title = 'Simulador do Experimento da Dupla Fenda e Decoerência';
+const description = 'Ligue e desligue detectores de caminho para ver a interferência quântica desaparecer em duas bandas de partículas num simulador visual de dupla fenda.';
 
 const howTo = [
   {
     name: 'Comece com o detector desligado',
-    text: 'Deixe o detector de caminho desativado e observe o ecra formar franjas de interferencia claras e escuras a partir de amplitudes de probabilidade coerentes.',
+    text: 'Deixe o detector de caminho desativado e observe o ecrã formar franjas de interferência claras e escuras a partir de amplitudes de probabilidade coerentes.',
   },
   {
     name: 'Aumente a intensidade do detector',
-    text: 'Aumente o controlo do detector para introduzir informacao de caminho. Quanto mais forte o detector se torna, mais a coerencia cai e as franjas desaparecem.',
+    text: 'Aumente o controlo do detector para introduzir informação de caminho. Quanto mais forte o detector se torna, mais a coerência cai e as franjas desaparecem.',
   },
   {
     name: 'Altere a geometria das fendas',
-    text: 'Ajuste a separacao e a largura das fendas para ver como a geometria altera o espacamento das franjas, a largura da envolvente e a distribuicao final no ecra.',
+    text: 'Ajuste a separação e a largura das fendas para ver como a geometria altera o espaçamento das franjas, a largura da envolvente e a distribuição final no ecrã.',
   },
   {
-    name: 'Leia as metricas em tempo real',
-    text: 'Use a visibilidade das franjas, a informacao de caminho e a coerencia para ligar o padrao visual a historia da medicao quantica.',
+    name: 'Leia as métricas em tempo real',
+    text: 'Use a visibilidade das franjas, a informação de caminho e a coerência para ligar o padrão visual à história da medição quântica.',
   },
 ];
 
 const faq = [
   {
-    question: 'Porque e que o padrao muda quando os detectores sao ligados?',
-    answer: 'Um detector que pode revelar qual fenda a particula usou destroi a relacao de fase entre as duas alternativas. Sem essa coerencia, os dois caminhos de probabilidade ja nao interferem e o ecra aproxima-se de duas bandas largas de particulas.',
+    question: 'Por que é que o padrão muda quando os detectores são ligados?',
+    answer: 'Um detector que pode revelar qual fenda a partícula usou destrói a relação de fase entre as duas alternativas. Sem essa coerência, os dois caminhos de probabilidade já não interferem e o ecrã aproxima-se de duas bandas largas de partículas.',
   },
   {
-    question: 'Este simulador significa que a consciencia colapsa a funcao de onda?',
-    answer: 'Nao. O simulador centra-se na informacao fisica de caminho e na decoerencia. Um detector, o ambiente ou qualquer interacao que torne o caminho distinguivel pode suprimir a interferencia sem necessitar de um observador consciente.',
+    question: 'Este simulador significa que a consciência colapsa a função de onda?',
+    answer: 'Não. O simulador centra-se na informação física de caminho e na decoerência. Um detector, o ambiente ou qualquer interação que torne o caminho distinguível pode suprimir a interferência sem necessitar de um observador consciente.',
   },
   {
-    question: 'O que e a visibilidade das franjas?',
-    answer: 'A visibilidade das franjas compara as regioes claras e escuras no ecra. Visibilidade alta significa forte contraste de interferencia. Visibilidade baixa significa que os espacos escuros se preencheram e o padrao comporta-se mais como dois fluxos de particulas independentes.',
+    question: 'O que é a visibilidade das franjas?',
+    answer: 'A visibilidade das franjas compara as regiões claras e escuras no ecrã. Visibilidade alta significa forte contraste de interferência. Visibilidade baixa significa que os espaços escuros se preencheram e o padrão comporta-se mais como dois fluxos de partículas independentes.',
   },
   {
-    question: 'Isto e um resolvedor completo de mecanica quantica?',
-    answer: 'Nao. E um modelo educativo que combina uma envolvente de interferencia de dupla fenda com um controlo de decoerencia. Foi construido para explicar visualmente o efeito da medicao, nao para substituir uma simulacao da equacao de Schrodinger para um aparato real.',
+    question: 'Isto é um resolvedor completo de mecânica quântica?',
+    answer: 'Não. É um modelo educativo que combina uma envolvente de interferência de dupla fenda com um controlo de decoerência. Foi construído para explicar visualmente o efeito da medição, não para substituir uma simulação da equação de Schrödinger para um aparato real.',
   },
   {
-    question: 'Porque e que a separacao das fendas afeta o espacamento das franjas?',
-    answer: 'Uma separacao maior cria uma diferenca de fase mais rapida atraves do ecra, por isso as bandas claras e escuras ficam mais proximas. Uma separacao menor espalha as franjas mais amplamente.',
+    question: 'Por que é que a separação das fendas afeta o espaçamento das franjas?',
+    answer: 'Uma separação maior cria uma diferença de fase mais rápida através do ecrã, por isso as bandas claras e escuras ficam mais próximas. Uma separação menor espalha as franjas mais amplamente.',
   },
 ];
 
@@ -55,33 +55,33 @@ export const content: ToolLocaleContent = {
     stage: 'Aparato de dupla fenda',
     controls: 'Controlos da dupla fenda',
     results: 'Resultados da dupla fenda',
-    kicker: 'Controlo de medicao',
+    kicker: 'Controlo de medição',
     detectorToggle: 'Ativar detector de caminho',
     detectorStrength: 'Intensidade do detector',
-    slitSeparation: 'Separacao das fendas',
+    slitSeparation: 'Separação das fendas',
     slitWidth: 'Largura da fenda',
-    unobserved: 'Nao observado',
+    unobserved: 'Não observado',
     observed: 'Observado',
-    waveMode: 'Interferencia',
-    particleMode: 'Bandas de particulas',
+    waveMode: 'Interferência',
+    particleMode: 'Bandas de partículas',
     fringeVisibility: 'Visibilidade das franjas',
-    whichPath: 'Informacao de caminho',
-    coherence: 'Coerencia',
-    readoutNote: 'A interferencia sobrevive quando ambos os caminhos permanecem indistinguiveis. A medicao torna a informacao de caminho disponivel e o ecra perde as suas franjas escuras.',
+    whichPath: 'Informação de caminho',
+    coherence: 'Coerência',
+    readoutNote: 'A interferência sobrevive quando ambos os caminhos permanecem indistinguíveis. A medição torna a informação de caminho disponível e o ecrã perde as suas franjas escuras.',
   },
   seo: [
     {
       type: 'title',
-      text: 'Simulador do experimento da dupla fenda com decoerencia e detecao de caminho',
+      text: 'Simulador do experimento da dupla fenda com decoerência e deteção de caminho',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Este simulador de dupla fenda transforma a experiencia quantica classica num modelo visual interativo. Com o detector desligado, o ecra mostra um padrao de interferencia: bandas claras e escuras produzidas porque os dois caminhos possiveis permanecem coerentes. Quando um detector de caminho e adicionado, o padrao transforma-se gradualmente em duas bandas largas de particulas porque as alternativas de caminho se tornam distinguiveis.',
+      html: 'Este simulador de dupla fenda transforma a experiência quântica clássica num modelo visual interativo. Com o detector desligado, o ecrã mostra um padrão de interferência: bandas claras e escuras produzidas porque os dois caminhos possíveis permanecem coerentes. Quando um detector de caminho é adicionado, o padrão transforma-se gradualmente em duas bandas largas de partículas porque as alternativas de caminho se tornam distinguíveis.',
     },
     {
       type: 'paragraph',
-      html: 'A ferramenta foi concebida para estudantes que procuram uma explicacao clara do porque e que a observacao altera o resultado da dupla fenda. Evita a vaga frase "o observador muda a realidade" e concentra-se na ideia fisicamente util: a interferencia requer alternativas indistinguiveis, enquanto a medicao e o entrelacamento ambiental removem a relacao de fase necessaria para as franjas.',
+      html: 'A ferramenta foi concebida para estudantes que procuram uma explicação clara do porquê a observação altera o resultado da dupla fenda. Foca-se na ideia fisicamente útil: a interferência requer alternativas indistinguíveis, enquanto a medição e o entrelaçamento ambiental removem a relação de fase necessária para as franjas.',
     },
     {
       type: 'title',
@@ -89,57 +89,13 @@ export const content: ToolLocaleContent = {
       level: 3,
     },
     {
-      type: 'paragraph',
-      html: 'Na configuracao nao observada, um unico objeto quantico e descrito por amplitudes de probabilidade associadas a ambas as fendas. Essas amplitudes somam-se com fase. Em algumas posicoes do ecra reforcam-se mutuamente, produzindo bandas claras; noutras posicoes cancelam-se, produzindo bandas escuras. Essa estrutura alternada e a assinatura da interferencia.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Se um detector registar qual fenda foi usada, as alternativas deixam de ser indistinguiveis. O ecra ja nao recebe uma soma coerente de amplitudes. Recebe uma mistura de dois resultados condicionados pelo caminho, por isso os espacos escuros de interferencia preenchem-se e o resultado parece particulas a passar por uma fenda ou pela outra.',
-    },
-    {
-      type: 'title',
-      text: 'Como ler o simulador',
-      level: 3,
-    },
-    {
       type: 'table',
-      headers: ['Controlo ou metrica', 'O que altera', 'O que procurar'],
+      headers: ['Controlo ou métrica', 'O que altera', 'O que procurar'],
       rows: [
-        ['Intensidade do detector', 'Quanta informacao de caminho esta disponivel', 'Valores mais altos reduzem a visibilidade das franjas e aumentam o padrao de duas bandas.'],
-        ['Separacao das fendas', 'A distancia entre as duas aberturas', 'Maior separacao torna as bandas de interferencia mais apertadas no ecra.'],
-        ['Largura da fenda', 'O tamanho de cada abertura', 'Fendas mais largas estreitam a envolvente de difracao e remodelam o brilho geral.'],
-        ['Visibilidade das franjas', 'Contraste entre regioes claras e escuras do ecra', 'Um numero alto significa que a interferencia coerente ainda e visivel.'],
-        ['Coerencia', 'Quanta relacao de fase permanece entre os caminhos', 'A coerencia cai a medida que o detector torna os caminhos distinguiveis.'],
-      ],
-    },
-    {
-      type: 'title',
-      text: 'Decoerencia sem misticismo',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'A decoerencia e a perda de coerencia de fase utilizavel quando um sistema quantico se correlaciona com um detector ou com o ambiente. Num experimento de dupla fenda, essa correlacao pode transportar informacao de caminho. Uma vez que o caminho e registado em principio, mesmo que ninguem leia o registo, o padrao de interferencia e suprimido.',
-    },
-    {
-      type: 'paragraph',
-      html: 'Esta distincao e importante porque muitas interpretacoes exageram o papel da observacao humana. A fisica importante nao e a visao ou a consciencia; e se a montagem experimental preserva ou destroi a indistinguibilidade das alternativas que de outra forma interfeririam.',
-    },
-    {
-      type: 'title',
-      text: 'Limites deste modelo educativo',
-      level: 3,
-    },
-    {
-      type: 'paragraph',
-      html: 'O simulador usa um padrao compacto de dupla fenda de estilo otico e combina-o com um modelo de intensidade do detector para a decoerencia. E excelente para intuicao, demonstracoes em aula e revisao conceptual, mas nao e uma solucao numerica de um aparato quantico completo com espacos de Hilbert do detector, fontes de ruido ou calibracao laboratorial.',
-    },
-    {
-      type: 'list',
-      items: [
-        '<strong>Use-o para entender conceitos:</strong> interferencia, informacao de caminho, coerencia e medicao.',
-        '<strong>Nao o use para concecao experimental:</strong> experiencias reais de dupla fenda requerem calculos precisos de comprimento de onda, abertura, detector e propagacao.',
-        '<strong>Concentre-se na tendencia:</strong> a medida que a distinguibilidade aumenta, o contraste de interferencia diminui.',
+        ['Intensidade do detector', 'Informação de caminho disponível', 'Valores mais altos reduzem a visibilidade das franjas e aumentam o padrão de duas bandas.'],
+        ['Separação das fendas', 'Distância entre aberturas', 'Maior separação torna as bandas mais apertadas no ecrã.'],
+        ['Visibilidade das franjas', 'Contraste claro/escuro', 'Um número alto significa que a interferência coerente é visível.'],
+        ['Coerência', 'Relação de fase entre caminhos', 'A coerência cai quando o detector torna os caminhos distinguíveis.'],
       ],
     },
   ],

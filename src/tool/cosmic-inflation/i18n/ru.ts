@@ -1,45 +1,45 @@
 import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
-const slug = 'kosmicheskaya-inflyaciya-kalkulyator';
-const description = 'Rasschitaite eksponencialnoe rasshirenie rannei Vselennoi v epohu kosmicheskoi inflyacii.';
-const title = 'Kalkulyator Kosmicheskoi Inflyacii: Rasshirenie Rannei Vselennoi';
+const slug = 'kalkulyator-kosmicheskoy-inflyatsii';
+const title = 'Калькулятор космической инфляции: расширение ранней Вселенной';
+const description = 'Рассчитайте экспоненциальное расширение ранней Вселенной в эпоху космической инфляции.';
 
 const howTo = [
   {
-    name: 'Viberite znacheniya',
-    text: 'Peretashite polzunki dlya prosmotra rezultatov.',
+    name: 'Выберите значения',
+    text: 'Перемещайте ползунки, чтобы настроить параметры модели и мгновенно увидеть результаты.',
   },
   {
-    name: 'Sravnite masshtabnye factory',
-    text: 'Posmotrite na skolko poryadkov rasshirilos prostranstvo.',
+    name: 'Сравните масштабные факторы',
+    text: 'Оцените, на сколько порядков расширилось пространство-время.',
   },
   {
-    name: 'Analiziruite iskrglenie',
-    text: 'Hols pokazvaet rasshirenie prostranstva.',
+    name: 'Анализируйте геометрию',
+    text: 'Холст визуализирует экспоненциальное растяжение пространства и его влияние на кривизну.',
   },
 ];
 
 const faq = [
   {
-    "question": "Chto takoe kosmicheskaya inflyaciya i pochemu ona proizoshla?",
-    "answer": "Kosmicheskaya inflyaciya - eto teoriya, postuliruyushaya sverhbystroe i eksponencialnoe rasshirenie prostranstva v samye pervye doli sekundy sushestvovaniya Vselennoi, konkretno okolo 10^-36 sekundy posle Bolshogo vzryva. Eto proizoshlo iz-za togo, chto teoreticheskoe skalyarnoe pole, nazyvaemoe inflatonom, nahodilos v sostoyanii vysokoi plotnosti energii lojnogo vakuuma, chto porodilo otricatelnoe davlenie i ottalkivayushuyu silu gravitacii, rastyagivayushuyu tkan prostranstva-vremeni."
+    question: 'Что такое космическая инфляция и почему она произошла?',
+    answer: 'Космическая инфляция - это теория, постулирующая сверхбыстрое и экспоненциальное расширение Вселенной в первые доли секунды (около 10⁻³⁶ секунд после Большого взрыва). Это было вызвано теоретическим скалярным полем - инфлатоном, которое находилось в состоянии высокой энергии ложного вакуума. Это состояние создало отрицательное давление и отталкивающую гравитацию, растянувшую ткань пространства-времени.',
   },
   {
-    "question": "Chto oznachaet chislo e-folds (e-skladyvanii)?",
-    "answer": "Chislo e-folds izmeryaet dlitelnost fazy eksponencialnogo rasshireniya. Odno e-fold predstavlyaet soboi vremya, za kotoroe razmer Vselennoi uvelichivaetsya v chislo Eilera (okolo 2.718 raza). Esli Vselennaya prohodit N e-folds, ee masshtabnyi factor uvelichivaetsya v e^N raz. Standartnye kosmologicheskie modeli trebuyut minimum ot 50 do 60 e-folds dlya resheniya problem ploskostnosti i gorizonta."
+    question: 'Что означает число e-folds (e-числа)?',
+    answer: 'Число e-folds (N) измеряет длительность фазы экспоненциального расширения. Один e-fold - это интервал времени, за который размер Вселенной увеличивается в число Эйлера (примерно в 2,718 раза). За N e-folds масштабный фактор увеличивается в eⁿ раз. Для решения проблем плоскостности и горизонта стандартные модели требуют минимум 50-60 e-folds.',
   },
   {
-    "question": "Kak inflyaciya reshaet problemu gorizonta?",
-    "answer": "Problema gorizonta sprashivaet, pochemu ekstremalno udalennye oblasti Vselennoi imeyut pochti odinakovuyu temperaturu reliktovogo izlucheniya (CMB), hotya skorost sveta ne pozvolila by im vzaimodeistvovat dlya dostijeniya ravnovesiya. Inflyaciya reshaet eto, pokazvaya, chto do eksponencialnogo rasshireniya vsya nablyudaemaya Vselennaya byla kroshechnoi, svyazannoi prichinno i termicheski odnorodnoi oblastyu, kotoraya byla mgnovenno rastyanuta za predely zritelnogo gorizonta."
+    question: 'Как инфляция решает проблему горизонта?',
+    answer: 'Проблема горизонта заключается в вопросе: почему экстремально удаленные области Вселенной имеют почти одинаковую температуру реликтового излучения, если свет не успел преодолеть это расстояние для установления теплового равновесия? Инфляция объясняет это тем, что до экспоненциального расширения вся наблюдаемая Вселенная была крошечной, причинно-связанной областью, которая была мгновенно растянута за пределы наблюдаемого горизонта.',
   },
   {
-    "question": "Chto takoe problema ploskostnosti i kak ona reshaetsya?",
-    "answer": "Plotnost energii sovremennoi Vselennoi ekstremalno blizka k kriticheskoi, chto oznachaet, chto prostranstvo ploskoe s minimalnoi pogreshnostyu. Bez inflyacii lyuboe nachalnoe otklonenie ot ploskostnosti roslo by eksponencialno so vremenem, trebuya nevozmojnoi tonkoi nastroiki v moment Bolshogo vzryva. Inflyaciya rastyagivaet prostranstvennuyu kriviznu tak silno, chto lyubaya nachalnaya krivizna razmyvaetsya, podobno tomu kak poverhnost gigantskogo shara kajetsya ploskoi lokalno."
+    question: 'Что такое проблема плоскостности?',
+    answer: 'Плотность энергии современной Вселенной крайне близка к критической, что делает пространство "плоским". Без инфляции любое отклонение от плоскостности в момент Большого взрыва росло бы экспоненциально, требуя невозможной "тонкой настройки". Инфляция растягивает пространственную кривизну, размывая её, подобно тому как поверхность огромного шара кажется локально плоской.',
   },
   {
-    "question": "Chto takoe process razogreva ili reheating?",
-    "answer": "Razogrev (reheating) - eto teplovoi perehod, otmechayushii konec inflyacii. Vo vremya inflyacii Vselennaya ostyvaet do temperatur, blizkih k absolyutnomu nulyu, iz-za eksponencialnogo rasshireniya obema. Kogda pole inflatona raspadaetsya v minimume svoego potenciala, ego ostavshayasya energiya peredaetsya prostranstvu v vide chastic Standartnoi modeli cherez kvantovye vzaimodeistviya, zapolnyaya kosmos goryachei i plotnoi plazmoi, kotoraya zapuskaet tradicionnuyu fazu Bolshogo vzryva."
+    question: 'Что такое процесс разогрева (reheating)?',
+    answer: 'Разогрев - это тепловой переход, завершающий инфляцию. Во время инфляции Вселенная "остывает" до околонулевых температур из-за быстрого расширения объема. Когда поле инфлатона распадается в минимуме потенциала, его энергия передается пространству в виде частиц Стандартной модели, заполняя космос горячей плазмой и запуская традиционную фазу горячего Большого взрыва.',
   }
 ];
 
@@ -48,141 +48,33 @@ export const content: ToolLocaleContent = {
   title,
   description,
   ui: {
-    title: 'Kalkulyator Kosmicheskoi Inflyacii',
-    efoldsLabel: 'Chislo e-folds (N)',
-    energyLabel: 'Nachalnaya Shkala Energii (GeV)',
-    scaleFactorResult: 'Rost Masshtabnogo Faktora',
-    reheatingTempResult: 'Ocenochnaya Temperatura Razogreva',
-    chartTitle: 'Iskryglenie Prostranstva-Vremeni',
-    presetGuth: 'Standart (Guth)',
-    presetChaotic: 'Haoticheskaya',
-    presetExtreme: 'Extremalnye Predely',
-    efoldsTooltip: 'Tipichnye modeli predskazyvayut ot 50 do 60 e-folds.',
-    energyTooltip: 'Shkala GUT sostavlyaet okolo 10^16 GeV.',
-    scaleFactorTooltip: 'Predstavlyaet soboi obshii koefficient rasshireniya.',
-    reheatingTooltip: 'Temperatura v konce inflyacii.',
-    analogyInsuff: 'Umerennaya inflyaciya. Etogo rasshireniya nedostatochno.',
-    analogyProton: 'Vselennaya rasshirilas ot razmerov protona do razmerov galaktiki za doli sekundy.',
-    analogyObservable: 'Vselennaya rasshirilas ot subatomnogo masshtaba do razmerov, prevyshayushih nablyudaemuyu Vselennuyu, za 10^-32 sekundy.',
+    title: 'Калькулятор космической инфляции',
+    efoldsLabel: 'Число e-folds (N)',
+    energyLabel: 'Начальная энергия (ГэВ)',
+    scaleFactorResult: 'Рост масштабного фактора',
+    reheatingTempResult: 'Температура разогрева',
+    chartTitle: 'Растяжение пространства-времени',
+    presetGuth: 'Стандарт (Гут)',
+    presetChaotic: 'Хаотическая',
+    presetExtreme: 'Экстремальные пределы',
+    efoldsTooltip: 'Типичные модели предсказывают от 50 до 60 e-folds.',
+    energyTooltip: 'Шкала великого объединения (GUT) составляет около 10¹⁶ ГэВ.',
+    scaleFactorTooltip: 'Коэффициент общего расширения пространства.',
+    reheatingTooltip: 'Температура в конце инфляционной фазы.',
+    analogyInsuff: 'Умеренная инфляция. Этого расширения недостаточно.',
+    analogyProton: 'Вселенная расширилась от размеров протона до размеров галактики за доли секунды.',
+    analogyObservable: 'Вселенная расширилась от субатомных масштабов до размеров, превышающих наблюдаемую Вселенную, за 10⁻³² секунд.',
   },
   seo: [
-  {
-    "type": "title",
-    "text": "КОСМОЛОГИЯ: Teoriya Kosmicheskoi Inflyacii i Rasshirenie Prostranstva-Vremeni",
-    "level": 2
-  },
-  {
-    "type": "paragraph",
-    "html": "Kosmicheskaya inflyaciya predstavlyaet soboi kraeugolnyi kamen, svyazyvayushii fiziku chastic s nablyudatelnoi astrofizikoi. Predlojennaya v nachale 1980-h godov fizikami Alanom Gutom i Andreem Linde, eta teoriya postuliruet, chto rannyaya Vselennaya proshla cherez fazu eksponencialnogo rasshireniya, vyzvannuyu plotnostyu energii skalyarnogo polya, izvestnogo kak inflaton. Eto rasshirenie uvelichilo obem Vselennoi v koefficient kak minimum 10^26 za kroshechnuyu dolyu sekundy, razreshiv glubokie paradoksy klassicheskoi modeli Bolshogo vzryva i sozdav teoreticheskuyu bazu dlya formirovaniya kosmicheskih struktur."
-  },
-  {
-    "type": "title",
-    "text": "Sravnenie Modelei Inflyacii i Parametrov",
-    "level": 3
-  },
-  {
-    "type": "paragraph",
-    "html": "Razlichnye potencialy polya inflatona sozdayut raznye skorosti rasshireniya i temperatury razogreva. Nije privedeny harakteristiki osnovnyh modelei, simuliruemyh v etom kalkulyatore:"
-  },
-  {
-    "type": "table",
-    "headers": [
-      "Model Inflyacii",
-      "Diapazon e-folds (N)",
-      "Shkala Energii (GeV)",
-      "Fizicheskii i Dinamicheskii Rezultat"
-    ],
-    "rows": [
-      [
-        "<strong>Standart Guta</strong>",
-        "50 - 60",
-        "10^16",
-        "Reshaet ploskostnost i gorizont; inflyaciya zakanchivaetsya nukleaciei puzyrei v medlennom fazovom perehode."
-      ],
-      [
-        "<strong>Haoticheskaya Inflyaciya (Linde)</strong>",
-        "60 i bolee",
-        "10^16",
-        "Inflaton medlenno skatyvaetsya po prostomu parabolicheskomu potencialu; izbegaet problem rezkogo fazovogo perehoda."
-      ],
-      [
-        "<strong>Extremalnye Predely</strong>",
-        "90 i bolee",
-        "10^19 (Plank)",
-        "Energii blizki k predelu kvantovoi gravitacii; masshtabnoe rastyajenie pervobytnogo prostranstva-vremeni."
-      ]
-    ]
-  },
-  {
-    "type": "title",
-    "text": "Razreshenie Klassicheskih Problem Bolshogo Vzryva",
-    "level": 3
-  },
-  {
-    "type": "paragraph",
-    "html": "Do razrabotki teorii inflyacii klassicheskaya kosmologiya Bolshogo vzryva stradala ot sereznyh teoreticheskih nesootvetstvii. Problema gorizonta, svyazannaya s odnorodnostyu reliktovogo izlucheniya, i problema ploskostnosti, svyazannaya s kriticheskoi plotnostyu prostranstva, ukazvali na neobhodimost ekstremalno maloveroyatnyh nachalnyh uslovii. Inflyaciya estestvennym obrazom reshaet obe trudnosti, rastyagivaya termicheski odnorodnuyu mikrootdelnost i dinamicheski rasplashivaya lokalnuyu geometriyu prostranstva. K tomu je ona razbavlyaet koncentraciyu magnitnyh monopolei, kotorye doljny byli obrazovatsya v izbytke v rannei Vselennoi."
-  },
-  {
-    "type": "title",
-    "text": "Nablyudatelnye Astronomicheskie Dokazatelstva Inflyacionnoi Modeli",
-    "level": 3
-  },
-  {
-    "type": "paragraph",
-    "html": "Teoriya kosmicheskoi inflyacii - eto ne prosto krasivaya matematicheskaya konstrukciya; ona obladaet prochnymi kosmicheskimi dokazatelstvami, podtverjdennymi sputnikami COBE, WMAP i Planck:"
-  },
-  {
-    "type": "list",
-    "items": [
-      "<strong>Odnorodnost CMB:</strong> Reliktovoe izluchenie nablyudaetsya s odnorodnoi temperaturoi s kolebaniyami vsego v 1 dolyu na 100,000 na protivopolojnyh storonah neba.",
-      "<strong>Ploskaya Geometriya:</strong> Izmereniya krivizny Vselennoi podtverjdayut, chto ona ploskaya s pogreshnostyu menee 1%, chto sootvetstvuet masshtabnomu inflyacionnomu rastyajeniyu.",
-      "<strong>Otsutstvie Monopolei:</strong> Logicheski obyasnyaet polnoe otsutstvie stabilnyh magnitnyh monopolei bolshoi massy v nashei nablyudaemoi Vselennoi.",
-      "<strong>Spektr Kolebanii:</strong> Nablyudaemye anizotropii v kosmicheskom reliktovom fone pokazvayut spektralnyi indeks nemnogo nije 1, kak raz tak, kak predskazyvayut modeli medlennogo skatyvaniya inflatona."
-    ]
-  },
-  {
-    "type": "title",
-    "text": "Kvantovye Kolebaniya i Semena Galaktik",
-    "level": 3
-  },
-  {
-    "type": "paragraph",
-    "html": "Samym neobychnym aspektom kosmicheskoi inflyacii yavlyaetsya ee sposobnost rabotat v kachestve kosmicheskogo mikroskopa. Mikroskopicheskie kvantovye kolebaniya polya inflatona byli rastyanuty do astronomicheskih masshtabov za period eksponencialnogo rasshireniya. V konce inflyacii eti kolebaniya zamorozilis v vide kolebanii plotnosti materii (pervonachalnye vozmusheniya). Eti razlichiya plotnosti poslujili gravitacionnymi semenami, kotorye za milliardy let prityanuli materiyu drug k drugu, dav jizn pervym zvezdam, galaktikam, skopleniyam galaktik i kosmicheskoi seti, kotoruyu my nablyudaem segodnya."
-  }
-],
+    { type: 'title', text: 'КОСМОЛОГИЯ: Теория космической инфляции и расширение пространства-времени', level: 2 },
+    { type: 'paragraph', html: 'Космическая инфляция связывает физику элементарных частиц с наблюдательной астрофизикой. Предложенная Аланом Гутом и Андреем Линде, эта теория объясняет, как Вселенная увеличилась как минимум в 10²⁶ раз за крошечную долю секунды, решив парадоксы классической модели Большого взрыва.' },
+  ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      name: title,
-      description: description,
-      applicationCategory: 'ScientificApplication',
-      operatingSystem: 'Any',
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: faq.map((item) => ({
-        '@type': 'Question',
-        name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'HowTo',
-      name: title,
-      step: howTo.map((step) => ({
-        '@type': 'HowToStep',
-        name: step.name,
-        text: step.text,
-      })),
-    },
+    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
+    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
+    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
   ],
 };
