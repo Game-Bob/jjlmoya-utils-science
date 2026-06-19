@@ -25,6 +25,7 @@ export { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-
 export { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
 export { epidemicSirSimulator } from './tool/epidemic-sir-simulator/entry';
 export { blackHoleEventHorizonSimulator } from './tool/black-hole-event-horizon-simulator/entry';
+export { exoplanetBiosignatureDetector } from './tool/exoplanet-biosignature-detector/entry';
 export { scienceCategory } from './category';
 import { asteroidImpact } from './tool/asteroid-impact/entry';
 import { cellularRenewal } from './tool/cellular-renewal/entry';
@@ -52,4 +53,5 @@ import { crystalLatticeStructureFinder } from './tool/crystal-lattice-structure-
 import { fermiParadoxFilterLab } from './tool/fermi-paradox-filter-lab/entry';
 import { epidemicSirSimulator } from './tool/epidemic-sir-simulator/entry';
 import { blackHoleEventHorizonSimulator } from './tool/black-hole-event-horizon-simulator/entry';
-export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab, epidemicSirSimulator, blackHoleEventHorizonSimulator];
+import { exoplanetBiosignatureDetector } from './tool/exoplanet-biosignature-detector/entry';
+export const ALL_ENTRIES = [asteroidImpact, cellularRenewal, colonyCounter, microwaveDetector, simulationProbability, cosmicInflation, temperatureTimeline, lorenzAttractor, stellarHabitabilityZone, radioactiveDecay, naturalSelectionDrift, entropySecondLaw, doubleSlitDecoherence, phaseDiagramCriticalPoints, twinParadoxVisualizer, mandelbrotFractal, planetAtmosphereSurvival, threeBodyProblem, rocheLimitSatelliteDisruption, dysonSphereEnergyCapture, globalAlbedoSnowballSimulator, conwayLifeRuleLab, crystalLatticeStructureFinder, fermiParadoxFilterLab, epidemicSirSimulator, blackHoleEventHorizonSimulator, exoplanetBiosignatureDetector];
