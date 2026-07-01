@@ -38,8 +38,15 @@ const { ui } = Astro.props;
 		</div>
 	</div>
 
-	<div class="asteroid-desktop-lab">
-		<div class="asteroid-lab-panel">
+	<button id="asteroid-controls-toggle" class="asteroid-controls-toggle" type="button" aria-controls="asteroid-lab-panel" aria-expanded="false">
+		<Icon name="mdi:tune-variant" class="w-5 h-5" />
+		<span>Controls</span>
+	</button>
+
+	<div id="asteroid-controls-backdrop" class="asteroid-controls-backdrop"></div>
+
+	<div class="asteroid-desktop-lab" id="asteroid-controls-shell">
+		<div class="asteroid-lab-panel" id="asteroid-lab-panel">
 			<div class="asteroid-lab-header">
 				<div class="asteroid-lab-title">
 					<div class="asteroid-lab-icon">
@@ -51,6 +58,12 @@ const { ui } = Astro.props;
 						<h2 class="asteroid-lab-name">Asteroid</h2>
 						<span class="asteroid-lab-subtitle">Factory</span>
 					</div>
+				</div>
+				<div class="asteroid-lab-actions">
+					<button id="asteroid-drop-center-btn" class="asteroid-drop-center-btn" type="button"><Icon name="mdi:meteor" class="w-5 h-5" /><span>Impact</span></button>
+					<button id="asteroid-controls-close" class="asteroid-controls-close" type="button" aria-label="Close controls">
+						<Icon name="mdi:close" class="w-5 h-5" />
+					</button>
 				</div>
 			</div>
 
@@ -146,26 +159,10 @@ const { ui } = Astro.props;
 </div>
 
 <div style="display: none;">
-	<div id="icon-safe">
-		<svg class="w-6 h-6" style="color: #34d399;" fill="currentColor" viewBox="0 0 24 24">
-			<path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path>
-		</svg>
-	</div>
-	<div id="icon-shock">
-		<svg class="w-6 h-6" style="color: #60a5fa;" fill="currentColor" viewBox="0 0 24 24">
-			<path d="M3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3A9,9 0 0,0 3,12M5,12A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12M11,17H13V15H11V17M11,13H13V7H11V13Z"></path>
-		</svg>
-	</div>
-	<div id="icon-burn">
-		<svg class="w-6 h-6" style="color: #fb923c;" fill="currentColor" viewBox="0 0 24 24">
-			<path d="M17.66,11.2C17.43,10.9 17.15,10.64 16.89,10.38C16.22,9.78 15.46,9.35 14.82,8.72C13.33,7.26 13,4.85 13.95,3C13,3.23 12.17,3.75 11.46,4.32C8.87,6.4 7.85,10.07 9.07,13.22C9.11,13.32 9.15,13.42 9.15,13.55C9.15,13.77 9,13.97 8.8,14.05C8.57,14.15 8.33,14.09 8.14,13.93C8.08,13.88 8.04,13.83 8,13.76C6.87,12.33 6.69,10.28 7.45,8.64C5.78,10 4.87,12.3 5,14.47C5.06,14.97 5.12,15.47 5.29,15.97C5.43,16.57 5.7,17.17 6,17.7C7.08,19.43 8.95,20.67 10.96,20.92C13.1,21.19 15.39,20.8 17.03,19.32C18.86,17.66 19.5,15 18.56,12.72L18.43,12.46C18.22,12 17.66,11.2 17.66,11.2Z"></path>
-		</svg>
-	</div>
-	<div id="icon-death">
-		<svg class="w-6 h-6" style="color: #f87171;" fill="currentColor" viewBox="0 0 24 24">
-			<path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"></path>
-		</svg>
-	</div>
+	<div id="icon-safe"><svg class="w-6 h-6" style="color: #34d399;" fill="currentColor" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path></svg></div>
+	<div id="icon-shock"><svg class="w-6 h-6" style="color: #60a5fa;" fill="currentColor" viewBox="0 0 24 24"><path d="M3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3A9,9 0 0,0 3,12M5,12A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19A7,7 0 0,1 5,12M11,17H13V15H11V17M11,13H13V7H11V13Z"></path></svg></div>
+	<div id="icon-burn"><svg class="w-6 h-6" style="color: #fb923c;" fill="currentColor" viewBox="0 0 24 24"><path d="M17.66,11.2C17.43,10.9 17.15,10.64 16.89,10.38C16.22,9.78 15.46,9.35 14.82,8.72C13.33,7.26 13,4.85 13.95,3C13,3.23 12.17,3.75 11.46,4.32C8.87,6.4 7.85,10.07 9.07,13.22C9.11,13.32 9.15,13.42 9.15,13.55C9.15,13.77 9,13.97 8.8,14.05C8.57,14.15 8.33,14.09 8.14,13.93C8.08,13.88 8.04,13.83 8,13.76C6.87,12.33 6.69,10.28 7.45,8.64C5.78,10 4.87,12.3 5,14.47C5.06,14.97 5.12,15.47 5.29,15.97C5.43,16.57 5.7,17.17 6,17.7C7.08,19.43 8.95,20.67 10.96,20.92C13.1,21.19 15.39,20.8 17.03,19.32C18.86,17.66 19.5,15 18.56,12.72L18.43,12.46C18.22,12 17.66,11.2 17.66,11.2Z"></path></svg></div>
+	<div id="icon-death"><svg class="w-6 h-6" style="color: #f87171;" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"></path></svg></div>
 </div>
 
 <script>
@@ -177,25 +174,13 @@ const { ui } = Astro.props;
 
 	let map: L.Map;
 
-	interface ImpactData {
-		craterDiameter: number;
-		thermalRadius: number;
-		shockwave1psi: number;
-	}
+	interface ImpactData { craterDiameter: number; thermalRadius: number; shockwave1psi: number; }
 
-	const impacts: {
-		id: string;
-		circles: L.LayerGroup;
-		marker: L.Marker;
-		data: ImpactData;
-		config: typeof config;
-	}[] = [];
+	const impacts: { id: string; circles: L.LayerGroup; marker: L.Marker; data: ImpactData; latlng: L.LatLng; config: typeof config; }[] = [];
 
-	const config = {
-		diameter: 10000,
-		velocity: 20,
-		composition: "rock" as Composition,
-	};
+	let observerLatLng: L.LatLng, observerMarker: L.Marker;
+
+	const config = { diameter: 10000, velocity: 20, composition: "rock" as Composition };
 
 	function init() {
 		map = L.map("asteroid-game-map", {
@@ -210,13 +195,31 @@ const { ui } = Astro.props;
 			attribution: "&copy; OpenStreetMap &copy; CARTO",
 		}).addTo(map);
 
+		setObserver(map.getCenter());
 		setupControls();
 		setupGhostDrag();
 		setupGPS();
+		setupMobileControls();
 
 		map.on("click", () => {
 			map.dragging.enable();
 		});
+	}
+
+	function setControlsOpen(open: boolean) {
+		document.getElementById("asteroid-app")?.classList.toggle("controls-open", open);
+		document.getElementById("asteroid-controls-toggle")?.setAttribute("aria-expanded", open ? "true" : "false");
+	}
+
+	function setupMobileControls() {
+		const toggle = document.getElementById("asteroid-controls-toggle");
+		const close = document.getElementById("asteroid-controls-close");
+		const backdrop = document.getElementById("asteroid-controls-backdrop"), dropCenterBtn = document.getElementById("asteroid-drop-center-btn");
+
+		toggle?.addEventListener("click", () => setControlsOpen(!document.getElementById("asteroid-app")?.classList.contains("controls-open")));
+		const closeControls = () => setControlsOpen(false);
+		close?.addEventListener("click", closeControls); backdrop?.addEventListener("click", closeControls);
+		dropCenterBtn?.addEventListener("click", () => { spawnImpact(map.getCenter()); closeControls(); });
 	}
 
 	function setupControls() {
@@ -308,6 +311,15 @@ const { ui } = Astro.props;
 		});
 	}
 
+	function createObserverIcon(): L.DivIcon {
+		return L.divIcon({ className: "asteroid-observer-marker", iconSize: [42, 52], iconAnchor: [21, 48], html: '<div class="asteroid-observer-pulse"></div><div class="asteroid-observer-pin"><div class="asteroid-observer-head"></div><div class="asteroid-observer-body"></div></div><div class="asteroid-observer-label">YOU</div>' });
+	}
+
+	function setObserver(latlng: L.LatLng) {
+		observerLatLng = latlng; if (observerMarker) observerMarker.setLatLng(latlng);
+		else observerMarker = L.marker(latlng, { icon: createObserverIcon(), zIndexOffset: 1000 }).addTo(map); updateVerdict();
+	}
+
 	function setupMarkerDragHandlers(marker: L.Marker, group: L.LayerGroup, physics: ImpactData) {
 		marker.on("dragstart", () => {
 			map.dragging.disable();
@@ -315,6 +327,7 @@ const { ui } = Astro.props;
 
 		marker.on("drag", (e: L.LeafletEvent) => {
 			const newPos = (e.target as L.Marker).getLatLng();
+			const impact = impacts.find((item) => item.marker === marker); if (impact) impact.latlng = newPos;
 			group.clearLayers();
 			renderCircles(newPos, physics, group);
 			updateVerdict();
@@ -323,6 +336,7 @@ const { ui } = Astro.props;
 		marker.on("dragend", (e: L.LeafletEvent) => {
 			map.dragging.enable();
 			const newPos = (e.target as L.Marker).getLatLng();
+			const impact = impacts.find((item) => item.marker === marker); if (impact) impact.latlng = newPos;
 			group.clearLayers();
 			renderCircles(newPos, physics, group);
 			updateVerdict();
@@ -347,7 +361,7 @@ const { ui } = Astro.props;
 			icon: createMarkerIcon(markerColor),
 		}).addTo(map);
 
-		impacts.push({ id: Date.now().toString(), circles: group, marker, data: physics, config });
+		impacts.push({ id: Date.now().toString(), circles: group, marker, data: physics, latlng, config });
 		setupMarkerDragHandlers(marker, group, physics);
 		updateVerdict();
 	}
@@ -379,9 +393,7 @@ const { ui } = Astro.props;
 		}).addTo(group);
 	}
 
-	function renderCircles(latlng: L.LatLng, physics: ImpactData, group: L.LayerGroup) {
-		addCircleLayers(latlng, physics, group);
-	}
+	function renderCircles(latlng: L.LatLng, physics: ImpactData, group: L.LayerGroup) { addCircleLayers(latlng, physics, group); }
 
 	function setupGPS() {
 		const btn = document.getElementById("asteroid-gps-btn");
@@ -392,6 +404,7 @@ const { ui } = Astro.props;
 			navigator.geolocation.getCurrentPosition(
 				(pos) => {
 					const ll = new L.LatLng(pos.coords.latitude, pos.coords.longitude);
+					setObserver(ll);
 					if (gpsText) gpsText.textContent = "GPS Activo";
 					map.flyTo(ll, 9);
 				},
@@ -421,13 +434,20 @@ const { ui } = Astro.props;
 
 	function updateVerdict() {
 		const pill = document.getElementById("asteroid-verdict-pill");
-		if (impacts.length === 0) {
-			pill?.classList.remove("active");
-			return;
-		}
+		if (impacts.length === 0) { pill?.classList.remove("active"); return; }
+		pill?.classList.add("active"); updateVerdictUI(getWorstVerdict());
+	}
 
-		pill?.classList.add("active");
-		updateVerdictUI("safe");
+	function getWorstVerdict() {
+		const observer = observerLatLng;
+		const severity = { safe: 0, shook: 1, burned: 2, vaporized: 3 };
+		return impacts.reduce<keyof typeof severity>((worst, impact) => {
+			const distance = map.distance(observer, impact.latlng); let verdict: keyof typeof severity = "safe";
+			if (distance < impact.data.shockwave1psi) verdict = "shook";
+			if (distance < impact.data.thermalRadius) verdict = "burned";
+			if (distance < impact.data.craterDiameter / 2) verdict = "vaporized";
+			return severity[verdict] > severity[worst] ? verdict : worst;
+		}, "safe");
 	}
 
 	function clearAll() {
