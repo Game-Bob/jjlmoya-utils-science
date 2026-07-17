@@ -80,7 +80,7 @@ function latticeShortName(lattice: { id: string; shortName: string }): string {
 
     <div class="lattice-field lattice-field-select">
       <span>{ui.material}</span>
-      <select class="lattice-native-select" id="lattice-material" tabindex="-1" aria-hidden="true">
+      <select class="lattice-native-select" id="lattice-material" tabindex="-1" aria-hidden="true" aria-label={ui.material}>
         {materialOptions.map((material) => (
           <option value={material.id} data-note={materialNote(material)}>{materialName(material)}</option>
         ))}
@@ -105,7 +105,7 @@ function latticeShortName(lattice: { id: string; shortName: string }): string {
 
     <div class="lattice-field lattice-field-select">
       <span>{ui.lattice}</span>
-      <select class="lattice-native-select" id="lattice-structure" tabindex="-1" aria-hidden="true">
+      <select class="lattice-native-select" id="lattice-structure" tabindex="-1" aria-hidden="true" aria-label={ui.lattice}>
         {latticeOptions.map((lattice) => (
           <option value={lattice.id} data-short={latticeShortName(lattice)}>{latticeName(lattice)}</option>
         ))}

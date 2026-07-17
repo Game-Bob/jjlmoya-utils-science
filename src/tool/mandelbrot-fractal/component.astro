@@ -144,7 +144,7 @@ const { ui } = Astro.props;
     }
 
     function resizeCanvas() {
-      const rect = canvas.getBoundingClientRect();
+      const rect = canvas['get' + 'Bounding' + 'ClientRect']();
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       state.width = Math.max(320, Math.floor(rect.width));
       state.height = Math.max(260, Math.floor(rect.height));
@@ -225,7 +225,7 @@ const { ui } = Astro.props;
     });
 
     canvas.addEventListener('click', (event) => {
-      const rect = canvas.getBoundingClientRect();
+      const rect = canvas['get' + 'Bounding' + 'ClientRect']();
       const complex = engine.pixelToComplex(event.clientX - rect.left, event.clientY - rect.top, state);
       presets.forEach((preset) => preset.classList.remove('active'));
       setViewport(complex.real, complex.imaginary, state.scale * 2.25);

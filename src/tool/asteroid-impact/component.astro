@@ -120,7 +120,7 @@ const { ui } = Astro.props;
 						<span class="asteroid-control-text">{ui.diameterLabel}</span>
 						<span id="display-size" class="asteroid-control-value">100m</span>
 					</div>
-					<input type="range" id="input-size" min="10" max="5000" step="10" value="5000" class="asteroid-slider" />
+					<input type="range" id="input-size" min="10" max="5000" step="10" value="5000" class="asteroid-slider" aria-label={ui.diameterLabel} />
 				</div>
 
 				<div class="asteroid-control-group">
@@ -128,7 +128,7 @@ const { ui } = Astro.props;
 						<span class="asteroid-control-text">{ui.velocityLabel}</span>
 						<span id="display-velocity" class="asteroid-control-value">20 km/s</span>
 					</div>
-					<input type="range" id="input-velocity" min="10" max="70" step="1" value="20" class="asteroid-slider" />
+					<input type="range" id="input-velocity" min="10" max="70" step="1" value="20" class="asteroid-slider" aria-label={ui.velocityLabel} />
 				</div>
 
 				<div>

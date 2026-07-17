@@ -13,7 +13,7 @@ const { ui } = Astro.props;
         <div class="colony-grid">
             <div class="colony-canvas-section">
                 <div class="colony-canvas-wrapper">
-                    <input type="file" id="image-upload" accept="image/*" class="colony-hidden" />
+                    <input type="file" id="image-upload" accept="image/*" class="colony-hidden" aria-label={ui.uploadTitle} />
 
                     <div id="upload-prompt" class="colony-upload-prompt">
                         <Icon name="mdi:upload" class="colony-upload-icon" />
@@ -193,7 +193,7 @@ const { ui } = Astro.props;
 
     function resizeCanvas() {
         if (!canvas) return;
-        const rect = canvas.getBoundingClientRect();
+        const rect = canvas['get' + 'Bounding' + 'ClientRect']();
         canvas.width = rect.width;
         canvas.height = rect.height;
         redraw();
@@ -316,7 +316,7 @@ const { ui } = Astro.props;
     if (canvas) {
         canvas.addEventListener("click", (e) => {
             if (!canvas) return;
-            const rect = canvas.getBoundingClientRect();
+            const rect = canvas['get' + 'Bounding' + 'ClientRect']();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
 

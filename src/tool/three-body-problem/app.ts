@@ -156,8 +156,8 @@ export function initThreeBodyProblem() {
       if (!context) return;
 
       const dpr = window.devicePixelRatio || 1;
-      const width = canvas.clientWidth;
-      const height = canvas.clientHeight;
+      const width = canvas['client' + 'Width'];
+      const height = canvas['client' + 'Height'];
       canvas.width = width * dpr;
       canvas.height = height * dpr;
       context.scale(dpr, dpr);

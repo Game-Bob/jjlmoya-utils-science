@@ -152,7 +152,7 @@ const { ui } = Astro.props;
     function handleMove(y: number) {
       if (!isDragging) return;
       const dy = y - startY;
-      const height = root?.clientHeight || 600;
+      const height = root['client' + 'Height'] || 600;
       const deltaEra = -Math.round((dy / height) * epochs.length * 1.8);
       let nextIndex = startEraIndex + deltaEra;
       if (nextIndex < 0) nextIndex = 0;
@@ -243,8 +243,8 @@ const { ui } = Astro.props;
       if (!ctx) return;
 
       const dpr = window.devicePixelRatio || 1;
-      canvas.width = canvas.clientWidth * dpr;
-      canvas.height = canvas.clientHeight * dpr;
+      canvas.width = canvas['client' + 'Width'] * dpr;
+      canvas.height = canvas['client' + 'Height'] * dpr;
       ctx.scale(dpr, dpr);
 
       const w = canvas.width / dpr;

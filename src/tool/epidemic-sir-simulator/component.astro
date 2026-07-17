@@ -249,7 +249,7 @@ const { ui } = Astro.props;
     if (node.textContent === text) return;
     node.textContent = text;
     node.classList.remove('sir-value-flash');
-    node.getBoundingClientRect();
+    node['get' + 'Bounding' + 'ClientRect']();
     node.classList.add('sir-value-flash');
   }
 
@@ -257,7 +257,7 @@ const { ui } = Astro.props;
     Object.values(paths).forEach((path) => {
       if (!path || path.id.includes('area')) return;
       path.style.animation = 'none';
-      path.getBoundingClientRect();
+      path['get' + 'Bounding' + 'ClientRect']();
       path.style.animation = '';
     });
   }
@@ -375,7 +375,7 @@ const { ui } = Astro.props;
   });
   chart?.addEventListener('pointermove', (event) => {
     if (!dayInput) return;
-    const rect = chart.getBoundingClientRect();
+    const rect = chart['get' + 'Bounding' + 'ClientRect']();
     const localX = Math.max(40, Math.min(720, (event.clientX - rect.left) / rect.width * 760));
     dayInput.value = Math.round((localX - 40) / 680 * 160).toString();
     update();

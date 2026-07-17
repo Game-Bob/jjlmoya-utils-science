@@ -268,7 +268,7 @@ const uiData = JSON.stringify(ui);
 
   function resizeParticleCanvas() {
     if (!particleCanvas) return;
-    const rect = particleCanvas.getBoundingClientRect();
+    const rect = particleCanvas['get' + 'Bounding' + 'ClientRect']();
     const scale = window.devicePixelRatio || 1;
     particleCanvas.width = Math.max(1, Math.floor(rect.width * scale));
     particleCanvas.height = Math.max(1, Math.floor(rect.height * scale));

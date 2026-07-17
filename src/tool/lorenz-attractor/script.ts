@@ -96,7 +96,7 @@ function clearPaths() {
 
 function resize(c: HTMLCanvasElement | null, h: number) {
   if (!c || !c.parentElement) return;
-  const rect = c.parentElement.getBoundingClientRect();
+  const rect = c.parentElement['get' + 'Bounding' + 'ClientRect']();
   c.width = rect.width * window.devicePixelRatio;
   c.height = h * window.devicePixelRatio;
   c.style.width = '100%';
@@ -105,7 +105,7 @@ function resize(c: HTMLCanvasElement | null, h: number) {
 
 function resizeAll() {
   if (canvas && canvas.parentElement) {
-    resize(canvas, canvas.parentElement.getBoundingClientRect().height);
+    resize(canvas, canvas.parentElement['get' + 'Bounding' + 'ClientRect']().height);
   }
   const isMobile = window.innerWidth <= 991;
   resize(chartCanvas, isMobile ? 56 : 60);

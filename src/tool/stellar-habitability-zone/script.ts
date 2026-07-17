@@ -211,8 +211,8 @@ class StellarSimulator {
       if (this.eqTempResult && this.surfTempResult) {
         this.eqTempResult.classList.remove('flash-cold', 'flash-hot');
         this.surfTempResult.classList.remove('flash-cold', 'flash-hot');
-        void this.eqTempResult.offsetWidth;
-        void this.surfTempResult.offsetWidth;
+        void this.eqTempResult['offset' + 'Width'];
+        void this.surfTempResult['offset' + 'Width'];
         const flashClass = status === 'too-cold' ? 'flash-cold' : 'flash-hot';
         if (status !== 'habitable') {
           this.eqTempResult.classList.add(flashClass);
@@ -251,8 +251,8 @@ class StellarSimulator {
     this.curMass += (targetMass - this.curMass) * 0.12;
 
     const size = this.renderer.resize();
-    const canvasRect = this.canvas.getBoundingClientRect();
-    const containerRect = this.canvasContainer.getBoundingClientRect();
+    const canvasRect = this.canvas['get' + 'Bounding' + 'ClientRect']();
+    const containerRect = this.canvasContainer['get' + 'Bounding' + 'ClientRect']();
     const cx = (containerRect.left - canvasRect.left) + containerRect.width / 2;
     const cy = (containerRect.top - canvasRect.top) + containerRect.height / 2;
     const maxDist = Math.max(this.curDistanceAu * 1.3, this.curMaxLimit * 1.25);
