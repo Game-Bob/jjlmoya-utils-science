@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Usa notación B/S como B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Simulador del Juego de la Vida de Conway con reglas editables', level: 2 },
-    { type: 'paragraph', html: 'Este laboratorio de reglas del Juego de la Vida de Conway te permite ejecutar el autómata celular clásico y luego cambiar y comparar sus reglas. El tablero admite dibujo directo, colocación de patrones, semillas aleatorias, inspección paso a paso, tempo variable y mediciones en vivo de población, densidad, nacimientos, muertes y estabilidad.' },
-    { type: 'title', text: 'Cómo las reglas B/S cambian el juego', level: 3 },
-    { type: 'paragraph', html: 'Los autómatas celulares tipo Life se escriben a menudo en <strong>notación B/S</strong>. El lado B define cuántos vecinos vivos necesita una célula muerta para nacer; el lado S define cuántos vecinos necesita una célula viva para sobrevivir. La regla original de Conway, <strong>B3/S23</strong>, es famosa porque se sitúa en una región estrecha entre la extinción y el crecimiento descontrolado.' },
-    { type: 'title', text: 'Leer las métricas en vivo', level: 3 },
-    { type: 'paragraph', html: 'La población y la densidad muestran cuántas células están vivas, pero no cuentan la historia completa. Los nacimientos y las muertes exponen el nivel de actividad actual, mientras que la estabilidad estima si la colonia está asentándose en un oscilador, congelándose en figuras estáticas o permaneciendo turbulenta.' },
+    {
+      type: 'title',
+      text: 'Simulador del Juego de la Vida de Conway con reglas editables',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Este laboratorio de reglas del Juego de la Vida de Conway te permite ejecutar el autómata celular clásico y deliberadamente modificar, ajustar y comparar sus reglas.',
+    },
+    {
+      type: 'title',
+      text: 'Cómo cambian el juego las reglas B/S',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Los autómatas celulares tipo Life a menudo se escriben en <strong>notación B/S</strong>. La regla original de Conway, <strong>B3/S23</strong>, es famosa porque se sitúa en una estrecha franja entre la extinción y el crecimiento descontrolado.',
+    },
+    {
+      type: 'table',
+      headers: ['Regla', 'Comportamiento a observar', 'Buen experimento'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Planeadores clásicos, osciladores y cañones.', 'Coloca el cañón de Gosper y observa la población.'],
+        ['<strong>B36/S23</strong>', 'HighLife soporta autoreplicación.', 'Compara la misma semilla con B3/S23.'],
+        ['<strong>B2/S</strong>', 'Las células nunca sobreviven; frentes en expansión.', 'Empieza con una pequeña semilla.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night soporta estructuras inversas.', 'Prueba con una alta densidad inicial.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Por qué importan los patrones',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Los patrones son el vocabulario del Juego de la Vida. Los planeadores muestran movimiento y los pulsares muestran oscilación.',
+    },
+    {
+      type: 'title',
+      text: 'Lectura de las métricas en directo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La población y la densidad muestran cuántas células están vivas, pero los nacimientos y muertes exponen el nivel de actividad actual.',
+    },
   ],
   faq,
   bibliography,

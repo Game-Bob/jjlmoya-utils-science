@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'B3/S23 gibi B/S gösterimi kullanın.',
   },
   seo: [
-    { type: 'title', text: 'Düzenlenebilir kurallarla Conway Hayat Oyunu Simülatörü', level: 2 },
-    { type: 'paragraph', html: 'Bu kural laboratuvarı, klasik hücresel otomatı çalıştırmanıza ve ardından kurallarını kasıtlı olarak değiştirip karşılaştırmanıza olanak tanır. Tahta doğrudan çizimi, desen yerleştirmeyi, rastgele tohumları, adım adım incelemeyi, değişken tempoyu ve popülasyon, yoğunluk, doğum, ölüm ve kararlılık için canlı ölçümleri destekler.' },
-    { type: 'title', text: 'B/S kuralları oyunu nasıl değiştirir', level: 3 },
-    { type: 'paragraph', html: 'Life benzeri hücresel otomatlar genellikle <strong>B/S gösterimi</strong>yle yazılır. B tarafı, ölü bir hücrenin doğmak için ihtiyaç duyduğu canlı komşu sayısını tanımlar; S tarafı, canlı bir hücrenin hayatta kalmak için ihtiyaç duyduğu komşu sayısını tanımlar. Conway\'nin orijinal kuralı <strong>B3/S23</strong>, yok oluş ile kontrolsüz büyüme arasındaki dar bir bölgede yer aldığı için ünlüdür.' },
-    { type: 'title', text: 'Canlı metrikleri okuma', level: 3 },
-    { type: 'paragraph', html: 'Popülasyon ve yoğunluk kaç hücrenin canlı olduğunu gösterir, ancak tüm hikayeyi anlatmazlar. Doğumlar ve ölümler mevcut aktivite düzeyini ortaya koyarken kararlılık, koloninin bir salınatıya yerleşip yerleşmediğini, duragan yapılara donup donmadığını veya çalkantılı kalmaya devam edip etmediğini tahmin eder.' },
+    {
+      type: 'title',
+      text: 'Düzenlenebilir Kurallara Sahip Conway\'in Yaşam Oyunu Simülatörü',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu Conway\'in Yaşam Oyunu kural laboratuvarı, klasik hücresel otomatı çalıştırmanıza ve kurallarını değiştirip karşılaştırmanıza olanak tanır.',
+    },
+    {
+      type: 'title',
+      text: 'B/S Kuralları Oyunu Nasıl Değiştirir',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Yaşam benzeri hücresel otomatlar genellikle <strong>B/S notasyonu</strong> ile yazılır. Conway\'in orijinal kuralı <strong>B3/S23</strong>, yok olma ile kontrolsüz büyüme arasındaki hassas dengesiyle ünlüdür.',
+    },
+    {
+      type: 'table',
+      headers: ['Kural', 'Gözlemlenecek Davranış', 'İyi Bir Deney'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Klasik planörler, osilatörler ve silahlar.', 'Gosper silahını yerleştirin ve nüfusu izleyin.'],
+        ['<strong>B36/S23</strong>', 'HighLife kendi kendini çoğaltmayı destekler.', 'Aynı tohumu B3/S23 ile karşılaştırın.'],
+        ['<strong>B2/S</strong>', 'Hücreler asla hayatta kalmaz.', 'Küçük bir tohumla başlayın.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night ters yapıları destekler.', 'Yüksek başlangıç yoğunluğuyla test edin.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Desenler Neden Önemlidir',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Desenler Yaşam Oyunu\'nun kelime dağarcığını oluşturur. Planörler hareketi, pulsar osilasyonu gösterir.',
+    },
+    {
+      type: 'title',
+      text: 'Canlı Metrikleri Okuma',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Nüfus ve yoğunluk kaç hücrenin canlı olduğunu gösterir, doğum ve ölümler ise mevcut aktivite seviyesini ortaya koyar.',
+    },
   ],
   faq,
   bibliography,

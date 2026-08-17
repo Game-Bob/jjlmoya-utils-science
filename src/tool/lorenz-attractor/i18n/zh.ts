@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "参数代表什么？",
     "answer": "Sigma代表普朗特数，Rho代表瑞利数，Beta与物理尺寸几何比相关。"
+  },
+  {
+    "question": "为什么吸引子看起来像一只蝴蝶？",
+    "answer": "标志性的双翼形状来自于系统拥有两个不稳定的平衡点，轨迹在它们周围不可预测地旋转。"
+  },
+  {
+    "question": "洛伦兹吸引子真的是随机的吗？",
+    "answer": "不是，系统是完全确定性的。但由于它是混沌的，如果没有无限精度的初始条件，长期预测是不可能的。"
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "蝴蝶效应：对初始条件的敏感依赖", level: 3 },
     { type: 'paragraph', html: "混沌系统的决定性特征是其<strong>对初始条件的敏感依赖</strong>，通俗称为<strong>蝴蝶效应</strong>。本模拟器通过运行两条轨迹（T1为青色，T2为粉色）来展示这一现象，两条轨迹的起始点仅有微小差异。起初，它们几乎沿同一路径运行；短时间后，非线性项将差异放大，两条路径完全分叉。" },
+    { type: 'paragraph', html: "这种敏感性通过追踪两条起始极其接近的轨迹得到展示。" },
     {
       type: 'table',
       headers: ["参数","标准值","物理含义","改变时的行为"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "相空间、奇怪吸引子与分形", level: 3 },
     { type: 'paragraph', html: "在经典物理学中，轨迹最终稳定在不动点，或以极限环的形式重复。洛伦兹系统两者皆不：轨迹在三维空间中无限盘旋而从不自我交叉，形成豪斯多夫维数 约 2.06 的分形几何<strong>奇怪吸引子</strong>。" },
+    { type: 'paragraph', html: "该吸引子的几何结构是分形，豪斯多夫维数约为2.06。" },
     { type: 'title', text: "混沌理论在科学中的应用", level: 3 },
     { type: 'paragraph', html: "洛伦兹吸引子的启示远不止于气象预报，已对众多现代研究领域产生深远影响：" },
     {

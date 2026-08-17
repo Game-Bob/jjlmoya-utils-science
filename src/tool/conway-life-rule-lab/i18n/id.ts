@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Gunakan notasi B/S seperti B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Simulator Game of Life Conway dengan Aturan yang Dapat Diedit', level: 2 },
-    { type: 'paragraph', html: 'Lab aturan Game of Life Conway ini memungkinkan Anda menjalankan automata seluler klasik dan kemudian mengubah serta membandingkan aturannya. Papan mendukung penggambaran langsung, penempatan pola, benih acak, inspeksi langkah demi langkah, tempo variabel, dan pengukuran langsung untuk populasi, kepadatan, kelahiran, kematian, dan stabilitas.' },
-    { type: 'title', text: 'Bagaimana aturan B/S mengubah permainan', level: 3 },
-    { type: 'paragraph', html: 'Automata seluler seperti Life sering ditulis dalam <strong>notasi B/S</strong>. Sisi B mendefinisikan berapa banyak tetangga hidup yang dibutuhkan sel mati untuk lahir; sisi S mendefinisikan berapa banyak tetangga yang dibutuhkan sel hidup untuk bertahan. Aturan asli Conway, <strong>B3/S23</strong>, terkenal karena berada di wilayah sempit antara kepunahan dan pertumbuhan tak terkendali.' },
-    { type: 'title', text: 'Membaca metrik langsung', level: 3 },
-    { type: 'paragraph', html: 'Populasi dan kepadatan menunjukkan berapa banyak sel yang hidup, tetapi mereka tidak menceritakan keseluruhan cerita. Kelahiran dan kematian mengungkapkan tingkat aktivitas saat ini, sementara stabilitas memperkirakan apakah koloni sedang menetap ke osilator, membeku menjadi struktur diam, atau tetap bergejolak.' },
+    {
+      type: 'title',
+      text: 'Simulator Conway Game of Life dengan Aturan yang Dapat Diedit',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Laboratorium aturan Conway Game of Life ini memungkinkan Anda menjalankan automata seluler klasik serta mengubah dan membandingkan aturannya.',
+    },
+    {
+      type: 'title',
+      text: 'Bagaimana Aturan B/S Mengubah Permainan',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Automata seluler mirip Life sering ditulis dalam <strong>notasi B/S</strong>. Aturan asli Conway, <strong>B3/S23</strong>, terkenal karena berada di batas antara kepunahan dan pertumbuhan tak terkendali.',
+    },
+    {
+      type: 'table',
+      headers: ['Aturan', 'Perilaku yang Diamati', 'Eksperimen Bagus'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Glider klasik, osilator, dan meriam.', 'Tempatkan Gosper gun dan amati populasi.'],
+        ['<strong>B36/S23</strong>', 'HighLife mendukung replikasi diri.', 'Bandingkan benih yang sama dengan B3/S23.'],
+        ['<strong>B2/S</strong>', 'Sel tidak pernah bertahan.', 'Mulai dengan benih kecil.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night mendukung struktur terbalik.', 'Uji dengan kepadatan awal yang tinggi.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Mengapa Pola Penting',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Pola adalah kosakata dari Game of Life. Glider menunjukkan gerakan dan pulsar menunjukkan osilasi.',
+    },
+    {
+      type: 'title',
+      text: 'Membaca Metrik Langsung',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Populasi dan kepadatan menunjukkan berapa banyak sel yang hidup, sementara kelahiran dan kematian menunjukkan tingkat aktivitas saat ini.',
+    },
   ],
   faq,
   bibliography,

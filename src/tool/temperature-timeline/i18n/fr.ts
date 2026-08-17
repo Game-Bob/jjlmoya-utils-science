@@ -80,12 +80,16 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Le climat de la Terre n\'a jamais été statique. Au cours de ses 4,5 milliards d\'années, notre planète a oscillé entre deux états fondamentaux: l\'état de serre (greenhouse) et l\'état de glaciation (icehouse). Comprendre ces fluctuations est indispensable pour contextualiser la vitesse du réchauffement climatique anthropique actuel.',
+      html: 'Le climat de la Terre n\'a jamais été statique. Au cours de ses 4,5 milliards d\'années, notre planète a oscillé entre deux états fondamentaux: l\'état de serre (greenhouse) et l\'état de glaciation (icehouse). Comprendre ces fluctuations est indispensable pour contextualiser la vitesse du réchauffement climatique anthropique actuel. Grâce aux isotopes de l\'oxygène et aux carottes de glace, les paléoclimatologues reconsituent l\'histoire thermique du globe.',
     },
     {
       type: 'title',
       text: 'Enregistrement de la température par ère géologique',
       level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'histoire de la Terre est divisée en intervalles majeurs définis par des changements biologiques et géologiques. Voici la liste des températures moyennes estimées pour chaque époque:',
     },
     {
       type: 'table',
@@ -98,6 +102,42 @@ export const content: ToolLocaleContent = {
         ['<strong>Ère Cénozoïque</strong>', '66 Ma - présent', '14 °C', 'Refroidissement progressif et cycles glaciaires.'],
         ['<strong>Anthropocène</strong>', 'Présent', '15,2 °C', 'Réchauffement rapide d\'origine humaine.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Extrêmes thermiques passés: de la glaciation globale à la chaleur du Mésozoïque',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'histoire planète comprend des événements climatiques extrêmes. Durant l\'ère protérozoïque, la photosynthèse primitive a libéré de l\'oxygène à grande échelle, provoquant l\'oxydation du méthane et plongeant la planète dans des glaciations globales. À l\'inverse, pendant le Mésozoïque, une forte activité volcanique a saturé l\'atmosphère en CO2, élevant la température globale.',
+    },
+    {
+      type: 'title',
+      text: 'Facteurs régissant le climat terrestre à l\'échelle géologique',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Le climat terrestre à long terme résulte d\'un équilibre thermodynamique gouverné par plusieurs mécanismes naturels interconnectés:',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Cycles de Milankovitch:</strong> Variations orbitales périodiques modifiant l\'insolation reçue.',
+        '<strong>Cycle du Carbone Silicate-Carbonate:</strong> Thermostat géochimique à long terme.',
+        '<strong>Tectonique des Plaques:</strong> Dérive des continents modifiant les courants marins et l\'altération des roches.',
+        '<strong>Effet d\'Albédo:</strong> Réflexion de la lumière solaire par la glace amplifiant le refroidissement.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'L\'Anthropocène: une accélération thermique sans précédent dans la biosphère',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La transition de l\'Holocène à l\'Anthropocène marque l\'impact direct des activités humaines sur les systèmes planétaires. Contrairement aux événements thermiques du passé, le réchauffement actuel se produit à un rythme extrêmement rapide, dépassant les capacités d\'adaptation de la biosphère.',
     },
   ],
   faq,

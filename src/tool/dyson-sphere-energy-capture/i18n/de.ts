@@ -1,53 +1,53 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-spharen-energie-gewinnung-simulator';
-const title = 'Dyson Sphären Energiegewinnungs Simulator';
-const description = 'Schätzen Sie Dyson-Schwarm-, Ring-, Hüllen- und Statit-Kollektor-Entwürfe für verschiedene Sterne. Berechnen Sie die eingefangene Leistung, den Umlaufradius, die Materialmasse und die erforderliche Abdeckung für eine Ziel-Kardaschow-Skala.';
+const title = 'Dyson Sphären Energieausbeute Simulator';
+const description = 'Schätzen Sie Kollektorentwürfe wie Dyson-Schwärme, Äquatorringe, starre Hüllen und Statit-Spiegelwolken für verschiedene Sterntypen ab. Berechnen Sie die aufgefangene Leistung, den thermischen Umlaufradius, die benötigte Materialmasse und die erforderliche Abdeckung für Ihr Kardaschow-Ziel.';
 
 const howTo = [
   {
     name: 'Wählen Sie einen Sterntyp',
-    text: 'Beginnen Sie mit einem M-Zwerg, einem sonnenähnlichen Stern, einem A-Stern, einem Roten Riesen oder einem Blauen Riesen. Der Simulator verwendet repräsentative Leuchtkraft- und Massewerte, um Kollektorradius und Umlaufzeit zu schätzen.',
+    text: 'Beginnen Sie mit einem M-Zwerg, einem sonnenähnlichen G-Stern, einem A-Stern, einem Roten Riesen oder einem Blauen Riesen. Der Simulator verwendet repräsentative Werte für Leuchtkraft und Masse zur Berechnung von Radius und Umlaufzeit.',
   },
   {
     name: 'Wählen Sie die Megastruktur-Architektur',
-    text: 'Vergleichen Sie einen Dyson-Schwarm, einen Äquatorring, eine starre Hülle oder eine Statit-Spiegelwolke. Jeder Entwurf hat unterschiedliche Einfangeffizienz, Materialdichte und Stabilitätsannahmen.',
+    text: 'Vergleichen Sie einen Dyson-Schwarm, einen Äquatorring, eine starre Hülle oder eine Statit-Spiegelwolke. Jeder Entwurf basiert auf unterschiedlichen Annahmen zu Einfangeffizienz, Materialdichte und Stabilität.',
   },
   {
-    name: 'Stellen Sie Abdeckung und Betriebstemperatur ein',
-    text: 'Erhöhen Sie die Abdeckung, um mehr Sternleistung einzufangen, und passen Sie die Betriebstemperatur an, um die Kollektoren näher an den Stern oder weiter weg zu bringen.',
+    name: 'Passen Sie Abdeckung und Betriebstemperatur an',
+    text: 'Erhöhen Sie den Abdeckungsgrad zur Steigerung der abgefangenen Leistung und verändern Sie die Betriebstemperatur, um die Kollektoren näher am Stern oder weiter entfernt zu positionieren.',
   },
   {
-    name: 'Wählen Sie ein Kardaschow-Ziel',
-    text: 'Nutzen Sie den Zielregler, um zu sehen, wie viel vom Stern umschlossen werden muss, um ein zivilisationsweites Energieziel zu erreichen.',
+    name: 'Stellen Sie ein Kardaschow-Ziel ein',
+    text: 'Nutzen Sie den Zielregler, um zu ermitteln, welcher Anteil der Sternstrahlung abgefangen werden muss, um ein zivilisatorisches Energieziel zu erreichen.',
   },
 ];
 
 const faq = [
   {
-    question: 'Was ist der Unterschied zwischen einer Dyson-Sphäre und einem Dyson-Schwarm?',
-    answer: 'Eine starre Dyson-Sphäre ist eine durchgehende Hülle um einen Stern, während ein Dyson-Schwarm eine große Sammlung unabhängiger umlaufender Kollektoren ist. Die meisten technischen Diskussionen bevorzugen Schwärme, da eine feste Hülle strukturell instabil und extrem materialintensiv wäre.',
+    question: 'Was unterscheidet eine Dyson-Sphäre von einem Dyson-Schwarm?',
+    answer: 'Eine starre Dyson-Sphäre ist eine geschlossene Hülle um einen Stern. Ein Dyson-Schwarm hingegen ist eine Ansammlung unabhängiger, umlaufender Kollektoren. Technische Studien bevorzugen Schwärme, da eine feste Hülle strukturell instabil wäre und unvorstellbare Materialmengen verschlingen würde.',
   },
   {
-    question: 'Wie wählt der Simulator den optimalen Radius?',
-    answer: 'Er schätzt die Entfernung, bei der Kollektoren, die von beiden Seiten abstrahlen, unter der gewählten Sternleuchtkraft die gewünschte Betriebstemperatur erreichen. Heißere Kollektoren können näher umlaufen, während kühlere Kollektoren größere Radien benötigen.',
+    question: 'Wie wird der optimale Umlaufradius ermittelt?',
+    answer: 'Der Simulator berechnet die Distanz, bei der die Kollektoren unter der gegebenen Sternleuchtkraft ihre Strahlungswärme beidseitig abgeben und dabei genau die gewählte Betriebstemperatur halten. Heißere Kollektoren können näher am Stern kreisen.',
   },
   {
-    question: 'Was bedeutet die Kardaschow-Bewertung hier?',
-    answer: 'Der Kardaschow-Wert wird aus der eingefangenen Leistung mit der logarithmischen Formel K = (log10(P) - 6) / 10 berechnet, wobei P die Leistung in Watt ist. Ein Wert nahe K1 steht für planetaren Energieverbrauch, während K2 sich der vollen Sternleistung annähert.',
+    question: 'Was bedeutet die Kardaschow-Skala in diesem Werkzeug?',
+    answer: 'Der Kardaschow-Wert wird aus der abgefangenen Leistung in Watt über die logarithmische Beziehung K = (log10(P) - 6) / 10 berechnet. Ein Wert nahe K1 entspricht dem planetaren Energieverbrauch der Erde, während K2 die vollständige Ausnutzung der Sternleistung bedeutet.',
   },
   {
-    question: 'Ist die Materialmasse realistisch?',
-    answer: 'Es handelt sich um eine erste bildungsspezifische Abschätzung basierend auf Kollektorfläche, Flächendichte und einem Stabilitätsfaktor. Echte Entwürfe würden Stationshaltung, Energieübertragung, Abbauverluste, Redundanz, Wärmeabfuhr und Fertigungsinfrastruktur benötigen.',
+    question: 'Ist die berechnete Materialmasse realistisch?',
+    answer: 'Es handelt sich um eine vereinfachte physikalische Abschätzung basierend auf Oberfläche, Flächenmasse und Stabilitätsfaktoren. Reale Konstruktionen erfordern zusätzliche Massen für Kurskorrekturen, Energieübertragung, Abbauverluste und Kühlung.',
   },
   {
-    question: 'Warum benötigen helle Sterne so große Kollektorsysteme?',
-    answer: 'Sterne mit hoher Leuchtkraft verschieben den sicheren Wärmeradius nach außen. Das vergrößert die für einen bestimmten Abdeckungsanteil benötigte Oberfläche, sodass der Materialbedarf schneller steigen kann, als die eingefangene Leistung intuitiv wirkt.',
+    question: 'Warum erfordern leuchtstarke Sterne gigantische Kollektorflächen?',
+    answer: 'Helle Sterne verschieben den thermisch sicheren Abstand weit nach außen. Dadurch vergrößert sich die Kugelfläche im Quadrat zur Entfernung, sodass der Materialbedarf für denselben Prozentrang an Abdeckung extrem ansteigt.',
   },
   {
-    question: 'Kann eine Zivilisation Kardaschow Typ II mit teilweiser Abdeckung erreichen?',
-    answer: 'Ja, wenn der Mutterstern hell genug ist und die Kollektoren effizient sind. Bei einem sonnenähnlichen Stern erfordert das Erreichen von Typ II die Erfassung eines großen Teils der Sonnenleuchtkraft, aber bei helleren Sternen kann dasselbe Energieziel mit einem geringeren Abdeckungsanteil erreicht werden.',
+    question: 'Kann eine Zivilisation Typ II mit teilweiser Abdeckung erreichen?',
+    answer: 'Ja, sofern der Hauptstern eine ausreichend hohe Leuchtkraft besitzt. Bei sonnenähnlichen Sternen erfordert Typ II fast die gesamte Strahlung, bei blauen Riesen reicht bereits ein kleiner Bruchteil der Gesamtemission.',
   },
 ];
 
@@ -88,27 +88,108 @@ export const content: ToolLocaleContent = {
     structureStatite: 'Statit-Spiegelwolke',
   },
   seo: [
-    { type: 'title', text: 'Dyson Sphären Energiegewinnungs Simulator', level: 2 },
-    { type: 'paragraph', html: 'Eine Dyson-Sphäre ist nicht nur ein Science-Fiction-Bild eines Sterns in einer Hülle. Sie ist eine Familie möglicher Megastrukturkonzepte zum Abfangen von Sternleuchtkraft: Satellitenschwärme, Äquatorringe, dünne Spiegelwolken und die berühmte, aber problematische starre Hülle. Dieser Simulator verwandelt diese Ideen in Zahlen, damit Sie vergleichen können, wie Sterntyp, Kollektortemperatur, Abdeckung und Strukturentwurf das Energiebudget verändern.' },
-    { type: 'paragraph', html: 'Der Rechner schätzt die eingefangene Leistung, den thermischen Umlaufradius, die Kollektorfläche, die Umlaufzeit, die Materialmasse und die für ein gewähltes Kardaschow-Ziel benötigte Abdeckung. Er ist für Studenten, Weltbauer, Wissenschaftskommunikatoren und alle entwickelt, die verstehen wollen, warum Typ-II-Zivilisationen schwer zu erreichen sind: Die Herausforderung ist nicht nur Energie, sondern auch Fläche, Wärme, Rohstoffabbau, Stabilität und orbitale Logistik.' },
-    { type: 'title', text: 'Wie der Dyson Radius geschätzt wird', level: 3 },
-    { type: 'paragraph', html: 'Der optimale Radius wird aus der Sternleuchtkraft und der Kollektor-Betriebstemperatur berechnet. Ein Kollektor nahe einem hellen Stern erfährt einen intensiven Fluss und muss heiß laufen oder enorme Wärmemengen abführen. Eine Bewegung nach außen reduziert die thermische Belastung, aber die erforderliche Kollektorfläche wächst mit dem Quadrat der Entfernung.' },
-    { type: 'title', text: 'Dyson Schwarm, Ring, Hülle und Statit-Wolke im Vergleich', level: 3 },
     {
-      type: 'list', items: [
-        '<strong>Dyson-Schwarm:</strong> viele unabhängig umlaufende Kollektoren. Er ist die plausibelste großstrukturelle Architektur, da er schrittweise gebaut werden kann und keine starre Sternhülle erfordert.',
-        '<strong>Äquatorring:</strong> ein schmaleres Kollektorband mit geringerer Abdeckungseffizienz. Er ist als erste Megastruktur leichter vorstellbar.',
-        '<strong>Starre Hülle:</strong> visuell ikonisch, aber mechanisch ungünstig. Eine Hülle um einen Stern hat schwerwiegende Stabilitäts- und Materialprobleme.',
-        '<strong>Statit-Spiegelwolke:</strong> extrem leichte Reflektoren, die teilweise durch Strahlungsdruck gehalten werden. Sie reduziert den Materialbedarf, hat aber eine geringere Wärmetoleranz und anspruchsvolle Kontrollanforderungen.'
-      ]
-    }
+      type: 'title',
+      text: 'Dyson Sphären Energieausbeute Simulator',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Eine Dyson-Sphäre ist keineswegs nur ein Science-Fiction-Klischee einer geschlossenen Hülle um einen Stern. Es handelt sich um ein ganzes Spektrum technischer Megastruktur-Konzepte zur Erfassung von Sternenenergie: von beweglichen Satellitenschwärmen über äquatoriale Ringe bis hin zu ultraleichten Statit-Spiegeln. Dieser Simulator übersetzt theoretische Annahmen in konkrete physikalische Leistungskennzahlen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Anwendung berechnet die gewonnene Strahlungsleistung, den thermischen Umlaufradius, die Kollektorfläche, die Umlaufdauer sowie die benötigte Materialmasse für definierte Kardaschow-Stufen. Entwickelt für Studierende, Wissenschaftskommunikatoren und Astrophysik-Begeisterte.',
+    },
+    {
+      type: 'title',
+      text: 'Berechnung des optimalen Dyson-Radius',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Der optimale Abstand hängt direkt von der Leuchtkraft des Zentralgestirns und der maximalen Betriebstemperatur der Kollektoroberflächen ab. Nahe am Stern herrscht enorme Strahlungsintensität, was hohe thermische Belastungen erzeugt. Eine größere Entfernung kühlt das System, erhöht aber den Flächenbedarf quadratisch zur Distanz.',
+    },
+    {
+      type: 'title',
+      text: 'Vergleich der Megastruktur-Konzepte',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Dyson-Schwarm:</strong> Eine Vielzahl unabhängiger Kollektoren auf eigenen Umlaufbahnen. Das realistischste Modell, da es schrittweise erbaut werden kann.',
+        '<strong>Äquatorring:</strong> Ein schmaler Gürtel von Solarkollektoren. Einfacher zu realisieren, deckt jedoch nur einen geringen Winkelbereich der Sternabstrahlung ab.',
+        '<strong>Starre Hülle:</strong> Die klassische, aber physikalisch instabile Hülle. Erfordert unvorstellbare Zugfestigkeiten und enorme Materialmengen.',
+        '<strong>Statit-Spiegelwolke:</strong> Ultraleichte Spiegel, die durch den Strahlungsdruck des Sterns in Position gehalten werden.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Abdeckung für die Kardaschow-Skala',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Kardaschow-Skala klassifiziert Zivilisationen anhand ihres Energieverbrauchs. Ein teilweiser Dyson-Schwarm um unsere Sonne würde den gegenwärtigen Gesamtenergiebedarf der Menschheit um ein Vielfaches übertreffen, lange bevor der Status einer Typ-II-Zivilisation erreicht ist.',
+    },
+    {
+      type: 'table',
+      headers: ['Architektur', 'Hauptvorteil', 'Größte Herausforderung'],
+      rows: [
+        ['Dyson-Schwarm', 'Schrittweiser Aufbau möglich', 'Orbitale Verkehrssteuerung & Mikrowellen-Übertragung'],
+        ['Äquatorring', 'Geringerer Materialaufwand', 'Stark begrenzte Energierückgewinnung'],
+        ['Starre Hülle', 'Vollständige Strahlungserfassung', 'Extrem hohe Materialspannungen und Eigengravitation'],
+        ['Statit-Spiegelwolke', 'Minimales Gewicht pro Quadratkilometer', 'Komplexe Ausrichtung gegen den Strahlungsdruck'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Materialbedarf und astrophysikalischer Realitätscheck',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Der Materialbedarf wird in Einheiten von Merkur-Massen angegeben. Viele theoretische Entwürfe nehmen an, dass ganze Monde oder kleinere Planeten im System abgebaut und zu Hauchdünnen Solarsegeln umgeformt werden müssen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Nutzen Sie diese Werte als erste physikalische Orientierung für das Verständnis der Größenordnungen interstellarer Ingenieurskunst.',
+    },
   ],
   faq,
   bibliography,
   howTo,
   schemas: [
-    { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: title, description, applicationCategory: 'ScientificApplication', operatingSystem: 'Any' },
-    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.question, acceptedAnswer: { '@type': 'Answer', text: item.answer } })) },
-    { '@context': 'https://schema.org', '@type': 'HowTo', name: title, step: howTo.map((step) => ({ '@type': 'HowToStep', name: step.name, text: step.text })) },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      name: title,
+      description,
+      applicationCategory: 'ScientificApplication',
+      operatingSystem: 'Any',
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((item) => ({
+        '@type': 'Question',
+        name: item.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: item.answer,
+        },
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: title,
+      step: howTo.map((step) => ({
+        '@type': 'HowToStep',
+        name: step.name,
+        text: step.text,
+      })),
+    },
   ],
 };

@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Co oznaczaja parametry?",
     "answer": "Sigma to liczba Prandtla, Rho to liczba Rayleigha, a Beta to stosunek geometryczny."
+  },
+  {
+    "question": "Dlaczego atraktor przypomina motyla?",
+    "answer": "Kształt dwóch skrzydeł wynika z faktu, że układ posiada dwa niestabilne punkty równowagi, wokół których trajektorie krążą w sposób nieprzewidywalny."
+  },
+  {
+    "question": "Czy atraktor Lorenza jest naprawdę losowy?",
+    "answer": "Nie, układ jest całkowicie deterministyczny. Jednak ze względu na chaotyczność jest nieprzewidywalny w długim okresie."
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Efekt Motyla: Czula Zaleznosc od Warunkow Poczatkowych", level: 3 },
     { type: 'paragraph', html: "Cecha definiujaca chaotyczne uklady jest ich <strong>czula zaleznosc od warunkow poczatkowych</strong>, znana popularnie jako <strong>Efekt Motyla</strong>. Symulator demonstruje to, uruchamiajac dwie trajektorie (T1 w kolorze cyan i T2 w kolorze rozowym) z minimalna separacja poczatkowa. Poczatkowo przebiegaja prawie identycznie. Po krotkim czasie nieliniowe czlony wzmacniaja roznice i trajektorie rozchodza sie calkowicie." },
+    { type: 'paragraph', html: "Czułość ta jest demonstrowana poprzez śledzenie dwóch niemal identycznych trajektorii." },
     {
       type: 'table',
       headers: ["Parametr","Wartosc Standardowa","Kontekst Fizyczny","Zachowanie przy Zmianie"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Przestrzen Fazowa, Dziwne Atraktory i Fraktale", level: 3 },
     { type: 'paragraph', html: "W fizyce klasycznej trajektorie stabilizuja sie w punktach stalych lub powtarzaja jako cykle graniczne. Uklad Lorenza nie robi ani jednego, ani drugiego: sciezka zapetla sie nieskonczona ilosc razy w trzech wymiarach bez samoprzecinania, tworzac <strong>dziwny atraktor</strong> z geometria fraktalowa (wymiar Hausdorffa okolo 2,06)." },
+    { type: 'paragraph', html: "Geometria tego atraktora jest fraktalna z wymiarem Hausdorffa wynoszącym około 2,06." },
     { type: 'title', text: "Zastosowania Teorii Chaosu w Nauce", level: 3 },
     { type: 'paragraph', html: "Wnioski z atraktora Lorenza wykraczaja daleko poza prognozowanie pogody i wywarty wplyw na wiele wspolczesnych dziedzin:" },
     {

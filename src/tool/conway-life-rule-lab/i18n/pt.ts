@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Use notação B/S como B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Simulador do Jogo da Vida de Conway com regras editáveis', level: 2 },
-    { type: 'paragraph', html: 'Este laboratório de regras permite executar o autômato celular clássico e depois mudar e comparar suas regras. O tabuleiro suporta desenho direto, posicionamento de padrões, sementes aleatórias, inspeção passo a passo, tempo variável e medições ao vivo de população, densidade, nascimentos, mortes e estabilidade.' },
-    { type: 'title', text: 'Como as regras B/S mudam o jogo', level: 3 },
-    { type: 'paragraph', html: 'Autômatos celulares do tipo Life são frequentemente escritos em <strong>notação B/S</strong>. O lado B define quantos vizinhos vivos uma célula morta precisa para nascer; o lado S define quantos vizinhos uma célula viva precisa para sobreviver. A regra original de Conway, <strong>B3/S23</strong>, é famosa porque fica em uma região estreita entre extinção e crescimento descontrolado.' },
-    { type: 'title', text: 'Lendo as métricas ao vivo', level: 3 },
-    { type: 'paragraph', html: 'População e densidade mostram quantas células estão vivas, mas não contam a história completa. Nascimentos e mortes expõem o nível de atividade atual, enquanto estabilidade estima se a colônia está se estabilizando em um oscilador, congelando em estruturas estáticas ou permanecendo turbulenta.' },
+    {
+      type: 'title',
+      text: 'Simulador do Jogo da Vida de Conway com Regras Editáveis',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Este laboratório de regras do Jogo da Vida de Conway permite executar o autômato celular clássico e alterar ou comparar suas regras.',
+    },
+    {
+      type: 'title',
+      text: 'Como as regras B/S alteram o jogo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Autômatos celulares do tipo Life são escritos em <strong>notação B/S</strong>. A regra original de Conway, <strong>B3/S23</strong>, é famosa pelo seu equilíbrio perfeito.',
+    },
+    {
+      type: 'table',
+      headers: ['Regra', 'Comportamento a observar', 'Bom experimento'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Planadores clássicos, osciladores e canhões.', 'Posicione o canhão de Gosper e acompanhe a população.'],
+        ['<strong>B36/S23</strong>', 'HighLife suporta autorreplicação.', 'Compare a mesma semente com B3/S23.'],
+        ['<strong>B2/S</strong>', 'As células nunca sobrevivem.', 'Comece com uma pequena semente.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night suporta estruturas inversas.', 'Teste com alta densidade inicial.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Por que os padrões são importantes',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Os padrões constituem o vocabulário do Jogo da Vida. Planadores mostram movimento e pulsares mostram oscilação.',
+    },
+    {
+      type: 'title',
+      text: 'Leitura das métricas em tempo real',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'População e densidade mostram quantas células estão vivas, enquanto nascimentos e mortes revelam o nível de atividade.',
+    },
   ],
   faq,
   bibliography,

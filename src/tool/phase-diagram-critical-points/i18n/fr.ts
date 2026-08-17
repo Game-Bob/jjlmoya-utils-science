@@ -79,12 +79,16 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Visualiseur interactif de diagramme de phases pour points triples, courbes d\'ébullition et points critiques',
+      text: 'Visualiseur interactif de diagramme de phase pour points triples et points critiques',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Ce visualiseur de diagramme de phases transforme un graphique abstrait pression-température en une carte interactive. Choisissez une substance, déplacez la température et la pression, et voyez si l\'échantillon est prédit pour se comporter comme un solide, un liquide, un gaz ou un fluide supercritique.',
+      html: 'Ce visualiseur de diagramme de phase transforme un graphique pression-température abstrait en une carte interactive. Choisissez une substance, faites varier la température et la pression, et observez si l\'échantillon adopte un état solide, liquide, gazeux ou fluide supercritique.',
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'outil est conçu pour les étudiants et enseignants recherchant une explication claire des diagrammes de phase. Il met l\'accent sur le point triple, la courbe d\'ébullition, la ligne de fusion et le point critique.',
     },
     {
       type: 'title',
@@ -92,14 +96,48 @@ export const content: ToolLocaleContent = {
       level: 3,
     },
     {
+      type: 'paragraph',
+      html: 'Un diagramme de phase présente la température sur l\'axe horizontal et la pression sur l\'axe vertical. Chaque zone indique la phase stable sous ces conditions.',
+    },
+    {
       type: 'table',
-      headers: ['Caractéristique', 'Signification', 'Observation'],
+      headers: ['Élément du diagramme', 'Signification', 'Ce qu\'il faut observer'],
       rows: [
-        ['Point triple', 'Solide, liquide et gaz coexistent', 'La jonction à basse température.'],
-        ['Courbe vapeur-liquide', 'Équilibre d\'ébullition', 'La ligne reliant le point triple au point critique.'],
-        ['Limite solide-liquide', 'Équilibre de fusion', 'La limite séparant solide et liquide.'],
-        ['Point critique', 'Fin de la limite vapeur-liquide', 'Extrémité où la chaleur latente s\'estompe.'],
-        ['Région supercritique', 'Fluide dense unique', 'Zone haute température/pression.'],
+        ['Point triple', 'Coexistence des phases solide, liquide et gazeuse', 'Le point de jonction à basse température où les limites se rejoignent.'],
+        ['Courbe liquide-vapeur', 'Équilibre d\'ébullition ou de condensation', 'La ligne courbe reliant le point triple au point critique.'],
+        ['Ligne solide-liquide', 'Équilibre de fusion ou de congélation', 'La ligne verticale séparant les domaines solide et liquide.'],
+        ['Point critique', 'Fin de la limite liquide-vapeur', 'Le point ultime où la chaleur latente s\'annule.'],
+        ['Domaine supercritique', 'Absence de distinction nette entre liquide et gaz', 'La région à haute pression et haute température au-delà du point critique.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Pourquoi le point critique est essentiel',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Sous le point critique, l\'ébullition est une transition de phase avec absorption de chaleur latente. Au-delà du point critique, la masse volumique varie continûment.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Les fluides supercritiques sont largement utilisés dans l\'industrie, par exemple pour la décaféination du café par le CO2 supercritique.',
+    },
+    {
+      type: 'title',
+      text: 'Simplifications du modèle',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Les vrais diagrammes de phase comportent souvent des polymorphes solides complexes. Ce modèle pédagogique utilise des courbes lissées pour faciliter la compréhension.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Utilisez-le pour l\'intuition :</strong> il explique pourquoi les autocuiseurs, la glace sèche et les fluides supercritiques se comportent ainsi.',
+        '<strong>Ne l\'utilisez pas pour l\'ingénierie :</strong> les calculs industriels exigent des équations d\'état expérimentales très précises.',
+        '<strong>Observez la tendance :</strong> à mesure qu\'on s\'approche du point critique, la différence entre liquide et gaz s\'estompe.',
       ],
     },
   ],

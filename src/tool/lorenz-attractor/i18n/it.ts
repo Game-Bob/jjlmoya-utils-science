@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Cosa rappresentano i parametri?",
     "answer": "Sigma e il numero di Prandtl, Rho il numero di Rayleigh e Beta un parametro geometrico."
+  },
+  {
+    "question": "Perché l'attrattore assomiglia a una farfalla?",
+    "answer": "La forma a due ali nasce dal fatto che il sistema ha due punti di equilibrio instabili attorno ai quali le traiettorie orbitano in modo imprevedibile."
+  },
+  {
+    "question": "L'attrattore di Lorenz è davvero casuale?",
+    "answer": "No, il sistema è completamente deterministico. Tuttavia, essendo caotico, è totalmente imprevedibile a lungo termine senza una precisione infinita."
   }
 ];
 
@@ -89,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Spazio delle Fasi, Attrattori Strani e Frattali", level: 3 },
     { type: 'paragraph', html: "In fisica classica, le traiettorie si stabilizzano in punti fissi o si ripetono come cicli limite. Il sistema di Lorenz non fa né l'uno né l'altro: il percorso si avvolge infinitamente in tre dimensioni senza mai incrociarsi, formando un <strong>attrattore strano</strong> con una geometria frattale (dimensione di Hausdorff circa 2,06)." },
+    { type: 'paragraph', html: "La geometria di questo attrattore è frattale, con una dimensione di Hausdorff di circa 2,06, che mostra una complessa struttura topologica dove i percorsi si piegano senza intersecarsi." },
     { type: 'title', text: "Applicazioni della Teoria del Caos nella Scienza", level: 3 },
     { type: 'paragraph', html: "Le lezioni dell'attrattore di Lorenz si estendono ben oltre la meteorologia e hanno influenzato molti campi moderni:" },
     {

@@ -45,14 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Pola atom baru',
   },
   seo: [
-    { type: 'title', text: 'Kalkulator waktu paruh radioaktif: atom tersisa, aktivitas, dan contoh isotop', level: 2 },
-    { type: 'paragraph', html: 'Gunakan kalkulator peluruhan radioaktif ini untuk memperkirakan berapa banyak isotop tidak stabil yang tersisa setelah waktu tertentu. Kontennya cocok untuk pencarian tentang rumus waktu paruh, contoh isotop nyata, inti induk tersisa, inti meluruh, dan penurunan aktivitas.' },
-    { type: 'paragraph', html: 'Rumus yang digunakan adalah <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> adalah jumlah inti induk awal, <strong>N(t)</strong> jumlah harapan setelah waktu <strong>t</strong>, dan <strong>T1/2</strong> waktu paruh.' },
-    { type: 'table', headers: ['Waktu berlalu', 'Faktor', 'Inti induk tersisa', 'Aktivitas relatif'], rows: [['0 waktu paruh', '(1/2)^0', '100%', '100%'], ['1 waktu paruh', '(1/2)^1', '50%', '50%'], ['2 waktu paruh', '(1/2)^2', '25%', '25%'], ['3 waktu paruh', '(1/2)^3', '12,5%', '12,5%'], ['5 waktu paruh', '(1/2)^5', '3,125%', '3,125%'], ['10 waktu paruh', '(1/2)^10', '0,098%', '0,098%']] },
-    { type: 'title', text: 'Contoh isotop dan cara membaca hasil', level: 3 },
-    { type: 'table', headers: ['Isotop', 'Waktu paruh perkiraan', 'Kegunaan umum', 'Makna hasil'], rows: [['Karbon-14', '5.730 tahun', 'Penanggalan radiokarbon', 'Aktivitas Carbon-14 yang tersisa pada materi yang pernah hidup.'], ['Iodin-131', '8,02 hari', 'Terapi medis dan kejadian nuklir', 'Seberapa cepat aktivitas turun dalam hitungan hari.'], ['Teknesium-99m', '6,01 jam', 'Pencitraan diagnostik', 'Mengapa aktivitas medis berguna memudar dalam satu hari klinis.'], ['Uranium-238', '4,47 miliar tahun', 'Penanggalan geologi', 'Mengapa isotop berumur sangat panjang tetap terukur.'], ['Radon-222', '3,82 hari', 'Radiasi dalam ruang', 'Bagaimana sumber gas paparan berubah.']] },
-    { type: 'paragraph', html: 'Medan atom sengaja stokastik: setiap inti meluruh secara acak, sementara sampel besar mendekati kurva halus. Model ini berguna untuk pendidikan fisika, kimia nuklir, radiokarbon, isotop medis, dan keselamatan radiasi.' },
-    { type: 'paragraph', html: 'Kalkulator ini memakai satu waktu paruh untuk isotop induk. Pengukuran nyata dapat membutuhkan koreksi efisiensi detektor, radiasi latar, rasio percabangan, produk anak, eliminasi biologis, bentuk kimia, perisai, dan kurva kalibrasi. Jangan gunakan sebagai pengganti instruksi medis, dosimetri, atau analisis laboratorium.' },
+    {
+      type: 'title',
+      text: 'Kalkulator waktu paruh radioaktif: atom tersisa, aktivitas, dan contoh isotop',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Gunakan kalkulator peluruhan radioaktif ini untuk memperkirakan berapa banyak isotop tidak stabil yang tersisa setelah waktu tertentu. Kontennya cocok untuk pencarian tentang rumus waktu paruh, contoh isotop nyata, inti induk tersisa, inti meluruh, dan penurunan aktivitas.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Alat ini menggabungkan dua model yang saling melengkapi. Hasil numerik menggunakan persamaan peluruhan eksponensial standar, sedangkan medan atom mensimulasikan inti individual dengan ambang stokastik.',
+    },
+    {
+      type: 'title',
+      text: 'Rumus peluruhan radioaktif yang digunakan kalkulator',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Rumus yang digunakan adalah <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> adalah jumlah inti induk awal, <strong>N(t)</strong> jumlah harapan setelah waktu <strong>t</strong>, dan <strong>T1/2</strong> waktu paruh.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Sebagai contoh, jika sampel dimulai dengan 1.000 inti induk dan melewati dua waktu paruh, jumlah tersisa yang diharapkan adalah 1.000 x (1/2)^2 = 250 inti. Jumlah yang meluruh adalah 750 inti.',
+    },
+    {
+      type: 'table',
+      headers: ['Waktu berlalu', 'Faktor', 'Inti induk tersisa', 'Aktivitas relatif'],
+      rows: [
+        ['0 waktu paruh', '(1/2)^0', '100%', '100%'],
+        ['1 waktu paruh', '(1/2)^1', '50%', '50%'],
+        ['2 waktu paruh', '(1/2)^2', '25%', '25%'],
+        ['3 waktu paruh', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 waktu paruh', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 waktu paruh', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Cara menghitung sisa aktivitas setelah waktu paruh',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Untuk satu isotop induk, aktivitas sebanding dengan jumlah inti yang belum meluruh. Jika 25% dari isotop induk tersisa, aktivitasnya juga sekitar 25% dari aktivitas awal.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Hubungan ini sangat penting dalam kedokteran nuklir dan keselamatan radiasi.',
+    },
+    {
+      type: 'title',
+      text: 'Contoh: Karbon-14, Iodin-131, Teknesium-99m, Uranium-238, dan Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Isotop', 'Waktu paruh perkiraan', 'Kegunaan umum', 'Makna hasil'],
+      rows: [
+        ['Karbon-14', '5.730 tahun', 'Penanggalan radiokarbon', 'Aktivitas Carbon-14 tersisa pada materi yang pernah hidup.'],
+        ['Iodin-131', '8,02 hari', 'Terapi medis', 'Seberapa cepat aktivitas turun dalam hitungan hari.'],
+        ['Teknesium-99m', '6,01 jam', 'Pencitraan diagnostik', 'Mengapa aktivitas medis berguna memudar dalam satu hari klinis.'],
+        ['Uranium-238', '4,47 miliar tahun', 'Penanggalan geologi', 'Mengapa isotop berumur sangat panjang tetap terukur.'],
+        ['Radon-222', '3,82 hari', 'Radiasi dalam ruang', 'Bagaimana sumber gas paparan berubah.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Contoh-contoh ini mencakup berbagai skala waktu dan aplikasi ilmiah.',
+    },
+    {
+      type: 'title',
+      text: 'Cara membaca simulasi atom stokastik',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Medan atom animasi sengaja bersifat stokastik. Untuk sampel kecil, hasilnya berfluktuasi di sekitar nilai teori.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Kurva mulus hanya muncul ketika banyak peristiwa acak independen dihitung bersama.',
+    },
+    {
+      type: 'title',
+      text: 'Studi kasus penggunaan kalkulator waktu paruh',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Pelajaran fisika:</strong> menghitung inti tersisa dan menghubungkannya dengan model visual.',
+        '<strong>Kimia nuklir:</strong> membandingkan stabilitas dan laju peluruhan isotop.',
+        '<strong>Penanggalan radiokarbon:</strong> memahami peluruhan sampel organik.',
+        '<strong>Perencanaan isotop medis:</strong> melihat mengapa waktu paruh pendek berguna untuk pencitraan.',
+        '<strong>Edukasi keselamatan radiasi:</strong> memperkirakan penurunan aktivitas dari waktu ke waktu.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Batasan penting',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Kalkulator ini memodelkan isotop induk dengan satu waktu paruh.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Gunakan hasil sebagai model pembelajaran dan perkiraan ilmiah yang jelas.',
+    },
   ],
   faq,
   bibliography,

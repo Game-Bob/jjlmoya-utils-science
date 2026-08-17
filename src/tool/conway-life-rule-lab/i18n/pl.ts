@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Użyj notacji B/S, np. B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Symulator Gry w życie Conwaya z edytowalnymi regułami', level: 2 },
-    { type: 'paragraph', html: 'To laboratorium reguł Gry w życie Conwaya pozwala uruchomić klasyczny automat komórkowy i celowo zmieniać oraz porównywać jego reguły. Plansza obsługuje bezpośrednie rysowanie, umieszczanie wzorców, losowe ziarna, inspekcję krok po kroku, zmienne tempo i pomiary na żywo dla populacji, gęstości, narodzin, śmierci i stabilności.' },
-    { type: 'title', text: 'Jak reguły B/S zmieniają grę', level: 3 },
-    { type: 'paragraph', html: 'Automaty komórkowe podobne do Life są często zapisywane w <strong>notacji B/S</strong>. Strona B określa, ile żywych sąsiadów potrzebuje martwa komórka, aby się narodzić; strona S określa, ile sąsiadów potrzebuje żywa komórka, aby przeżyć. Oryginalna reguła Conwaya, <strong>B3/S23</strong>, jest słynna, bo znajduje się w wąskim obszarze między wyginięciem a niekontrolowanym wzrostem.' },
-    { type: 'title', text: 'Odczytywanie metryk na żywo', level: 3 },
-    { type: 'paragraph', html: 'Populacja i gęstość pokazują, ile komórek żyje, ale nie opowiadają całej historii. Narodziny i śmierci ujawniają bieżący poziom aktywności, a stabilność szacuje, czy kolonia stabilizuje się w oscylatorze, zastyga w nieruchomych strukturach, czy pozostaje burzliwa.' },
+    {
+      type: 'title',
+      text: 'Symulator Gry w Życie Conwaya z edytowalnymi regułami',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'To laboratorium reguł Gry w Życie Conwaya pozwala uruchamiać klasyczny automat komórkowy oraz modyfikować i porównywać jego reguły.',
+    },
+    {
+      type: 'title',
+      text: 'Jak reguły B/S zmieniają grę',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Automaty komórkowe typu Life są zapisywane w <strong>notacji B/S</strong>. Oryginalna reguła Conwaya <strong>B3/S23</strong> jest znana z idealnego zrównoważenia.',
+    },
+    {
+      type: 'table',
+      headers: ['Reguła', 'Zachowanie do obserwacji', 'Dobra obserwacja'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Klasyczne szybowce, oscylatory i działa.', 'Umieść działo Gospera i śledź populację.'],
+        ['<strong>B36/S23</strong>', 'HighLife wspiera samoreplikację.', 'Porównaj to samo ziarno z B3/S23.'],
+        ['<strong>B2/S</strong>', 'Komórki nigdy nie przeżywają.', 'Rozpocznij od małego ziarna.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night wspiera odwrócone struktury.', 'Przetestuj z wysoką gęstością początkową.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Dlaczego wzorce są ważne',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Wzorce tworzą słownik Gry w Życie. Szybowce pokazują ruch, a pulsary oscylację.',
+    },
+    {
+      type: 'title',
+      text: 'Odczytywanie statystyk na żywo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Populacja i gęstość pokazują, ile komórek żyje, podczas gdy narodziny i zgony ujawniają poziom aktywności.',
+    },
   ],
   faq,
   bibliography,

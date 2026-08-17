@@ -106,39 +106,114 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulateur d\'horizon des événements: rayon de Schwarzschild, sphère de photons et dilatation du temps',
+      text: 'Simulateur d\'horizon des événements pour rayon de Schwarzschild, sphère de photons et dilatation temporelle',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Ce simulateur transforme les concepts fondamentaux des trous noirs de Schwarzschild en un modèle visuel interactif. Modifiez la masse, déplacez la sonde et comparez la réponse de l\'horizon, de la sphère de photons, de l\'ISCO, de la vitesse de libération, du décalage vers le rouge gravitationnel et de la dilatation du temps.',
+      html: 'Ce simulateur d\'horizon des événements transforme les idées clés des trous noirs de Schwarzschild en un modèle visuel interactif.',
     },
     {
       type: 'paragraph',
-      html: 'Conçu pour les étudiants en astronomie, les enseignants et les curieux, cet outil dépasse la simple formule statique. Il relie les données numériques à un diagramme spatial pour illustrer pourquoi l\'horizon n\'est pas une surface matérielle, pourquoi les photons suivent une orbite instable et pourquoi le mouvement circulaire stable s\'arrête avant l\'horizon.',
+      html: 'Le simulateur est conçu pour les étudiants en astronomie, les enseignants et les passionnés de physique.',
     },
     {
       type: 'title',
-      text: 'Comment le rayon de l\'horizon est calculé',
+      text: 'Comment le rayon de l\'horizon des événements est calculé',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Pour un trou noir sans rotation ni charge, le rayon de l\'horizon est le <strong>rayon de Schwarzschild</strong>. Il est calculé via la formule <strong>Rs = 2GM / c^2</strong>, où G est la constante gravitationnelle, M la masse du trou noir et c la vitesse de la lumière. Une masse solaire correspond à un rayon d\'environ 2,95 km.',
+      html: 'Pour un trou noir non rotatif sans charge, le rayon est le <strong>rayon de Schwarzschild</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Comme le rayon de Schwarzschild varie linéairement avec la masse, un trou noir de 10 masses solaires a un rayon d\'environ 29,5 km, tandis qu\'un trou noir supermassif comme Sagittarius A* (4 millions de masses solaires) atteint environ 11,8 millions de kilomètres. Le curseur utilise une échelle logarithmique pour couvrir ces ordres de grandeur.',
+      html: 'Puisque le rayon varie proportionnellement à la masse, 10 masses solaires donnent un rayon d\'environ 29,5 km.',
     },
     {
       type: 'table',
-      headers: ['Région', 'Rayon (en Rs)', 'Signification'],
+      headers: ['Région', 'Rayon en rayons de Schwarzschild', 'Signification'],
       rows: [
-        ['Horizon des événements', '1.0 Rs', 'Frontière unidirectionnelle où la vitesse de libération égale celle de la lumière.'],
-        ['Sphère de photons', '1.5 Rs', 'Orbite circulaire instable pour la lumière.'],
-        ['ISCO', '3.0 Rs', 'Orbite circulaire stable la plus interne pour les particules massives.'],
-        ['Champ faible', '6 Rs et +', 'La gravité reste forte, mais les orbites circulaires sont stables.'],
+        ['Horizon des événements', '1.0 Rs', 'La limite sans retour où la vitesse de libération égale c.'],
+        ['Sphère de photons', '1.5 Rs', 'L\'orbite circulaire instable pour la lumière.'],
+        ['ISCO', '3.0 Rs', 'La dernière orbite circulaire stable pour les particules massives.'],
+        ['Champ faible', '6 Rs et plus', 'Gravité encore forte mais orbites circulaires aisées.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Vitesse de libération et frontière causale',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La vitesse de libération est la vitesse minimale requise pour s\'échapper à l\'infini sans propulsion.',
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'indicateur de vitesse de libération est une intuition utile mais incomplète relativistement.',
+    },
+    {
+      type: 'title',
+      text: 'Dilatation temporelle et décalage vers le rouge gravitationnel',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Une horloge fixe près d\'un trou noir bat plus lentement qu\'à l\'infini. Le facteur simplifié est <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Le décalage vers le rouge gravitationnel suit la même géométrie. La lumière perd de l\'énergie en s\'échappant.',
+    },
+    {
+      type: 'title',
+      text: 'Sphère de photons et ISCO expliquées',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La sphère de photons à 1.5 Rs est l\'endroit où la lumière peut effectuer une orbite circulaire instable.',
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'ISCO à 3 Rs représente la dernière orbite stable pour la matière.',
+    },
+    {
+      type: 'title',
+      text: 'Trous noirs stellaires vs supermassifs',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Une leçon surprenante est que les trous noirs supermassifs sont moins violents au niveau des forces de marée à l\'horizon.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Le simulateur inclut un gradient de marée exprimé en gravités terrestres par mètre.',
+    },
+    {
+      type: 'title',
+      text: 'Limites de ce simulateur',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        ['<strong>Pas de rotation :</strong> utilise la géométrie de Schwarzschild.'],
+        ['<strong>Pas de physique d\'accrétion avancée :</strong> disque simplifié.'],
+        ['<strong>Pas de ray-tracing :</strong> schéma éducatif.'],
+        ['<strong>Pas de repère en chute libre :</strong> horloge stationnaire.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Foire aux questions',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Utilisez cet outil pour estimer les paramètres d\'un trou noir.',
     },
   ],
   faq,

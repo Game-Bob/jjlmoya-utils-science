@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Verwende B/S-Notation wie B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Conway Spiel des Lebens Simulator mit bearbeitbaren Regeln', level: 2 },
-    { type: 'paragraph', html: 'Dieses Regellabor lässt dich den klassischen zellulären Automaten ausführen und seine Regeln gezielt verändern und vergleichen. Das Feld unterstützt direktes Zeichnen, Musterpositionen, Zufallssaaten, schrittweise Inspektion, variables Tempo und Live-Messungen für Population, Dichte, Geburten, Tode und Stabilität.' },
-    { type: 'title', text: 'Wie B/S-Regeln das Spiel verändern', level: 3 },
-    { type: 'paragraph', html: 'Life-artige zelluläre Automaten werden oft in <strong>B/S-Notation</strong> geschrieben. Die B-Seite definiert, wie viele lebende Nachbarn eine tote Zelle braucht, um zu entstehen; die S-Seite definiert, wie viele Nachbarn eine lebende Zelle zum Überleben braucht. Conways ursprüngliche Regel <strong>B3/S23</strong> ist berühmt, weil sie in einem schmalen Bereich zwischen Aussterben und unkontrolliertem Wachstum liegt.' },
-    { type: 'title', text: 'Live-Metriken lesen', level: 3 },
-    { type: 'paragraph', html: 'Population und Dichte zeigen, wie viele Zellen am Leben sind, aber sie erzählen nicht die ganze Geschichte. Geburten und Tode zeigen das aktuelle Aktivitätsniveau, während Stabilität abschätzt, ob die Kolonie sich in einen Oszillator einpendelt, in Stilleben einfriert oder turbulent bleibt.' },
+    {
+      type: 'title',
+      text: 'Conway Spiel des Lebens Simulator mit bearbeitbaren Regeln',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dieses Regellabor lässt dich den klassischen zellulären Automaten ausführen und seine Regeln gezielt verändern und vergleichen. Das Feld unterstützt direktes Zeichnen, Musterpositionen, Zufallssaaten, schrittweise Inspektion, variables Tempo und Live-Messungen für Population, Dichte, Geburten, Tode und Stabilität.',
+    },
+    {
+      type: 'title',
+      text: 'Wie B/S-Regeln das Spiel verändern',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Life-artige zelluläre Automaten werden oft in <strong>B/S-Notation</strong> geschrieben. Die B-Seite definiert, wie viele lebende Nachbarn eine tote Zelle braucht, um zu entstehen; die S-Seite definiert, wie viele Nachbarn eine lebende Zelle zum Überleben braucht. Conways ursprüngliche Regel <strong>B3/S23</strong> ist berühmt, weil sie in einem schmalen Bereich zwischen Aussterben und unkontrolliertem Wachstum liegt.',
+    },
+    {
+      type: 'table',
+      headers: ['Regel', 'Verhalten', 'Gutes Experiment'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Klassische Gleiter, Blinker und Kanonen.', 'Gosper-Kanone platzieren und Muster beobachten.'],
+        ['<strong>B36/S23</strong>', 'HighLife unterstützt Selbstreplikation.', 'Vergleiche den gleichen Seed mit B3/S23.'],
+        ['<strong>B2/S</strong>', 'Zellen überleben nie; Wellenfronten entstehen.', 'Starte mit einem kleinen Punkt.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night unterstützt inverse Strukturen.', 'Nutze hohe Dichte zur Beobachtung.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Warum Muster wichtig sind',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Muster sind der Wortschatz von Game of Life. Gleiter zeigen Bewegung, Pulsare zeigen Oszillation.',
+    },
+    {
+      type: 'title',
+      text: 'Live-Metriken lesen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Population und Dichte zeigen, wie viele Zellen am Leben sind, aber sie erzählen nicht die ganze Geschichte. Geburten und Tode zeigen das aktuelle Aktivitätsniveau, während Stabilität abschätzt, ob die Kolonie sich in einen Oszillator einpendelt, in Stilleben einfriert oder turbulent bleibt.',
+    },
   ],
   faq,
   bibliography,

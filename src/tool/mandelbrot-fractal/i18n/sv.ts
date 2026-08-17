@@ -68,30 +68,57 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Mandelbrotmängdskalkylator för fraktaler, flykttid och självlikhet',
+      text: 'Kalkylator för Mandelbrotmängden, flykttid och självlikhet',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Denna Mandelbrot-fraktalkalkylator renderar den klassiska mängden i det komplexa planet, definierad av iterationen <strong>z(n+1) = z(n)^2 + c</strong>. Den är designad för utforskning: varje klick återcentrerar planet, varje zoom exponerar en ny matematisk omgivning, och itereringsreglaget låter dig bestämma hur djupt kalkylatorn ska testa gränsen.',
+      html: 'Denna Mandelbrotfraktalkalkylator återger den klassiska mängden i det komplexta talplanet z(n+1) = z(n)^2 + c. Den är utformad för utforskning.',
     },
     {
       type: 'title',
-      text: 'Hur man läser Mandelbrot-bilden',
+      text: 'Hur du läser Mandelbrotbilden',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Den mörka centrala formen markerar punkter vars banor förblir begränsade inom den aktuella itereringsbudgeten. Det färglagda yttre är en flykttidskarta. En punkt färglagd nära mängden kan överleva hundratals iterationer innan dess magnitud överstiger flyktradien, medan en punkt långt borta flyr nästan omedelbart. Den mest intressanta geometrin finns oftast längs gränsen där begränsat och obegränsat beteende sammanflätas.',
+      html: 'Den mörka centrala formen markerar punkter vars omloppsbanor förblir begränsade. Den färgade utsidan är en flykttidskarta.',
     },
     {
       type: 'table',
-      headers: ['Kontroll', 'Vad den ändrar', 'När den ska ökas'],
+      headers: ['Reglage', 'Vad det ändrar', 'När du ska öka'],
       rows: [
-        ['<strong>Itereringsdjup</strong>', 'Hur många rekursionssteg som testas för varje pixel.', 'Använd högre värden efter inzoomning på tunna filament eller miniatyrkopior.'],
-        ['<strong>Flyktkontrast</strong>', 'Hur starkt jämna flyktvärden separeras i synliga band.', 'Höj den när bilden ser plan ut; sänk den när färgerna är för hårda.'],
-        ['<strong>Palett</strong>', 'Färgmappningen som tillämpas på yttre punkter.', 'Växla paletter för att avslöja strukturer som kan vara dolda av ett enda färgfält.'],
+        ['<strong>Iterationsdjup</strong>', 'Hur många rekursionssteg som testas för varje pixel.', 'Använd högre värden efter zoomning i tunna strukturer.'],
+        ['<strong>Flyktkontrast</strong>', 'Hur skarpt jämna flyktvärden delas upp i synliga band.', 'Öka om bilden ser platt ut.'],
+        ['<strong>Palett</strong>', 'Färgkartan som appliceras på yttre punkter.', 'Byt palett för att synliggöra dolda strukturer.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Självlikhet och minibrots',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'En anledning till Mandelbrotmängdens kändisskap är dess quasi-självlikhet. När du zoomar in i spiraler möter du återkommande små kopior av mängden, så kallade minibrots.',
+    },
+    {
+      type: 'title',
+      text: 'Varför höga iterationer väger tungt vid djupzoom',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Vid hög förstoring kräver randpunkter betydligt fler steg för att avgöra om de flyr. För få iterationer gör att fina detaljer ser suddiga ut.',
+    },
+    {
+      type: 'title',
+      text: 'Matematisk betydelse för komplexa koordinater',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Koordinatvisningen visar mitten av vykortet som ett komplext tal c = a + bi, där den horisontella axeln är realdelen och den vertikala är imaginärdelen.',
     },
   ],
   faq,

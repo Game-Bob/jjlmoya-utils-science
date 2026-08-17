@@ -1,4 +1,4 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'dyson-kuresi-enerji-yakalama-simulatoru';
@@ -88,20 +88,74 @@ export const content: ToolLocaleContent = {
     structureStatite: 'Statit ayna bulutu',
   },
   seo: [
-    { type: 'title', text: 'Dyson Küresi Enerji Yakalama Simülatörü', level: 2 },
-    { type: 'paragraph', html: 'Bir Dyson küresi, bir kabuğun içindeki bir yıldızın bilim kurgu görüntüsünden ibaret değildir. Yıldız parlaklığını yakalamak için olası mega yapı kavramlarından oluşan bir ailedir: uydu sürüleri, ekvatoral halkalar, ince ayna bulutları ve ünlü ancak sorunlu rijit kabuk. Bu simülatör bu fikirleri sayılara dönüştürerek yıldız türü, toplayıcı sıcaklığı, kapsama ve yapı tasarımının enerji bütçesini nasıl değiştirdiğini karşılaştırmanızı sağlar.' },
-    { type: 'paragraph', html: 'Hesaplayıcı; yakalanan gücü, termal yörünge yarıçapını, toplayıcı alanını, yörünge periyodunu, malzeme kütlesini ve seçilen bir Kardashev ölçeği hedefi için gereken kapsamayı tahmin eder. Öğrenciler, dünya kurucuları, bilim iletişimcileri ve Tip II uygarlıklarının neden zor olduğunu anlamaya çalışan herkes için tasarlanmıştır.' },
-    { type: 'title', text: 'Dyson Yarıçapı Nasıl Tahmin Edilir', level: 3 },
-    { type: 'paragraph', html: 'En uygun yarıçap, yıldız parlaklığı ve toplayıcı çalışma sıcaklığından hesaplanır. Parlak bir yıldızın yakınındaki bir toplayıcı yoğun bir akış alır ve sıcak çalışmalı veya büyük miktarda ısıyı atmalıdır. Dışarı doğru hareket etmek termal stresi azaltır, ancak gereken toplayıcı alanı mesafenin karesiyle artar.' },
-    { type: 'title', text: 'Dyson Sürüsü, Halka, Kabuk ve Statit Bulutu Karşılaştırması', level: 3 },
     {
-      type: 'list', items: [
-        '<strong>Dyson sürüsü:</strong> Birçok bağımsız yörüngedeki toplayıcı. Kademeli olarak inşa edilebildiği ve rijit bir yıldız kabuğu gerektirmediği için en olası büyük ölçekli mimaridir.',
-        '<strong>Ekvatoral halka:</strong> Düşük kapsama verimliliğine sahip daha dar bir toplayıcı bandı. İlk mega yapı olarak hayal etmesi daha kolaydır.',
-        '<strong>Rijit kabuk:</strong> Görsel olarak ikonik ancak mekanik olarak elverişsiz. Bir yıldızın etrafındaki kabuk ciddi kararlılık ve malzeme sorunlarına sahiptir.',
-        '<strong>Statit ayna bulutu:</strong> Kısmen ışınım basıncıyla tutulan ultra hafif yansıtıcılar. Malzeme talebini azaltır ancak düşük ısı toleransına ve zorlu kontrol gereksinimlerine sahiptir.'
-      ]
-    }
+      type: 'title',
+      text: 'Dyson Küresi Enerji Yakalama Simülatörü',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dyson küresi yalnızca bilim kurgu eserlerindeki katı bir kabuk imgesinden ibaret değildir. Yıldız ışınımını yakalamaya yönelik uydu sürüleri, ekvatoral halkalar ve statit aynalardan oluşan geniş bir megastruktur konseptleri ailesidir.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Uygulama; yakalanan gücü, termal yörünge yarıçapını, kolektör alanını, yörünge periyodunu ve Merkür kütlesi cinsinden gereken malzeme kütlesini hesaplar.',
+    },
+    {
+      type: 'title',
+      text: 'Optimum Dyson Yarıçapının Hesaplanması',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Optimum yarıçap doğrudan yıldızın parlaklığına ve kolektörlerin maksimum çalışma sıcaklığına bağlıdır.',
+    },
+    {
+      type: 'title',
+      text: 'Megastruktur Konseptlerinin Karşılaştırılması',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Dyson Sürüsü:</strong> Bağımsız yörüngelerdeki çok sayıda kolektör. Kademeli inşaya izin veren en gerçekçi mimari.',
+        '<strong>Ekvatoral Halka:</strong> Daha dar bir kolektör kuşağı ve daha basit geometri.',
+        '<strong>Rijit Kabuk:</strong> Maksimum yakalama sağlayan ancak mekanik olarak kararsız olan katı yapı.',
+        '<strong>Statit Ayna Bulutu:</strong> Radyasyon basıncıyla dengede tutulan ultra hafif aynalar ve zorlu kontrol gereksinimleri.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Kardashev Ölçeği İçin Gereken Kaplama',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Kardashev ölçeği bir medeniyetin enerji kullanımını ölçer. Güneş ışınımının küçük bir kısmını yakalamak bile insanlığın mevcut tüketimini kat kat aşar.',
+    },
+    {
+      type: 'table',
+      headers: ['Mimari', 'Ana Avantaj', 'Temel Zorluk'],
+      rows: [
+        ['Dyson Sürüsü', 'Kademeli inşa edilebilir', 'Yörünge trafiği ve güç iletimi'],
+        ['Ekvatoral Halka', 'Daha küçük başlangıç alanı', 'Sınırlı kaplama kapasitesi'],
+        ['Rijit Kabuk', 'Maksimum enerji yakalama', 'Yapısal kararsızlık ve devasa kütle'],
+        ['Statit Ayna Bulutu', 'Çok düşük yüzey yoğunluğu', 'Hassas konum kontrolü ve termal sınırlar'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Malzeme İhtiyacı ve Hammadde Değerlendirmesi',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Malzeme kütlesi Merkür kütlesi birimleriyle ifade edilir. Birçok teorik çalışma, hammadde sağlamak için küçük gezegenlerin parçalanmasını öngörür.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu sonuçları yıldız mühendisliğinin fiziksel sınırlarını anlamak için eğitici bir rehber olarak kullanın.',
+    },
   ],
   faq,
   bibliography,

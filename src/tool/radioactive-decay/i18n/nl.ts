@@ -45,20 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Nieuw atoompatroon',
   },
   seo: [
-    { type: 'title', text: 'Halfwaardetijdcalculator: resterende atomen, activiteit en voorbeelden van isotopen', level: 2 },
-    { type: 'paragraph', html: 'Gebruik deze calculator voor radioactief verval om te schatten hoeveel van een instabiele isotoop overblijft na een gekozen tijd. De pagina sluit aan op veelvoorkomende zoekvragen: de formule vinden, die toepassen op echte isotopen, resterende moederkernen vergelijken met vervallen kernen en begrijpen waarom activiteit afneemt.' },
-    { type: 'paragraph', html: 'De numerieke resultaten gebruiken de exponentiele vervalvergelijking, terwijl het atoomveld individuele kernen met stochastische drempels simuleert. Daardoor werkt de tool zowel als snelle calculator als visuele uitleg.' },
-    { type: 'title', text: 'Formule voor radioactief verval', level: 3 },
-    { type: 'paragraph', html: 'De formule is <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> is het startaantal moederkernen, <strong>N(t)</strong> het verwachte aantal na tijd <strong>t</strong>, en <strong>T1/2</strong> de halfwaardetijd. De verhouding <strong>t / T1/2</strong> telt hoeveel halfwaardetijden zijn verstreken.' },
-    { type: 'paragraph', html: 'Begint een monster met 1.000 moederkernen en verstrijken twee halfwaardetijden, dan blijft verwacht 1.000 x (1/2)^2 = 250 kernen over. De overige 750 zijn vervallen.' },
-    { type: 'table', headers: ['Verstreken tijd', 'Factor', 'Moederkernen over', 'Relatieve activiteit'], rows: [['0 halfwaardetijden', '(1/2)^0', '100%', '100%'], ['1 halfwaardetijd', '(1/2)^1', '50%', '50%'], ['2 halfwaardetijden', '(1/2)^2', '25%', '25%'], ['3 halfwaardetijden', '(1/2)^3', '12,5%', '12,5%'], ['5 halfwaardetijden', '(1/2)^5', '3,125%', '3,125%'], ['10 halfwaardetijden', '(1/2)^10', '0,098%', '0,098%']] },
-    { type: 'title', text: 'Activiteit en voorbeelden', level: 3 },
-    { type: 'paragraph', html: 'Voor een enkele moederisotoop is activiteit evenredig met het aantal niet-vervallen kernen. Daarom volgt resterende activiteit dezelfde exponentiele factor als de resterende hoeveelheid.' },
-    { type: 'table', headers: ['Isotoop', 'Halfwaardetijd', 'Typisch gebruik', 'Wat het resultaat laat zien'], rows: [['Koolstof-14', '5.730 jaar', 'Radiokoolstofdatering', 'Hoeveel Koolstof-14-activiteit in ooit levend materiaal resteert.'], ['Jodium-131', '8,02 dagen', 'Therapie en nucleaire incidenten', 'Hoe activiteit over dagen afneemt.'], ['Technetium-99m', '6,01 uur', 'Diagnostische beeldvorming', 'Waarom bruikbare medische activiteit binnen een werkdag daalt.'], ['Uranium-238', '4,47 miljard jaar', 'Geologische datering', 'Waarom zeer langlevende isotopen meetbaar blijven.'], ['Radon-222', '3,82 dagen', 'Binnenstraling', 'Hoe een gasvormige blootstellingsbron verandert.']] },
-    { type: 'title', text: 'Stochastische simulatie en beperkingen', level: 3 },
-    { type: 'paragraph', html: 'Het atoomveld is bewust stochastisch: individuele kernen vervallen willekeurig, terwijl grote aantallen de gladde curve benaderen. Halfwaardetijd betekent dus geen plots verdwijnen van exact de helft, maar een constante kans op verval per tijdseenheid.' },
-    { type: 'list', items: ['<strong>Onderwijs:</strong> koppel formule en visueel model.', '<strong>Nucleaire chemie:</strong> vergelijk stabiliteit en activiteit.', '<strong>Radiokoolstof:</strong> begrijp waarom oude monsters minder Koolstof-14 bevatten.', '<strong>Medische isotopen:</strong> zie waarom korte halfwaardetijden nuttig zijn.', '<strong>Stralingsveiligheid:</strong> schat relatieve activiteit zonder halfwaardetijd verkeerd te interpreteren.'] },
-    { type: 'paragraph', html: 'De calculator modelleert een moederisotoop met een enkele halfwaardetijd. Echte metingen kunnen correcties vereisen voor detectorrendement, achtergrondstraling, vertakkingsverhoudingen, dochterproducten, biologische klaring, chemische vorm, afscherming en kalibratiecurven. Gebruik dit als leer- en schattingsmodel, niet als medisch, dosimetrisch of laboratoriumadvies.' },
+    {
+      type: 'title',
+      text: 'Halfwaardetijdcalculator: resterende atomen, activiteit en voorbeelden van isotopen',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Gebruik deze calculator voor radioactief verval om te schatten hoeveel van een instabiele isotoop overblijft na een gekozen tijd. De pagina sluit aan op veelvoorkomende zoekvragen: de formule vinden, die toepassen op echte isotopen, resterende moederkernen vergelijken met vervallen kernen en begrijpen waarom activiteit afneemt.',
+    },
+    {
+      type: 'paragraph',
+      html: 'De tool combineert twee complementaire modellen. De numerieke resultaten gebruiken de standaard exponentiële vervalvergelijking, terwijl het atoomveld individuele kernen met stochastische drempels simuleert.',
+    },
+    {
+      type: 'title',
+      text: 'Formule voor radioactief verval gebruikt door de calculator',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'De formule is <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> is het startaantal moederkernen, <strong>N(t)</strong> het verwachte aantal na tijd <strong>t</strong>, en <strong>T1/2</strong> de halfwaardetijd. De verhouding <strong>t / T1/2</strong> telt hoeveel halfwaardetijden zijn verstreken.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Begint een monster bijvoorbeeld met 1.000 moederkernen en verstrijken twee halfwaardetijden, dan blijft verwacht 1.000 x (1/2)^2 = 250 kernen over. Het vervallen aantal is 750 kernen.',
+    },
+    {
+      type: 'table',
+      headers: ['Verstreken tijd', 'Formulefactor', 'Moederkernen over', 'Relatieve activiteit'],
+      rows: [
+        ['0 halfwaardetijden', '(1/2)^0', '100%', '100%'],
+        ['1 halfwaardetijd', '(1/2)^1', '50%', '50%'],
+        ['2 halfwaardetijden', '(1/2)^2', '25%', '25%'],
+        ['3 halfwaardetijden', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 halfwaardetijden', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 halfwaardetijden', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Resterende activiteit berekenen na een halfwaardetijd',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Voor een enkele moederisotoop is activiteit evenredig met het aantal niet-vervallen kernen. Als 25% van de moederisotoop overblijft, is de activiteit ook ongeveer 25% van de beginactiviteit.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Deze verhouding is van groot belang in de nucleaire geneeskunde en stralingsbescherming.',
+    },
+    {
+      type: 'title',
+      text: 'Voorbeelden: Koolstof-14, Jodium-131, Technetium-99m, Uranium-238 en Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Isotoop', 'Geschatte halfwaardetijd', 'Typisch gebruik', 'Wat het resultaat laat zien'],
+      rows: [
+        ['Koolstof-14', '5.730 jaar', 'Radiokoolstofdatering', 'Resterende Koolstof-14-activiteit in organisch materiaal.'],
+        ['Jodium-131', '8,02 dagen', 'Medische therapie', 'Snelheid waarmee activiteit in dagen daalt.'],
+        ['Technetium-99m', '6,01 uur', 'Diagnostische beeldvorming', 'Waarom medische activiteit binnen een werkdag daalt.'],
+        ['Uranium-238', '4,47 miljard jaar', 'Geologische datering', 'Waarom langlevende isotopen meetbaar blijven op geologische schaal.'],
+        ['Radon-222', '3,82 dagen', 'Binnenstraling', 'Verandering van een gasvormige bron over dagen.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Deze voorbeelden dekken verschillende tijdsschalen en toepassingen af.',
+    },
+    {
+      type: 'title',
+      text: 'De stochastische atoomsimulatie lezen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Het atoomveld is stochastisch gemodelleerd. Bij kleine monsters schommelen de resultaten rond de theoretische waarde.',
+    },
+    {
+      type: 'paragraph',
+      html: 'De gladde curve verschijnt pas wanneer vele onafhankelijke toevallige gebeurtenissen samen worden geteld.',
+    },
+    {
+      type: 'title',
+      text: 'Toepassingen van de halfwaardetijdcalculator',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Natuurkundeonderwijs:</strong> berekening van resterende kernen en koppeling aan visueel model.',
+        '<strong>Kernchemie:</strong> vergelijking van isotoopstabiliteit en vervalsnelheid.',
+        '<strong>Radiokoolstofdatering:</strong> begrip van verval in organische monsters.',
+        '<strong>Medische isotopen:</strong> planning van diagnostische beeldvorming.',
+        '<strong>Stralingsbescherming:</strong> schatting van activiteitsafname in de tijd.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Belangrijke beperkingen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Deze calculator modelleert de moederisotoop met een enkele halfwaardetijd.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Gebruik de resultaten als een didactisch model en wetenschappelijke schatting.',
+    },
   ],
   faq,
   bibliography,

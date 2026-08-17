@@ -102,6 +102,24 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Une des raisons pour lesquelles l\'ensemble de Mandelbrot est si célèbre est sa quasi-autosimilarité. En zoomant sur les antennes, les spirales et les vallées, vous rencontrez à plusieurs reprises de petites îles ressemblant à Mandelbrot, souvent appelées <em>minibrots</em>. Ces copies ne sont pas simplement décoratives. Leur agencement reflète la dynamique des applications quadratiques, y compris les bulbes périodiques, les motifs de bifurcation et les régions où les orbites restent piégées pendant de longues périodes avant de s\'échapper.',
     },
+    {
+      type: 'title',
+      text: 'Pourquoi les itérations élevées comptent au zoom profond',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'À fort grossissement, de nombreux points limites mettent beaucoup plus de temps à révéler s\'ils s\'échappent. Augmenter le nombre d\'itérations améliore la précision de la frontière.',
+    },
+    {
+      type: 'title',
+      text: 'Signification mathématique des coordonnées complexes',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La lecture des coordonnées affiche le centre actuel comme un nombre complexe c = a + bi. L\'axe horizontal représente la partie réelle et l\'axe vertical la partie imaginaire.',
+    },
   ],
   faq,
   bibliography,

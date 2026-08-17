@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: '请使用 B3/S23 这样的 B/S 记法。',
   },
   seo: [
-    { type: 'title', text: '可编辑规则的康威生命游戏模拟器', level: 2 },
-    { type: 'paragraph', html: '这个康威生命游戏规则实验室让您运行经典细胞自动机，然后有意改变并比较其规则。棋盘支持直接绘制、图案放置、随机种子、逐步检查、可变节奏，以及种群、密度、诞生、死亡和稳定性的实时测量。' },
-    { type: 'title', text: 'B/S 规则如何改变游戏', level: 3 },
-    { type: 'paragraph', html: '类生命细胞自动机通常用 <strong>B/S 记法</strong>书写。B 侧定义死细胞诞生所需的活邻居数；S 侧定义活细胞存活所需的邻居数。康威的原始规则 <strong>B3/S23</strong> 之所以著名，是因为它处于灭绝与不受控增长之间的狭窄区域。' },
-    { type: 'title', text: '读取实时指标', level: 3 },
-    { type: 'paragraph', html: '种群和密度显示有多少细胞存活，但并未讲述完整的故事。诞生和死亡揭示当前活动水平，而稳定性则估计群落是否正在稳定为振荡器、冻结为静止结构，或保持动荡状态。' },
+    {
+      type: 'title',
+      text: '具有可编辑规则的康威生命游戏模拟器',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: '这个康威生命游戏规则实验室允许您运行经典的细胞自动机，并比较和调整其规则。',
+    },
+    {
+      type: 'title',
+      text: 'B/S规则如何改变游戏',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '类生命细胞自动机通常采用<strong>B/S表示法</strong>。康威的原始规则<strong>B3/S23</strong>以其在灭绝与无休止增长之间的完美平衡而闻名。',
+    },
+    {
+      type: 'table',
+      headers: ['规则', '观察行为', '推荐实验'],
+      rows: [
+        ['<strong>B3/S23</strong>', '经典滑翔机、脉冲星和滑翔机枪。', '放置高斯帕滑翔机枪并跟踪种群。'],
+        ['<strong>B36/S23</strong>', 'HighLife支持自我复制。', '使用相同的种子与B3/S23进行比较。'],
+        ['<strong>B2/S</strong>', '细胞永远无法存活。', '从微小的种子开始。'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night支持反转结构。', '在前沿高密度下测试。'],
+      ],
+    },
+    {
+      type: 'title',
+      text: '为什么图案很重要',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '图案是生命游戏的词汇。滑翔机展示移动，脉冲星展示振荡。',
+    },
+    {
+      type: 'title',
+      text: '读取实时指标',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '种群和密度显示有多少细胞存活，而出生和死亡反映了当前的活跃程度。',
+    },
   ],
   faq,
   bibliography,

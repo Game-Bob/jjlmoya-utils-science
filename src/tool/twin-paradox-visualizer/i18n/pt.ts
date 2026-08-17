@@ -37,6 +37,10 @@ const faq = [
     question: 'O que significa o fator de Lorentz gamma?',
     answer: 'O fator de Lorentz gamma é igual a 1 dividido pela raiz quadrada de 1 menos v ao quadrado sobre c ao quadrado. Ele quantifica o quanto intervalos de tempo, comprimentos e energias diferem entre referenciais inerciais. Em velocidades cotidianas, gamma é quase 1, mas perto da velocidade da luz ele aumenta bruscamente.',
   },
+  {
+    question: 'Este efeito pode ser medido na vida real?',
+    answer: 'Sim. A dilatação temporal foi medida com partículas de alta velocidade, relógios atômicos levados em aviões, sistemas de navegação por satélite e aceleradores de partículas. O paradoxo usa uma história hipotética, mas o efeito físico em relógios é continuamente comprovado.',
+  },
 ];
 
 export const content: ToolLocaleContent = {
@@ -64,7 +68,7 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Calculadora do Paradoxo dos Gêmeos para a Relatividade Especial',
+      text: 'Visualizador do Paradoxo dos Gêmeos e Dilatação Temporal Relativística',
       level: 2,
     },
     {
@@ -88,6 +92,42 @@ export const content: ToolLocaleContent = {
         ['0.86c', '1.960', '51.0% da taxa terrestre', 'O viajante envelhece quase metade da taxa terrestre.'],
         ['0.98c', '5.025', '19.9% da taxa terrestre', 'Dilatação temporal extrema.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Por que a situação não é simétrica',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'À primeira vista, cada gêmeo poderia dizer que o outro está se movendo. A solução é que o gêmeo na Terra permanece em um único referencial inercial, enquanto o viajante acelera, inverte o sentido e retorna.',
+    },
+    {
+      type: 'title',
+      text: 'Leitura do diagrama de linha de universo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Uma linha de universo é um mapa do objeto no espaço-tempo. A linha vertical representa quem ficou na Terra; a linha angular vermelha representa a jornada de ida e volta do viajante.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Diferença de idade:</strong> quão mais jovem o viajante fica no reencontro.',
+        '<strong>Fator de Lorentz:</strong> o multiplicador entre o tempo da Terra e o tempo próprio da nave.',
+        '<strong>Tempo próprio:</strong> o tempo efetivamente medido pelo relógio a bordo.',
+        '<strong>Distância de retorno:</strong> a distância máxima alcançada no referencial da Terra.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Evidências práticas da dilatação temporal',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'A dilatação temporal é comprovada diariamente. Múons gerados na alta atmosfera atingem o solo graças ao retardamento de seus relógios internos. Além disso, os sistemas de navegação por satélite GPS exigem correções relativísticas contínuas.',
     },
   ],
   faq,

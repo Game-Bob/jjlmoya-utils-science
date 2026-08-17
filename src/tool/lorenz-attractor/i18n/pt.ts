@@ -36,6 +36,14 @@ const faq = [
   {
     question: 'O que significam os parâmetros?',
     answer: 'Sigma (σ) representa o número de Prandtl (viscosidade/condutividade térmica), Rho (ρ) o número de Rayleigh (intensidade do aquecimento convectivo) e Beta (β) a relação geométrica da célula convectiva.'
+  },
+  {
+    question: 'Por que o atrator se parece com uma borboleta?',
+    answer: 'A forma icônica com duas asas surge porque o sistema possui dois pontos de equilíbrio instáveis em torno dos quais as trajetórias orbitam de forma imprevisível.'
+  },
+  {
+    question: 'O atrator de Lorenz é verdadeiramente aleatório?',
+    answer: 'Não, o sistema é totalmente determinístico. Porém, por ser caótico, é imprevisível a longo prazo sem uma precisão infinita das condições iniciais.'
   }
 ];
 
@@ -66,19 +74,41 @@ export const content: ToolLocaleContent = {
   seo: [
     { type: 'title', text: "Caos Determinístico: Compreender as Equações de Lorenz", level: 2 },
     { type: 'paragraph', html: "O sistema de Lorenz é uma formulação histórica na dinâmica não linear e na teoria do caos. Derivado originalmente em 1963 pelo meteorologista e matemático <strong>Edward Lorenz</strong>, o modelo nasceu de uma representação simplificada da convecção atmosférica. A sua descoberta de que estas equações simples e deterministas podiam produzir um comportamento caótico complexo e não periódico transformou a nossa compreensão dos sistemas físicos." },
+    { type: 'paragraph', html: "O sistema é definido por três equações diferenciais acopladas que rastreiam uma coordenada no espaço de fases tridimensional ao longo do tempo:" },
+    {
+      type: 'list',
+      items: [
+        "<strong>dx/dt = σ * (y - x):</strong> Descreve a taxa de movimento convectivo.",
+        "<strong>dy/dt = x * (ρ - z) - y:</strong> Representa a diferença de temperatura.",
+        "<strong>dz/dt = x * y - β * z:</strong> Rastreia a distorção do perfil de temperatura vertical.",
+      ],
+    },
     { type: 'title', text: "O Efeito Borboleta: Dependência Sensível das Condições Iniciais", level: 3 },
     { type: 'paragraph', html: "A característica definidora dos sistemas caóticos é a sua <strong>dependência sensível das condições iniciais</strong>, popularmente conhecida como o <strong>Efeito Borboleta</strong>. Neste simulador, duas trajetórias (T1 a ciano e T2 a rosa) partem com uma separação mínima. Inicialmente percorrem praticamente o mesmo caminho. Após um breve período, a diferença é amplificada pelos termos não lineares e os caminhos divergem completamente." },
+    { type: 'paragraph', html: "Esta sensibilidade é demonstrada executando duas trajetórias que começam arbitrariamente próximas e se separam exponencialmente." },
     {
       type: 'table',
-      headers: ["Parâmetro", "Valor Padrão", "Contexto Físico"],
+      headers: ["Parâmetro", "Valor Padrão", "Contexto Físico", "Comportamento ao Alterar"],
       rows: [
-        ["σ (Sigma)", "10.0", "Número de Prandtl: determina o atrito interno do fluido."],
-        ["ρ (Rho)", "28.0", "Número de Rayleigh: motor do caos; intensidade do aquecimento convectivo."],
-        ["β (Beta)", "8/3", "Relação de Aspeto: escala e velocidade de rotação das órbitas."]
+        ["σ (Sigma)", "10.0", "Número de Prandtl", "Determina o atrito interno do fluido."],
+        ["ρ (Rho)", "28.0", "Número de Rayleigh", "Motor do caos."],
+        ["β (Beta)", "8/3 (2.667)", "Relação de Aspeto", "Controla a forma das órbitas."],
       ],
     },
     { type: 'title', text: "Atratores Estranhos e Fractais", level: 3 },
-    { type: 'paragraph', html: "Em física clássica, as trajetórias estabilizam-se em pontos fixos ou repetem o mesmo caminho. O sistema de Lorenz não faz nenhum dos dois: a trajetória enrola-se infinitamente sem nunca se cruzar, formando um <strong>atrator estranho</strong> com geometria fractal (dimensão de Hausdorff cerca de 2,06)." }
+    { type: 'paragraph', html: "Em física clássica, as trajetórias estabilizam-se em pontos fixos ou repetem o mesmo caminho. O sistema de Lorenz não faz nenhum dos dois: a trajetória enrola-se infinitamente sem nunca se cruzar, formando um <strong>atrator estranho</strong> com geometria fractal (dimensão de Hausdorff cerca de 2,06)." },
+    { type: 'paragraph', html: "A geometria deste atrator é fractal, com uma dimensão de Hausdorff de aproximadamente 2,06." },
+    { type: 'title', text: "Aplicações da Teoria do Caos na Ciência", level: 3 },
+    { type: 'paragraph', html: "As lições aprendidas com o atrator de Lorenz estendem-se muito além da previsão meteorológica:" },
+    {
+      type: 'list',
+      items: [
+        "<strong>Meteorologia:</strong> Estabeleceu os limites fundamentais da previsibilidade.",
+        "<strong>Criptografia:</strong> Geração de chaves pseudo-aleatórias seguras.",
+        "<strong>Cardiologia:</strong> Modelagem de ritmos cardíacos caóticos.",
+        "<strong>Engenharia:</strong> Concepção de estruturas estáveis evitando ressonância caótica.",
+      ],
+    },
   ],
   faq,
   bibliography,

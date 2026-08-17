@@ -1,4 +1,4 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'black-hole-event-horizon-simulator';
@@ -106,39 +106,114 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: '黑洞事件视界模拟器：施瓦西半径、光子球与时间膨胀',
+      text: '用于史瓦西半径、光子球和时间膨胀的黑洞事件视界模拟器',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: '本模拟器将施瓦西黑洞的核心概念转化为交互式视觉模型。通过调整黑洞质量、移动探测器，用户可以直观比较事件视界、光子球、最内层稳定圆形轨道、逃逸速度、引力红移及时间膨胀的响应关系。',
+      html: '这个黑洞事件视界模拟器将史瓦西黑洞的核心概念转化为互动式视觉模型。',
     },
     {
       type: 'paragraph',
-      html: '本工具专为天文爱好者、物理教师及科普探索者设计，通过将数值与空间图表结合，帮助用户理解黑洞的本质：事件视界并非物质表面，为何光子具有特殊的不稳定轨道，以及为何稳定的圆周运动在视界外停止。',
+      html: '该模拟器专为天文学学生、物理教师和好奇的探索者设计。',
     },
     {
       type: 'title',
-      text: '事件视界半径的计算方法',
+      text: '如何计算事件视界半径',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: '对于非旋转、不带电黑洞，其事件视界半径即为<strong>施瓦西半径</strong>。计算公式为<strong>Rs = 2GM / c^2</strong>，其中G为万有引力常数，M为质量，c为光速。1个太阳质量对应的施瓦西半径约为2.95公里。',
+      html: '对于无旋转、无电荷的黑洞，视界半径即为<strong>史瓦西半径</strong>：<strong>Rs = 2GM / c^2</strong>。',
     },
     {
       type: 'paragraph',
-      html: '施瓦西半径与质量呈线性关系，因此10倍太阳质量的黑洞半径约为29.5公里；而像人马座A*那样400万倍太阳质量的黑洞，其半径约为1180万公里。模拟器采用对数滑块，方便用户同时探索恒星级与超大质量黑洞。',
+      html: '由于半径与质量成正比，10倍太阳质量的黑洞半径约为29.5公里。',
     },
     {
       type: 'table',
-      headers: ['区域', '施瓦西半径倍数', '含义'],
+      headers: ['区域', '以史瓦西半径为单位的半径', '物理意义'],
       rows: [
-        ['事件视界', '1.0 Rs', '逃逸速度等于光速的单向边界'],
-        ['光子球', '1.5 Rs', '光线可在此做不稳定的圆周运动'],
-        ['ISCO', '3.0 Rs', '有质量粒子的最内层稳定圆轨道'],
-        ['弱引力场', '6 Rs及以上', '引力较弱，轨道易于维持稳定'],
+        ['事件视界', '1.0 Rs', '逃逸速度等于光速的单向边界。'],
+        ['光子球', '1.5 Rs', '光线的非稳定圆轨道。'],
+        ['ISCO', '3.0 Rs', '有质量粒子的最内侧稳定圆轨道。'],
+        ['弱场区域', '6 Rs 及以外', '引力依然强劲，但圆轨道更容易维持。'],
       ],
+    },
+    {
+      type: 'title',
+      text: '逃逸速度与视界作为因果边界的原理',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '逃逸速度是指物体在没有额外推进力的情况下到达无限远处所需的最小速度。',
+    },
+    {
+      type: 'paragraph',
+      html: '逃逸速度读数提供了直观参考，但并非完整的相对论描述。',
+    },
+    {
+      type: 'title',
+      text: '黑洞附近的时间膨胀与引力红移',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '相比远处的观察者，固定在黑洞外侧特定半径处的时钟走得更慢。简化因子为 <strong>sqrt(1 - Rs / r)</strong>。',
+    },
+    {
+      type: 'paragraph',
+      html: '引力红移遵循相同的几何原理。光线从引力深井爬出时会损失能量。',
+    },
+    {
+      type: 'title',
+      text: '光子球与ISCO详解',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '1.5 Rs 处的光子球是光线理论上可以围绕史瓦西黑洞运行的非稳定轨道。',
+    },
+    {
+      type: 'paragraph',
+      html: '3 Rs 处的 ISCO 代表物质最内侧的稳定圆轨道。',
+    },
+    {
+      type: 'title',
+      text: '恒星级黑洞与超大质量黑洞的比较',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '一个出乎意料的规律是，越巨大的黑洞在视界处的潮汐力反而越温和。',
+    },
+    {
+      type: 'paragraph',
+      html: '模拟器包含了以每米地球重力加速度表示的潮汐梯度读数。',
+    },
+    {
+      type: 'title',
+      text: '本模拟器的局限性',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>无自旋：</strong> 采用史瓦西几何。',
+        '<strong>吸积物理简化：</strong> 仅显示示意性吸积盘。',
+        '<strong>无光线追踪：</strong> 教学示意图。',
+        '<strong>静止观察者时钟：</strong> 非自由落体坐标。',
+      ],
+    },
+    {
+      type: 'title',
+      text: '常见问题',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '使用本工具估算黑洞的相关物理参数。',
     },
   ],
   faq,

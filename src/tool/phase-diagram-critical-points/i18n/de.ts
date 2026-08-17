@@ -84,7 +84,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Dieser Phasendiagramm-Visualisierer verwandelt ein abstraktes Druck-Temperatur-Diagramm in eine interaktive Karte. Wählen Sie eine Substanz, ändern Sie Temperatur und Druck, und sehen Sie, ob die Probe als Feststoff, Flüssigkeit, Gas oder überkritische Flüssigkeit vorhergesagt wird.',
+      html: 'Dieser Phasendiagramm-Visualisierer verwandelt ein abstraktes Druck-Temperatur-Diagramm in eine interaktive Karte. Wählen Sie eine Substanz, ändern Sie Temperatur und Druck, und sehen Sie, ob die Probe als Feststoff, Flüssigkeit, Gas oder überkritische Flüssigkeit vorliegt. Das Ziel ist es, Phasenübergänge räumlich greifbar zu machen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Das Werkzeug richtet sich an Studierende, Lehrkräfte und Wissenschaftsbegeisterte, die eine klare Erklärung für Phasendiagramme suchen. Es betont die wichtigsten Phänomene der Thermodynamik: den Tripelpunkt, die Siedekurve, die Schmelzlinie und den kritischen Punkt.',
     },
     {
       type: 'title',
@@ -92,14 +96,48 @@ export const content: ToolLocaleContent = {
       level: 3,
     },
     {
+      type: 'paragraph',
+      html: 'Ein Phasendiagramm trägt die Temperatur auf der horizontalen Achse und den Druck auf der vertikalen Achse auf. Jedes Feld kennzeichnet den unter diesen Bedingungen stabilen Aggregatzustand.',
+    },
+    {
       type: 'table',
-      headers: ['Diagrammmerkmal', 'Bedeutung', 'Was im Werkzeug zu beachten ist'],
+      headers: ['Diagrammmerkmal', 'Bedeutung', 'Was im Werkzeug zu beobachten ist'],
       rows: [
-        ['Tripelpunkt', 'Fest, flüssig und gasförmig koexistieren', 'Der Tieftemperatur-Knotenpunkt.'],
+        ['Tripelpunkt', 'Fest, flüssig und gasförmig koexistieren', 'Der Tieftemperatur-Knotenpunkt, an dem die Phasenlinien zusammentreffen.'],
         ['Dampf-Flüssig-Grenze', 'Siede- oder Kondensationsgleichgewicht', 'Die Kurve vom Tripelpunkt zum kritischen Punkt.'],
-        ['Fest-Flüssig-Grenze', 'Schmelz- oder Gefriergleichgewicht', 'Die Trennlinie zwischen Festkörper und Flüssigkeit.'],
-        ['Kritischer Punkt', 'Ende der Dampf-Flüssig-Grenze', 'Der Endpunkt, an dem die latente Wärme verschwindet.'],
-        ['Überkritischer Bereich', 'Keine scharfe Flüssig-Gas-Trennung', 'Der Hochtemperatur- und Hochdruckbereich.'],
+        ['Fest-Flüssig-Grenze', 'Schmelz- oder Gefriergleichgewicht', 'Steile Trennlinie zwischen festem und flüssigem Bereich.'],
+        ['Kritischer Punkt', 'Ende der Dampf-Flüssig-Grenze', 'Der hervorgehobene Endpunkt, an dem die Phasengrenze verschwindet.'],
+        ['Überkritischer Bereich', 'Keine scharfe Flüssig-Gas-Trennung', 'Der Hochtemperatur- und Hochdruckbereich jenseits des kritischen Punkts.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Warum der kritische Punkt entscheidend ist',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Unterhalb des kritischen Punkts verläuft das Sieden als Phasenübergang mit latenter Wärme. Am kritischen Punkt endet diese Phasengrenze.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Überkritische Flüssigkeiten finden breite Anwendung in der chemischen Verfahrenstechnik, etwa bei der schonenden Extraktion von Koffein mit überkritischem Kohlendioxid.',
+    },
+    {
+      type: 'title',
+      text: 'Vereinfachungen des Modells',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Reale Phasendiagramme enthalten oft Polymorphe oder komplexe Feststoffphasen. Dieses Lernwerkzeug nutzt geglättete Modellkurven zur anschaulichen Vermittlung der Grundkonzepte.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Für Intuition nutzen:</strong> erklärt Anschaulich Phänomene wie Schnellkochtöpfe, Trockeneis und überkritische Fluide.',
+        '<strong>Nicht für die technische Auslegung nutzen:</strong> Reale Laboranwendungen erfordern hochpräzise Zustandsgleichungen.',
+        '<strong>Trends beobachten:</strong> Bei Annäherung an den kritischen Punkt schwindet der Dichteunterschied zwischen Flüssigkeit und Dampf.',
       ],
     },
   ],

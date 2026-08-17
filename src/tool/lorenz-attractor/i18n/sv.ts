@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Vad betyder parametrarna?",
     "answer": "Sigma representerar Prandtl-talet, Rho Rayleigh-talet, och Beta ett geometriskt forhallande."
+  },
+  {
+    "question": "Varför ser attraktorn ut som en fjäril?",
+    "answer": "Formen med två vingar uppstår eftersom systemet har två instabila jämviktspunkter som banorna uförutsägbart kretsar kring."
+  },
+  {
+    "question": "Är Lorenz-attraktorn verkligen slumpmässig?",
+    "answer": "Nej, systemet är helt deterministiskt. Men eftersom det är kaotiskt är det på lång sikt oförutsägbart."
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Fjariilseffekten: Kanslighet for Begynnelsevilkor", level: 3 },
     { type: 'paragraph', html: "Det definierande draget hos kaotiska system ar deras <strong>kanslighet for begynnelsevilkor</strong>, populart kand som <strong>Fjariilseffekten</strong>. Denna simulator demonstrerar detta genom att kora tva banor (T1 i cyan och T2 i rosa) med en minimal separation. Initialt foljer de nastan samma vag. Efter en kort tid forstarker de icke-linjara termerna skillnaden och banorna avviker fullstandigt." },
+    { type: 'paragraph', html: "Denna känslighet demonstreras genom att följa två nästan identiska banor." },
     {
       type: 'table',
       headers: ["Parameter","Standardvarde","Fysisk Kontext","Beteende vid Andring"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Fasrum, Underfunderliga Attraktorer och Fraktaler", level: 3 },
     { type: 'paragraph', html: "I klassisk fysik stabiliseras banor i fasta punkter eller upprepas som gransscykler. Lorenz-systemet gor ingendera: banan slingrar sig oandligt i tre dimensioner utan att korsas, och bildar en <strong>underlig attraktor</strong> med fraktal geometri (Hausdorff-dimension ungefar 2,06)." },
+    { type: 'paragraph', html: "Geometrin för denna attraktor är fraktal med en Hausdorff-dimension på cirka 2,06." },
     { type: 'title', text: "Tillämpningar av Kaosteorin inom Vetenskapen", level: 3 },
     { type: 'paragraph', html: "Lärdomarna från Lorenz-attraktorn sträcker sig långt bortom väderprognoser och har påverkat många moderna studieområden:" },
     {

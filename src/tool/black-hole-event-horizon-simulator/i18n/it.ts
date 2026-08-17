@@ -106,39 +106,114 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulatore dell\'orizzonte degli eventi: raggio di Schwarzschild, sfera dei fotoni e dilatazione temporale',
+      text: 'Simulatore dell\'orizzonte degli eventi di un buco nero per raggio di Schwarzschild, sfera di fotoni e dilatazione temporale',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Questo simulatore trasforma le idee fondamentali dei buchi neri di Schwarzschild in un modello visivo interattivo. Cambia la massa, sposta una sonda e confronta come reagiscono l\'orizzonte degli eventi, la sfera dei fotoni, l\'ISCO, la velocità di fuga, il redshift gravitazionale e la dilatazione temporale.',
+      html: 'Questo simulatore dell\'orizzonte degli eventi trasforma i concetti chiave dei buchi neri di Schwarzschild in un modello visivo interattivo.',
     },
     {
       type: 'paragraph',
-      html: 'Il simulatore è progettato per studenti, insegnanti e curiosi che cercano più di una semplice formula statica. Il display collega i dati numerici a un diagramma spaziale per illustrare perché l\'orizzonte non è una superficie materiale, perché i fotoni hanno un\'orbita instabile particolare e perché il moto circolare stabile si arresta prima dell\'orizzonte.',
+      html: 'Il simulatore è stato progettato per studenti di astronomia, docenti di fisica e appassionati.',
     },
     {
       type: 'title',
-      text: 'Come viene calcolato il raggio dell\'orizzonte degli eventi',
+      text: 'Come si calcola il raggio dell\'orizzonte degli eventi',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Per un buco nero senza rotazione né carica, il raggio dell\'orizzonte è il <strong>raggio di Schwarzschild</strong>. Si calcola come <strong>Rs = 2GM / c^2</strong>, dove G è la costante gravitazionale, M la massa del buco nero e c la velocità della luce. Una massa solare corrisponde a un raggio di circa 2,95 km.',
+      html: 'Per un buco nero non rotante e privo di carica, il raggio è il <strong>raggio di Schwarzschild</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Poiché il raggio di Schwarzschild scala linearmente con la massa, un buco nero di 10 masse solari ha un raggio vicino a 29,5 km, mentre un buco nero supermassiccio come Sagittarius A* (4 milioni di masse solari) ha un raggio di circa 11,8 milioni di chilometri. Il cursore usa una scala logaritmica per coprire entrambi gli ordini di grandezza.',
+      html: 'Poiché il raggio varia linearmente con la massa, 10 masse solari corrispondono a un raggio di circa 29,5 km.',
     },
     {
       type: 'table',
-      headers: ['Regione', 'Raggio (in Rs)', 'Significato'],
+      headers: ['Regione', 'Raggio in raggi di Schwarzschild', 'Significato'],
       rows: [
-        ['Orizzonte degli eventi', '1.0 Rs', 'Confine unidirezionale dove la velocità di fuga eguaglia quella della luce.'],
-        ['Sfera dei fotoni', '1.5 Rs', 'Orbite circolari instabili per la luce.'],
-        ['ISCO', '3.0 Rs', 'Orbite circolari stabili più interne per particelle con massa.'],
-        ['Campo debole', '6 Rs e oltre', 'La gravità resta forte, ma le orbite circolari sono più facili da sostenere.'],
+        ['Orizzonte degli eventi', '1.0 Rs', 'Il limite di non ritorno dove la velocità di fuga eguaglia c.'],
+        ['Sfera di fotoni', '1.5 Rs', 'L\'orbita circolare instabile per la luce.'],
+        ['ISCO', '3.0 Rs', 'L\'ultima orbita circolare stabile per le particelle dotate di massa.'],
+        ['Campo debole', '6 Rs e oltre', 'Gravità ancora forte ma orbite circolari stabili.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Velocità di fuga e confine causale',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La velocità di fuga è la velocità minima necessaria per allontanarsi all\'infinito senza propulsione.',
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'indicatore della velocità di fuga offre un\'intuizione utile ma non costituisce una descrizione relativistica completa.',
+    },
+    {
+      type: 'title',
+      text: 'Dilatazione temporale e redshift gravitazionale',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Un orologio fermo vicino a un buco nero scorre più lentamente rispetto a un osservatore distante. Il fattore semplificato è <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Il redshift gravitazionale segue la stessa geometria. La luce perde energia risalendo il pozzo gravitazionale.',
+    },
+    {
+      type: 'title',
+      text: 'Spiegazione della sfera di fotoni e dell\'ISCO',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La sfera di fotoni a 1.5 Rs è il punto in cui la luce può percorrere un\'orbita circolare instabile.',
+    },
+    {
+      type: 'paragraph',
+      html: 'L\'ISCO a 3 Rs rappresenta l\'ultima orbita circolare stabile per la materia.',
+    },
+    {
+      type: 'title',
+      text: 'Buchi neri stellari vs supermassicci',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Una lezione sorprendente è che i buchi neri supermassicci generano forze di marea meno violente all\'orizzonte.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Il simulatore include una lettura del gradiente di marea espressa in gravità terrestri per metro.',
+    },
+    {
+      type: 'title',
+      text: 'Limitazioni di questo simulatore',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Nessuna rotazione:</strong> utilizza la geometria di Schwarzschild.',
+        '<strong>Fisica di accrescimento semplificata:</strong> disco visivo indicativo.',
+        '<strong>Nessun ray tracing:</strong> diagramma educativo.',
+        '<strong>Orologio stazionario:</strong> non in caduta libera.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Domande frequenti',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Utilizza questo strumento per stimare i parametri di un buco nero.',
     },
   ],
   faq,

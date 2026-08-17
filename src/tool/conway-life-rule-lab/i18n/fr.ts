@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Utilisez une notation B/S comme B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Simulateur du Jeu de la Vie de Conway avec règles modifiables', level: 2 },
-    { type: 'paragraph', html: 'Ce laboratoire de règles vous permet d\'exécuter l\'automate cellulaire classique et de modifier et comparer ses règles. Le plateau prend en charge le dessin direct, le placement de motifs, les graines aléatoires, l\'inspection pas à pas, le tempo variable et les mesures en direct pour la population, la densité, les naissances, les morts et la stabilité.' },
-    { type: 'title', text: 'Comment les règles B/S changent le jeu', level: 3 },
-    { type: 'paragraph', html: 'Les automates cellulaires de type Life sont souvent écrits en <strong>notation B/S</strong>. Le côté B définit combien de voisins vivants une cellule morte a besoin pour naître ; le côté S définit combien de voisins une cellule vivante a besoin pour survivre. La règle originale de Conway, <strong>B3/S23</strong>, est célèbre car elle se situe dans une région étroite entre extinction et croissance incontrôlée.' },
-    { type: 'title', text: 'Lire les métriques en direct', level: 3 },
-    { type: 'paragraph', html: 'La population et la densité montrent combien de cellules sont vivantes, mais elles ne racontent pas toute l\'histoire. Les naissances et les morts exposent le niveau d\'activité actuel, tandis que la stabilité estime si la colonie se stabilise dans un oscillateur, se fige dans des structures statiques ou reste turbulente.' },
+    {
+      type: 'title',
+      text: 'Simulateur du Jeu de la vie de Conway avec règles modifiables',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ce laboratoire de règles du Jeu de la vie de Conway vous permet d\'exécuter l\'automate cellulaire classique et de modifier ou comparer ses règles.',
+    },
+    {
+      type: 'title',
+      text: 'Comment les règles B/S changent le jeu',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Les automates cellulaires de type Life s\'écrivent en <strong>notation B/S</strong>. La règle originale de Conway, <strong>B3/S23</strong>, est célèbre pour son équilibre subtil.',
+    },
+    {
+      type: 'table',
+      headers: ['Règle', 'Comportement à observer', 'Bonne expérience'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Planeurs classiques, oscilleurs et canons.', 'Placez le canon de Gosper et observez la population.'],
+        ['<strong>B36/S23</strong>', 'HighLife prend en charge l\'auto-réplication.', 'Comparez la même graine avec B3/S23.'],
+        ['<strong>B2/S</strong>', 'Les cellules ne survivent jamais.', 'Commencez avec une petite graine.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night prend en charge des structures inverses.', 'Testez avec une forte densité.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Pourquoi les motifs comptent',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Les motifs forment le vocabulaire du Jeu de la vie. Les planeurs montrent le mouvement et les pulsars l\'oscillation.',
+    },
+    {
+      type: 'title',
+      text: 'Lire les métriques en direct',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La population et la densité indiquent combien de cellules sont vivantes, mais les naissances et décès révèlent le niveau d\'activité.',
+    },
   ],
   faq,
   bibliography,

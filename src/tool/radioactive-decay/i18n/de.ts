@@ -45,11 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Neues Atommuster',
   },
   seo: [
-    { type: 'title', text: 'Halbwertszeit-Rechner: verbleibende Atome, Aktivität und Isotop-Beispiele', level: 2 },
-    { type: 'paragraph', html: 'Mit diesem Rechner für radioaktiven Zerfall schätzen Sie, wie viel eines instabilen Isotops nach einer bestimmten Zeit noch vorhanden ist. Er deckt die wichtigsten Suchabsichten ab: die Halbwertszeit-Formel finden, sie auf reale Isotope anwenden, verbleibende Mutterkerne mit zerfallenen Kernen vergleichen und verstehen, warum Aktivität mit der Zeit abnimmt.' },
-    { type: 'title', text: 'Verwendete Formel für radioaktiven Zerfall', level: 3 },
-    { type: 'paragraph', html: 'Die Formel lautet <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> ist die Anfangszahl der Mutterkerne, <strong>N(t)</strong> die erwartete Restzahl nach der Zeit <strong>t</strong>, und <strong>T1/2</strong> die Halbwertszeit. Der Exponent <strong>t / T1/2</strong> zählt die vergangenen Halbwertszeiten.' },
-    { type: 'table', headers: ['Verstrichene Zeit', 'Formelfaktor', 'Verbleibende Mutterkerne', 'Relative Aktivität'], rows: [['0 Halbwertszeiten', '(1/2)^0', '100%', '100%'], ['1 Halbwertszeit', '(1/2)^1', '50%', '50%'], ['2 Halbwertszeiten', '(1/2)^2', '25%', '25%'], ['3 Halbwertszeiten', '(1/2)^3', '12,5%', '12,5%'], ['5 Halbwertszeiten', '(1/2)^5', '3,125%', '3,125%'], ['10 Halbwertszeiten', '(1/2)^10', '0,098%', '0,098%']] },
+    {
+      type: 'title',
+      text: 'Halbwertszeit-Rechner: verbleibende Atome, Aktivität und Isotop-Beispiele',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Mit diesem Rechner für radioaktiven Zerfall schätzen Sie, wie viel eines instabilen Isotops nach einer bestimmten Zeit noch vorhanden ist. Er deckt die wichtigsten Suchabsichten ab: die Halbwertszeit-Formel finden, sie auf reale Isotope anwenden, verbleibende Mutterkerne mit zerfallenen Kernen vergleichen und verstehen, warum Aktivität mit der Zeit abnimmt.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Das Werkzeug kombiniert zwei komplementäre Modelle. Die numerischen Ergebnisse nutzen die Standard-Zerfallsgleichung, während das Atomfeld einzelne Kerne mit stochastischen Schwellen simuliert.',
+    },
+    {
+      type: 'title',
+      text: 'Verwendete Formel für radioaktiven Zerfall',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Formel lautet <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> ist die Anfangszahl der Mutterkerne, <strong>N(t)</strong> die erwartete Restzahl nach der Zeit <strong>t</strong>, und <strong>T1/2</strong> die Halbwertszeit. Der Exponent <strong>t / T1/2</strong> zählt die vergangenen Halbwertszeiten.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Wenn beispielsweise eine Probe mit 1.000 Mutterkernen beginnt und zwei Halbwertszeiten verstreichen, beträgt die erwartete Restmenge 1.000 x (1/2)^2 = 250 Kerne. Die zerfallene Menge ist die Differenz: 750 Kerne.',
+    },
+    {
+      type: 'table',
+      headers: ['Verstrichene Zeit', 'Formelfaktor', 'Verbleibende Mutterkerne', 'Relative Aktivität'],
+      rows: [
+        ['0 Halbwertszeiten', '(1/2)^0', '100%', '100%'],
+        ['1 Halbwertszeit', '(1/2)^1', '50%', '50%'],
+        ['2 Halbwertszeiten', '(1/2)^2', '25%', '25%'],
+        ['3 Halbwertszeiten', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 Halbwertszeiten', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 Halbwertszeiten', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Berechnung der Restaktivität nach einer Halbwertszeit',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Für ein einzelnes Mutterisotop ist die Aktivität proportional zur Anzahl der nicht zerfallenen Kerne. Verbleiben 25% des Mutterisotops, beträgt die Aktivität ebenfalls ca. 25% des Anfangswerts.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Diese Beziehung ist in der Nuklearmedizin und im Strahlenschutz von zentraler Bedeutung.',
+    },
+    {
+      type: 'title',
+      text: 'Beispiele: Kohlenstoff-14, Iod-131, Technetium-99m, Uran-238 und Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Isotop', 'Ungefähre Halbwertszeit', 'Typische Anwendung', 'Bedeutung des Ergebnisses'],
+      rows: [
+        ['Kohlenstoff-14', '5.730 Jahre', 'Radiokarbondatierung', 'Verbleibende C-14-Aktivität in organischem Material.'],
+        ['Iod-131', '8,02 Tage', 'Medizinische Therapie', 'Abfall der Aktivität über Tage nach Behandlung.'],
+        ['Technetium-99m', '6,01 Stunden', 'Diagnostische Bildgebung', 'Warum medizinische Aktivität innerhalb eines Tages abnimmt.'],
+        ['Uran-238', '4,47 Milliarden Jahre', 'Geologische Datierung', 'Warum langlebige Isotope über Erdzeitalter messbar bleiben.'],
+        ['Radon-222', '3,82 Tage', 'Innenraumstrahlung', 'Veränderung einer Gasquelle über Tage.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Diese Beispiele decken verschiedene Zeitskalen und wissenschaftliche Fragestellungen ab.',
+    },
+    {
+      type: 'title',
+      text: 'Lesen der stochastischen Atom-Simulation',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Das animierte Atomfeld ist stochastisch modelliert. Bei kleinen Proben schwanken die Ergebnisse natürlich um den theoretischen Wert.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Die glatte Kurve entsteht erst bei der Auswertung vieler unabhängiger Zufallsereignisse.',
+    },
+    {
+      type: 'title',
+      text: 'Anwendungsbereiche des Halbwertszeit-Rechners',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Physikunterricht:</strong> Berechnung verbleibender Kerne und Verknüpfung mit einem visuellen Modell.',
+        '<strong>Chemie und Kernphysik:</strong> Vergleich von Isotopenstabilität und Zerfallsgeschwindigkeiten.',
+        '<strong>Radiokarbondatierung:</strong> Verständnis für den Zerfall organischer Proben.',
+        '<strong>Nuklearmedizin:</strong> Planung von Bildgebungsverfahren mit kurzlebigen Isotopen.',
+        '<strong>Strahlenschutz:</strong> Abschätzung des Aktivitätsabfalls über die Zeit.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Wichtige Einschränkungen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dieser Rechner modelliert das Mutterisotop mit einer einzelnen Halbwertszeit.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Nutzen Sie die Ergebnisse als didaktisches Modell und wissenschaftliche Orientierung.',
+    },
   ],
   faq,
   bibliography,

@@ -68,29 +68,29 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Kalkulator zbioru Mandelbrota: Fraktale, czas ucieczki i samopodobieństwo',
+      text: 'Kalkulator Zbioru Mandelbrota dla Fraktali, Czasu Ucieczki i Samopodobieństwa',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Ten kalkulator fraktala Mandelbrota renderuje klasyczny zbiór na płaszczyźnie zespolonej, zdefiniowany przez iterację <strong>z(n+1) = z(n)^2 + c</strong>. Jest zaprojektowany do eksploracji, a nie biernego oglądania: każde kliknięcie wycentrowuje płaszczyznę, każde zbliżenie odsłania mniejsze matematyczne sąsiedztwo, a suwak iteracji pozwala zdecydować, jak głęboko kalkulator powinien testować granice przed pokolorowaniem punktu jako stabilnego lub uciekającego.',
+      html: 'Ten kalkulator fraktala Mandelbrota generuje klasyczny zbiór na płaszczyźnie zespolonej zdefiniowany iteracją <strong>z(n+1) = z(n)^2 + c</strong>. Jest zaprojektowany do eksploracji.',
     },
     {
       type: 'title',
-      text: 'Jak czytać obraz Mandelbrota',
+      text: 'Jak interpretować obraz Mandelbrota',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Ciemny centralny kształt oznacza punkty, których orbity pozostają ograniczone w ramach obecnego budżetu iteracji. Kolorowe zewnętrzne to mapa czasu ucieczki. Punkt pokolorowany blisko zbioru może przetrwać setki iteracji, zanim jego wielkość przekroczy promień ucieczki, podczas gdy punkt daleko ucieka prawie natychmiast. Najbardziej interesująca naukowo geometria zwykle nie znajduje się wewnątrz wypełnionego kształtu, ale wzdłuż granicy, gdzie ograniczone i nieograniczone zachowanie się przeplata.',
+      html: 'Ciemny centralny kształt oznacza punkty, których orbity pozostają ograniczone. Kolorowy obszar zewnętrzny to mapa czasu ucieczki.',
     },
     {
       type: 'table',
-      headers: ['Sterowanie', 'Co zmienia', 'Kiedy zwiększyć'],
+      headers: ['Kontrola', 'Co zmienia', 'Kiedy zwiększać'],
       rows: [
-        ['<strong>Głębokość iteracji</strong>', 'Ile kroków rekurencji jest testowanych dla każdego piksela.', 'Używaj wyższych wartości po zbliżeniu do cienkich filamentów lub miniaturowych kopii.'],
-        ['<strong>Kontrast ucieczki</strong>', 'Jak silnie gładkie wartości ucieczki są rozdzielane na widoczne pasma.', 'Podnieś go, gdy obraz wygląda płasko; obniż, gdy kolory są zbyt ostre.'],
-        ['<strong>Paleta</strong>', 'Mapowanie kolorów zastosowane do punktów zewnętrznych.', 'Zmieniaj palety, aby odsłonić struktury, które mogą być ukryte przez jedno pole koloru.'],
+        ['<strong>Głębokość iteracji</strong>', 'Ile kroków rekurstwnych testuje się dla każdego piksela.', 'Zwiększ po przybliżeniu wąskich włókien.'],
+        ['<strong>Kontrast ucieczki</strong>', 'Jak mocno gładkie wartości ucieczki dzielą się na widoczne pasma.', 'Zwiększ, jeśli obraz jest płaski.'],
+        ['<strong>Paleta</strong>', 'Mapowanie kolorów dla punktów zewnętrznych.', 'Zmień paletę, aby odsłonić ukryte struktury.'],
       ],
     },
     {
@@ -100,7 +100,25 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Jednym z powodów, dla których zbiór Mandelbrota jest tak słynny, jest jego quasi-samopodobieństwo. Gdy zbliżasz się do anten, spiral i dolin, wielokrotnie napotykasz małe, przypominające Mandelbrota wyspy, często nazywane minibrotami. Te kopie nie są jedynie dekoracyjne. Ich ułożenie odzwierciedla dynamikę odwzorowań kwadratowych, w tym okresowe bulwy, wzory bifurkacji i obszary, w których orbity pozostają uwięzione przez długi czas przed ucieczką.',
+      html: 'Jednym z powodów sławy zbioru Mandelbrota jest jego kwazi-samopodobieństwo. Przybliżając spirale, wielokrotnie napotyka się małe kopie całego zbioru, zwane minibrotami.',
+    },
+    {
+      type: 'title',
+      text: 'Dlaczego wysoka liczba iteracji ma znaczenie przy dużym powiększeniu',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Przy dużym powiększeniu punkty brzegowe wymagają znacznie więcej kroków, aby sprawdzić, czy uciekają. Za mała liczba iteracji zamazuje detale.',
+    },
+    {
+      type: 'title',
+      text: 'Znaczenie matematyczne współrzędnych zespolonych',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Odczyt współrzędnych pokazuje środek widoku jako liczbę zespoloną c = a + bi. Oś pozioma to część rzeczywista, a pionowa to część urojona.',
     },
   ],
   faq,

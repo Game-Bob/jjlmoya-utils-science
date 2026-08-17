@@ -9,34 +9,52 @@ const description =
 const howTo = [
   {
     name: 'Defina a população',
-    text: 'Escolha uma população pequena ou grande para observar como o tamanho da amostra influencia a estabilidade evolutiva.'
+    text: 'Escolha uma população pequena ou grande para observar como o tamanho da amostra influencia a estabilidade evolutiva.',
   },
   {
     name: 'Ajuste seleção e deriva',
-    text: 'Ajuste a pressão seletiva ou a intensidade da deriva para observar trajetórias evolutivas distintas.'
+    text: 'Ajuste a pressão seletiva ou a intensidade da deriva para observar trajetórias evolutivas distintas.',
   },
   {
     name: 'Acompanhe as gerações',
-    text: 'Execute a simulação e compare o traço dominante, a fitness e a diversidade ao longo do tempo.'
+    text: 'Execute a simulação e compare o traço dominante, a fitness e a diversidade ao longo do tempo.',
   },
   {
     name: 'Interprete os resultados',
-    text: 'Use as métricas para entender quando a adaptação vence e quando o acaso domina.'
+    text: 'Use as métricas para entender quando a adaptação vence e quando o acaso domina.',
   },
 ];
 
 const faq = [
   {
     question: 'Qual é a diferença entre seleção natural e deriva genética?',
-    answer: 'A seleção natural não é aleatória: características vantajosas aumentam a fitness e tornam-se mais comuns. A deriva genética é uma mudança aleatória nas frequências alélicas, ocorrendo puramente por acaso, sendo muito mais forte em populações reduzidas.'
+    answer:
+      'A seleção natural não é aleatória: características vantajosas aumentam a fitness e tornam-se mais comuns. A deriva genética é uma mudança aleatória nas frequências alélicas, sendo muito mais forte em populações reduzidas.',
   },
   {
     question: 'Por que populações pequenas mudam mais rapidamente?',
-    answer: 'Em populações pequenas, o erro de amostragem é maior, o que significa que o acaso tem um peso muito superior na composição da próxima geração.'
+    answer:
+      'Em populações pequenas, o erro de amostragem é maior, o que significa que o acaso tem um peso muito superior na composição da próxima geração.',
   },
   {
     question: 'A deriva pode superar a seleção?',
-    answer: 'Sim. Um alelo vantajoso pode ser eliminado por puro acaso se a deriva genética for forte o suficiente para superar o benefício seletivo.'
+    answer:
+      'Sim. Um alelo vantajoso pode ser eliminado por puro acaso se a deriva genética for forte o suficiente para superar o benefício seletivo.',
+  },
+  {
+    question: 'O que significa fitness neste simulador?',
+    answer:
+      'Fitness é uma pontuação simplificada que indica o quão bem a população está adaptada ao ambiente escolhido.',
+  },
+  {
+    question: 'Por que o tamanho da população é importante?',
+    answer:
+      'Determina o quanto as flutuações aleatórias afetam as frequências alélicas.',
+  },
+  {
+    question: 'Quando devo usar este simulador?',
+    answer:
+      'Quando quiser compreender a intuição por trás da evolução, especialmente a diferença entre seleção e deriva.',
   },
 ];
 
@@ -66,12 +84,89 @@ export const content: NaturalSelectionLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Seleção natural vs deriva genética: entenda a evolução com uma população viva',
-      level: 2
+      text: 'Seleção natural vs deriva genética: entender a evolução com uma população viva',
+      level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Este simulador oferece uma visualização clara da diferença entre a seleção adaptativa e o efeito estocástico da deriva genética, tornando conceitos complexos de biologia evolutiva acessíveis e práticos.'
+      html:
+        'Se você quer entender a diferença entre seleção natural e deriva genética, este simulador oferece a camada visual necessária. Em vez de ler definições estáticas, você observa uma população a evoluir em tempo real.',
+    },
+    {
+      type: 'title',
+      text: 'O que significam os controlos e por que são importantes',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html:
+        'A seleção natural aumenta a frequência de traços vantajosos. A deriva genética altera as frequências de forma puramente estocástica.',
+    },
+    {
+      type: 'paragraph',
+      html:
+        'Ambas as forças atuam simultaneamente: em populações grandes a seleção domina, enquanto em populações pequenas o acaso pode eliminar traços úteis.',
+    },
+    {
+      type: 'title',
+      text: 'Como ler os resultados da simulação',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html:
+        'As métricas em tempo real mostram o traço dominante, a diversidade genética, a fitness final e a estabilidade da população.',
+    },
+    {
+      type: 'title',
+      text: 'Por que o tamanho da população altera a história',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Pressão seletiva:</strong> O quanto o ambiente favorece um traço.',
+        '<strong>Intensidade da deriva:</strong> O ruído de amostragem aleatória.',
+        '<strong>Taxa de mutação:</strong> A frequência de novas variações.',
+        '<strong>Número de alelos:</strong> A diversidade inicial no sistema.',
+        '<strong>Diversidade genética:</strong> A matéria-prima da evolução.',
+      ],
+    },
+    {
+      type: 'paragraph',
+      html:
+        'Uma ferramenta prática para compreender a seleção, deriva e mutação em sistemas biológicos.',
+    },
+    {
+      type: 'title',
+      text: 'Exemplos rápidos para experimentar',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Objetivo', 'Alteração', 'Resultado esperado'],
+      rows: [
+        [
+          'Mostrar seleção',
+          'Aumentar pressão seletiva e reduzir deriva',
+          'Um alelo domina gradualmente',
+        ],
+        [
+          'Mostrar deriva',
+          'Reduzir população e aumentar deriva',
+          'Flutuações aleatórias nas frequências',
+        ],
+        [
+          'Mostrar mutação',
+          'Aumentar taxa de mutação',
+          'Novos alelos surgem regularmente',
+        ],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html:
+        'A combinação de visuais em tempo real e métricas facilita a compreensão dos processos evolutivos.',
     },
   ],
   faq,
@@ -84,7 +179,7 @@ export const content: NaturalSelectionLocaleContent = {
       name: title,
       description,
       applicationCategory: 'EducationalApplication',
-      operatingSystem: 'Any'
+      operatingSystem: 'Any',
     },
     {
       '@context': 'https://schema.org',
@@ -92,8 +187,8 @@ export const content: NaturalSelectionLocaleContent = {
       mainEntity: faq.map((item) => ({
         '@type': 'Question',
         name: item.question,
-        acceptedAnswer: { '@type': 'Answer', text: item.answer }
-      }))
+        acceptedAnswer: { '@type': 'Answer', text: item.answer },
+      })),
     },
     {
       '@context': 'https://schema.org',
@@ -102,8 +197,8 @@ export const content: NaturalSelectionLocaleContent = {
       step: howTo.map((step) => ({
         '@type': 'HowToStep',
         name: step.name,
-        text: step.text
-      }))
+        text: step.text,
+      })),
     },
   ],
 };

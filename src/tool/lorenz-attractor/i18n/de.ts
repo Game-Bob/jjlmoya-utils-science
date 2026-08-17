@@ -36,6 +36,14 @@ const faq = [
   {
     question: 'Was bedeuten die Parameter?',
     answer: 'Sigma (σ) ist die Prandtl-Zahl (Verhältnis von Viskosität zu Wärmeleitfähigkeit), Rho (ρ) die Rayleigh-Zahl (Intensität der konvektiven Erwärmung) und Beta (β) das geometrische Aspektverhältnis der Konvektionszelle.'
+  },
+  {
+    question: 'Warum sieht der Attraktor wie ein Schmetterling aus?',
+    answer: 'Die ikonische Doppel-Flügel-Form entsteht, weil das System zwei instabile Gleichgewichtspunkte hat, um die die Trajektorien unvorhersehbar kreisen.'
+  },
+  {
+    question: 'Ist der Lorenz-Attraktor wirklich zufällig?',
+    answer: 'Nein, das System ist völlig deterministisch. Da es jedoch chaotisch ist, ist es ohne unendliche Präzision der Anfangsbedingungen langfristig unvorhersehbar.'
   }
 ];
 
@@ -66,19 +74,41 @@ export const content: ToolLocaleContent = {
   seo: [
     { type: 'title', text: 'Deterministisches Chaos: Die Lorenz-Gleichungen verstehen', level: 2 },
     { type: 'paragraph', html: 'Das Lorenz-System ist ein Meilenstein der nichtlinearen Dynamik und Chaostheorie. Es wurde 1963 vom Meteorologen <strong>Edward Lorenz</strong> entwickelt und entstand aus einem vereinfachten Modell der atmosphärischen Konvektion. Seine Entdeckung, dass einfache, deterministische Gleichungen hochkomplexes, nichtperiodisches Verhalten erzeugen können, hat unser Verständnis physikalischer Systeme grundlegend verändert.' },
+    { type: 'paragraph', html: 'Das System wird durch drei gekoppelte Differentialgleichungen beschrieben, die eine Koordinate im dreidimensionalen Phasenraum im Laufe der Zeit verfolgen:' },
+    {
+      type: 'list',
+      items: [
+        '<strong>dx/dt = σ * (y - x):</strong> Beschreibt die Rate der konvektiven Bewegung.',
+        '<strong>dy/dt = x * (ρ - z) - y:</strong> Repräsentiert die Temperaturdifferenz.',
+        '<strong>dz/dt = x * y - β * z:</strong> Verfolgt die Verzerrung des vertikalen Temperaturprofils.',
+      ],
+    },
     { type: 'title', text: 'Schmetterlingseffekt: Sensitive Abhängigkeit von Anfangsbedingungen', level: 3 },
     { type: 'paragraph', html: 'Das charakteristische Merkmal chaotischer Systeme ist die <strong>sensitive Abhängigkeit von den Anfangsbedingungen</strong>, bekannt als <strong>Schmetterlingseffekt</strong>. In diesem Simulator starten zwei Trajektorien (T1 in Cyan, T2 in Pink) mit einem winzigen Anfangsunterschied. Nach kurzer Zeit verstärken die nichtlinearen Terme diesen Unterschied, und die Pfade divergieren vollständig.' },
+    { type: 'paragraph', html: 'Diese Empfindlichkeit wird demonstriert, indem zwei Trajektorien mit minimalem Abstand gestartet werden, die schließlich unterschiedliche Flügel des Attraktors umkreisen.' },
     {
       type: 'table',
-      headers: ['Parameter', 'Standardwert', 'Physikalische Bedeutung'],
+      headers: ['Parameter', 'Standardwert', 'Physikalische Bedeutung', 'Verhalten bei Änderung'],
       rows: [
-        ['σ (Sigma)', '10.0', 'Prandtl-Zahl: bestimmt die innere Reibung des Fluids.'],
-        ['ρ (Rho)', '28.0', 'Rayleigh-Zahl: Haupttreiber des Chaos; Heizintensität.'],
-        ['β (Beta)', '8/3', 'Aspektverhältnis: Steuert die Form und Rotationsgeschwindigkeit der Orbits.']
+        ['σ (Sigma)', '10.0', 'Prandtl-Zahl', 'Bestimmt die innere Reibung des Fluids.'],
+        ['ρ (Rho)', '28.0', 'Rayleigh-Zahl', 'Haupttreiber des Chaos.'],
+        ['β (Beta)', '8/3 (2.667)', 'Aspektverhältnis', 'Steuert die Form und Rotationsgeschwindigkeit.'],
       ],
     },
     { type: 'title', text: 'Phasenraum, Seltsame Attraktoren und Fraktale', level: 3 },
-    { type: 'paragraph', html: 'In der klassischen Physik enden Trajektorien oft in stabilen Punkten oder wiederholen sich. Das Lorenz-System tut weder das eine noch das andere: Die Bahn schlingt sich unendlich im dreidimensionalen Raum, ohne sich selbst zu schneiden. Diese unbegrenzte, sich nicht wiederholende Struktur ist in einem endlichen Volumen des Phasenraums eingeschlossen und bildet einen <strong>seltsamen Attraktor</strong> mit fraktaler Geometrie (Hausdorff-Dimension ca. 2.06).' }
+    { type: 'paragraph', html: 'In der klassischen Physik enden Trajektorien oft in stabilen Punkten oder wiederholen sich. Das Lorenz-System tut weder das eine noch das andere: Die Bahn schlingt sich unendlich im dreidimensionalen Raum, ohne sich selbst zu schneiden. Diese unbegrenzte, sich nicht wiederholende Struktur ist in einem endlichen Volumen des Phasenraums eingeschlossen und bildet einen <strong>seltsamen Attraktor</strong> mit fraktaler Geometrie (Hausdorff-Dimension ca. 2.06).' },
+    { type: 'paragraph', html: 'Die Geometrie dieses Attraktors ist fraktal mit einer Hausdorff-Dimension von ca. 2,06.' },
+    { type: 'title', text: 'Anwendungen der Chaostheorie in der Wissenschaft', level: 3 },
+    { type: 'paragraph', html: 'Die Erkenntnisse aus dem Lorenz-Attraktor reichen weit über die Wettervorhersage hinaus:' },
+    {
+      type: 'list',
+      items: [
+        '<strong>Meteorologie:</strong> Setzte die Grenzen der Wettervorhersagbarkeit.',
+        '<strong>Kryptographie:</strong> Erzeugung sicherer Pseudozufallsschlüssel.',
+        '<strong>Kardiologie:</strong> Modellierung chaotischer Herzrhythmen.',
+        '<strong>Ingenieurwesen:</strong> Vermeidung chaotischer Resonanz in mechanischen Systemen.',
+      ],
+    },
   ],
   faq,
   bibliography,

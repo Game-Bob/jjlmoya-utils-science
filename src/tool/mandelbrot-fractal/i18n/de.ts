@@ -93,6 +93,33 @@ export const content: ToolLocaleContent = {
         ['<strong>Palette</strong>', 'Die Farbzuordnung, die auf äußere Punkte angewendet wird.', 'Paletten wechseln, um Strukturen sichtbar zu machen, die von einem Farbfeld verdeckt werden könnten.'],
       ],
     },
+    {
+      type: 'title',
+      text: 'Selbstähnlichkeit und Minibrots',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ein Grund für die Berühmtheit der Mandelbrot-Menge ist ihre Quasi-Selbstähnlichkeit. Beim Hineinzoomen in Antennen und Spiralarme begegnet man immer wieder kleinen Kopien der Gesamtkontur, sogenannten Minibrots.',
+    },
+    {
+      type: 'title',
+      text: 'Warum hohe Iterationszahlen bei tiefem Zoom wichtig sind',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Bei starker Vergrößerung benötigen Grenzpunkte deutlich mehr Rechenschritte, um festzustellen, ob ihre Bahn entweicht. Eine zu niedrige Iterationszahl lässt feine Strukturen verschwommen wirken.',
+    },
+    {
+      type: 'title',
+      text: 'Mathematische Bedeutung der komplexen Koordinaten',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Koordinatenanzeige zeigt den aktuellen Mittelpunkt des Bildausschnitts als komplexe Zahl c = a + bi an. Die horizontale Achse ist der Realteil, die vertikale der Imaginärteil.',
+    },
   ],
   faq,
   bibliography,

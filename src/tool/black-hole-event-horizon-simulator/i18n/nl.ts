@@ -1,4 +1,4 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'zwart-gat-gebeurtenishorizon-simulator';
@@ -106,39 +106,114 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Zwart gat gebeurtenishorizon simulator voor Schwarzschild-straal, fotonenbol en tijddilatatie',
+      text: 'Zwart Gat Gebeurtenishorizon Simulator voor Schwarzschild-radius, fotonsfeer en tijddilatatie',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Deze simulator voor de gebeurtenishorizon van een zwart gat zet de kernconcepten van Schwarzschild-zwarte gaten om in een interactief visueel model. Verander de massa, verplaats een sonde en vergelijk hoe de gebeurtenishorizon, fotonenbol, ISCO, ontsnappingssnelheid, gravitationele roodverschuiving en tijddilatatie reageren.',
+      html: 'Deze gebeurtenishorizon-simulator zet de kernconcepten van Schwarzschild-zwarte gaten om in een interactief visueel model.',
     },
     {
       type: 'paragraph',
-      html: 'De simulator is gebouwd voor astronomiestudenten, natuurkundedocenten, wetenschapsjournalisten en nieuwsgierige leerlingen die meer willen dan een statische formule. Het display verbindt getallen met een ruimtelijk diagram, zodat u kunt zien waarom de gebeurtenishorizon geen materieel oppervlak is, waarom fotonen een speciale onstabiele baan hebben en waarom stabiele cirkelbeweging stopt voordat de horizon wordt bereikt.',
+      html: 'De simulator is ontworpen voor studenten astronomie, docenten natuurkunde en nieuwsgierige onderzoekers.',
     },
     {
       type: 'title',
-      text: 'Hoe de Schwarzschild-straal wordt berekend',
+      text: 'Hoe de gebeurtenishorizon-radius wordt berekend',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Voor een niet-roterend, ongeladen zwart gat is de gebeurtenishorizon-straal de <strong>Schwarzschild-straal</strong>. Deze wordt berekend als <strong>Rs = 2GM / c^2</strong>, waarbij G de gravitatieconstante is, M de massa van het zwarte gat en c de lichtsnelheid. Eén zonnemassa komt overeen met een Schwarzschild-straal van ongeveer 2,95 kilometer.',
+      html: 'Voor een niet-roterend, ongeladen zwart gat is de radius de <strong>Schwarzschild-radius</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Omdat de Schwarzschild-straal lineair schaalt met de massa, heeft een zwart gat van 10 zonnemassa een straal van ongeveer 29,5 kilometer, terwijl een zwart gat van 4 miljoen zonnemassa zoals Sagittarius A* een straal heeft van ongeveer 11,8 miljoen kilometer. De massaschuif gebruikt een logaritmische schaal, zodat zowel stellaire als superzware zwarte gaten met dezelfde bediening kunnen worden verkend.',
+      html: 'Omdat de radius lineair schaalt met massa, heeft een zwart gat van 10 zonnemassa\'s een radius van ongeveer 29,5 km.',
     },
     {
       type: 'table',
-      headers: ['Gebied', 'Straal in Schwarzschild-stralen', 'Betekenis'],
+      headers: ['Regio', 'Radius in Schwarzschild-radii', 'Betekenis'],
       rows: [
-        ['Gebeurtenishorizon', '1,0 Rs', 'De eenrichtingsgrens waar ontsnappingssnelheid gelijk is aan lichtsnelheid.'],
-        ['Fotonenbol', '1,5 Rs', 'De onstabiele cirkelbaan voor licht rond een Schwarzschild-zwart gat.'],
-        ['ISCO', '3,0 Rs', 'De binnenste stabiele cirkelbaan voor massieve deeltjes.'],
-        ['Zwak veld', '6 Rs en verder', 'De zwaartekracht is nog sterk, maar cirkelbanen zijn gemakkelijker te handhaven.'],
+        ['Gebeurtenishorizon', '1.0 Rs', 'De grens van waaruit niets kan ontsnappen, omdat de ontsnappingssnelheid gelijk is aan c.'],
+        ['Fotonsfeer', '1.5 Rs', 'De instabiele cirkelvormige baan voor licht rond een Schwarzschild-zwart gat.'],
+        ['ISCO', '3.0 Rs', 'De binnenste stabiele cirkelvormige baan voor deeltjes met massa.'],
+        ['Zwak veld', '6 Rs en verder', 'Zwaartekracht is nog steeds sterk, maar cirkelvormige banen zijn makkelijker te behouden.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Ontsnappingssnelheid en causale grens',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'De ontsnappingssnelheid is de snelheid die een object nodig heeft om zonder verdere voortstuwing willekeurig ver weg te komen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'De weergave van de ontsnappingssnelheid biedt nuttige intuïtie, maar is geen volledige relativistische beschrijving.',
+    },
+    {
+      type: 'title',
+      text: 'Tijddilatatie en gravitationele roodverschuiving',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Een klok die op een vaste afstand buiten een zwart gat staat, tikt langzamer vergeleken met een verre waarnemer. De vereenvoudigde factor is <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Gravitationele roodverschuiving volgt dezelfde geometrie. Licht dat uit de zwaartekrachtput klimt, verliest energie.',
+    },
+    {
+      type: 'title',
+      text: 'Fotonsfeer en ISCO uitgelegd',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'De fotonsfeer op 1.5 Rs is de plaats waar licht in principe in een instabiele cirkelvormige baan kan bewegen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'De ISCO op 3 Rs is de binnenste stabiele cirkelvormige baan voor materie.',
+    },
+    {
+      type: 'title',
+      text: 'Stellair versus supermassief zwart gat',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Een verrassende les is dat grotere zwarte gaten minder extreme getijdenkrachten hebben bij de horizon.',
+    },
+    {
+      type: 'paragraph',
+      html: 'De simulator bevat een getijdenverloopweergave in aardse zwaartekracht per meter.',
+    },
+    {
+      type: 'title',
+      text: 'Beperkingen van deze simulator',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Geen spin:</strong> gebruikt Schwarzschild-geometrie.',
+        '<strong>Vereenvoudigde accretiefysica:</strong> illustratieve schijf.',
+        '<strong>Geen ray tracing:</strong> educatief diagram.',
+        '<strong>Stationaire klok:</strong> niet in vrije val.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Veelgestelde vragen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Gebruik deze tool om de parameters van een zwart gat te schatten.',
     },
   ],
   faq,

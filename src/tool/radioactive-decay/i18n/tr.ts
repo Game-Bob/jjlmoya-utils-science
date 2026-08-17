@@ -45,14 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Yeni atom deseni',
   },
   seo: [
-    { type: 'title', text: 'Radyoaktif yari omur hesaplayici: kalan atomlar, aktivite ve izotop ornekleri', level: 2 },
-    { type: 'paragraph', html: 'Bu radyoaktif bozunma hesaplayicisi, kararsiz bir izotoptan belirli bir sure sonra ne kadar kaldigini tahmin eder. Yari omur formulu, gercek izotop uygulamalari, kalan ana cekirdekler, bozunan cekirdekler ve aktivite azalmasi gibi arama niyetlerini karsilar.' },
-    { type: 'paragraph', html: 'Kullanilan formul <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. Atom alani ise tek tek cekirdeklerin rastgele bozundugunu gosterir; buyuk orneklerde duzgun egri ortaya cikar.' },
-    { type: 'table', headers: ['Gecen sure', 'Faktor', 'Kalan ana cekirdek', 'Goreli aktivite'], rows: [['0 yari omur', '(1/2)^0', '100%', '100%'], ['1 yari omur', '(1/2)^1', '50%', '50%'], ['2 yari omur', '(1/2)^2', '25%', '25%'], ['3 yari omur', '(1/2)^3', '12,5%', '12,5%'], ['5 yari omur', '(1/2)^5', '3,125%', '3,125%'], ['10 yari omur', '(1/2)^10', '0,098%', '0,098%']] },
-    { type: 'title', text: 'Izotop ornekleri ve yorumlama', level: 3 },
-    { type: 'table', headers: ['Izotop', 'Yaklasik yari omur', 'Yaygin kullanim', 'Sonucun anlami'], rows: [['Karbon-14', '5.730 yil', 'Radyokarbon tarihleme', 'Bir zamanlar canli olan maddede kalan Karbon-14 aktivitesi.'], ['Iyot-131', '8,02 gun', 'Tedavi ve nukleer olaylar', 'Aktivitenin gunler icinde ne kadar hizli dustugu.'], ['Teknesyum-99m', '6,01 saat', 'Tani goruntuleme', 'Yararli tibbi aktivitenin klinik gun icinde neden azaldigi.'], ['Uranyum-238', '4,47 milyar yil', 'Jeolojik tarihleme', 'Uzun omurlu izotoplarin neden olculebilir kaldigi.'], ['Radon-222', '3,82 gun', 'Ic mekan radyasyonu', 'Gaz kaynakli maruziyetin nasil degistigi.']] },
-    { type: 'paragraph', html: 'Tek bir ana izotop icin aktivite bozunmamis cekirdek sayisiyla orantilidir. Arac egitim, nukleer kimya, radyokarbon sezgisi, tibbi izotop planlamasi ve radyasyon guvenligi icin yararlidir.' },
-    { type: 'paragraph', html: 'Model tek bir yari omur kullanir. Gercek olcumlerde dedektor verimi, arka plan radyasyonu, dallanma oranlari, kiz urunler, biyolojik atilim, kimyasal form, zirlama ve kalibrasyon egrileri gerekebilir. Sonucu tıbbi talimat veya dozimetri yerine kullanmayin.' },
+    {
+      type: 'title',
+      text: 'Radyoaktif yarı ömür hesaplayıcı: kalan atomlar, aktivite ve izotop örnekleri',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu radyoaktif bozunma hesaplayıcısı, kararsız bir izotoptan belirli bir süre sonra ne kadar kaldığını tahmin eder. Yarı ömür formülü, gerçek izotop uygulamaları, kalan ana çekirdekler, bozunan çekirdekler ve aktivite azalması gibi arama niyetlerini karşılar.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu araç iki tamamlayıcı modeli birleştirir. Sayısal sonuçlar standart üstel bozunma denklemini kullanırken, atom alanı rastgele eşiklerle tek tek çekirdekleri simüle eder.',
+    },
+    {
+      type: 'title',
+      text: 'Hesaplayıcı tarafından kullanılan radyoaktif bozunma formülü',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Kullanılan formül <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> başlangıçtaki ana çekirdek sayısı, <strong>N(t)</strong> <strong>t</strong> süresi sonundaki beklenen kalan miktar, <strong>T1/2</strong> ise yarı ömürdür.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Örneğin, bir örnek 1.000 ana çekirdekle başlarsa ve iki yarı ömür geçerse, beklenen kalan miktar 1.000 x (1/2)^2 = 250 çekirdektir. Bozunan miktar 750 çekirdektir.',
+    },
+    {
+      type: 'table',
+      headers: ['Geçen süre', 'Formül faktörü', 'Kalan ana çekirdek', 'Göreli aktivite'],
+      rows: [
+        ['0 yarı ömür', '(1/2)^0', '100%', '100%'],
+        ['1 yarı ömür', '(1/2)^1', '50%', '50%'],
+        ['2 yarı ömür', '(1/2)^2', '25%', '25%'],
+        ['3 yarı ömür', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 yarı ömür', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 yarı ömür', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Yarı ömürden sonra kalan aktivite nasıl hesaplanır',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Tek bir ana izotop için aktivite, bozunmamış çekirdek sayısı ile orantılıdır. Ana izotopun %25\'i kaldıysa, aktivite de başlangıç aktivitesinin yaklaşık %25\'i olur.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu ilişki nükleer tıp ve radyasyondan korunmada büyük önem taşır.',
+    },
+    {
+      type: 'title',
+      text: 'Örnekler: Karbon-14, İyot-131, Teknesyum-99m, Uranyum-238 ve Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['İzotop', 'Yaklaşık yarı ömür', 'Yaygın kullanım', 'Sonucun anlamı'],
+      rows: [
+        ['Karbon-14', '5.730 yıl', 'Radyokarbon tarihleme', 'Organik maddede kalan C-14 aktivitesi.'],
+        ['İyot-131', '8,02 gün', 'Tıbbi tedavi', 'Tedaviden sonraki günlerde aktivite düşüşü.'],
+        ['Teknesyum-99m', '6,01 saat', 'Tanısal görüntüleme', 'Tıbbi aktivitenin klinik gün içinde neden azaldığı.'],
+        ['Uranyum-238', '4,47 milyar yıl', 'Jeolojik tarihleme', 'Uzun ömürlü izotopların jeolojik ölçekte neden ölçülebilir kaldığı.'],
+        ['Radon-222', '3,82 gün', 'İç mekan radyasyonu', 'Gaz maruziyet kaynağının gün içindeki değişimi.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu örnekler farklı zaman ölçeklerini ve bilimsel uygulamaları kapsar.',
+    },
+    {
+      type: 'title',
+      text: 'Stokastik atom simülasyonu nasıl okunur',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Atom alanı stokastik olarak modellenmiştir. Küçük örneklerde sonuçlar teorik değer etrafında dalgalanır.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Pürüzsüz eğri ancak çok sayıda bağımsız rastgele olay toplandığında ortaya çıkar.',
+    },
+    {
+      type: 'title',
+      text: 'Yarı ömür hesaplayıcının kullanım alanları',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Fizik eğitimi:</strong> kalan çekirdeklerin hesaplanması ve görsel modelle ilişkilendirilmesi.',
+        '<strong>Nükleer kimya:</strong> izotop kararlılığı ve bozunma hızlarının karşılaştırılması.',
+        '<strong>Radyokarbon tarihleme:</strong> organik örneklerde bozunmanın anlaşılması.',
+        '<strong>Nükleer tıp:</strong> kısa yarı ömürlü izotoplarla görüntüleme planlaması.',
+        '<strong>Radyasyondan korunma:</strong> zamanla aktivite düşüşünün tahmini.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Önemli kısıtlamalar',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Bu hesaplayıcı ana izotopu tek bir yarı ömürle modeller.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Sonuçları eğitici bir model ve bilimsel bir tahmin olarak kullanın.',
+    },
   ],
   faq,
   bibliography,

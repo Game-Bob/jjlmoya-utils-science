@@ -45,14 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Nytt atommonster',
   },
   seo: [
-    { type: 'title', text: 'Kalkylator for radioaktiv halveringstid: atomer, aktivitet och isotoper', level: 2 },
-    { type: 'paragraph', html: 'Anvand kalkylatorn for att uppskatta hur mycket av en instabil isotop som finns kvar efter en viss tid. Den ar byggd for vanliga sokningar om halveringstid: formeln, verkliga isotoper, aterstaende moderkarnor, sonderfallna karnor och relativ aktivitet.' },
-    { type: 'paragraph', html: 'Berakningen anvander <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. Atomfaltet visar samtidigt hur enskilda karnor sonderfaller slumpmassigt, aven om ett stort prov foljer en jamn exponentiell kurva.' },
-    { type: 'table', headers: ['Tid', 'Faktor', 'Aterstaende moderkarnor', 'Relativ aktivitet'], rows: [['0 halveringstider', '(1/2)^0', '100%', '100%'], ['1 halveringstid', '(1/2)^1', '50%', '50%'], ['2 halveringstider', '(1/2)^2', '25%', '25%'], ['3 halveringstider', '(1/2)^3', '12,5%', '12,5%'], ['5 halveringstider', '(1/2)^5', '3,125%', '3,125%'], ['10 halveringstider', '(1/2)^10', '0,098%', '0,098%']] },
-    { type: 'title', text: 'Exempel och anvandning', level: 3 },
-    { type: 'table', headers: ['Isotop', 'Halveringstid', 'Vanlig sokavsikt', 'Vad resultatet visar'], rows: [['Kol-14', '5 730 ar', 'Radiokoldatering', 'Hur mycket kol-14-aktivitet som finns kvar.'], ['Jod-131', '8,02 dagar', 'Medicin och nukleara handelser', 'Hur aktiviteten faller over dagar.'], ['Teknetium-99m', '6,01 timmar', 'Bilddiagnostik', 'Varfor aktiviteten avtar inom en klinisk arbetsdag.'], ['Uran-238', '4,47 miljarder ar', 'Geologisk datering', 'Varfor langlivade isotoper kan matas over jordens historia.'], ['Radon-222', '3,82 dagar', 'Inomhusstralning', 'Hur en gasformig exponeringskalla forandras.']] },
-    { type: 'paragraph', html: 'For en enda moderisotop ar aktivitet proportionell mot antalet icke sonderfallna karnor. Verktyget ar anvandbart i undervisning, kemi, radiokoldatering, medicinsk isotopplanering och stralskyddsutbildning.' },
-    { type: 'paragraph', html: 'Modellen anvander en enda halveringstid. Verkliga matningar kan krava korrigeringar for detektoreffektivitet, bakgrundsstralning, dotterprodukter, biologisk eliminering, kemisk form, skarmning och kalibreringskurvor. Anvand resultatet som pedagogisk uppskattning, inte som medicinsk eller dosimetrisk radgivning.' },
+    {
+      type: 'title',
+      text: 'Kalkylator för radioaktiv halveringstid: återstående atomer, aktivitet och exempel',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Använd denna kalkylator för radioaktivt sönderfall för att uppskatta hur mycket av en instabil isotop som återstår efter en viss tid. Den täcker de vanligaste sökintentionerna: hitta formeln för halveringstid, tillämpa den på verkliga isotoper, jämföra återstående moderkärnor med sönderfallna kärnor och förstå varför aktiviteten minskar över tid.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Verktyget kombinerar två komplementära modeller. De numeriska resultaten använder den standardiserade exponentiella sönderfallsekvationen, medan atomfältet simulerar enskilda kärnor med stokastiska trösklar.',
+    },
+    {
+      type: 'title',
+      text: 'Formel för radioaktivt sönderfall som används i kalkylatorn',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Formeln är <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> är det ursprungliga antalet moderkärnor, <strong>N(t)</strong> är det förväntade antalet som återstår efter tiden <strong>t</strong>, och <strong>T1/2</strong> är halveringstiden.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Om ett prov till exempel startar med 1 000 moderkärnor och två halveringstider passerar, är den förväntade återstående mängden 1 000 x (1/2)^2 = 250 kärnor. Den sönderfallna mängden är 750 kärnor.',
+    },
+    {
+      type: 'table',
+      headers: ['Förfluten tid', 'Formelfaktor', 'Återstående moderkärnor', 'Relativ aktivitet'],
+      rows: [
+        ['0 halveringstider', '(1/2)^0', '100%', '100%'],
+        ['1 halveringstid', '(1/2)^1', '50%', '50%'],
+        ['2 halveringstider', '(1/2)^2', '25%', '25%'],
+        ['3 halveringstider', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 halveringstider', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 halveringstider', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Hur man beräknar återstående aktivitet efter en halveringstid',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'För en enskild moderisotop är aktiviteten proportionell mot antalet osönderfallna kärnor. Om 25 % av moderisotopen återstår är aktiviteten också cirka 25 % av ursprunglig aktivitet.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Detta samband är av central betydelse inom nukleärmedicin och strålskydd.',
+    },
+    {
+      type: 'title',
+      text: 'Exempel: Kol-14, Jod-131, Teknetium-99m, Uran-238 och Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Isotop', 'Ungefärlig halveringstid', 'Vanlig användning', 'Vad resultatet visar'],
+      rows: [
+        ['Kol-14', '5 730 år', 'Kol-14-datering', 'Återstående C-14-aktivitet i organiskt material.'],
+        ['Jod-131', '8,02 dagar', 'Medicinsk terapi', 'Minskning av aktivitet under dagar efter behandling.'],
+        ['Teknetium-99m', '6,01 timmar', 'Diagnostisk bildtagning', 'Varför medicinsk aktivitet minskar under en klinisk arbetsdag.'],
+        ['Uran-238', '4,47 miljarder år', 'Geologisk datering', 'Varför långlivade isotoper förblir mätbara på geologiska tidsskalor.'],
+        ['Radon-222', '3,82 dagar', 'Inomhusstrålning', 'Förändring av en gasformig exponeringskälla över dagar.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Dessa exempel täcker olika tidsskalor och vetenskapliga tillämpningar.',
+    },
+    {
+      type: 'title',
+      text: 'Hur man läser den stokastiska atomsimuleringen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Atomfältet är modellerat stokastiskt. För små prover kommer resultaten att fluktuera runt det teoretiska värdet.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Den jämna kurvan framträder först när många oberoende slumpmässiga händelser räknas samman.',
+    },
+    {
+      type: 'title',
+      text: 'Användningsområden för kalkylatorn',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Fysikundervisning:</strong> beräkning av återstående kärnor och koppling till en visuell modell.',
+        '<strong>Kärnkemi:</strong> jämförelse av isotopstabilitet och sönderfallshastighet.',
+        '<strong>Radiokoldatering:</strong> förståelse för sönderfall i organiska prover.',
+        '<strong>Nukleärmedicin:</strong> planering av bilddiagnostik med kortlivade isotoper.',
+        '<strong>Strålskydd:</strong> uppskattning av aktivitesminskning över tid.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Viktiga begränsningar',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Denna kalkylator modellerar moderisotopen med en enskild halveringstid.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Använd resultaten som en pedagogisk modell och vetenskaplig uppskattning.',
+    },
   ],
   faq,
   bibliography,

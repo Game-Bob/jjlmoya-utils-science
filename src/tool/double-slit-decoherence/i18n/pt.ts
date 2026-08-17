@@ -72,30 +72,74 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulador do experimento da dupla fenda com decoerência e deteção de caminho',
+      text: 'Simulador do experimento de fenda dupla com decoerência e detecção de caminho',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Este simulador de dupla fenda transforma a experiência quântica clássica num modelo visual interativo. Com o detector desligado, o ecrã mostra um padrão de interferência: bandas claras e escuras produzidas porque os dois caminhos possíveis permanecem coerentes. Quando um detector de caminho é adicionado, o padrão transforma-se gradualmente em duas bandas largas de partículas porque as alternativas de caminho se tornam distinguíveis.',
+      html: 'Este simulador de fenda dupla transforma o clássico experimento quântico em um modelo visual interativo. Com o detector desligado, a tela exibe um padrão de interferência: franjas claras e escuras produzidas porque as duas alternativas de caminho permanecem coerentes.',
     },
     {
       type: 'paragraph',
-      html: 'A ferramenta foi concebida para estudantes que procuram uma explicação clara do porquê a observação altera o resultado da dupla fenda. Foca-se na ideia fisicamente útil: a interferência requer alternativas indistinguíveis, enquanto a medição e o entrelaçamento ambiental removem a relação de fase necessária para as franjas.',
+      html: 'A ferramenta foi projetada para estudantes que buscam uma explicação clara sobre por que a medição altera o resultado. Evita a frase vaga de que "o observador muda a realidade" e foca na ideia física: a interferência exige alternativas indistinguíveis.',
     },
     {
       type: 'title',
-      text: 'O que o experimento da dupla fenda demonstra',
+      text: 'O que o experimento da fenda dupla demonstra',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Na configuração não observada, um único objeto quântico é descrito por amplitudes de probabilidade associadas a ambas as fendas. Essas amplitudes se somam em fase, gerando bandas claras e escuras.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Se um detector registra qual fenda foi utilizada, as opções deixam de ser indistinguíveis e a tela passa a exibir um padrão clássico de duas bandas de partículas.',
+    },
+    {
+      type: 'title',
+      text: 'Como interpretar o simulador',
       level: 3,
     },
     {
       type: 'table',
-      headers: ['Controlo ou métrica', 'O que altera', 'O que procurar'],
+      headers: ['Controle ou métrica', 'O que altera', 'O que observar'],
       rows: [
-        ['Intensidade do detector', 'Informação de caminho disponível', 'Valores mais altos reduzem a visibilidade das franjas e aumentam o padrão de duas bandas.'],
-        ['Separação das fendas', 'Distância entre aberturas', 'Maior separação torna as bandas mais apertadas no ecrã.'],
-        ['Visibilidade das franjas', 'Contraste claro/escuro', 'Um número alto significa que a interferência coerente é visível.'],
-        ['Coerência', 'Relação de fase entre caminhos', 'A coerência cai quando o detector torna os caminhos distinguíveis.'],
+        ['Intensidade do detector', 'Quantidade de informação de caminho disponível', 'Valores mais altos reduzem a visibilidade das franjas e acentuam o padrão corpuscular.'],
+        ['Separação das fendas', 'Distância entre as duas aberturas', 'Uma separação maior aproxima as bandas de interferência na tela.'],
+        ['Largura da fenda', 'Tamanho de cada abertura', 'Fendas mais largas estreitam o envelope de difração.'],
+        ['Visibilidade das franjas', 'Contraste entre regiões claras e escuras', 'Um valor alto indica que a interferência coerente ainda está presente.'],
+        ['Coerência', 'Relação de fase restante entre os caminhos', 'A coerência cai à medida que o caminho se torna distinguível.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Decoerência sem misticismo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'A decoerência é a perda de coerência de fase utilizável quando um sistema quântico se correlaciona com um detector ou com o ambiente.',
+    },
+    {
+      type: 'paragraph',
+      html: 'A física fundamental não depende da consciência humana, mas sim do fato de o aparato preservar ou destruir a indistinguibilidade das alternativas.',
+    },
+    {
+      type: 'title',
+      text: 'Limites deste modelo educacional',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'O simulador combina um padrão óptico de fenda dupla com um modelo de decoerência baseado na intensidade do detector. É ideal para intuir conceitos e ensino.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Use para entender os conceitos:</strong> interferência, informação de caminho, coerência e medição.',
+        '<strong>Não use para projetos laboratoriais:</strong> experimentos reais exigem cálculos precisos de comprimento de onda e propagação.',
+        '<strong>Foque na tendência:</strong> conforme a distinguibilidade aumenta, o contraste de interferência diminui.',
       ],
     },
   ],

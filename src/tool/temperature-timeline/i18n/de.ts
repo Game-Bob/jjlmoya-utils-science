@@ -28,6 +28,10 @@ const faq = [
     question: 'Wie unterscheidet sich der Klimawandel im Anthropozän?',
     answer: 'Der entscheidende Unterschied ist die Geschwindigkeit. Während natürliche Übergänge Jahrmillionen dauerten, vollzieht sich die heutige Erwärmung in wenigen Jahrzehnten. Diese Rate ist exponentiell schneller und übersteigt die Anpassungsfähigkeit der heutigen Biosphäre.'
   },
+  {
+    question: 'Was war das Paläozän/Eozän-Temperaturmaximum (PETM)?',
+    answer: 'Das PETM war ein extremes globales Erwärmungsereignis vor etwa 56 Millionen Jahren. Es wurde durch einen raschen und massiven Kohlenstoffausstoß verursacht, der die Temperaturen innerhalb weniger tausend Jahre um 5 bis 8 Grad anhob. Es gilt als bester geologischer Analogfall für den modernen Klimawandel.'
+  },
 ];
 
 export const content: ToolLocaleContent = {
@@ -61,8 +65,9 @@ export const content: ToolLocaleContent = {
   },
   seo: [
     { type: 'title', text: 'HISTORISCHE KLIMATOLOGIE: Die thermische Evolution der Erde', level: 2 },
-    { type: 'paragraph', html: 'Das Klima der Erde war nie statisch. Unser Planet schwankte zwischen Treibhaus- und Eiszeit-Zuständen. Das Verständnis dieser Prozesse ist entscheidend, um den heutigen anthropogenen Klimawandel in einen geologischen Kontext zu setzen.' },
+    { type: 'paragraph', html: 'Das Klima der Erde war nie statisch. Unser Planet schwankte zwischen Treibhaus- und Eiszeit-Zuständen. Das Verständnis dieser Prozesse ist entscheidend, um den heutigen anthropogenen Klimawandel in einen geologischen Kontext zu setzen. Mithilfe von Sauerstoffisotopen und Eisbohrkernen rekonstruieren Paläoklimatologen die globale Temperaturgeschichte.' },
     { type: 'title', text: 'Temperaturdaten nach Epochen', level: 3 },
+    { type: 'paragraph', html: 'Die Erdgeschichte gliedert sich in große Zeitabschnitte, die durch biologische und geologische Veränderungen definiert sind. Nachfolgend sind die geschätzten Durchschnittstemperaturen aufgeführt:' },
     {
       type: 'table', headers: ['Geologische Epoche', 'Alter', 'Temp.', 'Merkmale'], rows: [
         ['Archäikum', '4,0-2,5 Ga', '30 °C', 'Extremer Treibhauseffekt durch Methan.'],
@@ -72,7 +77,22 @@ export const content: ToolLocaleContent = {
         ['Känozoikum', '66 Ma-heute', '14 °C', 'Allmähliche Abkühlung.'],
         ['Anthropozän', 'Gegenwart', '15,2 °C', 'Anthroprogene Erwärmung.']
       ]
-    }
+    },
+    { type: 'title', text: 'Vergangene thermische Extreme: Von globaler Vereisung bis zur Treibhauswelt', level: 3 },
+    { type: 'paragraph', html: 'Die Erdgeschichte umfasst extreme Klimaerlebnisse. Im Proterozoikum setzte die primitive Fotosynthese massenhaft Sauerstoff frei, was zur Oxidation von Methan führte und die Erde in globale Eiszeiten stürzte. Im Mesozoikum hingegen reicherte Vulkanismus die Atmosphäre mit CO2 an.' },
+    { type: 'title', text: 'Einflussfaktoren auf das Erdklima im geologischen Maßstab', level: 3 },
+    { type: 'paragraph', html: 'Das langfristige Erdklima beruht auf einem thermodynamischen Gleichgewicht mehrerer natürlicher Mechanismen:' },
+    {
+      type: 'list',
+      items: [
+        '<strong>Milankovitch-Zyklen:</strong> Periodische Bahnänderungen der Erde verändern die Sonneneinstrahlung.',
+        '<strong>Silikat-Karbonat-Kohlenstoffkreislauf:</strong> Der langfristige geochemische Thermostat der Erde.',
+        '<strong>Plattentektonik:</strong> Kontinentalverschiebung verändert Meeresströmungen und CO2-Verwitterung.',
+        '<strong>Albedo-Rückkopplung:</strong> Eis und Schnee reflektieren Sonnenlicht und verstärken die Abkühlung.',
+      ]
+    },
+    { type: 'title', text: 'Das Anthropozän: Eine beispiellose thermische Beschleunigung', level: 3 },
+    { type: 'paragraph', html: 'Der Übergang zum Anthropozän markiert die Ära des direkten menschlichen Einflusses auf Erdsysteme. Im Gegensatz zu früheren klimatischen Veränderungen erfolgt die Erwärmung heute extrem schnell.' },
   ],
   faq,
   bibliography,

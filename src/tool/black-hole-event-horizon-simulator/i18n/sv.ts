@@ -106,16 +106,16 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulator för svarta håls händelsehorisont: Schwarzschildradie, fotonsfär och tidsdilatation',
+      text: 'Svart hål händelsehorisont-simulator för Schwarzschild-radie, fotonsfär och tidsdilatation',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Den här simulatorn för svarta håls händelsehorisont förvandlar kärnidéerna bakom Schwarzschilds svarta hål till en interaktiv visuell modell. Ändra massan, flytta en sond inåt eller utåt och jämför hur händelsehorisonten, fotonsfären, ISCO, flykthastigheten, gravitationell rödförskjutning och tidsdilatation svarar.',
+      html: 'Denna händelsehorisont-simulator omvandlar nyckelidéerna kring Schwarzschild-svarta hål till en interaktiv visuell modell.',
     },
     {
       type: 'paragraph',
-      html: 'Simulatorn är byggd för astronomistudenter, fysiklärare, vetenskapsskribenter och nyfikna lärlingar som vill ha mer än en statisk formel. Bildskärmen kopplar siffrorna till ett rumsligt diagram så att du kan se varför händelsehorisonten inte är en materiell yta, varför fotoner har en speciell instabil bana och varför stabil cirkulär rörelse upphör innan horisonten nås.',
+      html: 'Simulatorn är utformad för astronomistudenter, fysiklärare och nyfikna forskare.',
     },
     {
       type: 'title',
@@ -124,21 +124,96 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'För ett icke-roterande, oladdat svart hål är händelsehorisontens radie <strong>Schwarzschildradien</strong>. Den beräknas som <strong>Rs = 2GM / c^2</strong>, där G är gravitationskonstanten, M är det svarta hålets massa och c är ljushastigheten. En solmassa motsvarar en Schwarzschildradie på cirka 2,95 kilometer.',
+      html: 'För ett icke-roterande, oladdat svart hål är radien <strong>Schwarzschild-radien</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Eftersom Schwarzschildradien skalar linjärt med massan har ett svart hål med 10 solmassor en radie på cirka 29,5 kilometer, medan ett svart hål med 4 miljoner solmassor som Sagittarius A* har en radie på cirka 11,8 miljoner kilometer. Massreglaget använder en logaritmisk skala så att både stjärnmassa- och supermassiva fall får plats i samma kontroll.',
+      html: 'Eftersom radien skalar linjärt med massan har ett svart hål med 10 solmassor en radie på cirka 29,5 km.',
     },
     {
       type: 'table',
-      headers: ['Region', 'Radie i Schwarzschildradier', 'Betydelse'],
+      headers: ['Region', 'Radie i Schwarzschild-radier', 'Betydelse'],
       rows: [
-        ['Händelsehorisont', '1,0 Rs', 'Den envägsspärr där flykthastigheten är lika med ljushastigheten.'],
-        ['Fotonsfär', '1,5 Rs', 'Den instabila cirkulära omloppsbanan för ljus kring ett Schwarzschild-svart hål.'],
-        ['ISCO', '3,0 Rs', 'Den innersta stabila cirkulära omloppsbanan för massiva partiklar.'],
-        ['Svagt fält', '6 Rs och bortom', 'Gravitationen är fortfarande stark, men cirkulära omloppsbanor är lättare att upprätthålla.'],
+        ['Händelsehorisont', '1.0 Rs', 'Enkelriktningsgränsen där flykthastigheten är lika med ljushastigheten.'],
+        ['Fotonsfär', '1.5 Rs', 'Den ostabila cirkulära omloppsbanan för ljus.'],
+        ['ISCO', '3.0 Rs', 'Den innersta stabila cirkulära omloppsbanan för massiva partiklar.'],
+        ['Svagt fält', '6 Rs och bortom', 'Gravitationen är fortfarande stark men cirkulära omloppsbanor är lättare att upprätthålla.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Flykthastighet och kausal gräns',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Flykthastigheten är den hastighet som krävs för att nå godtyckligt långt bort utan ytterligare framdrivning.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Flykthastighetsavläsningen ger en användbar intuition men är inte en komplett relativistisk beskrivning.',
+    },
+    {
+      type: 'title',
+      text: 'Tidsdilatation och gravitationell rödförskjutning',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'En klocka som hålls vid en fast radie utanför ett svart hål tickar långsammare jämfört med en avlägsen observatör. Den förenklade faktorn är <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Gravitationell rödförskjutning följer samma geometri. Ljus som klättrar ur gravitationstunneln förlorar energi.',
+    },
+    {
+      type: 'title',
+      text: 'Fotonsfär och ISCO förklaras',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Fotonsfären vid 1.5 Rs är den plats där ljus i princip kan kretsa i en ostabil cirkulär bana.',
+    },
+    {
+      type: 'paragraph',
+      html: 'ISCO vid 3 Rs representerar den sista stabila cirkulära omloppsbanan för materia.',
+    },
+    {
+      type: 'title',
+      text: 'Stellära kontra supermassiva svarta hål',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'En överraskande läxa är att större svarta hål ger mindre extrema tidvattenskrafter vid horisonten.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Simulatorn innehåller en tidvattensgradientavläsning uttryckt i jordgravitation per meter.',
+    },
+    {
+      type: 'title',
+      text: 'Begränsningar hos denna simulator',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Ingen spinn:</strong> använder Schwarzschild-geometri.',
+        '<strong>Förenklad ackretionsfysik:</strong> illustrativ skiva.',
+        '<strong>Ingen ray tracing:</strong> pedagogiskt diagram.',
+        '<strong>Stationär klocka:</strong> inte i fritt fall.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Vanliga frågor',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Använd detta verktyg för att uppskatta parametrar för ett svart hål.',
     },
   ],
   faq,

@@ -68,29 +68,29 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulatore dell\'Insieme di Mandelbrot per Frattali, Tempo di Fuga e Autosimilarità',
+      text: 'Calcolatore dell\'Insieme di Mandelbrot per Frattali, Tempo di Fuga e Autosimilarità',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Questo simulatore frattale di Mandelbrot renderizza il classico insieme del piano complesso definito dall\'iterazione <strong>z(n+1) = z(n)^2 + c</strong>. È progettato per l\'esplorazione piuttosto che per la visione passiva: ogni clic ri-centra il piano, ogni ingrandimento espone un intorno matematico più piccolo, e il cursore di iterazione permette di decidere quanto a fondo il simulatore deve testare il bordo prima di colorare un punto come stabile o in fuga.',
+      html: 'Questo calcolatore di frattali di Mandelbrot genera il classico insieme del piano complesso definito dall\'iterazione <strong>z(n+1) = z(n)^2 + c</strong>. È progettato per l\'esplorazione: ogni clic ricalibra il centro, ogni zoom rivela un intorno matematico più piccolo.',
     },
     {
       type: 'title',
-      text: 'Come leggere l\'immagine di Mandelbrot',
+      text: 'Come interpretare l\'immagine di Mandelbrot',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'La forma centrale scura segna i punti le cui orbite rimangono limitate entro il budget di iterazione corrente. L\'esterno colorato è una mappa del tempo di fuga. Un punto colorato vicino all\'insieme può sopravvivere centinaia di iterazioni prima che la sua magnitudine superi il raggio di fuga, mentre un punto lontano fugge quasi immediatamente. La geometria scientificamente più interessante non si trova solitamente all\'interno della forma piena, ma lungo il bordo dove i comportamenti limitati e illimitati si intrecciano.',
+      html: 'La forma centrale scura identifica i punti le cui orbite rimangono limitate entro il budget di iterazioni. L\'esterno colorato è una mappa del tempo di fuga.',
     },
     {
       type: 'table',
       headers: ['Controllo', 'Cosa modifica', 'Quando aumentarlo'],
       rows: [
-        ['<strong>Profondità di iterazione</strong>', 'Quanti passi di ricorrenza vengono testati per ogni pixel.', 'Usa valori più alti dopo aver ingrandito filamenti sottili o copie in miniatura.'],
-        ['<strong>Contrasto di fuga</strong>', 'Quanto fortemente i valori di fuga uniformi vengono separati in bande visibili.', 'Alzalo quando l\'immagine appare piatta; abbassalo quando i colori sono troppo marcati.'],
-        ['<strong>Tavolozza</strong>', 'La mappatura dei colori applicata ai punti esterni.', 'Cambia tavolozza per rivelare strutture che potrebbero essere nascoste da un campo colore.'],
+        ['<strong>Profondità di iterazione</strong>', 'Quanti passaggi di ricorsione vengono testati per ogni pixel.', 'Aumentare dopo aver ingrandito filamenti sottili o coppie in miniatura.'],
+        ['<strong>Contrasto di fuga</strong>', 'Quanto nettamente i valori di fuga sfumati vengono suddivisi in bande.', 'Aumentare se l\'immagine appare piatta.'],
+        ['<strong>Tavolozza</strong>', 'La mappatura dei colori applicata ai punti esterni.', 'Cambiare tavolozza per evidenziare dettagli nascosti.'],
       ],
     },
     {
@@ -100,7 +100,25 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Una delle ragioni per cui l\'insieme di Mandelbrot è così famoso è la sua quasi-autosimilarità. Mentre si ingrandiscono antenne, spirali e valli, si incontrano ripetutamente piccole isole simili a Mandelbrot spesso chiamate <em>minibrot</em>. Queste copie non sono meramente decorative. La loro disposizione riflette la dinamica delle mappe quadratiche, inclusi bulbi periodici, pattern di biforcazione e regioni dove le orbite rimangono intrappolate per lunghi periodi prima di fuggire.',
+      html: 'Una delle caratteristiche più affascinanti dell\'insieme di Mandelbrot è la quasi-autosimilarità. Ingrandendo le strutture a spirale si incontrano continuamente repliche in miniatura dell\'insieme principale, chiamate minibrot.',
+    },
+    {
+      type: 'title',
+      text: 'Perché le iterazioni elevate contano ad alti ingrandimenti',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ad alti livelli di ingrandimento, molti punti di confine impiegano centinaia di iterazioni per rivelare se fuggono o meno. Un limite di iterazioni troppo basso sfoca la geometria.',
+    },
+    {
+      type: 'title',
+      text: 'Significato matematico delle coordinate complesse',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La lettura delle coordinate mostra il centro della vista come un numero complesso c = a + bi. L\'asse orizzontale rappresenta la parte reale e quello verticale la parte immaginaria.',
     },
   ],
   faq,

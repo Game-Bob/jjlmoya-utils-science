@@ -126,6 +126,82 @@ export const content: ToolLocaleContent = {
         ['Wskazanie z korektą o spójność', 'Między przypadkiem płynnym a sztywnym', 'Porównanie scenariuszy', 'Praktyczna linia ryzyka.'],
       ],
     },
+    {
+      type: 'title',
+      text: 'Przykład: Dlaczego lodowy księżyc przy Saturnie jest wrażliwy',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Saturn ma małą gęstość, ale jest ogromny. Lodowy księżyc ma słabą grawitację własną, więc granica płynna Roche wypadnie daleko od chmur Saturna.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Zmieniając odległość orbitalną, obserwuj współczynnik bezpieczeństwa.',
+    },
+    {
+      type: 'title',
+      text: 'Jak interpretować współczynnik bezpieczeństwa',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Współczynnik bezpieczeństwa to stosunek odległości orbitalnej do aktywnej granicy Roche.',
+    },
+    {
+      type: 'table',
+      headers: ['Współczynnik', 'Stan', 'Odczyt praktyczny'],
+      rows: [
+        ['Powyżej 1,12x', 'Stabilna orbita', 'Satelita jest bezpieczny.'],
+        ['1,00x do 1,12x', 'Oddziaływanie pływowe', 'Możliwe pęknięcia powierzchniowe.'],
+        ['0,78x do 1,00x', 'Fragmentacja', 'Rozpad satelity.'],
+        ['Poniżej 0,78x', 'Układ pierścieni', 'Tworzenie się dysku cząstek.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Szczątki rozciągają się wzdłuż orbity pod wpływem ścinania orbitalnego.',
+    },
+    {
+      type: 'title',
+      text: 'Dlaczego granica Roche tworzy pierścienie',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Wewnątrz granicy Roche cząstki nie mogą ulec ponownej akrecji z powodu niszczących sił pływowych.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Tworzenie pierścienia jest procesem stopniowym.',
+    },
+    {
+      type: 'title',
+      text: 'Ważne ograniczenia kalkulatora',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Realne satelity różnią się rotacją, porowatością i spójnością strukturalną.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Stosuj granicę płynną:</strong> dla luźnych i lodowych ciał.',
+        '<strong>Stosuj granicę sztywną:</strong> dla zwartych skał.',
+        '<strong>Korzystaj z granicy aktywnej:</strong> do szybkiego porównania.',
+        '<strong>Nie traktuj wyniku jako pewnik:</strong> bez uwzględnienia geofizyki.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Częste pytania',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Używaj narzędzia do szacowania rozpadu satelitów pod wpływem sił pływowych.',
+    },
   ],
   faq,
   bibliography,

@@ -45,13 +45,118 @@ export const content: ToolLocaleContent = {
     resetSeed: 'Nowy wzor atomow',
   },
   seo: [
-    { type: 'title', text: 'Kalkulator okresu poltrwania: pozostale atomy, aktywnosc i przyklady izotopow', level: 2 },
-    { type: 'paragraph', html: 'Ten kalkulator rozpadu promieniotworczego pomaga oszacowac, ile niestabilnego izotopu zostaje po zadanym czasie. Odpowiada na najczestsze intencje wyszukiwania: wzor okresu poltrwania, obliczenia dla realnych izotopow, jadra macierzyste pozostale, jadra rozpade i spadek aktywnosci.' },
-    { type: 'paragraph', html: 'Wzor to <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. Pole atomow pokazuje jednoczesnie losowy charakter pojedynczych rozpadów i przewidywalna krzywa dla duzych probek.' },
-    { type: 'table', headers: ['Czas', 'Czynnik', 'Jadra macierzyste', 'Aktywnosc wzgledna'], rows: [['0 okresow', '(1/2)^0', '100%', '100%'], ['1 okres', '(1/2)^1', '50%', '50%'], ['2 okresy', '(1/2)^2', '25%', '25%'], ['3 okresy', '(1/2)^3', '12,5%', '12,5%'], ['5 okresow', '(1/2)^5', '3,125%', '3,125%'], ['10 okresow', '(1/2)^10', '0,098%', '0,098%']] },
-    { type: 'table', headers: ['Izotop', 'Okres poltrwania', 'Zastosowanie', 'Znaczenie wyniku'], rows: [['Wegiel-14', '5 730 lat', 'Datowanie radioweglowe', 'Ile aktywnosci wegla-14 pozostaje w materiale organicznym.'], ['Jod-131', '8,02 dnia', 'Terapia i zdarzenia nuklearne', 'Jak szybko aktywnosc spada w ciagu dni.'], ['Technet-99m', '6,01 godziny', 'Diagnostyka obrazowa', 'Dlaczego uzyteczna aktywnosc maleje w czasie dnia klinicznego.'], ['Uran-238', '4,47 mld lat', 'Datowanie geologiczne', 'Dlaczego dlugozyciowe izotopy sa mierzalne.'], ['Radon-222', '3,82 dnia', 'Promieniowanie w budynkach', 'Jak zmienia sie gazowe zrodlo ekspozycji.']] },
-    { type: 'paragraph', html: 'Dla jednego izotopu aktywnosc jest proporcjonalna do liczby jader nierozpadlych. Symulacja nadaje sie do nauki fizyki, chemii jadrowej, intuicji radioweglowej, planowania izotopow medycznych i edukacji radiologicznej.' },
-    { type: 'paragraph', html: 'Model uzywa jednego okresu poltrwania. Rzeczywiste pomiary moga wymagac korekt detektora, tla, produktow potomnych, eliminacji biologicznej, postaci chemicznej, ekranowania i kalibracji. Nie zastepuje porad medycznych, dozymetrii ani analizy laboratoryjnej.' },
+    {
+      type: 'title',
+      text: 'Kalkulator okresu półtrwania: pozostałe atomy, aktywność i przykłady izotopów',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ten kalkulator rozpadu promieniotwórczego pomaga oszacować, ile niestabilnego izotopu zostaje po zadanym czasie. Odpowiada na najczęstsze intencje wyszukiwania: wzór okresu półtrwania, obliczenia dla realnych izotopów, jądra macierzyste pozostałe, jądra rozpadłe i spadek aktywności.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Narzędzie łączy dwa komplementarne modele. Wyniki numeryczne wykorzystują standardowe równanie wykładnicze, podczas gdy pole atomowe symuluje pojedyncze jądra za pomocą progów stochastycznych.',
+    },
+    {
+      type: 'title',
+      text: 'Wzór rozpadu promieniotwórczego używany przez kalkulator',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Wzór to <strong>N(t) = N0 x (1/2)^(t / T1/2)</strong>. <strong>N0</strong> to początkowa liczba jąder macierzystych, <strong>N(t)</strong> to oczekiwana liczba pozostała po czasie <strong>t</strong>, a <strong>T1/2</strong> to okres półtrwania.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Na przykład, jeśli próbka rozpoczyna się od 1000 jąder macierzystych i upływają dwa okresy półtrwania, oczekiwana pozostała ilość wynosi 1000 x (1/2)^2 = 250 jąder. Ilość rozpadła wynosi 750 jąder.',
+    },
+    {
+      type: 'table',
+      headers: ['Czas', 'Czynnik', 'Jądra macierzyste', 'Aktywność względna'],
+      rows: [
+        ['0 okresów', '(1/2)^0', '100%', '100%'],
+        ['1 okres', '(1/2)^1', '50%', '50%'],
+        ['2 okresy', '(1/2)^2', '25%', '25%'],
+        ['3 okresy', '(1/2)^3', '12,5%', '12,5%'],
+        ['5 okresów', '(1/2)^5', '3,125%', '3,125%'],
+        ['10 okresów', '(1/2)^10', '0,098%', '0,098%'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Jak obliczyć pozostałą aktywność po okresie półtrwania',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dla pojedynczego izotopu macierzystego aktywność jest proporcjonalna do liczby nierozpadłych jąder. Jeśli pozostaje 25% izotopu macierzystego, aktywność wynosi również około 25% aktywności początkowej.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Zależność ta ma kluczowe znaczenie w medycynie nuklearnej i ochronie radiologicznej.',
+    },
+    {
+      type: 'title',
+      text: 'Przykłady: Węgiel-14, Jod-131, Technet-99m, Uran-238 i Radon-222',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Izotop', 'Przybliżony okres półtrwania', 'Typowe zastosowanie', 'Znaczenie wyniku'],
+      rows: [
+        ['Węgiel-14', '5 730 lat', 'Datowanie radiowęglowe', 'Pozostała aktywność węgla-14 w materiale organicznym.'],
+        ['Jod-131', '8,02 dnia', 'Terapia medyczna', 'Szybkość spadku aktywności w ciągu dni.'],
+        ['Technet-99m', '6,01 godziny', 'Diagnostyka obrazowa', 'Dlaczego użyteczna aktywność spada w trakcie dnia klinicznego.'],
+        ['Uran-238', '4,47 mld lat', 'Datowanie geologiczne', 'Dlaczego długożyciowe izotopy są mierzalne w skali geologicznej.'],
+        ['Radon-222', '3,82 dnia', 'Promieniowanie w budynkach', 'Zmiana gazowego źródła ekspozycji.'],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Te przykłady obejmują różne skale czasowe i zastosowania naukowe.',
+    },
+    {
+      type: 'title',
+      text: 'Jak odczytywać stochastyczną symulację atomową',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Pole atomowe jest wymodelowane stochastycznie. Dla małych próbek wyniki wahać się będą wokół wartości teoretycznej.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Gładka krzywa pojawia się dopiero przy uśrednieniu wielu niezależnych zdarzeń losowych.',
+    },
+    {
+      type: 'title',
+      text: 'Zastosowania kalkulatora okresu półtrwania',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Edukacja fizyczna:</strong> obliczanie pozostałych jąder i łączenie z modelem wizualnym.',
+        '<strong>Chemia jądrowa:</strong> porównywanie stabilności i szybkości rozpadu izotopów.',
+        '<strong>Datowanie radiowęglowe:</strong> zrozumienie rozpadu próbek organicznych.',
+        '<strong>Medycyna nuklearna:</strong> planowanie diagnostyki z użyciem krótkożyciowych izotopów.',
+        '<strong>Ochrona radiologiczna:</strong> szacowanie spadku aktywności w czasie.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Ważne ograniczenia',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Ten kalkulator modeluje izotop macierzysty za pomocą pojedynczego okresu półtrwania.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Używaj wyników jako modelu dydaktycznego i szacunku naukowego.',
+    },
   ],
   faq,
   bibliography,

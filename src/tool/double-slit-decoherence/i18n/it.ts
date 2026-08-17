@@ -72,16 +72,29 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulatore dell\'esperimento della doppia fenditura con decoerenza e rivelazione di percorso',
+      text: 'Simulatore dell\'esperimento della doppia fenditura con decoerenza e tracciamento del percorso',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Questo simulatore a doppia fenditura trasforma il classico esperimento quantistico in un modello visivo interattivo. Con il rivelatore spento, lo schermo mostra un pattern di interferenza: bande chiare e scure prodotte perché i due percorsi possibili rimangono coerenti. Quando si aggiunge un rivelatore di percorso, il pattern si trasforma gradualmente in due ampie bande di particelle perché le alternative di percorso diventano distinguibili.',
+      html: 'Questo simulatore a doppia fenditura trasforma il classico esperimento quantistico in un modello visivo interattivo. Con il rilevatore disattivato, lo schermo mostra una figura di interferenza: frange chiare e scure prodotte dal fatto che le due alternative di percorso rimangono coerenti.',
     },
     {
       type: 'paragraph',
-      html: 'Lo strumento è progettato per studenti che cercano una spiegazione chiara del perché l\'osservazione cambi il risultato della doppia fenditura. Evita la vaga frase "l\'osservatore cambia la realtà" e si concentra sull\'idea fisicamente utile: l\'interferenza richiede alternative indistinguibili, mentre la misura e l\'entanglement ambientale rimuovono la relazione di fase necessaria per le frange.',
+      html: 'Lo strumento è progettato per chi cerca una spiegazione chiara di come la misurazione modifichi il risultato. Evita l\'espressione vaga secondo cui "l\'osservatore cambia la realtà" e si concentra sull\'idea fisica: l\'interferenza richiede alternative indistinguibili.',
+    },
+    {
+      type: 'title',
+      text: 'Cosa dimostra l\'esperimento della doppia fenditura',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Nella configurazione non osservata, un singolo oggetto quantistico è descritto da ampiezze di probabilità associate a entrambe le fenditure. Tali ampiezze si sommano mantenendo la fase, generando frange chiare per interferenza costruttiva e scure per interferenza distruttiva.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Se un rilevatore registra la fenditura attraversata, le due opzioni smettono di essere indistinguibili e lo schermo mostra una distribuzione classica a due bande.',
     },
     {
       type: 'title',
@@ -90,12 +103,43 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'table',
-      headers: ['Controllo o metrica', 'Cosa cambia', 'Cosa cercare'],
+      headers: ['Controllo o metrica', 'Cosa modifica', 'Cosa osservare'],
       rows: [
-        ['Intensità del rivelatore', 'Quanta informazione di percorso è disponibile', 'Valori più alti riducono la visibilità delle frange e aumentano il pattern a due bande.'],
-        ['Separazione delle fenditure', 'La distanza tra le due aperture', 'Una separazione maggiore rende le bande di interferenza più ravvicinate sullo schermo.'],
-        ['Visibilità delle frange', 'Contrasto tra regioni chiare e scure', 'Un numero alto significa che l\'interferenza coerente è visibile.'],
-        ['Coerenza', 'Relazione di fase tra i percorsi', 'La coerenza diminuisce man mano che il rivelatore rende i percorsi distinguibili.'],
+        ['Intensità del rilevatore', 'Quantità di informazione sul percorso disponibile', 'Valori più alti riducono la visibilità delle frange e accentuano il motivo corpuscolare.'],
+        ['Separazione tra le fenditure', 'Distanza tra le due aperture', 'Una separazione maggiore ravvicina le frange di interferenza sullo schermo.'],
+        ['Larghezza delle fenditure', 'Dimensione di ciascuna apertura', 'Fenditure più larghe restringono l\'involucro di diffrazione.'],
+        ['Visibilità delle frange', 'Contrasto tra regioni chiare e scure', 'Un valore elevato indica che l\'interferenza coerente è ben visibile.'],
+        ['Coerenza', 'Relazione di fase residua tra i percorsi', 'La coerenza crolla man mano che il percorso diventa distinguibile.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Decoerenza senza misticismo',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La decoerenza è la perdita di coerenza di fase sfruttabile quando un sistema quantistico si correla con un rilevatore o con l\'ambiente.',
+    },
+    {
+      type: 'paragraph',
+      html: 'La fisica fondamentale non riguarda la consapevolezza di un osservatore umano, ma il fatto che l\'apparato mantenga o distrugga l\'indistinguibilità delle alternative.',
+    },
+    {
+      type: 'title',
+      text: 'Limiti di questo modello didattico',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Il simulatore combina un modello ottico a doppia fenditura con una funzione di decoerenza basata sull\'intensità del rilevatore. È ideale per la didattica e l\'intuizione concettuale.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Usalo per comprendere i concetti:</strong> interferenza, informazione sul percorso, coerenza e misurazione.',
+        '<strong>Non usarlo per la progettazione di laboratorio:</strong> gli esperimenti reali richiedono calcoli precisi di lunghezza d\'onda e propagazione.',
+        '<strong>Concentrati sulla tendenza:</strong> all\'aumentare della distinguibilità, il contrasto di interferenza diminuisce.',
       ],
     },
   ],

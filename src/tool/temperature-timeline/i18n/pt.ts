@@ -28,6 +28,10 @@ const faq = [
     question: 'Em que difere a mudança climática do Antropoceno do passado geológico?',
     answer: 'A diferença fundamental reside na velocidade. Enquanto transições passadas levavam dezenas de milhares a milhões de anos, o aquecimento do Antropoceno ocorre em poucas décadas. Esta taxa de variação térmica supera a capacidade de adaptação da biosfera atual.'
   },
+  {
+    question: 'O que foi o Máximo Térmico do Paleoceno-Eoceno (PETM)?',
+    answer: 'O PETM foi um evento de aquecimento global extremo ocorrido há cerca de 56 milhões de anos, causado por uma injeção massiva de carbono na atmosfera. Aumentou as temperaturas globais em 5 a 8°C em poucos milhares de anos, sendo considerado o melhor análogo geológico para as mudanças climáticas modernas.'
+  },
 ];
 
 export const content: ToolLocaleContent = {
@@ -61,7 +65,36 @@ export const content: ToolLocaleContent = {
   },
   seo: [
     { type: 'title', text: 'CLIMATOLOGIA HISTÓRICA: A evolução térmica da Terra através das eras geológicas', level: 2 },
-    { type: 'paragraph', html: 'O clima da Terra nunca foi estático. Ao longo de 4,5 bilhões de anos, o planeta oscilou entre estados de estufa (greenhouse) e glaciação (icehouse). Compreender estas flutuações é indispensável para contextualizar a gravidade do aquecimento global atual.' },
+    { type: 'paragraph', html: 'O clima da Terra nunca foi estático. Ao longo de 4,5 bilhões de anos, o planeta oscilou entre estados de estufa (greenhouse) e glaciação (icehouse). Compreender estas flutuações é indispensável para contextualizar a gravidade do aquecimento global atual. Através de isótopos de oxigênio e testemunhos de gelo, os paleoclimatologistas reconstroem a história térmica da Terra.' },
+    { type: 'title', text: 'Registro de temperaturas por éon e era geológica', level: 3 },
+    { type: 'paragraph', html: 'A história da Terra é dividida em grandes intervalos definidos por mudanças biológicas e geológicas. Abaixo apresenta-se a tabela das temperaturas médias estimadas:' },
+    {
+      type: 'table',
+      headers: ['Época Geológica', 'Idade Aprox.', 'Temp. Média', 'Marcos Climatológicos'],
+      rows: [
+        ['<strong>Éon Arqueano</strong>', '4,0 - 2,5 Ga', '30 °C', 'Terra primitiva quente com forte efeito estufa.'],
+        ['<strong>Éon Proterozoico</strong>', '2,5 Ga - 541 Ma', '12 °C', 'Glaciações globais ("Terra Bola de Neve").'],
+        ['<strong>Era Paleozoica</strong>', '541 - 252 Ma', '20 °C', 'Explosão de vida marinha e colonização terrestre.'],
+        ['<strong>Era Mesozoica</strong>', '252 - 66 Ma', '22 °C', 'Período de estufa sem gelo polar.'],
+        ['<strong>Era Cenozoica</strong>', '66 Ma - presente', '14 °C', 'Resfriamento gradual e ciclos glaciais.'],
+        ['<strong>Antropoceno</strong>', 'Presente', '15,2 °C', 'Aquecimento rápido de origem humana.'],
+      ],
+    },
+    { type: 'title', text: 'Extremos térmicos do passado: da glaciação global ao calor do Mesozoico', level: 3 },
+    { type: 'paragraph', html: 'A história do planeta inclui eventos climáticos extremos. No Proterozoico a fotossíntese liberou oxigênio oxidando o metano e gerando glaciações. No Mesozoico o vulcanismo saturou a atmosfera com CO2.' },
+    { type: 'title', text: 'Fatores que regem o clima planetário em escala geológica', level: 3 },
+    { type: 'paragraph', html: 'O clima da Terra a longo prazo resulta de um equilíbrio termodinâmico governado por diversos mecanismos naturais interconectados:' },
+    {
+      type: 'list',
+      items: [
+        '<strong>Ciclos de Milankovitch:</strong> Variações orbitais que alteram a radiação solar recebida.',
+        '<strong>Ciclo do Carbono Silicato-Carbonato:</strong> Termostato geoquímico a longo prazo.',
+        '<strong>Tectônica de Placas:</strong> Deriva continental e intemperismo químico do CO2.',
+        '<strong>Efeito Albedo:</strong> Reflexão da luz solar pelo gelo ampliando o resfriamento.',
+      ],
+    },
+    { type: 'title', text: 'O Antropoceno: Uma aceleração térmica sem precedentes na biosfera', level: 3 },
+    { type: 'paragraph', html: 'A transição para o Antropoceno marca o impacto direto das atividades humanas nos sistemas planetários. Ao contrário de eventos térmicos passados, o aquecimento atual ocorre a um ritmo extremamente rápido.' },
   ],
   faq,
   bibliography,

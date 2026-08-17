@@ -85,6 +85,19 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'title',
+      text: 'Ce que démontre l\'expérience des fentes de Young',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dans la configuration non observée, un objet quantique unique est décrit par des amplitudes de probabilité associées aux deux fentes. Ces amplitudes s\'additionnent avec leur phase. En certains points de l\'écran, elles se renforcent (bandes brillantes) ; en d\'autres points, elles s\'annulent (bandes sombres).',
+    },
+    {
+      type: 'paragraph',
+      html: 'Si un détecteur enregistre la fente empruntée, les alternatives cessent d\'être indiscernables. L\'écran ne reçoit plus une somme cohérente d\'amplitudes, mais un mélange de résultats conditionnés par le chemin.',
+    },
+    {
+      type: 'title',
       text: 'Comment lire le simulateur',
       level: 3,
     },
@@ -92,10 +105,41 @@ export const content: ToolLocaleContent = {
       type: 'table',
       headers: ['Contrôle ou métrique', 'Ce qu\'il modifie', 'Ce qu\'il faut observer'],
       rows: [
-        ['Profondeur d\'itération', 'Quantité d\'information de chemin disponible', 'Des valeurs plus élevées réduisent la visibilité des franges.'],
-        ['Écartement des fentes', 'Distance entre les ouvertures', 'Un écartement plus large resserre les bandes d\'interférence.'],
-        ['Visibilité des franges', 'Contraste clair/sombre', 'Un chiffre élevé indique une interférence cohérente.'],
-        ['Cohérence', 'Relation de phase entre les chemins', 'La cohérence chute lorsque le chemin devient distinguable.'],
+        ['Force du détecteur', 'Quantité d\'information de chemin disponible', 'Des valeurs plus élevées réduisent la visibilité des franges et accentuent le motif particulaire.'],
+        ['Écartement des fentes', 'Distance entre les deux ouvertures', 'Un écartement plus large resserre les franges d\'interférence.'],
+        ['Largeur de fente', 'Taille de chaque ouverture', 'Des fentes plus larges rétrécissent l\'enveloppe de diffraction.'],
+        ['Visibilité des franges', 'Contraste entre zones claires et sombres', 'Un chiffre élevé indique qu\'une interférence cohérente est présente.'],
+        ['Cohérence', 'Relation de phase restante entre les chemins', 'La cohérence chute lorsque le chemin devient distinguable.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Décohérence sans mysticisme',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'La décohérence est la perte de cohérence de phase utilisable lorsqu\'un système quantique s\'intrique avec un détecteur ou l\'environnement.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Cette distinction est essentielle car l\'élément physique fondamental n\'est pas la conscience d\'un observateur humain, mais la conservation ou la destruction de l\'indiscernabilité des alternatives.',
+    },
+    {
+      type: 'title',
+      text: 'Limites de ce modèle éducatif',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Le simulateur utilise un motif optique simplifié associé à un modèle de décohérence par détection. Il est idéal pour l\'intuition et l\'enseignement.',
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Utilisez-le pour comprendre les concepts :</strong> interférence, information de chemin, cohérence et mesure.',
+        '<strong>Ne l\'utilisez pas pour la conception d\'expériences :</strong> les vraies expériences nécessitent des calculs précis de longueur d\'onde et d\'ouverture.',
+        '<strong>Concentrez-vous sur la tendance :</strong> plus la discernabilité augmente, plus le contraste d\'interférence diminue.',
       ],
     },
   ],

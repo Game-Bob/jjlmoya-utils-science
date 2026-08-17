@@ -46,6 +46,16 @@ const faq = [
     answer:
       'La fitness è un punteggio semplificato che indica quanto bene la popolazione è adattata all\'ambiente scelto nel simulatore.',
   },
+  {
+    question: 'Perché la dimensione della popolazione è importante?',
+    answer:
+      'Determina quanto le fluttuazioni casuali influenzano le frequenze alleliche.',
+  },
+  {
+    question: 'Quando dovrei usare questo simulatore?',
+    answer:
+      'Quando vuoi capire l\'intuizione dietro l\'evoluzione, specialmente la differenza tra selezione e deriva.',
+  },
 ];
 
 export const content: NaturalSelectionLocaleContent = {
@@ -83,12 +93,74 @@ export const content: NaturalSelectionLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Cosa significano i controlli',
+      text: 'Cosa significano i controlli e perché sono importanti',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'La selezione naturale aumenta la frequenza dei tratti vantaggiosi. La deriva genetica modifica le frequenze alleliche in modo puramente stocastico. Le due forze agiscono costantemente insieme: nelle popolazioni ampie la selezione domina, mentre in quelle ridotte il caso può cancellare tratti anche molto utili.',
+      html: 'La selezione naturale aumenta la frequenza dei tratti vantaggiosi. La deriva genetica modifica le frequenze alleliche in modo puramente stocastico.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Le due forze agiscono costantemente insieme: nelle popolazioni ampie la selezione domina, mentre in quelle ridotte il caso può cancellare tratti anche molto utili.',
+    },
+    {
+      type: 'title',
+      text: 'Come leggere i risultati della simulazione',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Le metriche in tempo reale mostrano il tratto dominante, la diversità genetica, la fitness finale e lo stato della popolazione.',
+    },
+    {
+      type: 'title',
+      text: 'Perché la dimensione della popolazione cambia l\'evoluzione',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Pressione selettiva:</strong> Quanto l\'ambiente favorisce un tratto.',
+        '<strong>Intensità della deriva:</strong> Il rumore casuale del campionamento.',
+        '<strong>Tasso di mutazione:</strong> La frequenza di comparsa di nuove varianti.',
+        '<strong>Numero di alleli:</strong> La diversità iniziale nel sistema.',
+        '<strong>Diversità genetica:</strong> La materia prima per l\'adattamento.',
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'Un utile strumento pratico per comprendere selezione, deriva e mutazioni nei sistemi biologici.',
+    },
+    {
+      type: 'title',
+      text: 'Esempi rapidi da provare',
+      level: 3,
+    },
+    {
+      type: 'table',
+      headers: ['Obiettivo', 'Modifica', 'Risultato atteso'],
+      rows: [
+        [
+          'Mostrare la selezione',
+          'Aumenta pressione selettiva e riduci deriva',
+          'Un allele domina gradualmente',
+        ],
+        [
+          'Mostrare la deriva',
+          'Riduci popolazione e aumenta deriva',
+          'Fluttuazioni casuali degli alleli',
+        ],
+        [
+          'Mostrare le mutazioni',
+          'Aumenta il tasso di mutazione',
+          'Nuovi alleli compaiono regolarmente',
+        ],
+      ],
+    },
+    {
+      type: 'paragraph',
+      html: 'La combinazione di immagini in tempo reale e metriche semplifica la comprensione dei meccanismi evolutivi.',
     },
   ],
   faq,

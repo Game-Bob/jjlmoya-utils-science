@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Wat betekenen de parameters?",
     "answer": "Sigma is het Prandtl-getal, Rho het Rayleigh-getal en Beta de geometrische verhouding."
+  },
+  {
+    "question": "Waarom lijkt de attractor op een vlinder?",
+    "answer": "De iconische vorm met twee vleugels ontstaat omdat het systeem twee onstabiele evenwichtspunten heeft waar de banen onvoorspelbaar omheen draaien."
+  },
+  {
+    "question": "Is de Lorenz-attractor echt willekeurig?",
+    "answer": "Nee, het systeem is volledig deterministisch. Omdat het echter chaotisch is, is het op lange termijn onvoorspelbaar zonder oneindige precisie."
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Het Vlindereffect: Gevoelige Afhankelijkheid van Beginwaarden", level: 3 },
     { type: 'paragraph', html: "De bepalende eigenschap van chaotische systemen is hun <strong>gevoelige afhankelijkheid van begincondities</strong>, populair bekend als het <strong>Vlindereffect</strong>. Dit simulatieprogramma illustreert dit door twee trajecten (T1 in cyaan en T2 in roze) gelijktijdig te laten lopen met een minimaal verschil. Aanvankelijk volgen ze vrijwel hetzelfde pad. Na korte tijd versterken de niet-lineaire termen het verschil en divergeren de paden volledig." },
+    { type: 'paragraph', html: "Deze gevoeligheid wordt gedemonstreerd door twee vrijwel identieke banen te volgen die exponentieel divergeren." },
     {
       type: 'table',
       headers: ["Parameter","Standaardwaarde","Fysische Context","Gedrag bij Wijziging"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Faseruimte, Vreemde Attractoren en Fractalen", level: 3 },
     { type: 'paragraph', html: "In de klassieke fysica stabiliseren trajecten in vaste punten of herhalen ze zich als limietcycli. Het Lorenz-systeem doet geen van beide: het pad kronkelt oneindig in drie dimensies zonder zichzelf ooit te kruisen, en vormt een <strong>vreemde aantrekker</strong> met een fractale geometrie (Hausdorff-dimensie circa 2,06)." },
+    { type: 'paragraph', html: "De geometrie van deze attractor is fractal met een Hausdorff-dimensie van ongeveer 2,06." },
     { type: 'title', text: "Toepassingen van de Chaostheorie in de Wetenschap", level: 3 },
     { type: 'paragraph', html: "De lessen van de Lorenz-aantrekker reiken veel verder dan weersvoorspelling en hebben veel moderne vakgebieden beinvloed:" },
     {

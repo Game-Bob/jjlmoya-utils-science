@@ -1,4 +1,4 @@
-﻿import { bibliography } from '../bibliography';
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 
 const slug = 'symulator-energii-sfery-dysona';
@@ -88,20 +88,74 @@ export const content: ToolLocaleContent = {
     structureStatite: 'Chmura zwierciadeł statytowych',
   },
   seo: [
-    { type: 'title', text: 'Symulator Przechwytywania Energii Sfery Dysona', level: 2 },
-    { type: 'paragraph', html: 'Sfera Dysona to nie tylko obraz science fiction gwiazdy w powłoce. To rodzina możliwych koncepcji megastruktur do przechwytywania jasności gwiazdowej: roje satelitów, pierścienie równikowe, cienkie chmury zwierciadeł oraz znana, ale problematyczna sztywna powłoka. Ten symulator zamienia te pomysły w liczby, abyś mógł porównać, jak typ gwiazdy, temperatura kolektora, pokrycie i projekt konstrukcji zmieniają budżet energetyczny.' },
-    { type: 'paragraph', html: 'Kalkulator szacuje przechwyconą moc, termiczny promień orbity, powierzchnię kolektora, okres orbitalny, masę materiału i pokrycie potrzebne do wybranego celu w skali Kardaszewa. Jest stworzony dla studentów, budowniczych światów, komunikatorów naukowych i wszystkich, którzy próbują zrozumieć, dlaczego cywilizacje Typu II są trudne: wyzwaniem jest nie tylko moc, ale także powierzchnia, ciepło, wydobycie, stabilność i logistyka orbitalna.' },
-    { type: 'title', text: 'Jak szacowany jest promień Dysona', level: 3 },
-    { type: 'paragraph', html: 'Optymalny promień jest obliczany z jasności gwiazdowej i temperatury roboczej kolektora. Kolektor blisko jasnej gwiazdy otrzymuje intensywny strumień i musi pracować gorąco lub odrzucać ogromne ilości ciepła. Oddalanie się zmniejsza naprężenia termiczne, ale wymagana powierzchnia kolektora rośnie z kwadratem odległości. Ten kompromis wyjaśnia, dlaczego ta sama frakcja pokrycia może być skromna wokół słabego czerwonego karła i ogromna wokół błękitnego olbrzyma.' },
-    { type: 'title', text: 'Porównanie Roju Dysona, Pierścienia, Powłoki i Chmury Statytów', level: 3 },
     {
-      type: 'list', items: [
-        '<strong>Rój Dysona:</strong> wiele niezależnych kolektorów orbitalnych. To najbardziej prawdopodobna architektura na dużą skalę, ponieważ może być budowana stopniowo i nie wymaga sztywnej powłoki gwiazdowej.',
-        '<strong>Pierścień równikowy:</strong> węższe pasmo kolektorów z niższą wydajnością pokrycia. Łatwiej wyobrazić go sobie jako pierwszą megastrukturę.',
-        '<strong>Sztywna powłoka:</strong> wizualnie ikoniczna, ale mechanicznie niekorzystna. Powłoka wokół gwiazdy ma poważne problemy ze stabilnością i materiałem.',
-        '<strong>Chmura zwierciadeł statytowych:</strong> ultralekkie reflektory utrzymywane częściowo przez ciśnienie promieniowania. Zmniejsza zapotrzebowanie na materiał, ale ma niższą tolerancję termiczną i wymagające wymogi kontrolne.'
-      ]
-    }
+      type: 'title',
+      text: 'Symulator Przechwytywania Energii Sfery Dysona',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Sfera Dysona to nie tylko koncepcja z literatury science-fiction. To cała rodzina pomysłów inżynieryjnych służących przechwytywaniu promieniowania gwiazdy: od rojów satelitów po chmury zwierciadeł statitowych.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Aplikacja oblicza przechwyconą moc, optymalny promień termiczny, powierzchnię kolektorów, okres orbitalny i masę surowcową przeliczoną na masy Merkurego.',
+    },
+    {
+      type: 'title',
+      text: 'Wyznaczanie optymalnego promienia Dysona',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Optymalny promień zależy bezpośrednio od jasności gwiazdy oraz maksymalnej dopuszczalnej temperatury roboczej kolektorów.',
+    },
+    {
+      type: 'title',
+      text: 'Porównanie koncepcji megastruktur',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Rój Dysona:</strong> Ogromna liczba niezależnych kolektorów. Najbardziej realistyczna architektura pozwalająca na stopniową rozbudowę.',
+        '<strong>Pierścień równikowy:</strong> Węższy pas kolektorów o prostszej geometrii.',
+        '<strong>Sztywna powłoka:</strong> Ciągła struktura oferująca maksymalne przechwytywanie, ale skrajnie niestabilna mechanicznie.',
+        '<strong>Chmura statitów:</strong> Bardzo lekkie zwierciadła utrzymywane ciśnieniem promieniowania.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Pokrycie a Skala Kardaszewa',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Skala Kardaszewa określa poziom rozwoju cywilizacji na podstawie zużycia energii. Przechwycenie ułamka energii Słońca wielokrotnie przewyższa obecne zapotrzebowanie ludzkości.',
+    },
+    {
+      type: 'table',
+      headers: ['Konstrukcja', 'Główna zaleta', 'Główne wyzwanie'],
+      rows: [
+        ['Rój Dysona', 'Możliwość budowy etapami', 'Kierowanie ruchem i przesył energii'],
+        ['Pierścień równikowy', 'Mniejsza powierzchnia początkowa', 'Ograniczone pokrycie'],
+        ['Sztywna powłoka', 'Maksymalne przechwytywanie', 'Niestabilność i ogromna masa'],
+        ['Chmura statitów', 'Bardzo mała gęstość powierzchniowa', 'Precyzyjna kontrola położenia'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Zapotrzebowanie na surowce i analiza realności',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Masa materiału wyrażana jest w masach Merkurego. Wiele projektów teoretycznych zakłada rozbiórkę małych planet w celu pozyskania surowców.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Używaj tych wyników jako jakościowego przewodnika po fizycznych granicach inżynierii kosmicznej.',
+    },
   ],
   faq,
   bibliography,

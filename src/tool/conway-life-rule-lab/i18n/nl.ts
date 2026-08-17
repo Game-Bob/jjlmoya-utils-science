@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Gebruik B/S-notatie zoals B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Conway Game of Life Simulator met bewerkbare regels', level: 2 },
-    { type: 'paragraph', html: 'Dit regellab laat je het klassieke cellulaire automaton uitvoeren en zijn regels bewust veranderen en vergelijken. Het bord ondersteunt direct tekenen, patroonplaatsing, willekeurige zaden, stapsgewijze inspectie, variabel tempo en live-metingen voor populatie, dichtheid, geboortes, sterftes en stabiliteit.' },
-    { type: 'title', text: 'Hoe B/S-regels het spel veranderen', level: 3 },
-    { type: 'paragraph', html: 'Life-achtige cellulaire automaten worden vaak geschreven in <strong>B/S-notatie</strong>. De B-kant definieert hoeveel levende buren een dode cel nodig heeft om geboren te worden; de S-kant definieert hoeveel buren een levende cel nodig heeft om te overleven. Conways originele regel, <strong>B3/S23</strong>, is beroemd omdat het in een smal gebied ligt tussen uitsterven en ongecontroleerde groei.' },
-    { type: 'title', text: 'De live-metingen lezen', level: 3 },
-    { type: 'paragraph', html: 'Populatie en dichtheid tonen hoeveel cellen er leven, maar vertellen niet het volledige verhaal. Geboortes en sterftes onthullen het huidige activiteitsniveau, terwijl stabiliteit schat of de kolonie zich stabiliseert in een oscillator, bevriest tot stillevens, of turbulent blijft.' },
+    {
+      type: 'title',
+      text: 'Conway Game of Life Simulator met Bewerkbare Regels',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Dit regel-lab laat je de klassieke cellulaire automaat uitvoeren en de regels aanpassen en vergelijken.',
+    },
+    {
+      type: 'title',
+      text: 'Hoe B/S-regels het spel veranderen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Life-achtige cellulaire automaten worden vaak geschreven in <strong>B/S-notatie</strong>. Conway\'s oorspronkelijke regel <strong>B3/S23</strong> is beroemd vanwege het delicate evenwicht.',
+    },
+    {
+      type: 'table',
+      headers: ['Regel', 'Gedrag om te observeren', 'Goed experiment'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Klassieke zwevers, knipperlichten en kanonnen.', 'Plaats het Gosper-kanon en volg de populatie.'],
+        ['<strong>B36/S23</strong>', 'HighLife ondersteunt zelfreplicatie.', 'Vergelijk dezelfde kiem met B3/S23.'],
+        ['<strong>B2/S</strong>', 'Cellen overleven nooit.', 'Begin met een kleine kiem.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night ondersteunt omgekeerde structuren.', 'Test met een hoge begindichtheid.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Waarom patronen belangrijk zijn',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Patronen vormen de woordenschat van Game of Life. Zwevers tonen beweging en pulsars tonen oscillatie.',
+    },
+    {
+      type: 'title',
+      text: 'Live statistieken lezen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Populatie en dichtheid tonen hoeveel cellen in leven zijn, maar geboorten en sterftes tonen het werkelijke activiteitsniveau.',
+    },
   ],
   faq,
   bibliography,

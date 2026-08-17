@@ -106,39 +106,113 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Kara delik olay ufku simülatörü: Schwarzschild yarıçapı, foton küresi ve zaman genişlemesi',
+      text: 'Schwarzschild Yarıçapı, Foton Küresi ve Zaman Genleşmesi için Kara Delik Olay Ufku Simülatörü',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Bu kara delik olay ufku simülatörü, Schwarzschild kara deliklerinin temel fikirlerini etkileşimli bir görsel modele dönüştürür. Kara delik kütlesini değiştirin, bir probu içine veya dışına doğru hareket ettirin ve olay ufku, foton küresi, en içteki kararlı dairesel yörünge, kaçış hızı, kütle çekimsel kızıla kayma ve zaman genişlemesinin nasıl tepki verdiğini karşılaştırın.',
+      html: 'Bu kara delik olay ufku simülatörü, Schwarzschild kara deliklerinin temel fikirlerini etkileşimli bir görsel modele dönüştürür.',
     },
     {
       type: 'paragraph',
-      html: 'Simülatör; statik bir formülden daha fazlasını isteyen astronomi öğrencileri, fizik öğretmenleri, bilim yazarları ve meraklı öğrenciler için yapılmıştır. Ekran, sayıları uzamsal bir diyagramla bağlayarak olay ufkunun neden maddesel bir yüzey olmadığını, fotonların neden özel bir kararsız yörüngesi olduğunu ve kararlı dairesel hareketin neden ufka ulaşmadan önce durduğunu görsel olarak anlamanızı sağlar.',
+      html: 'Simülatör astronomi öğrencileri, fizik öğretmenleri ve meraklı araştırmacılar için tasarlanmıştır.',
     },
     {
       type: 'title',
-      text: 'Olay ufku yarıçapı nasıl hesaplanır',
+      text: 'Olay Ufku Yarıçapı Nasıl Hesaplanır',
       level: 3,
     },
     {
       type: 'paragraph',
-      html: 'Dönmeyen, yüksüz bir kara delik için olay ufku yarıçapı <strong>Schwarzschild yarıçapıdır</strong>. <strong>Rs = 2GM / c^2</strong> olarak hesaplanır; burada G kütle çekim sabiti, M kara delik kütlesi ve c ışık hızıdır. Bir güneş kütlesi yaklaşık 2,95 kilometrelik bir Schwarzschild yarıçapına karşılık gelir.',
+      html: 'Dönmeyen ve yüksüz bir kara delik için yarıçap <strong>Schwarzschild yarıçapıdır</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Schwarzschild yarıçapı kütleyle doğrusal olarak ölçeklendiğinden, 10 güneş kütleli bir kara delik yaklaşık 29,5 km yarıçapa sahipken, Yay A* gibi 4 milyon güneş kütleli bir kara delik yaklaşık 11,8 milyon km yarıçapa sahiptir. Kütle kaydırıcısı, yıldız kütleli ve süper kütleli durumların aynı kontrolde ele alınabilmesi için logaritmik bir ölçek kullanır.',
+      html: 'Yarıçap kütle ile doğru orantılı olarak büyüdüğünden, 10 güneş kütleli bir kara deliğin yarıçapı yaklaşık 29.5 km\'dir.',
     },
     {
       type: 'table',
-      headers: ['Bölge', 'Schwarzschild yarıçapı cinsinden yarıçap', 'Anlamı'],
+      headers: ['Bölge', 'Schwarzschild Yarıçapı Cinsinden Yarıçap', 'Anlamı'],
       rows: [
-        ['Olay ufku', '1.0 Rs', 'Kaçış hızının ışık hızına eşit olduğu tek yönlü sınır.'],
-        ['Foton küresi', '1.5 Rs', 'Bir Schwarzschild kara deliği etrafında ışık için kararsız dairesel yörünge.'],
-        ['ISCO', '3.0 Rs', 'Kütleli parçacıklar için en içteki kararlı dairesel yörünge.'],
-        ['Zayıf alan', '6 Rs ve ötesi', 'Kütle çekimi hala güçlüdür ancak dairesel yörüngeleri sürdürmek daha kolaydır.'],
+        ['Olay Ufku', '1.0 Rs', 'Kaçış hızının ışık hızına eşit olduğu geri dönüşsüz sınır.'],
+        ['Foton Küresi', '1.5 Rs', 'Işık için kararsız dairesel yörünge.'],
+        ['Zayıf Alan', '6 Rs ve ötesi', 'Yerçekimi hâlâ güçlüdür ancak dairesel yörüngeleri korumak daha kolaydır.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Kaçış Hızı ve Neden Ufkun Nedensel Bir Sınır Olduğu',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Kaçış hızı, bir nesnenin ek itki olmadan sonsuza ulaşmak için ihtiyaç duyduğu hızdır.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Kaçış hızı göstergesi faydalı bir sezgi sunar ancak tam bir rölativistik açıklama değildir.',
+    },
+    {
+      type: 'title',
+      text: 'Kara Delik Yakınında Zaman Genleşmesi ve Kütleçekimsel Kırmızıya Kayma',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Kara deliğin dışındaki sabit bir yarıçapta tutulan saat, uzaktaki bir gözlemciye göre daha yavaş çalışır. Basitleştirilmiş çarpan <strong>sqrt(1 - Rs / r)</strong>\'dir.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Kütleçekimsel kırmızıya kayma aynı geometriyi izler. Yerçekimi kuyusundan çıkan ışık enerji kaybeder.',
+    },
+    {
+      type: 'title',
+      text: 'Foton Küresi ve ISCO Açıklaması',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: '1.5 Rs konumundaki foton küresi, ışığın ilkesel olarak kararsız dairesel bir yörüngede dönebileceği yerdir.',
+    },
+    {
+      type: 'paragraph',
+      html: '3 Rs konumundaki ISCO, madde için en içteki kararlı dairesel yörüngeyi temsil eder.',
+    },
+    {
+      type: 'title',
+      text: 'Yıldız Kütleli ve Süper Kütleli Kara Deliklerin Karşılaştırılması',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Şaşırtıcı bir ders, daha büyük kara deliklerin ufukta daha az şiddetli gelgit kuvvetlerine sahip olabilmesidir.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Simülatör, metre başına Dünya yerçekimi cinsinden ifade edilen bir gelgit gradyanı okuması içerir.',
+    },
+    {
+      type: 'title',
+      text: 'Bu Simülatörün Sınırlamaları',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Spinsiz:</strong> Schwarzschild geometrisi kullanılır.',
+        '<strong>Basitleştirilmiş kütle aktarım fiziği:</strong> gösterge niteliğinde disk.',
+        '<strong>Işın izleme yok:</strong> eğitici diyagram.',
+        '<strong>Sabit saat:</strong> serbest düşüşte değil.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Sıkça Sorulan Sorular',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Bir kara deliğin parametrelerini tahmin etmek için bu aracı kullanın.',
     },
   ],
   faq,

@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Parametreler neyi temsil eder?",
     "answer": "Sigma Prandtl sayisini, Rho Rayleigh sayisini, Beta ise geometrik en-boy oranini temsil eder."
+  },
+  {
+    "question": "Çeker neden kelebek şeklinde görünür?",
+    "answer": "İki kanatlı ikonik şekil, sistemin yörüngelerin öngörülemeyen şekilde etrafında döndüğü iki kararsız denge noktasına sahip olmasından kaynaklanır."
+  },
+  {
+    "question": "Lorenz çekeri gerçekten rastgele midir?",
+    "answer": "Hayır, sistem tamamen belirlenimcidir. Ancak kaotik olduğu için uzun vadede öngörülemez."
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Kelebek Etkisi: Baslangic Kosullarına Hassas Bagimlilik", level: 3 },
     { type: 'paragraph', html: "Kaotik sistemlerin belirleyici ozelligi, <strong>baslangic kosullarina hassas bagimliliklari</strong>dir; bu durum populer olarak <strong>Kelebek Etkisi</strong> olarak bilinir. Bu simulator, baslangic perturbasyonunu belirleyen kaydirici ile ayarlanan kucuk bir ayrilikla baslayan iki yoru (T1 Cyan, T2 Pembe) calistirarak bunu gostermektedir. Baslangicta neredeyse ayni yolu izlerler. Kisa bir sureyle dogrusal olmayan terimler farki buyutecek ve yollar tamamen birbirinden ayrilacak." },
+    { type: 'paragraph', html: "Bu hassasiyet, birbiriyle neredeyse aynı başlayan iki yörünge izlenerek gösterilir." },
     {
       type: 'table',
       headers: ["Parametre","Standart Deger","Fiziksel Baglam","Degistirildiginde Davranis"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Faz Uzayi, Tuhaf Cezbediciler ve Fraktallar", level: 3 },
     { type: 'paragraph', html: "Klasik fizikte yoarungeler sabit noktalarda karara oturur veya sinir cevrimleri olarak kendini tekrar eder. Lorenz sistemi her ikisini de yapmaz: yol, uc boyutlu uzayda kendisiyle hic kesismeden sonsuz bir sekilde dolasir ve Hausdorff boyutu yaklasik 2,06 olan fraktal geometriye sahip bir <strong>tuhaf cezbedici</strong> olusturur." },
+    { type: 'paragraph', html: "Bu çekerin geometrisi yaklaşık 2,06 Hausdorff boyutuna sahip bir fraktaldır." },
     { type: 'title', text: "Kaos Teorisinin Bilimeteki Uygulamalari", level: 3 },
     { type: 'paragraph', html: "Lorenz cezbedicisinden cikartilan dersler, hava tahmininin cok otesine gecer ve pek cok modern calisma alanini etkilemistir:" },
     {

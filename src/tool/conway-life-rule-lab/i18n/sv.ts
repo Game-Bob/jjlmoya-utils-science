@@ -89,12 +89,52 @@ export const content: ToolLocaleContent = {
     invalidRule: 'Använd B/S-notation som B3/S23.',
   },
   seo: [
-    { type: 'title', text: 'Conway Game of Life-simulator med redigerbara regler', level: 2 },
-    { type: 'paragraph', html: 'Detta regellabb låter dig köra den klassiska cellulära automaten och sedan medvetet ändra och jämföra dess regler. Brädet stöder direkt ritning, mönsterplacering, slumpmässiga frön, stegvis inspektion, variabelt tempo och livemätningar för population, densitet, födslar, dödsfall och stabilitet.' },
-    { type: 'title', text: 'Hur B/S-regler förändrar spelet', level: 3 },
-    { type: 'paragraph', html: 'Life-liknande cellulära automater skrivs ofta i <strong>B/S-notation</strong>. B-sidan definierar hur många levande grannar en död cell behöver för att födas; S-sidan definierar hur många grannar en levande cell behöver för att överleva. Conways ursprungliga regel, <strong>B3/S23</strong>, är känd för att befinna sig i ett smalt område mellan utrotning och okontrollerad tillväxt.' },
-    { type: 'title', text: 'Läsa livemätningarna', level: 3 },
-    { type: 'paragraph', html: 'Population och densitet visar hur många celler som lever, men de berättar inte hela historien. Födslar och dödsfall avslöjar den aktuella aktivitetsnivån, medan stabilitet uppskattar om kolonin stabiliseras i en oscillator, fryser till stilleben eller förblir turbulent.' },
+    {
+      type: 'title',
+      text: 'Conways Game of Life-simulator med redigerbara regler',
+      level: 2,
+    },
+    {
+      type: 'paragraph',
+      html: 'Detta regel-laboratorium låter dig köra den klassiska cellulära automaten samt ändra och jämföra dess regler.',
+    },
+    {
+      type: 'title',
+      text: 'Hur B/S-regler ändrar spelet',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Life-liknande cellulära automater skrivs ofta i <strong>B/S-notation</strong>. Conways ursprungliga regel <strong>B3/S23</strong> är känd för sin perfekta balans.',
+    },
+    {
+      type: 'table',
+      headers: ['Regel', 'Beteende att observera', 'Bra experiment'],
+      rows: [
+        ['<strong>B3/S23</strong>', 'Klassiska glidare, blinkare och kanoner.', 'Placera Gospers kanon och följ populationen.'],
+        ['<strong>B36/S23</strong>', 'HighLife stödjer självreplikering.', 'Jämför samma frö med B3/S23.'],
+        ['<strong>B2/S</strong>', 'Celler överlever aldrig.', 'Börja med ett litet frö.'],
+        ['<strong>B3678/S34678</strong>', 'Day & Night stödjer inverterade strukturer.', 'Testa med hög starttäthet.'],
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Varför mönster är viktiga',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Mönster utgör ordförrådet i Game of Life. Glidare visar rörelse och pulsatorer visar oscillering.',
+    },
+    {
+      type: 'title',
+      text: 'Att läsa mätvärden i realtid',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Population och täthet visar hur många celler som lever, medan födslar och dödsfall visar den aktuella aktivitetsnivån.',
+    },
   ],
   faq,
   bibliography,

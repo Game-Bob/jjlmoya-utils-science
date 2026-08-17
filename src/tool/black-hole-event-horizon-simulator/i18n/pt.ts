@@ -106,16 +106,16 @@ export const content: ToolLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Simulador do horizonte de eventos de um buraco negro para raio de Schwarzschild, esfera de fótons e dilatação temporal',
+      text: 'Simulador do Orizonte de Eventos de Buraco Negro para Raio de Schwarzschild, Esfera de Fótons e Dilatação Temporal',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Este simulador do horizonte de eventos de um buraco negro transforma as ideias fundamentais dos buracos negros de Schwarzschild em um modelo visual interativo. Altere a massa do buraco negro, mova uma sonda para dentro ou para fora e compare como o horizonte de eventos, a esfera de fótons, a órbita circular estável mais interna, a velocidade de escape, o desvio para o vermelho gravitacional e a dilatação temporal respondem.',
+      html: 'Este simulador do horizonte de eventos converte as ideias fundamentais dos buracos negros de Schwarzschild em um modelo visual interativo.',
     },
     {
       type: 'paragraph',
-      html: 'O simulador foi construído para estudantes de astronomia, professores de física, divulgadores científicos e aprendizes curiosos que desejam mais do que uma fórmula estática. A exibição conecta os números a um diagrama espacial para que você possa ver por que o horizonte de eventos não é uma superfície material, por que os fótons têm uma órbita instável especial e por que o movimento circular estável para antes de o horizonte ser alcançado.',
+      html: 'O simulador foi desenvolvido para estudantes de astronomia, professores de física e pesquisadores.',
     },
     {
       type: 'title',
@@ -124,21 +124,96 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Para um buraco negro sem rotação nem carga, o raio do horizonte de eventos é o <strong>raio de Schwarzschild</strong>. Ele é calculado como <strong>Rs = 2GM / c^2</strong>, onde G é a constante gravitacional, M é a massa do buraco negro e c é a velocidade da luz. Uma massa solar corresponde a um raio de Schwarzschild de aproximadamente 2,95 quilômetros.',
+      html: 'Para um buraco negro sem rotação e sem carga, o raio é o <strong>raio de Schwarzschild</strong>: <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Como o raio de Schwarzschild escala linearmente com a massa, um buraco negro de 10 massas solares tem um raio próximo de 29,5 quilômetros, enquanto um buraco negro de 4 milhões de massas solares como Sagittarius A* tem um raio de cerca de 11,8 milhões de quilômetros. O controle deslizante de massa usa uma escala logarítmica para que tanto os casos de massa estelar quanto os supermassivos caibam no mesmo controle.',
+      html: 'Como o raio varia linearmente com a massa, 10 massas solares correspondem a um raio de aproximadamente 29,5 km.',
     },
     {
       type: 'table',
-      headers: ['Região', 'Raio em raios de Schwarzschild', 'O que significa'],
+      headers: ['Região', 'Raio em raios de Schwarzschild', 'Significado'],
       rows: [
-        ['Horizonte de eventos', '1.0 Rs', 'O limite unidirecional onde a velocidade de escape iguala a velocidade da luz.'],
-        ['Esfera de fótons', '1.5 Rs', 'A órbita circular instável para a luz ao redor de um buraco negro de Schwarzschild.'],
-        ['ISCO', '3.0 Rs', 'A órbita circular estável mais interna para partículas com massa.'],
-        ['Campo fraco', '6 Rs e além', 'A gravidade ainda é forte, mas as órbitas circulares são mais fáceis de sustentar.'],
+        ['Horizonte de eventos', '1.0 Rs', 'O limite sem retorno onde a velocidade de escape é igual a c.'],
+        ['Esfera de fótons', '1.5 Rs', 'A órbita circular instável para a luz.'],
+        ['ISCO', '3.0 Rs', 'A última órbita circular estável para partículas com massa.'],
+        ['Campo fraco', '6 Rs e além', 'A gravidade ainda é forte, mas órbitas circulares são fáceis de manter.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Velocidade de escape e limite causal',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'A velocidade de escape é a velocidade mínima necessária para alcançar distância infinita sem propulsão.',
+    },
+    {
+      type: 'paragraph',
+      html: 'A leitura da velocidade de escape fornece uma intuição útil, mas não é uma descrição relativística completa.',
+    },
+    {
+      type: 'title',
+      text: 'Dilatação temporal e desvio para o vermelho gravitacional',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Um relógio fixo perto de um buraco negro avança mais devagar em comparação com um observador distante. O fator simplificado é <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'O desvio para o vermelho gravitacional segue a mesma geometria. A luz perde energia ao subir o poço gravitacional.',
+    },
+    {
+      type: 'title',
+      text: 'Explicação da esfera de fótons e da ISCO',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'A esfera de fótons a 1.5 Rs é onde a luz pode percorrer uma órbita circular instável.',
+    },
+    {
+      type: 'paragraph',
+      html: 'A ISCO a 3 Rs representa a última órbita circular estável para a matéria.',
+    },
+    {
+      type: 'title',
+      text: 'Buracos negros estelares vs supermassivos',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Uma lição surpreendente é que buracos negros supermassivos produzem forças de maré menos violentas no horizonte.',
+    },
+    {
+      type: 'paragraph',
+      html: 'O simulador inclui uma leitura do gradiente de maré expressa em gravidades terrestres por metro.',
+    },
+    {
+      type: 'title',
+      text: 'Limitações deste simulador',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Sem rotação:</strong> utiliza a geometria de Schwarzschild.',
+        '<strong>Física de acreção simplificada:</strong> disco visual indicativo.',
+        '<strong>Sem ray tracing:</strong> diagrama educacional.',
+        '<strong>Relógio estacionário:</strong> não em queda livre.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Perguntas frequentes',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Utilize esta ferramenta para estimar os parâmetros de um buraco negro.',
     },
   ],
   faq,

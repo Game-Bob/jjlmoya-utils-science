@@ -111,11 +111,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Dieser Schwarzes Loch Ereignishorizont Simulator verwandelt die Kernideen von Schwarzschild-schwarzen Löchern in ein interaktives visuelles Modell. Ändern Sie die Masse des schwarzen Lochs, bewegen Sie eine Sonde nach innen oder außen und vergleichen Sie, wie Ereignishorizont, Photonensphäre, innerster stabiler kreisförmiger Orbit, Fluchtgeschwindigkeit, gravitative Rotverschiebung und Zeitdilatation reagieren.',
+      html: 'Dieser Schwarzes Loch Ereignishorizont Simulator verwandelt die Kernideen von Schwarzschild-schwarzen Löchern in ein interaktives visuelles Modell.',
     },
     {
       type: 'paragraph',
-      html: 'Der Simulator wurde für Astronomiestudenten, Physiklehrer, Wissenschaftsautoren und neugierige Lernende entwickelt, die mehr als eine statische Formel wollen. Die Anzeige verbindet die Zahlen mit einem räumlichen Diagramm, sodass Sie sehen können, warum der Ereignishorizont keine materielle Oberfläche ist, warum Photonen einen speziellen instabilen Orbit haben und warum stabile Kreisbewegungen stoppen, bevor der Horizont erreicht wird.',
+      html: 'Der Simulator wurde für Astronomiestudenten, Physiklehrer und Wissenschaftsautoren entwickelt.',
     },
     {
       type: 'title',
@@ -124,11 +124,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Für ein nicht rotierendes, ungeladenes schwarzes Loch ist der Ereignishorizont-Radius der <strong>Schwarzschild-Radius</strong>. Er wird berechnet als <strong>Rs = 2GM / c^2</strong>, wobei G die Gravitationskonstante, M die Masse des schwarzen Lochs und c die Lichtgeschwindigkeit ist. Eine Sonnenmasse entspricht einem Schwarzschild-Radius von etwa 2,95 Kilometern.',
+      html: 'Für ein nicht rotierendes, ungeladenes schwarzes Loch ist der Ereignishorizont-Radius der <strong>Schwarzschild-Radius</strong>. Er wird berechnet als <strong>Rs = 2GM / c^2</strong>.',
     },
     {
       type: 'paragraph',
-      html: 'Da der Schwarzschild-Radius linear mit der Masse skaliert, hat ein schwarzes Loch mit 10 Sonnenmassen einen Radius von nahezu 29,5 Kilometern, während ein schwarzes Loch mit 4 Millionen Sonnenmassen wie Sagittarius A* einen Radius von etwa 11,8 Millionen Kilometern hat. Der Masse-Regler verwendet eine logarithmische Skala, damit sowohl stellare als auch supermassive Fälle in dieselbe Steuerung passen.',
+      html: 'Da der Schwarzschild-Radius linear mit der Masse skaliert, hat ein schwarzes Loch mit 10 Sonnenmassen einen Radius von etwa 29,5 Kilometern.',
     },
     {
       type: 'table',
@@ -139,6 +139,81 @@ export const content: ToolLocaleContent = {
         ['ISCO', '3.0 Rs', 'Der innerste stabile kreisförmige Orbit für massereiche Teilchen.'],
         ['Schwaches Feld', '6 Rs und darüber', 'Die Schwerkraft ist immer noch stark, aber kreisförmige Orbits sind leichter aufrechtzuerhalten.'],
       ],
+    },
+    {
+      type: 'title',
+      text: 'Fluchtgeschwindigkeit und warum der Horizont eine kausale Grenze ist',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Fluchtgeschwindigkeit ist die Geschwindigkeit, die ein Objekt benötigt, um ohne zusätzlichen Antrieb beliebig weit zu entkommen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Fluchtgeschwindigkeitsanzeige liefert eine nützliche Intuition, sollte jedoch nicht als vollständige relativistische Beschreibung gelesen werden.',
+    },
+    {
+      type: 'title',
+      text: 'Zeitdilatation und gravitative Rotverschiebung nahe einem schwarzen Loch',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Eine Uhr, die an einem festen Radius außerhalb eines Schwarzschild-schwarzen Lochs gehalten wird, tickt im Vergleich zu einem entfernten Beobachter langsamer. Der vereinfachte Faktor ist <strong>sqrt(1 - Rs / r)</strong>.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Die gravitative Rotverschiebung folgt derselben Geometrie. Licht, das aus dem Gravitationspotenzial aufsteigt, verliert Energie.',
+    },
+    {
+      type: 'title',
+      text: 'Photonensphäre und ISCO erklärt',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Die Photonensphäre bei 1.5 Rs ist der Ort, an dem Licht im Prinzip einem kreisförmigen Orbit folgen kann.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Die ISCO bei 3 Rs ist der innerste stabile kreisförmige Orbit für massereiche Teilchen.',
+    },
+    {
+      type: 'title',
+      text: 'Stellare im Vergleich zu supermassiven schwarzen Löchern',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Eine überraschende Lektion ist, dass größere schwarze Löcher am Horizont weniger destruktiv wirken können.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Der Simulator enthält eine Gezeitengradienten-Anzeige in Erdschwerkraft pro Meter.',
+    },
+    {
+      type: 'title',
+      text: 'Einschränkungen dieses Simulators',
+      level: 3,
+    },
+    {
+      type: 'list',
+      items: [
+        '<strong>Kein Spin:</strong> verwendet Schwarzschild-Geometrie.',
+        '<strong>Keine Akkretionsphysik:</strong> vereinfachte Scheibenanzeige.',
+        '<strong>Kein Raytracing:</strong> didaktisches Diagramm.',
+        '<strong>Kein freier Fall:</strong> stationäre Beobachteruhr.',
+      ],
+    },
+    {
+      type: 'title',
+      text: 'Häufige Fragen',
+      level: 3,
+    },
+    {
+      type: 'paragraph',
+      html: 'Verwenden Sie dieses Tool zur Schätzung der Parameter eines schwarzen Lochs.',
     },
   ],
   faq,

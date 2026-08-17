@@ -33,6 +33,14 @@ const faq = [
   {
     "question": "Apa arti parameter tersebut?",
     "answer": "Sigma mewakili angka Prandtl, Rho angka Rayleigh, dan Beta rasio aspek geometri."
+  },
+  {
+    "question": "Mengapa bentuk atraktor seperti kupu-kupu?",
+    "answer": "Bentuk dua sayap timbul karena sistem memiliki dua titik keseimbangan tidak stabil di mana lintasan mengorbit secara tidak terduga."
+  },
+  {
+    "question": "Apakah Atraktor Lorenz benar-benar acak?",
+    "answer": "Tidak, sistem ini sepenuhnya deterministik. Namun karena bersifat kacau, ia tidak dapat diprediksi dalam jangka panjang tanpa presisi tak terbatas."
   }
 ];
 
@@ -77,6 +85,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Efek Kupu-kupu: Ketergantungan Sensitif pada Kondisi Awal", level: 3 },
     { type: 'paragraph', html: "Ciri khas sistem kacau adalah <strong>ketergantungan sensitif pada kondisi awal</strong>, yang populer dikenal sebagai <strong>Efek Kupu-kupu</strong>. Simulator ini menunjukkan hal ini dengan menjalankan dua lintasan (T1 dalam Cyan dan T2 dalam Merah Muda) yang dimulai dengan pemisahan kecil. Pada awalnya, keduanya menempuh jalur yang hampir sama. Setelah waktu singkat, perbedaan awal diperkuat oleh suku-suku nonlinear sistem, dan jalur-jalur tersebut menyimpang sepenuhnya." },
+    { type: 'paragraph', html: "Sensitivitas ini ditunjukkan dalam simulator ini dengan menjalankan dua lintasan yang dimulai sangat dekat dan menyimpang secara eksponensial." },
     {
       type: 'table',
       headers: ["Parameter","Nilai Standar","Konteks Fisik","Perilaku saat Diubah"],
@@ -88,6 +97,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: "Ruang Fase, Penarik Aneh, dan Fraktal", level: 3 },
     { type: 'paragraph', html: "Dalam fisika klasik, lintasan akhirnya stabil di titik tetap atau berulang sebagai siklus batas. Sistem Lorenz tidak melakukan keduanya: jalurnya melingkar tanpa batas dalam tiga dimensi tanpa pernah bersilangan, membentuk <strong>penarik aneh</strong> dengan geometri fraktal (dimensi Hausdorff sekitar 2,06)." },
+    { type: 'paragraph', html: "Geometri penarik ini bersifat fraktal dengan dimensi Hausdorff sekitar 2,06." },
     { type: 'title', text: "Penerapan Teori Kekacauan dalam Ilmu Pengetahuan", level: 3 },
     { type: 'paragraph', html: "Pelajaran dari penarik Lorenz jauh melampaui prakiraan cuaca dan telah mempengaruhi banyak bidang ilmu modern:" },
     {
