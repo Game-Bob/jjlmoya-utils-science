@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 export const crystalCatalogTranslations = {
   en: {
     latticeBodyCenteredCubic: 'Body-centered cubic',
