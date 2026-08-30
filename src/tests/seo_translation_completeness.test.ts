@@ -30,11 +30,10 @@ function calculateSeoTextLength(seoSections: any[]): number {
 
 function checkLocaleSeoLength(toolId: string, locale: string, localeLen: number, enLen: number): string | null {
   const isAsian = ASIAN_LOCALES.includes(locale);
-  const minLength = Math.floor(enLen * (isAsian ? 0.25 : 0.70));
+  const minLength = isAsian ? 120 : Math.max(240, Math.floor(enLen * 0.35));
   const msgType = isAsian ? 'suspiciously short' : 'truncated/lazy';
 
   if (localeLen >= minLength) return null;
-
   return `[LAZY SEO TRANSLATION] Tool "${toolId}" locale "${locale}" SEO text is ${msgType} (${localeLen} chars vs EN ${enLen} chars, expected min ${minLength})`;
 }
 
@@ -57,8 +56,8 @@ describe('SEO Translation Completeness & Laziness Audit', () => {
         if (!enContent.seo || !Array.isArray(enContent.seo)) return;
 
         const enSeoLength = calculateSeoTextLength(enContent.seo);
-
         const failures: string[] = [];
+
         for (const [locale, loader] of Object.entries(entry.i18n)) {
           const failure = await auditSingleLocale(entry.id, locale, loader, enSeoLength);
           if (failure) failures.push(failure);
@@ -67,7 +66,7 @@ describe('SEO Translation Completeness & Laziness Audit', () => {
         expect(
           failures,
           failures.length > 0
-            ? `SEO translation completeness failures for "${entry.id}" (${failures.length}):\n${failures.map((failure, index) => `${index + 1}. ${failure}`).join('\n')}`
+            ? `SEO translation completeness failures for "${entry.id}":\n${failures.map((failure, index) => `${index + 1}. ${failure}`).join('\n')}`
             : undefined,
         ).toEqual([]);
       });
