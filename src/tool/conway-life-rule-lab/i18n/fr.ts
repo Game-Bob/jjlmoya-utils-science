@@ -135,6 +135,10 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'La population et la densité indiquent combien de cellules sont vivantes, mais les naissances et décès révèlent le niveau d\'activité.',
     },
+    {
+      type: 'paragraph',
+      html: 'Changez la règle B/S et gardez la même graine pour comparer les résultats. Essayez plusieurs densités initiales: certains motifs disparaissent, d\'autres oscillent ou se déplacent sur la grille. Les métriques décrivent l\'évolution, tandis que l\'inspection visuelle permet de reconnaître les planeurs, les oscillateurs et les structures stables. Ce laboratoire est un outil pédagogique pour expérimenter avec les automates cellulaires; chaque règle et chaque condition initiale produit une dynamique différente. Notez la règle, la taille de la grille et la graine afin de reproduire une expérience et de comparer les générations.',
+    },
   ],
   faq,
   bibliography,

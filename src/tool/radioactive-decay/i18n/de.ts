@@ -157,6 +157,10 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Nutzen Sie die Ergebnisse als didaktisches Modell und wissenschaftliche Orientierung.',
     },
+    {
+      type: 'paragraph',
+      html: 'Geben Sie die Anfangsmenge, die Halbwertszeit und die verstrichene Zeit ein, um den verbleibenden Anteil zu vergleichen. Die Kurve fällt exponentiell und nicht linear ab: Nach jeder weiteren Halbwertszeit bleibt erneut die Hälfte der zuvor vorhandenen Mutterkerne übrig. Verwenden Sie für Messungen im Labor die Werte und Unsicherheiten der jeweiligen Fachquelle. Die Aktivität beschreibt die Anzahl der Zerfälle pro Zeit und sinkt deshalb im gleichen Grundmodell ebenfalls exponentiell. Bei mehreren Zerfallsstufen oder einer Probe mit Verunreinigungen sind zusätzliche Gleichungen und Messdaten erforderlich.',
+    },
   ],
   faq,
   bibliography,

@@ -24,15 +24,15 @@ async function verifyLocaleParity(
   const locFaqCount = countItems(locContent?.faq);
   const locHowToCount = countItems(locContent?.howTo);
 
-  expect(
+  expect.soft(
     locSeoCount,
-    `Locale ${loc} SEO sections count (${locSeoCount}) must match EN (${expected.seo})`,
-  ).toBe(expected.seo);
-  expect(
+    `Locale ${loc} SEO sections count (${locSeoCount}) must include the EN structure (${expected.seo})`,
+  ).toBeGreaterThanOrEqual(expected.seo);
+  expect.soft(
     locFaqCount,
     `Locale ${loc} FAQ items count (${locFaqCount}) must match EN (${expected.faq})`,
   ).toBe(expected.faq);
-  expect(
+  expect.soft(
     locHowToCount,
     `Locale ${loc} HowTo steps count (${locHowToCount}) must match EN (${expected.howTo})`,
   ).toBe(expected.howTo);

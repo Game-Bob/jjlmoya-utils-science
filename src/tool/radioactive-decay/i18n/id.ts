@@ -155,7 +155,11 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Gunakan hasil sebagai model pembelajaran dan perkiraan ilmiah yang jelas.',
+      html: 'Gunakan hasil sebagai model pembelajaran dan perkiraan ilmiah yang jelas. Masukkan jumlah awal, waktu paruh, dan waktu yang telah berlalu untuk membandingkan fraksi yang tersisa. Peluruhan bersifat eksponensial: setelah setiap waktu paruh, setengah dari inti induk yang tersisa masih ada. Aktivitas menyatakan jumlah peluruhan per satuan waktu dan mengikuti pola yang sama dalam model sederhana. Untuk sampel nyata, gunakan data isotop dan ketidakpastian dari sumber ilmiah yang sesuai. Campuran isotop, rantai peluruhan, serta keterbatasan alat ukur memerlukan model tambahan, sehingga kalkulator ini tidak menggantikan analisis radiometri atau prosedur keselamatan laboratorium.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Masukkan jumlah awal, waktu paruh, dan waktu yang telah berlalu untuk membandingkan fraksi yang tersisa. Kurva peluruhan bersifat eksponensial, bukan linear: setelah setiap waktu paruh, setengah dari inti induk yang tersisa akan tetap ada. Aktivitas menunjukkan jumlah peluruhan per satuan waktu dan mengikuti pola yang sama dalam model sederhana ini. Gunakan waktu paruh serta ketidakpastian dari sumber ilmiah yang sesuai jika Anda menganalisis sampel nyata. Rantai peluruhan, campuran isotop, dan keterbatasan detektor memerlukan data serta model tambahan. Kalkulator ini membantu memahami rumus, perbandingan, dan skala waktu, tetapi tidak menggantikan pengukuran radiometri atau prosedur keselamatan laboratorium.',
     },
   ],
   faq,

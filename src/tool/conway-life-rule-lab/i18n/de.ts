@@ -135,6 +135,10 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Population und Dichte zeigen, wie viele Zellen am Leben sind, aber sie erzählen nicht die ganze Geschichte. Geburten und Tode zeigen das aktuelle Aktivitätsniveau, während Stabilität abschätzt, ob die Kolonie sich in einen Oszillator einpendelt, in Stilleben einfriert oder turbulent bleibt.',
     },
+    {
+      type: 'paragraph',
+      html: 'Ändere die B/S-Regel und beobachte, wie sich dieselbe Saat verändert. Wiederhole den Lauf mit einer anderen Startdichte, um stabile Muster und bewegte Strukturen zu vergleichen.',
+    },
   ],
   faq,
   bibliography,

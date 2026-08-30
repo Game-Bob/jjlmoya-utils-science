@@ -81,6 +81,10 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
+      html: 'Ative o detector para comparar o padrão com informação de caminho disponível.',
+    },
+    {
+      type: 'paragraph',
       html: 'A ferramenta foi projetada para estudantes que buscam uma explicação clara sobre por que a medição altera o resultado. Evita a frase vaga de que "o observador muda a realidade" e foca na ideia física: a interferência exige alternativas indistinguíveis.',
     },
     {

@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'ciencia',
   title: 'Herramientas y Simuladores Científicos Interactivos',
-  description: 'Explora la ciencia con herramientas gratuitas online. Simuladores de impacto de asteroides, conteo de colonias bacterianas, probabilidad de simulación y renovación celular.',
+  description: 'Explora la ciencia con herramientas online para simular impactos de asteroides, contar colonias bacterianas y estudiar la probabilidad de una simulación.',
   seo: [
     {
       type: 'title',
@@ -71,7 +71,7 @@ export const content: CategoryLocaleContent = {
         'Modelado Matemático: Simulaciones basadas en leyes físicas reales (gravitación, termodinámica, balística).',
         'Educación Interactiva: Herramientas diseñadas para que estudiantes y entusiastas experimenten con variables científicas.',
         'Rigor Técnico: Datos y fórmulas extraídos de publicaciones científicas y bases de datos académicas.',
-        'Privacidad de Datos Científicos: Todos los procesos de cálculo y simulación se ejecutan en local para garantizar la seguridad de tu investigación.',
+        'Privacidad de Datos Científicos: Los procesos de cálculo y simulación se ejecutan localmente para mantener tus datos en tu dispositivo.',
       ],
     },
     {
@@ -90,8 +90,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: '<p>La Ciencia Ciudadana es más fuerte que nunca. Tener acceso a herramientas de simulación de nivel profesional permite que cualquier persona pueda validar teorías o realizar sus propios experimentos mentales. Estas utilidades rompen las paredes del laboratorio tradicional y llevan el método científico directamente a tu pantalla. La educación científica deja de ser pasiva (leer un libro) y se convierte en activa (experimentar digitalmente con las fuerzas del universo).</p>',
+      html: '<p>La Ciencia Ciudadana ofrece nuevas formas de explorar hipótesis y realizar experimentos mentales. Estas utilidades acercan el método científico a tu pantalla y convierten la educación científica en una experiencia activa, basada en observar variables y comparar resultados.</p>',
     },
   ],
 };
-

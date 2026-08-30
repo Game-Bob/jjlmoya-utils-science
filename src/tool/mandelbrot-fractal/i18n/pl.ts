@@ -120,6 +120,10 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Odczyt współrzędnych pokazuje środek widoku jako liczbę zespoloną c = a + bi. Oś pozioma to część rzeczywista, a pionowa to część urojona.',
     },
+    {
+      type: 'paragraph',
+      html: 'Zmieniaj liczbę iteracji, powiększenie i paletę, aby obserwować granicę zbioru oraz tempo ucieczki punktów. Kolor nie jest dodatkową własnością fraktala, lecz sposobem przedstawienia obliczeń. Każdy poziom powiększenia pokazuje inny fragment płaszczyzny zespolonej, dlatego warto porównywać współrzędne środka z wyglądem obrazu. Większa liczba iteracji pozwala zachować więcej szczegółów przy brzegu, ale wymaga większej liczby obliczeń. Traktuj wynik jako wizualizację reguły z = z² + c, a nie jako losowy obraz. Przybliżenie może odsłaniać podobne wzory, lecz ich szczegóły zależą od precyzji liczb i limitu iteracji. Zapisuj współrzędne oraz ustawienia, jeśli chcesz odtworzyć konkretny widok.',
+    },
   ],
   faq,
   bibliography,

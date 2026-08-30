@@ -109,6 +109,7 @@ export const content: ToolLocaleContent = {
         "<strong>Engenharia:</strong> Concepção de estruturas estáveis evitando ressonância caótica.",
       ],
     },
+    { type: 'paragraph', html: 'Altere ligeiramente os parâmetros ou o ponto inicial e compare as duas trajetórias no espaço de fases. A divergência mostra a sensibilidade às condições iniciais: o sistema segue regras determinísticas, mas pequenas diferenças podem tornar a previsão de longo prazo pouco prática. Use o gráfico para distinguir comportamento periódico, transitório e caótico, observando a forma do atrator e a evolução da distância entre as curvas. O modelo é uma ferramenta didática baseada nas equações de Lorenz e não uma previsão meteorológica; a atmosfera real envolve muito mais variáveis, escalas e fontes de incerteza.' },
   ],
   faq,
   bibliography,

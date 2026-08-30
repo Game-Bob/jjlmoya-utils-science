@@ -168,6 +168,11 @@ export const content: NaturalSelectionLocaleContent = {
       html:
         'A combinação de visuais em tempo real e métricas facilita a compreensão dos processos evolutivos.',
     },
+    {
+      type: 'paragraph',
+      html: 'Altere o tamanho da população, a vantagem de aptidão e a distribuição inicial para observar os dois processos separadamente. A seleção depende de diferentes probabilidades de reprodução, enquanto a deriva surge de amostragens aleatórias e é mais visível em populações pequenas. Repita as simulações com os mesmos parâmetros e compare várias execuções: um resultado isolado não prevê uma população real. O modelo ajuda a distinguir uma característica favorecida de uma característica mantida por acaso, mas não inclui todas as mutações, migrações, formas de acasalamento e pressões ambientais.',
+    },
+    { type: 'paragraph', html: 'Esta explicação esclarece as hipóteses do modelo e mostra como os parâmetros alteram o resultado. Mude uma variável de cada vez e compare várias execuções, para relacionar cada diferença com uma causa identificável. A visualização é uma aproximação educativa: um sistema real inclui mais variáveis, incertezas de medição e condições de fronteira. Use o resultado para compreender ordens de grandeza, formular perguntas e comparar cenários. Para uma decisão prática ou análise científica, confirme sempre os dados primários, as unidades e as fontes especializadas. Registe as definições usadas para repetir o cálculo e discutir as suas limitações.' },
   ],
   faq,
   bibliography,

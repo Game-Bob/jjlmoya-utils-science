@@ -142,6 +142,10 @@ export const content: ToolLocaleContent = {
         '<strong>Fokusera på trenden:</strong> när särskiljbarheten ökar minskar interferenskontrasten.',
       ],
     },
+    {
+      type: 'paragraph',
+      html: 'Jämför interferensmönstret när väginformationen är otillgänglig med resultatet efter en mätning. Modellen visar hur koherens och detektorns information påverkar ljusa och mörka fransar, men är en pedagogisk förenkling av ett kvantexperiment.',
+    },
   ],
   faq,
   bibliography,

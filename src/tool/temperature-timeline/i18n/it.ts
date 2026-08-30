@@ -104,6 +104,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: 'L\'Antropocene: Un\'accelerazione termica senza precedenti nella biosfera', level: 3 },
     { type: 'paragraph', html: 'La transizione all\'Antropocene segna l\'impatto diretto delle attività umane sui sistemi planetari. A differenza degli eventi termici del passato, il riscaldamento attuale si verifica a un ritmo estremamente rapido.' },
+    { type: 'paragraph', html: 'La cronologia è una guida didattica per confrontare epoche molto diverse. Le temperature sono stime ricostruite da proxy come carote di ghiaccio, sedimenti e fossili, quindi includono incertezze e differenze regionali. Usa la tabella per osservare gli ordini di grandezza e considera sempre il contesto geologico insieme alla media indicata. Le medie globali non descrivono ogni luogo: oceani, continenti e latitudini possono seguire andamenti diversi nello stesso periodo.' },
   ],
   faq,
   bibliography,

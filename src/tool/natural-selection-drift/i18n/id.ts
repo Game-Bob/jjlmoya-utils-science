@@ -144,6 +144,8 @@ export const content: NaturalSelectionLocaleContent = {
       type: 'paragraph',
       html: 'Visualisasi langsung membuat alat ini sangat berguna untuk pembelajaran.',
     },
+    { type: 'paragraph', html: 'Penjelasan ini memperjelas asumsi model dan menunjukkan bagaimana parameter mengubah hasil. Ubah satu nilai saja setiap kali lalu bandingkan beberapa percobaan, sehingga setiap perbedaan dapat dikaitkan dengan penyebab yang jelas. Visualisasi ini merupakan pendekatan pembelajaran; sistem nyata memiliki lebih banyak variabel, ketidakpastian pengukuran, dan kondisi batas. Gunakan hasilnya untuk memahami skala, menyusun pertanyaan, dan membandingkan skenario. Untuk keputusan praktis atau analisis ilmiah, periksa kembali data primer, satuan, dan sumber khusus yang relevan. Catat pengaturan agar perhitungan dapat diulang dan keterbatasan model dapat didiskusikan dengan tepat.' },
+    { type: 'paragraph', html: 'Bandingkan perubahan pada hasil dengan menjalankan model kembali menggunakan parameter yang sama. Catat nilai awal, aturan perhitungan, dan batas yang digunakan. Dengan cara ini pembaca dapat membedakan pola yang berasal dari model dari variasi numerik atau kebetulan pada satu percobaan. Hasil ini bersifat edukatif dan perlu dipahami bersama penjelasan, asumsi, serta keterbatasan alat.' },
   ],
   faq,
   bibliography,

@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'science',
   title: 'Outils et Simulateurs Scientifiques Interactifs',
-  description: 'Explorez la science avec des outils gratuits en ligne. Simulateurs d\'impacts d\'astéroïdes, comptage de colonies bactériennes, probabilité de simulation et calculatrices de renouvellement cellulaire.',
+  description: 'Explorez la science avec des outils en ligne pour simuler des impacts d\'astéroïdes, compter des colonies bactériennes et étudier une simulation.',
   seo: [
     {
       type: 'title',
@@ -71,7 +71,7 @@ export const content: CategoryLocaleContent = {
         'Modélisation Mathématique: Simulations basées sur des lois physiques réelles (gravitation, thermodynamique, balistique).',
         'Éducation Interactif: Outils conçus pour que les étudiants et les passionnés expérimentent avec des variables scientifiques.',
         'Rigueur Technique: Données et formules extraites de publications scientifiques et de bases de données académiques.',
-        'Confidentialité des Données Scientifiques: Tous les processus de calcul et de simulation s\'exécutent localement pour garantir la sécurité de votre recherche.',
+        'Confidentialité des Données Scientifiques: Les calculs et simulations s\'exécutent localement afin de garder vos données sur votre appareil.',
       ],
     },
     {

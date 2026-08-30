@@ -76,6 +76,10 @@ export const content: ToolLocaleContent = {
       html: 'O visualizador do paradoxo dos gêmeos transforma um dos experimentos mentais mais famosos da relatividade especial em um diagrama espaço-temporal interativo. Defina a velocidade da nave, o tempo na Terra e veja como o fator de Lorentz determina a assimetria temporal entre os gêmeos.',
     },
     {
+      type: 'paragraph',
+      html: 'Compare o tempo próprio da nave com o relógio da Terra e observe o efeito aumentar à medida que a velocidade se aproxima da luz. O modelo é educativo e usa movimento idealizado, sem representar aceleração, gravidade ou detalhes de uma missão real.',
+    },
+    {
       type: 'title',
       text: 'Como o cálculo funciona',
       level: 3,

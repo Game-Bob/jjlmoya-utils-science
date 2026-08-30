@@ -57,6 +57,10 @@ export const content: NaturalSelectionLocaleContent = {
         'Wenn du den Unterschied zwischen natürlicher Selektion und genetischer Drift verstehen willst, bietet dieser Simulator die visuelle Ebene. Anstatt statische Definitionen zu lesen, beobachtest du eine Population in Echtzeit.',
     },
     {
+      type: 'paragraph',
+      html: 'Verändere Populationsgröße, Fitnessvorteil und Startverteilung, um beide Prozesse getrennt zu beobachten. Selektion hängt von unterschiedlichen Fortpflanzungschancen ab, während Drift durch Zufallsstichproben besonders in kleinen Populationen sichtbar wird. Wiederhole Läufe mit gleichem Aufbau, denn einzelne Simulationen sind keine Vorhersage für eine reale Population. Vergleiche mehrere Durchläufe und achte darauf, ob ein Merkmal wegen eines Vorteils häufiger wird oder nur durch Zufall erhalten bleibt.',
+    },
+    {
       type: 'title',
       text: 'Was die Regler bedeuten und warum sie wichtig sind',
       level: 3,

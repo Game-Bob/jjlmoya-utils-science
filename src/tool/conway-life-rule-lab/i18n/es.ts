@@ -135,6 +135,10 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'La población y la densidad muestran cuántas células están vivas, pero los nacimientos y muertes exponen el nivel de actividad actual.',
     },
+    {
+      type: 'paragraph',
+      html: 'Cambia la regla B/S y conserva la misma semilla para comparar resultados. Prueba una densidad inicial baja y otra alta: algunos patrones desaparecen, otros oscilan y algunos se desplazan por la cuadrícula. Las métricas ayudan a describir la evolución, pero no sustituyen la inspección visual de gliders, osciladores y estructuras estables. El laboratorio es una herramienta educativa para experimentar con autómatas celulares; cada regla y condición inicial produce una dinámica distinta, por lo que conviene repetir el experimento y anotar sus parámetros.',
+    },
   ],
   faq,
   bibliography,

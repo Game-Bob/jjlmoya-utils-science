@@ -200,10 +200,10 @@ export const content: ToolLocaleContent = {
     {
       type: 'list',
       items: [
-        ['<strong>Pas de rotation :</strong> utilise la géométrie de Schwarzschild.'],
-        ['<strong>Pas de physique d\'accrétion avancée :</strong> disque simplifié.'],
-        ['<strong>Pas de ray-tracing :</strong> schéma éducatif.'],
-        ['<strong>Pas de repère en chute libre :</strong> horloge stationnaire.'],
+        ['<strong>Pas de rotation:</strong> utilise la géométrie de Schwarzschild.'],
+        ['<strong>Pas de physique d\'accrétion avancée:</strong> disque simplifié.'],
+        ['<strong>Pas de ray-tracing:</strong> schéma éducatif.'],
+        ['<strong>Pas de repère en chute libre:</strong> horloge stationnaire.'],
       ],
     },
     {
@@ -215,6 +215,11 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Utilisez cet outil pour estimer les paramètres d\'un trou noir.',
     },
+    {
+      type: 'paragraph',
+      html: 'Modifiez la masse du trou noir et comparez le rayon de Schwarzschild, la sphère des photons et la distance de l\'observateur. Dans ce modèle simplifié, le rayon de Schwarzschild représente la limite où la vitesse de libération atteint celle de la lumière. La sphère des photons se trouve à l\'extérieur et correspond à une orbite idéale, instable sous l\'effet de petites perturbations. Observez aussi comment la dilatation du temps change lorsque l\'observateur se rapproche de l\'horizon. La simulation se limite volontairement à un trou noir de Schwarzschild non rotatif et sans charge électrique: elle ne modélise ni disque d\'accrétion, ni champ magnétique, ni dynamique complexe de la matière. Les forces de marée dépendent de la masse et de la position, tandis que les observations astronomiques exigent des données et des modèles supplémentaires. Utilisez donc les curseurs pour comparer des ordres de grandeur et comprendre les hypothèses, pas pour prévoir un voyage réel. Pour une analyse astrophysique, il faudrait décrire précisément l\'environnement, les trajectoires, le rayonnement et les effets relativistes associés. Le rayon augmente avec la masse, mais l\'expérience locale de la gravité dépend aussi de la distance. Comparez un seul paramètre à la fois et notez les hypothèses du modèle avant d\'interpréter le résultat. Cette visualisation explique des concepts de relativité générale sans représenter un système astronomique complet ni fournir un scénario de mission.',
+    },
+    { type: 'paragraph', html: 'Cette section explique plus précisément la géométrie utilisée par la simulation. Le rayon de Schwarzschild augmente avec la masse et représente, dans la solution idéale de Schwarzschild, une limite de coordonnées associée à l\'horizon des événements. La sphère des photons est située plus loin et correspond à des trajectoires lumineuses circulaires instables: une petite perturbation suffit à modifier fortement leur destin. La dilatation du temps affichée dépend du choix de l\'observateur et ne doit pas être confondue avec une horloge locale située au même endroit. En modifiant la masse puis la distance séparément, vous pouvez comparer les échelles sans mélanger leurs effets. Le modèle ne décrit pas la rotation, la charge électrique, la matière autour du trou noir, l\'accrétion, les champs magnétiques, le rayonnement ou les forces de marée d\'un objet concret. Il sert à construire une intuition sur la relativité générale et à distinguer une définition mathématique d\'une observation astrophysique. Pour interpréter une source réelle, il faudrait ajouter les données de masse, de rotation, d\'environnement et de trajectoire, puis confronter le résultat à une méthode publiée. Cette page ne fournit ni prédiction opérationnelle ni conseil pour approcher un objet compact. Comparez les variables une par une et notez les hypothèses avant de tirer une conclusion.' },
   ],
   faq,
   bibliography,

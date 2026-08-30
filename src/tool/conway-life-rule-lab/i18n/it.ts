@@ -135,6 +135,7 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Popolazione e densità indicano quante cellule sono vive, mentre nascite e morti mostrano il livello di attività attuale.',
     },
+    { type: 'paragraph', html: 'Questa spiegazione chiarisce le ipotesi del modello e mostra come i parametri cambiano il risultato. Modifica una sola variabile alla volta e confronta più esecuzioni, così ogni variazione può essere collegata a una causa riconoscibile. La visualizzazione è un\'approssimazione didattica: un sistema reale comprende più variabili, incertezze di misura e condizioni al contorno. Usa quindi il risultato per capire gli ordini di grandezza, porre domande e confrontare scenari. Per una decisione pratica o un\'analisi scientifica, verifica sempre dati primari, unità e fonti specialistiche. Annotare le impostazioni permette di ripetere il calcolo e discutere con chiarezza i suoi limiti.' },
   ],
   faq,
   bibliography,

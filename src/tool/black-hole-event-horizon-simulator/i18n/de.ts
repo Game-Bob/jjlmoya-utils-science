@@ -115,6 +115,10 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
+      html: 'Verändere die Masse des Schwarzen Lochs und vergleiche Schwarzschild-Radius, Photonensphäre und den Abstand des Beobachters. Der Schwarzschild-Radius markiert in diesem vereinfachten Modell die Grenze, an der die Fluchtgeschwindigkeit der Lichtgeschwindigkeit entspricht. Die Photonensphäre liegt außerhalb und beschreibt eine ideale Kreisbahn für Licht, die durch kleinste Störungen instabil wird. Beobachte außerdem, wie sich die Zeitdilatation mit der Nähe zum Ereignishorizont verändert und wie die Anfangsgeschwindigkeit eines fallenden Körpers die Darstellung beeinflusst. Die Zahlen dienen dem Verständnis der Geometrie der Schwarzschild-Metrik; sie berücksichtigen weder Rotation noch elektrische Ladung, Akkretionsscheiben, Magnetfelder oder Gezeitenkräfte eines realen astrophysikalischen Systems. Nutze die Regler daher zum Vergleichen von Größenordnungen und nicht als Vorhersage für eine konkrete Reise zu einem Schwarzen Loch. Der Radius wächst linear mit der Masse, während die sichtbaren Abstände und die Zeitdarstellung von den gewählten Beobachterpositionen abhängen. Dadurch lässt sich nachvollziehen, warum ein supermassereiches Schwarzes Loch trotz größerem Horizont andere lokale Gezeitenbedingungen haben kann als ein kleineres Objekt. Die Darstellung verwendet Koordinaten eines idealen Schwarzschild-Falls und blendet die Rotation aus. Für astrophysikalische Beobachtungen sind zusätzlich Strahlung, Materieverteilung, Linseneffekte und die Dynamik der Umgebung zu berücksichtigen. Vergleiche deshalb zuerst einfache Parameteränderungen und notiere anschließend, welche Annahmen des Modells die Interpretation begrenzen.',
+    },
+    {
+      type: 'paragraph',
       html: 'Der Simulator wurde für Astronomiestudenten, Physiklehrer und Wissenschaftsautoren entwickelt.',
     },
     {
@@ -214,6 +218,10 @@ export const content: ToolLocaleContent = {
     {
       type: 'paragraph',
       html: 'Verwenden Sie dieses Tool zur Schätzung der Parameter eines schwarzen Lochs.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Vergleiche mehrere Massen und Beobachterabstände, um zu sehen, wie der Schwarzschild-Radius skaliert. Eine größere Masse vergrößert den Horizont proportional, während die Lichtbahnen und die Zeitdarstellung vom gewählten Bezugssystem abhängen. Die Photonensphäre ist keine feste Oberfläche, sondern eine ideale, instabile Bahn für Licht. In der Nähe des Horizonts werden Unterschiede zwischen Koordinatenzeit und Eigenzeit besonders anschaulich. Das Modell beschränkt sich bewusst auf ein nicht rotierendes, elektrisch neutrales Schwarzes Loch und enthält keine Akkretionsscheibe, keine Magnetfelder und keine komplizierte Materiedynamik. Auch Gezeitenkräfte hängen vom Maßstab des Objekts und vom Ort des Beobachters ab. Verwende die Simulation deshalb, um Begriffe und Größenordnungen zu vergleichen, und nicht als Anleitung für eine reale Reise. Für astronomische Anwendungen wären zusätzliche Messdaten, relativistische Modelle und eine genaue Beschreibung der Umgebung erforderlich.',
     },
   ],
   faq,

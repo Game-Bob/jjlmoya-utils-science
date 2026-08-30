@@ -93,6 +93,7 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: 'Das Anthropozän: Eine beispiellose thermische Beschleunigung', level: 3 },
     { type: 'paragraph', html: 'Der Übergang zum Anthropozän markiert die Ära des direkten menschlichen Einflusses auf Erdsysteme. Im Gegensatz zu früheren klimatischen Veränderungen erfolgt die Erwärmung heute extrem schnell.' },
+    { type: 'paragraph', html: 'Die Zeitleiste dient als verständliche Orientierung für den Vergleich geologischer Epochen. Werte sind Näherungen, weil Rekonstruktionen aus Proxydaten, regionalen Unterschieden und unterschiedlichen Zeitmaßstäben bestehen. Nutze die Tabelle, um Größenordnungen zu vergleichen, und lies jede Epoche zusammen mit ihren Unsicherheiten. Ein Wechsel der Zeitskala verändert nicht die Physik, sondern die Art, wie Daten zusammengefasst werden. Die angegebenen Mittelwerte ersetzen keine regionale Rekonstruktion. Eisbohrkerne, Sedimente und Fossilien liefern jeweils andere Hinweise auf vergangene Bedingungen und werden deshalb gemeinsam ausgewertet.' },
   ],
   faq,
   bibliography,

@@ -132,6 +132,7 @@ export const content: NaturalSelectionLocaleContent = {
       html:
         'De combinatie van visuele weergave en realtime metrieken maakt het begrijpen van evolutie eenvoudig.',
     },
+    { type: 'paragraph', html: 'Verander de populatiegrootte, het fitnessvoordeel en de beginverdeling om beide processen afzonderlijk te bekijken. Selectie hangt samen met verschillende voortplantingskansen, terwijl genetische drift ontstaat door toevallige steekproeven en vooral in kleine populaties zichtbaar wordt. Herhaal simulaties met dezelfde instellingen: één uitkomst voorspelt geen echte populatie. Vergelijk meerdere runs om te zien of een kenmerk door een voordeel vaker wordt of alleen toevallig behouden blijft. Het model is bedoeld voor begrip van evolutionaire mechanismen en laat niet alle mutaties, migratie, paring en omgevingsfactoren van een natuurlijke populatie zien.' },
   ],
   faq,
   bibliography,

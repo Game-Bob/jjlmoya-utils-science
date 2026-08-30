@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'scienza',
   title: 'Strumenti Scientifici Interattivi e Simulatori',
-  description: 'Esplora la scienza con strumenti online gratuiti. Simulatori di impatto di asteroidi, conteggio di colonie batteriche, probabilità di simulazione e calcolatori di rinnovamento cellulare.',
+  description: 'Esplora la scienza con strumenti online per simulare impatti di asteroidi, contare colonie batteriche e studiare una simulazione.',
   seo: [
     {
       type: 'title',
@@ -71,7 +71,7 @@ export const content: CategoryLocaleContent = {
         'Modellazione Matematica: Simulazioni basate su reali leggi fisiche (gravitazione, termodinamica, balistica).',
         'Educazione Interattiva: Strumenti progettati per studenti e appassionati per sperimentare con variabili scientifiche.',
         'Rigore Tecnico: Dati e formule estratti da pubblicazioni scientifiche e database accademici.',
-        'Privacy dei Dati Scientifici: Tutti i processi di calcolo e simulazione vengono eseguiti localmente per garantire la sicurezza della tua ricerca.',
+        'Privacy dei Dati Scientifici: I calcoli e le simulazioni vengono eseguiti localmente per conservare i dati sul tuo dispositivo.',
       ],
     },
     {

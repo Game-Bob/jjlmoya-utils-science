@@ -95,6 +95,8 @@ export const content: ToolLocaleContent = {
     },
     { type: 'title', text: 'O Antropoceno: Uma aceleração térmica sem precedentes na biosfera', level: 3 },
     { type: 'paragraph', html: 'A transição para o Antropoceno marca o impacto direto das atividades humanas nos sistemas planetários. Ao contrário de eventos térmicos passados, o aquecimento atual ocorre a um ritmo extremamente rápido.' },
+    { type: 'paragraph', html: 'A cronologia é uma orientação educativa para comparar épocas muito diferentes. As temperaturas são estimativas reconstruídas a partir de indicadores como núcleos de gelo, sedimentos e fósseis, pelo que incluem incertezas e diferenças regionais. Use a tabela para observar ordens de grandeza e considere sempre o contexto geológico juntamente com a média indicada.' },
+    { type: 'paragraph', html: 'Esta explicação esclarece as hipóteses do modelo e mostra como os parâmetros alteram o resultado. Mude uma variável de cada vez e compare várias execuções, para relacionar cada diferença com uma causa identificável. A visualização é uma aproximação educativa: um sistema real inclui mais variáveis, incertezas de medição e condições de fronteira. Use o resultado para compreender ordens de grandeza, formular perguntas e comparar cenários. Para uma decisão prática ou análise científica, confirme sempre os dados primários, as unidades e as fontes especializadas. Registe as definições usadas para repetir o cálculo e discutir as suas limitações.' },
   ],
   faq,
   bibliography,

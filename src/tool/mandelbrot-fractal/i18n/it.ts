@@ -76,6 +76,10 @@ export const content: ToolLocaleContent = {
       html: 'Questo calcolatore di frattali di Mandelbrot genera il classico insieme del piano complesso definito dall\'iterazione <strong>z(n+1) = z(n)^2 + c</strong>. È progettato per l\'esplorazione: ogni clic ricalibra il centro, ogni zoom rivela un intorno matematico più piccolo.',
     },
     {
+      type: 'paragraph',
+      html: 'Regola il numero di iterazioni per distinguere meglio il bordo e scegli una tavolozza per leggere la velocità di fuga. Le forme che emergono non sono fotografie: dipendono dalla regola iterativa, dalla precisione numerica e dall\'area del piano complesso visualizzata.',
+    },
+    {
       type: 'title',
       text: 'Come interpretare l\'immagine di Mandelbrot',
       level: 3,

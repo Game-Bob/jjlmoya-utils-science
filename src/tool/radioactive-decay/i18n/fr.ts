@@ -66,6 +66,7 @@ export const content: ToolLocaleContent = {
     { type: 'title', text: 'Limites importantes', level: 3 },
     { type: 'paragraph', html: 'Ce calculateur modélise l\'isotope parent avec une seule demi-vie.' },
     { type: 'paragraph', html: 'Utilisez les résultats comme un modèle pédagogique et une estimation scientifique.' },
+    { type: 'paragraph', html: 'Entrez la quantité initiale, la demi-vie et la durée écoulée pour comparer la fraction restante. La courbe décroît de façon exponentielle et non linéaire: après chaque demi-vie, il reste encore la moitié des noyaux parents présents au début de l\'intervalle. L\'activité, qui mesure le nombre de désintégrations par unité de temps, suit la même évolution dans ce modèle simple. Pour une mesure de laboratoire, utilisez la demi-vie et les incertitudes publiées pour l\'isotope étudié. Les chaînes de désintégration, les mélanges d\'isotopes et les conditions de détection demandent un modèle et des données supplémentaires. Ce calculateur sert donc à comprendre les proportions, la formule et l\'ordre de grandeur plutôt qu\'à remplacer une analyse radiométrique.' },
   ],
   faq,
   bibliography,

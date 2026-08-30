@@ -156,6 +156,8 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Bu sonuçları yıldız mühendisliğinin fiziksel sınırlarını anlamak için eğitici bir rehber olarak kullanın.',
     },
+    { type: 'paragraph', html: 'Bu açıklama modelin varsayımlarını ve parametrelerin sonucu nasıl değiştirdiğini gösterir. Her seferinde yalnızca bir değeri değiştirin ve birkaç çalıştırmayı karşılaştırın; böylece her farkı anlaşılır bir nedene bağlayabilirsiniz. Görselleştirme eğitsel bir yaklaşımdır: gerçek sistemlerde daha fazla değişken, ölçüm belirsizliği ve sınır koşulu bulunur. Sonucu ölçekleri anlamak, sorular oluşturmak ve senaryoları karşılaştırmak için kullanın. Pratik bir karar veya bilimsel analiz için birincil verileri, birimleri ve uzman kaynaklarını ayrıca kontrol edin. Hesabı tekrarlamak ve sınırlarını tartışmak için ayarları not edin.' },
+    { type: 'paragraph', html: 'Hesabı aynı ayarlarla tekrarlayın, ardından her seferinde yalnızca bir girdiyi değiştirin. Başlangıç değerlerini, hesaplama kurallarını ve sınırları kaydedin; böylece model eğilimini sayısal değişimden veya rastlantıdan ayırabilirsiniz. Sonuç eğitim amaçlıdır ve varsayımlar ile sınırlamalarla birlikte okunmalıdır. Gerçek ölçüm veya tasarım için ek veri ve uzman incelemesi gerekir.' },
   ],
   faq,
   bibliography,

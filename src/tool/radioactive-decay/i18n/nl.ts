@@ -157,6 +157,8 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Gebruik de resultaten als een didactisch model en wetenschappelijke schatting.',
     },
+    { type: 'paragraph', html: 'Deze uitleg verduidelijkt de aannames van het model en laat zien hoe parameters het resultaat veranderen. Wijzig telkens één waarde en vergelijk meerdere runs, zodat elk verschil aan een herkenbare oorzaak kan worden gekoppeld. De visualisatie is een didactische benadering; een echt systeem bevat meer variabelen, meetonzekerheden en randvoorwaarden. Gebruik de uitkomst om ordes van grootte te begrijpen, vragen te formuleren en scenario\'s te vergelijken. Controleer voor een praktische beslissing of wetenschappelijke analyse altijd primaire gegevens, eenheden en gespecialiseerde bronnen. Noteer de instellingen om een berekening te herhalen en de beperkingen te bespreken.' },
+    { type: 'paragraph', html: 'Herhaal de berekening met dezelfde instellingen en wijzig daarna één invoer tegelijk. Noteer beginwaarden, rekenregels en gebruikte grenzen, zodat een patroon in het model niet wordt verward met numerieke variatie of toeval. De uitkomst is didactisch bedoeld en moet samen met de aannames en beperkingen worden gelezen. Voor echte metingen of ontwerpen zijn aanvullende gegevens en specialistische controle nodig.' },
   ],
   faq,
   bibliography,

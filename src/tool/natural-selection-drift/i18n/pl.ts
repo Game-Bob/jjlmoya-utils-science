@@ -132,6 +132,8 @@ export const content: NaturalSelectionLocaleContent = {
       html:
         'Połączenie wizualizacji i wskaźników w czasie rzeczywistym ułatwia zrozumienie procesów ewolucyjnych.',
     },
+    { type: 'paragraph', html: 'To wyjaśnienie porządkuje założenia modelu i pokazuje, jak parametry zmieniają wynik. Zmieniaj jedną wartość naraz i porównuj kilka uruchomień, aby każdą różnicę można było połączyć z rozpoznawalną przyczyną. Wizualizacja jest przybliżeniem dydaktycznym: rzeczywisty system ma więcej zmiennych, niepewności pomiarowych i warunków brzegowych. Używaj wyniku do poznawania skal, formułowania pytań i porównywania scenariuszy. Przed decyzją praktyczną lub analizą naukową sprawdź dane pierwotne, jednostki i specjalistyczne źródła. Zapisz ustawienia, aby powtórzyć obliczenie i omówić ograniczenia modelu.' },
+    { type: 'paragraph', html: 'Powtórz obliczenie z tymi samymi ustawieniami, a następnie zmieniaj jedną wartość naraz. Zapisz wartości początkowe, reguły obliczeń i użyte ograniczenia, aby odróżnić prawidłowość modelu od zmiany numerycznej lub przypadku. Wynik ma charakter dydaktyczny i należy go czytać razem z założeniami oraz ograniczeniami. Rzeczywisty pomiar lub projekt wymaga dodatkowych danych i kontroli specjalisty.' },
   ],
   faq,
   bibliography,

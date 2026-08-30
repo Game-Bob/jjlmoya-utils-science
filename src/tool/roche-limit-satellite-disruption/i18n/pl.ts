@@ -97,6 +97,10 @@ export const content: ToolLocaleContent = {
     },
     {
       type: 'paragraph',
+      html: 'Wybierz model dla satelity płynnego albo ciała sztywnego, a następnie porównaj wynik z odległością orbity. Dla obiektu utrzymywanego przez własną grawitację używa się relacji zależnej od stosunku gęstości; ciało o wewnętrznej wytrzymałości może zbliżyć się bardziej, zanim naprężenia pływowe spowodują pękanie. Obliczenie jest przybliżeniem dydaktycznym: nie opisuje kształtu nieregularnego, rotacji synchronicznej, tarcia atmosferycznego ani historii migracji orbity. Traktuj granicę jako strefę do dalszej analizy, a nie jako ostrą linię gwarantującą rozpad lub bezpieczeństwo. Zmieniaj promień i gęstości osobno, aby zobaczyć, które założenia najbardziej wpływają na odległość graniczną. Wyniki pomagają zrozumieć pierścienie planetarne, rozpad księżyców oraz różnicę między uproszczonym równaniem a pełnym modelem mechaniki orbitalnej. W praktyce warto zachować osobne założenia dla średniej gęstości planety, gęstości satelity i jego spójności. Porównanie dwóch modeli nie oznacza, że jeden wynik jest uniwersalną granicą dla każdego księżyca. Dodatkowe obserwacje mogą zmienić parametry, szczególnie gdy obiekt ma porowatą budowę, nieregularny kształt albo obraca się inaczej niż przyjęto w równaniu. Dzięki zmianie jednego parametru naraz łatwiej ocenić wrażliwość wyniku i wyjaśnić, dlaczego odległość graniczna zmienia się wraz ze stosunkiem promieni i gęstości.',
+    },
+    {
+      type: 'paragraph',
       html: 'Kluczowa idea jest prosta: grawitacja nie działa równomiernie na całego satelitę. Strona bliższa jest przyciągana silniej niż strona dalsza, co tworzy siłę rozciągającą. Jeśli to rozciąganie pływowe jest silniejsze niż grawitacja własna i spójność materiału satelity, ciało może pękać, tracić masę i ostatecznie ulec fragmentacji.',
     },
     {
@@ -201,6 +205,10 @@ export const content: ToolLocaleContent = {
     {
       type: 'paragraph',
       html: 'Używaj narzędzia do szacowania rozpadu satelitów pod wpływem sił pływowych.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Zmieniając jeden parametr naraz, łatwiej sprawdzić wrażliwość wyniku. Gęstość planety, gęstość satelity i jego promień wpływają na skalę granicy, lecz uproszczone równanie nie opisuje każdego rzeczywistego przypadku. Nieregularny kształt, porowata budowa, obrót, tarcie oraz historia orbity mogą zmienić zachowanie obiektu. Dlatego traktuj obliczoną odległość jako punkt odniesienia do nauki mechaniki orbitalnej i porównywania modeli, a nie jako ostrą granicę bezpieczeństwa. Zestawienie ciała płynnego i sztywnego pokazuje, jak wewnętrzna spójność może opóźnić fragmentację. Wynik pomaga analizować powstawanie pierścieni planetarnych i różnicę między prostym przybliżeniem a pełną symulacją sił pływowych.',
     },
   ],
   faq,

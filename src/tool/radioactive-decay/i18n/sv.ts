@@ -157,6 +157,8 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Använd resultaten som en pedagogisk modell och vetenskaplig uppskattning.',
     },
+    { type: 'paragraph', html: 'Den här förklaringen tydliggör modellens antaganden och visar hur parametrarna ändrar resultatet. Ändra en variabel i taget och jämför flera körningar så att varje skillnad kan kopplas till en tydlig orsak. Visualiseringen är en pedagogisk approximation: ett verkligt system innehåller fler variabler, mätosäkerheter och randvillkor. Använd resultatet för att förstå storleksordningar, ställa frågor och jämföra scenarier. För praktiska beslut eller vetenskaplig analys måste primärdata, enheter och relevanta källor alltid kontrolleras. Spara inställningarna om du vill upprepa beräkningen och diskutera modellens begränsningar.' },
+    { type: 'paragraph', html: 'Upprepa beräkningen med samma inställningar och ändra sedan en indata åt gången. Skriv ned startvärden, beräkningsregler och gränser så att modellens mönster kan skiljas från numerisk variation eller slump. Resultatet är pedagogiskt och ska läsas tillsammans med antaganden och begränsningar. Verkliga mätningar eller konstruktioner kräver ytterligare data och sakkunnig granskning.' },
   ],
   faq,
   bibliography,

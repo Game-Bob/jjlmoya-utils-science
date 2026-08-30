@@ -157,6 +157,8 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Use os resultados como modelo didático e estimativa científica.',
     },
+    { type: 'paragraph', html: 'Esta explicação esclarece as hipóteses do modelo e mostra como os parâmetros alteram o resultado. Mude uma variável de cada vez e compare várias execuções, para relacionar cada diferença com uma causa identificável. A visualização é uma aproximação educativa: um sistema real inclui mais variáveis, incertezas de medição e condições de fronteira. Use o resultado para compreender ordens de grandeza, formular perguntas e comparar cenários. Para uma decisão prática ou análise científica, confirme sempre os dados primários, as unidades e as fontes especializadas. Registe as definições usadas para repetir o cálculo e discutir as suas limitações.' },
+    { type: 'paragraph', html: 'Repita o cálculo com as mesmas definições e altere depois uma entrada de cada vez. Registe os valores iniciais, as regras usadas e os limites, para distinguir uma tendência do modelo de uma variação numérica ou casual. O resultado tem finalidade educativa e deve ser lido com as hipóteses e limitações. Medições ou projetos reais exigem dados adicionais e revisão especializada.' },
   ],
   faq,
   bibliography,

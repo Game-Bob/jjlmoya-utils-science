@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'ciencia',
   title: 'Ferramentas Científicas Interativas e Simuladores',
-  description: 'Explore a ciência com ferramentas online gratuitas. Simuladores de impacto de asteroides, contagem de colónias bacterianas, probabilidade de simulação e calculadoras de renovação celular.',
+  description: 'Explore a ciência com ferramentas online para simular impactos de asteroides, contar colónias bacterianas e estudar uma simulação.',
   seo: [
     {
       type: 'title',
@@ -71,7 +71,7 @@ export const content: CategoryLocaleContent = {
         'Modelação Matemática: Simulações baseadas em leis físicas reais (gravitação, termodinâmica, balística).',
         'Educação Interativa: Ferramentas desenhadas para estudantes e entusiastas experimentarem com variáveis científicas.',
         'Rigor Técnico: Dados e fórmulas extraídos de publicações científicas e bases de dados académicas.',
-        'Privacidade de Dados Científicos: Todos os processos de cálculo e simulação correm localmente para garantir a segurança da sua investigação.',
+        'Privacidade de Dados Científicos: Os cálculos e simulações correm localmente para manter os seus dados no dispositivo.',
       ],
     },
     {

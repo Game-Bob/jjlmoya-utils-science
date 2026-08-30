@@ -120,6 +120,15 @@ export const content: ToolLocaleContent = {
       type: 'paragraph',
       html: 'Koordinatvisningen visar mitten av vykortet som ett komplext tal c = a + bi, där den horisontella axeln är realdelen och den vertikala är imaginärdelen.',
     },
+    {
+      type: 'paragraph',
+      html: 'Öka iterationsgränsen när du vill undersöka detaljer nära kanten, men kom ihåg att fler beräkningar kan göra bilden långsammare. Färgen beskriver beräknad flykthastighet och är en visuell kod, inte en separat matematisk egenskap. Spara centrum, zoomnivå och palett för att kunna jämföra samma område igen.',
+    },
+    {
+      type: 'paragraph',
+      html: 'Varje zoom visar ett nytt område av det komplexa planet och små förändringar kan avslöja nya detaljer. Anteckna koordinater, zoom och iterationsgräns om du vill återskapa en bild. Resultatet är en visualisering av regeln z = z² + c och påverkas av numerisk precision, inte ett slumpmässigt mönster.',
+    },
+    { type: 'paragraph', html: 'Den här förklaringen tydliggör modellens antaganden och visar hur parametrarna ändrar resultatet. Ändra en variabel i taget och jämför flera körningar så att varje skillnad kan kopplas till en tydlig orsak. Visualiseringen är en pedagogisk approximation: ett verkligt system innehåller fler variabler, mätosäkerheter och randvillkor. Använd resultatet för att förstå storleksordningar, ställa frågor och jämföra scenarier. För praktiska beslut eller vetenskaplig analys måste primärdata, enheter och relevanta källor alltid kontrolleras. Spara inställningarna om du vill upprepa beräkningen och diskutera modellens begränsningar.' },
   ],
   faq,
   bibliography,

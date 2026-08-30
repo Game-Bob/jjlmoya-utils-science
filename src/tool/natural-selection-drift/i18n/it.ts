@@ -162,6 +162,10 @@ export const content: NaturalSelectionLocaleContent = {
       type: 'paragraph',
       html: 'La combinazione di immagini in tempo reale e metriche semplifica la comprensione dei meccanismi evolutivi.',
     },
+    {
+      type: 'paragraph',
+      html: 'Modifica la dimensione della popolazione, il vantaggio di fitness e la distribuzione iniziale per osservare i due processi separatamente. La selezione dipende da diverse probabilità riproduttive, mentre la deriva nasce dal campionamento casuale ed è più visibile nelle popolazioni piccole. Ripeti le simulazioni con gli stessi parametri e confronta più esecuzioni: un singolo risultato non predice una popolazione reale. Il modello aiuta a distinguere un tratto favorito da un tratto conservato per caso, ma non include tutte le mutazioni, migrazioni, modalità di accoppiamento e pressioni ambientali. Osserva la frequenza degli alleli nel tempo e annota se la variazione deriva da un vantaggio riproduttivo o da una fluttuazione casuale. In questo modo la visualizzazione collega definizioni, probabilità e dinamica delle popolazioni senza trasformare un esempio in una conclusione biologica generale.',
+    },
   ],
   faq,
   bibliography,

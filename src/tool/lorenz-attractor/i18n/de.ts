@@ -75,6 +75,7 @@ export const content: ToolLocaleContent = {
     { type: 'title', text: 'Deterministisches Chaos: Die Lorenz-Gleichungen verstehen', level: 2 },
     { type: 'paragraph', html: 'Das Lorenz-System ist ein Meilenstein der nichtlinearen Dynamik und Chaostheorie. Es wurde 1963 vom Meteorologen <strong>Edward Lorenz</strong> entwickelt und entstand aus einem vereinfachten Modell der atmosphärischen Konvektion. Seine Entdeckung, dass einfache, deterministische Gleichungen hochkomplexes, nichtperiodisches Verhalten erzeugen können, hat unser Verständnis physikalischer Systeme grundlegend verändert.' },
     { type: 'paragraph', html: 'Das System wird durch drei gekoppelte Differentialgleichungen beschrieben, die eine Koordinate im dreidimensionalen Phasenraum im Laufe der Zeit verfolgen:' },
+    { type: 'paragraph', html: 'Verändere die Parameter oder den Startpunkt nur geringfügig und vergleiche anschließend beide Bahnen. Die entstehende Divergenz macht sichtbar, wie empfindlich ein chaotisches System auf Anfangsbedingungen reagieren kann, obwohl seine Regeln vollständig deterministisch bleiben. So wird der Unterschied zwischen Zufall und langfristiger Vorhersagbarkeit anschaulich.' },
     {
       type: 'list',
       items: [
