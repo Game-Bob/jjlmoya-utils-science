@@ -343,66 +343,6 @@
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.jjlmoya.es/_utilities/es/science/sitemap.xml",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/en/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/fr/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/de/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/it/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/pt/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/nl/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/sv/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/pl/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/id/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/tr/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ru/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ja/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/ko/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/_utilities/zh/science/sitemap.xml",
-            "zone_name": "gamebob.dev"
-        },
-        {
             "pattern": "www.gamebob.dev/_utilities/science/*",
             "zone_name": "gamebob.dev"
         },
