@@ -1,1685 +1,1685 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T19:25:56.583Z",
+  "generatedAt": "2026-09-07T06:42:14.455Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/asteroideneinschlag-simulator/": {
-      "hash": "2d52af460c670ad0bacd052491c1a417b8bec820467040b042bb021ab4a7ae1b",
+      "hash": "7395adbbe8d62f16709ad34393740630eae8d347ff00ee27ffa9dc4e66a0bcf0",
       "route": "/de/werkzeuge/kategorien/wissenschaft/asteroideneinschlag-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/conway-spiel-des-lebens-regellabor/": {
-      "hash": "5ce5adcfc41341a4c5928d3b5d509571a3816e63091ded6831efe275b8807d56",
+      "hash": "c45914b72ecb0eefb24389b52be49333ba2e8ac28defad71767a68e7e8e59a3a",
       "route": "/de/werkzeuge/kategorien/wissenschaft/conway-spiel-des-lebens-regellabor/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/doppelspalt-dekoharenz-simulator/": {
-      "hash": "b0d0575bc5a73f25757a36c447de2d3e102787d52ebb837b533d999d76e947ae",
+      "hash": "5484dc4a1664c4ee9516f0e2817548e86ec8bb5f7bbc687352245accece191d0",
       "route": "/de/werkzeuge/kategorien/wissenschaft/doppelspalt-dekoharenz-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/dreikoerperproblem-simulator/": {
-      "hash": "3fb22b80b2df9a023f11f799c06c7e08dfebdf5fb73a92b8dbd751803f4f60f7",
+      "hash": "d1b23fbe0402c4d8a42c853d8f746720c207c692a44a8eb7176fafb9b59c08f9",
       "route": "/de/werkzeuge/kategorien/wissenschaft/dreikoerperproblem-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/dyson-spharen-energie-gewinnung-simulator/": {
-      "hash": "3e4587488cf55e29e8322a3af1a103b4a64f9d3a512823d60caf41d002c537e7",
+      "hash": "fcb677f93cf3a24b8d4f76c31a22e100c51c3e969fe9d4e1089b2c98e724a46d",
       "route": "/de/werkzeuge/kategorien/wissenschaft/dyson-spharen-energie-gewinnung-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/entropie-zweiter-hauptsatz-simulator/": {
-      "hash": "cb1c36db500f034144e2db34745a92d9c31033fb41eefe53365acb0b8c7c589d",
+      "hash": "0625f58834661a0d516de583ec90aeec1ca945c2b80df74b51666c9ad5ab5a5a",
       "route": "/de/werkzeuge/kategorien/wissenschaft/entropie-zweiter-hauptsatz-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/exoplaneten-biosignatur-detektor/": {
-      "hash": "e853a3818ba83e847273d368688f3a12760ceda8cbc44e1b8009968f590e7d35",
+      "hash": "0b66cc401ec2c7f592685c80c6d8c97fec66649a7829b23186812f7ca433f56e",
       "route": "/de/werkzeuge/kategorien/wissenschaft/exoplaneten-biosignatur-detektor/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/fermi-paradoxon-filter-labor/": {
-      "hash": "ff1777176df8b857cd7d03cd1778a487e441679a9e2c894f9c887a9ec3cc81a1",
+      "hash": "11b1ba10a5390de497cf33f873332ea7a3704b07b7fb2f9dc16c9b0315dd6cd5",
       "route": "/de/werkzeuge/kategorien/wissenschaft/fermi-paradoxon-filter-labor/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/globaler-albedo-schneeball-simulator/": {
-      "hash": "7ebc600baa64978cbbcbbf3215f1a6d4d2e031d5484bedc2ebe22e37d4b7482e",
+      "hash": "f6d7c9a95afd909a0d38105d82cf88ee01fc27b119372558aa149b03f02b80ec",
       "route": "/de/werkzeuge/kategorien/wissenschaft/globaler-albedo-schneeball-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/habitable-zonen-simulator/": {
-      "hash": "55cbcbac444325181d6ef66df9280931596335554de222eb5276191888e6f8fe",
+      "hash": "aa98d3dc7803bcf464bb5a49a56ad9c112bb0f0a6d7265e8f3245a5a818cbdef",
       "route": "/de/werkzeuge/kategorien/wissenschaft/habitable-zonen-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/halbwertszeit-rechner-radioaktiver-zerfall/": {
-      "hash": "97288723fac6a142c6e4f7f8e2922661f0d5152cf909edae5b7f8a940ce5e9b3",
+      "hash": "e5a7538f5ef34a306cef96692133674fb510683796a7e968bb4a4ee98bf4d0c5",
       "route": "/de/werkzeuge/kategorien/wissenschaft/halbwertszeit-rechner-radioaktiver-zerfall/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/": {
-      "hash": "1cf43c8a5fe1b9c7d935f988bd350e2af13e29b532db06e5991853d99e059054",
+      "hash": "7cb4500918708437e9418c0c9f953fef6ff667cde7e996c199d596c562901ff1",
       "route": "/de/werkzeuge/kategorien/wissenschaft/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/kolonienzaehler/": {
-      "hash": "dd956b24b70bf09c0e7576295a5f07deb48d8ba3e1b34ae36bcce669ec5c8be6",
+      "hash": "bac9c7a94f9ba08ebc5b376181b438e495e1b77b5d081ec661bd81697dc146d8",
       "route": "/de/werkzeuge/kategorien/wissenschaft/kolonienzaehler/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/kosmische-inflation-rechner/": {
-      "hash": "dfe17019a76c8154a9605df20a5190102ba939b47f40a777acd37d92225456b4",
+      "hash": "5084e428e484d4c36548658b8b769595f07f9335192dfdeb37bc974869ecc013",
       "route": "/de/werkzeuge/kategorien/wissenschaft/kosmische-inflation-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/kristallgitter-struktur-finder/": {
-      "hash": "dd60c1e5847420e00a809865ce9a6801d823fd0fce5fcc9079929b915493a018",
+      "hash": "55c10abddd7dc5571da0b1c287404b95b8eb4fc4ccce1b64efe551c0ac1b6e79",
       "route": "/de/werkzeuge/kategorien/wissenschaft/kristallgitter-struktur-finder/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/lorenz-attraktor-chaos-simulator/": {
-      "hash": "866015f7a7c80299bc9e9f5cdc8265f5e77c07872dbde6eeb589690056264788",
+      "hash": "7e386302d47b147c63897e7e10a83bbd5a70c750521dfaa76751ee4e366208c2",
       "route": "/de/werkzeuge/kategorien/wissenschaft/lorenz-attraktor-chaos-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/mandelbrot-fraktal-rechner/": {
-      "hash": "43d76db126875e6d2955b7e548cd9f9fd9b15dcc9d5f2c69af0defd543d076fb",
+      "hash": "65e4defc98b00121233271aa47d49e9641bcdac6afaedb84c9888193ba180ca5",
       "route": "/de/werkzeuge/kategorien/wissenschaft/mandelbrot-fraktal-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/mikrowellen-leck-detektor/": {
-      "hash": "b9acce773be1a27c0637487d06da49791b7c977ff7517756028c15e33c2b4aba",
+      "hash": "d54d96cf17c345b85e80147b214af769cf9ca2cc9677ba6443b98cd1f27f0f55",
       "route": "/de/werkzeuge/kategorien/wissenschaft/mikrowellen-leck-detektor/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/phasendiagramm-kritischer-punkt-visualisierer/": {
-      "hash": "c23f7c019b50a407e1e3358a6fd38c99fd448c165af8a0e5bcac37ad8de1bf7b",
+      "hash": "896382878a28226f2a8432522490a24e41cb0a4e9b3ad8b0707123443b3d5d1b",
       "route": "/de/werkzeuge/kategorien/wissenschaft/phasendiagramm-kritischer-punkt-visualisierer/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/planet-atmosphaere-ueberlebens-rechner/": {
-      "hash": "27b64c0c8d5d3d22240d7c2b51fd9eb5eea3126882a1898e108a25787c64f097",
+      "hash": "e225b29789e41e22a631cbc2da2a41bc7745fce52fd75ed6f039218f6aeec832",
       "route": "/de/werkzeuge/kategorien/wissenschaft/planet-atmosphaere-ueberlebens-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/roche-grenze-satellitenzerstoerung-rechner/": {
-      "hash": "fdf98b01be6fd8dc58ecebeb0d9c9ece7f6e29006cbc7aea09f783b5377663b3",
+      "hash": "3a54bc4d299505bb0b43e9c913438b17607cc6975ec73398494de72e004862d9",
       "route": "/de/werkzeuge/kategorien/wissenschaft/roche-grenze-satellitenzerstoerung-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/schwarzes-loch-ereignishorizont-simulator/": {
-      "hash": "0c67abb1e95ffcb0da89ea2f98e7ce0bc23140707b5d5baecba03a175a9a2d50",
+      "hash": "d57473a2fe00a82184dd97540b99255130a9e21da9ba79833f67364d514927be",
       "route": "/de/werkzeuge/kategorien/wissenschaft/schwarzes-loch-ereignishorizont-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/seuchenausbreitung-sir-simulator/": {
-      "hash": "095559535ef8a934d2a24811abdac007f35eaa6c8f9a6ae65a012212f669d949",
+      "hash": "1c04bbdbf341cfab6a54e24368a60602894d32d03aaa56440d45eeada9b31b32",
       "route": "/de/werkzeuge/kategorien/wissenschaft/seuchenausbreitung-sir-simulator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/simulations-wahrscheinlichkeits-rechner/": {
-      "hash": "12ae9da3117d9ea7ab8a147f692e0b3006b84bdda1ba73aeb69b75ac3d709406",
+      "hash": "9b686b4a1784ccbc13cc375b4ec7359a5d831cf4d3b1d020c17c439e253eb5e1",
       "route": "/de/werkzeuge/kategorien/wissenschaft/simulations-wahrscheinlichkeits-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/simulator-natuerliche-selektion-genetische-drift/": {
-      "hash": "7b929e74b3a8f752faef25b5e6398f36deb61c2cf2fa81cd84fbe28eea673132",
+      "hash": "3cdb111a18d61ef73a6d1e0b6eaabc38b680a52b17e9dfee7d7f32a5fb67d275",
       "route": "/de/werkzeuge/kategorien/wissenschaft/simulator-natuerliche-selektion-genetische-drift/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/temperaturzeitleiste-der-erde/": {
-      "hash": "10477976d24a94fdfc44826cd5c8156cf7527c693a3841ec4879bd05191509f8",
+      "hash": "55fcc119d8554367a7989f4e4fa8576e1a2df42e53ba0fc8310627f648c0a508",
       "route": "/de/werkzeuge/kategorien/wissenschaft/temperaturzeitleiste-der-erde/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/zellverjuengungs-rechner/": {
-      "hash": "c9f2d9cf1e6432795080a93af5da6d99d6294200f27cc39e821671a4e387d5e2",
+      "hash": "34f85f735f83f1e6c317a5f5c42dc39091a900c6969b6e2554c8d66798b7920f",
       "route": "/de/werkzeuge/kategorien/wissenschaft/zellverjuengungs-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/wissenschaft/zwillingsparadoxon-visualisierer/": {
-      "hash": "bfd07c4f39ca5f904e52864e6f62ff3efe5515ce12eb736b1690358db2f61717",
+      "hash": "0b39e93b77024cb57f14b6de9fcf87b98f8923d15b71d4801e6c82108ccdd833",
       "route": "/de/werkzeuge/kategorien/wissenschaft/zwillingsparadoxon-visualisierer/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/asteroid-impact-simulator/": {
-      "hash": "d8b2b31b2021f7c7a348eb1c7d80c3933855a4b6075c8da4afe46fb2886bcc59",
+      "hash": "c98db1f48bc74dd9f13e959ba6c529eae625644ff70914c75c360d002e1ea3bf",
       "route": "/en/utilities/categories/science/asteroid-impact-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/black-hole-event-horizon-simulator/": {
-      "hash": "4be5bd11de6eda47eff98a7843a1556b9c1d6f965ce8df7a59901b1367121c06",
+      "hash": "66a5067dd3848aff90bacc914738e486bd8979b564dedfb07b8a070a9db77798",
       "route": "/en/utilities/categories/science/black-hole-event-horizon-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/cellular-renewal-calculator/": {
-      "hash": "f8e236a2aec251b9d2bff7d541c5727adb710b2724ca1c830bad400f1c6572f5",
+      "hash": "df13834a89d3b3e0aea78fc14916a5154937b8e78194aab5e7a548837a7335b1",
       "route": "/en/utilities/categories/science/cellular-renewal-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/colony-counter/": {
-      "hash": "b5e9284315b6bf62a222a66a89ec4e50f648247c78dd144742d63d65bef8898a",
+      "hash": "601ba4d015532398e3effa0761c0eb9dabaa0d68447f9be01b70973eb915a0de",
       "route": "/en/utilities/categories/science/colony-counter/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/conway-life-rule-lab/": {
-      "hash": "3c65df97e437d26fff9a10e79c9f19e98b0eab51ef2056326477b93d4b1f3976",
+      "hash": "52febb0301dbbe0a0d39a7906bbffcd591357e0b9e339a5404a3e3f1a7dc2f32",
       "route": "/en/utilities/categories/science/conway-life-rule-lab/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/cosmic-inflation-calculator/": {
-      "hash": "0f23c5cf0621d40ab65b14798d7285cfde8867698c4b5dcb4e94608b70ac1589",
+      "hash": "1c9a601151f3ecc8b6311dc4d589259a0651d3370de780386b9a02379a6b4abe",
       "route": "/en/utilities/categories/science/cosmic-inflation-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/crystal-lattice-structure-finder/": {
-      "hash": "449c3c5cac168b6a2348ea3c74b6dbe823de5a73769c2f88545302fc0a5a0d80",
+      "hash": "8c19f2db590004dfdddd0c1afaf2b60f1532da87e20e33338900c53722926c58",
       "route": "/en/utilities/categories/science/crystal-lattice-structure-finder/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/double-slit-decoherence-simulator/": {
-      "hash": "984a0890ce5faf4eabfca20069490fe12d30de92e8162b6e8566131ee58b4dec",
+      "hash": "42b3e6da5054739258563ccfc3457b56bb26e4a6e2e83fb6f3b06f6cc3f821d3",
       "route": "/en/utilities/categories/science/double-slit-decoherence-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/dyson-sphere-energy-capture/": {
-      "hash": "02b6e5aff456b0bf58cd8d10eabefd4428658b6e30eb8c035e80e6bb01a73186",
+      "hash": "ef69c47350a384566e295b9c57df4580991a4f267372b127f8f6dbee5c4dcd12",
       "route": "/en/utilities/categories/science/dyson-sphere-energy-capture/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/entropy-second-law-simulator/": {
-      "hash": "94efcb0d1f55b73cdf9485b6f20ad8752d5a53701566b5e1f05bda0d211ae649",
+      "hash": "b948ce7c66180a80bb2e4fded230030760f69574646f9b969615fc3d6ac697ad",
       "route": "/en/utilities/categories/science/entropy-second-law-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/epidemic-sir-simulator/": {
-      "hash": "a0ba3cb8ada02a62bc051fd56df4822cf4e9d3ddadc7de92fdad8b2bd3dcd3f1",
+      "hash": "ab59bb5a332ff11df5076adbebdb3d8d4a3d73367efba10880cd739f0f60aee2",
       "route": "/en/utilities/categories/science/epidemic-sir-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/exoplanet-biosignature-detector/": {
-      "hash": "efb6390d7d2b8a25320d2a341faeb09aa489fc448e37e6ca730bf9b2bd9efce7",
+      "hash": "964ac68572d00382416e9330bb109763de1c93cb8e8dc8548df4ed62d6dadb68",
       "route": "/en/utilities/categories/science/exoplanet-biosignature-detector/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/fermi-paradox-filter-lab/": {
-      "hash": "e36c0fb3cf418a3b1654b296b28d8c2e3b6b5023bb364b7e4b9b246f2dc88a5b",
+      "hash": "e826e6372123f0ec07f9df2e371eedee70f1006d33fef5eadacad0b5769ba0a7",
       "route": "/en/utilities/categories/science/fermi-paradox-filter-lab/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/global-albedo-snowball-simulator/": {
-      "hash": "016182664e52bcbeb99dd61f62ac2ed866d37a21dd555a04ac514db999b47dcc",
+      "hash": "3d7e2829919cb32dfaf25de985cf1af0d8d286f33008a7ca3ddafdfe60320c77",
       "route": "/en/utilities/categories/science/global-albedo-snowball-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/": {
-      "hash": "f991273d247b2ce24167ef0c10350ff7b74296ea555fc42dc516eef4e3e638e1",
+      "hash": "b9dba9aea91290d4567b71ceb8e65f7ee6e7971cb2088604d1e7bfc7c2763e65",
       "route": "/en/utilities/categories/science/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/lorenz-attractor/": {
-      "hash": "14b7eb9b0458f1b9fb711f13f3aecd5e647bf90b012831be6bb323fcf9b3de76",
+      "hash": "4b055d1dacc2597174cb8563766f465c8c013d8c2bc030971bfaf6c6272edd67",
       "route": "/en/utilities/categories/science/lorenz-attractor/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/mandelbrot-fractal-calculator/": {
-      "hash": "5f1cb22bafd58f6d696ad6d1b42cedbe88e44ec16e2e540d0435b29b06d4e9b4",
+      "hash": "78c2b619669346504f2047ba9b5ec7710dd4ed50422d996f96c76cdd22294e8b",
       "route": "/en/utilities/categories/science/mandelbrot-fractal-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/microwave-leak-detector/": {
-      "hash": "40daaef6c160fae6d66df9df9cd886e751cc377b39efa22a8c74b5e46602d893",
+      "hash": "fde1478093d60deab151513cd2510c00df293f74058b8ec39b3a40e8fe675187",
       "route": "/en/utilities/categories/science/microwave-leak-detector/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/natural-selection-drift/": {
-      "hash": "ffa7f1bd0a6aa3bffd22dd6e97f5e21be5a9a5effb8954143a4b3d1ef07a8fdb",
+      "hash": "4087af77452286388574c53144f9e2ddca3d8caa093e759d73f007594da3db70",
       "route": "/en/utilities/categories/science/natural-selection-drift/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/phase-diagram-critical-points-visualizer/": {
-      "hash": "bd30b46019fb231bb112775f78d276ab272fb030338688a105df7f5bbc3bc7f6",
+      "hash": "71587e7ff5549eea7f23c553207f3bbbb0b8137739b3abbd8e42ba27ce4331c3",
       "route": "/en/utilities/categories/science/phase-diagram-critical-points-visualizer/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/planet-atmosphere-survival-calculator/": {
-      "hash": "f42c85b923dec1ae66d15294b8d29dc0da64fde71be6f31de87573ba48dda974",
+      "hash": "40d651f214ef1289b543d9d053b25a6d94623b610e8affc19224d002ac6a005b",
       "route": "/en/utilities/categories/science/planet-atmosphere-survival-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/planet-temperature-timeline/": {
-      "hash": "8210cfdc1baba0e4f36a3e0084b821a3d4ef3118d3b5e23d2bae36d5db804651",
+      "hash": "a648b77fc1423d9202d13eb5dcf6b008c0833c5885040b226baef2f1902ea82b",
       "route": "/en/utilities/categories/science/planet-temperature-timeline/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/radioactive-decay-half-life-calculator/": {
-      "hash": "bc43661719877d8f929fd1de50d78e10b2776a50fdfdf95283ed1315faa086b5",
+      "hash": "1282554b303d5db9540fc4ad95ed885aa35365f7754b72a852f217ac1353f855",
       "route": "/en/utilities/categories/science/radioactive-decay-half-life-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/roche-limit-satellite-disruption/": {
-      "hash": "3fbb2956db263943e27ae324a1235a0918efbb0b50e9f31cde6a95cb7f390565",
+      "hash": "655c36f05461f1e375673d8a03d5e8ecfdbe456b2d2141f5be97d9b818864191",
       "route": "/en/utilities/categories/science/roche-limit-satellite-disruption/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/simulation-probability-calculator/": {
-      "hash": "2c10d40d7d2905d0e0494dcabd6b101c1d27edc18d0deec7b9b79ab9a5e8eafa",
+      "hash": "1e873180f3bc0f3e10b8b83ecee5c4b742f189ef8b56f3bc71947beb8d98084e",
       "route": "/en/utilities/categories/science/simulation-probability-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/stellar-habitability-zone/": {
-      "hash": "d06e5d4ca1544cb637931647a15a536667b82ad57234661e1ce86e2621279da2",
+      "hash": "7e2fe4e54740fa2c1f1c88cc220ede749468a225d42e6972ed2adebb64b69c52",
       "route": "/en/utilities/categories/science/stellar-habitability-zone/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/three-body-problem-simulator/": {
-      "hash": "42d3b9be47db6fce6d4245596c2f090680ec2c010b4421c30d84f7dd0a71eefe",
+      "hash": "3ea5b84f32354064be4aa5d4f8ac1cf89b502b52c90e32b99b558a8350ee4fd7",
       "route": "/en/utilities/categories/science/three-body-problem-simulator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/science/twin-paradox-visualizer/": {
-      "hash": "9042c1fa9809c1d492280f70b383e25fb8c6d0bd5d4ad3eddf73e29947287041",
+      "hash": "cf737f06b8bbba3643d9fc8d633d3b6d56bbd1f571efea31b2107590221ff501",
       "route": "/en/utilities/categories/science/twin-paradox-visualizer/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/attracteur-de-lorenz/": {
-      "hash": "3259982643d4ac45f838a5ab8f5770385c3961232094ada73ba8d7a3b6830c4b",
+      "hash": "b483144b6e2e6a3355995e33c4f1c73f2682ae351afc57c1e3b8f51c14b60511",
       "route": "/fr/utilitaires/categories/science/attracteur-de-lorenz/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/calculateur-demi-vie-desintegration-radioactive/": {
-      "hash": "4ac2561641a84780b298d455847719084b2c3f36d7b2d27fa172f1541deb97b8",
+      "hash": "99c171b77e120d1b88e635eab8cdec31c05208ddfa1544302facff05fd61a374",
       "route": "/fr/utilitaires/categories/science/calculateur-demi-vie-desintegration-radioactive/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/calculateur-inflation-cosmique/": {
-      "hash": "952b3b240057b93da14e476e89e2ac7ae5e337945b1b2f4f2e7731bf2746db0e",
+      "hash": "db6c76df53770d27e30b37d0d8a80d0701f4c7419659f952757fa5fe87c39c56",
       "route": "/fr/utilitaires/categories/science/calculateur-inflation-cosmique/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/calculateur-probabilite-simulation/": {
-      "hash": "e9bf04d4ed91e5143d10835c4f08a5e4bbb675d4220ae9d7e1555b51aedf2d49",
+      "hash": "bab6aec9374c4d3013bf01b876d435fb38676d975156dcb84f0f57ec77cfc61f",
       "route": "/fr/utilitaires/categories/science/calculateur-probabilite-simulation/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/calculateur-renouvellement-cellulaire/": {
-      "hash": "cb40fb64c4029b7971511eae12f2f22c7d6ffc44266da3943255bd672898dba4",
+      "hash": "62cb6925c3b71890b1e6bbed0cd8ff69f2b515ce361d2927a11d9b58e188db7a",
       "route": "/fr/utilitaires/categories/science/calculateur-renouvellement-cellulaire/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/calculateur-survie-atmosphere-planetaire/": {
-      "hash": "4aeff16c4a3bc31979e69ef160673c85692345769129a453846f4708f80834b3",
+      "hash": "3a35514cec6c7d92f0b8f3f9ab9d50a4cf19643cac538209caf4c11f5467af17",
       "route": "/fr/utilitaires/categories/science/calculateur-survie-atmosphere-planetaire/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/chronologie-temperature-planete/": {
-      "hash": "0393ac0523e99881c09341fc63ab45a98e0e54c2b398b63e9ef09cf682c5a901",
+      "hash": "2cfc247ce9ef3a89a91c25d9a5b3fd935db3831d21b2113a4ed96cdf4e8829e7",
       "route": "/fr/utilitaires/categories/science/chronologie-temperature-planete/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/compteur-colonies/": {
-      "hash": "d69bca02a9f0f4c71fc2259d2608f527d03b3aff75189ead0ea64eea4bb5a7a4",
+      "hash": "25bb5e12cd08634e1b2e6a38e3a2516211cecc1440043801035142b8f567fe47",
       "route": "/fr/utilitaires/categories/science/compteur-colonies/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/detecteur-biosignatures-exoplanetes/": {
-      "hash": "3338d3480d502cbe488facdec600622571a365ff2db9cec631b9ed79a243ad82",
+      "hash": "540f94326c7484ab766752ce392e9dfb07b7958d3318ef3f80bc980f441a4e59",
       "route": "/fr/utilitaires/categories/science/detecteur-biosignatures-exoplanetes/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/detecteur-fuites-micro-ondes/": {
-      "hash": "709501f2e6a33c9e675edb41ba6da534b3124c409c73c61eb12d21dd8c7748e9",
+      "hash": "cf086a41bfc6de8c9c741394711c9bc014edf0b9429d8d6fd188af2d17ee08fb",
       "route": "/fr/utilitaires/categories/science/detecteur-fuites-micro-ondes/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/diagramme-de-phases-point-critique-visualiseur/": {
-      "hash": "047a54533457ba07c07e8dc62d64da87d1ba6c5a60a394ca0883b45a47fd5403",
+      "hash": "28906579ccdcc38c786b693eccaf490e88986892da8f41521951985c0db4c96e",
       "route": "/fr/utilitaires/categories/science/diagramme-de-phases-point-critique-visualiseur/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/explorateur-structure-reseau-cristallin/": {
-      "hash": "e61c233a88e1d433c811f3bbc467aadd92c8b6184341818b1c6545b3e4b0b25e",
+      "hash": "230be3f963ac1c08c47c6d58e3d95d2ad264fd4019be35737e4739b986f28b55",
       "route": "/fr/utilitaires/categories/science/explorateur-structure-reseau-cristallin/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/": {
-      "hash": "81ca949e27c882dbe82057061e959764c8b93f026759a4184a0f45e002bff0b4",
+      "hash": "b72639718bb75c67f8a81e336ebb2e58922da19483ee069a92fd48e1c01e7c2e",
       "route": "/fr/utilitaires/categories/science/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/laboratoire-filtre-paradoxe-fermi/": {
-      "hash": "dba2ea538eb5a1337489ac565c40455d71b88f657a124a425b2b3972ee9d0f01",
+      "hash": "41ed6e15895c36a0fa3d354ced96ddd0b6f929b645a3423b1e770d1c613076f7",
       "route": "/fr/utilitaires/categories/science/laboratoire-filtre-paradoxe-fermi/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/laboratoire-regles-jeu-vie-conway/": {
-      "hash": "fbae55caae154892bcb60292049364337f55ee8a643a17f88f5d01c9886e8591",
+      "hash": "57611085d777c30cb2c3342cbe69150872035fa3a8a1566f53bfa7dc2dc35f2d",
       "route": "/fr/utilitaires/categories/science/laboratoire-regles-jeu-vie-conway/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/limite-de-roche-calculatrice-disruption-satellite/": {
-      "hash": "59cedcfa84e6a8e501222b06de18184529b6c16ee85523ae420955176d79582d",
+      "hash": "3936700167c30f3fa2e325ba6f9bb0d5a622babfdb56a97d086ebec4216496d3",
       "route": "/fr/utilitaires/categories/science/limite-de-roche-calculatrice-disruption-satellite/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-albedo-global-terre-boule-neige/": {
-      "hash": "c8614edf8885c8500a6ef19c8048cd197b6e5d2ebb3862be57655b523235e5d5",
+      "hash": "13c93eed5b5ade57e51043774f3b0e190c17da0c9bef7a4de860999956ce3c67",
       "route": "/fr/utilitaires/categories/science/simulateur-albedo-global-terre-boule-neige/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-double-fente-decoherence/": {
-      "hash": "b532029632b03d8a39b00da3878fc469e4455d872fccb8638414fd2f0b917693",
+      "hash": "78b7a5cb136eb5d946a121c3b6e6fc53f08cc55738a55ab5bf6841fb6e3e3e0c",
       "route": "/fr/utilitaires/categories/science/simulateur-double-fente-decoherence/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-energie-sphere-dyson/": {
-      "hash": "17354b2adea230af43d059e3f7617a9d6ac5233c8770fb7e0393e949be43e414",
+      "hash": "0bb5c954a12a685ad639be0c18fca3847d0da76e721774e10135d29bd2167d36",
       "route": "/fr/utilitaires/categories/science/simulateur-energie-sphere-dyson/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-entropie-seconde-loi/": {
-      "hash": "9ca248adbc1914b93bb1340a09be2e1ff18a4203ca0d1806580d5aa49695135c",
+      "hash": "5d699399b34876126b5fcfb604346d79d7f50c4211497972db4883f2dc160312",
       "route": "/fr/utilitaires/categories/science/simulateur-entropie-seconde-loi/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-fractale-mandelbrot/": {
-      "hash": "aaa02753020737c80926d9a2c42dc2710a0a2b008b3757740aa5233775b15544",
+      "hash": "fb39dd56c267b2fc7bef7099fb2d697c1ec4250e7ce6d95c673861af5f9753a4",
       "route": "/fr/utilitaires/categories/science/simulateur-fractale-mandelbrot/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-horizon-evenements/": {
-      "hash": "976e7dc7c6c4ac9d558161f13b9c5365cdab057283157102907ec5afbbe0d1c8",
+      "hash": "0ec17f888c6b688df5c28f624e76c390014b4714b09d196746cdfbff3806cabb",
       "route": "/fr/utilitaires/categories/science/simulateur-horizon-evenements/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-impact-asteroide/": {
-      "hash": "141fae0da3f5bfcacd7e5ac12f1b827418356a9ecb00ab453882846c536c1c99",
+      "hash": "f24d4ab9e45db0458c3436697f5b2ce82cf3880c53a1bdbf76fd100bf1f1b164",
       "route": "/fr/utilitaires/categories/science/simulateur-impact-asteroide/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-probleme-trois-corps/": {
-      "hash": "d0f45aaa3f9892d1cb40694d834f26675cecd0b3d3d1386aae90664f8d134d72",
+      "hash": "31b261684154a51382df3941505a832c4cdc374060855bb92530fa6d9e33787b",
       "route": "/fr/utilitaires/categories/science/simulateur-probleme-trois-corps/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-selection-naturelle-derive-genetique/": {
-      "hash": "1e8125678b2a3c9b6d1809010e4223c49af93858aa2dd54688722fd0c49eec7e",
+      "hash": "d1f78eb128c79246425c110c63d7a57b2920369bdc86dbfdaa8033d1e038a847",
       "route": "/fr/utilitaires/categories/science/simulateur-selection-naturelle-derive-genetique/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/simulateur-sir-epidemie/": {
-      "hash": "901de9da5de0355c3f034ed799cedfaf4653ff88fcade7a6c7f678557647f06f",
+      "hash": "ae104aac51f633898d6f5ce69af7177fc64c66bf39439349e03108842ab47fd9",
       "route": "/fr/utilitaires/categories/science/simulateur-sir-epidemie/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/visualisateur-paradoxe-jumeaux/": {
-      "hash": "98a5aa3fe943ba8e80b6b1a828b24eb2e09bdcf05e1b3161302f1f6f46d9c677",
+      "hash": "bccef00b9f0792747676802296189c9752e99d79d833727224091abe3afb3878",
       "route": "/fr/utilitaires/categories/science/visualisateur-paradoxe-jumeaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/science/zone-habitable-stellaire/": {
-      "hash": "1d91972827dd45e0a470ad8494a805c932fe21d37865f288bd59cd4b8dacec73",
+      "hash": "a3394908cc7ce0597a0363276b41a350b304c08591feb0dcd4053b9cbef5cb82",
       "route": "/fr/utilitaires/categories/science/zone-habitable-stellaire/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/atraktor-lorenz/": {
-      "hash": "8d08e9184b76d229b42a326cc8114a014408cd6f98d2299d9d2f82fde3004197",
+      "hash": "97934350236dbdab8369344385afe9f6cca832e62561aa7f50a603b15842f906",
       "route": "/id/utilitas/kategori/sains/atraktor-lorenz/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/batas-roche-kalkulator-disrupsi-satelit/": {
-      "hash": "ac669da7c014cb15e529efad39dd3b069facdad442cd90b28e6b6bc7dfaeff66",
+      "hash": "dfba9c6385556663a1833b2c223ef280adc1826eff43e166f8667612ae4b90cd",
       "route": "/id/utilitas/kategori/sains/batas-roche-kalkulator-disrupsi-satelit/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/detektor-kebocoran-microwave/": {
-      "hash": "11e4319dc16d06f9e6b98e78164522ac0282fa91ef3181be50fff8370d04eea4",
+      "hash": "a4ac0a2daabc6e2dbce5060af6dc7223535664be10409d3b56dffec6f2878836",
       "route": "/id/utilitas/kategori/sains/detektor-kebocoran-microwave/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/diagram-fase-titik-kritis-visualisator/": {
-      "hash": "f10da76e1fd3af06583575ba8021dfb9e3ce9ed530602c3b5a3c2c8c92430f0e",
+      "hash": "a4169b189cc52929dca98e190f7bf4cefaaaaeddda17e0298e79beabd82b014c",
       "route": "/id/utilitas/kategori/sains/diagram-fase-titik-kritis-visualisator/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/": {
-      "hash": "250dd77125e9deb9e562a796c05229ce4715dc161f0d7b383d64070d92ac968c",
+      "hash": "2c9958770f0b536bbdff2036fd688a1544648298d4f37612f7e7991d888851df",
       "route": "/id/utilitas/kategori/sains/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-fraktal-mandelbrot/": {
-      "hash": "627c0ff39b613b3a8537546430b1a5f50406a14c2eaeb8255fde153553dbd7c6",
+      "hash": "24deafba688df8415737ebbdb888881d9d7ddba5aabb997912c3a20342e55441",
       "route": "/id/utilitas/kategori/sains/kalkulator-fraktal-mandelbrot/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-inflasi-kosmik/": {
-      "hash": "f4e3d0f603b94053f11499baf354d5fbd20739e18fbb1b6415b499fd05f83417",
+      "hash": "bd84c8e773df7dcb836380c5c178bdeb5f62c0977d3a46a5e1be2c047dc30def",
       "route": "/id/utilitas/kategori/sains/kalkulator-inflasi-kosmik/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-kelangsungan-hidup-atmosfer-planet/": {
-      "hash": "0abab980b30ac6287656666861bf3271708999fd8200ad59c480a5c7d78e638f",
+      "hash": "768312f5edc4d669024223f6e0409de81eee2b3fee00c79873264fd6001be48f",
       "route": "/id/utilitas/kategori/sains/kalkulator-kelangsungan-hidup-atmosfer-planet/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-pembaruan-seluler/": {
-      "hash": "f7e32bb18472f8b080ceec5fcfe6a8f0c614b257f8f83c7f8451681f2a58f6a9",
+      "hash": "281490494270fd129e77f2fef60297f1e1e593ced0d42ff8ef27c502176942b0",
       "route": "/id/utilitas/kategori/sains/kalkulator-pembaruan-seluler/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-probabilitas-simulasi/": {
-      "hash": "7fc10735000101fc83cbebc62150303ff830bbe972e6d13a4f93e3653f9d9982",
+      "hash": "a55e17b949825f699a7a2cdcf154bf8f3dc01b7328e3e1124c9cc229d56f9f79",
       "route": "/id/utilitas/kategori/sains/kalkulator-probabilitas-simulasi/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kalkulator-waktu-paruh-peluruhan-radioaktif/": {
-      "hash": "83931da37fc4d0581fca1b5cbffcaa452fb98f58325e6c09d171f19088f2ab8e",
+      "hash": "2a975794875b139d09a88525fa0b436aff5ec206697ac45fa92480d3dfa0b344",
       "route": "/id/utilitas/kategori/sains/kalkulator-waktu-paruh-peluruhan-radioaktif/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/kronologi-suhu-planet/": {
-      "hash": "a02997370db66624042730953c70cdeed2393e2e591dd030d9ff0a963205ec24",
+      "hash": "ccd62ecb5a1a4209ac0efb917e28abc855d86275b4e8ff3bcd131d12aaf3d13c",
       "route": "/id/utilitas/kategori/sains/kronologi-suhu-planet/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/lab-aturan-game-of-life-conway/": {
-      "hash": "25cc782adef209103d7acb5365d4b61b6a9b5b26f64e74aef57c83a5ddd3d88a",
+      "hash": "a736e1c03db6b42a5adc44e7eaa219d2167dae6295a17a128682304362dd6d4b",
       "route": "/id/utilitas/kategori/sains/lab-aturan-game-of-life-conway/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/laboratorium-filter-paradoks-fermi/": {
-      "hash": "b3ce04911896b520c83d7885235f2729160afb68e324e08cecbdef0bbf084213",
+      "hash": "9207ed798b98786001a2fd085a1bea1170c6d1a5d17bc4697cd04c748e6d4d9b",
       "route": "/id/utilitas/kategori/sains/laboratorium-filter-paradoks-fermi/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/pencari-struktur-kisi-kristal/": {
-      "hash": "65f40de570a8d2d14d0ebe1b4f3e4dab34841629461c65f2fd0f694b1584d491",
+      "hash": "a0522c80a12994c3b52ba6cdf88bf21c8dfb58055970eacac93572cbf5cccf61",
       "route": "/id/utilitas/kategori/sains/pencari-struktur-kisi-kristal/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/pendeteksi-biosignature-exoplanet/": {
-      "hash": "a1d45ce9a745cafcf676f6610ed5640d1853b2f9e0533bb859b778f070d15d7a",
+      "hash": "bd3f56f757e210ddfc621f47ade4a540d0cc8a0389ce30125257db7882d9416a",
       "route": "/id/utilitas/kategori/sains/pendeteksi-biosignature-exoplanet/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/penghitung-koloni/": {
-      "hash": "b7d1f195c6d4eafda626fa3ff03fff7ae312be842b96a8b66988bd9b16def3cb",
+      "hash": "fdd7474b05510d3abf85414146220660941f053aff7b13fffc1a246e2f2b9723",
       "route": "/id/utilitas/kategori/sains/penghitung-koloni/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-albedo-global-bola-salju/": {
-      "hash": "dbbf1e689cb19a923ff5580f121def0256cb1477a62219276b241f80684f714c",
+      "hash": "2458fa86a7920310efc572090a59ce1d2ebd67a7fd50625a9daf763a89a1fc3c",
       "route": "/id/utilitas/kategori/sains/simulator-albedo-global-bola-salju/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-celah-ganda-dekoherensi/": {
-      "hash": "d67be96305ae8c6b1016fee42fee41fc5a21ab554eddbd29eed5344615292df9",
+      "hash": "84ed89b7edd65c75abc219a4e49f4816f2cce29077caae73f33cd5148d3cbcc6",
       "route": "/id/utilitas/kategori/sains/simulator-celah-ganda-dekoherensi/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-dampak-asteroid/": {
-      "hash": "cbf9f8caf9d9d49fdfbf3c24a6077cae16587160aef5520293503b760d3fafca",
+      "hash": "58e7eb241647b93ee1f2c9304b2a8bd5977e15791979e665227f48065cd1eb5b",
       "route": "/id/utilitas/kategori/sains/simulator-dampak-asteroid/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-energi-bola-dyson/": {
-      "hash": "e095c8e1e068451c327065ad95f91f29c2fab14fe4c99e7aae797a8dcd04e1c3",
+      "hash": "adb9c2c394b439fa87c52a128501485558ad2ac61dab40b80d423fb520750439",
       "route": "/id/utilitas/kategori/sains/simulator-energi-bola-dyson/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-entropi-hukum-kedua/": {
-      "hash": "b26b4c34b28f16d6a2c146ad0edd714740e6ed2614511bfea6389da7c281852a",
+      "hash": "45bdf5c664c2224fccdeb21a0c00138d3d2a786199730291ddc74c3adb8b35c2",
       "route": "/id/utilitas/kategori/sains/simulator-entropi-hukum-kedua/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-masalah-tiga-benda/": {
-      "hash": "f9a0842f69c9a401be438a9d99893cd740e422547fbef3ebdc57759e5dcf02ea",
+      "hash": "b2164741a7fd6839cfa44bada24e61713ef79e26180ae72089d5f516e7eaeef7",
       "route": "/id/utilitas/kategori/sains/simulator-masalah-tiga-benda/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-seleksi-alam-drift-genetik/": {
-      "hash": "af3771d48f5fb80966c72f61480cc101b659d2deaa74f603ebc3759674804253",
+      "hash": "78888ee7e1a733e1c90c8003cccae7ee6439733080b50acbb888c258568a5d6f",
       "route": "/id/utilitas/kategori/sains/simulator-seleksi-alam-drift-genetik/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-sir-penyebaran-wabah/": {
-      "hash": "9570dce038b5bb58890e3a229b57e44ca01893afc60ab43be9a0d878737625f4",
+      "hash": "a85ebc70897922a108d283561d2a0bd2673b82979486e2eb695402ca8ec9a251",
       "route": "/id/utilitas/kategori/sains/simulator-sir-penyebaran-wabah/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/simulator-ufuk-peristiwa-lubang-hitam/": {
-      "hash": "cec63d37a5cb29c7227f59ba3c48bf9535e373e3eb7b7a22d09ddbda07d2784a",
+      "hash": "742ebb2f4c9d370c5581ce0bc7f97329b392297a8dc8f8a1d4ff69df2e708f6b",
       "route": "/id/utilitas/kategori/sains/simulator-ufuk-peristiwa-lubang-hitam/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/visualisator-paradoks-kembar/": {
-      "hash": "c31e3da9c6f69f57b7f73bf59b13cebd39f35eaedd0df8658101c21ade61e1b1",
+      "hash": "570e586f7156689490ceb55f8d5e22576d63d64079f2186461942b5833c2fea5",
       "route": "/id/utilitas/kategori/sains/visualisator-paradoks-kembar/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/sains/zona-layak-huni-bintang/": {
-      "hash": "16d005c9f78de0ea7862c7e6aa3a4ce1b687688982fd7f0fbaeccb860860c841",
+      "hash": "00aae8054cb819357c16d37fcdefe58eef4e140585e24860b28e107a261a8b7f",
       "route": "/id/utilitas/kategori/sains/zona-layak-huni-bintang/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/attrattore-di-lorenz/": {
-      "hash": "562f72c698658475a7d0b02c96cb23c0767b3da737e875678e95e41b493512b7",
+      "hash": "ee1563674ec92c146378c7e0382ad73af2fc7e9860031d6d755eeab4ae66c7c1",
       "route": "/it/utilita/categorie/scienza/attrattore-di-lorenz/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/calcolatore-emivita-decadimento-radioattivo/": {
-      "hash": "491fb2526601fe5da2ca6cee95eef91e349d1096daa167e224981f6f3a7f0497",
+      "hash": "515227e2dfc79d87594cfd715f681049ca739bf56b2a4ea5da9048562cfe9762",
       "route": "/it/utilita/categorie/scienza/calcolatore-emivita-decadimento-radioattivo/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/calcolatore-inflazione-cosmica/": {
-      "hash": "8fcee190f99878b18e6a4b8a9aa4dad1cd81a2212ccf7ae09657cdfcaa4117f8",
+      "hash": "3212a7681a7b0609705a7bac9b5772279c5c99f711a338676ac2c037d26c82f2",
       "route": "/it/utilita/categorie/scienza/calcolatore-inflazione-cosmica/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/calcolatore-probabilita-simulazione/": {
-      "hash": "cffc9ea80a210efc9555a83286d8587dd781515e1e941ced4811c834d156947e",
+      "hash": "ca9f3d51a00b154a1388f57b61fc9f8663217f65fb5c7ecc157d9a2162b58c8c",
       "route": "/it/utilita/categorie/scienza/calcolatore-probabilita-simulazione/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/calcolatore-rinnovamento-cellulare/": {
-      "hash": "02d09979dda7957ce081179e39f617529fdb1e97baeada9222a149dac31968c2",
+      "hash": "3c24ddfbaad64c62ad6f56d6631f1f91d4dcd561c03b2b640bc3459307f1bfbb",
       "route": "/it/utilita/categorie/scienza/calcolatore-rinnovamento-cellulare/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/calcolatore-sopravvivenza-atmosfera-pianetaria/": {
-      "hash": "48962f4d5e9ecd859f9b1f77a6130b15b3560f124a21c4f5bcea92cc4cc86f21",
+      "hash": "9ad63194fe3a721f423f1e8b3cddaed901a29ce20944ff4031d842299c2a93db",
       "route": "/it/utilita/categorie/scienza/calcolatore-sopravvivenza-atmosfera-pianetaria/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/conta-colonie/": {
-      "hash": "9858cacc1f1b1f373d3bc3a8686dcf100d0171218859f5b7fbe1beadd9f92d70",
+      "hash": "7c3b230f1fc7e806cd65a2da44ced30fb0d6560e9e43ac4b65cf2f9a8dab0caa",
       "route": "/it/utilita/categorie/scienza/conta-colonie/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/cronologia-temperatura-pianeta/": {
-      "hash": "74a49bb7e220f524cee25f6cbec74f0ebc75441dd147454bcd72ef54d5b00887",
+      "hash": "b763791c6274ae13f640d573d40c704712754b52681c53e63db1e792a1d94712",
       "route": "/it/utilita/categorie/scienza/cronologia-temperatura-pianeta/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/diagramma-di-fase-punto-critico-visualizzatore/": {
-      "hash": "e08f4bc9edec2ede52153c63ade7d8f6f0b338d4120f15255fe1de688c7cc272",
+      "hash": "c72a03f0bfc13c3932ff16d76a9666551a0f52463954f66b7913fee799bb522c",
       "route": "/it/utilita/categorie/scienza/diagramma-di-fase-punto-critico-visualizzatore/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/esploratore-struttura-reticolo-cristallino/": {
-      "hash": "31a100bb47e3c82fe3916027e217b7ef2a11f5d0a52cf94bec5c80c44eaa240e",
+      "hash": "b721d1ce994b4e405477a756afd46ba930670e679b61298c3c2670778571ef8a",
       "route": "/it/utilita/categorie/scienza/esploratore-struttura-reticolo-cristallino/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/": {
-      "hash": "a68902e7c5b872917723a2b896d4f29548990f56bd7f7e052c9f3d6b0323f751",
+      "hash": "764516cd182cce21ef28cdf52e23b227adfd72f79fcd668888a572bf2db9e37d",
       "route": "/it/utilita/categorie/scienza/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/laboratorio-filtro-paradosso-fermi/": {
-      "hash": "68fb3adbdcf1e6bae9967474bfa696a2cc3f566326b5620f3cc9a25dfb9863ae",
+      "hash": "cadece8878a94a43298b97cd9a39e4c971dd546cefbd19877be4e707670ab100",
       "route": "/it/utilita/categorie/scienza/laboratorio-filtro-paradosso-fermi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/laboratorio-regole-gioco-vita-conway/": {
-      "hash": "f1a065e229b6e3448e510194803653963d9bf7fffe29576d0924654f391fd21a",
+      "hash": "eceaf3a3b3481711b4da785771b7a10ae2fc05f7b606e93aa310edd8ef873dcb",
       "route": "/it/utilita/categorie/scienza/laboratorio-regole-gioco-vita-conway/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/limite-di-roche-calcolatrice-disruzione-satellite/": {
-      "hash": "3e30340ccde4c09cef27f9ddb2f92151d9ff77b804cc420ee81e38daca20d949",
+      "hash": "50c53564fd8a58edfc69c6db4889f7d0beeddd83d85f4b41ee7bdc25e514126c",
       "route": "/it/utilita/categorie/scienza/limite-di-roche-calcolatrice-disruzione-satellite/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/rilevatore-biosegnali-esopianeti/": {
-      "hash": "943859706f49f2ae21308a5412ce06731beff97555913c1af0e8cab8baaae31e",
+      "hash": "d1003651f2ae6ceca7688e4d5af451286b04bce7704199d965572dbb27ff37d4",
       "route": "/it/utilita/categorie/scienza/rilevatore-biosegnali-esopianeti/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/rilevatore-perdite-microonde/": {
-      "hash": "685644d5afa40baa00035c143c449c6e8ef80146a49383d7d6e46512215b6f50",
+      "hash": "e11dab63db08054f17fd062bf720288302bdb94604dfdf6bb58dc5c12ee1e27f",
       "route": "/it/utilita/categorie/scienza/rilevatore-perdite-microonde/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-albedo-globale-terra-palla-neve/": {
-      "hash": "4a3c57bf3f4190a6b85f0290b8361889842b506e3b4e3c57bfaa16bf24c4d826",
+      "hash": "5f4ca3d8d8040890ec6b5e81fbbdf9221afa6062904f6ccf05473813ba1e1767",
       "route": "/it/utilita/categorie/scienza/simulatore-albedo-globale-terra-palla-neve/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-doppia-fenditura-decoerenza/": {
-      "hash": "129863fabc36b23db525763a11502bc35d1d7befb1bb62fc9d297d5c62cdf1ce",
+      "hash": "1aae8e2b45dace84b722c5adcb251048cfc2a6ac4e6c6c46eae378e8f0bbfd95",
       "route": "/it/utilita/categorie/scienza/simulatore-doppia-fenditura-decoerenza/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-energia-sfera-dyson/": {
-      "hash": "6b9dbbe4fae42962db58adf8c9bc67cb222c4aec79dfe80e5d6c9b5d92787c40",
+      "hash": "90660f5b7dff4e9c05d4238b58c35bb73026851c2c2d1fe5262e1cd8edf6def3",
       "route": "/it/utilita/categorie/scienza/simulatore-energia-sfera-dyson/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-entropia-secondo-principio/": {
-      "hash": "bd77b9a202e6b61b19c9a634e8e236b1626e81cd80c05e2d669c658833b30b7a",
+      "hash": "f52f889348c02ba3a49a58cb7d3b4e5971e262128dcdb9557d5290e44daea755",
       "route": "/it/utilita/categorie/scienza/simulatore-entropia-secondo-principio/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-frattale-mandelbrot/": {
-      "hash": "1be723e1befe3edf763ffae4f6b766bb65c1cd642598c4ba91699ab2c260c477",
+      "hash": "6a36cc57b720351ebded6126df390e08668b3caf81b70ab8e5d930f4e05d8d5f",
       "route": "/it/utilita/categorie/scienza/simulatore-frattale-mandelbrot/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-impatto-asteroide/": {
-      "hash": "e257bcb7b4131bedec9d2c466d57faf23c9242bb26b866a59ab0b3e7c4386797",
+      "hash": "41089c31e157e28a2f0cf6496db176ceba727fe3fb6fbd65c05316309ef248b6",
       "route": "/it/utilita/categorie/scienza/simulatore-impatto-asteroide/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-orizzonte-eventi/": {
-      "hash": "2092e6ff4c219d37862249aa413e1caaac993e5f762cbb83d7b275ad6f4952da",
+      "hash": "480674a37136f69ce9242a80516e0a61d7e8f35584a46b96ec9a0fc8f1ef9bba",
       "route": "/it/utilita/categorie/scienza/simulatore-orizzonte-eventi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-problema-tre-corpi/": {
-      "hash": "6e427cb1f582bf470ef34d278ec66866b3bcb0d43682b68c77d66b342e628ac3",
+      "hash": "aee3aff3dbcb1c73bbc42e183da4ff4c86cac2dd98229b639ba722ea72da24b5",
       "route": "/it/utilita/categorie/scienza/simulatore-problema-tre-corpi/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-selezione-naturale-deriva-genetica/": {
-      "hash": "4997ce6b9fae64042f5946c6637e6d47b9f350bb692b6358b8cbc981bf6892d5",
+      "hash": "254dda097ddb132133bbae7a45ca7fe4d1ae7d841b3eea833a02c51ed5c0d9f5",
       "route": "/it/utilita/categorie/scienza/simulatore-selezione-naturale-deriva-genetica/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/simulatore-sir-epidemia/": {
-      "hash": "9790afd25d595926690308df24ac54c91101c7c1fb81a346feae6d272eb35f7f",
+      "hash": "dc471e87ca5cf694ea49c7033cb8f94514e9ff58d7fc9b16b3413a85f6f02109",
       "route": "/it/utilita/categorie/scienza/simulatore-sir-epidemia/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/visualizzatore-paradosso-gemelli/": {
-      "hash": "bfea07381d8a7dcbb1e61262040080c855c32b31dcb362ed1260e76dfbbaafbf",
+      "hash": "17adb642ef7beb76cb60134d0c6bba2e34da376f844b21c3d06b59fb5bb23110",
       "route": "/it/utilita/categorie/scienza/visualizzatore-paradosso-gemelli/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/scienza/zona-abitabile-stellare/": {
-      "hash": "47740f1c068ca1079f7e9cef6e5f4124f398df1e52b7f6f9a964f34a10e30f0a",
+      "hash": "1d04e50dadae7d17e8cf9a0c76efd4cb90b84768ec5d2c0faaa19694c9646533",
       "route": "/it/utilita/categorie/scienza/zona-abitabile-stellare/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/asteroid-impact-simulator/": {
-      "hash": "146769ef752b4babd4f9024130e2e6d65f3ffba1d2bcf404562d20a19a825ba6",
+      "hash": "869e8a494294b4db6f1e9181d2c2f291ada67742c7ea0cdfe7c93f8538793df7",
       "route": "/ja/utilities/categories/science/asteroid-impact-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/black-hole-event-horizon-simulator/": {
-      "hash": "56163b86520eddbd84f7bc318edaf6bd4b4f1e1a46f36f6433d4f3b7a41d534d",
+      "hash": "10b4fcc44284d593c6bc4ffc4ba6eebe1135710e49c77037a27b7501e3a7d6df",
       "route": "/ja/utilities/categories/science/black-hole-event-horizon-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/cellular-renewal-calculator/": {
-      "hash": "b1d5d7e29733b439e60bb97300a72c3d2ec478d23d27f5a58332a27015ff0a71",
+      "hash": "48c9e0c2f55b6b420872657d92350f3b2fc7c3fc4344ced16aabc0dd5286c95d",
       "route": "/ja/utilities/categories/science/cellular-renewal-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/colony-counter/": {
-      "hash": "c07769c39a8e957237faccb10cbcb085659da30bd97cf80c34489b28cc7692cf",
+      "hash": "9aec0110f505532904b740c5e1c2f62e47d58c7788d2622eb1771257ce0b3262",
       "route": "/ja/utilities/categories/science/colony-counter/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/conway-life-rule-lab/": {
-      "hash": "c5289a1af8606501b7d2b27eb1ae6d323b48202934258476dfb27ed0e8cdf0a7",
+      "hash": "297eebdb4af6491d0d4e04fb264e60bfafb82ef5ed5d7de5bf6663535f6b2583",
       "route": "/ja/utilities/categories/science/conway-life-rule-lab/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/cosmic-inflation-calculator/": {
-      "hash": "4749f8b03c17a0880a8dc38767a426ed7d24be583229f4854357d90a2cc89488",
+      "hash": "527577084e942d03d7b1f72d09a404d3a133f01b6dc99c858255f6fb9fb66990",
       "route": "/ja/utilities/categories/science/cosmic-inflation-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/crystal-lattice-structure-finder/": {
-      "hash": "17a665ed8ea0fe03fb7a3848dd905d38afb5e1f3cc7d408f1cd1c909d97101d5",
+      "hash": "1e082de50ab05c81023a6b4fda25b2ae280bbd3c53c2ebaa9917bd53ad26254c",
       "route": "/ja/utilities/categories/science/crystal-lattice-structure-finder/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/double-slit-decoherence-simulator/": {
-      "hash": "fb9b2788b7aadc3d6db48970f0d6c52448ca13352b871a30e1101886c29e51ed",
+      "hash": "a532c6c3295c3be1f1affbeaf28daefd6c357624a591a13789f879c6be6b3e78",
       "route": "/ja/utilities/categories/science/double-slit-decoherence-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/dyson-sphere-energy-capture/": {
-      "hash": "fcf34c8dc2793d0a83e0192917e7384bdb35b8630b2d59590d593d50b748b6f9",
+      "hash": "879738c4ea2d7ab303be525c01e878631cae827c5d682c35ee7db5b2df3b8761",
       "route": "/ja/utilities/categories/science/dyson-sphere-energy-capture/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/entropy-second-law-simulator/": {
-      "hash": "0fe487c1e6ea0b1cd9448eb5460edff08b2286789c491db23017ecf132cfbece",
+      "hash": "f1bab485d76e5e66f4665bae75dc9635c1b9d0d62a698b728ce1539b670129cc",
       "route": "/ja/utilities/categories/science/entropy-second-law-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/epidemic-sir-simulator/": {
-      "hash": "d6b2e118b99dc856df2e984bb903626985037a9e80b18696cb3243c6efed6bcf",
+      "hash": "f4c25bac9e3b220bffb8cb66908821ac199c35afac331f501c88d9f89a8c7403",
       "route": "/ja/utilities/categories/science/epidemic-sir-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/exoplanet-biosignature-detector/": {
-      "hash": "7882c0bff24cba976f60c45fd8d302f6a155951f8b4e62921b43e9dad9de471d",
+      "hash": "a55a7868c8ebd6c6b48f36a69c26c013a54e4db33ee42f4c2a5d35aa2a76f2b2",
       "route": "/ja/utilities/categories/science/exoplanet-biosignature-detector/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/fermi-paradox-filter-lab/": {
-      "hash": "93725f111b019f17663b90a30bbd3d663e8075b04ad39ad4540bc7b799a119b3",
+      "hash": "b65a146511ca1e9943ac88e65a67f874e95b0f03d85e597f2e51a6dc11ce195e",
       "route": "/ja/utilities/categories/science/fermi-paradox-filter-lab/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/global-albedo-snowball-simulator/": {
-      "hash": "cfec7d45fef41edabcd3fc902831dfcad3b88b9d20caca909e4ceaa255b0824d",
+      "hash": "44019ed9930d89415d78152be24b623cf704eed772dfb87cb7704199034407a4",
       "route": "/ja/utilities/categories/science/global-albedo-snowball-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/": {
-      "hash": "1df5a13ee2b915da0079dff41438ac0beabd5f110e7e7226309a71ec91bf77d0",
+      "hash": "92ea6b4a246da139f2d6253997a826ff856976d5164056a7b16521e26ed29dd0",
       "route": "/ja/utilities/categories/science/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/lorenz-attractor/": {
-      "hash": "232237f369dab43b07ef20a95a98bcb6288a1c28a1ea03e1013f8724ea8255af",
+      "hash": "e96c3eb91b7aa40428f56630eb7f42e265bf41f5a2f71613bc404ac4739942f3",
       "route": "/ja/utilities/categories/science/lorenz-attractor/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/mandelbrot-fractal-calculator/": {
-      "hash": "0ff7638f7e4b87a84ce21e6fdc1fa1268f60ac27839857bf666b3cc110219fc9",
+      "hash": "407de44d0523eb831d79d516298a7bdc34875fe9ee0794cc134d31e4b93c8cde",
       "route": "/ja/utilities/categories/science/mandelbrot-fractal-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/microwave-leak-detector/": {
-      "hash": "7762a93ee3712e6738a3f668dd178896793acf6414100af337fcca92a48e5472",
+      "hash": "ae1693e1e7307c4e796effcbadffe0ddc76010b83cbda7526205a90d1e6d2dab",
       "route": "/ja/utilities/categories/science/microwave-leak-detector/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/natural-selection-drift/": {
-      "hash": "9c2d5ba1c13495653d2e86ff0cdfb2d1e5406dc5f496dafde31e56d17f52e67d",
+      "hash": "803c2372a4ce6b825d07996c0f2bfd44736a95f18e3b7baa1f8d3104464085c3",
       "route": "/ja/utilities/categories/science/natural-selection-drift/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/phase-diagram-critical-points-visualizer/": {
-      "hash": "e76e7ced84fde5d1e168a56fe99d882c7ace8d182c7cfcf936a82c2b5f86c3e5",
+      "hash": "1c84128c696fb9fc83cf275e10c3067bf672ede915b8d75044f1b61c52c74c0e",
       "route": "/ja/utilities/categories/science/phase-diagram-critical-points-visualizer/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/planet-atmosphere-survival-calculator/": {
-      "hash": "fed913cf103e092596e8345bdc9ef5744cf83d97845820d41dd2e9b245eac6c0",
+      "hash": "f3874eab7826417a784a2bf5cfae88602663e2bb5b5ef2d2fd30c75c231a252f",
       "route": "/ja/utilities/categories/science/planet-atmosphere-survival-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/planet-temperature-timeline/": {
-      "hash": "83fe4c2c7463071eb433eec21be96690c8b9015c363353edbc5a279b227dc691",
+      "hash": "5eab5924c5be1f4d2e3bf08d8854d7e1b1b4ede095250fdf1b43df43ad405b15",
       "route": "/ja/utilities/categories/science/planet-temperature-timeline/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/radioactive-decay-half-life-calculator/": {
-      "hash": "6316d45104a100045e790be7a4944fdbdb7f6923bd7a549e76cce3180f41806c",
+      "hash": "1c00470b2f6a21994893adefa9169e2f476668cb67c01546bc7b5809f843497d",
       "route": "/ja/utilities/categories/science/radioactive-decay-half-life-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/roche-limit-satellite-disruption/": {
-      "hash": "09f17301d83ea43cae75a9d4032467f2629a273c41c0708ef9e3539d74a72de7",
+      "hash": "32cd07af170150b762ca3d66c171660b60c7bc786dfe9340729cba09befcee63",
       "route": "/ja/utilities/categories/science/roche-limit-satellite-disruption/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/simulation-probability-calculator/": {
-      "hash": "a6563fcd6c742cfce45ed51a4232faa9d493942950145504a8fba6c18a9eee20",
+      "hash": "46c1c2b73213466f2e30705da5a208822ccc68ff44ea7eb523a627ea66d87bc6",
       "route": "/ja/utilities/categories/science/simulation-probability-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/stellar-habitability-zone/": {
-      "hash": "813938bf1f818062a44625dff5fbaa2f62ed6905b30d0da8ea403e9c4f599299",
+      "hash": "9db90ca655dde9805df2579715b0e360d078a260e66f6fed53ba7ddc340edfcb",
       "route": "/ja/utilities/categories/science/stellar-habitability-zone/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/three-body-problem-simulator/": {
-      "hash": "cc60736d9180d1118e765c76167b0e41bf7e56938594b98e07ee827d71d81084",
+      "hash": "890ca05aff2fff8c25287e1a44e09e2ba0168b67faffa2ce40343803947f0a47",
       "route": "/ja/utilities/categories/science/three-body-problem-simulator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/science/twin-paradox-visualizer/": {
-      "hash": "3a2b5002a34ae69c842ccd06734bd9f8bfe15a2a6403006e6387fbddae0d9cf4",
+      "hash": "0606dbe4c1bab08e198b1fba282d2806c203d8b5307ef897fceb2c83fc402356",
       "route": "/ja/utilities/categories/science/twin-paradox-visualizer/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/asteroid-impact-simulator/": {
-      "hash": "fd39c79d846e4746a9ea54c44e5237a760c28fad2b602f174b03af91585be6e0",
+      "hash": "9c1bdbc592d2d914682449636565fb8cf5beb299f92bfaa79b59a74d42b9b694",
       "route": "/ko/utilities/categories/science/asteroid-impact-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/black-hole-event-horizon-simulator/": {
-      "hash": "24b1f35b2918f4456ccdbf93c328760d52aa571c3f530353c8dd89149ac646bd",
+      "hash": "9e2009334e2ca58015cc76ad3320029f997a8930704c474474706c3f4d93bb7c",
       "route": "/ko/utilities/categories/science/black-hole-event-horizon-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/cellular-renewal-calculator/": {
-      "hash": "5defacf746866f020869791a2d6db60494847d2f314ccb95584d7bd80fe09cca",
+      "hash": "39b2f387c4a68c0964eff0c861c17f8aece52c0d56b68e45ba968becbe160e10",
       "route": "/ko/utilities/categories/science/cellular-renewal-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/colony-counter/": {
-      "hash": "2070a419f461a078a0c341540d2d6f413d71d46cfa2c4616207ba8abc6cf99ef",
+      "hash": "0bee8b32ba6dbd3dde1389c751495da250ee1c093dc65df91fdd637966a70572",
       "route": "/ko/utilities/categories/science/colony-counter/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/conway-life-rule-lab/": {
-      "hash": "7ef2f4cea360ad4ae32f6ece5aa27f28e39196e16ac6446806d2bcf242475924",
+      "hash": "19065087c469c7a8399c1fc21811e258585bc14f912f25979e93bfeecfa15c54",
       "route": "/ko/utilities/categories/science/conway-life-rule-lab/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/cosmic-inflation-calculator/": {
-      "hash": "807a965e73dd666e29c45cfef879179e50f346ce1e48fe8a03e28f1ded1a97ac",
+      "hash": "15b607cd3ef6ed496a56954fd3b632ea04ea6b7990ced2d77a58d7cf6ac6164f",
       "route": "/ko/utilities/categories/science/cosmic-inflation-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/crystal-lattice-structure-finder/": {
-      "hash": "073d909cdd82339f1a6180948c9d4750b4c1fd3e4c381c262d428f9186d2b6ed",
+      "hash": "bccf0656d3afceb61877761e7ea0b9c9e557b34ec1c46d911e90f72e28c41cc4",
       "route": "/ko/utilities/categories/science/crystal-lattice-structure-finder/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/double-slit-decoherence-simulator/": {
-      "hash": "8e2549655a6804bdf7e6919c49af588ba8042177cf574d87c46a719b73cd73ca",
+      "hash": "391db182e7be25e402f9cfef0eb56f1b25aeeb6c155bbec1f165f70aad8dd768",
       "route": "/ko/utilities/categories/science/double-slit-decoherence-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/dyson-sphere-energy-capture/": {
-      "hash": "58a7613c734491cb154f7ae3341160dd7ba0142fdc0cde2802721f9d30b885f8",
+      "hash": "910bd07194b3679277afd4d85ec80b098c77a30d28aab9973b51619a1ddefe40",
       "route": "/ko/utilities/categories/science/dyson-sphere-energy-capture/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/entropy-second-law-simulator/": {
-      "hash": "3417266fa2776e7566f6d74ed1026934e482842cf1d5210f7e247524ea1a80d9",
+      "hash": "267b1d396fa5946a3606dc1a47e3c7b3fb296fd731131a2366807c85b91858c3",
       "route": "/ko/utilities/categories/science/entropy-second-law-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/epidemic-sir-simulator/": {
-      "hash": "ccfc53e0adc438ddd30c4ca85d3582b6fa90a86cf5288f78d08589e44209c506",
+      "hash": "bd28ef97c88563bfe154fbec81557def8ed46939aad45849b6cf3258087907bb",
       "route": "/ko/utilities/categories/science/epidemic-sir-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/exoplanet-biosignature-detector/": {
-      "hash": "94f3e54fadfd27cec4eb74743b1e210820740e60f66ff3c9f6937df5c08c0ac9",
+      "hash": "ab1025f29a7cffa87f8dc98ec385ff0e8714a44cb3bc5cdde579a8ded64bb7e3",
       "route": "/ko/utilities/categories/science/exoplanet-biosignature-detector/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/fermi-paradox-filter-lab/": {
-      "hash": "ad20fc11d1b31af8af01adbadfeaad7c57d9c199fe6bd31fce36c6f42271434c",
+      "hash": "f43f96df904edda1cd6441dcf7982d32c1f064f9bdada7b79b8d651b062de63a",
       "route": "/ko/utilities/categories/science/fermi-paradox-filter-lab/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/global-albedo-snowball-simulator/": {
-      "hash": "7aeb8eed43d6517ea7f8c5b776467102ec26b2f8a1ee429d0d8219f59abb5fb6",
+      "hash": "bf00f81c8bfd8e923e881bc933761ecb6f4ba4b875a85b389293a2764ff951d3",
       "route": "/ko/utilities/categories/science/global-albedo-snowball-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/": {
-      "hash": "3e60d99ad65e898ca5da84f3132fa73f790926f122c9faf9c936bd65da765606",
+      "hash": "8aaecd313da4311a826a3f5a18460a7d5c1f53fccbd5d93752f4ed4f2e06d5e6",
       "route": "/ko/utilities/categories/science/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/lorenz-attractor/": {
-      "hash": "09ecf939982f91375e7f511c6bca9e91e1a031b82918943a1abe2dc8750fcdf9",
+      "hash": "554534332d221511d480b942b3ca1cee11750230bc9e4736be1f637c8b3a575e",
       "route": "/ko/utilities/categories/science/lorenz-attractor/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/mandelbrot-fractal-calculator/": {
-      "hash": "1d6014457373db65c5cc06b4692f91d2a2f6cf853651391090e162490ae75415",
+      "hash": "c2757cd837169ce454c9fc949c5ee2ac7bcddac6311840c238c0391e4db2d10f",
       "route": "/ko/utilities/categories/science/mandelbrot-fractal-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/microwave-leak-detector/": {
-      "hash": "2b194cfdc087a823181253045471fcbd21ea558461605e95aeee58b13f3ec652",
+      "hash": "c43342484235ec98da8baa7655d8523b39196b6069265f3d86921c3c26fd432a",
       "route": "/ko/utilities/categories/science/microwave-leak-detector/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/natural-selection-drift/": {
-      "hash": "2304bb0bc202d8f3b9ccd5bba49e568210983e047889184123836eada08ef6ea",
+      "hash": "962bd0cf3667867cacd1ed921c2cbdac54216f7fbc052f628b227ae3b26f01a8",
       "route": "/ko/utilities/categories/science/natural-selection-drift/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/phase-diagram-critical-points-visualizer/": {
-      "hash": "a688e87b47498a167933d83520e63464fd6641f410ab95f04c2c664fc45fe76e",
+      "hash": "59e755a5dc2c4784db90894079b9e4cceb0c0092aae724a0c2ca8e5ba3658a73",
       "route": "/ko/utilities/categories/science/phase-diagram-critical-points-visualizer/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/planet-atmosphere-survival-calculator/": {
-      "hash": "55bc0cf69ab8808964a70fc206b74c475b7d9589d9685619ee61929a5c1b02ac",
+      "hash": "241532467c734275393a50dd12097f6e5095cc2a701ca00aadad1ef818d2050c",
       "route": "/ko/utilities/categories/science/planet-atmosphere-survival-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/planet-temperature-timeline/": {
-      "hash": "c2933d82e5a0296fa23bee5898d13cf4de0b573cd2dcc8d7e5dd356118dad604",
+      "hash": "1a8baa6cc3e095d788293a523f4bad196b140d4463649efd2399f4fbba2b4161",
       "route": "/ko/utilities/categories/science/planet-temperature-timeline/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/radioactive-decay-half-life-calculator/": {
-      "hash": "f2868a9441fdfad9b91e8f5a0b2b1590b1fe5db3217478a7e56bcfd572391694",
+      "hash": "1a5da04b16179fa9dfa9c814d94a34cadc6dcef3634192518ac5871bafc6e067",
       "route": "/ko/utilities/categories/science/radioactive-decay-half-life-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/roche-limit-satellite-disruption/": {
-      "hash": "a07b75e60fc6776c3e8880f811e8d59429d39a4ab7a1eff54851fe06d3c891dd",
+      "hash": "cf2e2366c06000d79ab5b38fcdb770d674e5dd817fe359ab90aee65f87eb13a2",
       "route": "/ko/utilities/categories/science/roche-limit-satellite-disruption/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/simulation-probability-calculator/": {
-      "hash": "46beb64656ae0dd2b27a22f52a301ec44eec60f947f166c4e3ade64fa5da934c",
+      "hash": "59f84ded72db030ea362218c57cecd0060c521266490cdae9d916c0abc10f710",
       "route": "/ko/utilities/categories/science/simulation-probability-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/stellar-habitability-zone/": {
-      "hash": "79e5557a94387d5732e2d0852a64f9e73bbbcea6e14d2404065a8a829c5c9953",
+      "hash": "4eae5852b5a2ab8d448f890ed3b95da7a539b8f16a66f90539298c9ef507c5cb",
       "route": "/ko/utilities/categories/science/stellar-habitability-zone/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/three-body-problem-simulator/": {
-      "hash": "2f487e321e1b62f5344b562f435f7ed735498e6ab8ae308bf89ad77901a337b3",
+      "hash": "e8cfa3b87cd26c2f31dec1af592c8f254bfec34224dbe9e56d0d10bcdbf2499c",
       "route": "/ko/utilities/categories/science/three-body-problem-simulator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/science/twin-paradox-visualizer/": {
-      "hash": "82ca0821357c8331662933da3641b02633922d9f86e2b8683675d55fcf065cbc",
+      "hash": "88705513cfc18d96d4bf8ca3c9a75afe0711b8b2dde59e9029b8343a3541d27c",
       "route": "/ko/utilities/categories/science/twin-paradox-visualizer/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/asteroide-inslag-simulator/": {
-      "hash": "4e5410b9a075b9f1d1c997de2e328185d592222b5e145209ecdcc4a30c8e5cf7",
+      "hash": "a4c32c7082e24fca77cd2b99d17e2cc0041fb5465964c360a2359a5af50874d6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/asteroide-inslag-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/celvernieuwingscalculator/": {
-      "hash": "ecce8576323f2d7c30bff167d0b51e5205c8656348a42107ebf1c15fbb8cfec4",
+      "hash": "f7fc6392b58f2caa78d7a2aaa22045959b18482175cee6c34e514502e2900028",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/celvernieuwingscalculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/conway-game-of-life-regellab/": {
-      "hash": "6585375f2f77b9f712e310c52459e33546d3c003222980194a372f1d1d4b75d3",
+      "hash": "08a8a9d1e3dc49298611f6a0ec6d35cfa4a86246657b60237e418572a1c6b123",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/conway-game-of-life-regellab/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/drielichamenprobleem-simulator/": {
-      "hash": "dd9139e821290d8616a47dc75c53ef01f24051338e55da5d1a7a67563ee6c85d",
+      "hash": "9812a95e3efd35c1bb790da068fcd9095aad7966beb208ddea0baa9417e472f6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/drielichamenprobleem-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/dubbelspleet-decoherentie-simulator/": {
-      "hash": "fdfb982aff7e4db80ef184bdc4bca1f8162101db77e6050d67adfc6ea3002407",
+      "hash": "fd62900d7ea73b29e8ab0e73de860410e5d8ec83a735cb77399c2badc71e041c",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/dubbelspleet-decoherentie-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/dyson-sfeer-energie-simulator/": {
-      "hash": "81aaceba41c26cb43da7a0084aae5995b6c3fcb3a69062de44abbd4cc80f7993",
+      "hash": "fa887d3d21149dd0e4e054ff3a2d366adafb077362518da36c34ac4dc12e1ac5",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/dyson-sfeer-energie-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/entropie-tweede-wet-simulator/": {
-      "hash": "a807acb5052537d9cb10a2d710796c75257c9f99ef121bf62d42f46ba777dfda",
+      "hash": "bd0fcc750cef2fe7526e0a32f508461d3f8df4daf9853b7b7733a355502972d1",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/entropie-tweede-wet-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/epidemie-sir-simulator/": {
-      "hash": "0b94f639f8cf52be8e615369eca07213a54f833113ed7035e22b4640190f0de2",
+      "hash": "77b9bba41c8e1c524a8381b8565166293f45e77c7272a4d527d5358435ad307f",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/epidemie-sir-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/exoplaneet-biosignatuur-detector/": {
-      "hash": "6d0f77d98f31f489510d6b47fb75012aab60cf3e0c568368de3e092bf084e32a",
+      "hash": "5bb4c8bf66f6ff8c3c5ea4d36685180853d95ac9652c4bf97d7eb71f8f7f04cf",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/exoplaneet-biosignatuur-detector/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/fasendiagram-kritiek-punt-visualisatie/": {
-      "hash": "3fcd01f0e7dbe1827b9645c18cadb680c25c6a73db663c80a2a01eafe7ebdd5c",
+      "hash": "eb621f2582f716ec041a76d7f4ab0bf72aea6d04becd7f392681e0c1f013bc85",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/fasendiagram-kritiek-punt-visualisatie/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/fermi-paradox-filter-laboratorium/": {
-      "hash": "8a22b5e2297600b3063d9dac4c08b5e6e59938bf9f9ecc2cd37dee70b9195ffd",
+      "hash": "04ef388d6178850fad1f5d4ad598af1f01053503d199d627044f72b08d495496",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/fermi-paradox-filter-laboratorium/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/globale-albedo-sneeuwbal-simulator/": {
-      "hash": "f79cce73a2ce9ddc46be44068731c34c223726c25e4ff602571d8d03b2981bd5",
+      "hash": "8240d3ddda01042007444bfc142c52db614658955e8d0a5eb408abe879dc07e6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/globale-albedo-sneeuwbal-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/halfwaardetijd-radioactief-verval-calculator/": {
-      "hash": "c3d73a937f533e3148a65048b6448a7e7a0a7e5674a4d7d98b3cb9201ccb3d48",
+      "hash": "eb46d7495e219235b338f553236c7fee0bb883c7c34a084387a85906110ba55c",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/halfwaardetijd-radioactief-verval-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/": {
-      "hash": "848aca7f10e84836502dcd6af700b711808f8ae7e1642ad10451575896381ccb",
+      "hash": "348b0a96fbff80e197b3bf618323aae3cc5e51c1e6d21f3d3dddce3e6f55cc47",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/kolonieteller/": {
-      "hash": "3d2b90c54357799cd40d80c41c33a678659760ee0c81c382e8db909c1f75597a",
+      "hash": "76d7deb08d7708905e78f5db43cba0d5f2828b3c36b86c2cd530a059c08cbf69",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/kolonieteller/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/kosmische-inflatie-calculator/": {
-      "hash": "db2302c36eaa57f15d5c41fb131c61f0bb71063f5a7c23721d4bcfa8d619027a",
+      "hash": "69d8eeb55ec73ed95e4dbbdf659182a7d71575f4f64bd5b9fa7c6f1a003a952f",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/kosmische-inflatie-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/kristalrooster-structuurzoeker/": {
-      "hash": "757a2a3ac48d19638702936cc1efb766d4fdb4c24f102e3e88faa05b90064fd8",
+      "hash": "15453401bbcf2736b327863a0d244ded7514a513b1a96ad13bc2a3ab2679f973",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/kristalrooster-structuurzoeker/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/leefbare-zone-simulator/": {
-      "hash": "c9b41bb6fc85555c991636e521c7c1edb317bd023654766fdd717a49885c00d3",
+      "hash": "bfd8ab59a0fad6685b8e3bb4bfd937305748063c89c6c0291cfe2dea95675d47",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/leefbare-zone-simulator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/lorenzattractor/": {
-      "hash": "d08b03506a9cc204284b97deb0191112159152f0e51827ec5598407114ec3831",
+      "hash": "5841b26be6d1ed8f0b780e20ed73a6bf6ac6c0b4da13eb9c3fc52fa3112ee734",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/lorenzattractor/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/magnetron-lek-detector/": {
-      "hash": "d2224eeb926ed6a9c5f7b297e4eb24eae7a1d0178caffe27e126ddb227ea1936",
+      "hash": "e5653a2940e43956210c41fbdd227846f003431a1a82504d5c06fa654b6145f6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/magnetron-lek-detector/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/mandelbrot-fractaal-calculator/": {
-      "hash": "5136313b4fed57b8c31d258384f8c86bda054b7535e9221012f7b05379952f48",
+      "hash": "eac2fcd2e78fdbe9ae74d69bc767610aeedb04974474398bac6d20b8523bc18d",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/mandelbrot-fractaal-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/planeet-atmosfeer-overleving-calculator/": {
-      "hash": "7c6a48dd802b0f68b8ccd1c844a4bbee03b26de6f28221a62bba2928b7a9daf9",
+      "hash": "f1f60160d231cfeb0b7fe6db3876ac4f241c0b489465949e1666c47d2fae3be6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/planeet-atmosfeer-overleving-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/planet-temperatuur-tijdlijn/": {
-      "hash": "edc7b16772f4404d8e81d9f30dd75ab814cabacedefe1b6c15830963ff8b4576",
+      "hash": "de4824e079a33ba15a6a1524a79b5cab7ebaa123d4edbe51de1a3f8750c8aba6",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/planet-temperatuur-tijdlijn/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/roche-grens-satellietverstoring-calculator/": {
-      "hash": "c8d963b2d90fd7bbfa598670568010e9c55174fec4b117130642d7fbf69976e9",
+      "hash": "28cae4b6e7f094c398be058ef37b4ee283f14f8093a7162e5acdcd0a74432f86",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/roche-grens-satellietverstoring-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/simulatie-waarschijnlijkheid-calculator/": {
-      "hash": "82fdd5d05cf5f2b46a0ce4ddea274ba32802c4583fda8df2da3de6368e87763e",
+      "hash": "2fc73ed4adf31d7df4ff04d0b3508e0863b02867b37c83d12b0db76bb16209c7",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/simulatie-waarschijnlijkheid-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/simulator-natuurlijke-selectie-genetische-drift/": {
-      "hash": "f36f421a6ccc0622a95ab69cbb643eaeb9ae4d0193339c860c3f28d29d79b068",
+      "hash": "5433d4f223dff443fd48d69d98da1c276ed3d4dcf6ee51978e41ce8cc636f102",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/simulator-natuurlijke-selectie-genetische-drift/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/tweelingparadox-visualisator/": {
-      "hash": "28f154348ef677cf025d87737dc39f48c5967b733b4fbf7b88fa0851bdca0955",
+      "hash": "4171a48ceb10ebdb055478935dd16222bad44f72acaaa1033a7e6522d0328729",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/tweelingparadox-visualisator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/wetenschap/zwart-gat-gebeurtenishorizon-simulator/": {
-      "hash": "7af9d8ba4e98f7a9e8fddee2f19430ec164672cadda8f582924ecdb089a14eb5",
+      "hash": "ecb7d1ef9009471bb4102cfb1b0d6c15d2da9d1e389e0969b701bfc5af6b3a69",
       "route": "/nl/hulpmiddelen/categorieen/wetenschap/zwart-gat-gebeurtenishorizon-simulator/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/atraktor-lorenza/": {
-      "hash": "7cae565c9ae180e9b02783d01184da47373f189c1f796796b3030bed8a0da7b4",
+      "hash": "aefddc742ae7068b8c2fa095b2c66ddb6e7e2dccc2330779b6731e64e4ca3d5a",
       "route": "/pl/narzedzia/kategorie/nauka/atraktor-lorenza/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/detektor-biosygnatur-egzoplanet/": {
-      "hash": "d7e3660156a3bfb148d07a8390098dfd9bbc4911bf01186aa813b90e956b0246",
+      "hash": "2ab7c15426ceb04e1b96a0d2dbd39b1bb3c5e3f71158c9be297bc3a2f7102d6b",
       "route": "/pl/narzedzia/kategorie/nauka/detektor-biosygnatur-egzoplanet/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/globalny-albedo-kula-sniezna-symulator/": {
-      "hash": "36a22b60a0f9f9204ee2a5d1cd974ed709e1aba2b86b6b6eb772e357a1b83ebe",
+      "hash": "02d7ee066e02455525acf2ba57beb85ff1f9f53292c89d049309367617fa17cd",
       "route": "/pl/narzedzia/kategorie/nauka/globalny-albedo-kula-sniezna-symulator/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/granica-roche-kalkulator-zaklocenia-satelity/": {
-      "hash": "9500a85e20a95337aceebcf9245a287106a19b65b8acbca4f4249d591419f5f6",
+      "hash": "b3619b36c302b094d09f2e8f92e5d22a5ad0dfc5dcc32778c9be123c461aff7d",
       "route": "/pl/narzedzia/kategorie/nauka/granica-roche-kalkulator-zaklocenia-satelity/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/": {
-      "hash": "acceae544a37a16f4a73e244419c31eecf6828922cda21728a8d1731a7b7dda6",
+      "hash": "c200dffc1ac17bab8782b5abc3608f8dfbbfde1d84300ec8f95767c99b0846cc",
       "route": "/pl/narzedzia/kategorie/nauka/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-fraktala-mandelbrota/": {
-      "hash": "abf4e6a0d6a092c9e7cc487d3a386420ade4779ba31d777decd9f19604fcc5e4",
+      "hash": "3af44c64c100ad565fdf1152de31fdfc7b0112be404367656f0b8a81b46d87a6",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-fraktala-mandelbrota/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-inflacji-kosmicznej/": {
-      "hash": "33301992f33b78eeafeacf88458ea19b346a0ac78d523016b327ef208e0f9257",
+      "hash": "9017bbd6d5006587176b4ed578b88c9abb8f2733881da1baf316aaf1db061a3a",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-inflacji-kosmicznej/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-odnowy-komorkowej/": {
-      "hash": "68e61012e9d4f722eec79970b3bc887626dd0648aeeaed33291bd2bf6f58e62c",
+      "hash": "150fa9bd7e70d671d5b9dd07ff1aebb8343ccc6376913443c56d70a41a5959cc",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-odnowy-komorkowej/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-okresu-poltrwania-rozpadu-promieniotworczego/": {
-      "hash": "3b858ba0cd29bab5c0cea127d503cb2b85b0e04d219606f75eaa85cad350d8a0",
+      "hash": "1cf7f0d85e19ff9b13dddad6684159ddd119c23f6f0d8602b311896761dab45c",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-okresu-poltrwania-rozpadu-promieniotworczego/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-prawdopodobienstwa-symulacji/": {
-      "hash": "702cb7f6ff811faf749042c4811bfda591320f3469a85368b747460f41cf2914",
+      "hash": "7f89e3eb3469b3c659aa1cdef1c76ebf6835f601f59009f616022b29a62213cd",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-prawdopodobienstwa-symulacji/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/kalkulator-przetrwania-atmosfery-planety/": {
-      "hash": "00bf9bdfebe2452de12df9bcb32cd7499c76930a5a7a63b3638a2e4321de530a",
+      "hash": "5accf46be371aaa39616aa2810aebbec3bae8ee73eb5b043220a0661f7684b84",
       "route": "/pl/narzedzia/kategorie/nauka/kalkulator-przetrwania-atmosfery-planety/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/laboratorium-filtra-paradoksu-fermiego/": {
-      "hash": "984e409864bc0ff7396c4417016fc88451cd91eb3b61516b2837ba569aaab59b",
+      "hash": "dfd138f2655ba01b71ca48eb453a41a0301ee5af0c1bc2be4cceaa0854edb4d5",
       "route": "/pl/narzedzia/kategorie/nauka/laboratorium-filtra-paradoksu-fermiego/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/laboratorium-regul-gra-w-zycie-conwaya/": {
-      "hash": "e99950d733a75707e3df49b5be81624f6ce27b31fe7d851b4c0ff2c9ac24aebc",
+      "hash": "af39cf28e8d51908b3dbfc635ae5dd80d0be306d7d8e677090d5f07090e8c164",
       "route": "/pl/narzedzia/kategorie/nauka/laboratorium-regul-gra-w-zycie-conwaya/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/licznik-kolonii/": {
-      "hash": "a00052cf133470cbcb077979d275497365de25ce0c359bdaec705de9c091a4bc",
+      "hash": "d251f0d83add899b05b122a6003b21075030eb7c8f37aef539042ac50ae9adb0",
       "route": "/pl/narzedzia/kategorie/nauka/licznik-kolonii/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/paradoks-blizniat-wizualizator/": {
-      "hash": "087d16499b318ee17f4bf4f970b09c8fc4a2be893148d7eb3297a38728a19c58",
+      "hash": "06c6082bc7df751f8274684016b84dd8f1e967b93212b5c4052261a774118872",
       "route": "/pl/narzedzia/kategorie/nauka/paradoks-blizniat-wizualizator/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/planet-temperatura-linia-czasu/": {
-      "hash": "1f53728da414c702e2209db787dbf71b00352b2c88b5cf3dc2ddd2bc5aa6b15b",
+      "hash": "db37499218e3368f9ae1059ac8def341f18feef84073696ff4a49d2fa7380eca",
       "route": "/pl/narzedzia/kategorie/nauka/planet-temperatura-linia-czasu/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/strefa-zamieszkiwalna-gwiazd/": {
-      "hash": "227f67a5be14e3d195d051cff0d061709fe284ccbec1d2368376494574683675",
+      "hash": "8dda5067b40355f8a9fe664b95a7b428bf9ca8e9b5221aee5dbe81b2d4092fbd",
       "route": "/pl/narzedzia/kategorie/nauka/strefa-zamieszkiwalna-gwiazd/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-doboru-naturalnego-dryfu-genetycznego/": {
-      "hash": "061d00a9b978b08f1585d075c5b159e23907f4206c5518e884b1dfef4abfd2eb",
+      "hash": "60b64a027c072bf5abaccca38cc99c4b52eac3a30ed050f7a3e5632c9e6c13bc",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-doboru-naturalnego-dryfu-genetycznego/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-energii-sfery-dysona/": {
-      "hash": "512f309a2be027d12e731eeaef6711be5b083e11371d7cfcc01d340ea85b377d",
+      "hash": "0afa67efc38f06407d7e12bce9206a4679ca4d2900f8548f008700c3571aac60",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-energii-sfery-dysona/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-entropii-drugiej-zasady/": {
-      "hash": "471269e51481d0ed61d6d1f3f51250c138225017c028948e0e03db3b46901f03",
+      "hash": "08d042cde6e6cdecc225a9af86338d1962d40e63d47f371c59629e4512800859",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-entropii-drugiej-zasady/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-horyzontu-zdarzen-czarnej-dziury/": {
-      "hash": "00eb3bf95792303eea4492a9133323f181a5b6295615ce5e8d2efc8460c28b2d",
+      "hash": "9fb4362a28d76fd3f55b27e4281e4304b6a091ccf04b1389488b29879b533443",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-horyzontu-zdarzen-czarnej-dziury/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-podwojnej-szczeliny-dekoherencji/": {
-      "hash": "eaaf6e69a8f16a79f90b2251e16610464733b8abda2fc9c2f4bbc5ad90fafb45",
+      "hash": "fdc616263365b4865e6feb11c9dfdb9721e0a1feb22c58839b741da26ccb6fbd",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-podwojnej-szczeliny-dekoherencji/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-problemu-trzech-cial/": {
-      "hash": "43c23d1f0076dfc9deabd35758b7b4c88132c2c8b0238203902ec02fc8ee78bc",
+      "hash": "536a8e178d85d977c45b81c434e5314ae0a348d4869b0bd5c0ed17965bd573c7",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-problemu-trzech-cial/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-sir-epidemii/": {
-      "hash": "36b23090a024a0addba11d7431de4cf6ae067ac4494f786712568cc495620860",
+      "hash": "22dbe5d523c5b95183e22c019dbadac19d12e8c6d30ac21ea5b9adefa0eea73a",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-sir-epidemii/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/symulator-uderzenia-asteroidy/": {
-      "hash": "d4390e046b255b9644c1e0af6045af8d3c264e37fb5f7a8ef843f278a21499ed",
+      "hash": "d5744f8371d2232bdc9ae2d2ab9855e2c5102f86a3e68ca6fdff34c4262024c7",
       "route": "/pl/narzedzia/kategorie/nauka/symulator-uderzenia-asteroidy/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/wykres-fazowy-punkt-krytyczny-wizualizator/": {
-      "hash": "044bf3f0d4f5bacbca5ce8ce803eaa47dbf68050762aaccd7776e65779a3eba3",
+      "hash": "5460570786afadf5844b3104b2913627a724a809150db437b1bbe87941ae006c",
       "route": "/pl/narzedzia/kategorie/nauka/wykres-fazowy-punkt-krytyczny-wizualizator/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/wykrywacz-nieszczelnosci-mikrofalowki/": {
-      "hash": "d54684dd9d9111b8457747cef342286701fc11239c9b8490b3a86d5c5e58e989",
+      "hash": "541763c7f43394099fd97d32cadf3028daedb0fbd2f6bff90b01f7a5238017c8",
       "route": "/pl/narzedzia/kategorie/nauka/wykrywacz-nieszczelnosci-mikrofalowki/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/nauka/wyszukiwarka-struktury-sieci-krystalicznej/": {
-      "hash": "48069f7aa62cf12bc7808bfdb7c9ecb43db50d4806008344cc4417ed88079585",
+      "hash": "efe774ce11d6deb6d485f00ef6d7a7d566e4d69e68e4a68062c423291833aeeb",
       "route": "/pl/narzedzia/kategorie/nauka/wyszukiwarka-struktury-sieci-krystalicznej/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/atrator-de-lorenz/": {
-      "hash": "1d5dc4c5a43f58e601376db63438bf3f84f484ab132a221a037f5b1e7b2c6f0e",
+      "hash": "4589612af5bdf8457f7364b65fc610cf70a0762bd9eb266920b2013608e8e914",
       "route": "/pt/utilidades/categorias/ciencia/atrator-de-lorenz/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/calculadora-inflacao-cosmica/": {
-      "hash": "ae9753b3588b027251283ca9e03691b9efee6fb9a17b9ff999f8390ea06c7bc0",
+      "hash": "03276537d659ab2da0193d93f601c76b26909f11195a9c1d04a816add190b50a",
       "route": "/pt/utilidades/categorias/ciencia/calculadora-inflacao-cosmica/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/calculadora-meia-vida-decaimento-radioativo/": {
-      "hash": "de4e05739c6f83ed2e450a24684d37a76a31b3fd19a0eab8db29806d6dc042e3",
+      "hash": "9200518e835a54feb128ef4d1670ce1e06f559ab72f126f82d259181c3fecbbf",
       "route": "/pt/utilidades/categorias/ciencia/calculadora-meia-vida-decaimento-radioativo/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/calculadora-probabilidade-simulacao/": {
-      "hash": "45c59b316231c89af21c32487dce09e4975104bdc135d8f275f05894ab4b4f37",
+      "hash": "98ca7db130f8319f75c41bb20db117a7cf9c9a38c44637f307d47fdf03efa5ff",
       "route": "/pt/utilidades/categorias/ciencia/calculadora-probabilidade-simulacao/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/calculadora-renovacao-celular/": {
-      "hash": "388d6aff36704732e377cdb2f1da04f315085280b923359f509717be9ec74f21",
+      "hash": "e28536b0dcf4c8f274322f3ccdba885c05d765193167fe8255c86158b811ca84",
       "route": "/pt/utilidades/categorias/ciencia/calculadora-renovacao-celular/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/calculadora-sobrevivencia-atmosfera-planetaria/": {
-      "hash": "19263f4871956e89ab40846b17127e7bdb72e81f90262d171609449d857c8c02",
+      "hash": "7a514b51b55d1b1d0e2f03df413abcb3320a9f3a6559ec71db20234aa4fe6555",
       "route": "/pt/utilidades/categorias/ciencia/calculadora-sobrevivencia-atmosfera-planetaria/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/contador-de-colonias/": {
-      "hash": "98a9037b67709ef68ab625f37bdb1b765b839bbc4613c7c21c35a5eebddbd78a",
+      "hash": "017420e83ae6064c8869a4dcc7a3227777f20464dd05047087c6c6f60e062dee",
       "route": "/pt/utilidades/categorias/ciencia/contador-de-colonias/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/cronologia-temperatura-media-planeta/": {
-      "hash": "b9869f183e556a658a1891f687e079a03ccd313a7477f29960ab7724da8a3532",
+      "hash": "1fd5a0cf366530ca301241780634b7cfa33da04436812eb4eadda3fe0a2cf9bd",
       "route": "/pt/utilidades/categorias/ciencia/cronologia-temperatura-media-planeta/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/detetor-biossinais-exoplanetas/": {
-      "hash": "41bcd917dc1df0613effee86a1738c25954dacd31fdf768ca269684473022a3e",
+      "hash": "1e8231b9a0d5491a08f2059c9f489face84016b8c5fd06e6bc2490e2dbc513fc",
       "route": "/pt/utilidades/categorias/ciencia/detetor-biossinais-exoplanetas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/detetor-fugas-micro-ondas/": {
-      "hash": "33b3099f3d082581c7607710d619e6884635d9553a2f29abb31681e8a201da9d",
+      "hash": "d7b24862c4ebd967186241774bd6f65ec4f97d739acd2f0c4d47f2e5a47c6b62",
       "route": "/pt/utilidades/categorias/ciencia/detetor-fugas-micro-ondas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/diagrama-de-fases-ponto-critico-visualizador/": {
-      "hash": "b2b1e229abfed2149ac7383d6f817f02c306d8e4ee3bb4a667e1dd8a2395e0bf",
+      "hash": "f6c8a285ca1e47ecfe877fd6fd4e775e148edbc3c8243587746dbc9349913379",
       "route": "/pt/utilidades/categorias/ciencia/diagrama-de-fases-ponto-critico-visualizador/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/explorador-estrutura-rede-cristalina/": {
-      "hash": "f5e7a89c0568a175e9daae51a76c4719da3fed3f7fad22f26eb1f53270b1aada",
+      "hash": "4fcc28b8bd265f7bf29ce7f5a3e7373d21aff5d7538128800eb84bdc7c588bdd",
       "route": "/pt/utilidades/categorias/ciencia/explorador-estrutura-rede-cristalina/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/explorador-fractal-mandelbrot/": {
-      "hash": "e9ab9a8761d481e0444e00adacf740557af0309dfb54fc1a6059e3feced6664a",
+      "hash": "a3ce57481bfe2736018efbeb49a74579248588c3a23bcd195c49e2fc5ab59480",
       "route": "/pt/utilidades/categorias/ciencia/explorador-fractal-mandelbrot/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/": {
-      "hash": "3b6dd76c61d5e5f6470dd739289126593c66cf58c001c64edd01a7b0f647d7d0",
+      "hash": "b56e486c5888234dc8578ab77b7e2931d21997722e52e29dd871e38b984bcbf9",
       "route": "/pt/utilidades/categorias/ciencia/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/laboratorio-filtro-paradoxo-fermi/": {
-      "hash": "f384f8d40ad42ae50b591e59e12cd03684aab0b4731525153b05fd6cbd652efa",
+      "hash": "866c73babde635c7e625bb5497bafbe841afaee40af94f289772491ca0d33186",
       "route": "/pt/utilidades/categorias/ciencia/laboratorio-filtro-paradoxo-fermi/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/laboratorio-regras-jogo-vida-conway/": {
-      "hash": "d3adacdf8913829e3fa8e0d387b17794e87d75b5ab35915389ebb6cf8a9fe4bc",
+      "hash": "48ab34d8fc92eab876be8f46d7aba19db2cd37720b887001bf639943af136652",
       "route": "/pt/utilidades/categorias/ciencia/laboratorio-regras-jogo-vida-conway/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/limite-de-roche-calculadora-disrupcao-satelite/": {
-      "hash": "0f95a3931ba8f6d215c6bcb14a545d94f30261fbd5c3ef3501fc533d556a8058",
+      "hash": "59711098a9a8b302d8a0c75886f913c6b2b0b702908d237033cebd2f785a3878",
       "route": "/pt/utilidades/categorias/ciencia/limite-de-roche-calculadora-disrupcao-satelite/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-albedo-global-terra-bola-neve/": {
-      "hash": "3a15ba7290ac07e26757f2291ff8d8568f76cc71d7fbdacd1ab11bcfde0b9d62",
+      "hash": "0a0ec0ab861452a4ce0a7314dce423a9db40a323a4212fb26529f43441137f33",
       "route": "/pt/utilidades/categorias/ciencia/simulador-albedo-global-terra-bola-neve/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-captura-energia-esfera-de-dyson/": {
-      "hash": "fe772ace6ed041d6afe80b847f044308880297ed9371bb5f89fcbabcad02b696",
+      "hash": "58a2005b240a1ff75896e098b92c59d7adc5ed63e90c5cc612d922601dde374c",
       "route": "/pt/utilidades/categorias/ciencia/simulador-captura-energia-esfera-de-dyson/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-dupla-fenda-decoerencia/": {
-      "hash": "6f9ed4630523d65830410635c1b37728909aaddd076a3b997c9a2a3e220325dd",
+      "hash": "b57348c05b831c0c59f669fe80dff7a2294068340028368f3f52d30cec0b4dd1",
       "route": "/pt/utilidades/categorias/ciencia/simulador-dupla-fenda-decoerencia/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-entropia-segunda-lei/": {
-      "hash": "7890b85552cd75f3288b0f913c2e69ff3e2a7e0883c44b159d40817ed3c2bc9d",
+      "hash": "a795e4ae72c8d232678d0a5fa2c773e080d9ac258c079810e0477ddcd245b60c",
       "route": "/pt/utilidades/categorias/ciencia/simulador-entropia-segunda-lei/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-horizonte-eventos/": {
-      "hash": "245c9c36815af774ee2e59ab4adb1075ebd77fe39a2e860139c079e5e6ff3428",
+      "hash": "8480755751ceed639142942d7bf81c632bacbb33021fd071d3ca7239459d798c",
       "route": "/pt/utilidades/categorias/ciencia/simulador-horizonte-eventos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-impacto-de-asteroide/": {
-      "hash": "4f015d82bc2258eb9a27614ca1c58339d6edb74c89e3d9cf9599671965285bd4",
+      "hash": "e7842de4104efb8d4737b6519363e3adc9168e51fbd6a97ec945ef4ab2affd3d",
       "route": "/pt/utilidades/categorias/ciencia/simulador-impacto-de-asteroide/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-problema-tres-corpos/": {
-      "hash": "3dc0f9d01b3872585174ba49476b240dbf3f3f78ec4b048b97952fbf9fb9eb7d",
+      "hash": "b051446f4b54d1b9ed326d1d45bb375613e3eba835f93bf1b90bed7e7585274e",
       "route": "/pt/utilidades/categorias/ciencia/simulador-problema-tres-corpos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-selecao-natural-deriva-genetica/": {
-      "hash": "b4f74068c1379943cc8ac5dc83b60c254223b31148c87048c20cb5eeb3d1ed35",
+      "hash": "7f7026362a57cd98a8606d46db9edb70c631e98b450b53a565229457b00db5d2",
       "route": "/pt/utilidades/categorias/ciencia/simulador-selecao-natural-deriva-genetica/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/simulador-sir-epidemia/": {
-      "hash": "2b9db69f71cdec06d6f74348a732184cf4dda043ce2c1332c542a65464d4df89",
+      "hash": "ab67773791a577bedf6c27127a99394022212a3768b8a1e010a1d3977b4431c5",
       "route": "/pt/utilidades/categorias/ciencia/simulador-sir-epidemia/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/visualizador-paradoxo-gemeos/": {
-      "hash": "fd6fb103f804309ee7a486601d67dbeff061227a79fcd1bda15e7e90b20c4a01",
+      "hash": "5f141d9c3afac0db55faf5dc87b3163529ea6e7a795edc6b74118e2dd706f4e2",
       "route": "/pt/utilidades/categorias/ciencia/visualizador-paradoxo-gemeos/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ciencia/zona-habitavel-estelar/": {
-      "hash": "ae623fa75cb67909390d655c380af9e2dc7eba48ffe02c19b229a52d8f6d703e",
+      "hash": "5b924e083d3cdef664867040ae34b5af936a73c9abd1f8cadf9c49a087485524",
       "route": "/pt/utilidades/categorias/ciencia/zona-habitavel-estelar/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/attraktor-lorenca/": {
-      "hash": "3462a87dc6e13f9d12c966cbc033e369b8c4d5ce67c10aee1d7b122e6287d968",
+      "hash": "3a326abbac7704daee24c2b36008972da33aad9ab5e6ef7f195d2d0ff988ecdb",
       "route": "/ru/instrumenty/kategorii/science/attraktor-lorenca/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/detektor-biosignatur-ekzoplanet/": {
-      "hash": "1a33e6c3c0d2cbebb41c6bd61ae3bcac737711865360f0344827063335ca0a81",
+      "hash": "416138082f49f2fd9d54f94f5721b2246841069cf490c70822c6d29889753f7f",
       "route": "/ru/instrumenty/kategorii/science/detektor-biosignatur-ekzoplanet/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/detektor-utechki-mikrovolnovki/": {
-      "hash": "7f972d6b2c66c48de84a25f1fcdc7083fac6f7c8e4c35667cafd566b71d973ad",
+      "hash": "1613d1e5858bad90f76ed2e928e77f1fe8e7d007cced5064d58eaf2f03b1fbb2",
       "route": "/ru/instrumenty/kategorii/science/detektor-utechki-mikrovolnovki/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/dyson-sfera-zakhvat-energii/": {
-      "hash": "b86234cda6eab9195bc68ebdca436f0ddd82ed76882fd65310318adc17d35189",
+      "hash": "482570667a568e1508900e1d8fd3847c7de8890f153b75a86619500418051fe9",
       "route": "/ru/instrumenty/kategorii/science/dyson-sfera-zakhvat-energii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/fazovaya-diagramma-kriticheskaya-tochka/": {
-      "hash": "d821ed0dae80f89f44120ba12e8c55d9e007c37dd81596132902c5b902d3cba5",
+      "hash": "b473c8b7fd97110454b3f04c8e742bfdc4689e84d7d793780ebeb20341f2856f",
       "route": "/ru/instrumenty/kategorii/science/fazovaya-diagramma-kriticheskaya-tochka/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/globalny-albedo-snezhnyy-shar-simulator/": {
-      "hash": "8cf1a5fd10b22cedbb644e14958c29b0fee51d8e889926da876996bd4c0b9830",
+      "hash": "1205d43beecd0c1040d747b31b93bbddf534fb1ecb7242b3870752ef7e99635c",
       "route": "/ru/instrumenty/kategorii/science/globalny-albedo-snezhnyy-shar-simulator/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/hronologiya-temperatury-zemli/": {
-      "hash": "945241e9ce19a8757be967a12053d281663f6153980fe3b6ff21b61f7990178b",
+      "hash": "3fef1371ff40d0c9faefbd715f51d0fa87f937163826f7c1f68cf1b9e53619be",
       "route": "/ru/instrumenty/kategorii/science/hronologiya-temperatury-zemli/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/": {
-      "hash": "eb669fef399634d409b5b7fe0393aa2abbae374bbf1da05070452f968f63af4d",
+      "hash": "85698ebc4235aa0b18ea2484a9811a42061531e3ad69c88b86d783f7d87312dd",
       "route": "/ru/instrumenty/kategorii/science/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-fraktala-mandelbrota/": {
-      "hash": "2a7bb8088facea754ae6714c01c56320ea367a00a87b3ce481068cf96eebdff8",
+      "hash": "f0ac79d1aa873631f8eb64dd2fa9f126229e1c314834bd951b01b778c1c1bab1",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-fraktala-mandelbrota/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-kosmicheskoy-inflyatsii/": {
-      "hash": "b106af2a530593507ba2b92d1b6b3faf0a776c4b5178c1c6e4802adec2fb010c",
+      "hash": "89e4a605214fbd05af9aea5bc477c4eabc9f6dffdba80b33f53c691b6d3802e6",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-kosmicheskoy-inflyatsii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-obnovleniya-kletok/": {
-      "hash": "3087c081e714d8dd2cbfaad145a84b26fc373f6d7b6ae229bf75bc0aa1852559",
+      "hash": "52e6e06d07b291b5491d38defaf43857a59890637749b612c8332c7515fb673e",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-obnovleniya-kletok/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-perioda-poluraspada-radioaktivnogo-raspada/": {
-      "hash": "ede722e8f8f3cfbf414d88033e23bdde8041d5e2296d5dc102f44e77c073c199",
+      "hash": "dad29165cac49fc9de0d6ee34e6c14f6d6945d0ae1f79789003349e8bc37d101",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-perioda-poluraspada-radioaktivnogo-raspada/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-veroyatnosti-simulyacii/": {
-      "hash": "3fcfdcfde05b3f54df456f575c51e8407affba8555d636d66b65cef91424250c",
+      "hash": "59f9bf7cb4b6cb95298391296a1b53137f381db29bf53887be1145491887e6c8",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-veroyatnosti-simulyacii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/kalkulyator-vyzhivaniya-v-atmosfere-planety/": {
-      "hash": "7dc07e2a7f63f63e378f6eb537323915c234dc10775e72bdfcc518a520b679e9",
+      "hash": "8aeb936fe074556d227f48fa7e4f1c4be0cfbaccac328f475c28876124d29d9b",
       "route": "/ru/instrumenty/kategorii/science/kalkulyator-vyzhivaniya-v-atmosfere-planety/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/laboratoriya-filtra-paradoksa-fermi/": {
-      "hash": "51c1e250a834f5f1ca646f49e6466ac15bd2882f16cef1db2edc20d1be742a62",
+      "hash": "66809db0ba273919449abc156898b2f306d1724470cd39e3c8c7712b83f6085b",
       "route": "/ru/instrumenty/kategorii/science/laboratoriya-filtra-paradoksa-fermi/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/laboratoriya-pravil-igra-zhizn-konveya/": {
-      "hash": "4cb9d239d0343e95406a763062187693cbfcff95db3c6c12c904187166d145a6",
+      "hash": "0ae14dab3843f99a015b6ee5462d68f1de3886399b72d34f43a80199d496f6ff",
       "route": "/ru/instrumenty/kategorii/science/laboratoriya-pravil-igra-zhizn-konveya/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/paradoks-bliznetsov-vizualizator/": {
-      "hash": "f182deb07309e32dc5fd19cdad00183ef8f62b0baaa9107fc6916e7de29191f3",
+      "hash": "5c6da3b349fed15ef7d5f23ecd8eb478acecc04efe0d38f154110ce412f9e717",
       "route": "/ru/instrumenty/kategorii/science/paradoks-bliznetsov-vizualizator/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/poiskovik-kristallicheskoj-reshetki/": {
-      "hash": "a19164e73267586f72a3644fd27dc0165d55ff343718c608649fbb49e0baeb95",
+      "hash": "86ad17bc6e9c004e8423aef818c0f349cad5ef407bf17e3bc80c81760dd9cd5e",
       "route": "/ru/instrumenty/kategorii/science/poiskovik-kristallicheskoj-reshetki/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/predel-roche-raspadenie-sputnika-raschet/": {
-      "hash": "feabbf53c2977408ea6d3453366a889d03a7969aeddedaa8f7f9f08446141914",
+      "hash": "ac365652d69be7acb5a52f0a35ad07912c318a1d2fa763bf6b7934c52c1e728b",
       "route": "/ru/instrumenty/kategorii/science/predel-roche-raspadenie-sputnika-raschet/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/schetchick-koloniy/": {
-      "hash": "f74d72baa2cabffe5b4189c3c1948ead7a4741e4d297c048bb72c68602f4daa0",
+      "hash": "3808f77335fe86b2995eb8d2243916b394ffb7cc74735766028c2c19c274a5e4",
       "route": "/ru/instrumenty/kategorii/science/schetchick-koloniy/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simuljator-sir-epidemii/": {
-      "hash": "aad5bd070277beb64280c5cfb7d2c232ac879b3b3ec407fdb95007f2e17010e0",
+      "hash": "2620640634039e3e6df08e3f22891be4e0c2b353c7ceb871ed1348e9bfb7b8fe",
       "route": "/ru/instrumenty/kategorii/science/simuljator-sir-epidemii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simuljator-zadachi-treh-tel/": {
-      "hash": "9307c5e877d4948869098ddd7c7171d27a95f3421276e69094383c48b9b9f35d",
+      "hash": "4756c5fea4c567f4b3b688bd8ab290e6da560722109cbc77d8b98e84e3fe1279",
       "route": "/ru/instrumenty/kategorii/science/simuljator-zadachi-treh-tel/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simulyator-dvoynoy-shcheli-dekogerentsii/": {
-      "hash": "acd574a8bf7dbc1239ab2d6407c72b2cc83c482ee92e9d9dda670f40d7ca79e4",
+      "hash": "76481e747e4598ffed2766164f33c3bb995823d25ca8d6eb252bd610fb75228a",
       "route": "/ru/instrumenty/kategorii/science/simulyator-dvoynoy-shcheli-dekogerentsii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simulyator-entropii/": {
-      "hash": "03f69fdb583140b3b06c696bbbd07bf7a307e9705070ceea92a523a302606759",
+      "hash": "1f0215a11d696f8a2f7da45a35eb47882a9637cebcef2acef73320c87bb89056",
       "route": "/ru/instrumenty/kategorii/science/simulyator-entropii/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simulyator-estestvennogo-otbora-i-geneticheskogo-dreyfa/": {
-      "hash": "8a9c027e368430cf26e7275b0a3683f6d2066913b03c785883be727cfd114460",
+      "hash": "9ea34b4777bae0211944a2a8f8b85a167852cde599e63fd2a1612837ef6c5eb9",
       "route": "/ru/instrumenty/kategorii/science/simulyator-estestvennogo-otbora-i-geneticheskogo-dreyfa/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simulyator-gorizonta-sobytij-chernoj-dyry/": {
-      "hash": "7b0f396a885bbc2fbd23dfd8c7a2c2cea0151be56fe33e504747854e10109438",
+      "hash": "a71f8950fd154e5570998fed97b33c922cb8be87a8d85eefe3cf5654650f7d2d",
       "route": "/ru/instrumenty/kategorii/science/simulyator-gorizonta-sobytij-chernoj-dyry/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/simulyator-stolknoveniya-s-asteroidom/": {
-      "hash": "8f0082c5df64ec6dc2d86b0633f0ede02ad0672aef9bdfeabbccfe7aa6be3a11",
+      "hash": "6eab9b46b5c3479a5ded3a040abad10b2d36757790a3c5afb7475f744706201e",
       "route": "/ru/instrumenty/kategorii/science/simulyator-stolknoveniya-s-asteroidom/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/science/zona-obitaemosti-zvezdy/": {
-      "hash": "e531857ba26cd4267e78dc3c8f30cd83a29e52787b3c4b386492ff9767b3468a",
+      "hash": "e8de40a907aae34fb2e5850c612c9c7fad199d625dee8e466b2996f7e6958f6a",
       "route": "/ru/instrumenty/kategorii/science/zona-obitaemosti-zvezdy/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/cellfornyelsekalkylator/": {
-      "hash": "f3c24dffedca859f86d53bfc99b4977106ec2e42d514a92cfbdeb6002580d8aa",
+      "hash": "918a1ba1fdd05711aa7f3cf7e9e4a1f1ed3c8d184a86a124145c551c8e57c2f6",
       "route": "/sv/verktyg/kategorier/vetenskap/cellfornyelsekalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/conways-game-of-life-regellabb/": {
-      "hash": "4d9558896f33e8d0d2f4862d46b07b1f334a5802ea0bc850f0c694e8757745e7",
+      "hash": "49383fec68827a89db8c37c7e6405199a116a1b2258e5cd7f4b5ffea6c64cce2",
       "route": "/sv/verktyg/kategorier/vetenskap/conways-game-of-life-regellabb/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/dubbelspalt-dekoherens-simulator/": {
-      "hash": "fbb01c3f13171234bd66c736ffc9ed56b1c7c6694e6558b1d3024e1b8fa4c1d9",
+      "hash": "7050d7e616621870ed9bb24382fcf235a9ad5d071c70ba806673274442e3e05b",
       "route": "/sv/verktyg/kategorier/vetenskap/dubbelspalt-dekoherens-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/dyson-sfar-energifangst-simulator/": {
-      "hash": "b588a12eadaff32039f75abb29264a9c1fb7c3351748f8a36195d3da894b5fb5",
+      "hash": "42fd1136d5c6a454e5f91c39d8067731c07b94c4b50b035de42f36d6d38665fa",
       "route": "/sv/verktyg/kategorier/vetenskap/dyson-sfar-energifangst-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/entropi-andra-lagen-simulator/": {
-      "hash": "90ebbbcc4381c44c9ce44ff62c67dae51226157581c70e1f34a529d06bf14472",
+      "hash": "0540eca0abc10e68e10366d2e5539ee1b94581f081b420b9c91543492aeeab8c",
       "route": "/sv/verktyg/kategorier/vetenskap/entropi-andra-lagen-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/epidemi-sir-simulator/": {
-      "hash": "eda4ffb31946705be17a810220de526721330f6d60f3d2fa995e3a2fd16ea79a",
+      "hash": "cf9cebba087f72c23096603c32462f386125de7f1275db0eb1170afd53e31f99",
       "route": "/sv/verktyg/kategorier/vetenskap/epidemi-sir-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/exoplanet-biosignatur-detektor/": {
-      "hash": "fd2a5fa8636bc33681ad59958aa7c2c523753f0b10053038c50d05eb7d4b500f",
+      "hash": "c6940851bab2ec8229fdc40febe8ffa3cc4a49b10d41f30b3647e36f82bdc508",
       "route": "/sv/verktyg/kategorier/vetenskap/exoplanet-biosignatur-detektor/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/fasdiagram-kritisk-punkt-visualiserare/": {
-      "hash": "7ff1613e9018f16e6f2d4888f983b53ec26bb9ca559d5b99dab5a11e0e65ec26",
+      "hash": "76718dd670a96659b5477a191f9392e3d4ff6ddb379020fc6e51dfb8a496b18a",
       "route": "/sv/verktyg/kategorier/vetenskap/fasdiagram-kritisk-punkt-visualiserare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/fermi-paradox-filter-labb/": {
-      "hash": "0c9a14e755e7a10e65f4ae1e5501734beef9fffa6efd1424f2fc59c261055d2c",
+      "hash": "b59b9cca360b2bd7e815ae1123f6cdf996fcf39c90b6e38e7700e726263cbdff",
       "route": "/sv/verktyg/kategorier/vetenskap/fermi-paradox-filter-labb/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/global-albedo-snoboll-simulator/": {
-      "hash": "b4b9954d671795fa2778437431df895ee1ed650e6109feb1c760e8eda2d5faf2",
+      "hash": "cdb58494a9feed270c251da975ca467df32d4ee7ca99fbf6e35f0d36456a781c",
       "route": "/sv/verktyg/kategorier/vetenskap/global-albedo-snoboll-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/habitable-zon-simulator/": {
-      "hash": "2d6ea94628159a20617be78002c8ad4e98b921062097ae0d441fb4e385af1717",
+      "hash": "9b26c41807c45a3dffab9b9eff1c85ed9aefd072f12a3e29e5d5067cee30e06f",
       "route": "/sv/verktyg/kategorier/vetenskap/habitable-zon-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/halveringstid-radioaktivt-sonderfall-kalkylator/": {
-      "hash": "60ac8ee31b8483be13fdaae29af2cfceaf4cea641ab2ee64eca3e1dc4195f968",
+      "hash": "ae64d68ac680e7ebec785ba4640653f9dc39623580463a6281595fd02487a512",
       "route": "/sv/verktyg/kategorier/vetenskap/halveringstid-radioaktivt-sonderfall-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/": {
-      "hash": "23faef568685d85661f7ba524c9204c4d262f7317a01ae8bcf9017cafdf59ea4",
+      "hash": "a533f83a3a89ceb9ccf82de422868a75ad82c01f9b081a2f2ec22a788bd430b3",
       "route": "/sv/verktyg/kategorier/vetenskap/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/koloniraknare/": {
-      "hash": "e86b4081867fcd7932d4d38f9bc6a6606124061f251f2191bfd0a5acd4a86deb",
+      "hash": "bf8cfcd7fc94914bdc3ac6967fd301bd246ca0a1722eb8d2213403d52141a920",
       "route": "/sv/verktyg/kategorier/vetenskap/koloniraknare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/kosmisk-inflation-kalkylator/": {
-      "hash": "59e1166a40441989878378c0516c146af9728d5d3553f6eda737e24ba2d613e4",
+      "hash": "e67a59344649c0d839af45516b4bf8d897e325f9fcd498c1b4ad44fcd259a229",
       "route": "/sv/verktyg/kategorier/vetenskap/kosmisk-inflation-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/lorenzattraktor/": {
-      "hash": "3097c31543af7db41b86bf82e930afadc6f4b868d2b7196ddbc96b354efe09e7",
+      "hash": "e2e5054d0299e82321a8c341de1ca6e2d00ad3f05ce25e669e51a73ab7dd609d",
       "route": "/sv/verktyg/kategorier/vetenskap/lorenzattraktor/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/mandelbrot-fraktalkalkylator/": {
-      "hash": "fb062f2d121a3a258ae388f339798006509200b6b2cf09fbedfec334a238264b",
+      "hash": "a998ffbb3652c112404a7a407b1f83e613493a2cb6ca83efbe27bebbab2b9da9",
       "route": "/sv/verktyg/kategorier/vetenskap/mandelbrot-fraktalkalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/meteoritsimulator/": {
-      "hash": "b87588ac0890b17bec043d25ebaa5397bd5c0d1a2871ce5d97948dc2f0124935",
+      "hash": "a7bcbb5dd9ccb3f120da12f0847eba4b3d1ef1e8c97a4cce421408206a5cef89",
       "route": "/sv/verktyg/kategorier/vetenskap/meteoritsimulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/mikrovagsugn-lackagetest/": {
-      "hash": "269cb4e170a72de5c36329f186032125ce3c61f11cdff3168e840ff776848d69",
+      "hash": "5c3d3e49625a0b2c98ad401a7023e10fb6e197c705bbe2d5ecc081b95f4592e5",
       "route": "/sv/verktyg/kategorier/vetenskap/mikrovagsugn-lackagetest/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/planet-atmosfar-overlevnad-kalkylator/": {
-      "hash": "972a5cb0178a30f58e9e2edff485106e0e0d4c1100d254f0dbb2decd28a8d9bb",
+      "hash": "dc771a37af57404aa8238d105cee6846ab07abf92fe867f1efc07ca90ef73609",
       "route": "/sv/verktyg/kategorier/vetenskap/planet-atmosfar-overlevnad-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/planet-temperatur-tidslinje/": {
-      "hash": "b9e5a239657cd72a5d02446c711636cd50b7e81ca66ec1f510083ce3b8c03e65",
+      "hash": "cad693554e479d448a2f9ae0bd8c5a94419563dd60c120af7d6b74dfde50da1d",
       "route": "/sv/verktyg/kategorier/vetenskap/planet-temperatur-tidslinje/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/roche-grans-satellitstorning-kalkylator/": {
-      "hash": "5705534ddc29f0e0125f6efd89c08c84709d54fb42db55ac2d571303118dbadd",
+      "hash": "de8faa6f625a8212fba6e8797ceebb5c1405ea31a29b593593d78cf7867eec2b",
       "route": "/sv/verktyg/kategorier/vetenskap/roche-grans-satellitstorning-kalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/simulering-av-naturligt-urval-genetisk-drift/": {
-      "hash": "c035a6a0cc118b271f51e4d858188fea2b674e8b888725d47a39196ef109bb5e",
+      "hash": "6105dbfa45c2945e437896fdfd80ca632d7219b633e9e8b3c1d541f2c4aef2bb",
       "route": "/sv/verktyg/kategorier/vetenskap/simulering-av-naturligt-urval-genetisk-drift/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/simuleringssannolikhetskalkylator/": {
-      "hash": "66f6c0597078bad3899d3667dd9564899791822e1b778da931e36ed06c5f5e4d",
+      "hash": "18641bbe43c4f345390efb341c69ca2304835be05ec3198ef3cf8d2563a79a2f",
       "route": "/sv/verktyg/kategorier/vetenskap/simuleringssannolikhetskalkylator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/svart-hal-handelsehorisont-simulator/": {
-      "hash": "519f227e750a5ea953128586c5a4505eab217a6dfeabba33c79600fb93e3afb8",
+      "hash": "e3452dc29b5b4cf23e4bd53c9eb6432ba444b61e72c53b55bede0b65e9bea785",
       "route": "/sv/verktyg/kategorier/vetenskap/svart-hal-handelsehorisont-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/trekroppsproblem-simulator/": {
-      "hash": "3bae072dd285fcaa964162385cd79160ea26573929409092716e9d78ddbc5531",
+      "hash": "7dfe29069d8ed46cef398709c1dc741f5f44ba6fa4b22e82ab7793944b468845",
       "route": "/sv/verktyg/kategorier/vetenskap/trekroppsproblem-simulator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/tvillingparadox-visualiserare/": {
-      "hash": "c53c91fe4db5dfa763f21d6a6099d2f05711528c3ae9ee5882aa12412bc3ddc9",
+      "hash": "ecaac30cca8a61fb2beb187dc1cf06f0ea5a0cbf0583a169b4e9c45c7e2e75e6",
       "route": "/sv/verktyg/kategorier/vetenskap/tvillingparadox-visualiserare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/vetenskap/utforskare-av-kristallgitterstruktur/": {
-      "hash": "0498510b1790acf269161dbe0c5f94bfb5ca529172ae364a27dc615af5b23066",
+      "hash": "380250469bb05abde66902b85e5ef9b43d057f1ef11c7f247e0944eeb9f95fb9",
       "route": "/sv/verktyg/kategorier/vetenskap/utforskare-av-kristallgitterstruktur/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/asteroid-carpma-simulatoru/": {
-      "hash": "71d759ee1c6679ad68b0d78a432c6db4a3cdc590355d468df5fff2dff14c85a4",
+      "hash": "4eda6d6423b2aedc78e32cbd4360165f7ceb9917f32e85bd337f97fcf3637be3",
       "route": "/tr/araclar/kategoriler/bilim/asteroid-carpma-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/cift-yarik-dekoherans-simulatoru/": {
-      "hash": "90e7b4be13ee8024b916044c827bc9b2bd176f6bb961b1a0e72920cf58fb31c0",
+      "hash": "f9173d842aa997f39c1added08404a6dccb4cce4eacc0a55af464fd57894cde0",
       "route": "/tr/araclar/kategoriler/bilim/cift-yarik-dekoherans-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/conway-hayat-oyunu-kural-laboratuvari/": {
-      "hash": "1630d067f76cd7e254e89dd516eee1b7e8d197701cc00497a46fce0e1c007574",
+      "hash": "eab93014e64957b56e958101af35a113ae3d3aa5dfc52b47d9069450dbf1b870",
       "route": "/tr/araclar/kategoriler/bilim/conway-hayat-oyunu-kural-laboratuvari/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/dogal-secilim-genetik-suruklenme-simulatoru/": {
-      "hash": "683c3fd8f2d6bd07219c4d589ba242ed54b8a3d64de79a989f5bd15f9f325477",
+      "hash": "927381895ae46985bec26ba49d595c1a948244a08c362c96296033e47391c803",
       "route": "/tr/araclar/kategoriler/bilim/dogal-secilim-genetik-suruklenme-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/dyson-kuresi-enerji-yakalama-simulatoru/": {
-      "hash": "364054aa0a41efda63c13a4c61bc8f5d6f5afeaf06493a2e9c0657f65b345baf",
+      "hash": "602ed8f7f50e59f3066aba2b0eae0701d53de8eae6e37501fe3b9ef5d681b4ee",
       "route": "/tr/araclar/kategoriler/bilim/dyson-kuresi-enerji-yakalama-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/entropi-ikinci-yasa-simulatoru/": {
-      "hash": "90bc34ade982eb8f8d94e50b2524d63c909dc5a79f76435bb08c9647b399cc5c",
+      "hash": "9e0683f34c5c94e4e7dae681836b1a802d7f6ca095c3868246fea824fe25d9d3",
       "route": "/tr/araclar/kategoriler/bilim/entropi-ikinci-yasa-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/faz-diyagrami-kritik-nokta-goruntuleyici/": {
-      "hash": "ef57c9833cf53fdb40cdad03f56154ba4e547da28b95125fb9e7d90e605c84e4",
+      "hash": "fbb577ba521b4dade1d090f4b958776a9602584b718cdf20a484503c91b1438b",
       "route": "/tr/araclar/kategoriler/bilim/faz-diyagrami-kritik-nokta-goruntuleyici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/fermi-paradoksu-filtre-laboratuvari/": {
-      "hash": "2f0c5bb143814f615e1d633a1315e99ff45c800e589bd0cc9fa1e092e94b5943",
+      "hash": "c3cd7a9db9920cdb6b55190997346b908c69e4e2b6d411bc95dd8a352be3662d",
       "route": "/tr/araclar/kategoriler/bilim/fermi-paradoksu-filtre-laboratuvari/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/gezegen-atmosfer-hayatta-kalma-hesaplayicisi/": {
-      "hash": "8137108134fa4000f741bb5b272373bf8e8507d52994e3c5c735f68b8de6d9d2",
+      "hash": "0a79b7c0c9071bd2f4f46e726f08ed5946f047c2b690773a1d1e42747bf4abb8",
       "route": "/tr/araclar/kategoriler/bilim/gezegen-atmosfer-hayatta-kalma-hesaplayicisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/hucresel-yenilenme-hesaplayici/": {
-      "hash": "5f21d03c71a50afe75d435ada724dffd6faab2b1c7ad6b07813f5f00e3642d77",
+      "hash": "f2ee0a2d4e53f940a36ee194abf77b0c96584f27d7f8e83ff20e4585269712a1",
       "route": "/tr/araclar/kategoriler/bilim/hucresel-yenilenme-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/ikiz-paradoksu-goruntuleyici/": {
-      "hash": "ac6d957272f39c504db720a127a343db80705b202e07f434abe77b2562658f4a",
+      "hash": "14141f167278bcafc9ba1807a6bd11e7787a5cc1ff50a2ae244fb1ef17a8d03a",
       "route": "/tr/araclar/kategoriler/bilim/ikiz-paradoksu-goruntuleyici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/": {
-      "hash": "dba6d64eaf8afd4c0b7cf3c3cde213c56c6fd59fdcd3a226b0a82d13646b76bb",
+      "hash": "e7d28afea502d67714596b6febe4f53bd8199463797ab3e58de5c6687050b994",
       "route": "/tr/araclar/kategoriler/bilim/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/kara-delik-olay-ufku-simulatoru/": {
-      "hash": "c65e10521de80a37b4b783eb094757ac40b3e30fe3f15b87c4d9ce37f58ab1be",
+      "hash": "724a32a17484e95147693e24d2ab57d68f21fb3c8a5ab9a7b73e5ddb2f05de80",
       "route": "/tr/araclar/kategoriler/bilim/kara-delik-olay-ufku-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/koloni-sayaci/": {
-      "hash": "040e2a0bbf9261ae1c64548b67a262175b1045e19843da1aa9e5c232d0f2d9fb",
+      "hash": "346cd20dda1daca1d20c7fd2bcbdcf84a3bc2aa91313958634948f4a9d058bac",
       "route": "/tr/araclar/kategoriler/bilim/koloni-sayaci/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/kozmik-enflasyon-hesaplayici/": {
-      "hash": "136630a9efef95d209e4a2ed7922a1b5d8adb2ded343c09342091584d6f40e0a",
+      "hash": "b63d13ae9b8fa082988e1b4fdefee76909e0a983175f809e5f893ee359bda615",
       "route": "/tr/araclar/kategoriler/bilim/kozmik-enflasyon-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/kristal-kafes-yapi-bulucu/": {
-      "hash": "7494e9673fd2580f8b3e3b1bf7123594c70a141a7f620ee49b60344a3c7726bb",
+      "hash": "dadf0323bff036916c8f39abaed3e95f15eeb3084adf2eab76537e5c8fd4e0d3",
       "route": "/tr/araclar/kategoriler/bilim/kristal-kafes-yapi-bulucu/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/kuresel-albedo-kar-topu-simulatoru/": {
-      "hash": "426bfb1e469ca1ba00511edf10359c11f232734d5fdc6216135a2b67b6bfcdb7",
+      "hash": "9272c2e19831efb51175b01e6c75941ba85caef51735e5e8d97b36fa22197b32",
       "route": "/tr/araclar/kategoriler/bilim/kuresel-albedo-kar-topu-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/lorenz-atractor/": {
-      "hash": "71f7a50b037c3d8d3b92481ae5251b046665e88626f43de98c88f5f26855c297",
+      "hash": "67edf82ebea0f03591f32370c63c6b3e9fefab50a46174df773be56c307eaa06",
       "route": "/tr/araclar/kategoriler/bilim/lorenz-atractor/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/mandelbrot-fraktal-hesaplayici/": {
-      "hash": "a70cc32866a4eff63c2e213e69ea188b7507779e5a7dda69d9a763830647a196",
+      "hash": "6b0d115b2a938224157f9fea10f7181a3d9da437c70d3169d9de2a7579561b0e",
       "route": "/tr/araclar/kategoriler/bilim/mandelbrot-fraktal-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/mikrodalga-sizinti-dedektoru/": {
-      "hash": "feee62a2b6a6d99166a1c11b0d1f99678af4ddfd33fbe620db03144f0768ad11",
+      "hash": "60cbcaa3e658af55edeb144f2376391b8aac1daafbbb4ed73ef58b6355b67c68",
       "route": "/tr/araclar/kategoriler/bilim/mikrodalga-sizinti-dedektoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/otegezegen-biyo-imza-algilayici/": {
-      "hash": "88fdcb58e8aca0386b9b3c2423e3245df9ef17b20d3a2b7a398a6e9a90159cb8",
+      "hash": "e89a93c87d96b25255f547b5dbb15f49f6f98628bed6de66556f7679c88cc4da",
       "route": "/tr/araclar/kategoriler/bilim/otegezegen-biyo-imza-algilayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/planet-sicaklik-kronolojisi/": {
-      "hash": "36ed06cee826cb3a3e03796bd9caa5454074c2496a85260cdd2be30dd43ea23c",
+      "hash": "4fe981ead46f09bf7fddce51027b0fbf662f89991cc3c6a0f57236c2e652bff4",
       "route": "/tr/araclar/kategoriler/bilim/planet-sicaklik-kronolojisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/radyoaktif-bozunma-yari-omur-hesaplayici/": {
-      "hash": "088b67a4876a439d2f879fefad22b385842e33d95464b082e520562c17a3498e",
+      "hash": "0e9bc903227a9241d3e686ede82bebb6e6e97da0b3b261296a37a2bb7d1ec2b9",
       "route": "/tr/araclar/kategoriler/bilim/radyoaktif-bozunma-yari-omur-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/roche-siniri-uydu-parcalanmasi-hesaplama/": {
-      "hash": "f0269ef479a2516ce933daec376c46d9e267c4a45076594c77592d8a51c0f544",
+      "hash": "772de01e46cbbbae9c64758160e11f50f34bdb09ed34262fe58173b07b39a08e",
       "route": "/tr/araclar/kategoriler/bilim/roche-siniri-uydu-parcalanmasi-hesaplama/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/salgin-sir-simulatoru/": {
-      "hash": "dffa01d3cd9e54994fdb925cde9c35a92ff609dd232af491267cd03ba3540f8c",
+      "hash": "717c6f60bdb543832a6abbacd93ad9266ad6c2f06023e039ceb26422b6f4681b",
       "route": "/tr/araclar/kategoriler/bilim/salgin-sir-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/simulasyon-olasiligi-hesaplayici/": {
-      "hash": "cff0f1619b57e316f7255ebb2d9d25e15b3884b7375a303faa117acb22d5dfa4",
+      "hash": "e2f766c85e44b90e1631b0c8af6f1b161a6518d1d9d5a4966d3d3512774a757b",
       "route": "/tr/araclar/kategoriler/bilim/simulasyon-olasiligi-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/uc-cisim-problemi-simulatoru/": {
-      "hash": "09a3113408e8d039ccf26d108ee00bd40d5031484ed0aea1ac93f3b5f879bb6a",
+      "hash": "4f21ce57846522fe7ea73cf861641bde5378aed494c47f0f1bcee77651f7aa3e",
       "route": "/tr/araclar/kategoriler/bilim/uc-cisim-problemi-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/bilim/yasanabilir-bolge-simulatoru/": {
-      "hash": "b0d50ed272bfa48e73cee30ee9fc47216656571cd28ed028a0b8c3ad0f1357e7",
+      "hash": "1953ca928507b587a5ea257fbeef81cbe719fff87e4b3634caa72f458dc3008a",
       "route": "/tr/araclar/kategoriler/bilim/yasanabilir-bolge-simulatoru/"
     },
     "https://www.jjlmoya.es/utilidades/atractor-de-lorenz/": {
-      "hash": "893f23aae2856707dc2ee44a48ae95b9667319c4f421ccf7cc4c2c2f22c9d429",
+      "hash": "560f0a578ee984f7309e1d4e80ace9fa1513a57456519942ce673cf80cc34d8a",
       "route": "/utilidades/atractor-de-lorenz/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-fractal-mandelbrot/": {
-      "hash": "3b5b3cb9f392d3d142775d2905c404dec960eec8146fc7c65a367065675bb68d",
+      "hash": "98dc36fa34ffd2b9a2fdcac6ca523b9761f6d6b3dfb0ddc1e3ace39dc8af6860",
       "route": "/utilidades/calculadora-fractal-mandelbrot/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-inflacion-cosmica/": {
-      "hash": "0af0577f770eed6bd3468df289e65bca4c8e4c88e234a8b954ab483b4af9368c",
+      "hash": "da13509433016a28622ddf02e9678a04700c0d85b23b031005c1f19ab8e109b2",
       "route": "/utilidades/calculadora-inflacion-cosmica/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-probabilidad-simulacion/": {
-      "hash": "5a74e05994a59ec3134f001b53649a344fdb6adf8208f44b646afb70aa4b883f",
+      "hash": "34bcfba80dd43146a3bf80eab91c49595b3a53000ab2c6c2b8fddca3b9401589",
       "route": "/utilidades/calculadora-probabilidad-simulacion/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-renovacion-celular/": {
-      "hash": "7e55ec6c942b8bf98454c43ffa5c63b40ab287268e4aea6a374494cb4e519c79",
+      "hash": "56a86f9e5882ded79ce7ce6a1246c899718e1039280dbd84692109236813416a",
       "route": "/utilidades/calculadora-renovacion-celular/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-semivida-desintegracion-radiactiva/": {
-      "hash": "9be086fb969e2f7f013acfa7f86295c4c84c8ba73d650d1598f5edf2023216e5",
+      "hash": "0f6158695aaf792691e572d0ebced5a0b3719d414b4fd80830cac401b92b70db",
       "route": "/utilidades/calculadora-semivida-desintegracion-radiactiva/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-supervivencia-atmosfera-planetaria/": {
-      "hash": "c02c975668b42f91f58888623f2ddd02010592ea7572e5061d779a37852dfcfa",
+      "hash": "2b754a706dc8c661d888570aea7172fde172238c6bfe54a71bc20052377130a6",
       "route": "/utilidades/calculadora-supervivencia-atmosfera-planetaria/"
     },
     "https://www.jjlmoya.es/utilidades/categorias/ciencia/": {
-      "hash": "206ca8da9f284483f1a8edb25d43cf0b728c024472137b77c0d2befd2ea7b5a4",
+      "hash": "7ba2de0f4c90be38eb85f862a5b61e3118f7ff193650fcedcaa731bbb3f7ed81",
       "route": "/utilidades/categorias/ciencia/"
     },
     "https://www.jjlmoya.es/utilidades/contador-colonias/": {
-      "hash": "acfff6ab36222010575add3e23772ff8fd4d6942fce090fc304aac5402613a02",
+      "hash": "aa00a74c8e92a0ad965b2f889c94e804859ef06f7cb96c00fa1e70096a0231cd",
       "route": "/utilidades/contador-colonias/"
     },
     "https://www.jjlmoya.es/utilidades/cronologia-temperatura-planeta/": {
-      "hash": "f91390daeb4c527e0b417635951218916dfca1dfa263d9bd9405cd08d9518170",
+      "hash": "7e657342984963e1b1baf86d51c8eae28f74f8bd5f2e5ec6d88c937d125095dd",
       "route": "/utilidades/cronologia-temperatura-planeta/"
     },
     "https://www.jjlmoya.es/utilidades/detector-bisenales-exoplanetas/": {
-      "hash": "aa9ec2436e2322389d42f89990739adbb02d7b280af2c6389a6bdd6c775289e7",
+      "hash": "faae254716fa429aa6e2c01b9e3f0892aee554923f9989fca39a5bf08a7fbd8a",
       "route": "/utilidades/detector-bisenales-exoplanetas/"
     },
     "https://www.jjlmoya.es/utilidades/detector-microondas/": {
-      "hash": "8fbf6a4d2b8032295de0383716f36d9d82118ae2f05efcc64a2c3e3dc15c5b4e",
+      "hash": "6fba5d0d0c38dece61e791bf27df6fccc96b284924c1e6a42f5bc7626f340035",
       "route": "/utilidades/detector-microondas/"
     },
     "https://www.jjlmoya.es/utilidades/diagrama-de-fases-punto-critico-visualizador/": {
-      "hash": "b1d5df96a6f3b4e57f7e6d3c8368e1c053714c21283a8f006fa6c713dfd6a76f",
+      "hash": "23001e5cf9bba550304e94be0e0ff5d108fd1b42eda3963500101ec94b7ab76b",
       "route": "/utilidades/diagrama-de-fases-punto-critico-visualizador/"
     },
     "https://www.jjlmoya.es/utilidades/explorador-estructura-red-cristalina/": {
-      "hash": "d84ad89802fa637d8bba642aaa57cdf4fca0ce7fa9c7b620164935c1414a019d",
+      "hash": "f0a1c8f48fe6d949869c770e077de2384c10efef2175354ca1c51112ce94be2c",
       "route": "/utilidades/explorador-estructura-red-cristalina/"
     },
     "https://www.jjlmoya.es/utilidades/laboratorio-filtro-paradoja-fermi/": {
-      "hash": "a2d79fc6ff2d570744f5453cbb824b7d4b3480510f6987c77d44d24479776253",
+      "hash": "c3d0bfe112ddcebb98b89919068872613ecfc98758ae325f733f7aac76b7f552",
       "route": "/utilidades/laboratorio-filtro-paradoja-fermi/"
     },
     "https://www.jjlmoya.es/utilidades/laboratorio-reglas-juego-vida-conway/": {
-      "hash": "2df9ce011eb0d2d9e655044529eafbb9fa78fd9231a4964054ff48584088811a",
+      "hash": "1df6fad71895510dfe5c4b9bf85ea74df86e412a70251a44c533156592cfdb42",
       "route": "/utilidades/laboratorio-reglas-juego-vida-conway/"
     },
     "https://www.jjlmoya.es/utilidades/limite-de-roche-calculadora-disrupcion-satelite/": {
-      "hash": "e82c5a16d1bbf991593fb5df27eff41b5a490e7381b12f5276d7ad4f703b631e",
+      "hash": "6515b9507b8ac94774a10c8d7704496b58a8ab41d46abe7205d936c12ef76011",
       "route": "/utilidades/limite-de-roche-calculadora-disrupcion-satelite/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-albedo-global-tierra-bola-nieve/": {
-      "hash": "b0171f29f215d81f8ce30917319b65b5335e234c22980a6a3627f44006f7bdff",
+      "hash": "cd44976869b08fad07d987c9191e89d8274c007496f0a5cbca10f004c6d6cbcd",
       "route": "/utilidades/simulador-albedo-global-tierra-bola-nieve/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-captura-energia-esfera-dyson/": {
-      "hash": "000406e58ef257c63c15be5bf7670b0382f28bcf9385ef5fa9ef7ab8d6e8b4a8",
+      "hash": "4606a202afe075e8b0718febfcadebc51f6ac4ba5ce692425b58668fda0c9242",
       "route": "/utilidades/simulador-captura-energia-esfera-dyson/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-doble-rendija-decoherencia/": {
-      "hash": "e3edc1a33abb97fdc881eaa07d998447f94a1b05f09d357dc395ae4b1ecb52a7",
+      "hash": "c54559b24daa03a88a6cfd30cb38c3f315175af0657ce094e496dc7741006abc",
       "route": "/utilidades/simulador-doble-rendija-decoherencia/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-entropia-segunda-ley/": {
-      "hash": "33845925cc76287715d5b10d2c1bab322253dcf5adac5554ea2f470c642c2d14",
+      "hash": "70347a20f19a77088619804eebba5c60c6f305d2e676c9152ca1bb20f9dbfcb3",
       "route": "/utilidades/simulador-entropia-segunda-ley/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-horizonte-sucesos/": {
-      "hash": "40c0847b3b76f9b6263058d6f1d5af14f6fc73411e8d74f287dfbafefff95927",
+      "hash": "2ad65348c10c29dc153172c76723129a90423743d42b23725a241d89280279c9",
       "route": "/utilidades/simulador-horizonte-sucesos/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-impacto-asteroide/": {
-      "hash": "3517335328ab05304d2923bfd4f3052eb727566b7590986b5df84fd61bbe4747",
+      "hash": "0ff4c035216c5a69769f08dd7665ef13689dae66824e68649819a040b7dcb3f6",
       "route": "/utilidades/simulador-impacto-asteroide/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-problema-tres-cuerpos/": {
-      "hash": "489aa062c2ad5748178d3c5272c7a5b7edf19f2a9bb308cd1e379bbc9d00dcb6",
+      "hash": "45062988fac26f62587fcff0fca0e3988092e75a9ef0feceed52224a003e5256",
       "route": "/utilidades/simulador-problema-tres-cuerpos/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-seleccion-natural-deriva-genetica/": {
-      "hash": "b87a8f5deed40b6f84fb52f28380e31c074a033566726333273f1d76c935e3e8",
+      "hash": "052c926db0f178169f44f6322572186fe01fb5f7b207e3fdbcb057fd18bd0915",
       "route": "/utilidades/simulador-seleccion-natural-deriva-genetica/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-sir-epidemias/": {
-      "hash": "deefffbb317ee438ab3ce88a56998882a05ced7874ac40f8953a03baa08d520e",
+      "hash": "972665a11df3a6592b841302eeb6d9d0f41ff30ce701b0140006e0d401dc52b2",
       "route": "/utilidades/simulador-sir-epidemias/"
     },
     "https://www.jjlmoya.es/utilidades/visualizador-paradoja-gemelos/": {
-      "hash": "ffe5d80af58f1fd8c87a1a9fa1432f1d5facdb60c0b08c2b59a8af14b4769cf2",
+      "hash": "3ce5f65d3240b6b678c91edb9ef043073c8b41fdd93a69d8013ef78180c22262",
       "route": "/utilidades/visualizador-paradoja-gemelos/"
     },
     "https://www.jjlmoya.es/utilidades/zona-habitable-estelar/": {
-      "hash": "e4a65037f010ca50790f736330647f5663127faab3d672955e59b3f4f0398fcd",
+      "hash": "eca0087cefc74213a6785e26bbf7feaa8f63b9ca0ba50756b3f43b06178eb196",
       "route": "/utilidades/zona-habitable-estelar/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/asteroid-impact-simulator/": {
-      "hash": "8bdcb486fa729b0f321e37947f7a1fa9fb1980c25709110271f9ff9daec4dba7",
+      "hash": "25618572d635080f38621c1b0346525cadd0f16c7b417e8241b4d716fcc753f2",
       "route": "/zh/utilities/categories/science/asteroid-impact-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/black-hole-event-horizon-simulator/": {
-      "hash": "30394c412b7dc266ad14ed01f34fe62a3826e3b1059680aa86f47624e5e9e43e",
+      "hash": "dde69cd189294b0788cd2e0541c12819fa68bf243655341723f2068ce0f69902",
       "route": "/zh/utilities/categories/science/black-hole-event-horizon-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/cellular-renewal-calculator/": {
-      "hash": "89f14261327f3e07eb00946b4f1f6a17efc5e36d56418220624e5d0c5b9fa932",
+      "hash": "de81502a00b80cf387abcb7ea689cccd5033fb32b04daa953f3baea58598a0c0",
       "route": "/zh/utilities/categories/science/cellular-renewal-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/colony-counter/": {
-      "hash": "eded4880d676851e7157390cdfd3c1b2cd33315866811b7d62494051878ec6e6",
+      "hash": "63a389e90f6a2d2da3a3a47a3401626a1652da6f256200e4177bf3c65141b73f",
       "route": "/zh/utilities/categories/science/colony-counter/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/conway-life-rule-lab/": {
-      "hash": "59c1a1c6e13148e25cb50ee10c8661170f84953078f56400409e34e63d997c70",
+      "hash": "1d19e94832a7f0e628bbb9f870e8bcc2824508d20135f539eece4eeded02bacd",
       "route": "/zh/utilities/categories/science/conway-life-rule-lab/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/cosmic-inflation-calculator/": {
-      "hash": "785959cc737bf5ae6cbfcbfcc38b85b92668d601191f1324bccbc5d57c8fd974",
+      "hash": "d9b4d69f1cd91073e6cb9dbd07c65219df1f30abdc5f6407e210540bb701fa02",
       "route": "/zh/utilities/categories/science/cosmic-inflation-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/crystal-lattice-structure-finder/": {
-      "hash": "47483c39c372be4ede007bfd727f0f2afbc0037f2442fdf027c5c25bcdaae851",
+      "hash": "d5a0d0ff66415dd3401c06dfbb431719b67104947feb59afdde7b66ff0c9f62e",
       "route": "/zh/utilities/categories/science/crystal-lattice-structure-finder/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/double-slit-decoherence-simulator/": {
-      "hash": "08abc17ee0fa519d750a693f6ebfdaac66aa9c87493b77091c986631ff212d3d",
+      "hash": "a9ee830f38e8e3333dfc98951a163a2229daf89ab5bfe6e740a47ab9a30ecbe0",
       "route": "/zh/utilities/categories/science/double-slit-decoherence-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/dyson-sphere-energy-capture/": {
-      "hash": "c53f328fe546cc356f85685fa1d63dbb0c7194d74e7fa61f3b3cd992f29a1670",
+      "hash": "ac7fc2dc37b3da122912c5d76f2e3aacbe20b1162da050fa8ae07160549cf108",
       "route": "/zh/utilities/categories/science/dyson-sphere-energy-capture/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/entropy-second-law-simulator/": {
-      "hash": "f5b3e069486a601abe5ace332fd532dd99e913f559c2807697128392e60d5329",
+      "hash": "1a64ac2cbb2a9065c340a51e012b352ecc16b9ab6d3c9e806ce5a54b632ed4c8",
       "route": "/zh/utilities/categories/science/entropy-second-law-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/epidemic-sir-simulator/": {
-      "hash": "cf2147146a6572de86ab922caaad9f784835170f6d30d36a5c113df01a7fc93b",
+      "hash": "f6b4d31739244931480f7f74c3bed168ba03e178d64e571034f35aae6851bc95",
       "route": "/zh/utilities/categories/science/epidemic-sir-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/exoplanet-biosignature-detector/": {
-      "hash": "ef51225011d4f3e650c410322fee036886ff7be21d11048f43440d89c5e4ddcd",
+      "hash": "883ed66060099bd409277599921a69bdd1eeba38dbb961123462734d04f7aeb2",
       "route": "/zh/utilities/categories/science/exoplanet-biosignature-detector/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/fermi-paradox-filter-lab/": {
-      "hash": "8f7e0b69476e56a60d659d9ce169bc6d194c738219360fa60ba8cc211197406e",
+      "hash": "419bea5a5630654f8fc172940f76f028aa0cf74ff20144bd681a0ce2495e436b",
       "route": "/zh/utilities/categories/science/fermi-paradox-filter-lab/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/global-albedo-snowball-simulator/": {
-      "hash": "a60091d70efb47cde5165732e7e56769bf5678775205f7d4a717796091b469ef",
+      "hash": "c3ab4d3ba2d992e71ea6e3d95e512574d84c53eb50ccf04c15d6fe1f489a886c",
       "route": "/zh/utilities/categories/science/global-albedo-snowball-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/": {
-      "hash": "8c5b63b5aee75c7382d8845b97302d7e3b0fc44dae1b5ab7d257484554df4fa6",
+      "hash": "3d9bfc52509e72827f85b5405fef7d112f47be70455cf56ce20bcb2be54ed8a5",
       "route": "/zh/utilities/categories/science/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/lorenz-attractor/": {
-      "hash": "0bbbdc650f24ada74d594541501f470742d244974c26c696da8ddc8bb51ea9e6",
+      "hash": "3ea725f73950a5b1b55c68c7448556bbb48e0c675638f63ec1c67adc3892160d",
       "route": "/zh/utilities/categories/science/lorenz-attractor/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/mandelbrot-fractal-calculator/": {
-      "hash": "ae4d069a607f3b6b6c0d87bc2447d24aa7c3dbfed0ac14ed3fbdbf32a2e77927",
+      "hash": "da737c9d7cce1d4beaa572fd3cb557f18b87de5bc7c602c3f221e43c7946e696",
       "route": "/zh/utilities/categories/science/mandelbrot-fractal-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/microwave-leak-detector/": {
-      "hash": "370661bc43407a8804bf532d2eb87dda39b8cbe06f9529e3103fed32bc476520",
+      "hash": "a61f197f17353ff29f4c9fe357313cb81b1e488721f5b3869fcc9fb371cac896",
       "route": "/zh/utilities/categories/science/microwave-leak-detector/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/natural-selection-drift/": {
-      "hash": "8c6ff0dbf3afcbd3bea0aec3e52e807b66fd0565413d1f99ad8b0b802392f5f4",
+      "hash": "1e5574353f0ba0de175f703accec7f0254f8f82061a6b6ce8a1d586062f84457",
       "route": "/zh/utilities/categories/science/natural-selection-drift/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/phase-diagram-critical-points-visualizer/": {
-      "hash": "04e9b995fa323ee12268d63db0c8580a02b6f568c9b3d263ac5aba9122b45f1c",
+      "hash": "b1ce9ffcb57032d74baf22280196e7057749795981403db35c4b87ee722141f3",
       "route": "/zh/utilities/categories/science/phase-diagram-critical-points-visualizer/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/planet-atmosphere-survival-calculator/": {
-      "hash": "7f5092638ecc3c08e4d40b9c5f0da1108d7cbd5105b5750be0eeba10d5e33e06",
+      "hash": "a57f44b7481677e33be5520b5662378119ebdf3d443ff5491571df6782974cc6",
       "route": "/zh/utilities/categories/science/planet-atmosphere-survival-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/planet-temperature-timeline/": {
-      "hash": "d578b3396dcf42e22495abe94731e89d686a1a159d82c31296d11dd089b3f15a",
+      "hash": "b801574e9671772278b45923ede8db1b8a2816df59dcd55b16b5c6861654d8c8",
       "route": "/zh/utilities/categories/science/planet-temperature-timeline/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/radioactive-decay-half-life-calculator/": {
-      "hash": "f5fe209ad03ff1229a28ff65926b8fa084fe9f3ace46481829a6e7a9957ee1fc",
+      "hash": "84e6b67c84593ef2ac2862514bb6ba18be3eaca5d5dd03de1ece43214a487809",
       "route": "/zh/utilities/categories/science/radioactive-decay-half-life-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/roche-limit-satellite-disruption/": {
-      "hash": "9866f2a9988d6d03b1b329f5950fef013f9ad52a94e7b3d7adde4ae61b527bd0",
+      "hash": "a099dceb6c502d906e7725bfabc7982cfe967a570999ee8512645643f15c6098",
       "route": "/zh/utilities/categories/science/roche-limit-satellite-disruption/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/simulation-probability-calculator/": {
-      "hash": "c5c6ea23b2d8668baefa1e198d67058fbc26db7566bc04fdb695f22ca65621e2",
+      "hash": "b86d8f69b9ac43a12c0e1fbd83791d3e4fd25f35a33140c4108e9cb9c38851c4",
       "route": "/zh/utilities/categories/science/simulation-probability-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/stellar-habitability-zone/": {
-      "hash": "e10b74b8b00614cf7b460697947337d52bf0a32b8b1044a032f1ad9c683ddbc5",
+      "hash": "2f4f944e16cf20162c592d6a9ed43e04e36150feeab1a5faf9cdb0b4f59d2f1c",
       "route": "/zh/utilities/categories/science/stellar-habitability-zone/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/three-body-problem-simulator/": {
-      "hash": "cb8aa43c545e249110fbea5bb7acff9c905bc80bccf7b528c862b597727852af",
+      "hash": "be40e95552e1add95e95dc5e0f229a24445614aaa11068d28d8230d325e12337",
       "route": "/zh/utilities/categories/science/three-body-problem-simulator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/science/twin-paradox-visualizer/": {
-      "hash": "27e89ca0c611b26e2ff0127ee400e7f8a62fed542bd15314cad66ee801209ec6",
+      "hash": "21e502f43e8bbbac34c95332a052f2a77b658d88c19b41448fce68404c01411a",
       "route": "/zh/utilities/categories/science/twin-paradox-visualizer/"
     }
   }
